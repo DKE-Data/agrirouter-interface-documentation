@@ -1,4 +1,6 @@
 
+![GitHub Logo](./img/agrirouter-logo.svg)
+
 ## Project description
 
 ### The agrirouter
@@ -12,8 +14,14 @@ As a universal data exchange platform, agrirouter fills a gap on the way to Farm
 This repository includes the documentation of the interface for the agrirouter solution.
 Its main purpose is to allow developers to onboard their applications to the agrirouter.
 
+## Content
+The repository includes different elements:
+* [Message- and ErrorCodes](./message-codes.md)
+* [Integration Guide Part 1](./integration-guide-part-1.pdf)
+
+
 ## External resources
 
-Here are some external resources for the development:
+Here are some external resources:
 
  *  [My-Agrirouter Website](https://www.my-agrirouter.com)
