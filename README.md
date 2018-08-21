@@ -16,4 +16,4 @@ Its main purpose is to allow developers to onboard their applications to the agr
 
 Here are some external resources for the development:
 
- *  [my-agrirouter Website](https://www.my-agrirouter.com)
+ *  [my-agrirouter.com Website](https://www.my-agrirouter.com)
