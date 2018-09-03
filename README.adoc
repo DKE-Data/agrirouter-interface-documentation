@@ -18,7 +18,7 @@ Its main purpose is to allow developers to onboard their applications to the agr
 The agrirouter integration is currently documented in 2 downloadable files:
 
 == Integration Guide Part 1
-This document describes the general functionality of the agrirouter interface and can be found link:\assets\documents\DKE_agrirouter_Integration_Guide_Part_1_v2.3.pdf[here] 
+This document describes the general functionality of the agrirouter interface and can be found link:\assets\documents\integration-guide-part-1.pdf[here] 
 
 == Integration Guide Part 2
 This document includes specific api calls, JSON-and protobuf descriptions and important notes on how to integrate your app with the agrirouter.
