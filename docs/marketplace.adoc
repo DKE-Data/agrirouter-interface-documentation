@@ -1,0 +1,187 @@
+= my-agrirouter.com Marketplace
+
+
+
+Under the URL http://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the application or hardware provider to present their own apps, functions, modules or hardware solutions.
+
+This information must be created before going live under http://tptest.my-agrirouter.com/tptest/ in content management test environment according DKE specifications. DKE quality management reviewed, approved and released this information for go live.
+
+After certification process is done, application or hardware provider can create partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
+
+image:ig1\image47.png[image,width=642,height=470]
+
+Figure 47 my-agrirouter.com Marketplace
+
+DKE will publish a link for creating an partner account for the my-agrirouter.com marketplace. After certification process is finalized the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date.
+
+Some examples of DKE partners are available at https://my-agrirouter.com/en/marketplace/apps/ .
+
+The following content is required from *application provider*:
+
+[cols=",,,",options="header",]
+|=======================================================================================
+|# |Description |Quantity |Remarks
+|1 |App / Module Name |1 |-
+|2 |Software Version |1 |-
+|3 |Release Date / Last Update |1 |-
+|4 |Reference to App (in case of a module) |1 |-
+|5 |Download link to App Provider |1 |-
+|6 |Keywords |10 |-
+|7 |Short description in 3 basic languages DE, EN, FR |< 150 characters |-
+|8 |Long description in 3 basic languages DE, EN, FR |< 500 characters |-
+|8 |App Provider name | |
+|10 |App Provider homepage | |
+|11 |Company Information |1 |Address, Location, Support Information
+|12 |Privacy Policy / Terms of use Link |1 |
+|13 |App Category |1 < n a|
+Select box:
+
+1.  Documentation
+2.  Cross-Compliance documentation
+3.  Calculator
+4.  Application Maps
+5.  Prescription
+6.  Fertilization
+7.  Plant Protection
+8.  Farm Management and Information System (FMIS)
+9.  Product information (fertilizer, plant protection, seed, ...)
+10. Machine Optimization
+11. Process Optimization
+
+|14 |Operating System / Platform |1 < n a|
+Select box:
+
+1.  Native Android
+2.  Native iOS
+3.  Native Windows
+4.  Native Windows mobile
+5.  Native Mac
+6.  Web applications
+
+|15 |Message format (receive) |1 < n a|
+Select box:
+
+1.  Task-Data (TaskData)
+2.  Telemetry Data (EFDI)
+3.  Image
+4.  Video
+5.  Manufacture specific data formats
+
+|16 |Message format (send) |1 < n a|
+Select box:
+
+1.  Task-Data (TaskData)
+2.  Telemetry Data (EFDI)
+3.  Image
+4.  Video
+5.  Manufacture specific data formats
+
+|17 |Country selection |1 < n |
+|18 |Languages |1 < n |EN, DE, FR
+|19 |App Screenshots |3 < n < 6 |Max. 1400 width pixel Resolution in .jpg or .png
+|20 |App Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
+|=======================================================================================
+
+The following content is required from *hardware provider*:
+
+[cols="1,4,4,4",options="header",]
+|===============================================================================================================
+|# |Description |Quantity |Remarks
+|1 |Hardware Name |1 |-
+|2 |Hardware Version |1 |-
+|3 |Release Date / Last Update |1 |-
+|4 |Link to Hardware Provider |1 |-
+|5 |Keywords |10 |-
+|6 |Short description in 3 basic languages DE, EN, FR |< 150 characters |-
+|7 |Long description in 3 basic languages DE, EN, FR |< 500 characters |-
+|8 |Hardware Provider name | |
+|8 |Hardware Provider homepage | |
+|10 |Company Information |1 |Address, Location, Support Information
+|11 |Privacy Policy / Terms of use Link |1 |
+|12 |Compatible with manufacturer |1 < n a|
+Select box:
+
+1.  http://www.agcocorp.com/[AGCO]
+2.  http://www.amazone.net/default2009.asp?for_lang=1[AMAZONE]
+3.  http://www.exel-industries.com/[EXEL Industries]
+4.  http://www.grimme.com/[GRIMME]
+5.  http://horsch.com/home/[HORSCH]
+6.  http://www.krone.de/[KRONE]
+7.  http://kuhn.com/internet/kuhncom.nsf/pakuhncom.htm[KUHN]
+8.  https://lemken.com/[LEMKEN]
+9.  http://www.poettinger.at/en_in[PÖTTINGER]
+10. http://rauch.de/english/home/index.html[RAUCH]
+11. http://www.sdfgroup.com/[SDF]
+12. CLAAS
+13. John Deere
+14. Kubota
+15. CNH Industrial
+
+|13 |Construction year |1 < n a|
+Select box:
+from 2000 to 2020 (one-year steps)
+
+|14 |Model Type |1 a|
+
+Manufacturer model type (depending of 12 and 13 selection criteria) …
+
+
+|15 |Supported interfaces |1 < n a|
+Select box:
+
+1.  ISOBUS-INCAB
+2.  Signal Socket
+3.  CAN-BUS
+4.  None
+
+|16 |Power supply |1 < n a|
+Select box:
+
+1.  12V
+2.  24V
+3.  Battery
+4.  220V
+
+|17 |GPS position |1 |Yes / No / External
+|18 |Mobile communication |1 |Yes / No / External
+|19 |SIM card from hardware provider |1 |Yes / No
+|20 |WIFI communication |1 |Yes / No
+|21 |Hotspot functionality |1 |Yes / No
+|22 |Input possibility for entering the agrirouter TAN number | a|
+Select box:
+
+1.  ISOBUS-Terminal
+2.  Mobile Device (Tablet, Smartphone)
+3.  Own display
+4.  Website
+5.  Other
+
+|23 |Possibility to select different End user profiles |1 a|
+Yes / No
+
+(Telemetry box can be used with several agrirouter accounts / only one end user profile can be active at a time)
+
+|24 |Can transmit Machine information |1 |Yes / No
+|25 |Message format (receive) |1 < n a|
+Select box:
+
+1.  Task Data (TaskData)
+2.  Telemetry Data (EFDI)
+3.  Image
+4.  Video
+5.  Manufacture specific data formats
+
+|26 |Message format (send) |1 < n a|
+Select box:
+
+1.  Task Data (TaskData)
+2.  Telemetry Data (EFDI)
+3.  Image
+4.  Video
+5.  Manufacture specific data formats
+
+|26 |Country selection |1 < n |
+|27 |Languages |1 < n |EN, DE, FR
+|28 |Product Photos / Screenshots |1 < n < 6 |Max. 1400 width pixel Resolution in .jpg or .png
+|29 |Hardware-Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
+|===============================================================================================================

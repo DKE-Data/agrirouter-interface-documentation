@@ -1,0 +1,39 @@
+= Certification process
+
+== General
+
+Every Application needs to be certified to be onboardable to the agrirouter. The certification makes sure, that the communication protocol of the agrirouter was successfully implemented and the application is able to communicate with the agrirouter.
+
+A certification is needed any time, the app changes its capabilities.
+
+== Out of focus
+
+The certification will not check, if an application “understands” the data sent over agrirouter, it will only check, if the application can send and receive data marked as such Technical message types, that were selected in the Certification Version.
+
+== Certification institutes
+
+DKE and the agrirouter support team will release a list of certified partners, that are able and allowed to do the certification process. Please refer to https://my-agrirouter.com/support/ download area.
+
+== Tests
+
+=== For Farming Software and Telemetry platforms
+
+The test for farming software and telemetry platforms will check the following workflows:
+
+* Onboarding of a Farming Software or Telemetry Platform
+* Capabilities
+* Receive data
+** Respecting capabilities
+* Send data
+** Respecting capabilities
+
+=== For Communication Units
+
+The test for communication units will check the following workflows:
+
+* Onboarding of Communication Units
+* Capabilities
+* Receive data
+** Respecting capabilities
+* Send data
+** Respecting capabilities
