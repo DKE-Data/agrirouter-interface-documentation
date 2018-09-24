@@ -2,4 +2,45 @@
 
 = Applications
 
-NOTE: This chapter is not yet implemented
+NOTE: This chapter is not yet fully implemented
+
+== Communication Units
+
+Communication units (CU) are mobile applications, mostly running on embedded systems or mobile devices to establish a connection to the agrirouter “in the fields”. CUs are used to collect information like machine data or geo positions.
+
+CUs are usually but not necessary connected to machines via ISOBUS and collect their data during the common ISOBUS interaction.
+
+CUs should have a stable internet connection to provide live data. Otherwise, a CU should buffer generated messages to send them, once the internet connection returns.
+
+Like any other endpoint, CUs are able to request information from the agrirouter, e.g. to inform a driver about other machines positions (fleet management). The more important job of CUs however is to provide data to agrirouter.
+
+A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetry-units/.
+
+Please note, that there might be additional CUs in development.
+
+[IMPORTANT] 
+====
+Communication units can also be tablets or other devices and should meet the following *base requirements*: 
+====
+
+* Every single device has to have internet connectivity and must be able to communicate via HTTP(S) with REST or via MQTT. The communication consists mainly of payloads in Google Protocol Buffer format.
+
+* Endpoints without a constant internet connectivity are not able to send real time data. Sending recorded data after establishing an internet connection will be a valid use case for endpoints not having internet connectivity during the main working process of a machine.
+
+== Telemetry platform and virtual CUs
+
+A telemetry platform is a cloud software solution, that provides access to multiple so called virtual CUs. Virtual CUs are comparable to real CUs, but in difference, they do not implement the agrirouter protocol. Virtual CUs implement a proprietary protocol to connect to the telemetry platform only.
+
+The telemetry platform is than connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform differs from the onboarding process of a CU, as the user might not have to enter a TAN in the CU. In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
+
+A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetry-units/. Please note, that there might be additional telemetry systems in development of the compatibility.
+
+== Farming software
+
+Farming software can be a cloud application or a software released on a single device like PC or Smartphone. Farming software mostly consumes data to provide extra services for farmers or contractor. FMIS (Farm Management and Information Systems) are a common example for farming software.
+
+A list of compatible CUs can be found here: 
+
+https://my-agrirouter.com/en/marketplace/apps/
+
+Please note, that there might be additional software in development of the compatibility.
