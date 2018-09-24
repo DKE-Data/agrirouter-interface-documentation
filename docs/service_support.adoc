@@ -1,6 +1,12 @@
 = Service and Support
+:imagesdir: ./../assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
 
-Agrirouter and agrirouter support team provide several tools and contact possibilities. A contact field and further information can be found here: https://my-agrirouter.com/support/ https://my-agrirouter.com/support. To get in contact with agrirouter support team, you can also send an email to support@my-agrirouter.com
+
+The agrirouter support team provides several contact possibilities. A contact field and further information can be found here: link:https://my-agrirouter.com/support/. To get in contact with agrirouter support team, you can also send an email to support@my-agrirouter.com
 
 
 

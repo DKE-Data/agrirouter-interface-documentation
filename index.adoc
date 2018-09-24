@@ -1,4 +1,9 @@
 = agrirouter Integration Guide
+:imagesdir: ./assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
 
 [abstract]
 == Abstract
@@ -9,26 +14,29 @@ As a universal data exchange platform, agrirouter fills a gap on the way to Farm
 
 == Terms and short descriptions
 
-A short description naming all the agrirouter specific terms and their connection to each other can be found link:/terms.adoc[here]
+A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
 
 == Tools and Libraries
 
-A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found link:/development_resources.adoc[here].
+A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found link:./docs/development_resources.adoc[here].
 
 == Certification
 
-Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./certification.adoc[here].
+Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./docs/certification.adoc[here].
 
 == Marketplace
 
-Once, your app is certified, it can be displayed at the marketplace. Learn mor about that link:./marketplace.adoc[here].
+Once, your app is certified, it can be displayed at the marketplace. Learn mor about that link:./docs/marketplace.adoc[here].
 
 == Application and Endpoint management
 
-Learn, how to handle your applications endpoints link:/application_endpoint_management.adoc[here].
+Learn, how to handle your applications endpoints link:./docs/application_endpoint_management.adoc[here].
 
 == Service & Support
 
-For feature- or bug reports, you can contact the support. See link:./service_support.adoc[here]
+For feature- or bug reports, you can contact the support. See link:./docs/service_support.adoc[here]
 
 
+== Glossary
+
+A glossary can be found link:./docs/glossary.adoc[here]

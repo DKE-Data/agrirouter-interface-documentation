@@ -1,6 +1,9 @@
-:imagesdir: ./../assets/images/
-
 = Accounts
+:imagesdir: ./../assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
 
 == End-User (Farmers, Contractors, Consultants)
 
@@ -28,7 +31,7 @@ A developers account includes an end user account, therefore, the developer acco
 
 [NOTE]
 ====
- There is only 1 developer account needed *per company.* Testing the app; especially in the Quality assurance environment can be done from an ordinary end user account.
+There is only 1 developer account needed *per company.* Testing the app; especially in the Quality assurance environment can be done from an ordinary end user account.
 ====
 
 Additionally, developers can manage their own applications:

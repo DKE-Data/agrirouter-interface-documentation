@@ -1,4 +1,9 @@
 = Managing applications as app provider
+:imagesdir: ./../assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
 
 The developer account offers several functionalities to manage the app providers apps.
 
