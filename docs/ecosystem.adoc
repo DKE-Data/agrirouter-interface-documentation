@@ -46,7 +46,7 @@ You might wonder, why machines are not listed as applications. The answer is eas
 
 An endpoint is an addressable communication address for an application instance connected to the agrirouter. One application instance can be part of multiple agrirouter accounts or there can be multiple instances of the same application in one agrirouter account. An example for multiple instances of the same application in one account are multiple CUs onboarded to one account.
 
-The address of an endpoint is used by its corresponding app instance to communicate with the agrirouter and by other app instances within the same account to address this app instance.
+The address of an endpoint ( in this case the "__deviceAlternateId__") is used by its corresponding app instance to communicate with the agrirouter and by other app instances within the same account to address this app instance( in this case the "__sensorAlternateID__").
 
 == Connected end user accounts
 
