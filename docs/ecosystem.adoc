@@ -7,35 +7,13 @@ NOTE: This chapter is not yet fully implemented
 
 The agrirouter is a central data exchange platform, but to understand its full power, it’s important to understand, that the data provided from the agrirouter comes from the applications attached to the agrirouter. The following figure lists different Applications, that can be attached to one end user account.
 
+
 image:ig1\image10.png[image,width=642,height=321]
 
 Figure 10 The agrirouter ecosystem of members
 
 
-== Hierarchical Overview of endpoints
-
-image:ig1\image11.png[image,width=634,height=400]
-
-Figure 11 A hierarchical overview of agrirouter ECO System
-
-There is 1 agrirouter solution, with multiple accounts, one for each end user. An end user equals a Farm, a Contractor, etc.
-
-Every Account can onboard multiple Application Instances.
-
-Applications can be onboarded to multiple accounts (dotted gray lines).
-
-Applications can be CUs, Farming Software or Telemetry Platforms.
-
-Applications of type “Telemetry platform” can onboard multiple virtual CUs.
-
-Machines are connected to CUs or Virtual CUs. Machines can be attached to different CUs or Virtual CUs.
-
-A teamset is one (virtual) CU with zero to n attached machines.
-
-If there are 2 CUs installed on a real-world machine, a machine can be found in multiple teamsets and therefore even in multiple accounts.
-
-Applications, Virtual CUs and Machines are endpoints, that can be source or target of a message.
-
+ 
 == Machines
 
 You might wonder, why machines are not listed as applications. The answer is easy: Machines cannot be directly connected to the agrirouter. Machines are always connected through an application like a CU or a virtual CU.
