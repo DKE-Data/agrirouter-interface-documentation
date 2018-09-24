@@ -2,22 +2,4 @@
 
 = Accounts
 
-== Terms and short description
-
-This chapter will introduce and declare multiple new terms. The following text gives a short overview of what you will learn in this chapter and how the terms connect to each other. After reading the whole chapter, the following sentences should make good sense to you.
-
-====
-
-[square]
-
-* agrirouter can handle multiple users.
-
-* A user can create an account at the agrirouter.
-
-* One account is meant to represent one company, e.g. a farm or a contractor.
-
-* The users of the agrirouter create end user accounts.
-
-* Application providers need a Developer Account.
-
-====
+NOTE: This chapter is not yet implemented

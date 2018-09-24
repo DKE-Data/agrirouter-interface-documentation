@@ -8,45 +8,5 @@ image:ig1\image10.png[image,width=642,height=321]
 
 Figure 10 The agrirouter ecosystem of members
 
-== Terms and short description
 
-This chapter will introduce and declare multiple new terms. The following text gives a short overview of what you will learn in this chapter and how the terms connect to each other. After reading the whole chapter, the following sentences should make good sense to you.
-
-
-====
-
-[square]
-
-* Applications can be CUs, Telemetry Platforms or Farming Software.
-
-* Every end user can onboard one or more application instances of any application to his account.
-
-* Application instances could be a CU or an account or installation of a farming software or telemetry platform.
-
-* Telemetry platforms can onboard additional application instances; these are called virtual CUs.
-
-* Each application instance will create an endpoint in the agrirouter account of the end user.
-
-* App Instances communicate with their endpoints at the agrirouter.
-
-* One application instance (e.g. a CU) could be onboarded in multiple end users accounts.
-
-* The application instance will than have multiple endpoints in the agrirouter; one per account.
-
-* CUs and Virtual CUs can report attached machines.
-
-* Each machine will receive its own endpoint in the agrirouter, once it was reported by a virtual CU or a CU.
-
-* Every agrirouter account can be connected to another users account, if both users agree.
-
-* The other users account will than become an endpoint within the end users agrirouter account.
-
-* Messages sent to this endpoint will become messages to the public address of the other users account.
-
-* An endpoint of the other users account cannot directly be addressed from the end users account.
-
-* Machines of the other users’ accounts will become endpoints in the end users account.
-
-====
-
-The new terms will be described in more detail in the following paragraphs.
+NOTE: This chapter is not yet fully implemented

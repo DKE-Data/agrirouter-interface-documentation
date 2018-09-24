@@ -2,17 +2,5 @@
 
 = General information
 
-== Terms and short description
 
-This chapter will introduce and declare different new terms. The following text gives a short overview of what you will learn in this chapter and how the terms connect to each other. After reading the whole chapter, the following sentences should make good sense to you.
-
-=====
-[square]
-* agrirouter is a neutral data exchange platform.
-
-* The data exchange shall be performed between different software products of different manufacturers.
-
-* End users of agrirouter are participants of the agricultural process like farmers and contractors.
-
-=====
-
+NOTE: This chapter is not yet implemented
