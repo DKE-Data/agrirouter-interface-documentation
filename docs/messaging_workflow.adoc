@@ -2,5 +2,290 @@
 
 = Application Interaction with agrirouter
 
-NOTE: This chapter is not yet implemented
+== General Overview
 
+A communication with agrirouter requires several, partly parallel actions to take. The following Figure shows one possible workflow.
+
+image:ig1\image22.png[image,width=609,height=726]
+
+Figure 22 General messaging workflow
+
+=== Communication Protocols
+
+The agrirouter offers two different communication protocols for the common communication:
+
+* REST via HTTP(S)
+* MQTT
+
+The commands exchanged with the agrirouter are protobuf encoded (in both directions). MQTT clients MUST send commands as base64 encoded strings embedded into a JSON frame structure.
+
+REST based clients have the choice to transfer the commands in the same format as required for MQTT (base64 encoded protobuf nested in JSON structure). For REST, it is also possible to send native protobuf.
+
+The advantage of using MQTT is that polling for message delivery (see following chapters) will not be needed. REST however has to be used anyway for the registration of the endpoint. Therefore, applications have to be able to do REST communication anyway.
+
+The internal Google Protocol Buffer (protobuf) definitions for the communication with the agrirouter are available in GitHub repository under following URL: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions 
+
+== agrirouter Endpoints
+
+This chapter gives an overview about the endpoints including their base requirement and definition. This chapter gives a high-level overview about the agrirouter Connectivity-Platform architecture, an application can interact with.
+
+=== Overview of the architecture
+
+image:ig1\image23.png[image,width=626,height=451]
+
+Figure 23 agrirouter Connectivity-Platform IT architecture
+
+== Authorization process for endpoints
+
+[IMPORTANT]
+====
+App providers, whose software receives data have to pay for these data. The authorization process is used by application providers to assign each endpoint with a known user of their software.
+====
+
+
+The authorization process is major for farming software and telemetry platforms, for CUs it is an optional function.
+
+For CUs, this requires additional infrastructure, DKE advices to use the TAN exchange process.
+
+=== Account authorization for farming software
+
+As application providers of farming software have to pay for the consumption of raw data, the application provider should make sure, that only such agrirouter accounts can onboard one of his applications, that he can assign to one of his users. Otherwise, fake accounts could consume data on his costs.
+
+==== Authorization Process Overview
+
+The authorization process works as follows:
+
+image:ig1\image24.png[image,width=586,height=355]
+
+Figure 24 Process of app authorization
+
+To better understand, what happens here, try the following:
+
+====
+
+1.  Call https://httpbin.org/get in your browser. You’ll get a JSON view of the get request
+2.  Call https://httpbin.org/get?Param1=Value1&Param2=Value2 in your browser. You’ll get a view of the get request
+
+* https://httpbin.org simply echoes the request that is send to the page. That’s important to understand
+
+====
+
+==== Generating an authorization Link
+
+To provide a link for authorization, create a link like this:
+
+__*\{\{agrirouter-url}}/application/\{\{applicationID}}/authorize?\{\{response-type}}&\{\{state}}&\{\{redirectURL}}*__
+
+
+//TODO: Remove this with the real command in the final document
+[NOTE] 
+====
+The detailed request is described in Integration Guide Part 2 (see Purpose of further documents
+====
+
+==== Perform authorization
+
+When the user clicks on the link, the agrirouter website is called. If the user is currently not logged in, he has to log in. After logging in, he is delivered a website to authorize the connection between agrirouter and the application provider:
+
+image:ig1\image25.png[image,width=315,height=252]
+
+Figure 25 Application authorization screen
+
+==== Analyses result
+
+agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization result in the get queue.
+
+image:ig1\image26.png[image,width=498,height=244]
+
+Figure 26 Example of an authorization result
+
+The details of this answer are described in Part 2 of the integration Guide.
+
+=== Authorization for CUs and non-cloud-software
+
+To perform authorization for software, that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
+
+image:ig1\image27.png[image,width=624,height=165]
+
+Figure 27 architecture for CU and non-cloud application authorization
+
+//TODO: Replace this with the part from IG2
+This process will be described more precisely in Integration Guide Part 2.
+
+== Onboarding Process
+
+=== General work flow
+
+==== For simple CU onboarding
+
+image:ig1\image28.png[image,width=598,height=197]
+
+Figure 28 Process of simple CU onboarding
+
+==== For authenticated CU onboarding
+
+image:ig1\image29.png[image,width=503,height=316]
+
+Figure 29 General workflow for onboarding with user interaction and authorization
+
+==== For Farming Software or Telemetry Platform onboarding
+
+image:ig1\image30.png[image,width=538,height=477]
+
+Figure 30 Onboarding process of a Farming Software or Telemetry platform
+
+=== Creating a registration code (TAN)
+
+==== For CUs
+
+The TAN for a new CU can be created by the end user clicking “Generate TAN”(1) in agrirouters’ control center. He has to select the desired CU(2) and gets a 10-digit code consisting of letters and numbers(3). A CU needs an interface to input this registration code.
+
+image:ig1\image31.png[image,width=453,height=254]
+
+Figure 31 Requesting a registration code in agrirouter UI
+
+image:ig1\image32.PNG[image,width=292,height=164]
+
+Figure 32 Registration code for a CU
+
+==== For applications
+
+Applications can either receive a TAN like CUs or as part of the authorization process.
+//TODO: , see 10.3 Authorization process for endpoints
+
+==== For virtual endpoints of telemetry platforms
+
+Virtual CUs can be onboarded by their telemetry platform, a TAN generation is not required.
+
+=== Onboarding Request
+
+To onboard a new endpoint, the endpoint has to send an onboarding request providing the TAN to agrirouter.
+
+As a result, the agrirouter will return a JSON object including the endpoint IDs and the certificates required for the further communication with agrirouter. The onboarding request shall only be done once per Application Instance. The used unique app instance ID however should be stored, as it is required for reonboarding.
+
+[NOTE]
+====
+ There is no MQTT onboarding mechanism, so onboarding always has to be done using REST.
+====
+
+An example for an onboarding request can be found in the postman collection, which is part of Integration Guide Part 2.
+//TODO: Upload also postman collection
+
+== Reonboarding
+
+Whenever an app instance receives an update of its software, it possibly needs to reonboard to agrirouter to receive its certificates and the endpoint IDs again. Reonboarding equals the onboarding request. Important is, that the same app instance id is used again, so that agrirouter recognizes the reonboarding and the routings and group settings of the endpoint persist. Otherwise, it would create a new endpoint.
+
+== Communication and Message exchange
+
+=== The onion principle of commands and messages
+
+agrirouter is a platform, that is mostly used to transport messages *through* it and not towards it.
+
+
+//TODO Format this
+Therefore, the content is encapsulated
+
+=> in messages, which are encapsulated into
+
+    => the commands to the agrirouter, which are encapsulated into
+
+        => the protocol layer of REST or MQTT.
+
+With except to the EFDI telemetry messages (DeviceDescription and timelogs), agrirouter doesn’t analyse the messages inside the agrirouter command. It just checks the message type and the addressing to determine the recipients based on the routings and subscriptions.
+
+image:ig1\image33.png[image,width=621,height=358]
+
+Figure 33 The onion principal for a non-telemetry message
+
+An exception are the EFDI messages.
+
+The device descriptions are needed by the agrirouter to
+
+* determine the relevant CU when sending a Message directly to a machine
+* filter for DDIs that are allowed to be sent to specific endpoints
+
+The timelog telemetry data is analyzed, so that a filtering for value categories like fuel consumption is possible.
+
+image:ig1\image34.png[image,width=630,height=363]
+
+Figure 34 The onion principle for a telemetry message
+
+=== Sending messages
+
+An endpoint can send messages to other endpoints via the agrirouter. Therefore, it has to create commands to call at the agrirouter. To send a message to agrirouter, the application has to encode the involved file format,
+
+image:ig1\image35.png[image,width=622,height=347]
+
+Figure 35 Required Data to create a message
+
+//TODO This has to be more precise, can be 200 to 299
+The message is answered by the agrirouter with a HTTP status, that might be 200 (OK). In that case, the endpoint can poll for a confirmation at the outbox before sending the next message.
+
+agrirouter commands like the request for messages are Protobuf-Encoded.
+
+== Requesting messages
+
+=== General
+
+agrirouter stores messages of an endpoint in its feed. This feed is part of the message module. Requesting a message from the agrirouter equals sending a command to the inbox, requesting agrirouter to forward the message to the outbox. The endpoint can than receive this forwarded message through the selected protocol. For HTTP REST, the endpoint has to poll at the address of the outbox. If the endpoint uses the MQTT protocol, it will receive the message from the agrirouter.
+
+image:ig1\image36.png[image,width=623,height=268]
+
+Figure 36 Handling of messages and commands inside agrirouter endpoint; Simplified
+
+=== Requesting available messages
+
+To receive a list of all buffered messages from the feed of the endpoint, the application has to request the list of available messages. agrirouter will than forward a message header list to the outbox. The app instance can request each message by its unique ID afterwards. It’s up to the developer to decide on a useful order of requesting the buffered messages. Ann application could for example use the principles of _last in first out_ or _first in first out_ or priories specific technical message formats. It would also be possible for timelogs to request every n-th message and requests the messages in between afterwards, so that the app could create a graph, that is getting more and more precise (like a preview becoming a real view).
+
+=== Relevant Message formats
+
+The message formats relevant to control the agrirouter are available on the GitHub: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions . A full documentation of those messages can be found in the Integration Guide Part 2.
+
+More relevant message formats can be found in the resources List of this document.
+
+=== Resumable transfer for binary content
+
+image:ig1\image37.png[image,width=642,height=351]
+
+Figure 37 Transfer for Binary Content
+
+Regarding large data, endpoints need to implement a concept for chunked data transfer to ensure a resumable transfer of (binary) content. The endpoint is in charge of the segmentation, this is not done by the agrirouter. The agrirouter is in charge of the delivery and order of the messages.
+
+If the app instance intends to send binary content to its endpoint, the app instance segments the binary content into smaller chunks of a determined size of at maximum 1 MB. Afterwards the client envelopes these chunks into the agrirouter message protocol and sends those chunks each as a single message to the agrirouter. The client has to ensure that the binary relevant header information in the agrirouter message header is filled correctly. The agrirouter transports the messages without changing the content to the feed of the receiver and the client receives those chunks message by message and then can reassemble the binary content again.
+
+[IMPORTANT]
+====
+ * The segmentation of message does not apply to the telemetry related data as it is described in EFDI.
+
+ * The max chunk size is capped at 1MB. This size might be decreased during the project for performance reasons.
+====
+
+== Telemetry platform integrations
+
+To simplify and optimize the connection of telemetry platforms, there are several additional functionalities for such platforms. A telemetry platform can onboard virtual CUs itself, so that it is not necessary to enter a TAN in the terminal of a virtual CU
+
+=== Integration Concept
+
+image:ig1\image38.png[image,width=642,height=215]
+
+Figure 38 Telemetry platform Integration Concept Overview
+
+=== Device Onboarding
+
+A certified telemetry platform (having received a certificate by DKE) can onboard new virtual CUs in an automated way. The agrirouter provides a designated API for automated virtual CU onboarding.
+
+=== Virtual CU and Messaging
+
+Regarding messaging, there is no difference between a real-world CU and a virtual CU onboarded by a certified telemetry platform. The connecting telemetry platform has to implement the same communication pattern as it applies to all other endpoints categories.
+
+//TODO: Rework this part
+[IMPORTANT] 
+====
+There will be a trusted Relationship between the agrirouter and certified telemetry platform. The communication between the telemetry platform and the agrirouter can be realized using HTTP(S) based REST communication or MQTT messaging over a designated messaging component accepting both protocols. As mentioned before the payload has to be Google Protocol Buffer encoded, the communication pattern will be asynchronous most of the time.
+====
+
+=== Levels of the Cloud Solution
+
+image:ig1\image39.png[image,width=642,height=343]
+
+Figure 39 Comparing agrirouter hierarchy with a possible cloud platform hierarchy
