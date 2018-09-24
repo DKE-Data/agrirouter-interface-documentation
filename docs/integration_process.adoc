@@ -1,0 +1,23 @@
+= General agrirouter integration process
+
+== Terms and short description
+
+This chapter will introduce and declare multiple new terms. The following text gives a short overview of what you will learn in this chapter and how the terms connect to each other. After reading the whole chapter, the following sentences should make good sense to you.
+
+====
+
+[square]
+
+* Companies and developers can create software, that integrate an interface to the agrirouter.
+
+* This software is called application.
+
+* The short term for application is app.
+
+* The providers of applications are app providers.
+
+* Apps need to be certified to be onboarded to the agrirouter.
+
+====
+
+The new terms will be described in more detail in the following paragraphs.

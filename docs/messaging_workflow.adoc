@@ -1,0 +1,63 @@
+:imagesdir: ./../assets/images/
+
+= Application Interaction with agrirouter
+
+== Terms and short description
+
+This chapter will introduce and declare multiple new terms. The following text gives a short overview of what you will learn in this chapter and how the terms connect to each other. After reading the whole chapter, the following sentences should make good sense to you.
+
+====
+
+[square]
+
+* App Providers can use an authorization process, to assign endpoints and users of application instances.
+
+* Any App Instance has to perform onboarding to create an endpoint in an agrirouter account.
+
+* For onboarding, the app instance has to provide a TAN for assignment to the end users account.
+
+* The authorization process can be used to receive a TAN.
+
+* A TAN can alternatively be provided by the user interface of the agrirouter for CUs.
+
+* Telemetry Platforms can onboard their own Virtual CUs.
+
+* After onboarding, each app instance can communicate with its endpoint using REST or MQTT.
+
+* App instances using REST send requests and receive responses from their inbox or outbox.
+
+* App instances using MQTT send requests and receive responses from their inbox or outbox.
+
+* Using the desired protocol, App Instances send commands and messages to their inbox.
+
+* The response for a request to the inbox buffer will be the information, that the command or message is being processed.
+
+* App Instances using the REST protocol will have to poll for a result of this processing at the outbox.
+
+* App instances using the MQTT protocol will only receive the result without polling or confirmation.
+
+* The result of the reception of the command or message will be the response of the inbox.
+
+* Messages, that are no commands for the agrirouter will be forwarded to addressing and routing.
+
+* Commands will be processed by the agrirouter.
+
+* If a command has a result, this result will be placed in the outbox.
+
+* An app instance uses commands to call for information.
+
+* App Instances call for messages from their feed by sending a command to their inbox.
+
+* The agrirouter will than forward the desired messages from the endpoints feed to its outbox.
+
+* App Instances can call for a filtered header list of available messages.
+
+* A message containing a list of message headers will then be delivered to the outbox.
+
+* An app instance can call for a list of endpoints, that can receive a specific technical message format.
+
+* A list of endpoints will then be delivered to the outbox.
+
+====
+
+The new terms will be described in more detail in the following paragraphs.

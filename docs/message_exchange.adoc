@@ -1,0 +1,70 @@
+:imagesdir: ./../assets/images/
+
+= Concept of Message exchange
+
+[IMPORTANT]
+====
+This chapter only handles the message exchange on the agrirouter in a general way. This chapter does not handle network layers or TCP-IP protocols. The communication of an application with its endpoint at the agrirouter is described in 10 Application Interaction with agrirouter
+====
+
+== Terms and short description
+
+This chapter will introduce and declare multiple new terms. The following text gives a short overview of what you will learn in this chapter and how the terms are connected to each other. After reading the whole chapter, the following sentences should make good sense to you.
+
+====
+
+[square]
+
+* agrirouter provides an inbox, an outbox and a feed unique for every endpoint.
+
+* Message forwarding:
+
+** Every App Instance can send messages to its inbox at the agrirouter.
+
+** Each message has a technical message type(TMT) and a list of recipient addresses.
+
+** Instead of or in addition to the recipients list, a message can also be published.
+
+** If a message is published, agrirouter adds all endpoints to the recipients list, that are subscribed for this TMT.
+
+** agrirouter forwards the messages to the feed of all relevant endpoints.
+
+** Each Application Instance can subscribe its endpoint for technical message types within its account.
+
+* Routings:
+
+** Messages are only delivered, if there is a routing for that.
+
+** Routings are used to control the message flow and disallow wrong message flow.
+
+** Routings are created by the end user.
+
+** Each routing consists of a sender, a receiver and a list of information types and categories.
+
+** Information types are lists of technical message types, used to simplify the routings creation.
+
+** Categories are lists of DDIs, used to simplify the routings creation for telemetry data.
+
+** Categories are used to filter telemetry messages, only forwarding allowed Categories DDIs values.
+
+* Grouping:
+
+** For simplification, endpoints can be grouped into endpoint groups.
+
+** Endpoint groups are only relevant for routings creation in the user interface of an end user.
+
+* Inter-account communication:
+
+** The connected account of another user will be a single endpoint in the end users agrirouter account.
+
+** Endpoints within another connected users account are not directly addressable by an endpoint of the end users account.
+
+** Messages adressed to a connected account will be published within this connected account
+
+** Subscriptions from a connected account can be used as subscriptions for the endpoint representing this account.
+
+** For connected accounts, messages are only delivered, if routings are created in both users’ accounts.
+
+====
+
+The new terms will be described in more detail in the following paragraphs.
