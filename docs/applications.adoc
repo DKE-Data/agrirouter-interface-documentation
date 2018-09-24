@@ -1,0 +1,21 @@
+:imagesdir: ./../assets/images/
+
+= Applications
+
+== Terms and short description
+
+This chapter will introduce and declare multiple new terms. The following text gives a short overview of what you will learn in this chapter and how the terms connect to each other. After reading the whole chapter, the following sentences should make good sense to you.
+
+====
+
+[square]
+
+* Applications can be created to be connected to the agrirouter.
+
+* An application is a software product.
+
+* An application can be a communication unit, a telemetry platform or a farming software.
+
+====
+
+The new terms will be described in more detail in the following paragraphs.

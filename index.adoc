@@ -1,0 +1,40 @@
+= agrirouter Connectivity-Platform Interface Documentation
+:imagesdir: ./assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
+
+[WARNING]
+====
+This document is still work in progress. If you are looking for a full documentation, better look at 
+the link:\assets\documents\integration-guide-part-1.pdf[Integration Guide Part 1] or  link:\assets\documents\integration-guide-part-2.pdf[Integration Guide Part 2]
+====
+
+
+[abstract] 
+== Abstract
+image::agrirouter.svg[agrirouter]
+
+The agrirouter is a universal data exchange platform for farmers and agricultural contractors that makes it possible to connect machinery and agricultural software, regardless of vendor or manufacturer. Agrirouter does not save data; it transfers data.
+As a universal data exchange platform, agrirouter fills a gap on the way to Farming 4.0. Its underlying concept unites cross-vendor and discrimination-free data transfer. You retain full control over your data. Even data exchange with service providers (e.g. agricultural contractors) and other partners is uncomplicated: Data are very rapidly transferred via the online connection, and if you wish, is intelligently connected to other datasets.
+
+//General information on agrirouter
+include::docs/general.adoc[]
+
+//About accounts
+include::docs/accounts.adoc[]
+
+//About applications
+include::docs/applications.adoc[]
+
+//About the general integration process
+include::docs/integration_process.adoc[]
+
+//About the general concepts of message Exchange
+include::docs/message_exchange.adoc[]
+
+//About the general messaging workflow
+include::docs/messaging_workflow.adoc[]
+
+
