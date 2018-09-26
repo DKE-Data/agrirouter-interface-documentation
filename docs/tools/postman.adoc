@@ -1,0 +1,39 @@
+= REST using Postman
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
+:imagesdir: ./../../assets/images/
+
+
+== What is postman?
+
+Postman is a tool to send http requests and analyze results, usable for full test chains for online APIs. You can download postman here: https://www.getpostman.com/
+
+With this integration guide, a postman collection is delivered, including the endpoint definitions and abstractions for the different environments.
+
+== Check onboarding
+
+To do an onboarding request, open the Agrirouter: Application Registration/OnBoard/Onboarding Request
+
+Open the Pre-Request-Script and fill the variable field names
+
+image:ig2/image2.png[image,width=641,height=263]
+
+Figure 2 Using Postman for onBoarding
+
+== Adding a Certificate
+
+For an SSL Secured communication, add the certificate delivered with the onboarding request:
+
+1. Copy&paste ENCRYPTED PRIVATE KEY section to new file
+
+2. Replace all \n with new lines.
+
+3. Save both sections (ENCRYPTED PRIVATE KEY and CERTIFICATE) in separate files (e. g. DEVICE_MYEXTERNALID.key, DEVICE_MYEXTERNALID.crt)
+
+4. Provide both in Postman Settings / Certificates, including the passphrase provided in the onboarding response.
+
+image:ig2/image3.png[image,width=483,height=152]
+
+Figure 3 Adding the certificate in Postman
