@@ -64,4 +64,4 @@ For further communication, it's important to understand the link:/docs/endpoint.
 
 To send a message, it has to be built first. Read link:/docs/integration/buildmessage.adoc[here] about building messages.
 
-When link:/docs/integration/messageSending.adoc[sending messages], the result will be link:docs/integration/messageReceiving.adoc[received through the outbox] and can be link:./docs/integration/analysemessage.adoc[analyzed] depending on the link:/docs/tmt.adoc[technical message type] and the link:./docs/resultCodes.adoc[resultCodes].
+When link:/docs/integration/messageSending.adoc[sending messages], the result will be link:docs/integration/messageReceiving.adoc[received through the outbox] and can be link:./docs/integration/analyzeResult.adoc[analyzed] depending on the link:/docs/tmt/overview.adoc[technical message type] and the link:./docs/resultCodes.adoc[resultCodes].
