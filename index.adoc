@@ -58,7 +58,10 @@ There are several environments for test and production in different areas of the
 
 FarmingSoftware and Telemetry Platforms have to perform an link:docs/integration/authentication.adoc[Authentication Process] to clarify, that the account user is known. CUs may also perform it, but that is not required
 
-To communicate with the agrirouter, an application Instance needs to be link:docs/integration/onBoarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be link:integration/revoke.adoc[Revoked].
+To communicate with the agrirouter, an application Instance needs to be link:docs/integration/onBoarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be link:docs/integration/revoke.adoc[Revoked].
 
 For further communication, it's important to understand the link:/docs/endpoint.adoc[Elements of an endpoint] and the link:/docs/communication.adoc[Basics of Communication].
 
+To send a message, it has to be built first. Read link:/docs/integration/buildmessage.adoc[here] about building messages.
+
+When link:/docs/integration/messageSending.adoc[sending messages], the result will be link:docs/integration/messageReceiving.adoc[received through the outbox] and can be link:./docs/integration/analysemessage.adoc[analyzed] depending on the link:/docs/tmt.adoc[technical message type] and the link:./docs/resultCodes.adoc[resultCodes].

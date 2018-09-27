@@ -1,0 +1,29 @@
+= shp:shape:zip - Shape
+:imagesdir: ./../../assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
+
+== Definition
+
+This format is used to exchange application maps as a zip file.
+
+== Command
+
+[cols=",",]
+|======================
+|Command |shp:shape:zip
+|Protobuf Schema |-
+|TypeURL |“”
+|======================
+
+== Format
+
+The zip file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+
+The zip file must at least include the following files:
+
+* SHP: The main file including the geometry
+* SHX: The index file indexing the geometry features
+* DBF: The dBASE Table, including the attribute information of the features
