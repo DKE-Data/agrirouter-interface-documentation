@@ -1,0 +1,5 @@
+:imagesdir: ./../../assets/images/
+
+= Onboarding Application Instances
+
+NOTE: This chapter is not yet implemented

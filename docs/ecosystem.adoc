@@ -1,0 +1,12 @@
+:imagesdir: ./../assets/images/
+
+= agrirouter EcoSystem
+
+The agrirouter is a central data exchange platform, but to understand its full power, it’s important to understand, that the data provided from the agrirouter comes from the applications attached to the agrirouter. The following figure lists different Applications, that can be attached to one end user account.
+
+image:ig1\image10.png[image,width=642,height=321]
+
+Figure 10 The agrirouter ecosystem of members
+
+
+NOTE: This chapter is not yet fully implemented

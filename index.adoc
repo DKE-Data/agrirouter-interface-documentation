@@ -1,0 +1,229 @@
+= agrirouter Connectivity-Platform Interface Documentation
+:imagesdir: ./assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
+
+[WARNING]
+====
+This document is still work in progress. If you are looking for a full documentation, better look at 
+the link:\assets\documents\integration-guide-part-1.pdf[Integration Guide Part 1] or  link:\assets\documents\integration-guide-part-2.pdf[Integration Guide Part 2]
+====
+
+
+[abstract] 
+== Abstract
+image::agrirouter.svg[agrirouter]
+
+The agrirouter is a universal data exchange platform for farmers and agricultural contractors that makes it possible to connect machinery and agricultural software, regardless of vendor or manufacturer. Agrirouter does not save data; it transfers data.
+As a universal data exchange platform, agrirouter fills a gap on the way to Farming 4.0. Its underlying concept unites cross-vendor and discrimination-free data transfer. You retain full control over your data. Even data exchange with service providers (e.g. agricultural contractors) and other partners is uncomplicated: Data are very rapidly transferred via the online connection, and if you wish, is intelligently connected to other datasets.
+
+== agrirouter in a nutshell
+
+=== Terms and short descriptions
+
+This chapter will give you an overview of the used terms in the agrirouter documentation. Take a look at the linked chapters for further details.
+
+The following paragraphs give a short overview of what you will learn in the linked chapter and how the terms connect to each other. After reading the whole chapter, the following sentences should make good sense to you.
+
+=== General
+
+=====
+
+* agrirouter is a neutral data exchange platform.
+
+* The data exchange shall be performed between different software products of different manufacturers.
+
+* End users of agrirouter are participants of the agricultural process like farmers and contractors.
+
+=====
+
+//General information on agrirouter
+The whole chapter can be found link:docs/general.adoc[here]
+
+'''
+
+=== Accounts
+
+
+====
+
+* agrirouter can handle multiple users.
+
+* A user can create an account at the agrirouter.
+
+* One account is meant to represent one company, e.g. a farm or a contractor.
+
+* The users of the agrirouter create end user accounts.
+
+* Application providers need a Developer Account.
+
+====
+
+//About accounts
+The whole chapter can be found link:docs/accounts.adoc[here]
+
+'''
+
+=== Applications
+
+====
+
+* Applications can be created to be connected to the agrirouter.
+
+* An application is a software product.
+
+* An application can be a communication unit, a telemetry platform or a farming software.
+
+* Companies and developers can create software, that integrate an interface to the agrirouter.
+
+* This software is called application.
+
+* The short term for application is app.
+
+* The providers of applications are app providers.
+
+* Users can onboard application instances of an application to their account.
+
+* These onboarded application can than communicate with apps within this agrirouter account.
+
+* Apps need to be certified to be onboarded to the agrirouter.
+
+====
+
+//TODO: One of the files can be removed here
+//About the general integration process
+//The whole chapter can be found link:docs/integration_process.adoc[here]
+
+//About applications
+The whole chapter can be found link:docs/applications.adoc[here]
+
+'''
+
+=== Concept of message exchange
+
+
+
+====
+
+
+**General:**
+
+* application instances communicate with their corresponding endpoint at the agrirouter.
+
+* agrirouter provides an inbox, an outbox and a feed unique for each endpoint.
+
+**Message forwarding:**
+
+* Every App Instance can send messages to its inbox at the agrirouter.
+
+* Each message has a technical message type(TMT) and a list of recipient addresses.
+
+* Instead of or in addition to the recipients list, a message can also be published.
+
+* If a message is published, agrirouter adds all endpoints to the recipients list, that are subscribed for this TMT.
+
+* agrirouter forwards the messages to the feed of all relevant endpoints.
+
+* Each Application Instance can subscribe its endpoint for technical message types within its account.
+
+**Routings:**
+
+* Messages are only delivered, if there is a routing for that.
+
+* Routings are used to control the message flow and disallow wrong message flow.
+
+* Routings are created by the end user.
+
+* Each routing consists of a sender, a receiver and a list of information types and categories.
+
+* Information types are lists of technical message types, used to simplify the routings creation.
+
+* Categories are lists of DDIs, used to simplify the routings creation for telemetry data.
+
+* Categories are used to filter telemetry messages, only forwarding allowed Categories DDIs values.
+
+**Grouping:**
+
+* For simplification, endpoints can be grouped into endpoint groups.
+
+* Endpoint groups are only relevant for routings creation in the user interface of an end user.
+
+**Inter-account communication:**
+
+* The connected account of another user will be a single endpoint in the end users agrirouter account.
+
+* Endpoints within another connected users account are not directly addressable by an endpoint of the end users account.
+
+* Messages adressed to a connected account will be published within this connected account
+
+* Subscriptions from a connected account can be used as subscriptions for the endpoint representing this account.
+
+* For connected accounts, messages are only delivered, if routings are created in both users’ accounts.
+
+====
+
+//About the general concepts of message Exchange
+The whole chapter can be found link:docs/message_exchange.adoc[here]
+
+'''
+
+=== Messaging Workflow
+
+* App Providers can use an authorization process, to assign endpoints and users of application instances.
+
+* Any App Instance has to perform onboarding to create an endpoint in an agrirouter account.
+
+* For onboarding, the app instance has to provide a TAN for assignment to the end users account.
+
+* The authorization process can be used to receive a TAN.
+
+* A TAN can alternatively be provided by the user interface of the agrirouter for CUs.
+
+* Telemetry Platforms can onboard their own Virtual CUs.
+
+* After onboarding, each app instance can communicate with its endpoint using REST or MQTT.
+
+* App instances using REST send requests and receive responses from their inbox or outbox.
+
+* App instances using MQTT send requests and receive responses from their inbox or outbox.
+
+* Using the desired protocol, App Instances send commands and messages to their inbox.
+
+* The response for a request to the inbox buffer will be the information, that the command or message is being processed.
+
+* App Instances using the REST protocol will have to poll for a result of this processing at the outbox.
+
+* App instances using the MQTT protocol will only receive the result without polling or confirmation.
+
+* The result of the reception of the command or message will be the response of the inbox.
+
+* Messages, that are no commands for the agrirouter will be forwarded to addressing and routing.
+
+* Commands will be processed by the agrirouter.
+
+* If a command has a result, this result will be placed in the outbox.
+
+* An app instance uses commands to call for information.
+
+* App Instances call for messages from their feed by sending a command to their inbox.
+
+* The agrirouter will than forward the desired messages from the endpoints feed to its outbox.
+
+* App Instances can call for a filtered header list of available messages.
+
+* A message containing a list of message headers will then be delivered to the outbox.
+
+* An app instance can call for a list of endpoints, that can receive a specific technical message format.
+
+* A list of endpoints will then be delivered to the outbox.
+
+
+//About the general messaging workflow
+The whole chapter can be found link:docs/messaging_workflow.adoc[here]
+
+
+'''
+
+

@@ -1,0 +1,5 @@
+:imagesdir: ./../assets/images/
+
+= Applications
+
+NOTE: This chapter is not yet implemented

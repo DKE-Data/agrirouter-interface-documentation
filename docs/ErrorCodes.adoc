@@ -1,3 +1,5 @@
+:imagesdir: ./../assets/images/
+
 = Global Message Codes
 The below listing of messages are those which will be used as output within the ACK* messages pushed to connected endpoints of the AgriRouter.
 

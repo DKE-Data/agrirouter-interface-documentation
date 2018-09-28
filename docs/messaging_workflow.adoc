@@ -1,0 +1,6 @@
+:imagesdir: ./../assets/images/
+
+= Application Interaction with agrirouter
+
+NOTE: This chapter is not yet implemented
+
