@@ -85,7 +85,7 @@ If the message was malformed, an ACK_WITH_FAILURE will be returned. If the same 
 //TODO: Make this real Source Code
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image44.png" width="608px" height="396px">
+ <img src="./../assets/images/ig2/image44.png" width="608px" height="396px">
 </p>
 ++++
 
@@ -175,7 +175,7 @@ Errors will be reported using ACK_WITH_FAILURE. For a list of possible errors, s
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image45.png" width="438px" height="174px">
+ <img src="./../assets/images/ig2/image45.png" width="438px" height="174px">
 </p>
 ++++
 

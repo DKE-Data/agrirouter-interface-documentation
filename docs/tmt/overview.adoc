@@ -13,7 +13,7 @@ The possible technical message types can be found in the agrirouter UI when crea
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image47.png" width="642px" height="380px">
+ <img src="./../../assets/images/ig2/image47.png" width="642px" height="380px">
 </p>
 ++++
 

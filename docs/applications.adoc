@@ -58,7 +58,7 @@ To maximize the quality of the agrirouter ecosystem, there are several requireme
 
 ++++
 <p align="center">
-<img src="./assets/images/ig1\image4.png" [image,width=642px" height="254px">
+<img src="./../assets/images/ig1\image4.png" [image,width=642px" height="254px">
 </p>
 ++++
 
@@ -87,7 +87,7 @@ After creating an agrirouter developer account in quality assurance environment,
 
 ++++
 <p align="center">
-<img src="./assets/images/ig1\image5.png" width="642px" height="364px">
+<img src="./../assets/images/ig1\image5.png" width="642px" height="364px">
 </p>
 ++++
 
@@ -100,7 +100,7 @@ It’s not always obvious, to which category a new application belongs. To simpl
 
 ++++
 <p align="center">
-<img src="./assets/images/ig1\image6.png" width="619px" height="366px">
+<img src="./../assets/images/ig1\image6.png" width="619px" height="366px">
 </p>
 ++++
 
@@ -155,7 +155,7 @@ All required steps are available in Endpoint Software Management (see Figure 11 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image7.png" width="467px" height="513px">
+ <img src="./../assets/images/ig1\image7.png" width="467px" height="513px">
 </p>
 ++++
 
@@ -168,7 +168,7 @@ After submitting, DKE will receive a notification and set the status to _Approve
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image8.png" width="391px" height="126px">
+ <img src="./../assets/images/ig1\image8.png" width="391px" height="126px">
 </p>
 ++++
 
@@ -193,7 +193,7 @@ The certification process allows the agrirouter to check the state of the applic
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image9.png" width="469px" height="172px">
+ <img src="./../assets/images/ig1\image9.png" width="469px" height="172px">
 </p>
 ++++
 

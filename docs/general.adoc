@@ -8,7 +8,7 @@ The agrirouter is a cloud solution, that allows farmers and contractors to trans
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image1.jpeg[width=642px" height="361px">
+ <img src="./../assets/images/ig1\image1.jpeg[width=642px" height="361px">
 </p>
 ++++
 

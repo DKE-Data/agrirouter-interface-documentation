@@ -8,7 +8,7 @@
 == Abstract
 ++++
 <p align="center">
- <img src="./assets/images/:agrirouter.svg[agrirouterpx">
+ <img src="./../assets/images/:agrirouter.svg[agrirouterpx">
 </p>
 ++++
 

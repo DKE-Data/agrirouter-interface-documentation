@@ -11,7 +11,7 @@ Every agrirouter account includes a functionality to record communication on tha
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image41.png" width="407px" height="213px">
+ <img src="./../assets/images/ig1\image41.png" width="407px" height="213px">
 </p>
 ++++
 
@@ -20,7 +20,7 @@ Figure 41 Endpoint Recording main view
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image42.png" width="565px" height="89px">
+ <img src="./../assets/images/ig1\image42.png" width="565px" height="89px">
 </p>
 ++++
 
@@ -29,7 +29,7 @@ Figure 42 Endpoint Recording Overview
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image43.png" width="204px" height="210px">
+ <img src="./../assets/images/ig1\image43.png" width="204px" height="210px">
 </p>
 ++++
 
@@ -40,7 +40,7 @@ After recording started, the recording is displayed in the list of active record
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image44.png" width="647px" height="120px">
+ <img src="./../../assets/images/ig1\image44.png" width="647px" height="120px">
 </p>
 ++++
 
@@ -60,7 +60,7 @@ In a developer account, records can be uploaded (1) additionally to the recordin
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image45.png" width="640px" height="104px">
+ <img src="./../../assets/images/ig1\image45.png" width="640px" height="104px">
 </p>
 ++++
 

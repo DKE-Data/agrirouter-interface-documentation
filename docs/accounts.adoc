@@ -21,7 +21,7 @@ The user interface offers possibilities to handle the account:
 
 ++++
 <p align="center">
-<img src="./assets/images/ig1\image2.png" width="456px" height="663px">
+<img src="./../assets/images/ig1\image2.png" width="456px" height="663px">
 </p>
 ++++
 
@@ -51,7 +51,7 @@ Additionally, developers can manage their own applications:
 
 ++++
 <p align="center">
-<img src="./assets/images/ig1\image3.png" width="473px" height="615px">
+<img src="./../assets/images/ig1\image3.png" width="473px" height="615px">
 </p>
 ++++
 

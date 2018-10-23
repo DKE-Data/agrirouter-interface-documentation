@@ -25,7 +25,7 @@ Format the certificate:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image4.png" width="642px" height="42px">
+ <img src="./../../assets/images/ig2/image4.png" width="642px" height="42px">
 </p>
 ++++
 
@@ -36,7 +36,7 @@ To setup the certificate, open the connecton options and enable SSL. Then add th
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image5.png" width="520px" height="321px">
+ <img src="./../../assets/images/ig2/image5.png" width="520px" height="321px">
 </p>
 ++++
 
@@ -47,14 +47,14 @@ Further information: https://help.sap.com/viewer/e765b2a5b99540ce84da397c20cc199
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image6.png" width="315px" height="139px">
+ <img src="./../../assets/images/ig2/image6.png" width="315px" height="139px">
 </p>
 ++++
 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image7.png" width="205px" height="144px">
+ <img src="./../../assets/images/ig2/image7.png" width="205px" height="144px">
 </p>
 ++++
 
@@ -63,7 +63,7 @@ Further information: https://help.sap.com/viewer/e765b2a5b99540ce84da397c20cc199
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image8.png" width="678px" height="356px">
+ <img src="./../../assets/images/ig2/image8.png" width="678px" height="356px">
 </p>
 ++++
 

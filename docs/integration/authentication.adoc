@@ -37,7 +37,7 @@ In the developers UI, he has to:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image10.png" width="636px" height="361px">
+ <img src="./../../assets/images/ig2/image10.png" width="636px" height="361px">
 </p>
 ++++
 
@@ -46,7 +46,7 @@ Figure 5 Application overview
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image11.png" width="362px" height="350px">
+ <img src="./../../assets/images/ig2/image11.png" width="362px" height="350px">
 </p>
 ++++
 
@@ -61,7 +61,7 @@ Simply check Tracert/TraceRoute:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image12.png" width="466px" height="181px">
+ <img src="./../../assets/images/ig2/image12.png" width="466px" height="181px">
 </p>
 ++++
 
@@ -75,7 +75,7 @@ The authentication process works as follows:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image13.png" width="619px" height="376px">
+ <img src="./../../assets/images/ig2/image13.png" width="619px" height="376px">
 </p>
 ++++
 
@@ -156,7 +156,7 @@ When the user clicks on the link, the agrirouter website is called. If the user 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image14.png" width="252px" height="202px">
+ <img src="./../../assets/images/ig2/image14.png" width="252px" height="202px">
 </p>
 ++++
 
@@ -182,7 +182,7 @@ The following parameters will be delivered in the GET-Queue:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image15.png" width="542px" height="265px">
+ <img src="./../../assets/images/ig2/image15.png" width="542px" height="265px">
 </p>
 ++++
 
@@ -247,7 +247,7 @@ To perform authentication for software, that is not provided as a cloud solution
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image16.png" width="640px" height="155px">
+ <img src="./../../assets/images/ig2/image16.png" width="640px" height="155px">
 </p>
 ++++
 

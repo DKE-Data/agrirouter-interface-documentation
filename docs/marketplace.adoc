@@ -16,7 +16,7 @@ After certification process is done, application or hardware provider can create
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image47.png" width="642px" height="470px">
+ <img src="./../assets/images/ig1\image47.png" width="642px" height="470px">
 </p>
 ++++
 

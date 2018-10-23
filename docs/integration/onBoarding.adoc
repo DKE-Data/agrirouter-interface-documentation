@@ -12,7 +12,7 @@ The onboarding workflow is needed to onboard app instances and create endpoints 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image17.png" width="568px" height="599px">
+ <img src="./../assets/images/ig2/image17.png" width="568px" height="599px">
 </p>
 ++++
 
@@ -25,7 +25,7 @@ Telemetry systems and Farming Software need to assign their own userID to the ac
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image18.png" width="627px" height="551px">
+ <img src="./../assets/images/ig2/image18.png" width="627px" height="551px">
 </p>
 ++++
 
@@ -36,7 +36,7 @@ Figure 13 onboarding Workflow for a farming software or telemetry platform
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image19.png" width="627px" height="311px">
+ <img src="./../assets/images/ig2/image19.png" width="627px" height="311px">
 </p>
 ++++
 
@@ -71,7 +71,7 @@ The Registration code for a new CU can be created by the end user clicking “Ge
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image20.png" width="642px" height="368px">
+ <img src="./../assets/images/ig2/image20.png" width="642px" height="368px">
 </p>
 ++++
 
@@ -80,7 +80,7 @@ Figure 15 Requesting a registration code in agrirouter UI
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image21.png" width="291px" height="164px">
+ <img src="./../assets/images/ig2/image21.png" width="291px" height="164px">
 </p>
 ++++
 
@@ -106,7 +106,7 @@ Both IDs are the same, they can be found in the agrirouter software endpoint UI 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image22.png" width="455px" height="258px">
+ <img src="./../../assets/images/ig2/image22.png" width="455px" height="258px">
 </p>
 ++++
 
@@ -119,7 +119,7 @@ The CertificationVersionID is the ID unique to this specific app certification p
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image23.png" width="519px" height="294px">
+ <img src="./../../assets/images/ig2/image23.png" width="519px" height="294px">
 </p>
 ++++
 
@@ -137,7 +137,7 @@ As the requests need to be signed (see 8.8Signing requests), the public key has 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image24.png" width="409px" height="400px">
+ <img src="./../../assets/images/ig2/image24.png" width="409px" height="400px">
 </p>
 ++++
 

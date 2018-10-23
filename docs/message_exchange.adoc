@@ -27,7 +27,7 @@ The following graph shows the way of a message through the agrirouter:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image13.png" width="634px" height="314px">
+ <img src="./../assets/images/ig1\image13.png" width="634px" height="314px">
 </p>
 ++++
 
@@ -49,7 +49,7 @@ As a machine has its own endpoint in the agrirouter account, it is possible to a
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image14.png" width="648px" height="323px">
+ <img src="./../assets/images/ig1\image14.png" width="648px" height="323px">
 </p>
 ++++
 
@@ -75,7 +75,7 @@ Every registered endpoint can request the list of messages available in his feed
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image15.png" width="611px" height="285px">
+ <img src="./../assets/images/ig1\image15.png" width="611px" height="285px">
 </p>
 ++++
 
@@ -196,7 +196,7 @@ The steps for this – in general – are:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image16.png" width="619px" height="236px">
+ <img src="./../assets/images/ig1\image16.png" width="619px" height="236px">
 </p>
 ++++
 
@@ -211,7 +211,7 @@ A message, that is addressed to this endpoint will be published in the connected
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image17.png" width="630px" height="311px">
+ <img src="./../assets/images/ig1\image17.png" width="630px" height="311px">
 </p>
 ++++
 
@@ -249,7 +249,7 @@ A routing consists of:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image18.png" width="636px" height="410px">
+ <img src="./../assets/images/ig1\image18.png" width="636px" height="410px">
 </p>
 ++++
 
@@ -272,7 +272,7 @@ Routings are created by the end user in his agrirouter account.
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image19.png" width="642px" height="405px">
+ <img src="./../assets/images/ig1\image19.png" width="642px" height="405px">
 </p>
 ++++
 
@@ -335,7 +335,7 @@ EFDI Time Logs are as well comparable to ISO11783 TimeLogs.
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image20.png" width="631px" height="344px">
+ <img src="./../assets/images/ig1\image20.png" width="631px" height="344px">
 </p>
 ++++
 

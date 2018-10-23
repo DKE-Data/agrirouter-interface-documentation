@@ -36,7 +36,7 @@ With except to the EFDI telemetry messages (DeviceDescription and live data), ag
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image31.png" width="543px" height="313px">
+ <img src="./../assets/images/ig2/image31.png" width="543px" height="313px">
 </p>
 ++++
 
@@ -54,7 +54,7 @@ The life telemetry data is analysed, so that a filtering for value categories li
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image32.png" width="644px" height="371px">
+ <img src="./../assets/images/ig2/image32.png" width="644px" height="371px">
 </p>
 ++++
 
@@ -88,7 +88,7 @@ Using REST, an app instance just receives a HTTP 200 “OK” Response. The App 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image33.png" width="631px" height="212px">
+ <img src="./../assets/images/ig2/image33.png" width="631px" height="212px">
 </p>
 ++++
 
@@ -101,7 +101,7 @@ Using REST, the communication with the Outbox requires polling:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image34.png" width="613px" height="145px">
+ <img src="./../assets/images/ig2/image34.png" width="613px" height="145px">
 </p>
 ++++
 
@@ -124,7 +124,7 @@ Using MQTT, the app instance will publish the request and after a while, the agr
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image35.png" width="618px" height="153px">
+ <img src="./../assets/images/ig2/image35.png" width="618px" height="153px">
 </p>
 ++++
 
@@ -135,7 +135,7 @@ Figure 30 Request and Response using MQTT
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image36.png" width="633px" height="151px">
+ <img src="./../assets/images/ig2/image36.png" width="633px" height="151px">
 </p>
 ++++
 
@@ -166,7 +166,7 @@ To avoid graphs with too many arrows, we simplifiy the upcoming requests, abstra
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image37.png" width="637px" height="99px">
+ <img src="./../assets/images/ig2/image37.png" width="637px" height="99px">
 </p>
 ++++
 
@@ -177,7 +177,7 @@ Figure 32 Abstraction of a Call or Message Sending to the Inbox
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image38.png" width="628px" height="87px">
+ <img src="./../assets/images/ig2/image38.png" width="628px" height="87px">
 </p>
 ++++
 
@@ -210,7 +210,7 @@ Sending messages to the agrirouter creates an ACK-Message in the outbox of the a
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image39.png" width="512px" height="210px">
+ <img src="./../assets/images/ig2/image39.png" width="512px" height="210px">
 </p>
 ++++
 
@@ -221,7 +221,7 @@ Figure 34 Send Message or Command to agrirouter
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image40.png" width="482px" height="290px">
+ <img src="./../assets/images/ig2/image40.png" width="482px" height="290px">
 </p>
 ++++
 
@@ -234,7 +234,7 @@ If the command is a feed command requesting messages from the feed, the app inst
 
 ++++
 <p align="center">
- <img src="./assets/images/ig2/image41.png" width="575px" height="348px">
+ <img src="./../assets/images/ig2/image41.png" width="575px" height="348px">
 </p>
 ++++
 

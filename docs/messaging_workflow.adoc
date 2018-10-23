@@ -12,7 +12,7 @@ A communication with agrirouter requires several, partly parallel actions to tak
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image22.png" width="609px" height="726px">
+ <img src="./../assets/images/ig1\image22.png" width="609px" height="726px">
 </p>
 ++++
 
@@ -42,7 +42,7 @@ This chapter gives an overview about the endpoints including their base requirem
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image23.png" width="626px" height="451px">
+ <img src="./../assets/images/ig1\image23.png" width="626px" height="451px">
 </p>
 ++++
 
@@ -71,7 +71,7 @@ The authorization process works as follows:
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image24.png" width="586px" height="355px">
+ <img src="./../assets/images/ig1\image24.png" width="586px" height="355px">
 </p>
 ++++
 
@@ -108,7 +108,7 @@ When the user clicks on the link, the agrirouter website is called. If the user 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image25.png" width="315px" height="252px">
+ <img src="./../assets/images/ig1\image25.png" width="315px" height="252px">
 </p>
 ++++
 
@@ -121,7 +121,7 @@ agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image26.png" width="498px" height="244px">
+ <img src="./../assets/images/ig1\image26.png" width="498px" height="244px">
 </p>
 ++++
 
@@ -136,7 +136,7 @@ To perform authorization for software, that is not provided as a cloud solution,
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image27.png" width="624px" height="165px">
+ <img src="./../assets/images/ig1\image27.png" width="624px" height="165px">
 </p>
 ++++
 
@@ -154,7 +154,7 @@ This process will be described more precisely in Integration Guide Part 2.
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image28.png" width="598px" height="197px">
+ <img src="./../assets/images/ig1\image28.png" width="598px" height="197px">
 </p>
 ++++
 
@@ -165,7 +165,7 @@ Figure 28 Process of simple CU onboarding
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image29.png" width="503px" height="316px">
+ <img src="./../assets/images/ig1\image29.png" width="503px" height="316px">
 </p>
 ++++
 
@@ -176,7 +176,7 @@ Figure 29 General workflow for onboarding with user interaction and authorizatio
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image30.png" width="538px" height="477px">
+ <img src="./../assets/images/ig1\image30.png" width="538px" height="477px">
 </p>
 ++++
 
@@ -191,7 +191,7 @@ The TAN for a new CU can be created by the end user clicking “Generate TAN”(
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image31.png" width="453px" height="254px">
+ <img src="./../assets/images/ig1\image31.png" width="453px" height="254px">
 </p>
 ++++
 
@@ -200,7 +200,7 @@ Figure 31 Requesting a registration code in agrirouter UI
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image32.png" width="292px" height="164px">
+ <img src="./../assets/images/ig1\image32.png" width="292px" height="164px">
 </p>
 ++++
 
@@ -254,7 +254,7 @@ With except to the EFDI telemetry messages (DeviceDescription and timelogs), agr
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image33.png" width="621px" height="358px">
+ <img src="./../assets/images/ig1\image33.png" width="621px" height="358px">
 </p>
 ++++
 
@@ -272,7 +272,7 @@ The timelog telemetry data is analyzed, so that a filtering for value categories
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image34.png" width="630px" height="363px">
+ <img src="./../assets/images/ig1\image34.png" width="630px" height="363px">
 </p>
 ++++
 
@@ -285,7 +285,7 @@ An endpoint can send messages to other endpoints via the agrirouter. Therefore, 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image35.png" width="622px" height="347px">
+ <img src="./../assets/images/ig1\image35.png" width="622px" height="347px">
 </p>
 ++++
 
@@ -305,7 +305,7 @@ agrirouter stores messages of an endpoint in its feed. This feed is part of the 
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image36.png" width="623px" height="268px">
+ <img src="./../assets/images/ig1\image36.png" width="623px" height="268px">
 </p>
 ++++
 
@@ -326,7 +326,7 @@ More relevant message formats can be found in the resources List of this documen
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image37.png" width="642px" height="351px">
+ <img src="./../assets/images/ig1\image37.png" width="642px" height="351px">
 </p>
 ++++
 
@@ -352,7 +352,7 @@ To simplify and optimize the connection of telemetry platforms, there are severa
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image38.png" width="642px" height="215px">
+ <img src="./../assets/images/ig1\image38.png" width="642px" height="215px">
 </p>
 ++++
 
@@ -377,7 +377,7 @@ There will be a trusted Relationship between the agrirouter and certified teleme
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image39.png" width="642px" height="343px">
+ <img src="./../assets/images/ig1\image39.png" width="642px" height="343px">
 </p>
 ++++
 
