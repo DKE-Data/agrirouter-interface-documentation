@@ -11,7 +11,12 @@ The endpoint can be seen as the interface between agrirouter and an App Instance
 
 On the other side, it is part of the agrirouter and forwards messages to routing and addressing, receives addressed messages and can handle the subscribtions.
 
-image:ig2/image26.png[image,width=623,height=268,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image26.png" width="623px" height="268px">
+</p>
+++++
+
 
 Figure 21 Architecture of an endpoint
 
@@ -27,7 +32,12 @@ The inbox is used to receive messages or commands from an app instance.
 
 The address of this inbox is delivered with the Response of the onboarding request as “measures”.
 
-image:ig2/image27.png[image,width=637,height=274,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image27.png" width="637px" height="274px">
+</p>
+++++
+
 
 Figure 22 Inbox within an agrirouter endpoint
 
@@ -42,7 +52,12 @@ The outbox is used to deliver messages to an app instance.
 
 The address of this outbox is delivered with the Response of the onboarding request as “commands”.
 
-image:ig2/image28.png[image,width=632,height=271,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image28.png" width="632px" height="271px">
+</p>
+++++
+
 
 Figure 23 Outbox within an agrirouter endpoint
 
@@ -55,7 +70,12 @@ In terms of agrirouter onboarding result, the outbox is called comands due to th
 
 The feed receives all messages from the agrirouter due to addressing of messages and subscribtions of the endpoint, given there is a routing for that. Messages in the feed are stored for a maximum of 4 weeks, before the are deleted. The user will get informant about that, if there are messages, that were not delivered for 3 weeks or more. An app instance can either request the messages to be forwarded to its outbox or request to delete the messages. If it requests the forwarding to the outbox, the messages are only deleted from the feed, when the app instance confirms having received those messages.
 
-image:ig2/image29.png[image,width=627,height=269,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image29.png" width="627px" height="269px">
+</p>
+++++
+
 
 Figure 24 The feed within an agrirouter endpoint
 
@@ -63,6 +83,11 @@ Figure 24 The feed within an agrirouter endpoint
 
 The subscription list includes a list of all Message Types and DDIs, the endpoint is subscribed for. Whenever a message is published on the agrirouter account, this will lead to putting a copy of this message into the feed, given, there is a route for that.
 
-image:ig2/image30.png[image,width=585,height=251,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image30.png" width="585px" height="251px">
+</p>
+++++
+
 
 Figure 25 Subscribtion List within an agrirouter endpoint

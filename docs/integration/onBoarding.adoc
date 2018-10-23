@@ -10,7 +10,12 @@
 
 The onboarding workflow is needed to onboard app instances and create endpoints in the agrirouter. The result of the onboarding process has to be stored.
 
-image:ig2/image17.png[image,width=568,height=599,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image17.png" width="568px" height="599px">
+</p>
+++++
+
 
 Figure 12 General onboarding workflow
 
@@ -18,13 +23,23 @@ Figure 12 General onboarding workflow
 
 Telemetry systems and Farming Software need to assign their own userID to the accountID of the user at the agrirouter. Therefore, a verification should be performed before onboarding.
 
-image:ig2/image18.png[image,width=627,height=551,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image18.png" width="627px" height="551px">
+</p>
+++++
+
 
 Figure 13 onboarding Workflow for a farming software or telemetry platform
 
 == Workflow for CUs
 
-image:ig2/image19.png[image,width=627,height=311,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image19.png" width="627px" height="311px">
+</p>
+++++
+
 
 Figure 14 Agrirouter onboarding process for a CU
 
@@ -54,11 +69,21 @@ From the end user’s perspective, it is mostly dependend on the telemetry platf
 
 The Registration code for a new CU can be created by the end user clicking “Generate TAN” in agrirouters’ control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers . A CU needs an interface to input this registration code.
 
-image:ig2/image20.png[image,width=642,height=368,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image20.png" width="642px" height="368px">
+</p>
+++++
+
 
 Figure 15 Requesting a registration code in agrirouter UI
 
-image:ig2/image21.PNG[image,width=291,height=164,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image21.png" width="291px" height="164px">
+</p>
+++++
+
 
 Figure 16 Registration code for a CU
 
@@ -79,7 +104,12 @@ The onboarding request requires several different information:
 
 Both IDs are the same, they can be found in the agrirouter software endpoint UI of the developers account:
 
-image:ig2/image22.png[image,width=455,height=258,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image22.png" width="455px" height="258px">
+</p>
+++++
+
 
 Figure 17 Finding the applicationID
 
@@ -87,7 +117,12 @@ Figure 17 Finding the applicationID
 
 The CertificationVersionID is the ID unique to this specific app certification process. It can be found when clicking on the required Endpoint Software Version:
 
-image:ig2/image23.PNG[image,width=519,height=294,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image23.png" width="519px" height="294px">
+</p>
+++++
+
 
 Figure 18 Finding the certificationVersionID
 
@@ -100,7 +135,12 @@ This step is not required for CUs
 
 As the requests need to be signed (see 8.8Signing requests), the public key has to be stored within the agrirouter. This can be done, calling “Edit” on the Endpoint Software Management Screen (see Figure 17 Finding the applicationID ). The agrirouter UI offers the possibility to create a key pair, you can however create your own one and just store the public key on agrirouter.
 
-image:ig2/image24.PNG[image,width=409,height=400,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image24.png" width="409px" height="400px">
+</p>
+++++
+
 
 Figure 19 Generating Private and Public Key in the agrirouter UI
 

@@ -12,7 +12,12 @@ NOTE: This chapter is not yet fully implemented
 The agrirouter is a central data exchange platform, but to understand its full power, it’s important to understand, that the data provided from the agrirouter comes from the applications attached to the agrirouter. The following figure lists different Applications, that can be attached to one end user account.
 
 
-image:ig1\image10.png[image,width=642,height=321,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image10.png" width="642px" height="321px">
+</p>
+++++
+
 
 Figure 10 The agrirouter ecosystem of members
 
@@ -34,7 +39,12 @@ The address of an endpoint ( in this case the "__deviceAlternateId__") is used b
 
 It is possible to connect 2 agrirouter accounts with each other using the email address of the end users and setting up a connection using the graphical user interface of agrirouter. Each connected agrirouter account gets its own endpoint in the partners agrirouter account and vice versa.
 
-image:ig1\image12.PNG[image,width=642,height=354,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image12.png" width="642px" height="354px">
+</p>
+++++
+
 
 Figure 12 List of paired accounts
 

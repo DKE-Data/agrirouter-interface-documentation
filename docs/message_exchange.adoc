@@ -25,7 +25,12 @@ In general, there are 3 steps:
 
 The following graph shows the way of a message through the agrirouter:
 
-image:ig1\image13.png[image,width=634,height=314,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image13.png" width="634px" height="314px">
+</p>
+++++
+
 
 Figure 13 Way of a message through agrirouter
 
@@ -42,7 +47,12 @@ Messages can be directly addressed to one or more endpoints. They can also be pu
 
 As a machine has its own endpoint in the agrirouter account, it is possible to address messages to a machine.
 
-image:ig1\image14.png[image,width=648,height=323,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image14.png" width="648px" height="323px">
+</p>
+++++
+
 
 Figure 14 Message addressing to multiple endpoints; simplified
 
@@ -63,7 +73,12 @@ All messages in agrirouter Connectivity-Platform have a retention time of maximu
 
 Every registered endpoint can request the list of messages available in his feed and request specific messages. agrirouter forwards those requested messages to the outbox, delivery to the endpoint depends on the protocol.
 
-image:ig1\image15.png[image,width=611,height=285,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image15.png" width="611px" height="285px">
+</p>
+++++
+
 
 Figure 15 In- and outbox of an agrirouter endpoint; simplified
 
@@ -179,7 +194,12 @@ The steps for this – in general – are:
 
 ====
 
-image:ig1\image16.png[image,width=619,height=236,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image16.png" width="619px" height="236px">
+</p>
+++++
+
 
 Figure 16 Subscribing for a message; simplified
 
@@ -189,7 +209,12 @@ Messages can be sent to other users’ accounts, if this users account is connec
 
 A message, that is addressed to this endpoint will be published in the connected account. An app instance, that wants to receive messages from a different account has to subscribe its endpoint to the desired technical message type. The process is visible in the following graph:
 
-image:ig1\image17.png[image,width=630,height=311,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image17.png" width="630px" height="311px">
+</p>
+++++
+
 
 Figure 17 Sending messages into another account
 
@@ -222,7 +247,12 @@ A routing consists of:
 * Information Type as abstraction of technical message types
 * Receiver
 
-image:ig1\image18.png[image,width=636,height=410,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image18.png" width="636px" height="410px">
+</p>
+++++
+
 
 Figure 18 Message addressing and routing through the agrirouter
 
@@ -240,7 +270,12 @@ Figure 18 Message addressing and routing through the agrirouter
 
 Routings are created by the end user in his agrirouter account.
 
-image:ig1\image19.png[image,width=642,height=405,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image19.png" width="642px" height="405px">
+</p>
+++++
+
 
 Figure 19 Graphical user interface for message routing
 
@@ -298,7 +333,12 @@ The Message iso:11783:-10:time_log:protobuf includes a list of live telemetry da
 
 EFDI Time Logs are as well comparable to ISO11783 TimeLogs.
 
-image:ig1\image20.png[image,width=631,height=344,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image20.png" width="631px" height="344px">
+</p>
+++++
+
 
 Figure 20 Message delivery due to routings, subscription and public address
 

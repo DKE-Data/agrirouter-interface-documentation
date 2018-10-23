@@ -92,7 +92,12 @@ The whole chapter can be found link:docs/applications.adoc[here]
 == EcoSystem of agrirouter
 
 
-image:ig1\image11.png[image,width=634,height=400,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image11.png" width="634px" height="400px">
+</p>
+++++
+
 
 
 

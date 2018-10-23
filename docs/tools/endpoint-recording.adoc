@@ -9,21 +9,41 @@
 
 Every agrirouter account includes a functionality to record communication on that account and specific for every endpoint. To record data, the user can start and stop the recorder in the agrirouter UI.
 
-image:ig1\image41.png[image,width=407,height=213,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image41.png" width="407px" height="213px">
+</p>
+++++
+
 
 Figure 41 Endpoint Recording main view
 
-image:ig1\image42.png[image,width=565,height=89,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image42.png" width="565px" height="89px">
+</p>
+++++
+
 
 Figure 42 Endpoint Recording Overview
 
-image:ig1\image43.png[image,width=204,height=210,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image43.png" width="204px" height="210px">
+</p>
+++++
+
 
 Figure 43 Start Recording of messages & commands
 
 After recording started, the recording is displayed in the list of active records. Multiple records at the same time are possible to record multiple endpoints.
 
-image:ig1\image44.png[image,width=647,height=120,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image44.png" width="647px" height="120px">
+</p>
+++++
+
 
 Figure 44 Recording overview
 
@@ -38,7 +58,12 @@ Every account may store 10 recordings with a maximum size of 10 MB in a sum.
 
 In a developer account, records can be uploaded (1) additionally to the recording functionalities, that are available in both account types; end user and developer.
 
-image:ig1\image45.png[image,width=640,height=104,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image45.png" width="640px" height="104px">
+</p>
+++++
+
 
 Figure 45 Endpoint recording in a developer account
 

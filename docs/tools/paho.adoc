@@ -23,22 +23,47 @@ Install openssl.
 
 Format the certificate:
 
-image:ig2/image4.png[image,width=642,height=42,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image4.png" width="642px" height="42px">
+</p>
+++++
+
 
 == Setup Paho Certificate
 
 To setup the certificate, open the connecton options and enable SSL. Then add the certificate file
 
-image:ig2/image5.png[image,width=520,height=321,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image5.png" width="520px" height="321px">
+</p>
+++++
+
 
 Further information: https://help.sap.com/viewer/e765b2a5b99540ce84da397c20cc1993/Cloud/en-US/711642e551f4477c882c5561853ee7c7.html
 
 == Setup the connection criteria of Paho:
 
-image:ig2/image6.png[image,width=315,height=139,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image6.png" width="315px" height="139px">
+</p>
+++++
 
-image:ig2/image7.png[image,width=205,height=144,align="center"]
+
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image7.png" width="205px" height="144px">
+</p>
+++++
+
 
 == Basic functions
 
-image:ig2/image8.png[image,width=678,height=356,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image8.png" width="678px" height="356px">
+</p>
+++++
+

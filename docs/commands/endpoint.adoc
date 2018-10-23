@@ -83,7 +83,12 @@ If the message was malformed, an ACK_WITH_FAILURE will be returned. If the same 
 ==== Example
 
 //TODO: Make this real Source Code
-image:ig2/image44.png[image,width=608,height=396,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image44.png" width="608px" height="396px">
+</p>
+++++
+
 
 == Subscribtion Command
 
@@ -168,7 +173,12 @@ Errors will be reported using ACK_WITH_FAILURE. For a list of possible errors, s
 
 === Example
 
-image:ig2/image45.png[image,width=438,height=174,align="center"]
+++++
+<p align="center">
+ <img src="./assets/images/ig2/image45.png" width="438px" height="174px">
+</p>
+++++
+
 
 == Sending a teamset using device Descriptions
 
