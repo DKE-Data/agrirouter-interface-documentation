@@ -14,7 +14,7 @@ This information must be created before going live under http://tptest.my-agriro
 
 After certification process is done, application or hardware provider can create partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
 
-image:ig1\image47.png[image,width=642,height=470]
+image:ig1\image47.png[image,width=642,height=470,align="center"]
 
 Figure 47 my-agrirouter.com Marketplace
 

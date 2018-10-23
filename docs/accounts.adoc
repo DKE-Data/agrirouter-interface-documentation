@@ -19,7 +19,7 @@ The user interface offers possibilities to handle the account:
 * modify his user interface (e.g. color scheme)
 * view a list of news/updates for his account (e.g “account connected”, “endpoint onboarded”, etc.)
 
-image:ig1\image2.png[image,width=456,height=663]
+image:ig1\image2.png[image,width=456,height=663,align="center"]
 
 Figure 2 User Interface for End Users
 
@@ -45,7 +45,7 @@ Additionally, developers can manage their own applications:
 * Replay Endpoint Records
 * Export metrics of agrirouter usage for billing purpose
 
-image:ig1\image3.png[image,width=473,height=615]
+image:ig1\image3.png[image,width=473,height=615,align="center"]
 
 Figure 3 User Interface for Developers
 

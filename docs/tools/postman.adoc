@@ -18,7 +18,7 @@ To do an onboarding request, open the Agrirouter: Application Registration/OnBoa
 
 Open the Pre-Request-Script and fill the variable field names
 
-image:ig2/image2.png[image,width=641,height=263]
+image:ig2/image2.png[image,width=641,height=263,align="center"]
 
 Figure 2 Using Postman for onBoarding
 
@@ -34,6 +34,6 @@ For an SSL Secured communication, add the certificate delivered with the onboard
 
 4. Provide both in Postman Settings / Certificates, including the passphrase provided in the onboarding response.
 
-image:ig2/image3.png[image,width=483,height=152]
+image:ig2/image3.png[image,width=483,height=152,align="center"]
 
 Figure 3 Adding the certificate in Postman

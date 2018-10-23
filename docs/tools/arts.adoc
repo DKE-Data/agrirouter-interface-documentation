@@ -13,7 +13,7 @@ The tool includes a command line as well as a user interface.
 
 The project can be found here: https://github.com/saschadoemer/agrirouter-protobuf-toolset
 
-image:ig2/image9.png[image,width=426,height=442]
+image:ig2/image9.png[image,width=426,height=442,align="center"]
 
 Figure 4 ARTS User Interface
 

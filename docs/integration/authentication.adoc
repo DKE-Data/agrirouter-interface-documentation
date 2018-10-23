@@ -35,11 +35,11 @@ In the developers UI, he has to:
 * Provide a redirect URL, to which agrirouter shall deliver the authentication result using HTTP 301 Browser redirect.(3)
 * Provide a public key for his encryption or create a key pair on the agrirouter frontend
 
-image:ig2/image10.PNG[image,width=636,height=361]
+image:ig2/image10.PNG[image,width=636,height=361,align="center"]
 
 Figure 5 Application overview
 
-image:ig2/image11.PNG[image,width=362,height=350]
+image:ig2/image11.PNG[image,width=362,height=350,align="center"]
 
 Figure 6 Application settings
 
@@ -49,7 +49,7 @@ If you do not yet have an official domain, where your application is reachable o
 
 Simply check Tracert/TraceRoute:
 
-image:ig2/image12.png[image,width=466,height=181]
+image:ig2/image12.png[image,width=466,height=181,align="center"]
 
 Figure 7 fuf.me is an alias for localhost
 ====
@@ -58,7 +58,7 @@ Figure 7 fuf.me is an alias for localhost
 
 The authentication process works as follows:
 
-image:ig2/image13.png[image,width=619,height=376]
+image:ig2/image13.png[image,width=619,height=376,align="center"]
 
 Figure 8 Authentication Workflow
 
@@ -134,7 +134,7 @@ The response type onboard can be used to onboard farming applications without ha
 
 When the user clicks on the link, the agrirouter website is called. If the user is currently not logged in, he has to log in. After logging in, he is delivered a website to authorize the connection between agrirouter and the application provider:
 
-image:ig2/image14.png[image,width=252,height=202]
+image:ig2/image14.png[image,width=252,height=202,align="center"]
 
 Figure 9 Application authentication screen
 
@@ -155,7 +155,7 @@ The following parameters will be delivered in the GET-Queue:
 |(3) |error |String |If error is delivered, user declined connection!
 |============================================================================================================
 
-image:ig2/image15.png[image,width=542,height=265]
+image:ig2/image15.png[image,width=542,height=265,align="center"]
 
 Figure 10 Example of an authentication result
 
@@ -215,6 +215,6 @@ The result token is a base64 encoded JSON object including the following paramet
 
 To perform authentication for software, that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
 
-image:ig2/image16.png[image,width=640,height=155]
+image:ig2/image16.png[image,width=640,height=155,align="center"]
 
 Figure 11 Authentication for non-cloud-applications

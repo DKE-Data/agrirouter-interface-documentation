@@ -10,7 +10,7 @@ If the contract with a customer ends, app providers should revoke their connecti
 
 == Process of Revoking
 
-image:ig2/image25.png[image,width=526,height=306]
+image:ig2/image25.png[image,width=526,height=306,align="center"]
 
 Figure 20 Revoke Process
 

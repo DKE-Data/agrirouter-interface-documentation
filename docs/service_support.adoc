@@ -29,7 +29,7 @@ Please submit the following information with your request:
 
 (all of the above can be found in the endpoint details by clicking the ‘Info’ button next to the delete button)
 
-image:ig1\image46.PNG[image,width=586,height=335]
+image:ig1\image46.PNG[image,width=586,height=335,align="center"]
 
 Figure 46 Relevant information for agrirouter support
 

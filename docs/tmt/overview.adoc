@@ -11,7 +11,7 @@ Technical message types are several standardized formats, that agrirouter apps s
 
 The possible technical message types can be found in the agrirouter UI when creating a new application:
 
-image:ig2/image47.png[image,width=642,height=380]
+image:ig2/image47.png[image,width=642,height=380,align="center"]
 
 Figure 39 Selecting Technical Message Types in the agrirouter UI
 

@@ -245,7 +245,7 @@ If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific
 
 Messages sent to the agrirouter can be split into multiple chunks, if the message format is not EFDI.
 
-image:ig2/image46.png[image,width=534,height=292]
+image:ig2/image46.png[image,width=534,height=292,align="center"]
 
 Only those message, that were not created by the agrirouter and that are not of type EFDI can be chunked.
 

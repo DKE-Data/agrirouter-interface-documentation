@@ -9,7 +9,7 @@
 
 Creating a message includes several steps. This can be seen in the graph below:
 
-image:ig2/image42.png[image,width=620,height=272]
+image:ig2/image42.png[image,width=620,height=272,align="center"]
 
 Figure 37 Workflow of creating a message
 
@@ -24,7 +24,7 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 * EFDI telemetry messages cannot be chunked, as they are analyzed for the routing of telemetry data on agrirouter.
 ====
 
-image:ig2/image43.png[image,width=639,height=356]
+image:ig2/image43.png[image,width=639,height=356,align="center"]
 
 Figure 38 Workflow of creating a chunked message
 
