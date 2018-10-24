@@ -1,6 +1,5 @@
 = iso:11783:-10:taskdata:zip - TaskData
 :imagesdir: ./../../assets/images/
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4

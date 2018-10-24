@@ -1,6 +1,5 @@
 = agrirouter Integration Guide
 :imagesdir: ./assets/images/
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
@@ -32,6 +31,8 @@ A short description naming all the agrirouter specific terms and their connectio
 A list of shortings can be found link:./docs/shortings.adoc[here]
 
 A glossary can be found link:./docs/glossary.adoc[here]
+
+There are several ids required for communication, a list of descriptions can be found link:./docs/ids_and_definitions.adoc[here].
 
 == Tools and Libraries
 

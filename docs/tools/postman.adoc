@@ -1,5 +1,4 @@
 = REST using Postman
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4

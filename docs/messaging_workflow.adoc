@@ -1,6 +1,5 @@
 = Application Interaction with agrirouter
 :imagesdir: ./../assets/images/
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
@@ -17,6 +16,20 @@ A communication with agrirouter requires several, partly parallel actions to tak
 </p>
 ++++
 
+Every application instance communicates to the agrirouter in sessions. The first message can be sent after onboarding is done. It shall report the capabilities.
+
+These capabilities must match those stated in the application version certification or a subset of them.
+
+If the endpoint wants to ‘listen’ to certain messages, it must subscribe to the appropriate technical message types, so that published messages get routed to this endpoint. Messages however will only get routed, if there is a routing for that
+
+Every request sent to the agrirouter inbox will be acknowledged by the agrirouter, indicating whether the request could be processed successfully, with warning or it could not be processed because of errors; in that case, an error code and an error message in English are returned. Communication Layers.
+
+After that, the teamset is reported and a communication workflow can begin. The Workflow is as follows:
+
+[NOTE]
+====
+The displayed workflow is just one possible solution. It is up to the app provider or his developer to find the most practical workflow of requesting, which messages are available and requesting or deleting those messages.
+====
 
 
 
@@ -35,9 +48,28 @@ The advantage of using MQTT is that polling for message delivery (see following 
 
 The internal Google Protocol Buffer (protobuf) definitions for the communication with the agrirouter are available in GitHub repository under following URL: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions 
 
+
+== Request sending frequency
+
+agrirouter needs some time to process commands and forward messages, that are received through one of the endpoints. To avoid mixing up communication and reguesting the next message before receiving the result of the last command, the agrirouter support team advices, to have a minimum time lapse between sending of 2 requests to the agrirouter:
+
+[cols=",",options="header",]
+|=============================================
+|Einvironment |Adviced time between 2 requests
+|Quality assurance |10 s
+|Production |5 s
+|=============================================
+
+[NOTE]
+====
+EFDI Log Telemetry messages can be collected over several seconds and than be sent in one request to the agrirouter.
+====
+
 == agrirouter Endpoints
 
 This chapter gives an overview about the endpoints including their base requirement and definition. This chapter gives a high-level overview about the agrirouter Connectivity-Platform architecture, an application can interact with.
+
+
 
 === Overview of the architecture
 

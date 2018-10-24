@@ -1,5 +1,4 @@
 = ARTS
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
