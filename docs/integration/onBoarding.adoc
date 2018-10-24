@@ -12,7 +12,7 @@ The onboarding workflow is needed to onboard app instances and create endpoints 
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image17.png" width="568px" height="599px"><br>
+ <img src="./../../assets/images/ig2/image17.png" width="568px" height="599px"><br>
 <i>General onboarding workflow</i>
 </p>
 ++++
@@ -24,7 +24,7 @@ Telemetry systems and Farming Software need to assign their own userID to the ac
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image18.png" width="627px" height="551px"><br>
+ <img src="./../../assets/images/ig2/image18.png" width="627px" height="551px"><br>
 <i>onboarding Workflow for a farming software or telemetry platform</i>
 </p>
 ++++
@@ -34,7 +34,7 @@ Telemetry systems and Farming Software need to assign their own userID to the ac
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image19.png" width="627px" height="311px"><br>
+ <img src="./../../assets/images/ig2/image19.png" width="627px" height="311px"><br>
 <i>agrirouter onboarding process for a CU</i>
 </p>
 ++++
@@ -68,7 +68,7 @@ The Registration code for a new CU can be created by the end user clicking “Ge
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image20.png" width="642px" height="368px"><br>
+ <img src="./../../assets/images/ig2/image20.png" width="642px" height="368px"><br>
 <i>Requesting a registration code in agrirouter UI</i>
 </p>
 ++++
@@ -77,7 +77,7 @@ The Registration code for a new CU can be created by the end user clicking “Ge
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image21.png" width="291px" height="164px"><br>
+ <img src="./../../assets/images/ig2/image21.png" width="291px" height="164px"><br>
 <i>Registration code for a CU</i>
 </p>
 ++++

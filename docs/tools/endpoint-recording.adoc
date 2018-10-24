@@ -11,7 +11,7 @@ Every agrirouter account includes a functionality to record communication on tha
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image41.png" width="407px" height="213px"><br>
+ <img src="./../../assets/images/ig1\image41.png" width="407px" height="213px"><br>
  <i>Endpoint Recording main view</i>
 </p>
 ++++
@@ -19,7 +19,7 @@ Every agrirouter account includes a functionality to record communication on tha
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image42.png" width="565px" height="89px"><br>
+ <img src="./../../assets/images/ig1\image42.png" width="565px" height="89px"><br>
  <i>Endpoint Recording Overview</i>
 </p>
 ++++
@@ -27,7 +27,7 @@ Every agrirouter account includes a functionality to record communication on tha
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image43.png" width="204px" height="210px"><br>
+ <img src="./../../assets/images/ig1\image43.png" width="204px" height="210px"><br>
 <i>Start Recording of messages &amp; commands</i>
 </p>
 ++++

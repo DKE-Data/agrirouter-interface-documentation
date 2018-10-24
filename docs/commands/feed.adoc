@@ -247,7 +247,7 @@ Messages sent to the agrirouter can be split into multiple chunks, if the messag
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image46.png" width="534px" height="292px">
+ <img src="./../../assets/images/ig2/image46.png" width="534px" height="292px"><br>
  <i>Chunked messages</i>
 </p>
 ++++

@@ -87,7 +87,7 @@ The subscription list includes a list of all Message Types and DDIs, the endpoin
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image30.png" width="585px" height="251px">
+ <img src="./../assets/images/ig2/image30.png" width="585px" height="251px"><br>
  <i>Subscribtion List within an agrirouter endpoint</i>
 </p>
 ++++

@@ -159,7 +159,7 @@ This process will be described more precisely in Integration Guide Part 2.
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image28.png" width="598px" height="197px">
+ <img src="./../assets/images/ig1\image28.png" width="598px" height="197px"><br>
  <i>Process of simple CU onboarding</i>
 </p>
 ++++

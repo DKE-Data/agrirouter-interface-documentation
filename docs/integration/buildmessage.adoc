@@ -11,7 +11,7 @@ Creating a message includes several steps. This can be seen in the graph below:
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image42.png" width="620px" height="272px"><br>
+ <img src="./../../assets/images/ig2/image42.png" width="620px" height="272px"><br>
 <i>Workflow of creating a message</i>
 </p>
 ++++
