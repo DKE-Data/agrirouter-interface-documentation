@@ -37,21 +37,21 @@ In the developers UI, he has to:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image10.png" width="636px" height="361px">
+ <img src="./../../assets/images/ig2/image10.png" width="636px" height="361px"><br>
+<i>Application overview</i>
 </p>
 ++++
 
-
-Figure 5 Application overview
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image11.png" width="362px" height="350px">
+ <img src="./../../assets/images/ig2/image11.png" width="362px" height="350px"><br>
+<i>Application settings</i>
 </p>
 ++++
 
 
-Figure 6 Application settings
+
 
 [NOTE]
 ====
@@ -62,11 +62,10 @@ Simply check Tracert/TraceRoute:
 ++++
 <p align="center">
  <img src="./../../assets/images/ig2/image12.png" width="466px" height="181px">
+ <i>fuf.me is an alias for localhost</i>
 </p>
 ++++
 
-
-Figure 7 fuf.me is an alias for localhost
 ====
 
 === Authentication Process Overview
@@ -75,12 +74,11 @@ The authentication process works as follows:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image13.png" width="619px" height="376px">
+ <img src="./../../assets/images/ig2/image13.png" width="619px" height="376px"><br>
+<i>Authentication Workflow</i>
 </p>
 ++++
 
-
-Figure 8 Authentication Workflow
 
 To better understand, what happens here, try the following:
 
@@ -156,12 +154,11 @@ When the user clicks on the link, the agrirouter website is called. If the user 
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image14.png" width="252px" height="202px">
+ <img src="./../../assets/images/ig2/image14.png" width="252px" height="202px"><br>
+ <i>Application authentication screen</i>
 </p>
 ++++
 
-
-Figure 9 Application authentication screen
 
 === Analyse result
 
@@ -182,12 +179,11 @@ The following parameters will be delivered in the GET-Queue:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image15.png" width="542px" height="265px">
+ <img src="./../../assets/images/ig2/image15.png" width="542px" height="265px"><br>
+<i>Example of an authentication result</i>
 </p>
 ++++
 
-
-Figure 10 Example of an authentication result
 
 ==== Checking for errors
 
@@ -247,9 +243,7 @@ To perform authentication for software, that is not provided as a cloud solution
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image16.png" width="640px" height="155px">
+ <img src="./../../assets/images/ig2/image16.png" width="640px" height="155px"><br>
+<i>Authentication for non-cloud-applications</i>
 </p>
 ++++
-
-
-Figure 11 Authentication for non-cloud-applications

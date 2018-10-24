@@ -27,12 +27,12 @@ The following graph shows the way of a message through the agrirouter:
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image13.png" width="634px" height="314px">
+ <img src="./../assets/images/ig1\image13.png" width="634px" height="314px"><br>
+ <i>Way of a message through agrirouter</i>
 </p>
 ++++
 
 
-Figure 13 Way of a message through agrirouter
 
 Every endpoint can send messages to specific endpoints and/or publish them.
 
@@ -49,12 +49,12 @@ As a machine has its own endpoint in the agrirouter account, it is possible to a
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image14.png" width="648px" height="323px">
+ <img src="./../assets/images/ig1\image14.png" width="648px" height="323px"><br>
+ <i>Message addressing to multiple endpoints; simplified</i>
 </p>
 ++++
 
 
-Figure 14 Message addressing to multiple endpoints; simplified
 
 [IMPORTANT]
 ====
@@ -75,12 +75,12 @@ Every registered endpoint can request the list of messages available in his feed
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image15.png" width="611px" height="285px">
+ <img src="./../assets/images/ig1\image15.png" width="611px" height="285px"><br>
+ <i>In- and outbox of an agrirouter endpoint; simplified</i>
 </p>
 ++++
 
 
-Figure 15 In- and outbox of an agrirouter endpoint; simplified
 
 //TODO: Create Example Block?
 EXAMPLE: An App instance sends a message to the inbox of its endpoint.
@@ -196,12 +196,12 @@ The steps for this – in general – are:
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image16.png" width="619px" height="236px">
+ <img src="./../assets/images/ig1\image16.png" width="619px" height="236px"><br>
+ <i>Subscribing for a message; simplified</i>
 </p>
 ++++
 
 
-Figure 16 Subscribing for a message; simplified
 
 == Exchange with other user accounts
 
@@ -211,12 +211,13 @@ A message, that is addressed to this endpoint will be published in the connected
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image17.png" width="630px" height="311px">
+ <img src="./../assets/images/ig1\image17.png" width="630px" height="311px"><br>
+ <i>Sending messages into another account</i>
 </p>
 ++++
 
 
-Figure 17 Sending messages into another account
+
 
 **Short description:**
 
@@ -249,12 +250,13 @@ A routing consists of:
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image18.png" width="636px" height="410px">
+ <img src="./../assets/images/ig1\image18.png" width="636px" height="410px"><br>
+ <i>Message addressing and routing through the agrirouter</i>
 </p>
 ++++
 
 
-Figure 18 Message addressing and routing through the agrirouter
+
 
 //TODO: MultiLine Formating
 *Image Description:*
@@ -272,12 +274,13 @@ Routings are created by the end user in his agrirouter account.
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image19.png" width="642px" height="405px">
+ <img src="./../assets/images/ig1\image19.png" width="642px" height="405px"><br>
+ <i>Graphical user interface for message routing</i>
 </p>
 ++++
 
 
-Figure 19 Graphical user interface for message routing
+
 
 === Endpoint Groups
 
@@ -335,12 +338,13 @@ EFDI Time Logs are as well comparable to ISO11783 TimeLogs.
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image20.png" width="631px" height="344px">
+ <img src="./../assets/images/ig1\image20.png" width="631px" height="344px"><br>
+ <i>Message delivery due to routings, subscription and public address</i>
 </p>
 ++++
 
 
-Figure 20 Message delivery due to routings, subscription and public address
+
 
 [IMPORTANT]
 ====

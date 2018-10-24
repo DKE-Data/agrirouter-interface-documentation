@@ -15,12 +15,12 @@ The project can be found here: https://github.com/saschadoemer/agrirouter-protob
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image9.png" width="426px" height="442px">
+ <img src="./../../assets/images/ig2/image9.png" width="426px" height="442px"><br>
+ <i>ARTS User Interface</i>
 </p>
 ++++
 
 
-Figure 4 ARTS User Interface
 
 == About the project
 

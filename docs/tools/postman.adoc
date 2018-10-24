@@ -20,12 +20,11 @@ Open the Pre-Request-Script and fill the variable field names
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image2.png" width="641px" height="263px">
+ <img src="./../../assets/images/ig2/image2.png" width="641px" height="263px"><br>
+ <i>Using Postman for onBoarding</i>
 </p>
 ++++
 
-
-Figure 2 Using Postman for onBoarding
 
 == Adding a Certificate
 
@@ -41,9 +40,9 @@ For an SSL Secured communication, add the certificate delivered with the onboard
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image3.png" width="483px" height="152px">
+ <img src="./../../assets/images/ig2/image3.png" width="483px" height="152px"><br>
+ <i>Adding the certificate in Postman</i>
 </p>
 ++++
 
 
-Figure 3 Adding the certificate in Postman

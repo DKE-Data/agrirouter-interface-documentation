@@ -12,12 +12,13 @@ A communication with agrirouter requires several, partly parallel actions to tak
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image22.png" width="609px" height="726px">
+ <img src="./../assets/images/ig1\image22.png" width="609px" height="726px"><br>
+ <i>General messaging workflow</i>
 </p>
 ++++
 
 
-Figure 22 General messaging workflow
+
 
 === Communication Protocols
 
@@ -42,12 +43,13 @@ This chapter gives an overview about the endpoints including their base requirem
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image23.png" width="626px" height="451px">
+ <img src="./../assets/images/ig1\image23.png" width="626px" height="451px"><br>
+ <i>agrirouter Connectivity-Platform IT architecture</i>
 </p>
 ++++
 
 
-Figure 23 agrirouter Connectivity-Platform IT architecture
+
 
 == Authorization process for endpoints
 
@@ -71,12 +73,12 @@ The authorization process works as follows:
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image24.png" width="586px" height="355px">
+ <img src="./../assets/images/ig1\image24.png" width="586px" height="355px"><br>
+ <i>Process of app authorization</i>
 </p>
 ++++
 
 
-Figure 24 Process of app authorization
 
 To better understand, what happens here, try the following:
 
@@ -108,12 +110,13 @@ When the user clicks on the link, the agrirouter website is called. If the user 
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image25.png" width="315px" height="252px">
+ <img src="./../assets/images/ig1\image25.png" width="315px" height="252px"><br>
+ <i>Application authorization screen</i>
 </p>
 ++++
 
 
-Figure 25 Application authorization screen
+
 
 ==== Analyses result
 
@@ -121,12 +124,13 @@ agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image26.png" width="498px" height="244px">
+ <img src="./../assets/images/ig1\image26.png" width="498px" height="244px"><br>
+ <i>Example of an authorization result</i>
 </p>
 ++++
 
 
-Figure 26 Example of an authorization result
+
 
 The details of this answer are described in Part 2 of the integration Guide.
 
@@ -136,12 +140,13 @@ To perform authorization for software, that is not provided as a cloud solution,
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image27.png" width="624px" height="165px">
+ <img src="./../assets/images/ig1\image27.png" width="624px" height="165px"><br>
+ <i>architecture for CU and non-cloud application authorization</i>
 </p>
 ++++
 
 
-Figure 27 architecture for CU and non-cloud application authorization
+
 
 //TODO: Replace this with the part from IG2
 This process will be described more precisely in Integration Guide Part 2.
@@ -155,33 +160,36 @@ This process will be described more precisely in Integration Guide Part 2.
 ++++
 <p align="center">
  <img src="./../assets/images/ig1\image28.png" width="598px" height="197px">
+ <i>Process of simple CU onboarding</i>
 </p>
 ++++
 
 
-Figure 28 Process of simple CU onboarding
+
 
 ==== For authenticated CU onboarding
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image29.png" width="503px" height="316px">
+ <img src="./../assets/images/ig1\image29.png" width="503px" height="316px"><br>
+ <i>General workflow for onboarding with user interaction and authorization</i>
 </p>
 ++++
 
 
-Figure 29 General workflow for onboarding with user interaction and authorization
+
 
 ==== For Farming Software or Telemetry Platform onboarding
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image30.png" width="538px" height="477px">
+ <img src="./../assets/images/ig1\image30.png" width="538px" height="477px"><br>
+ <i>Onboarding process of a Farming Software or Telemetry platform</i>
 </p>
 ++++
 
 
-Figure 30 Onboarding process of a Farming Software or Telemetry platform
+
 
 === Creating a registration code (TAN)
 
@@ -191,21 +199,22 @@ The TAN for a new CU can be created by the end user clicking “Generate TAN”(
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image31.png" width="453px" height="254px">
+ <img src="./../assets/images/ig1\image31.png" width="453px" height="254px"><br>
+ <i>Requesting a registration code in agrirouter UI</i>
 </p>
 ++++
 
 
-Figure 31 Requesting a registration code in agrirouter UI
+
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image32.png" width="292px" height="164px">
+ <img src="./../assets/images/ig1\image32.png" width="292px" height="164px"><br>
+ <i>Registration code for a CU</i>
 </p>
 ++++
 
 
-Figure 32 Registration code for a CU
 
 ==== For applications
 
@@ -254,12 +263,13 @@ With except to the EFDI telemetry messages (DeviceDescription and timelogs), agr
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image33.png" width="621px" height="358px">
+ <img src="./../assets/images/ig1\image33.png" width="621px" height="358px"><br>
+ <i>The onion principal for a non-telemetry message</i>
 </p>
 ++++
 
 
-Figure 33 The onion principal for a non-telemetry message
+
 
 An exception are the EFDI messages.
 
@@ -272,12 +282,13 @@ The timelog telemetry data is analyzed, so that a filtering for value categories
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image34.png" width="630px" height="363px">
+ <img src="./../assets/images/ig1\image34.png" width="630px" height="363px"><br>
+ <i>The onion principle for a telemetry message</i>
 </p>
 ++++
 
 
-Figure 34 The onion principle for a telemetry message
+
 
 === Sending messages
 
@@ -285,12 +296,13 @@ An endpoint can send messages to other endpoints via the agrirouter. Therefore, 
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image35.png" width="622px" height="347px">
+ <img src="./../assets/images/ig1\image35.png" width="622px" height="347px"><br>
+ <i>Required Data to create a message</i>
 </p>
 ++++
 
 
-Figure 35 Required Data to create a message
+
 
 //TODO This has to be more precise, can be 200 to 299
 The message is answered by the agrirouter with a HTTP status, that might be 200 (OK). In that case, the endpoint can poll for a confirmation at the outbox before sending the next message.
@@ -305,12 +317,12 @@ agrirouter stores messages of an endpoint in its feed. This feed is part of the 
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image36.png" width="623px" height="268px">
+ <img src="./../assets/images/ig1\image36.png" width="623px" height="268px"><br>
+ <i>Handling of messages and commands inside agrirouter endpoint; Simplified</i>
 </p>
 ++++
 
 
-Figure 36 Handling of messages and commands inside agrirouter endpoint; Simplified
 
 === Requesting available messages
 
@@ -326,12 +338,12 @@ More relevant message formats can be found in the resources List of this documen
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image37.png" width="642px" height="351px">
+ <img src="./../assets/images/ig1\image37.png" width="642px" height="351px"><br>
+ <i>Transfer for Binary Content</i>
 </p>
 ++++
 
 
-Figure 37 Transfer for Binary Content
 
 Regarding large data, endpoints need to implement a concept for chunked data transfer to ensure a resumable transfer of (binary) content. The endpoint is in charge of the segmentation, this is not done by the agrirouter. The agrirouter is in charge of the delivery and order of the messages.
 
@@ -352,12 +364,13 @@ To simplify and optimize the connection of telemetry platforms, there are severa
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image38.png" width="642px" height="215px">
+ <img src="./../assets/images/ig1\image38.png" width="642px" height="215px"><br>
+ <i>Telemetry platform Integration Concept Overview</i>
 </p>
 ++++
 
 
-Figure 38 Telemetry platform Integration Concept Overview
+
 
 === Device Onboarding
 
@@ -377,9 +390,9 @@ There will be a trusted Relationship between the agrirouter and certified teleme
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image39.png" width="642px" height="343px">
+ <img src="./../assets/images/ig1\image39.png" width="642px" height="343px"><br>
+ <i>Comparing agrirouter hierarchy with a possible cloud platform hierarchy</i>
 </p>
 ++++
 
 
-Figure 39 Comparing agrirouter hierarchy with a possible cloud platform hierarchy

@@ -58,12 +58,11 @@ To maximize the quality of the agrirouter ecosystem, there are several requireme
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image4.png" [image,width=642px" height="254px">
+<img src="./../assets/images/ig1\image4.png" width="642px" height="254px"><br>
+<i>General agrirouter integration process</i>
 </p>
 ++++
 
-
-Figure 4 General agrirouter integration process
 
 After the first contact with the company DKE-Data and signing the App- and Hardware Provider agreement, an agrirouter developer account can be created in the agrirouter quality assurance (QA) environment.
 
@@ -87,12 +86,11 @@ After creating an agrirouter developer account in quality assurance environment,
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image5.png" width="642px" height="364px">
+<img src="./../assets/images/ig1\image5.png" width="642px" height="364px"><br>
+<i>agrirouter endpoint software management</i>
 </p>
 ++++
 
-
-Figure 5 agrirouter endpoint software management
 
 == Mixed Applications
 
@@ -100,12 +98,12 @@ It’s not always obvious, to which category a new application belongs. To simpl
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image6.png" width="619px" height="366px">
+<img src="./../assets/images/ig1\image6.png" width="619px" height="366px"><br>
+<i>Decision Tree: What type of application do I create?</i>
 </p>
 ++++
 
 
-Figure 6 Decision Tree: What type of application do I create?
 
 The following information should be available to create a communication unit, application or telemetry platform:
 
@@ -155,12 +153,12 @@ All required steps are available in Endpoint Software Management (see Figure 11 
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image7.png" width="467px" height="513px">
+ <img src="./../assets/images/ig1\image7.png" width="467px" height="513px"><br>
+<i>agrirouter application registration</i>
 </p>
 ++++
 
 
-Figure 7 agrirouter application registration
 
 When a new version has been created, the supported capabilities for this version can be defined. With the button “New”, the technical message types supported by this application version can be selected. Finally, the direction (send/receive) of the capabilities must be specified before the version can be submitted.
 

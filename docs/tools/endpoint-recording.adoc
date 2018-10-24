@@ -11,41 +11,36 @@ Every agrirouter account includes a functionality to record communication on tha
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image41.png" width="407px" height="213px">
+ <img src="./../assets/images/ig1\image41.png" width="407px" height="213px"><br>
+ <i>Endpoint Recording main view</i>
 </p>
 ++++
 
-
-Figure 41 Endpoint Recording main view
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image42.png" width="565px" height="89px">
+ <img src="./../assets/images/ig1\image42.png" width="565px" height="89px"><br>
+ <i>Endpoint Recording Overview</i>
 </p>
 ++++
 
-
-Figure 42 Endpoint Recording Overview
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image43.png" width="204px" height="210px">
+ <img src="./../assets/images/ig1\image43.png" width="204px" height="210px"><br>
+<i>Start Recording of messages &amp; commands</i>
 </p>
 ++++
 
-
-Figure 43 Start Recording of messages & commands
 
 After recording started, the recording is displayed in the list of active records. Multiple records at the same time are possible to record multiple endpoints.
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig1\image44.png" width="647px" height="120px">
+ <img src="./../../assets/images/ig1\image44.png" width="647px" height="120px"><br>
+ <i>Recording View</i>
 </p>
 ++++
-
-
-Figure 44 Recording overview
 
 Recording can be stopped (1), downloaded (2) or deleted (3).
 
@@ -60,12 +55,11 @@ In a developer account, records can be uploaded (1) additionally to the recordin
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig1\image45.png" width="640px" height="104px">
+ <img src="./../../assets/images/ig1\image45.png" width="640px" height="104px"><br>
+<i>Endpoint recording in a developer account</i>
 </p>
 ++++
 
-
-Figure 45 Endpoint recording in a developer account
 
 As a developer, you are able to replay recorded commands (2); replacing the endpoint ID with any other endpoint ID.
 

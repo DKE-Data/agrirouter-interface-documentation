@@ -11,12 +11,12 @@ Creating a message includes several steps. This can be seen in the graph below:
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image42.png" width="620px" height="272px">
+ <img src="./../assets/images/ig2/image42.png" width="620px" height="272px"><br>
+<i>Workflow of creating a message</i>
 </p>
 ++++
 
 
-Figure 37 Workflow of creating a message
 
 == Chunking big messages
 
@@ -31,12 +31,12 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image43.png" width="639px" height="356px">
+ <img src="./../../assets/images/ig2/image43.png" width="639px" height="356px"><br>
+<i>Workflow of creating a chunked message</i>
 </p>
 ++++
 
 
-Figure 38 Workflow of creating a chunked message
 
 [NOTE]
 ====

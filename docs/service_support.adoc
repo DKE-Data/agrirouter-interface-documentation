@@ -31,12 +31,13 @@ Please submit the following information with your request:
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image46.png" width="586px" height="335px">
+ <img src="./../assets/images/ig1\image46.png" width="586px" height="335px"><br>
+ <i>Relevant information for agrirouter support</i>
 </p>
 ++++
 
 
-Figure 46 Relevant information for agrirouter support
+
 
 === For commands related incidents
 

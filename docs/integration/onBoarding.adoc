@@ -12,12 +12,11 @@ The onboarding workflow is needed to onboard app instances and create endpoints 
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image17.png" width="568px" height="599px">
+ <img src="./../assets/images/ig2/image17.png" width="568px" height="599px"><br>
+<i>General onboarding workflow</i>
 </p>
 ++++
 
-
-Figure 12 General onboarding workflow
 
 == Workflow for Farming Software and Telemetry Systems
 
@@ -25,23 +24,21 @@ Telemetry systems and Farming Software need to assign their own userID to the ac
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image18.png" width="627px" height="551px">
+ <img src="./../assets/images/ig2/image18.png" width="627px" height="551px"><br>
+<i>onboarding Workflow for a farming software or telemetry platform</i>
 </p>
 ++++
 
-
-Figure 13 onboarding Workflow for a farming software or telemetry platform
 
 == Workflow for CUs
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image19.png" width="627px" height="311px">
+ <img src="./../assets/images/ig2/image19.png" width="627px" height="311px"><br>
+<i>agrirouter onboarding process for a CU</i>
 </p>
 ++++
 
-
-Figure 14 Agrirouter onboarding process for a CU
 
 [NOTE]
 ====
@@ -71,21 +68,20 @@ The Registration code for a new CU can be created by the end user clicking “Ge
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image20.png" width="642px" height="368px">
+ <img src="./../assets/images/ig2/image20.png" width="642px" height="368px"><br>
+<i>Requesting a registration code in agrirouter UI</i>
 </p>
 ++++
 
 
-Figure 15 Requesting a registration code in agrirouter UI
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image21.png" width="291px" height="164px">
+ <img src="./../assets/images/ig2/image21.png" width="291px" height="164px"><br>
+<i>Registration code for a CU</i>
 </p>
 ++++
 
-
-Figure 16 Registration code for a CU
 
 === As result of the authentication
 
@@ -106,12 +102,12 @@ Both IDs are the same, they can be found in the agrirouter software endpoint UI 
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image22.png" width="455px" height="258px">
+ <img src="./../../assets/images/ig2/image22.png" width="455px" height="258px"><br>
+<i>Finding the applicationID</i>
 </p>
 ++++
 
 
-Figure 17 Finding the applicationID
 
 === CertificationVersionID
 
@@ -119,12 +115,11 @@ The CertificationVersionID is the ID unique to this specific app certification p
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image23.png" width="519px" height="294px">
+ <img src="./../../assets/images/ig2/image23.png" width="519px" height="294px"><br>
+<i>Finding the certificationVersionID</i>
 </p>
 ++++
 
-
-Figure 18 Finding the certificationVersionID
 
 === Setting up private and public key
 
@@ -137,12 +132,12 @@ As the requests need to be signed (see 8.8Signing requests), the public key has 
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image24.png" width="409px" height="400px">
+ <img src="./../../assets/images/ig2/image24.png" width="409px" height="400px"><br>
+ <i>Generating Private and Public Key in the agrirouter UI</i>
 </p>
 ++++
 
 
-Figure 19 Generating Private and Public Key in the agrirouter UI
 
 == onboarding Endpoint URLs
 
