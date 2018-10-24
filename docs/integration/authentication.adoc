@@ -37,7 +37,7 @@ In the developers UI, he has to:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image10.PNG" width="636px" height="361px"><br>
+ <img src="./../../assets/images/ig2/image10.png" width="636px" height="361px"><br>
 <i>Application overview</i>
 </p>
 ++++
@@ -45,7 +45,7 @@ In the developers UI, he has to:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image11.PNG" width="362px" height="350px"><br>
+ <img src="./../../assets/images/ig2/image11.png" width="362px" height="350px"><br>
 <i>Application settings</i>
 </p>
 ++++

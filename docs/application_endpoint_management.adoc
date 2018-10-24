@@ -13,7 +13,7 @@ To avoid misusage of data packages, an app provider can block a specific endpoin
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image40.PNG" width="642px" height="182px">
+<img src="./../assets/images/ig1\image40.png" width="642px" height="182px">
 <br>
 <i>UI to manage blocked endpoints in developer account</i>
 </p>
