@@ -61,7 +61,7 @@ Simply check Tracert/TraceRoute:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image12.png" width="466px" height="181px">
+ <img src="./../../assets/images/ig2/image12.png" width="466px" height="181px"><br>
  <i>fuf.me is an alias for localhost</i>
 </p>
 ++++
@@ -227,14 +227,14 @@ The result token is a base64 encoded JSON object including the following paramet
 //TODO: Example Template
 [source,JavaScript]
 ====
-{
+    {
 
-"account": "31c83d5d-c307-42f9-80b1-6fc9324823b8", +
-"regcode": "f75bfbd41b",
+    "account": "31c83d5d-c307-42f9-80b1-6fc9324823b8", +
+    "regcode": "f75bfbd41b",
 
-"expires": "2018-02-27T10:49:04.901Z"
+    "expires": "2018-02-27T10:49:04.901Z"
 
-}
+    }
 ====
 
 == Authentication for CUs and non-cloud-software
