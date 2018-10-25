@@ -12,22 +12,21 @@ Following a list of all commands; specific definitions follow in the next subcha
 [cols="1,2,9",options="header",]
 |=========================================================================================================================================================================================================
 |MessageType |Schema (.proto) |Comment
-|link:./endpoint.adoc[dke:capabilities] |agrirouter.request.payload.endpoint.CapabilitySpecification |Endpoint to announce ist capabilities in terms of technical message types that can be sent / received
-|link:./endpoint.adoc[dke:subscription] |agrirouter.request.payload.endpoint.Subscription |Endpoint to subscribe for a certain technical message type, so that it receives published messages of this type
-|link:./feed.adoc[dke:feed_header_query] |agrirouter.feed.request.MessageQuery |Endpoint to query for metadata of messages in its message feed (type, size, sender, time sent etc.)
-|link:./feed.adoc[dke:feed_message_query] |agrirouter.feed.request.MessageQuery |Endpoint to query for messages in its message feed
-|link:./feed.adoc[dke:feed_confirm] |agrirouter.feed.request.MessageConfirm |Endpoint to confirm that it has received a certain message (or set of messages)
-|link:./feed.adoc[dke:feed_delete] |agrirouter.feed.request.MessageDelete |Endpoint to delete messages from its message feed
-|link:./ecosystem.adoc[dke:list_endpoints] |agrirouter.request.payload.account.ListEndpointsQuery |Endpoint to get a list of endpoints to which messages of a certain type can be sent (considering routing rules in place)
-|link:./ecosystem.adoc[dke:list_endpoints_unfiltered] |agrirouter.request.payload.account.ListEndpointsQuery |Endpoint to get a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
-|link:./cloud.adoc[dke:cloud_onboard_endpoints] |agrirouter.cloud.registration.OnboardingRequest |A cloud system to create virtual CU endpoints in a paired agrirouter account
-|link:./cloud.adoc[dke:cloud_offboard_endpoints] |agrirouter.cloud.registration.OffboardingRequest |A cloud system to delete (offboard) virtual CU endpoints in a paired agrirouter account
-|link:./endpoint.adoc[iso:11783:-10:device_description:protobuf] |efdi.ISO11783_TaskData |Communication Unit to send a device description message including a teamset Context ID
-|link:./efdi.adoc[iso:11783:-10:time_log:protobuf] |efdi.TimeLog |Live telemetry data according to ISO11783 TimeLog specification, encoded in protobuf
+|xref:./endpoint.adoc[dke:capabilities] |agrirouter.request.payload.endpoint.CapabilitySpecification |Endpoint to announce ist capabilities in terms of technical message types that can be sent / received
+|xref:./endpoint.adoc[dke:subscription] |agrirouter.request.payload.endpoint.Subscription |Endpoint to subscribe for a certain technical message type, so that it receives published messages of this type
+|xref:./feed.adoc[dke:feed_header_query] |agrirouter.feed.request.MessageQuery |Endpoint to query for metadata of messages in its message feed (type, size, sender, time sent etc.)
+|xref:./feed.adoc[dke:feed_message_query] |agrirouter.feed.request.MessageQuery |Endpoint to query for messages in its message feed
+|xref:./feed.adoc[dke:feed_confirm] |agrirouter.feed.request.MessageConfirm |Endpoint to confirm that it has received a certain message (or set of messages)
+|xref:./feed.adoc[dke:feed_delete] |agrirouter.feed.request.MessageDelete |Endpoint to delete messages from its message feed
+|xref:./ecosystem.adoc[dke:list_endpoints] |agrirouter.request.payload.account.ListEndpointsQuery |Endpoint to get a list of endpoints to which messages of a certain type can be sent (considering routing rules in place)
+|xref:./ecosystem.adoc[dke:list_endpoints_unfiltered] |agrirouter.request.payload.account.ListEndpointsQuery |Endpoint to get a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
+|xref:./cloud.adoc[dke:cloud_onboard_endpoints] |agrirouter.cloud.registration.OnboardingRequest |A cloud system to create virtual CU endpoints in a paired agrirouter account
+|xref:./cloud.adoc[dke:cloud_offboard_endpoints] |agrirouter.cloud.registration.OffboardingRequest |A cloud system to delete (offboard) virtual CU endpoints in a paired agrirouter account
+|xref:./endpoint.adoc[iso:11783:-10:device_description:protobuf] |efdi.ISO11783_TaskData |Communication Unit to send a device description message including a teamset Context ID
+|xref:./../tmt/efdi.adoc[iso:11783:-10:time_log:protobuf] |efdi.TimeLog |Live telemetry data according to ISO11783 TimeLog specification, encoded in protobuf
 |=========================================================================================================================================================================================================
 
 [NOTE]
 ====
 Those are the commands, that have the agrirouter as destination. Messages have other endpoints as destination. They are sent to the agrirouter like commands, but the agrirouter recognizes, that he only has to route and perhaps filter them.
 ====
-

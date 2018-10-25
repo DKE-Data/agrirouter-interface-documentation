@@ -1,4 +1,5 @@
 = Analyse Outbox Results
+:sectlinks:
 :imagesdir: ./../assets/images/
 :toc:
 :toc-title:
@@ -44,8 +45,8 @@ The response code indicates success or failure of a request.
 |503 |request cannot be processed at the moment, probably due to temporary overload
 |==========================================================================================================================================================
 
-=== type
-
+=== ResponseType
+[[ResponseType]]
 The type is required to determine the correct schema for the body:
 
 The following List shows the corresponding Protobuf schemata for each ResponseType

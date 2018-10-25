@@ -18,7 +18,7 @@ As a universal data exchange platform, agrirouter fills a gap on the way to Farm
 
 == Purpose of this documentation
 
-The purpose of this documentation is to create deep knowledge about the thirdparty integration into the agrirouter solution. It shall include all information necessary to develop an integration with the agrirouter interface in an application. 
+The purpose of this documentation is to create deep knowledge about the third party integration into the agrirouter solution. It shall include all information necessary to develop an integration with the agrirouter interface in an application.
 
 == Call for Participation
 
@@ -26,48 +26,48 @@ This documentation is an open source project. We invite everybody to open issues
 
 == Terms and short descriptions
 
-A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
+A short description naming all the agrirouter specific terms and their connection to each other can be found xref:./terms.adoc[here]
 
-A list of shortings can be found link:./docs/shortings.adoc[here]
+A list of shortings can be found xref:./docs/shortings.adoc[here]
 
-A glossary can be found link:./docs/glossary.adoc[here]
+A glossary can be found xref:./docs/glossary.adoc[here]
 
-There are several ids required for communication, a list of descriptions can be found link:./docs/ids_and_definitions.adoc[here].
+There are several ids required for communication, a list of descriptions can be found xref:./docs/ids_and_definitions.adoc[here].
 
 == Tools and Libraries
 
-A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found link:./docs/development_resources.adoc[here].
+A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found xref:./docs/development_resources.adoc[here].
 
 == Certification
 
-Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./docs/certification.adoc[here].
+Every app needs to be certified to communicate with the agrirouter. Further information can be found xref:./docs/certification.adoc[here].
 
 == Marketplace
 
-Once, your app is certified, it can be displayed at the marketplace. Learn mor about that link:./docs/marketplace.adoc[here].
+Once, your app is certified, it can be displayed at the marketplace. Learn more about that xref:./docs/marketplace.adoc[here].
 
 == Application and Endpoint management
 
-Learn, how to handle your applications endpoints link:./docs/application_endpoint_management.adoc[here].
+Learn, how to handle your applications endpoints xref:./docs/application_endpoint_management.adoc[here].
 
 == Service & Support
 
-For feature- or bug reports, you can contact the support. See link:./docs/service_support.adoc[here]
+For feature- or bug reports, you can contact the support. See xref:./docs/service_support.adoc[here]
 
 == Integration
 
 These chapters describe all requirements to integrate an application with agrirouter.
 
-First, you should always keep in mind the link:./docs/integration/general-conventions.adoc[General conventions].
+First, you should always keep in mind the xref:./docs/integration/general-conventions.adoc[General conventions].
 
-There are several environments for test and production in different areas of the world. They can be found in the link:./docs/integration/environments.adoc[Environments].
+There are several environments for test and production in different areas of the world. They can be found in the xref:./docs/integration/environments.adoc[Environments].
 
-FarmingSoftware and Telemetry Platforms have to perform an link:docs/integration/authentication.adoc[Authentication Process] to clarify, that the account user is known. CUs may also perform it, but that is not required
+FarmingSoftware and Telemetry Platforms have to perform an xref:./docs/integration/authentication.adoc[Authentication Process] to clarify, that the account user is known. CUs may also perform it, but that is not required
 
-To communicate with the agrirouter, an application Instance needs to be link:docs/integration/onBoarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be link:docs/integration/revoke.adoc[Revoked].
+To communicate with the agrirouter, an application Instance needs to be xref:./docs/integration/onBoarding.adoc[onboarded]. An application instance can be xref:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be xref:docs/integration/revoke.adoc[Revoked].
 
-For further communication, it's important to understand the link:/docs/endpoint.adoc[Elements of an endpoint] and the link:/docs/communication.adoc[Basics of Communication].
+For further communication, it's important to understand the xref:./docs/endpoint.adoc[Elements of an endpoint] and the xref:./docs/communication.adoc[Basics of Communication].
 
-To send a message, it has to be built first. Read link:/docs/integration/buildmessage.adoc[here] about building messages.
+To send a message, it has to be built first. Read xref:./docs/integration/buildmessage.adoc[here] about building messages.
 
-When link:/docs/integration/messageSending.adoc[sending messages], the result will be link:docs/integration/messageReceiving.adoc[received through the outbox] and can be link:./docs/integration/analyzeResult.adoc[analyzed] depending on the link:/docs/tmt/overview.adoc[technical message type] and the link:./docs/resultCodes.adoc[resultCodes].
+When xref:./docs/integration/messageSending.adoc[sending messages], the result will be xref:./docs/integration/messageReceiving.adoc[received through the outbox] and can be xref:./docs/integration/analyzeResult.adoc[analyzed] depending on the xref:./docs/tmt/overview.adoc[technical message type] and the xref:./docs/integration/analyzeResult.adoc#ResponseType[resultCodes].

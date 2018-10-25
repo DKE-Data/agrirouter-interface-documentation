@@ -10,7 +10,7 @@
 The authentication process was designed to give application providers of consuming applications (e.g. farming software, but in general every application that consumes data) the chance to make sure, they know, which account is assigned to which agrirouter account. Otherwise, fake accounts could consume data on their costs.
 
 [NOTE]
-==== 
+====
 As the authentication process – in difference to the rest of the communication – provides a request to your agrirouter integration and not the response to a request from your agrirouter integration, the documentation of the parameters is done in a little different way and there is no description for a HTTP Response code, because we don’t get one.
 ====
 

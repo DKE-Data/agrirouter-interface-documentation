@@ -165,7 +165,7 @@ The parameters as overview:
 |timestamp |timestamp |The timestamp, when the message was created
 |=====================================================================================================================================
 
-For the timestamp format definition, please refer to: https://github.com/google/protobuf/blob/master/src/google/protobuf/timestamp.proto
+For the timestamp format definition, please refer to: link:https://github.com/google/protobuf/blob/master/src/google/protobuf/timestamp.proto
 
 [NOTE]
 ====
@@ -187,7 +187,7 @@ Note that this concept is not supported in all protobuf libraries (in Java and n
 
 If building streaming is required for the language and libraries, you use, Note, that Delemited messages are attached to each other like this: Length1,Content1,Length2,Content2,…. The variable size of Length is the length of a varint; see https://developers.google.com/protocol-buffers/docs/encoding#varints.
 
-A solution for C++ can be found here: https://stackoverflow.com/questions/2340730/are-there-c-equivalents-for-the-protocol-buffers-delimited-i-o-functions-in-ja/
+A solution for C++ can be found here: link:https://stackoverflow.com/questions/2340730/are-there-c-equivalents-for-the-protocol-buffers-delimited-i-o-functions-in-ja/
 
 == Message container
 
@@ -278,7 +278,7 @@ The JSON setup looks like this:
 
 === Protobuf setup
 
-The protobuf message can be found here: https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/e97b63e35f9a4bdbab72075e7bd37ccf.html
+The protobuf message can be found here: link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/e97b63e35f9a4bdbab72075e7bd37ccf.html
 
 It looks as follows:
 [source,javascript]

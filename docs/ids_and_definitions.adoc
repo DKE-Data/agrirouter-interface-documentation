@@ -107,7 +107,7 @@ The developer can find the ID in his developer account:
 The value can be found in the agrirouter UI endpoint Information
 
 ++++
-<p>
+<p align="center">
 <img src="./../assets/images/ig2/image49.png" width="512px" height="419px" /><br>
 <i>agrirouter endpoint software ID</i>
 </p>

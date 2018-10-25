@@ -6,12 +6,12 @@
 
 [WARNING]
 ====
-This document is still work in progress. If you are looking for a full documentation, better look at 
-the link:\assets\documents\integration-guide-part-1.pdf[Integration Guide Part 1] or  link:\assets\documents\integration-guide-part-2.pdf[Integration Guide Part 2]
+This document is still work in progress. If you are looking for a full documentation, better look at
+the link:./assets/documents/integration-guide-part-1.pdf[Integration Guide Part 1] or  link:./assets/documents/integration-guide-part-2.pdf[Integration Guide Part 2]
 ====
 
 
-[abstract] 
+[abstract]
 == agrirouter in a nutshell
 This chapter will give you an overview of the used terms in the agrirouter documentation. Take a look at the linked chapters for further details.
 
@@ -30,7 +30,7 @@ The following paragraphs give a short overview of what you will learn in the lin
 =====
 
 //General information on agrirouter
-The whole chapter can be found link:docs/general.adoc[here]
+The whole chapter can be found xref:./docs/general.adoc[here]
 
 '''
 
@@ -52,7 +52,7 @@ The whole chapter can be found link:docs/general.adoc[here]
 ====
 
 //About accounts
-The whole chapter can be found link:docs/accounts.adoc[here]
+The whole chapter can be found xref:./docs/accounts.adoc[here]
 
 '''
 
@@ -84,7 +84,7 @@ The whole chapter can be found link:docs/accounts.adoc[here]
 
 
 //About applications
-The whole chapter can be found link:docs/applications.adoc[here]
+The whole chapter can be found xref:./docs/applications.adoc[here]
 
 '''
 
@@ -184,7 +184,7 @@ The whole chapter can be found link:docs/applications.adoc[here]
 ====
 
 //About the general concepts of message Exchange
-The whole chapter can be found link:docs/message_exchange.adoc[here]
+The whole chapter can be found xref:./docs/message_exchange.adoc[here]
 
 '''
 
@@ -242,9 +242,7 @@ The whole chapter can be found link:docs/message_exchange.adoc[here]
 ====
 
 //About the general messaging workflow
-The whole chapter can be found link:docs/messaging_workflow.adoc[here]
+The whole chapter can be found xref:./docs/messaging_workflow.adoc[here]
 
 
 '''
-
-

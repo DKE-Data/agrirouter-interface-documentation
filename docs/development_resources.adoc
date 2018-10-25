@@ -27,13 +27,13 @@ To perform an agrirouter integration, you will need knowledge to the following t
 
 == Development Tools
 
-* For REST Tests, you can use the link:docs/tools/postman.adoc[Postman Collection]
+* For REST Tests, you can use the xref:./tools/postman.adoc[Postman Collection]
 
-* For MQTT Tests, you can use link:docs/tools/paho.adoc[Paho]
+* For MQTT Tests, you can use xref:./tools/paho.adoc[Paho]
 
-* Especially for Protobuf Development, you can use the link:docs/tools/arts.adoc[Agrirouter Protobuf Toolset]
+* Especially for Protobuf Development, you can use the xref:./tools/arts.adoc[Agrirouter Protobuf Toolset]
 
-* To create and play traces, use the link:/docs/tools/endpoint-recording.adoc[Endpoint Recording]
+* To create and play traces, use the xref:./tools/endpoint-recording.adoc[Endpoint Recording]
 
 == Further Resources
 
@@ -45,5 +45,5 @@ Following resources can help developers to integrate their applications to the a
 |Agrirouter main page |https://my-agrirouter.com |The official website of the agrirouter
 |GitHub |https://github.com/dke-data/ |Official GitHub with libraries and resources
 |DDI Dictionary |https://dictionary.isobus.net/ |The official list of standardized Sensor values
-|AEF |https://aef-online.org . |The official website of the Agricultural Electronics Foundation. This group defines EFDI and the standards of ISOXML.
+|AEF |https://aef-online.org  |The official website of the Agricultural Electronics Foundation. This group defines EFDI and the standards of ISOXML.
 |====================================================================================================================================================
