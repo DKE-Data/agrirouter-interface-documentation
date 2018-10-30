@@ -25,6 +25,8 @@ The user interface offers possibilities to handle the account:
 </p>
 ++++
 
+A specific help for handling of an end user account can be found link:https://lb.my-agrirouter.com[here].
+
 
 == Developer
 

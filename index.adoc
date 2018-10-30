@@ -34,9 +34,11 @@ A glossary can be found xref:./docs/glossary.adoc[here]
 
 There are several ids required for communication, a list of descriptions can be found xref:./docs/ids_and_definitions.adoc[here].
 
-== Tools and Libraries
+== Development Resources
 
 A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found xref:./docs/development_resources.adoc[here].
+
+The keys and certificates required for communication can be found xref:./docs/keys.adoc[here].
 
 == Certification
 
@@ -56,18 +58,29 @@ For feature- or bug reports, you can contact the support. See xref:./docs/servic
 
 == Integration
 
+the integration with agrirouter is described in the link:./docs/general-integration-process.adoc[general integration process].
+
 These chapters describe all requirements to integrate an application with agrirouter.
 
 First, you should always keep in mind the xref:./docs/integration/general-conventions.adoc[General conventions].
 
 There are several environments for test and production in different areas of the world. They can be found in the xref:./docs/integration/environments.adoc[Environments].
 
-FarmingSoftware and Telemetry Platforms have to perform an xref:./docs/integration/authentication.adoc[Authentication Process] to clarify, that the account user is known. CUs may also perform it, but that is not required
+FarmingSoftware and Telemetry Platforms have to perform an xref:./docs/integration/authorization.adoc[Authorization Process] to clarify, that the account user is known. CUs may also perform it, but that is not required
 
 To communicate with the agrirouter, an application Instance needs to be xref:./docs/integration/onBoarding.adoc[onboarded]. An application instance can be xref:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be xref:docs/integration/revoke.adoc[Revoked].
 
 For further communication, it's important to understand the xref:./docs/endpoint.adoc[Elements of an endpoint] and the xref:./docs/communication.adoc[Basics of Communication].
 
-To send a message, it has to be built first. Read xref:./docs/integration/buildmessage.adoc[here] about building messages.
+To send a message, it has to be built first. Read xref:./docs/integration/buildmessage.adoc[here] about building messages and commands.
 
-When xref:./docs/integration/messageSending.adoc[sending messages], the result will be xref:./docs/integration/messageReceiving.adoc[received through the outbox] and can be xref:./docs/integration/analyzeResult.adoc[analyzed] depending on the xref:./docs/tmt/overview.adoc[technical message type] and the xref:./docs/integration/analyzeResult.adoc#ResponseType[resultCodes].
+When xref:./docs/integration/messageSending.adoc[sending messages], the result will be xref:./docs/integration/messageReceiving.adoc[received through the outbox].
+
+Every AppInstance can send xref:./docs/tmt/overview.adoc[messages] and xref:./docs/commands/overview.adoc[commands] the same way.
+
+ Depending on the  xref:./docs/integration/analyzeResult.adoc#ResponseType[resultType], the Result can be xref:./docs/integration/analyzeResult.adoc[analyzed].
+
+
+=== Usage metrix
+
+As an application provider, you can download xref:./docs/usage_metrix.adoc[usage metrics] to check, which account consumed how much data.

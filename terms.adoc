@@ -76,7 +76,7 @@ The whole chapter can be found xref:./docs/accounts.adoc[here]
 
 * Users can onboard application instances of an application to their account.
 
-* These onboarded application can than communicate with apps within this agrirouter account.
+* These onboarded application instances can than communicate with apps within this agrirouter account.
 
 * Apps need to be certified to be onboarded to the agrirouter.
 
@@ -93,7 +93,8 @@ The whole chapter can be found xref:./docs/applications.adoc[here]
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image11.png" width="634px" height="400px">
+ <img src="./assets/images/ig1\image11.png" width="634px" height="400px"><br>
+ <i>A schema of the hierachy of agrirouter app instances</i>
 </p>
 ++++
 
@@ -114,9 +115,14 @@ The whole chapter can be found xref:./docs/applications.adoc[here]
 
 * A teamset is one (virtual) CU with zero to n attached machines.
 
+* An account can be connected to another account. If that happens, an endpoint is created in each of the 2 accounts, each endpoint representing the other account in that account.
+
 * If there are 2 CUs installed on a real-world machine, a machine can be found in multiple teamsets and therefore even in multiple accounts.
 
-* Applications, Virtual CUs and Machines are endpoints, that can be source or target of a message.
+* Applications, Virtual CUs, other users accounts and Machines are endpoints, that can be source or target of a message.
+
+
+The whole chapter can be found link:./docs/ecosystem.adoc[here].
 
 ''''
 
@@ -133,9 +139,11 @@ The whole chapter can be found xref:./docs/applications.adoc[here]
 
 * agrirouter provides an inbox, an outbox and a feed unique for each endpoint.
 
+* an application instance can subscribe for technical message types, that it would like to receive from endpoints in that account.
+
 **Message forwarding:**
 
-* Every App Instance can send messages to its inbox at the agrirouter.
+* Every App Instance can send messages to the inbox of its endpoint at the agrirouter.
 
 * Each message has a technical message type(TMT) and a list of recipient addresses.
 
@@ -144,8 +152,6 @@ The whole chapter can be found xref:./docs/applications.adoc[here]
 * If a message is published, agrirouter adds all endpoints to the recipients list, that are subscribed for this TMT.
 
 * agrirouter forwards the messages to the feed of all relevant endpoints.
-
-* Each Application Instance can subscribe its endpoint for technical message types within its account.
 
 **Routings:**
 

@@ -6,6 +6,8 @@
 
 NOTE: This chapter is not yet fully implemented
 
+Applications are software products, that have implemented an interface to the agrirouter. There are 3 Types of possible applications:
+
 == Communication Units
 
 Communication units (CU) are mobile applications, mostly running on embedded systems or mobile devices to establish a connection to the agrirouter “in the fields”. CUs are used to collect information like machine data or geo positions.
@@ -23,19 +25,23 @@ Please note, that there might be additional CUs in development.
 [IMPORTANT] 
 ====
 Communication units can also be tablets or other devices and should meet the following *base requirements*: 
-====
+
 
 * Every single device has to have internet connectivity and must be able to communicate via HTTP(S) with REST or via MQTT. The communication consists mainly of payloads in Google Protocol Buffer format.
 
 * Endpoints without a constant internet connectivity are not able to send real time data. Sending recorded data after establishing an internet connection will be a valid use case for endpoints not having internet connectivity during the main working process of a machine.
 
+====
+
 == Telemetry platform and virtual CUs
 
 A telemetry platform is a cloud software solution, that provides access to multiple so called virtual CUs. Virtual CUs are comparable to real CUs, but in difference, they do not implement the agrirouter protocol. Virtual CUs implement a proprietary protocol to connect to the telemetry platform only.
 
-The telemetry platform is than connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform differs from the onboarding process of a CU, as the user might not have to enter a TAN in the CU. In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
+The telemetry platform is connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform differs from the onboarding process of a CU, as the user might not have to enter a TAN in the CU. In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
 
-A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetry-units/. Please note, that there might be additional telemetry systems in development of the compatibility.
+A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetry-units/. 
+
+Please note, that there might be additional telemetry systems in development of the compatibility.
 
 == Farming software
 
@@ -47,35 +53,18 @@ https://my-agrirouter.com/en/marketplace/apps/
 
 Please note, that there might be additional software in development of the compatibility.
 
-= General Integration process
 
-== General
 
-To maximize the quality of the agrirouter ecosystem, there are several requirements additional to the general development of the application itself. This chapter shall describe all necessary steps additional to the development of the application to integrate this app with the agrirouter.
+== Mixed Applications
 
-== Overview of the process
+It’s not always obvious, to which category a new application belongs. To simplify the decision, DKE advices the following decision tree:
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image4.png" width="642px" height="254px"><br>
-<i>General agrirouter integration process</i>
+<img src="./../assets/images/ig1\image6.png" width="619px" height="366px"><br>
+<i>Decision Tree: What type of application do I create?</i>
 </p>
 ++++
-
-
-After the first contact with the company DKE-Data and signing the App- and Hardware Provider agreement, an agrirouter developer account can be created in the agrirouter quality assurance (QA) environment.
-
-In the developer account, a new farming software, communication unit or telemetry platform can be added. The app provider has to create a first Certification version in the UI, that can be approved by DKE.
-
-Afterwards, it is possible to register and onboard endpoints of this software as well as any other software endpoint. It is important to know, that the quality assurance environment is not made for real life productive data exchange, but only for test of the connectivity of a software. The number of endpoints, that can be created on the quality assurance environment is limited.
-
-Once the connectivity to agrirouter is successfully developed and tested, the developer sends a request to agrirouter support team for starting a certification process.
-
-DKE will provide a list of a trusted partners for agrirouter certification on the https://my-agrirouter.com/support/ website.
-
-If the agrirouter certification of the application is successful, it is recommended to do live test on the agrirouter production environment with real accounts of selected farmers. The developer can add those accounts to his test environment in the developers’ user interface.
-
-To release the new application to public, the app provider can create an application description in the agrirouter marketplace. See https://my-agrirouter.com/marketplace/apps/
 
 == Register Application
 
@@ -87,18 +76,6 @@ After creating an agrirouter developer account in quality assurance environment,
 <p align="center">
 <img src="./../assets/images/ig1\image5.png" width="642px" height="364px"><br>
 <i>agrirouter endpoint software management</i>
-</p>
-++++
-
-
-== Mixed Applications
-
-It’s not always obvious, to which category a new application belongs. To simplify the decision, DKE advices the following decision tree:
-
-++++
-<p align="center">
-<img src="./../assets/images/ig1\image6.png" width="619px" height="366px"><br>
-<i>Decision Tree: What type of application do I create?</i>
 </p>
 ++++
 

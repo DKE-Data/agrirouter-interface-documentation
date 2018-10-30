@@ -1,6 +1,0 @@
-:imagesdir: ./../../assets/images/
-
-= Communication Process
-
-
-NOTE: This chapter is not yet implemented

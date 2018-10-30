@@ -27,7 +27,7 @@ To perform an agrirouter integration, you will need knowledge to the following t
 
 == Development Tools
 
-* For REST Tests, you can use the xref:./tools/postman.adoc[Postman Collection]
+* For REST Tests, you can use the link:https://github.com/DKE-Data/agrirouter-postman-tools[Postman Collection]
 
 * For MQTT Tests, you can use xref:./tools/paho.adoc[Paho]
 

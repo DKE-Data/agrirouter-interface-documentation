@@ -11,36 +11,51 @@ The agrirouter api uses several IDs, which can be a little confusing. But don’
 [cols="1,4",options="header",]
 |======================================================================================================================================================================================================
 |Name |Description
-|accountId |A UUID describing the account of an end user. In one account, there can be multiple endpoints. One account however has one set of login credentials for the agrirouter
-|applicationId |A UUID identifying an application regardless of the software version
-|capabilityAlternateId |This is an Id that is delivered with the onboarding Request and has to be delivered with any message 
-|certificationVersionId |A UUID representing a Certification for one app. an app has to be certified every time, a new version with changed capabilities against agrirouter are implemented.
-|deviceAlternateId | The Id of the sender of a message
-|endpointId |The endpointId is the unique address of an Application Instance on the agrirouter. It’s used to address the outbox and inbox and to directly address an endpoint from a different endpoint
-|gatewayId |This is a simple enumeration to determine the protocol type of the communication. It’s either 2=MQTT or 3=REST
-|sensorAlternateId | The Id of the recorder or the final receiver of a message
+
+|accountId 
+|A UUID describing the account of an end user. In one account, there can be multiple endpoints. One account however has one set of login credentials for the agrirouter
+
+|applicationId 
+|A UUID identifying an application regardless of the software version
+
+|capabilityAlternateId 
+|This is an Id that is delivered with the onboarding Request and has to be delivered with any message 
+
+|certificationVersionId 
+|A UUID representing a Certification for one app. An app has to be certified every time, a new version with changed capabilities against agrirouter are implemented.
+
+|deviceAlternateId 
+|The Id of the endpoint of an application instance
+
+|endpointId 
+|The endpointId is the unique address of an Application Instance on the agrirouter. It’s used to address the outbox and inbox and to directly address an endpoint from a different endpoint
+
+|gatewayId 
+|This is a simple enumeration to determine the protocol type of the communication. It’s either 2=MQTT or 3=REST
+
+|sensorAlternateId 
+|The Id of the recorder or the final receiver of a message
+
 |======================================================================================================================================================================================================
 
 == Ids in different Environments
 
-It is important to keep in mind, that all Ids including applicationId or certificationVersionId might differ between QA and Productive environments.
+It is important to keep in mind, that all Ids including applicationId and certificationVersionId will differ between QA and Productive environments.
 
 == Practical differentiation between SensorAlternateId and DeviceAlternateId
 
 sensorAlternateID and deviceAlternateId seem to be pretty equal, but the context differs. Here are some practical examples
 
-=== An App sends a TaskData
+[NOTE]
+====
+You will find  "="  signs in the following sub chapters. In this context, = does *NOT* mean, that the values of the ids are equal, but that they represent the same device
+====
+
+=== An Farming Software sends a TaskData
 
 For apps, the solution is pretty easy:
 
 *sensorAlternateId = deviceAlternateId =* The endpoint representing the users account within the app.
-
-[NOTE]
-====
-* For a telemetry platform, this is not correct, as the deviceAlternateId represents the telemetry platform itself whereas the sensorAlternateID describes the Virtual CU
-* = does *NOT* mean, that the values are equal, but that they represent the same device
-====
-
 
 === A CU sends a TaskData
 
@@ -48,10 +63,6 @@ Assume, a CU wants to send a taskdata.zip. Even though, it could include machine
 
 *sensorAlternateId = deviceAlternateId =* The CU
 
-[NOTE]
-====
-* = does *NOT* mean, that the values are equal, but that they represent the same device
-====
 
 === A telemetry Platform sends a TaskData from a virtual CU
 
@@ -60,6 +71,8 @@ The virtual CU as well as the telemetry platform are endpoints in the agrirouter
 *deviceAlternateId:* The telemetry platform is source of the message
 
 *sensorAlternateId:* The virtual CU is source of the content of the message
+
+*sensorAlternateId != deviceAlternateId*
 
 == accountId
 
@@ -98,18 +111,25 @@ A UUID identifying an application regardless of the software version.
 
 ==== As API
 
-The value cannot be found by the api, it has to be entered by the developer.
+The value cannot be found by the api, it has to be entered into the application by the developer.
 
 The developer can find the ID in his developer account:
+++++
+<p align="center">
+<img src="./../assets/images/ig2/image10.png" width="800px" height="419px" /><br>
+<i>application ID (second row below the icon)</i>
+</p>
+++++
+
 
 ==== As End User
 
-The value can be found in the agrirouter UI endpoint Information
+The value can be found in the agrirouter UI endpoint information
 
 ++++
 <p align="center">
 <img src="./../assets/images/ig2/image49.png" width="512px" height="419px" /><br>
-<i>agrirouter endpoint software ID</i>
+<i>applicationID = endpoint software ID</i>
 </p>
 ++++
 
@@ -135,7 +155,7 @@ The value cannot be found by an end user and has no meaning for him.
 
 === Description
 
-A UUID representing a certification for one app. an app has to be certified every time, a new version with changed capabilities against agrirouter are implemented.
+A UUID representing a certification for one app version. An app has to be certified every time, a new version with changed capabilities against agrirouter are implemented.
 
 === Where to find
 
@@ -145,6 +165,14 @@ The value cannot be found by the API. It has to be entered by the developer.
 
 The developer can find the certificationVersionID in his endpoint software overview:
 
+++++
+<p align="center">
+<img src="./../assets/images/ig2/image23.png" width="800px" height="419px" /><br>
+<i>certificationVersionId (see below the title)</i>
+</p>
+++++
+
+
 ==== As End User
 
 The value can be found in the agrirouter UI endpoint Information
@@ -152,7 +180,7 @@ The value can be found in the agrirouter UI endpoint Information
 ++++
 <p align="center">
 <img src="./../assets/images/ig2/image49.png" width="512px" height="419px" /><br>
-<i>agrirouter endpoint software version ID</i>
+<i>certificationVersionId = endpoint software version ID</i>
 </p>
 ++++
 
@@ -162,13 +190,13 @@ The value can be found in the agrirouter UI endpoint Information
 
 === Description
 
-The deviceAlternateID represents the source of an agrirouter command, but not necessarily the source of the message itself. E.g. a telemetry platform would mark itself as deviceAlternateId and the virtual CU as source of message (content)
+The deviceAlternateID represents the source of an agrirouter command, but not necessarily the source of the message itself. E.g. a telemetry platform would mark itself as deviceAlternateId and the virtual CU as source of message (content). The deviceAlternateId is the id of the endpoint.
 
 === Where to find
 
 ==== As API
 
-The value is delivered with any agrirouter message. To create message, take the context relevant endpointId. Context is the command, e.g. an onboarding request.
+The value is delivered with the onboarding request and used by the app instance to communicate with its endpoint. 
 
 ==== As End User
 
@@ -199,7 +227,7 @@ The value can be found in the agrirouter UI endpoint Information
 </p>
 ++++
 
-
+**endpointId = deviceAlternateId**
 
 == gatewayId
 
@@ -225,19 +253,19 @@ see above
 
 === Description
 
-The sensorAlternateID is an endpointID representing the parent telemetry platform for a Virtual CU.
-
-It can be used to on- and offboard new virtual CUs.
+The sensorAlternateID is the adress of an app instance at the agrirouter, that marks the source of a message and can be used to directly adress messages to this specific app instance or Virtual CU.
 
 === Where to find
 
 ==== As API
 
-The value is delivered with any agrirouter message. To create message, take the context relevant endpointID. Context is the “source” of a message, e.g. a machine.
+The own sensorAlternateId of an app instance is delivered with the onboarding request.
+
+The value of other app instances is delivered with any agrirouter message, marking the source of the message. 
 
 ==== As End User
 
-The id is an endpointID and can be found like the endpoint Id
+The id is an endpointID and can be found like the endpoint Id.
 
 == TeamsetContextId
 
@@ -246,7 +274,7 @@ The id is an endpointID and can be found like the endpoint Id
 The TeamsetContextId is used to describe a unique combination of different machines and CUs attached to a CU or Virtual CU. It must be defined by the CU creating a URN:
 
 ----
- urn:hash::algoritm:value
+ urn:hash::algorithm:value
 ----
 
 The agrirouter team advices to use a hashing algorithm of either md5 or sha256.
