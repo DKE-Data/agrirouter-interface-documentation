@@ -20,17 +20,27 @@ This repository includes the documentation of the interface for the agrirouter s
 Its main purpose is to allow developers to onboard their applications to the agrirouter.
 
 = Documentation
-The agrirouter integration is currently documented in 2 downloadable files:
 
-== Integration Guide Part 1
+The agrirouter integration can be found in the link:./index.adoc[agrirouter Interface Documentation] .
+
+== Old files
+
+before converting to adoc, the documentation was provided in 2 PDF files called "integration guide". Those can be found here:
+
+=== Integration Guide Part 1
 This document describes the general functionality of the agrirouter interface and can be found link:./assets/documents/integration-guide-part-1.pdf[here]
 
-== Integration Guide Part 2
+=== Integration Guide Part 2
 This document includes specific api calls, JSON-and protobuf descriptions and important notes on how to integrate your app with the agrirouter.
 The integration guide part 2  can be found link:./assets/documents/integration-guide-part-2.pdf[here]
 
+[IMPORTANT]
+====
+These files might be outdated and will no longer be updated.
+====
+
 == System Messages and Message codes
-The system message codes can be found xref:./docs/SystemMessageCodes.adoc[here]
+The system message codes can be found xref:./docs/ErrorCodes.adoc[here]
 
 == External resources
 

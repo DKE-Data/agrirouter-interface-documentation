@@ -26,7 +26,7 @@ If you publish a message, it will only reach an endpoint, if there is at least o
 
 The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The inbox is the topic delivered with the “measures” attribute of the onboarding request.
 
-To send a message, publish it.
+To send a message, publish it. (Here, publish means the MQTT-Term, see https://mqtt.org) 
 
 In general, the hosts should be as follows:
 
@@ -81,7 +81,9 @@ Content-Type: “application/x-protobuf”
 
 === Body
 
-The body consists of the message package, that was created in the previous paragraphs.Receiving a Response
+The body consists of the message package, that was created in the previous paragraphs.
+
+== Receiving a Response
 
 HTTP Messages always get confirmed by the agrirouter. For the HTTP REST Gateway, the agrirouter will simply send a HTTP Status 200 OK. For MQTT, there will not be any response.
 

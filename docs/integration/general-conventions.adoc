@@ -35,14 +35,9 @@ If your application has access to the GPS time, this should be enough to keep th
 
 [NOTE] 
 ==== 
-The agrirouter support team also suggests using this compensation time in your TaskController- and DataLogger- Data.
-
+*The agrirouter support team also suggests using this compensation time in your TaskController- and DataLogger- Data.
 Even though, this is not relevant for a proper communication with the agrirouter, it will avoid timing problems in the analysis of data with applications, that receive your data.
-====
 
-//TODO Create Example Template
-[NOTE]
-====
 
-If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data, if you have different times
+*If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data, if you have different times
 ====

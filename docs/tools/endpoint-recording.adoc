@@ -32,7 +32,7 @@ Every agrirouter account includes a functionality to record communication on tha
 ++++
 
 
-After recording started, the recording is displayed in the list of active records. Multiple records at the same time are possible to record multiple endpoints.
+After recording started, the recording is displayed in the list of active records. 
 
 ++++
 <p align="center">
@@ -41,16 +41,16 @@ After recording started, the recording is displayed in the list of active record
 </p>
 ++++
 
-Recording can be stopped (1), downloaded (2) or deleted (3).
+Recording can be stopped, downloaded or deleted.
 
 [IMPORTANT] 
 ====
 Every account may store 10 recordings with a maximum size of 10 MB in a sum.
 ====
 
-=== Replay of records
+== Replay of records
 
-In a developer account, records can be uploaded (1) additionally to the recording functionalities, that are available in both account types; end user and developer.
+In a developer account, records can be uploaded additionally to the recording functionalities, which are available in both account types; end user and developer.
 
 ++++
 <p align="center">
@@ -60,7 +60,4 @@ In a developer account, records can be uploaded (1) additionally to the recordin
 ++++
 
 
-As a developer, you are able to replay recorded commands (2); replacing the endpoint ID with any other endpoint ID.
-
-This will be described in more detail in Integration Guide Part 2.
-//TODO: Remove this sentence and copy from IG2
+As a developer, you are able to replay recorded commands.

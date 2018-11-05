@@ -5,7 +5,9 @@
 :toclevels: 4
 
 
-The agrirouter support team provides several contact possibilities. A contact field and further information can be found here: link:https://my-agrirouter.com/support/. To get in contact with agrirouter support team, you can also send an email to support@my-agrirouter.com
+The agrirouter support team provides several contact possibilities. A contact field and further information can be found link:https://my-agrirouter.com/support/[here]. 
+
+To get in contact with agrirouter support team, you can also send an email to support@my-agrirouter.com
 
 
 
@@ -40,7 +42,7 @@ Please submit the following information with your request:
 
 === For commands related incidents
 
-Please provide the commands sent from and received by the endpoint, if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see 13.1Endpoint recording
+Please provide the commands sent from and received by the endpoint, if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see link:./tools/endpoint-recording.adoc[here].
 
 === For account related incidents
 
@@ -57,7 +59,9 @@ Please provide the following information to report issues with the graphical use
 
 == Workshops and Trainings
 
-DKE and other companies might offer trainings or workshops for onboarding and development of software for the agrirouter. To see a list of these workshops and trainings, see http://www.dke-data.com/category/news/. If there are no offers available and you feel like you might need one, don’t hesitate to send a request for training to info@dke-data.com.
+DKE and other companies might offer trainings or workshops for onboarding and development of software for the agrirouter. To see a list of these workshops and trainings, see https://www.dke-data.com/category/news/. 
+
+If there are no offers available and you feel like you might need one, don’t hesitate to send a request for training to info@dke-data.com.
 
 == Feature Requests
 
@@ -68,7 +72,6 @@ Having a good idea to improve agrirouter? Don’t hesitate to send us an email t
 === Message formats
 
 If a message format is missing, please send us an email to support@my-agrirouter.com. DKE will check, if there is a common need for this. Please provide the following information with any request:
-
 
 * *Name:* What’s the name of the new format?
 

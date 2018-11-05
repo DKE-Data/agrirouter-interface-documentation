@@ -54,7 +54,7 @@ The following parts of onboarding are *not* required for CU onboarding:
 
 == Workflow for Virtual CUs
 
-Onboarding virtual CUs through a telemetry platform is done using a command. This will in particular be described later. 
+Onboarding virtual CUs through a telemetry platform is done using a command. This will in particular be described later.
 //TODO See 16.5 Commands for telemetry platforms
 
 From the end user’s perspective, it is mostly dependend on the telemetry platform, if there is any selection mechanism or if it is done automatically.
@@ -63,7 +63,7 @@ From the end user’s perspective, it is mostly dependend on the telemetry platf
 
 === Using the agrirouter UI
 
-The Registration code for a new CU can be created by the end user clicking “Generate TAN” in agrirouters’ control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers . A CU needs an interface to input this registration code.
+The Registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit” in agrirouters’ control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers . A CU needs an interface to input this registration code.
 
 ++++
 <p align="center">
@@ -82,13 +82,13 @@ The Registration code for a new CU can be created by the end user clicking “Ge
 ++++
 
 
-=== As result of the authentication
+=== As result of the authorization
 
-If the authentication prozess is done using parameter _response_type=onboard_, the result will include a regcode. This regcode is a TAN.
+If the link:./authorization.adoc[authorization prozess] is done using parameter _response_type=onboard_, the result will include a regcode. This regcode is a TAN.
 
 === Telemetry Platforms
 
-A telemetry platform has to be onboarded using the authentication process. Once it is onboarded, it can onboard virtual CUs by itself. Therefore, it can use a special command. as Commands are described in a later chapter.
+A telemetry platform has to be onboarded using the authorization process. Once it is onboarded, it can onboard virtual CUs by itself. Therefore, it can use a special command. Commands are described in a later chapter.
 //TODO:  please refer to 16.5.1 Onboarding a Virtual CU.
 
 == Collecting and setting up relevant information
@@ -127,7 +127,7 @@ The CertificationVersionID is the ID unique to this specific app certification p
 This step is not required for CUs
 ====
 
-As the requests need to be signed (see 8.8Signing requests), the public key has to be stored within the agrirouter. This can be done, calling “Edit” on the Endpoint Software Management Screen (see Figure 17 Finding the applicationID ). The agrirouter UI offers the possibility to create a key pair, you can however create your own one and just store the public key on agrirouter.
+As the requests need to be signed, the public key has to be stored within the agrirouter. This can be done, calling “Edit” on the Endpoint Software Management Screen. The agrirouter UI offers the possibility to create a key pair, you can however create your own one and just store the public key on agrirouter.
 
 ++++
 <p align="center">
@@ -158,7 +158,7 @@ Like every URL in this document, these URLs might change in the future or there 
 
 == Signing requests
 
-For onboarding, the agrirouter must be sure, that the requests actually come from an instance of the app specified in the request. Therefore, the payload must be signed with the applications private key. The corresponding public key must be maintained by the developer in agrirouter per application, see Setting up private and public key.
+For onboarding, the agrirouter must be sure, that the requests actually come from an instance of the app specified in the request. Therefore, the payload must be signed with the applications private key. The corresponding public key must be maintained by the developer in agrirouter per application, see above.
 
 A Payload encryption is not needed since all communication is encrypted with TLS
 
@@ -205,14 +205,14 @@ The Request shall include the following header information:
 |Authorization |String |“Bearer “+ the TAN
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
-|X-Agrirouter-Signature |[Signature] |see 8.8 Signing requests
+|X-Agrirouter-Signature |[Signature] |see xref:./onBoarding.adoc#signing-requests[Signing requests]
 |=============================================================
 
 ==== Body Information
 
 The request body includes the same parameters as the onboarding requests body:
 
-The request body is a JSON object including the following Parameters and is equal for any type of onboarding:
+The request body is a JSON object including the following Parameters:
 
 [cols="1,3,2,5",options="header",]
 |================================================================================================================
@@ -294,6 +294,7 @@ It includes the accountId, so that an app provider can check, if this accountId 
 ===== Failure
 
 In case of Failure, an error message is provided.
+//TODO: Add possible error messages
 
 == Sending Onboarding Request
 
@@ -335,13 +336,13 @@ The Request shall include the following header information:
 |Authorization |String |“Bearer “+ the registration code _Remark: There is a space between bearer and registration code!_
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
-|X-Agrirouter-Signature |[Signature] | The signature
-//TODO see 8.8 8.8
+|X-Agrirouter-Signature |[Signature] | The signature,
+see xref:./onBoarding.adoc#signing-requests[here]
 |========================================================================================================================
 
 ==== Body Information
 
-The request body is a JSON object including the following Parameters and is equal for any type of onboarding:
+The request body is a JSON object including the following Parameters:
 
 [cols="1,3,2,4",options="header",]
 |=======================================================================================================================
@@ -416,7 +417,7 @@ The Request shall include the following header information:
 
 ==== Body Information
 
-The request body is a JSON object including the following Parameters and is equal for any type of onboarding:
+The request body is a JSON object including the following Parameters:
 
 [cols="1,3,2,4",options="header",]
 |================================================================================================================
@@ -466,7 +467,7 @@ The request has several possible response codes indicating Success or Failure:
 |Code |Possible problem
 |201 |Success; Analyze onboarding result to get started
 |400 |The Request was invalid
-|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the error message
+|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the xref:./../ErrorCodes.adoc[error message]
 |========================================================================================================
 
 ==== Success
@@ -485,12 +486,12 @@ The result is a json object including the information required for onboarding.
 |2 |capabilityAlternateId |String |A value that just has to be saved and sent in several scenarios
 |3 |connectionCriteria |Object |Includes all information required for further communication
 |3.1 |gatewayId |String |Assigned gateway; 2= MQTT, 3=REST
-|3.2 |host |String |Only for MQTT: The broker address
-|3.3 |port |String |Only for MQTT: The broker port
+|3.2 |host |String |**MQTT only**: The broker address
+|3.3 |port |String |**MQTT only**: The broker port
 |3.4 |measures |String |Endpoint URL of the inbox or Topic, when using MQTT
 |3.5 |commands |String |Endpoint URL of the outbox or Topic, when using MQTT
-|3.6 |client |String |MQTT only: The ClientID of the endpoint
-|4 |deviceAlternateId |String |The device ID used to mark the source of a message from this device
+|3.6 |client |String |**MQTT only**: The ClientID of the endpoint
+|4 |deviceAlternateId |String |The device ID used to mark the source of a message from this device and as endpointId
 |5 |sensorAlternateId |String |The deviceID used to mark the source of the communication from this device
 |========================================================================================================
 

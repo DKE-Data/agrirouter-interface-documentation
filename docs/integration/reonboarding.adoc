@@ -19,7 +19,7 @@ Additionally, the endpoint URLs might change. Even though, this is currently not
 
 === How does re-onboarding work?
 
-The client needs to send the same onboarding request as for ist first onboarding, including a new registration code provided by the end-user.
+The client needs to send the same onboarding request as for its first onboarding, including a new registration code provided by the end-user.
 
 [NOTE]
 ====
