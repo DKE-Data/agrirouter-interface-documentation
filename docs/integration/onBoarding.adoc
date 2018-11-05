@@ -205,7 +205,7 @@ The Request shall include the following header information:
 |Authorization |String |“Bearer “+ the TAN
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
-|X-Agrirouter-Signature |[Signature] |see xref:./onBoarding.adoc#signing-requests[Signing requests]
+|X-Agrirouter-Signature |[Signature] |see link:./onBoarding.adoc#signing-requests[Signing requests]
 |=============================================================
 
 ==== Body Information
@@ -337,7 +337,7 @@ The Request shall include the following header information:
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
 |X-Agrirouter-Signature |[Signature] | The signature,
-see xref:./onBoarding.adoc#signing-requests[here]
+see link:./onBoarding.adoc#signing-requests[here]
 |========================================================================================================================
 
 ==== Body Information
@@ -467,7 +467,7 @@ The request has several possible response codes indicating Success or Failure:
 |Code |Possible problem
 |201 |Success; Analyze onboarding result to get started
 |400 |The Request was invalid
-|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the xref:./../ErrorCodes.adoc[error message]
+|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the link:./../ErrorCodes.adoc[error message]
 |========================================================================================================
 
 ==== Success

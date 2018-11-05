@@ -82,7 +82,7 @@ Every registered endpoint can request the list of messages available in his feed
 
 [NOTE]
 ====
-A more specific description of the parts of an endpoint can be found xref:./endpoint.adoc[here] .
+A more specific description of the parts of an endpoint can be found link:./endpoint.adoc[here] .
 ====
 
 **EXAMPLE**

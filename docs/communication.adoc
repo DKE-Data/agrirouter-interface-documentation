@@ -185,7 +185,7 @@ To avoid graphs with too many arrows, we simplifiy the upcoming requests, abstra
 
 == Endpoint Adresses
 
-The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refere to xref:./integration/onboarding.adoc[Send onboarding Request].
+The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refere to link:./integration/onboarding.adoc[Send onboarding Request].
 
 
 == Assigning a result to a request

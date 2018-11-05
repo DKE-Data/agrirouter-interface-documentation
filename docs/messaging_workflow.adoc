@@ -72,12 +72,12 @@ agrirouter needs some time to process commands and forward messages, that are re
 
 This chapter gives an overview about the endpoints including their base requirement and definition. 
 
-The full chapter can be found xref:./endpoint.adoc[here].
+The full chapter can be found link:./endpoint.adoc[here].
 
 == Authorization process for endpoints
 This process is required to make sur, that an app provider knows the end user of an app instance of his application.
 
-The whole chapter can be found xref:./integration/authorization.adoc[here].
+The whole chapter can be found link:./integration/authorization.adoc[here].
 
 == Onboarding Process
 

@@ -31,7 +31,7 @@ Deleting a CU is done through a DELETE-Request to the following endpoint:
 
 [NOTE]
 ====
-Deleting virtual CUs is done using a command. See xref:./../commands/cloud.adoc[ Removing a Virtual Cu]
+Deleting virtual CUs is done using a command. See link:./../commands/cloud.adoc[ Removing a Virtual Cu]
 ====
 
 === Header
@@ -43,7 +43,7 @@ The Request shall include the following header information:
 |Name |Type |Description
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
-|X-Agrirouter-Signature |[Signature] |see xref:./onBoarding.adoc#signing-requests[Signing requests]
+|X-Agrirouter-Signature |[Signature] |see link:./onBoarding.adoc#signing-requests[Signing requests]
 |=============================================================
 
 === Body

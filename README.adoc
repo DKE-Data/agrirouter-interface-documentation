@@ -34,13 +34,13 @@ This document describes the general functionality of the agrirouter interface an
 This document includes specific api calls, JSON-and protobuf descriptions and important notes on how to integrate your app with the agrirouter.
 The integration guide part 2  can be found link:./assets/documents/integration-guide-part-2.pdf[here]
 
-[IMPORTANT]
+[WARNING]
 ====
 These files might be outdated and will no longer be updated.
 ====
 
 == System Messages and Message codes
-The system message codes can be found xref:./docs/ErrorCodes.adoc[here]
+The system message codes can be found link:./docs/ErrorCodes.adoc[here]
 
 == External resources
 

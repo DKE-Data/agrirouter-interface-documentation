@@ -46,7 +46,7 @@ The overall body of the message to the inbox shall not include more payload than
 
 == Encode content to its Technical Message Type
 
-Encoding a message in its required technical message type depends on the message type. The message types for agrirouter commands are described further in the specific chapters, that can be found xref:./../tmt/overview.adoc[here].
+Encoding a message in its required technical message type depends on the message type. The message types for agrirouter commands are described further in the specific chapters, that can be found link:./../tmt/overview.adoc[here].
 
 == Encode content in Protobuf
 
