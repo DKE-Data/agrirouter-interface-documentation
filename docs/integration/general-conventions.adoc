@@ -10,14 +10,13 @@ IMPORTANT: All numberings begin with 1!
 
 For *globally unique* instance ID we suggest using Uniform Resource Name (URN) according to RFC5141. Basically, this enabled an identification to be of any kind that is defined by the official IANA registered URN namespaces (https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml).
 
-For example this could be a UUID if the CU is an App on a consumer device with a generated identity: 
+For example this could be a UUID if the CU is an App on a consumer device with a generated identity::
 
+__urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6__
 
- __urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6__
-
-Also this could identify an OEMs device with a Product Identification Information: 
+Also this could identify an OEMs device with a Product Identification Information:: 
  
-  __urn:iso:std:iso:11783:-12:2013:ed-2:tech:pii:1234567890ABC**Brand Name:Product Name**__.
+__urn:iso:std:iso:11783:-12:2013:ed-2:tech:pii:1234567890ABC**Brand Name:Product Name**__.
 
 == TimeStamp conventions
 
@@ -35,9 +34,9 @@ If your application has access to the GPS time, this should be enough to keep th
 
 [NOTE] 
 ==== 
-*The agrirouter support team also suggests using this compensation time in your TaskController- and DataLogger- Data.
+* The agrirouter support team also suggests using this compensation time in your TaskController- and DataLogger- Data.
 Even though, this is not relevant for a proper communication with the agrirouter, it will avoid timing problems in the analysis of data with applications, that receive your data.
 
 
-*If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data, if you have different times
+* If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data, if you have different times
 ====

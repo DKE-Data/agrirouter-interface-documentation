@@ -58,7 +58,7 @@ It is possible to connect 2 agrirouter accounts with each other using the email 
 
 [IMPORTANT]
 ====
- It is not possible to address an endpoint inside another agrirouter account, neither is it possible to list the endpoints of this account.
+It is not possible to address an endpoint inside another agrirouter account, neither is it possible to list the endpoints of this account.
 ====
 
 == Teamset

@@ -78,7 +78,7 @@ When link:./docs/integration/messageSending.adoc[sending messages], the result w
 
 Every AppInstance can send link:./docs/tmt/overview.adoc[messages] and link:./docs/commands/overview.adoc[commands] the same way.
 
- Depending on the  link:./docs/integration/analyzeResult.adoc#ResponseType[resultType], the Result can be link:./docs/integration/analyzeResult.adoc[analyzed].
+Depending on the  link:./docs/integration/analyzeResult.adoc#ResponseType[resultType], the Result can be link:./docs/integration/analyzeResult.adoc[analyzed].
 
 
 === Usage metrix

@@ -65,7 +65,7 @@ EFDI Time Logs are as well comparable to ISO11783 TimeLogs.
 |Command |iso:11783:-10:time_log:protobuf
 |Protobuf Schema |EFDI; available at AEF Repository
 |TypeURL |iso:11783:-10:time_log:protobuf
-|=================================================
+|==================================================
 
 == Content of Telemetry messages
 

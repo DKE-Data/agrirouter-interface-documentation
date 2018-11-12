@@ -111,7 +111,7 @@ The whole chapter can be found link:./integration/authorization.adoc[here].
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image30.png" width="538px" height="477px"><br>
+ <img src="./../assets/images/ig2\image18.png" width="538px" height="477px"><br>
  <i>Onboarding process of a Farming Software or Telemetry platform</i>
 </p>
 ++++
@@ -161,7 +161,7 @@ As a result, the agrirouter will return a JSON object including the endpoint IDs
 
 [NOTE]
 ====
- There is no MQTT onboarding mechanism, so onboarding always has to be done using REST.
+There is no MQTT onboarding mechanism, so onboarding always has to be done using REST.
 ====
 
 An example for an onboarding request can be found in the postman collection, which is part of Integration Guide Part 2.
@@ -181,11 +181,11 @@ agrirouter is a platform, that is mostly used to transport messages *through* it
 //TODO Format this
 Therefore, the content is encapsulated
 
-=> in messages, which are encapsulated into
+in messages, which are encapsulated into::
 
-    => the commands to the agrirouter, which are encapsulated into
+=>the commands to the agrirouter, which are encapsulated into::
 
-        => the protocol layer of REST or MQTT.
+=>the protocol layer of REST or MQTT.
 
 With except to the EFDI telemetry messages (DeviceDescription and timelogs), agrirouter doesn’t analyse the messages inside the agrirouter command. It just checks the message type and the addressing to determine the recipients based on the routings and subscriptions.
 
