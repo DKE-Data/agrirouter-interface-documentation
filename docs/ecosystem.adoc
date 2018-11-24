@@ -9,4 +9,3 @@ image:ig1\image10.png[image,width=642,height=321]
 Figure 10 The agrirouter ecosystem of members
 
 
-NOTE: This chapter is not yet fully implemented
