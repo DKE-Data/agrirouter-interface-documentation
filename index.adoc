@@ -4,6 +4,7 @@
 :toc:
 :toc-title:
 :toclevels: 4
+=======
 
 [abstract]
 == Abstract
@@ -61,4 +62,9 @@ FarmingSoftware and Telemetry Platforms have to perform an link:docs/integration
 To communicate with the agrirouter, an application Instance needs to be link:docs/integration/onBoarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be link:integration/revoke.adoc[Revoked].
 
 For further communication, it's important to understand the link:/docs/endpoint.adoc[Elements of an endpoint] and the link:/docs/communication.adoc[Basics of Communication].
+=======
+== Terms and short descriptions
 
+A short description naming all the agrirouter specific terms and their connection to each other can be found link:/terms.adoc[here]
+
+== Development tools
