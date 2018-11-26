@@ -1,6 +1,9 @@
-:imagesdir: ./../assets/images/
-
 = Applications
+:imagesdir: ./../assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
 
 NOTE: This chapter is not yet fully implemented
 

@@ -1,0 +1,191 @@
+= Basics of communication
+:imagesdir: ./../assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
+
+== General communication convention
+
+Communication with the agrirouter includes communication with inbox AND outbox, unimportant, if an app only sends messages or only consumes messages. Every message or command is sent to the inbox, results are always delivered through the outbox.
+
+== Prequisits for communication
+
+Every communication is introduced by the App Instance. The agrirouter endpoint will never contact the app instance.
+
+After application registration, the communication is secured using the SSL certificate retrieved during the onboarding process. The agrirouter provides PK12 certificates as well as PEM certificates which can be set within the SSL context of the request to ensure authenticated communication with the agrirouter.
+
+Once after the validation has happened, the agrirouter provides all necessary security informations to establish a messaging connection. The developer is obliged to store this certificate, or the tokens secured and encrypted within the application. 
+//TODO Receiving the certificate is described in 8 Onboarding .
+
+== Different layers, “The onion principle”
+
+agrirouter is a platform, that is mostly used to transport messages *through* it and not towards it.
+
+Therefore:
+
+* the content is encapsulated in
+
+** messages and commands, which are encapsulated into
+
+*** the request to and the result from the agrirouter, which are encapsulated into
+
+**** the protocol layer of REST using Request and Response or MQTT using Publish and Subscribe.
+
+With except to the EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the receipants based on the routings and subscribtions.
+
+image:ig2/image31.png[image,width=543,height=313]
+
+Figure 26 The onion principal for a non-telemetry message
+
+An exception is the EFDI telemetry messages.
+
+The device descriptions are needed by the agrirouter to
+
+* determine the relevant CU when sending a Message directly to a machine
+* filter for DDIs that are allowed to be sent to specific endpoints
+
+The life telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
+
+image:ig2/image32.png[image,width=644,height=371]
+
+Figure 27 The onion principle for a telemetry message
+
+== The protocol layer
+
+The protocol layer describes the basic communicaton layer. All agrirouter communicaton is based on a TCP-IP communication.
+ When onboarding an endpoint, the developer can choose between REST and MQTT.
+
+=== REST
+
+REST is a wellknown principle for online apis. For more information on REST, please see following recources:
+
+* https://en.wikipedia.org/wiki/Representational_state_transfer
+* https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340
+
+REST uses HTTP requests, that result in an HTTP Response.
+
+To avoid request timeouts, agrirouter will return an HTTP Status Code 201(Processing) and the app instance will have to poll for a request confirmation.
+
+[NOTE]
+====
+REST is based on single, request only methods, therefore, the agrirouter cannot contact any endpoint. This means, that the endpoint for example has to poll for new messages in the outbox.
+====
+
+==== Communication Workflow with the Inbox
+
+Using REST, an app instance just receives a HTTP 200 “OK” Response. The App Instance sends a HTTP Post request over an SSL secured Connection.
+
+image:ig2/image33.png[image,width=631,height=212]
+
+Figure 28 Request and Response in HTTP
+
+==== Communication with the Outbox
+
+Using REST, the communication with the Outbox requires polling:
+
+image:ig2/image34.png[image,width=613,height=145]
+
+Figure 29 REST Communication with the outbox
+
+=== MQTT
+
+MQTT is a subscription based protocol. Therefore, the client can be informed by agrirouter, that new messages are available. For further information, please refer to one of the following recources:
+
+* https://mqtt.org/
+
+The agrirouter provides an MQTT Broker serverside, so, an app instance has to connect to this server with its client.
+
+agrirouter provides one MQTT Server per Endpoint, so there is no danger or chance to subscribe for messages of another endpoint
+
+==== Communication with the Inbox
+
+Using MQTT, the app instance will publish the request and after a while, the agrirouter will publish the response. Polling is not required.
+
+image:ig2/image35.png[image,width=618,height=153]
+
+Figure 30 Request and Response using MQTT
+
+==== Communication with the Outbox
+
+image:ig2/image36.png[image,width=633,height=151]
+
+Figure 31 Receiving Result from the outbox in MQTT
+
+If there are messages available in the outbox, agrirouter will simply publish them to the MQTT App Instance.
+
+=== Comparison of protocols
+
+Both protocols have several advantages and disadvantages. To select the right protocol for your needs, check the following table
+
+[cols="4,2,2",options="header",]
+|=============================================
+|Topic |MQTT |REST
+|Can be used for onboarding | |X
+|Can send JSON |X |X
+|Can send raw protobuf | |X
+|Needs no polling |X |
+|Steps for Call and Result |3 |min. 4; polling
+|=============================================
+
+== Abstraction of communication workflows
+
+To avoid graphs with too many arrows, we simplifiy the upcoming requests, abstracting MQTT and REST. Whatever protocol you use, a Request and Response in this document will look like this:
+
+==== Abstraction of Calls to the Inbox
+
+image:ig2/image37.png[image,width=637,height=99]
+
+Figure 32 Abstraction of a Call or Message Sending to the Inbox
+
+==== Abstraction of Results from Outbox
+
+image:ig2/image38.png[image,width=628,height=87]
+
+Figure 33 Abstraction of a result from the outbox
+
+= Communication of App Instance and Endpoint
+
+== Endpoint Adresses
+
+The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refere to 8.6.3
+
+Sending Onboarding Request
+
+== Assigning a result to a request
+
+The assignment between messages sent to the Inbox and their corresponding message in the outbox is done by comparing the application_message_id provided by the app.
+
+
+[CAUTION]
+====
+*EXCEPTION*:
+
+If a message is not correctly encoded, so that the agrirouter cannot decode it, there will be no application_message_id in the result.
+====
+
+== Flow for sending messages
+
+Sending messages to the agrirouter creates an ACK-Message in the outbox of the agrirouter
+
+image:ig2/image39.png[image,width=512,height=210]
+
+Figure 34 Send Message or Command to agrirouter
+
+== Flow of commands
+
+image:ig2/image40.png[image,width=482,height=290]
+
+Figure 35 Command Flow
+
+== Flow of requesting messages from the feed
+
+If the command is a feed command requesting messages from the feed, the app instance has to confirm the receival of the message, so that it is deleted from the feed.
+
+image:ig2/image41.png[image,width=575,height=348]
+
+Figure 36 Command flow for reading the feed
+
+== Terms
+
+A command-process consists of a call (1.1) to the inbox. This call consists of the request and a processing status response. Agrirouter will return a result through the outbox. When the app instance receives this result successfully, it has to call for confirmation at the inbox to clear the outbox. If a message list was delivered, this will also delete the received messages from the feed.

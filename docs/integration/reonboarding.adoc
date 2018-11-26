@@ -1,0 +1,32 @@
+= Reonboarding
+:imagesdir: ./../../assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
+
+
+=== What is re-onboarding?
+
+Re-onboarding allows an endpoint to get new client certificates and updates on URLs / topics for measures and commands
+
+Internally, the endpoint gets the same identification (deviceAlternateId, sensorAlternateId and capabilityAlternateId remain the same), thus all rules, filters and buffered messages remain valid and do not get lost
+
+=== Why should an endpoint be re-onboarded?
+
+If an app instance loses parts of its onboarding information, it can be reonboarded using the onboarding process.
+
+Additionally, the endpoint URLs might change. Even though, this is currently not planned, it could be a result of scaling.
+
+=== How does re-onboarding work?
+
+The client needs to send the same onboarding request as for ist first onboarding, including a new registration code provided by the end-user.
+
+[NOTE]
+====
+The external Id *must be the same* as for the initial onboarding, as this is used to map the endpoint to the existing
+====
+
+Capabilities may be sent, but do not have to (these are stored within the agrirouter from initial onboarding)
+
+Reonboarding has to be done, when an app is updated in a way, that its certification version id changes.

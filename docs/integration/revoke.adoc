@@ -1,0 +1,91 @@
+= Revoking
+:imagesdir: ./../../assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
+
+== What is revoking?
+If the contract with a customer ends, app providers should revoke their connection with the customers account. This can be done using a similar process
+
+== Process of Revoking
+
+image:ig2/image25.png[image,width=526,height=306]
+
+Figure 20 Revoke Process
+
+== Creating Revoke Command
+
+=== General
+
+Deleting a CU is done through a DELETE-Request to the following endpoint:
+
+[cols="2,4",options="header",]
+|====================================
+|Method |Adress
+|DELETE |/registration/onboard/revoke
+|====================================
+
+[NOTE]
+====
+Deleting virtual CUs is done using a command. See 16.5.2 Removing a Virtual Cu
+====
+
+=== Header
+
+The Request shall include the following header information:
+
+[cols=",,",options="header",]
+|=============================================================
+|Name |Type |Description
+|Content-Type |String |application/json
+|X-Agrirouter-ApplicationId |String |[Application Id]
+|X-Agrirouter-Signature |[Signature] |see 8.8 Signing requests
+|=============================================================
+
+=== Body
+
+The body includes a JSON object:
+
+[cols="1,3,2,4",options="header",]
+|===============================================================================
+|# |Name |Type |Description
+|1 |accountId |String |The ID of the users account
+|2 |endpointId |Array of String |An Array of endpointIDs, that shall be deleted.
+|3 |UTCTimestamp |String |A timestamp like this: _2018-06-20T07:29:23.457Z_
+|4 |timeZone |String |A time zone like this: _“+03:00”_
+|===============================================================================
+
+Example:
+[source,javascript]
+----
+{
+
+"accountId": "4823443c-fd0d-44a7-81a6-06104455945a",
+
+"endpointIds": [
+
+"3823443c-ed0d-44a7-81a6-06104455945a",
+
+"7873443c-fd0d-44a7-81a6-06104455945a"
+
+],
+
+“UTCTimestamp”: “2018-06-25T18:08:17.661890Z”,
+
+“timeZone”: “+00:00”,
+
+}
+----
+
+=== Response
+
+The response is an empty message using a HTTP Return code to indicate the result:
+
+[cols=",",options="header",]
+|=================================
+|Code |Description
+|204 |Revoke was successful
+|400 |A validation failure occured
+|401 |The Request was unauthorized
+|=================================

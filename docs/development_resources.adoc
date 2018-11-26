@@ -1,0 +1,50 @@
+= Development resources
+:imagesdir: ./../assets/images/
+*Table of Content*
+:toc:
+:toc-title:
+:toclevels: 4
+
+//TODO: Im Prozess besser darstellen, dass Capabilities als erstes gesendet werden müssen
+
+//TODO: Nachrichtenliste [{}] statt [[]]
+
+//TODO: Encoding in Protobuf: "Das TechnicalMessageType-Protobuf muss nochmal in den RequestPayloadWrapper rein"
+== Major development technologies
+
+To perform an agrirouter integration, you will need knowledge to the following technologies:
+
+* *Required:*
+** *REST*; at least for onboarding, perhaps for communication (see https://wikipedia.org/en/REST )
+** *Protobuf*: for message packaging (see https://developers.google.com/protocol-buffers/ )
+** Certificates, signatures and encrypted communication, e.g. using HTTPs
+* *Optional*
+** *secured MQTT* for the communication (see https://mqtt.org)
+** *ISO11783* and *EFDI* for telemetry data
+//TODO: Link EFDI
+
+
+
+
+== Development Tools
+
+* For REST Tests, you can use the link:docs/tools/postman.adoc[Postman Collection]
+
+* For MQTT Tests, you can use link:docs/tools/paho.adoc[Paho]
+
+* Especially for Protobuf Development, you can use the link:docs/tools/arts.adoc[Agrirouter Protobuf Toolset]
+
+* To create and play traces, use the link:/docs/tools/endpoint-recording.adoc[Endpoint Recording]
+
+== Further Resources
+
+Following resources can help developers to integrate their applications to the agrirouter.
+
+[cols=",,",options="header",]
+|====================================================================================================================================================
+|Name |URL |Description
+|Agrirouter main page |https://my-agrirouter.com |The official website of the agrirouter
+|GitHub |https://github.com/dke-data/ |Official GitHub with libraries and resources
+|DDI Dictionary |https://dictionary.isobus.net/ |The official list of standardized Sensor values
+|AEF |https://aef-online.org . |The official website of the Agricultural Electronics Foundation. This group defines EFDI and the standards of ISOXML.
+|====================================================================================================================================================

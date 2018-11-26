@@ -1,0 +1,162 @@
+= Glossary
+
+[cols="1,3,",options="header",]
+|=====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+|# |Concept |Description
+a|
+1.  
+
+ |Application a|
+In the agrirouter context, an application is a product which can connect to the agrirouter.
+
+The applications are not running on the agrirouter, but they connect to the agrirouter over the network.
+
+a|
+2.  
+
+ |Application Instance a|
+An application instance is the communication partner for an endpoint in an agrirouter account.
+
+An application instance represents a single software product or user account in a cloud software.
+
+a|
+3.  
+
+ |Communication Unit (CU) a|
+An application acts as a communication unit when
+
+* Its main purpose is to provide data collected by sensor systems like GPS or machine sensors
+* It manages the agrirouter communication for these machines. It sends machine data to agrirouter, and receives and processes messages addressed to machines
+
+a|
+4.  
+
+ |agrirouter Account |An agrirouter account is a logical space on the agrirouter, that is used by one person or company. (e.g. a farm or contractor)
+a|
+5.  
+
+ |agrirouter Message Format |An agrirouter command consist of a agrirouter command header (also called envelope) and the content (sometimes also called payload). The header contains fields such as the sender ID, the list of recipients, and the technical message type.
+a|
+6.  
+
+ |agrirouter routings |agrirouter users can maintain routings to specify what data may go from which sender/source to which recipient. Without a corresponding routing, no data is transferred.
+a|
+7.  
+
+ |Capabilities |Capabilities are a list of technical message types, an app instance supports to send or receive
+a|
+8.  
+
+ |Command |A command is sent to the agrirouter from any endpoint. It consists of a header and an agrirouter control message (e.g. a TeamSet Message). The most common type of command includes a message of a specific message type, that shall be forwarded to one or more endpoints
+a|
+9.  
+
+ |Directly Connected Endpoints |A directly connected endpoint is any application, that communicates with its own endpoint at the agrirouter.
+a|
+10.  
+
+ |EFDI a|
+EFDI (Extended FMIS Data Interchange) is the working title of an upcoming standard of the Agricultural Industry Electronics Foundation (AEF).
+
+It defines message formats for network communication between machines and FMIS as well as between different FMIS, including the transfer of live telemetry data from machines.
+
+The information that are transferred is based on ISOBUS concepts. It uses, for example, ISOBUS DDIs, and even the message structures are based on ISOXML elements. As the technical serialization format, EFDI does not use XML, but Google protocol buffers.
+
+The agrirouter uses EFDI messages as the payload format for some message types, for example for live telemetry data and device descriptions.
+
+At the time of this writing, EFDI is still in an early stage. The working group is just finalizing the internal definition of the first message types (live telemetry data, device descriptions).
+
+a|
+11.  
+
+ |Endpoint |In the agrirouter context, an endpoint is an addressable entity in an agrirouter account, which is the communication entry point for a single app instance or machine.
+a|
+12.  
+
+ |Endpoint Descriptions |The endpoint description contains detail information about an endpoint. Important part of this information is the list of the technical message types, the endpoint supports.
+a|
+13.  
+
+ |Farm Management Information System (FMIS) |An application providing farm management functionality. An FMIS may, for example receive data from machines, send settings and tasks to machines, and exchange data with other applications.
+a|
+14.  
+
+ |Information Type |A summarize of different Technical message types.
+a|
+15.  
+
+ a|
+ISOBUS,
+
+ISO 11783, taskdata
+
+ a|
+Wikipedia: “ISO 11783, known as Tractors and machinery for agriculture and forestry -- Serial control and communications data network (commonly referred to as "ISO Bus" or "ISOBUS") is a communication protocol for the agriculture industry based on the SAE J1939 protocol (which includes CANbus) .” (source: https://en.wikipedia.org/wiki/ISO_11783 )
+
+ISO 11783-10 describes the file-based and batch-oriented interchange format between machines and FMIS, using XML (ISOMXL) and binaries with XML header data. This is called a taskdata file set, even though it can contain many other data (fields, products, crop, worker, and many more) and need not even contain a task.
+
+The ISOBUS standard specifies only the data but not how it is transferred between machines and FMIS.
+
+a|
+16.  
+
+ |ISOBUS DDI a|
+A DDI (literally: Data Dictionary Identifier) represents a device or process parameter in the ISOBUS norm. Over 500 DDIs are defined in ISO 11783-11, see http://dictionary.isobus.net/isobus/ .
+
+DDIs are used, for example, in device descriptions to describe properties, the supported settings, and the provided data of a machine.
+
+DDIs are also used to identify the data records in telemetry messages.
+
+agrirouter users can filter telemetry data for DDI Categories, that abstract all DDIs into 10 categories. A list of DDIs and their Category assignment can be found here:
+
+A filtering for specific DDIs could not be provided, as this would have been too complex for the end user.
+
+a|
+17.  
+
+ |Live Telemetry Messages a|
+A live telemetry message contains data points with data from the machines in one teamset. Each data point at least contains the time when it was logged. Additionally, each data point can have a geo-position. Each data point may contain many log entries. Each log entry contains the value of a specific parameter (DDI) of a specific component or function (device element) of one of the machines in the teamset.
+
+The user-defined agrirouter routings define which parameters of which machine may go to which recipient. In addition, recipients can subscribe for certain parameters they want to get (sender-independent). Recipients will receive those data, when they are sent to the public address.
+
+The agrirouter uses the routings and the subscriptions to determine the recipients, and the information each of them gets. To each recipient it delivers a filtered version of the messages, which contains only the allowed and subscribed parameters of the allowed machines.
+
+a|
+18.  
+
+ |Machines a|
+Machines are agricultural machinery, in the sense of a ISO11783 device.
+
+Machines are tractors, implements such as sprayers, or self-propelled machines like combine harvesters. A machine is described with machine description, which is conceptually based on ISO11783-10 device description.
+
+Machines are the sources of the data records in live telemetry messages which applications send via agrirouter.
+
+From an abstract view, machines are just sensor networks providing sensor data.
+
+a|
+19.  
+
+ |Machine Endpoint a|
+A machine endpoint represents one real-world machine in the context of an agrirouter account. The same real-world machine can have endpoints in several agrirouter accounts, but not more than one in the same account.
+
+A message can be addressed to a machine as the recipient. This tells the agrirouter to deliver the message to that CU, to which the machine is connected. If the addressed machine is currently not connected, the agrirouter puts the message in the machine’s feed and delivers it as soon as some CU reports that the machine is now connected. Since machines can be attached to different CUs at different times (connected to different tractor, for example), it is not known in advance which CU that will be.
+
+The message itself will be received and processed by the CU, but addressing it to the machine makes sure that it goes to the right one.
+
+a|
+20.  
+
+ |Message |A message is an information or perhaps a request, that is sent from an endpoint to any other endpoint. A message is a possible payload of a command
+a|
+21.  
+
+ |Teamset |A teamset is a set of connected machines which work and move together and are connected to the same communication unit.
+a|
+22.  
+
+ |Virtual Communication Units a|
+A virtual communication unit is the equivalent of a communication unit for situations where the teamsets are not directly connected to the agrirouter. Instead they are connected to an external telemetry-enabled cloud service, which itself is connected to the agrirouter. Such a telemetry-enabled cloud application has its own mechanisms for connecting farming machines.
+
+For each farm, many machines are connected to the external cloud service, grouped in many teamsets. The cloud application, which makes these machines known on the agrirouter, also reports one virtual communication unit for each teamset.
+
+|=====================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
