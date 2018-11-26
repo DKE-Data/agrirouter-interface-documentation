@@ -92,14 +92,38 @@ The whole chapter can be found link:docs/accounts.adoc[here]
 
 ====
 
-//TODO: One of the files can be removed here
-//About the general integration process
-//The whole chapter can be found link:docs/integration_process.adoc[here]
 
 //About applications
 The whole chapter can be found link:docs/applications.adoc[here]
 
 '''
+
+== EcoSystem of agrirouter
+
+
+image:ig1\image11.png[image,width=634,height=400]
+
+
+
+* There is 1 agrirouter solution, with multiple accounts, one for each end user. An end user equals a Farm, a Contractor, etc.
+
+* Every Account can onboard multiple Application Instances.
+
+* Applications can be onboarded to multiple accounts (dotted gray lines).
+
+* Applications can be CUs, Farming Software or Telemetry Platforms.
+
+* Applications of type “Telemetry platform” can onboard multiple virtual CUs.
+
+* Machines are connected to CUs or Virtual CUs. Machines can be attached to different CUs or Virtual CUs.
+
+* A teamset is one (virtual) CU with zero to n attached machines.
+
+* If there are 2 CUs installed on a real-world machine, a machine can be found in multiple teamsets and therefore even in multiple accounts.
+
+* Applications, Virtual CUs and Machines are endpoints, that can be source or target of a message.
+
+''''
 
 === Concept of message exchange
 
