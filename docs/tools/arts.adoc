@@ -1,5 +1,4 @@
 = ARTS
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
@@ -13,9 +12,14 @@ The tool includes a command line as well as a user interface.
 
 The project can be found here: https://github.com/saschadoemer/agrirouter-protobuf-toolset
 
-image:ig2/image9.png[image,width=426,height=442]
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image9.png" width="426px" height="442px"><br>
+ <i>ARTS User Interface</i>
+</p>
+++++
 
-Figure 4 ARTS User Interface
+
 
 == About the project
 

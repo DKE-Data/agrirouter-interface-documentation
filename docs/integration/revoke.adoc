@@ -1,6 +1,5 @@
 = Revoking
 :imagesdir: ./../../assets/images/
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
@@ -10,9 +9,13 @@ If the contract with a customer ends, app providers should revoke their connecti
 
 == Process of Revoking
 
-image:ig2/image25.png[image,width=526,height=306]
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image25.png" width="526px" height="306px"><br>
+ <i>Revoke Process</i>
+</p>
+++++
 
-Figure 20 Revoke Process
 
 == Creating Revoke Command
 

@@ -1,6 +1,5 @@
 = Authentication Process
 :imagesdir: ./../../assets/images/
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
@@ -35,13 +34,23 @@ In the developers UI, he has to:
 * Provide a redirect URL, to which agrirouter shall deliver the authentication result using HTTP 301 Browser redirect.(3)
 * Provide a public key for his encryption or create a key pair on the agrirouter frontend
 
-image:ig2/image10.PNG[image,width=636,height=361]
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image10.png" width="636px" height="361px"><br>
+<i>Application overview</i>
+</p>
+++++
 
-Figure 5 Application overview
 
-image:ig2/image11.PNG[image,width=362,height=350]
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image11.png" width="362px" height="350px"><br>
+<i>Application settings</i>
+</p>
+++++
 
-Figure 6 Application settings
+
+
 
 [NOTE]
 ====
@@ -49,18 +58,26 @@ If you do not yet have an official domain, where your application is reachable o
 
 Simply check Tracert/TraceRoute:
 
-image:ig2/image12.png[image,width=466,height=181]
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image12.png" width="466px" height="181px"><br>
+ <i>fuf.me is an alias for localhost</i>
+</p>
+++++
 
-Figure 7 fuf.me is an alias for localhost
 ====
 
 === Authentication Process Overview
 
 The authentication process works as follows:
 
-image:ig2/image13.png[image,width=619,height=376]
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image13.png" width="619px" height="376px"><br>
+<i>Authentication Workflow</i>
+</p>
+++++
 
-Figure 8 Authentication Workflow
 
 To better understand, what happens here, try the following:
 
@@ -134,9 +151,13 @@ The response type onboard can be used to onboard farming applications without ha
 
 When the user clicks on the link, the agrirouter website is called. If the user is currently not logged in, he has to log in. After logging in, he is delivered a website to authorize the connection between agrirouter and the application provider:
 
-image:ig2/image14.png[image,width=252,height=202]
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image14.png" width="252px" height="202px"><br>
+ <i>Application authentication screen</i>
+</p>
+++++
 
-Figure 9 Application authentication screen
 
 === Analyse result
 
@@ -155,9 +176,13 @@ The following parameters will be delivered in the GET-Queue:
 |(3) |error |String |If error is delivered, user declined connection!
 |============================================================================================================
 
-image:ig2/image15.png[image,width=542,height=265]
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image15.png" width="542px" height="265px"><br>
+<i>Example of an authentication result</i>
+</p>
+++++
 
-Figure 10 Example of an authentication result
 
 ==== Checking for errors
 
@@ -201,20 +226,23 @@ The result token is a base64 encoded JSON object including the following paramet
 //TODO: Example Template
 [source,JavaScript]
 ====
-{
+    {
 
-"account": "31c83d5d-c307-42f9-80b1-6fc9324823b8", +
-"regcode": "f75bfbd41b",
+    "account": "31c83d5d-c307-42f9-80b1-6fc9324823b8", +
+    "regcode": "f75bfbd41b",
 
-"expires": "2018-02-27T10:49:04.901Z"
+    "expires": "2018-02-27T10:49:04.901Z"
 
-}
+    }
 ====
 
 == Authentication for CUs and non-cloud-software
 
 To perform authentication for software, that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
 
-image:ig2/image16.png[image,width=640,height=155]
-
-Figure 11 Authentication for non-cloud-applications
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image16.png" width="640px" height="155px"><br>
+<i>Authentication for non-cloud-applications</i>
+</p>
+++++

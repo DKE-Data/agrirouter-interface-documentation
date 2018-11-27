@@ -6,9 +6,13 @@
 
 The agrirouter is a cloud solution, that allows farmers and contractors to transfer data between farming machinery from several manufacturers and several farming applications from different application providers. It is also possible to exchange data between different farming applications. With central maintenance of data routing between endpoints, there is no need to configure network connections between all data sources and targets on each machine/ or in each application.
 
-image:ig1\image1.jpeg[width=642,height=361]
+++++
+<p align="center">
+ <img src="./../assets/images/ig1\image1.jpeg" width="642px" height="361px"><br>
+ <i>agrirouter Connectivity-Platform</i>
+</p>
+++++
 
-Figure 1 agrirouter Connectivity-Platform
 
 == Advantages for end users
 

@@ -1,0 +1,193 @@
+= Commands describing the endpoint
+:imagesdir: ./../../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+
+This chapter will list all messages to tell the agrirouter, what the endpoint is capable of, who it is and what it wants to receive.
+
+=== Capabilities Command
+
+==== Definition
+
+Every endpoint has to report his capabilities of sending and receiving messages after onboarding and when the capabilities change ( e.g. an application functionality is extended by a new module). This is required from agrirouter to know, if specific messages can be routed to an endpoint and to show the correct choosable Information Types in the User Interface for routing.
+
+[NOTE]
+====
+* agrirouter specific commands are not part of the Capabilities, each application just has to support all of them.
+
+* For the certification process it is required to send the capabilities message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
+====
+
+The list of technical message types can include any TechnicalMessageFormat mentioned in 17 Technical Message types.
+
+==== Command
+
+[cols=",",]
+|=====================================================================================
+|Command |dke:capabilities
+|Protobuf Schema |agrirouter.request.payload.endpoint.CapabilitySpecification
+|TypeURL |types.agrirouter/agrirouter.request.payload.endpoint.CapabilitySpecification
+|=====================================================================================
+
+Parameters are an Array of elements of the following:
+
+[cols="1,2,2,4",options="header",]
+|=================================================================================
+|# |Name |Type |Description
+|1 |capabilities |Array of capabilities |The list of capabilities of this endpoint
+|2 |app_certification_id |String |The application ID assigned by agrirouter
+|3 |app_certification_version_id |String |The ID of the apps certification version
+|=================================================================================
+
+The technical message type can be a technical message type of DKE or a proprietary message type.
+
+[cols="1,2,2,4",options="header",]
+|================================================================================
+|# |Name |Type |Description
+|1 |technical_message_type |String |The name of the capability
+|2 |direction |Direction |The message direction, that is part of the capabilities
+|================================================================================
+
+Direction can be one of those values:
+
+[cols="1,4",options="header",]
+|=================
+|Value |Direction
+|0 |Send
+|1 |Receive
+|2 |Send & Receive
+|=================
+
+Those are the values of an Enumeration, see protobuf files.
+//TODO: Link to file
+
+==== Result
+
+[cols=",",]
+|=================================================================================
+|ResultCode |ACK
+|Protobuf Schema |agrirouter.response.payload.endpoint.CapabilityResponse
+|typeURL |types.agrirouter/agrirouter.response.payload.endpoint.CapabilityResponse
+|=================================================================================
+
+The result is a simple __ACK__ or an __ACK_WITH_MESSAGES__
+//TODO: Further description of the result
+
+==== Errors & Warnings
+
+If the message was malformed, an ACK_WITH_FAILURE will be returned. If the same capabilities message is sent twice, an ACK_WITH_MESSAGES will be returned with a message indicating, that the capabilities did not change.
+
+==== Example
+
+//TODO: Make this real Source Code
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image44.png" width="608px" height="396px">
+</p>
+++++
+
+
+== Subscribtion Command
+
+=== Definition
+
+The subscription command is used to subscribe for a list of technical message types. Being subscribed for a technical message type means, that your endpoint will receive a message of such TMT, whenever any other endpoint sends such a TMT to “publish” and a routing between the sender and your applications endpoint is given.
+
+[NOTE]
+====
+* Subscriptions can be defined for a specific message type, not for a specific sender.
+* Each new subscription list sent by an endpoint deletes old subscriptions
+
+* Always send all required subscribtions in one Command.
+
+* Sending a new capabilities message will delete all subscriptions
+
+* Always send all capabilities in one capabilities message
+
+* An app instance has to remember its subscription list on it own, there is no way to request this list.
+====
+
+[TIP]
+====
+To avoid mismatches between publishing applications and applications only receiving addressed messages, it is adviced to subscribe for any technical message type and DDI, your application shall handle, if there are no specific reasons not to do so.
+====
+
+//TODO: Remove the following Note? At least add link to certification
+[NOTE]
+====
+For the certification process it is required to send the subscribtions message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
+====
+
+The list of technical message types can include any TechnicalMessageFormat mentioned 
+//TODO Link to Technical Message types list.
+
+=== Command
+
+[cols=",",]
+|==========================================================================
+|Command |dke:subscription
+|Protobuf Schema |agrirouter.request.payload.endpoint.Subscription
+|TypeURL |types.agrirouter/agrirouter.request.payload.endpoint.Subscription
+|==========================================================================
+
+==== Parameters
+
+[cols="1,3,2,4",options="header",]
+|===========================================================================
+|# |Name |Type |Description
+|1 |technical_message_type |Subscribtion (Repeated) |A list of subscribtions
+|===========================================================================
+
+It is an array, each entry is of type agrirouter.request.payload.endpoint.MessageTypeSubscriptionItem
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================
+|# |Name |Type |Description
+|1 |technical_message_type |String |The technical message type
+|2 |ddis |uint32(repeated) |A list of ddis, only relevant for the EFDI telemetry message type
+|3 |position |bool |Shall the GPS position be delivered? Only relevant for EFDI telemetry message type
+|=====================================================================================================
+
+The DDIs field is only required, if the subscription is used for a subscription of Telemetry values. Same applies to Position.
+
+=== Result
+
+[cols=",",]
+|===============================================
+|ResultCode |ACK
+|Protobuf Schema |None; Simply 0 bytes of answer
+|typeURL |“”
+|===============================================
+
+In case of success, an Acknowledgement is received.
+
+In case of failure, an Acknowledgement with Message or an Acknowledgement with Failure is received. In both cases, the protobuf format will be agrirouter.commons.messages. See 15.8.1 Messages.
+
+=== Errors
+
+Errors will be reported using ACK_WITH_FAILURE. For a list of possible errors, see the error list.
+//TODO Link to ErrorList
+
+=== Example
+
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image45.png" width="438px" height="174px">
+</p>
+++++
+
+
+== Sending a teamset using device Descriptions
+
+=== Definition
+
+The teamset describes a list of devices attached to the communication unit. The most common devices are agricultural machines connected to the CU as ISO11783-10 TaskControllers. For more information on ISO11783-10, please refer to https://aef-online.org
+
+[NOTE]
+====
+For the certification process it is required to send the device description message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
+====
+
+//TODO Link For the format, please refer to 17.2 iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description

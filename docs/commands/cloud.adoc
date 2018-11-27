@@ -1,0 +1,123 @@
+= Commands for telemetry platforms
+:imagesdir: ./../../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+Telemetry platforms on- and offboard virtual CUs, this requires 2 commands.
+
+[NOTE]
+====
+If a telemetry platform does not provide any functionality of a farming software, those are the only 2 messages exchanged with the agrirouter by the Telemetry platform as any other communication will be done by the virtual CUs.
+====
+
+== Onboarding a Virtual CU
+
+=== Definition
+
+A telemetry platform can onboard its own CUs, which will show up in the agrirouter UI as own endpoints. These virtual CUs communicate
+
+=== Command
+
+[cols=",",]
+|=========================================================================
+|Command |dke:cloud_onboard_endpoints
+|Protobuf Schema |agrirouter.cloud.registration.OnboardingRequest
+|typeURL |types.agrirouter/agrirouter.cloud.registration.OnboardingRequest
+|=========================================================================
+
+The onboarding Request includes an Array of EndpointRegistrationDetails
+
+[cols="1,3,2,4",options="header",]
+|=======================================================================
+|# |Name |Type |Description
+|1 |id |String |The unique ID of the Virtual CU
+|2 |Name |String |The name, that shall be displayed in the agrirouter UI
+|=======================================================================
+
+//TODO Link For the ID, please respect the Naming convention in 4.2String Identifiers convention
+
+=== Result
+
+[cols=",",]
+|=================================================================
+|ResultCode |CLOUD_REGISTRATIONS
+|Protobuf Schema |agrirouter.cloud.registration.OnboardingResponse
+|=================================================================
+
+The Result is an Array of EndpointRegistrationDetails and Failure Notifications
+
+[cols="1,3,2,4",options="header",]
+|===========================================================================================================
+|# |Name |Type |Description
+|1 |onBoardedEndpoints |EndpointRegistrationDetails (Repeated) |The onboarding information for the endpoints
+|2 |failures |Failures(Repeated) |A list of failed onboardings
+|===========================================================================================================
+
+For all successfully registered Endpoints, following information will be delivered:
+
+[cols="1,3,2,4",options="header",]
+|===============================================================================================================
+|# |Name |Type |Description
+|1 |id |String |The ID external ID provided with the onboarding Request as id
+|2 |deviceAlternateID |String |The ID used to mark messages sent to agrirouter as coming from this Cloud account
+|3 |sensorAlternateID |String |The ID used to mark messages sent to agrirouter as coming from this virtual CU
+|4 |capabilityAlternateID |String |An internal value needed to be delivered with any message
+|5 |endpointID |String |The endpointID to address this Virtual CU
+|===============================================================================================================
+
+The *deviceAlternateId* is equal for the telemetry platform and each of its virtual CUs. This means, that the messages for all virtual CUs are received through one feed and one outbox. The effected CU however is marked by its *sensorAlternateId*.
+
+The *endpointId* is used to offboard a CU.
+
+=== Errors
+
+Errors of a partly successful request are delivered with the Response.
+
+If any of the onboarding Requests failed, failures includes a list of failed requests:
+
+[cols="1,3,2,4",options="header",]
+|============================================================================
+|# |Name |Type |Description
+|1 |id |String |The ID external ID provided with the onboarding Request as id
+|2 |message |Message |The error message
+|============================================================================
+
+/TODO Link For the message format, refer to 15.8.1 Messages
+
+== Removing a Virtual Cu
+
+=== Definition
+
+This command removes a virtual CU from the endpoint list of the users account.
+
+[CAUTION]
+====
+Removing the endpoint leads to a dump of all data in the in- or outbox, subscription list and feed of this endpoint.
+
+*Your customers data will be lost!*
+
+Do not remove an endpoint, just because it is currently offline!
+====
+
+=== Command
+
+[cols=",",]
+|==========================================================================
+|Command |dke:cloud_offboard_endpoints
+|Protobuf Schema |agrirouter.cloud.registration.OffboardingRequest
+|typeURL |types.agrirouter/agrirouter.cloud.registration.OffboardingRequest
+|==========================================================================
+
+=== Result
+
+[cols=",",]
+|=====================================
+|ResultCode |ACK
+|Protobuf Schema |None, simply 0 bytes
+|typeURL |„“
+|=====================================
+
+=== Errors
+
+See list of error codes.

@@ -1,6 +1,5 @@
 = Basics of communication
 :imagesdir: ./../assets/images/
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
@@ -34,9 +33,13 @@ Therefore:
 
 With except to the EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the receipants based on the routings and subscribtions.
 
-image:ig2/image31.png[image,width=543,height=313]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image31.png" width="543px" height="313px"><br>
+ <i>The onion principal for a non-telemetry message</i>
+</p>
+++++
 
-Figure 26 The onion principal for a non-telemetry message
 
 An exception is the EFDI telemetry messages.
 
@@ -47,9 +50,13 @@ The device descriptions are needed by the agrirouter to
 
 The life telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
 
-image:ig2/image32.png[image,width=644,height=371]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image32.png" width="644px" height="371px"><br>
+ <i>The onion principle for a telemetry message</i>
+</p>
+++++
 
-Figure 27 The onion principle for a telemetry message
 
 == The protocol layer
 
@@ -76,17 +83,25 @@ REST is based on single, request only methods, therefore, the agrirouter cannot 
 
 Using REST, an app instance just receives a HTTP 200 “OK” Response. The App Instance sends a HTTP Post request over an SSL secured Connection.
 
-image:ig2/image33.png[image,width=631,height=212]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image33.png" width="631px" height="212px"><br>
+ <i>Request and Response in HTTP</i>
+</p>
+++++
 
-Figure 28 Request and Response in HTTP
 
 ==== Communication with the Outbox
 
 Using REST, the communication with the Outbox requires polling:
 
-image:ig2/image34.png[image,width=613,height=145]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image34.png" width="613px" height="145px"><br>
+ <i>REST Communication with the outbox</i>
+</p>
+++++
 
-Figure 29 REST Communication with the outbox
 
 === MQTT
 
@@ -102,15 +117,23 @@ agrirouter provides one MQTT Server per Endpoint, so there is no danger or chanc
 
 Using MQTT, the app instance will publish the request and after a while, the agrirouter will publish the response. Polling is not required.
 
-image:ig2/image35.png[image,width=618,height=153]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image35.png" width="618px" height="153px"><br>
+ <i>Request and Response using MQTT</i>
+</p>
+++++
 
-Figure 30 Request and Response using MQTT
 
 ==== Communication with the Outbox
 
-image:ig2/image36.png[image,width=633,height=151]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image36.png" width="633px" height="151px"><br>
+ <i>Receiving Result from the outbox in MQTT</i>
+</p>
+++++
 
-Figure 31 Receiving Result from the outbox in MQTT
 
 If there are messages available in the outbox, agrirouter will simply publish them to the MQTT App Instance.
 
@@ -134,15 +157,23 @@ To avoid graphs with too many arrows, we simplifiy the upcoming requests, abstra
 
 ==== Abstraction of Calls to the Inbox
 
-image:ig2/image37.png[image,width=637,height=99]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image37.png" width="637px" height="99px"><br>
+ <i>Abstraction of a Call or Message Sending to the Inbox</i>
+</p>
+++++
 
-Figure 32 Abstraction of a Call or Message Sending to the Inbox
 
 ==== Abstraction of Results from Outbox
 
-image:ig2/image38.png[image,width=628,height=87]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image38.png" width="628px" height="87px"><br>
+ <i>Abstraction of a result from the outbox</i>
+</p>
+++++
 
-Figure 33 Abstraction of a result from the outbox
 
 = Communication of App Instance and Endpoint
 
@@ -168,23 +199,35 @@ If a message is not correctly encoded, so that the agrirouter cannot decode it, 
 
 Sending messages to the agrirouter creates an ACK-Message in the outbox of the agrirouter
 
-image:ig2/image39.png[image,width=512,height=210]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image39.png" width="512px" height="210px"><br>
+ <i>Send Message or Command to agrirouter</i>
+</p>
+++++
 
-Figure 34 Send Message or Command to agrirouter
 
 == Flow of commands
 
-image:ig2/image40.png[image,width=482,height=290]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image40.png" width="482px" height="290px"><br>
+ <i>Command Flow</i>
+</p>
+++++
 
-Figure 35 Command Flow
 
 == Flow of requesting messages from the feed
 
 If the command is a feed command requesting messages from the feed, the app instance has to confirm the receival of the message, so that it is deleted from the feed.
 
-image:ig2/image41.png[image,width=575,height=348]
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image41.png" width="575px" height="348px"><br>
+ <i>Command flow for reading the feed</i>
+</p>
+++++
 
-Figure 36 Command flow for reading the feed
 
 == Terms
 

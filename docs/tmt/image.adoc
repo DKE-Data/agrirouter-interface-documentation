@@ -1,0 +1,63 @@
+= Images
+:imagesdir: ./../../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+== img:bmp - Bitmap Image
+
+
+=== Definition
+
+This format is used to exchange a bitmap file. It can forward the binary bmp-Content, but currently no file name or other meta data.
+
+=== Command
+
+[cols=",",]
+|==================
+|Command |img:bmp
+|Protobuf Schema |-
+|TypeURL |“”
+|==================
+
+=== Format
+
+The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+
+== img:jpg – JPEG Image
+
+=== Definition
+
+This format is used to exchange a bitmap file. It can forward the binary jpeg-Content, but currently no file name or other meta data.
+
+=== Command
+
+[cols=",",]
+|==================
+|Command |img:jpg
+|Protobuf Schema |-
+|TypeURL |“”
+|==================
+
+=== Format
+
+The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+
+== img:png – PNG Image
+
+=== Definition
+
+This format is used to exchange a bitmap file. It can forward the binary png-Content, but currently no file name or other meta data.
+
+=== Command
+
+[cols=",",]
+|==================
+|Command |img:png
+|Protobuf Schema |-
+|TypeURL |“”
+|==================
+
+=== Format
+
+The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.

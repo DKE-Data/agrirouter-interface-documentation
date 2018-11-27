@@ -1,0 +1,40 @@
+= Technical Message types
+:imagesdir: ./../../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+== General
+
+Technical message types are several standardized formats, that agrirouter apps should be capable of reading and creating. These technical message types are packaged into information types for the end user to make it easier for him to create the routings based on the type of data and not on the format of it.
+
+The possible technical message types can be found in the agrirouter UI when creating a new application:
+
+++++
+<p align="center">
+ <img src="./../../assets/images/ig2/image47.png" width="642px" height="380px"><br>
+ <i>Selecting technical message types in the agrirouter UI</i>
+</p>
+++++
+
+
+Figure 39 Selecting Technical Message Types in the agrirouter UI
+
+== List of technical message formats
+
+It can be any of these formats:
+
+[cols=",,",options="header",]
+|===========================================================================================================================
+|Technical Message Type |Information Type |Description
+|link:./taskdata.adoc[iso:11783:-10:taskdata:zip] |TaskData |A zipfile including a TaskData Set
+|link:./efdi.adoc[iso:11783:-10:device_description:protobuf] |Telemetry |A set of device descriptions connected to a CU. Also called “TeamSet”
+|link:./efdi.adoc[iso:11783:-10:time_log:protobuf] |Telemetry |Life telemetry data based on the devicedescription
+|link:./image.adoc[img:bmp] |Image |A Bitmap File
+|link:./image.adoc[img:jpeg] |Image |A JPEG File
+|link:./image.adoc[img:png] |Image |A Portable Network Graphics File
+|link:./shape.adoc[shp:shape:zip] |Shape |A zip file including a Shape dataset
+|link:./video.adoc[vid:avi] |Video |An AVI Video
+|link:./video.adoc[vid:mp4] |Video |A MPEG4 Video
+|link:./video.adoc[vid:wmv] |Video |A wmv Video
+|===========================================================================================================================

@@ -1,6 +1,5 @@
 = agrirouter Integration Guide
 :imagesdir: ./assets/images/
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
@@ -8,7 +7,12 @@
 
 [abstract]
 == Abstract
-image::agrirouter.svg[agrirouter]
+++++
+<p align="center">
+ <img src="./assets/images/agrirouter.svg">
+</p>
+++++
+
 
 The agrirouter is a universal data exchange platform for farmers and agricultural contractors that makes it possible to connect machinery and agricultural software, regardless of vendor or manufacturer. Agrirouter does not save data; it transfers data.
 As a universal data exchange platform, agrirouter fills a gap on the way to Farming 4.0. Its underlying concept unites cross-vendor and discrimination-free data transfer. You retain full control over your data. Even data exchange with service providers (e.g. agricultural contractors) and other partners is uncomplicated: Data are very rapidly transferred via the online connection, and if you wish, is intelligently connected to other datasets.
@@ -28,6 +32,8 @@ A short description naming all the agrirouter specific terms and their connectio
 A list of shortings can be found link:./docs/shortings.adoc[here]
 
 A glossary can be found link:./docs/glossary.adoc[here]
+
+There are several ids required for communication, a list of descriptions can be found link:./docs/ids_and_definitions.adoc[here].
 
 == Tools and Libraries
 
@@ -59,7 +65,7 @@ There are several environments for test and production in different areas of the
 
 FarmingSoftware and Telemetry Platforms have to perform an link:docs/integration/authentication.adoc[Authentication Process] to clarify, that the account user is known. CUs may also perform it, but that is not required
 
-To communicate with the agrirouter, an application Instance needs to be link:docs/integration/onBoarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be link:integration/revoke.adoc[Revoked].
+To communicate with the agrirouter, an application Instance needs to be link:docs/integration/onBoarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be link:docs/integration/revoke.adoc[Revoked].
 
 For further communication, it's important to understand the link:/docs/endpoint.adoc[Elements of an endpoint] and the link:/docs/communication.adoc[Basics of Communication].
 =======
@@ -67,4 +73,8 @@ For further communication, it's important to understand the link:/docs/endpoint.
 
 A short description naming all the agrirouter specific terms and their connection to each other can be found link:/terms.adoc[here]
 
+To send a message, it has to be built first. Read link:/docs/integration/buildmessage.adoc[here] about building messages.
+
+When link:/docs/integration/messageSending.adoc[sending messages], the result will be link:docs/integration/messageReceiving.adoc[received through the outbox] and can be link:./docs/integration/analyzeResult.adoc[analyzed] depending on the link:/docs/tmt/overview.adoc[technical message type] and the link:./docs/resultCodes.adoc[resultCodes].
+=======
 == Development tools

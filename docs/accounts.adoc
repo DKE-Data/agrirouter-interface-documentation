@@ -1,6 +1,5 @@
 = Accounts
 :imagesdir: ./../assets/images/
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
@@ -19,9 +18,13 @@ The user interface offers possibilities to handle the account:
 * modify his user interface (e.g. color scheme)
 * view a list of news/updates for his account (e.g “account connected”, “endpoint onboarded”, etc.)
 
-image:ig1\image2.png[image,width=456,height=663]
+++++
+<p align="center">
+<img src="./../assets/images/ig1\image2.png" width="456px" height="663px"><br>
+<i> User Interface for End Users</i>
+</p>
+++++
 
-Figure 2 User Interface for End Users
 
 == Developer
 
@@ -45,9 +48,14 @@ Additionally, developers can manage their own applications:
 * Replay Endpoint Records
 * Export metrics of agrirouter usage for billing purpose
 
-image:ig1\image3.png[image,width=473,height=615]
+++++
+<p align="center">
+<img src="./../assets/images/ig1\image3.png" width="473px" height="615px"><br>
+<i>User Interface for Developers</i>
+</p>
+++++
 
-Figure 3 User Interface for Developers
+
 
 == Administrator
 

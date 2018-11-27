@@ -1,6 +1,5 @@
 = my-agrirouter.com Marketplace
 :imagesdir: ./../assets/images/
-*Table of Content*
 :toc:
 :toc-title:
 :toclevels: 4
@@ -14,9 +13,15 @@ This information must be created before going live under http://tptest.my-agriro
 
 After certification process is done, application or hardware provider can create partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
 
-image:ig1\image47.png[image,width=642,height=470]
+++++
+<p align="center">
+ <img src="./../assets/images/ig1\image47.png" width="642px" height="470px"><br>
+ <i>my-agrirouter.com Marketplace</i>
+</p>
+++++
 
-Figure 47 my-agrirouter.com Marketplace
+
+
 
 DKE will publish a link for creating an partner account for the my-agrirouter.com marketplace. After certification process is finalized the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date.
 

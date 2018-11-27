@@ -1,0 +1,50 @@
+= EFDI
+:imagesdir: ./../../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+== iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description
+
+=== Definition
+
+This format is used to report devices, that are attached to a CU to the agrirouter. These devices including the CU are known as a teamset, having their own teamsetID.
+
+=== Command
+
+[cols=",",]
+|==================================================
+|Command |iso:11783:-10:device_description:protobuf
+|Protobuf Schema |EFDI; available at AEF Repository
+|TypeURL |iso:11783:-10:device_description:protobuf
+|==================================================
+
+The teamset message is part of EFDI and therefore currently not available here. It will be available by AEF.
+
+The AEF protobuf files can be found here: https://github.com/aefev/fmisei-spec/tree/master/proto-v3-grpc .
+
+*Remark*
+
+Access to the AEF repository can be requested at the AEF Office, see https://aef-online.org
+
+=== Result
+
+The result indicates, if the teamset could be forwarded to an addressed endpoint or – if it was published – if there was a subscribed endpoint, who received the message. If no endpoint received the message, there will be an ACK_WITH_FAILURE
+
+[NOTE]
+====
+If a CU sends a teamset, applications are able to address messages directly to the devices. These messages are then delivered to the CU.
+====
+
+== iso:11783:-10:time_log:protobuf - EFDI TimeLog
+
+The EFDI timelog is comparable to IOSOXML Binary Log data. the format with all its parameters can be received from the AEF repository.
+
+=== Command
+
+[cols=",",]
+|==================================================
+|Command |iso:11783:-10:time_log:protobuf
+|Protobuf Schema |EFDI; available at AEF Repository
+|TypeURL |iso:11783:-10:time_log:protobuf
+|=================================================
