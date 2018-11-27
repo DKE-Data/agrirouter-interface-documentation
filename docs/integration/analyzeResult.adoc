@@ -1,4 +1,5 @@
 = Analyse Outbox Results
+:sectlinks:
 :imagesdir: ./../assets/images/
 :toc:
 :toc-title:
@@ -44,8 +45,8 @@ The response code indicates success or failure of a request.
 |503 |request cannot be processed at the moment, probably due to temporary overload
 |==========================================================================================================================================================
 
-=== type
-
+=== ResponseType
+[[ResponseType]]
 The type is required to determine the correct schema for the body:
 
 The following List shows the corresponding Protobuf schemata for each ResponseType
@@ -64,7 +65,7 @@ The following List shows the corresponding Protobuf schemata for each ResponseTy
 |CLOUD_REGISTRATIONS |agrirouter.cloud.registration.OnboardingResponse |The result of a Virtual CU registration
 |=====================================================================================================================================
 
-Analysing the results is described in the specific chapters of process description for several
+Analysing the results is described in the specific chapters of process description for the relevant commands.
 
 === application_message_id
 
@@ -72,7 +73,12 @@ Indicates to which request this response is to be mapped (app message id is prov
 
 === message_id
 
-The message_id is a unique ID of this message on the agrirouter. Use this id for the confirmation or delition request.
+The message_id is a unique ID of this message on the agrirouter. Use this id for the confirmation or deletion request.
+
+[NOTE]
+====
+Deletion and/or confirmation is only required for messages received from the feed, not for commands
+====
 
 === timestamp
 
@@ -84,7 +90,7 @@ There are several possible payload protobuf formats. Specific messages will be d
 
 === Messages
 
-The agrirouter.commons.messages element includes a message as result of a command.
+The agrirouter.commons.messages element includes a message as result of a command for ACK_WITH_MESSAGES or ACK_WITH_FAILURE results.
 [source,javascript]
 ----
 syntax = "proto3";
@@ -120,4 +126,4 @@ It includes an array of Message:
 
 To display the message, replace all fields in the message with the corresponding values from the map.
 
-The possible codes can be found in the attached file ErrorCodes.xlsx, specific values will be described in more detail within the corresponding Commands chapter.
+The possible codes can be found in the link:./../ErrorCodes.adoc[error code list], specific values will be described in more detail within the corresponding link:./../commands/overview.adoc[Commands chapter].

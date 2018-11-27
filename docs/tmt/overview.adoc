@@ -6,7 +6,16 @@
 
 == General
 
-Technical message types are several standardized formats, that agrirouter apps should be capable of reading and creating. These technical message types are packaged into information types for the end user to make it easier for him to create the routings based on the type of data and not on the format of it.
+Technical message types are several standardized formats, that agrirouter apps should be capable of reading and creating. 
+These are the messages, that are exchanged between application instances **over** the agrirouter.
+
+These technical message types are summarized into information types for the end user to make it easier for him to create the routings based on the type of data and not on the format of it.
+
+[NOTE]
+====
+A list of commands for the agrirouter can be found link:./../commands/overview.adoc[here].
+====
+
 
 The possible technical message types can be found in the agrirouter UI when creating a new application:
 

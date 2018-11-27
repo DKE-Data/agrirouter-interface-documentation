@@ -1,4 +1,4 @@
-= Managing applications as app provider
+= Managing application endpoints as app provider
 :imagesdir: ./../assets/images/
 :toc:
 :toc-title:

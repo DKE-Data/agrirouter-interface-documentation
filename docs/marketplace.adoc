@@ -7,11 +7,11 @@
 
 
 
-Under the URL http://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the application or hardware provider to present their own apps, functions, modules or hardware solutions.
+At http://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the application or hardware provider to present their own apps, functions, modules or hardware solutions.
 
-This information must be created before going live under http://tptest.my-agrirouter.com/tptest/ in content management test environment according DKE specifications. DKE quality management reviewed, approved and released this information for go live.
+This information must be created before going live under http://tptest.my-agrirouter.com/tptest/ in the content management test environment according DKE specifications. DKE quality management reviewes, approves and releases this information for go live.
 
-After certification process is done, application or hardware provider can create partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
+After the certification process is finished, application or hardware provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
 
 ++++
 <p align="center">

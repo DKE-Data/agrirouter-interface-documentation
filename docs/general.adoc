@@ -16,14 +16,14 @@ The agrirouter is a cloud solution, that allows farmers and contractors to trans
 
 == Advantages for end users
 
-Users can configure data transfer permissions centrally on the agrirouter Connectivity-Platform, to control what data can be exchanged between which endpoints. Data can be published on the agrirouter Connectivity-Platform and routed to interested and allowed endpoints.
+Users can configure data transfer permissions centrally on the agrirouter Connectivity-Platform, to control what data can be exchanged between which endpoints. Every end user has his own account, where he can organize the data exchange between all of his endpoints. Data can be published on the agrirouter Connectivity-Platform and routed to interested and allowed endpoints. Other users accounts can be connected as endpoints to a users agrirouter account.
 
 The agrirouter Connectivity-Platform provides a common cross-vendor data exchange mechanism and protocol to exchange several common message formats, which can be implemented by different machine manufacturers and application providers. Examples for the common message formats are ISOXML, images and videos.
 //TODO: Add link to TMTs
 
 The transmission and evaluation of live telemetry data is getting more and more important. 
 With the agrirouter Connectivity-Platform, machines can send telemetry data to the agrirouter, where data is automatically distributed to several applications, based on permissions and configuration. 
-For live telemetry data, the agrirouter routes the content of the messages according to the user-defined permissions.
+For live telemetry data, the agrirouter routes the content of the messages according to the user-defined and context based permissions.
 
 This way it can be achieved that one application gets only application rate data, for example, while another one gets only machine-related data such as fuel consumption.
 
@@ -32,8 +32,6 @@ Technically, the agrirouter Connectivity-Platform is a cloud system, which provi
 When the recipient of a message is offline, the message is buffered on the agrirouter until the recipient is online again. However, the message is not buffered forever. After a maximum buffer time, the buffered messages are removed from the buffer even if they are not yet delivered.
 
 The agrirouter Connectivity-Platform stores additional data needed for rights management and command processing. This includes the list of endpoints attached to agrirouter account, and the technical device description of the connected agricultural machines. This information is needed for message routing. In addition, the agrirouter stores usage statistics data needed for billing.
-
-The agrirouter also offers a technology to adjust manufacturer specific DDIs once they are standardized. This way, application providers do not have to care about manufacturer specific DDIs anymore, they can just use the standardized version even for older machines.
 
 == Advantage for App-, CU- and Telemetry providers
 

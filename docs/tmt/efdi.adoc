@@ -4,11 +4,24 @@
 :toc-title:
 :toclevels: 4
 
+
+
+[IMPORTANT]
+====
+The format for telemetry data; EFDI is defined by a subgroup of the AEF. The documentation of this format is currently intellectual property of the AEF. For further information on those message types, please refer to https://aef-online.org .
+
+DKE is currently not allowed to provide the documentation for EFDI.
+
+====
+
 == iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description
 
 === Definition
 
-This format is used to report devices, that are attached to a CU to the agrirouter. These devices including the CU are known as a teamset, having their own teamsetID.
+The message iso:11783:-10:device_description:protobuf is used to understand, which machine is attached to which CU or Virtual CU and which machine provides which DDI. EFDI Device Descriptions are protobuf encoded, the data structure however is mainly equal to the form of an ISO11783-10 TaskData.
+
+
+This format is used to report devices, that are attached to the agrirouter through a CU. These devices including the CU are known as a teamset, having their own teamsetID.
 
 === Command
 
@@ -38,7 +51,12 @@ If a CU sends a teamset, applications are able to address messages directly to t
 
 == iso:11783:-10:time_log:protobuf - EFDI TimeLog
 
-The EFDI timelog is comparable to IOSOXML Binary Log data. the format with all its parameters can be received from the AEF repository.
+The EFDI timelog is comparable to IOSOXML Binary Log data. The format with all its parameters can be received from the AEF repository.
+
+
+The Message iso:11783:-10:time_log:protobuf includes a list of live telemetry data. For those live telemetry data, agrirouter is able to select only those DDIs to be forwarded to an endpoint, that were selected by the end user when creating routings.
+
+EFDI Time Logs are as well comparable to ISO11783 TimeLogs.
 
 === Command
 
@@ -47,4 +65,36 @@ The EFDI timelog is comparable to IOSOXML Binary Log data. the format with all i
 |Command |iso:11783:-10:time_log:protobuf
 |Protobuf Schema |EFDI; available at AEF Repository
 |TypeURL |iso:11783:-10:time_log:protobuf
-|=================================================
+|==================================================
+
+== Content of Telemetry messages
+
+=== DDIs
+
+Telematic sensor values are assigned to DDIs, a standardized list of possible sensor and task information. A full list can be found here: https://dictionary.isobus.net.
+
+The TimeLogs message includes a list of DDI numbers and their corresponding current values. The agrirouter can filter timelog messages for DDIs, that are part of a routing. The DDI list provides a number area for proprietary DDIs, that can have a specific definition for each manufacturer.
+
+=== Categories
+
+As the list of standardized DDIs is quite long (more than 530 by May 2018), agrirouter provides DDI categories, to simplify the routings setup for end users. Each category stands for multiple DDIs. One DDI can only be in one category.
+
+An end user sets up routings using Categories.
+
+The current List of Categories includes the following Categories:
+
+[cols="1,3,5",options="header",]
+|=================================================================================================================================
+|No. |Name |Description
+|0 |*GPS Geo Position* |GPS Geo-Position (North and East Coordinates) where the telemetry data was measured or logged.
+|1 |*Guidance and Geo Data* |Data related to geographical and guidance information
+|2 |*Application Data* |Data related what is applied to the field (e.g. fertilizer, seeds, plant protection, dry matter, …)
+|3 |*Crop and Yield Data* |Properties of harvested material
+|4 |*General Work Data* |Task and Lifetime Counter or average values (Counters that are not relevant for Application and or yield)
+|5 |*Fuel and Exhaust Fluid Consumption Data* |Data related what a machine consumpt of fuel and Exhaust Fluid (Energy overall)
+|6 |*Process Data* |Data related to the main working process of the machine
+|7 |*Machine Data* |Data related to the machine characteristics (not process relevant)
+|8 |*Environment Data* |Data related to the Environment (weather data)
+|9 |*Basic Data* |Fundamental values that are relevant for the whole system
+|10 |*Proprietary Data* |Manufacturer specific data (not part of the standard)
+|=================================================================================================================================

@@ -18,6 +18,18 @@ The agrirouter is a central data exchange platform, but to understand its full p
 </p>
 ++++
 
+//TODO: Is there a better place for this?
+=== Overview of the architecture
+
+This chapter gives a high-level overview about the agrirouter Connectivity-Platform architecture, an application can interact with.
+
+++++
+<p align="center">
+ <img src="./../assets/images/ig1\image23.png" width="626px" height="451px"><br>
+ <i>agrirouter Connectivity-Platform IT architecture</i>
+</p>
+++++
+//TODO: There is an arrow and a box "teamset" needed to aim to AppInstance!
 
  
 == Machines
@@ -46,7 +58,7 @@ It is possible to connect 2 agrirouter accounts with each other using the email 
 
 [IMPORTANT]
 ====
- It is not possible to address an endpoint inside another agrirouter account, neither is it possible to list the endpoints of this account.
+It is not possible to address an endpoint inside another agrirouter account, neither is it possible to list the endpoints of this account.
 ====
 
 == Teamset

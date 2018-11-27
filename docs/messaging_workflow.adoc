@@ -22,9 +22,8 @@ These capabilities must match those stated in the application version certificat
 
 If the endpoint wants to ‘listen’ to certain messages, it must subscribe to the appropriate technical message types, so that published messages get routed to this endpoint. Messages however will only get routed, if there is a routing for that
 
-Every request sent to the agrirouter inbox will be acknowledged by the agrirouter, indicating whether the request could be processed successfully, with warning or it could not be processed because of errors; in that case, an error code and an error message in English are returned. Communication Layers.
+Every request sent to the agrirouter inbox will be acknowledged by the agrirouter, indicating whether the request could be processed successfully, with warning or it could not be processed because of errors; in that case, an error code and an error message in English are returned.
 
-After that, the teamset is reported and a communication workflow can begin. The Workflow is as follows:
 
 [NOTE]
 ====
@@ -40,7 +39,9 @@ The agrirouter offers two different communication protocols for the common commu
 * REST via HTTP(S)
 * MQTT
 
-The commands exchanged with the agrirouter are protobuf encoded (in both directions). MQTT clients MUST send commands as base64 encoded strings embedded into a JSON frame structure.
+The commands exchanged with the agrirouter are protobuf encoded (in both directions). 
+
+MQTT clients MUST send commands as base64 encoded strings embedded into a JSON frame structure.
 
 REST based clients have the choice to transfer the commands in the same format as required for MQTT (base64 encoded protobuf nested in JSON structure). For REST, it is also possible to send native protobuf.
 
@@ -51,7 +52,7 @@ The internal Google Protocol Buffer (protobuf) definitions for the communication
 
 == Request sending frequency
 
-agrirouter needs some time to process commands and forward messages, that are received through one of the endpoints. To avoid mixing up communication and reguesting the next message before receiving the result of the last command, the agrirouter support team advices, to have a minimum time lapse between sending of 2 requests to the agrirouter:
+agrirouter needs some time to process commands and forward messages, that are received through one of the endpoints. To avoid mixing up communication and requesting the next message before receiving the result of the last command, the agrirouter support team advices, to have a minimum time laps between sending of 2 requests to the agrirouter:
 
 [cols=",",options="header",]
 |=============================================
@@ -62,126 +63,21 @@ agrirouter needs some time to process commands and forward messages, that are re
 
 [NOTE]
 ====
-EFDI Log Telemetry messages can be collected over several seconds and than be sent in one request to the agrirouter.
+* EFDI Log Telemetry messages can be collected over several seconds and than be sent in one request to the agrirouter.
+
+* It is possible to send multiple messages with one request.
 ====
 
 == agrirouter Endpoints
 
-This chapter gives an overview about the endpoints including their base requirement and definition. This chapter gives a high-level overview about the agrirouter Connectivity-Platform architecture, an application can interact with.
+This chapter gives an overview about the endpoints including their base requirement and definition. 
 
-
-
-=== Overview of the architecture
-
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image23.png" width="626px" height="451px"><br>
- <i>agrirouter Connectivity-Platform IT architecture</i>
-</p>
-++++
-
-
-
+The full chapter can be found link:./endpoint.adoc[here].
 
 == Authorization process for endpoints
+This process is required to make sur, that an app provider knows the end user of an app instance of his application.
 
-[IMPORTANT]
-====
-App providers, whose software receives data have to pay for these data. The authorization process is used by application providers to assign each endpoint with a known user of their software.
-====
-
-
-The authorization process is major for farming software and telemetry platforms, for CUs it is an optional function.
-
-For CUs, this requires additional infrastructure, DKE advices to use the TAN exchange process.
-
-=== Account authorization for farming software
-
-As application providers of farming software have to pay for the consumption of raw data, the application provider should make sure, that only such agrirouter accounts can onboard one of his applications, that he can assign to one of his users. Otherwise, fake accounts could consume data on his costs.
-
-==== Authorization Process Overview
-
-The authorization process works as follows:
-
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image24.png" width="586px" height="355px"><br>
- <i>Process of app authorization</i>
-</p>
-++++
-
-
-
-To better understand, what happens here, try the following:
-
-====
-
-1.  Call https://httpbin.org/get in your browser. You’ll get a JSON view of the get request
-2.  Call https://httpbin.org/get?Param1=Value1&Param2=Value2 in your browser. You’ll get a view of the get request
-
-* https://httpbin.org simply echoes the request that is send to the page. That’s important to understand
-
-====
-
-==== Generating an authorization Link
-
-To provide a link for authorization, create a link like this:
-
-__*\{\{agrirouter-url}}/application/\{\{applicationID}}/authorize?\{\{response-type}}&\{\{state}}&\{\{redirectURL}}*__
-
-
-//TODO: Remove this with the real command in the final document
-[NOTE] 
-====
-The detailed request is described in Integration Guide Part 2 (see Purpose of further documents
-====
-
-==== Perform authorization
-
-When the user clicks on the link, the agrirouter website is called. If the user is currently not logged in, he has to log in. After logging in, he is delivered a website to authorize the connection between agrirouter and the application provider:
-
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image25.png" width="315px" height="252px"><br>
- <i>Application authorization screen</i>
-</p>
-++++
-
-
-
-
-==== Analyses result
-
-agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization result in the get queue.
-
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image26.png" width="498px" height="244px"><br>
- <i>Example of an authorization result</i>
-</p>
-++++
-
-
-
-
-The details of this answer are described in Part 2 of the integration Guide.
-
-=== Authorization for CUs and non-cloud-software
-
-To perform authorization for software, that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
-
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image27.png" width="624px" height="165px"><br>
- <i>architecture for CU and non-cloud application authorization</i>
-</p>
-++++
-
-
-
-
-//TODO: Replace this with the part from IG2
-This process will be described more precisely in Integration Guide Part 2.
+The whole chapter can be found link:./integration/authorization.adoc[here].
 
 == Onboarding Process
 
@@ -215,7 +111,7 @@ This process will be described more precisely in Integration Guide Part 2.
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image30.png" width="538px" height="477px"><br>
+ <img src="./../assets/images/ig2\image18.png" width="538px" height="477px"><br>
  <i>Onboarding process of a Farming Software or Telemetry platform</i>
 </p>
 ++++
@@ -265,7 +161,7 @@ As a result, the agrirouter will return a JSON object including the endpoint IDs
 
 [NOTE]
 ====
- There is no MQTT onboarding mechanism, so onboarding always has to be done using REST.
+There is no MQTT onboarding mechanism, so onboarding always has to be done using REST.
 ====
 
 An example for an onboarding request can be found in the postman collection, which is part of Integration Guide Part 2.
@@ -285,11 +181,11 @@ agrirouter is a platform, that is mostly used to transport messages *through* it
 //TODO Format this
 Therefore, the content is encapsulated
 
-=> in messages, which are encapsulated into
+in messages, which are encapsulated into::
 
-    => the commands to the agrirouter, which are encapsulated into
+=>the commands to the agrirouter, which are encapsulated into::
 
-        => the protocol layer of REST or MQTT.
+=>the protocol layer of REST or MQTT.
 
 With except to the EFDI telemetry messages (DeviceDescription and timelogs), agrirouter doesn’t analyse the messages inside the agrirouter command. It just checks the message type and the addressing to determine the recipients based on the routings and subscriptions.
 

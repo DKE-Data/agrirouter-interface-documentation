@@ -4,11 +4,11 @@ agrirouter currently supports 2 environments of the whole agrirouter connectivit
 
 == Quality assurance
 
-The quality assurance environment (“QA”) is used to develop and test applications in a save and uncritical eco system. Please note, that the quality assurance environment shall not be used by productive customers.
+The quality assurance environment (“QA”) is used to develop and test applications in a save and uncritical eco system. Please note, that the quality assurance environment shall not be used by end customers.
 
 == Productive
 
-The productive environment is used by your endcustomers with tested and certified apps. This environment is very scalable and made for a huge number of users.
+The productive environment is used by your end customers with tested and certified apps. This environment is very scalable and made for a huge number of users.
 
 == Areas
 

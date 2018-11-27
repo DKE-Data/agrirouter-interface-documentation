@@ -10,7 +10,7 @@ Creating a message includes several steps. This can be seen in the graph below:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image42.png" width="620px" height="272px"><br>
+ <img src="./../../assets/images/ig2/image42.png" width="100%"><br>
 <i>Workflow of creating a message</i>
 </p>
 ++++
@@ -19,18 +19,18 @@ Creating a message includes several steps. This can be seen in the graph below:
 
 == Chunking big messages
 
-Exchanging data using a mobile connection can be very critical, as a stable internet connection is not always given. To avoid waisting data volume and time, agrirouter offers a possibility to cut messages into multiple smaller parts and send them one by another. If the internet connection breaks down inbetween, only one small package is not delivered and has to be send again.
+Exchanging data using a mobile connection can be very critical, as a stable internet connection is not always given. To avoid wasting data volume and time, agrirouter offers a possibility to cut messages into multiple smaller parts and send them one by another. If the internet connection breaks down inbetween, only one small package is not delivered and has to be sent again.
 
 [NOTE]
 ====
-* agrirouter messages can have a maximum size of 1 MB each. If a message is too large, agrirouter will respond with a HTTP code 413 “Request too large”. Please note, that the relevant size value is the size of the protobuf format, which might increase with conversion to Base64.
+* agrirouter messages can have a maximum size of 1 MB each. If a message is too large, agrirouter will respond with a HTTP code 413 “Request too large”. Please note, that the relevant size value is the size of the protobuf format, which will increase with conversion to Base64.
 
 * EFDI telemetry messages cannot be chunked, as they are analyzed for the routing of telemetry data on agrirouter.
 ====
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image43.png" width="639px" height="356px"><br>
+ <img src="./../../assets/images/ig2/image43.png" width="100%" ><br>
 <i>Workflow of creating a chunked message</i>
 </p>
 ++++
@@ -39,14 +39,14 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 
 [NOTE]
 ====
-Sending multiple messages in one Request is only possible, if the overall size of all messages payloads is beyond the chunking maximum size value.
+Sending multiple messages in one request is only possible, if the overall size of all messages payloads is below the chunking maximum size value.
 ====
 
 The overall body of the message to the inbox shall not include more payload than allowed without chunking. So, when a message is too big for one request and needs to be chunked, these chunks have to be sent in multiple messages, they can not be added as multiple chunks to one message.
 
 == Encode content to its Technical Message Type
 
-Encoding a message in its required technical message type depends on the message type. The message types for agrirouter Commands are described further in 16 Overview of agrirouter commands.
+Encoding a message in its required technical message type depends on the message type. The message types for agrirouter commands are described further in the specific chapters, that can be found link:./../tmt/overview.adoc[here].
 
 == Encode content in Protobuf
 
@@ -56,16 +56,14 @@ The agrirouter uses the node.js lib: https://github.com/dcodeIO/protobuf.js
 
 [NOTE]
 ====
-As the payload of a message is defined as an any message, the TypeURL has to be set to the corresponding message type. Otherwise, agrirouter will not be able to forward or process the message.
+As the payload of a message is defined as an any message, the typeURL has to be set to the corresponding message type. Otherwise, agrirouter will not be able to forward or process the message.
 ====
 
 === Getting the agrirouter protobuf files
 
-Protobuff definitions are part of the integration guides attachments, they are delivered as .proto files.
+Protobuff definitions can be found here: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions
 
-They can also be found at the github: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions
-
-The repository delivers all protobuf files, that are owned by the DKE. It might be, that you need additional protocol buffers like the EFDI telemetry messages definitions, that cannot be delivered in this github account due to intellectual property rights. You will however find instructions, how to get those protobuf definition files.
+The repository delivers all protobuf files, that are owned by the DKE. It might be, that you need additional protocol buffers like the EFDI telemetry messages definitions for specific message types, that cannot be delivered in this github account due to intellectual property rights. You will however find instructions, how to get those protobuf definition files.
 
 === Reading Protobuf definitions
 
@@ -156,7 +154,7 @@ The parameters as overview:
 |=====================================================================================================================================
 |Parameter |Type |Description
 |application_message_id |String |A unique ID for this message. UUID required
-|application_message_seq_no |int64 |An indicator, in which order the client sent the message. The smallest Sequence number must be >0.
+|application_message_seq_no |int64 |An indicator, in which order the client sent the message. The smallest sequence number must be >0.
 |technical_message_type |string |The TMT; see 17 Technical Message
 |team_set_context_id |string |The relevant teamset for this message; just in case, it changes
 |mode |mode |DIRECT, PUBLISH or PUBLISH_WITH_DIRECT
@@ -165,7 +163,7 @@ The parameters as overview:
 |timestamp |timestamp |The timestamp, when the message was created
 |=====================================================================================================================================
 
-For the timestamp format definition, please refer to: https://github.com/google/protobuf/blob/master/src/google/protobuf/timestamp.proto
+For the timestamp format definition, please refer to: link:https://github.com/google/protobuf/blob/master/src/google/protobuf/timestamp.proto
 
 [NOTE]
 ====
@@ -187,7 +185,7 @@ Note that this concept is not supported in all protobuf libraries (in Java and n
 
 If building streaming is required for the language and libraries, you use, Note, that Delemited messages are attached to each other like this: Length1,Content1,Length2,Content2,…. The variable size of Length is the length of a varint; see https://developers.google.com/protocol-buffers/docs/encoding#varints.
 
-A solution for C++ can be found here: https://stackoverflow.com/questions/2340730/are-there-c-equivalents-for-the-protocol-buffers-delimited-i-o-functions-in-ja/
+A solution for C++ can be found here: link:https://stackoverflow.com/questions/2340730/are-there-c-equivalents-for-the-protocol-buffers-delimited-i-o-functions-in-ja/
 
 == Message container
 
@@ -201,9 +199,9 @@ Encode the serialized binary protobuf stream into a base64 string. All further s
 
 === Go on in Protobuf
 
-agrirouter REST endpoints are also capable of exchanging Protobuf.
+agrirouter REST endpoints are also capable of exchanging protobuf.
 
-When using Protobuf, the whole message including the upcoming steps will be encoded In Protobuf. The container is an element of type any in the message; see further steps.
+When using protobuf, the whole message including the upcoming steps will be encoded in protobuf. The container is an element of type any in the message; see further steps.
 
 == Adding the Timestamp
 
@@ -220,10 +218,9 @@ The object can now be added to the list of messages, that shall be sent to the e
 
 === JSON
 
-The message List is a JSON array of Message containers and called measures in the following:
+The message list is a JSON array of message containers and called measures in the following:
 
-//TODO: There is something missing here?
-{empty}[message,timestamp]
+    {message,timestamp}
 
 === Protobuf
 
@@ -278,7 +275,7 @@ The JSON setup looks like this:
 
 === Protobuf setup
 
-The protobuf message can be found here: https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/e97b63e35f9a4bdbab72075e7bd37ccf.html
+The protobuf message can be found here: link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/e97b63e35f9a4bdbab72075e7bd37ccf.html
 
 It looks as follows:
 [source,javascript]

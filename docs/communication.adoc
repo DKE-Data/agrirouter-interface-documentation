@@ -47,6 +47,7 @@ The device descriptions are needed by the agrirouter to
 
 * determine the relevant CU when sending a Message directly to a machine
 * filter for DDIs that are allowed to be sent to specific endpoints
+* be sent to endpoints, that subscribe for telemetry data, after the device description was already sent
 
 The life telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
 
@@ -71,8 +72,6 @@ REST is a wellknown principle for online apis. For more information on REST, ple
 * https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340
 
 REST uses HTTP requests, that result in an HTTP Response.
-
-To avoid request timeouts, agrirouter will return an HTTP Status Code 201(Processing) and the app instance will have to poll for a request confirmation.
 
 [NOTE]
 ====
@@ -137,6 +136,13 @@ Using MQTT, the app instance will publish the request and after a while, the agr
 
 If there are messages available in the outbox, agrirouter will simply publish them to the MQTT App Instance.
 
+
+[IMPORTANT]
+====
+This only appears to command results, not to messages, that are sent to the feed by another app instance. Those messages still have to be requested through the inbox but are automatically delivered through the outbox afterwards.
+====
+
+
 === Comparison of protocols
 
 Both protocols have several advantages and disadvantages. To select the right protocol for your needs, check the following table
@@ -179,13 +185,12 @@ To avoid graphs with too many arrows, we simplifiy the upcoming requests, abstra
 
 == Endpoint Adresses
 
-The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refere to 8.6.3
+The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refere to link:./integration/onboarding.adoc[Send onboarding Request].
 
-Sending Onboarding Request
 
 == Assigning a result to a request
 
-The assignment between messages sent to the Inbox and their corresponding message in the outbox is done by comparing the application_message_id provided by the app.
+The assignment between messages sent to the Inbox and their corresponding message in the outbox is done by comparing the application_message_id provided by the app. Therefore, this application_message_id **should be unique**.
 
 
 [CAUTION]

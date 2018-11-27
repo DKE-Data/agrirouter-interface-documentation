@@ -9,13 +9,6 @@
 
 Results for commands and messages from calls for messages are returned to the outbox. An application instance receives them from the outbox and can than decode the data.
 
-The address of the outbox is returned with the onboarding request (“commands”) and should look like this:
-
-[cols="1,4",options="header",]
-|=======================================================
-|Method |Adress
-|GET |/iot/gateway/rest/commands/{{deviceAlternateId}}
-|=======================================================
 
 [IMPORTANT]
 ====
@@ -34,11 +27,18 @@ The REST endpoint address of the outbox is delivered with the “command” attr
 
 An application Instance has to perform a GET request to this endpoint to receive all messages from the outbox.
 
+[cols="1,4",options="header",]
+|=======================================================
+|Method |Adress
+|GET |/iot/gateway/rest/commands/{{deviceAlternateId}}
+|=======================================================
+
+
 == Format of received messages
 
-Agrirouter returns a message, so, there can be multiple responses in one response package.
+Agrirouter returns an array of messages, so, there can be multiple responses in one response package.
 
-The result format depends on the setting of the the Accept-Header in the GET Request to the Outbox:
+The result format depends on the setting of the Accept-Header in the GET Request to the Outbox:
 
 [cols=",",options="header",]
 |=======================================

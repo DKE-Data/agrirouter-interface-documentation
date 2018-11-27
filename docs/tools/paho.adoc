@@ -36,7 +36,7 @@ To setup the certificate, open the connecton options and enable SSL. Then add th
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image5.png" width="520px" height="321px"><br>
+ <img src="./../../assets/images/ig2/image5.png" width="800px" height="321px"><br>
  <i></i>
 </p>
 ++++
@@ -48,7 +48,7 @@ Further information: https://help.sap.com/viewer/e765b2a5b99540ce84da397c20cc199
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image6.png" width="315px" height="139px"><br>
+ <img src="./../../assets/images/ig2/image6.png" width="800px" height="139px"><br>
  <i>Example for an onboarding result</i>
 </p>
 ++++
@@ -56,7 +56,7 @@ Further information: https://help.sap.com/viewer/e765b2a5b99540ce84da397c20cc199
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image7.png" width="205px" height="144px"><br>
+ <img src="./../../assets/images/ig2/image7.png" width="800px" height="144px"><br>
  <i>Paho UserInterface</i>
 </p>
 ++++

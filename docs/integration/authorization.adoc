@@ -1,4 +1,4 @@
-= Authentication Process
+= Authorization Process
 :imagesdir: ./../../assets/images/
 :toc:
 :toc-title:
@@ -7,31 +7,36 @@
 
 == What is this process used for?
 
-The authentication process was designed to give application providers of consuming applications (e.g. farming software, but in general every application that consumes data) the chance to make sure, they know, which account is assigned to which agrirouter account. Otherwise, fake accounts could consume data on their costs.
+The authorization process was designed to give application providers of consuming applications (e.g. farming software, but in general every application that consumes data) the chance to make sure, they know, which account is assigned to which agrirouter account. Otherwise, fake accounts could consume data on their costs.
 
 [NOTE]
-==== 
-As the authentication process – in difference to the rest of the communication – provides a request to your agrirouter integration and not the response to a request from your agrirouter integration, the documentation of the parameters is done in a little different way and there is no description for a HTTP Response code, because we don’t get one.
+====
+As the authorization process – in difference to the rest of the communication – provides a request to your agrirouter integration and not the response to a request from your agrirouter integration, the documentation of the parameters is done in a little different way and there is no description for a HTTP Response code, because we don’t get one.
 ====
 
-== Authentication of farming software
+
+The authorization process is major for farming software and telemetry platforms, for CUs it is an optional function.
+
+For CUs, this requires additional infrastructure, therefore DKE advices to use the TAN exchange process.
+
+== Authorization of farming software
 
 As application providers of farming software have to pay for the receiving of raw data, the application provider should make sure, that only such agrirouter accounts can onboard one of his applications, that he can assign to one of his users.
 
 [NOTE]
 ====
-As the user has to log on to agrirouter, the authentication process requires a browser UI!
+As the user has to log on to agrirouter, the authorization process requires a browser UI!
 ====
 
 === Preparation
 
-To provide authentication, the developer first has to setup the application.
+To provide authorization, the developer first has to setup the application.
 
 In the developers UI, he has to:
 
 * Copy the application ID (1)
 * Call Edit (2)
-* Provide a redirect URL, to which agrirouter shall deliver the authentication result using HTTP 301 Browser redirect.(3)
+* Provide a redirect URL, to which agrirouter shall deliver the authorization result using HTTP 301 Browser redirect.(3)
 * Provide a public key for his encryption or create a key pair on the agrirouter frontend
 
 ++++
@@ -67,14 +72,14 @@ Simply check Tracert/TraceRoute:
 
 ====
 
-=== Authentication Process Overview
+=== Authorization Process Overview
 
 The authentication process works as follows:
 
 ++++
 <p align="center">
  <img src="./../../assets/images/ig2/image13.png" width="619px" height="376px"><br>
-<i>Authentication Workflow</i>
+<i>Authorization Workflow</i>
 </p>
 ++++
 
@@ -88,14 +93,14 @@ To better understand, what happens here, try the following:
 
 [NOTE]
 ====
-* For testing purpose, you can just enter the url https://httpbin.org/get in your applications redirect URL (see below) to see the result of authentication.
+* For testing purpose, you can just enter the url https://httpbin.org/get in your applications redirect URL (see below) to see the result of authorization.
 
 * The step “user clicks on Link” might not be needed, applications could handle that different.
 ====
 
 For example the application could send a redirect (HTTP Status 300) to directly redirect the user to the agrirouter Connection Website. The description “user clicks on Link” is simply the most understandable description we could come up with.
 
-=== Generating an authentication URL
+=== Generating an authorization URL
 
 [cols="1,2,4",options="header",]
 |===========================================================================
@@ -104,7 +109,7 @@ For example the application could send a redirect (HTTP Status 300) to directly 
 |EU1 |Productive |https://goto.my-agrirouter.com/
 |===========================================================================
 
-The authentication Link is a HTTP GET Request that has to be called from a browser.
+The authorization Link is a HTTP GET Request that has to be called from a browser.
 
 [cols="1,4",options="header",]
 |===============================================
@@ -112,9 +117,9 @@ The authentication Link is a HTTP GET Request that has to be called from a brows
 |GET |/application/\{\{applicationID}}/authorize
 |===============================================
 
-To provide a link for authentication, create a link like this:
+To provide a link for authorization, create a link like this:
 
-__*\{\{agrirouter-url}}/application/\{\{applicationID}}/authorize?\{\{response_type}}&\{\{state}}&\{\{redirectURL}}*__
+**__\{\{agrirouter-url}}/application/\{\{applicationID}}/authorize?\{\{response_type}}&\{\{state}}&\{\{redirectURL}}__**
 
 [cols="2,3,3",options="header",]
 |=====================================================================================
@@ -147,21 +152,21 @@ Calling this link will deliver a website to log in to agrirouter, therefore, thi
 The response type onboard can be used to onboard farming applications without having to create a Registration Code in the agrirouter UI.
 ====
 
-=== Perform authentication
+=== Perform authorization
 
 When the user clicks on the link, the agrirouter website is called. If the user is currently not logged in, he has to log in. After logging in, he is delivered a website to authorize the connection between agrirouter and the application provider:
 
 ++++
 <p align="center">
  <img src="./../../assets/images/ig2/image14.png" width="252px" height="202px"><br>
- <i>Application authentication screen</i>
+ <i>Application authorization screen</i>
 </p>
 ++++
 
 
 === Analyse result
 
-agrirouter sends an HTTP 301 redirect to the browser, encoding the authentication result in a GET queue attached to the Redirect URL entered in the developers’ application settings.
+agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization result in a GET queue attached to the Redirect URL entered in the developers’ application settings.
 
 The browser reacts in requesting this redirect URL which performs a GET request at the endpoint of the address.
 
@@ -179,7 +184,7 @@ The following parameters will be delivered in the GET-Queue:
 ++++
 <p align="center">
  <img src="./../../assets/images/ig2/image15.png" width="542px" height="265px"><br>
-<i>Example of an authentication result</i>
+<i>Example of an authorization result</i>
 </p>
 ++++
 
@@ -236,13 +241,17 @@ The result token is a base64 encoded JSON object including the following paramet
     }
 ====
 
-== Authentication for CUs and non-cloud-software
+== Authorization for CUs and non-cloud-software
 
-To perform authentication for software, that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
+To perform authorization for software, that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image16.png" width="640px" height="155px"><br>
-<i>Authentication for non-cloud-applications</i>
+ <img src="./../../assets/images/ig1\image27.png" width="640px" height="155px"><br>
+<i>Authorization for non-cloud-applications</i>
 </p>
 ++++
+
+
+
+

@@ -17,11 +17,11 @@ The certification will not check, if an application “understands” the data s
 
 == Certification institutes
 
-DKE and the agrirouter support team will release a list of certified partners, that are able and allowed to do the certification process. Please refer to https://my-agrirouter.com/support/ download area.
+DKE and the agrirouter support team will release a list of certified partners, that are able and allowed to do the certification process. Please refer to https://my-agrirouter.com/support/downloads/.
 
 == Tests
 
-=== For Farming Software and Telemetry platforms
+=== For farming software and telemetry platforms
 
 The test for farming software and telemetry platforms will check the following workflows:
 
