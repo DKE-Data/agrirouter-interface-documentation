@@ -26,3 +26,13 @@ DKE will provide a list of trusted partners for agrirouter certification on the 
 If the agrirouter certification of the application is successful, it is recommended to do live test on the agrirouter production environment with real accounts of selected farmers. The developer can add those accounts to his test environment in the developers’ user interface.
 
 To release the new application to public, the app provider can create an application description in the agrirouter marketplace. See https://my-agrirouter.com/marketplace/apps/
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+

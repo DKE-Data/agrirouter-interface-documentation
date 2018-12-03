@@ -113,3 +113,14 @@ The endpoint certificate is used to encrypt the communication with the agriroute
 
     }
 ----
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+

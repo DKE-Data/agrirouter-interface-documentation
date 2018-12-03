@@ -180,7 +180,7 @@ Envelope and content are packaged into one container by using the technique of â
 
 [NOTE]
 ====
-Note that this concept is not supported in all protobuf libraries (in Java and node.js it is, in C++ it is not)
+Note that this concept is not supported in all protobuf libraries (in Java and node.js it is, in C++ it is not in every version)
 ====
 
 If building streaming is required for the language and libraries, you use, Note, that Delemited messages are attached to each other like this: Length1,Content1,Length2,Content2,â€¦. The variable size of Length is the length of a varint; see https://developers.google.com/protocol-buffers/docs/encoding#varints.

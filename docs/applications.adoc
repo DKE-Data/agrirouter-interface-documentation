@@ -207,3 +207,15 @@ For all certification requests in status _submitted_, agrirouter administrators 
 In status _Approved for Testing_, application developers can register farmers’ accounts as test accounts. If a certification version is in status _Approved for Testing_, instances with this certification version can be registered in these test accounts and an external test can be started. The developers account automatically is an end user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
 
 Using other accounts is not possible, because the certification version is not yet approved by DKE for public use. When the certification request is in status _Approved for Testing_, the agrirouter administrator can either finally set the status of the request to _Approved_ in case of successful testing or _rejected_ if testing was not successful.
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+

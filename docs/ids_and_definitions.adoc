@@ -303,3 +303,14 @@ The TeamsetContextId is sent in the envelope of every message. This information 
 
 An end user cannot see this value.
 
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+

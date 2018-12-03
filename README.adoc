@@ -47,3 +47,15 @@ The system message codes can be found link:./docs/ErrorCodes.adoc[here]
 Here are some external resources for the development:
 
  *  https://www.my-agrirouter.com[my-agrirouter.com Website]
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:./index.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/shortings[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|====
+

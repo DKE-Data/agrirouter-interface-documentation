@@ -237,3 +237,14 @@ If the command is a feed command requesting messages from the feed, the app inst
 == Terms
 
 A command-process consists of a call (1.1) to the inbox. This call consists of the request and a processing status response. Agrirouter will return a result through the outbox. When the app instance receives this result successfully, it has to call for confirmation at the inbox to clear the outbox. If a message list was delivered, this will also delete the received messages from the feed.
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+

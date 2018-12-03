@@ -335,3 +335,14 @@ MessageConfirm is simply an array of message IDs.
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
 
 .
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====

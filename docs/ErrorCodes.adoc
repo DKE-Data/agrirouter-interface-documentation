@@ -63,3 +63,24 @@ With the messages we will have place holders for values which would be injected 
 | VAL_000304   | Maximum number of failures reached               | Ingest: Trying to reonboard endpoint                 | Error   | Error occured while trying to onboard a virtual CU with an external ID, that is already used                                 | ACK_WITH_FAILURE
 | VAL_000000   | Application Processing Error               | Ingest: Application Processing Error                 | Error   | Application Processing Error                                 | ACK_WITH_FAILURE
 |===
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|====
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+
+
