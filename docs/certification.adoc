@@ -50,6 +50,6 @@ The test for communication units will check the following workflows:
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====
 
