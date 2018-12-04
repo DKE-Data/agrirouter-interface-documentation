@@ -19,8 +19,7 @@ This format is used to exchange a TaskData.zip Files. It can forward the binary 
 
 == Format
 
-The zip file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
-//TODO clarify that it must be send in the PayloadWrapper Object
+The zip file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string inside the payload wrapper object. The type field can be let empty.
 
 
 

@@ -35,7 +35,7 @@ The onboarding Request includes an Array of EndpointRegistrationDetails
 |2 |Name |String |The name, that shall be displayed in the agrirouter UI
 |=======================================================================
 
-//TODO Link For the ID, please respect the Naming convention in 4.2String Identifiers convention
+For the ID, please respect the Naming convention in link:../integration/general-conventions.adoc[String Identifiers convention]
 
 === Result
 
@@ -83,7 +83,6 @@ If any of the onboarding Requests failed, failures includes a list of failed req
 |2 |message |Message |The error message
 |============================================================================
 
-/TODO Link For the message format, refer to 15.8.1 Messages
 
 == Removing a Virtual Cu
 

@@ -109,12 +109,11 @@ Version Number of the certification: (Integer (!) version Id) this is a version 
 
 |8 |Technical message types: |Technical message types the endpoint can send and receive.
 |===============================================================================================================================================================================================
-//TODO Update Link
 [NOTE]
 ====
 * The applicationCertificationVersion is not the software Version (like 1.3.12), but just an internal identifier for the DKE certification.
 
-* An Application can also be the software part of a CU. see Glossary.
+* An Application can also be the software part of a CU. see link:./glossary.adoc[Glossary].
 ====
 
 

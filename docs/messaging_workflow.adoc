@@ -146,8 +146,7 @@ The TAN for a new CU can be created by the end user clicking “Generate TAN”(
 
 ==== For applications
 
-Applications can either receive a TAN like CUs or as part of the authorization process.
-//TODO: , see 10.3 Authorization process for endpoints
+Applications receive a TAN using the link:authorization.adoc[authorization process].
 
 ==== For virtual endpoints of telemetry platforms
 
@@ -164,8 +163,7 @@ As a result, the agrirouter will return a JSON object including the endpoint IDs
 There is no MQTT onboarding mechanism, so onboarding always has to be done using REST.
 ====
 
-An example for an onboarding request can be found in the postman collection, which is part of Integration Guide Part 2.
-//TODO: Upload also postman collection
+An example for an onboarding request can be found in the postman collection, which can be found link:https://github.com/DKE-Data/agrirouter-postman-tools[on GitHub].
 
 == Reonboarding
 
@@ -178,15 +176,19 @@ Whenever an app instance receives an update of its software, it possibly needs t
 agrirouter is a platform, that is mostly used to transport messages *through* it and not towards it.
 
 
-//TODO Format this
+++++
 Therefore, the content is encapsulated
+ <ul>
+ in messages, which are encapsulated into
+<ul>
+the commands to the agrirouter, which are encapsulated into
+<ul>
+the protocol layer of REST or MQTT.
+</ul>
+</ul>
+</ul>
 
-in messages, which are encapsulated into::
-
-=>the commands to the agrirouter, which are encapsulated into::
-
-=>the protocol layer of REST or MQTT.
-
+++++
 With except to the EFDI telemetry messages (DeviceDescription and timelogs), agrirouter doesn’t analyse the messages inside the agrirouter command. It just checks the message type and the addressing to determine the recipients based on the routings and subscriptions.
 
 ++++
@@ -232,8 +234,7 @@ An endpoint can send messages to other endpoints via the agrirouter. Therefore, 
 
 
 
-//TODO This has to be more precise, can be 200 to 299
-The message is answered by the agrirouter with a HTTP status, that might be 200 (OK). In that case, the endpoint can poll for a confirmation at the outbox before sending the next message.
+The message is answered by the agrirouter with a HTTP status between 200 and 299. In that case, the app instance should poll for a confirmation at the outbox before sending the next message.
 
 agrirouter commands like the request for messages are Protobuf-Encoded.
 
@@ -308,10 +309,9 @@ A certified telemetry platform (having received a certificate by DKE) can onboar
 
 Regarding messaging, there is no difference between a real-world CU and a virtual CU onboarded by a certified telemetry platform. The connecting telemetry platform has to implement the same communication pattern as it applies to all other endpoints categories.
 
-//TODO: Rework this part
 [IMPORTANT] 
 ====
-There will be a trusted Relationship between the agrirouter and certified telemetry platform. The communication between the telemetry platform and the agrirouter can be realized using HTTP(S) based REST communication or MQTT messaging over a designated messaging component accepting both protocols. As mentioned before the payload has to be Google Protocol Buffer encoded, the communication pattern will be asynchronous most of the time.
+There will be a trusted Relationship between the agrirouter and certified telemetry platform. The communication between the telemetry platform and the agrirouter will be realized using MQTT messaging over a designated messaging component. As mentioned before the payload has to be Google Protocol Buffer encoded, the communication pattern will be asynchronous most of the time.
 ====
 
 === Levels of the Cloud Solution

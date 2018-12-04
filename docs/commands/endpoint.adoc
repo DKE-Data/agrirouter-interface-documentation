@@ -59,7 +59,7 @@ Direction can be one of those values:
 |=================
 
 Those are the values of an Enumeration, see protobuf files.
-//TODO: Link to file
+See link:https://github.com/DKE-Data/agrirouter-api-protobuf-definitions/blob/develop/src/main/resources/com/dke/data/agrirouter/proto/messaging/request/payload/endpoint/capabilities.proto[Capabilities.proto]
 
 ==== Result
 
@@ -71,21 +71,28 @@ Those are the values of an Enumeration, see protobuf files.
 |=================================================================================
 
 The result is a simple __ACK__ or an __ACK_WITH_MESSAGES__
-//TODO: Further description of the result
+ 
+If the same capabilities message is sent twice, an ACK_WITH_MESSAGES will be returned with a message indicating, that the capabilities did not change.
 
 ==== Errors & Warnings
 
-If the message was malformed, an ACK_WITH_FAILURE will be returned. If the same capabilities message is sent twice, an ACK_WITH_MESSAGES will be returned with a message indicating, that the capabilities did not change.
+If the message was malformed, an ACK_WITH_FAILURE will be returned.
 
 ==== Example
+----
+    {
+        "capabilities":[
+            {"technicalMessageType":"iso:11783:-10:device_description:protobuf",
+            "direction":0},
 
-//TODO: Make this real Source Code
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image44.png" width="608px" height="396px">
-</p>
-++++
+            {"technicalMessageType":"iso:11783:-10:time_log:protobuf",
+            "direction":2},
+        ],
+        "appCertificationId": "aef23ef23-442d-fada-dbde-44e5bcead","appCertificationVersionId": "233eefaf2-4488-44da-d5d2-55e5dcbad"
 
+
+    }
+----
 
 == Subscribtion Command
 
@@ -114,7 +121,7 @@ To avoid mismatches between publishing applications and applications only receiv
 
 
 The list of technical message types can include any TechnicalMessageFormat mentioned 
-//TODO Link to Technical Message types list.
+link:../tmt/overview.adoc[ in the list of technical message types].
 
 === Command
 
@@ -160,8 +167,8 @@ In case of failure, an Acknowledgement with Message or an Acknowledgement with F
 
 === Errors
 
-Errors will be reported using ACK_WITH_FAILURE. For a list of possible errors, see the error list.
-//TODO Link to ErrorList
+Errors will be reported using ACK_WITH_FAILURE. For a list of possible errors, see the link:../ErrorCodes.adoc[error list].
+
 
 === Example
 
@@ -183,7 +190,7 @@ The teamset describes a list of devices attached to the communication unit. The 
 For the certification process it is required to send the device description message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
 ====
 
-//TODO Link For the format, please refer to 17.2 iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description
+For the format, please refer to  link:../tmt/efdi.adoc[iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description]
 
 
 

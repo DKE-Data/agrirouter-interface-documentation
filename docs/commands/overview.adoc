@@ -7,7 +7,6 @@
 This chapter shall give you an overview of all the commands, that are relevant to control the agrirouter communication
 
 Following a list of all commands; specific definitions follow in the next subchapters.
-//TODO Link Commands
 
 [cols="1,2,9",options="header",]
 |=========================================================================================================================================================================================================

@@ -3,6 +3,8 @@
 
 To maximize the quality of the agrirouter ecosystem, there are several requirements additional to the general development of the application itself. This chapter shall describe all necessary steps additional to the development of the application to integrate this app with the agrirouter.
 
+Please also check the link:./integration-steps.adoc[advice on integration with agrirouter].
+
 == Overview of the process
 
 ++++

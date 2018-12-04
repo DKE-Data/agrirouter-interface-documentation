@@ -275,7 +275,7 @@ The JSON setup looks like this:
 
 === Protobuf setup
 
-The protobuf message can be found here: link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/e97b63e35f9a4bdbab72075e7bd37ccf.html
+The protobuf message can be found link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/e97b63e35f9a4bdbab72075e7bd37ccf.html[here].
 
 It looks as follows:
 [source,javascript]
@@ -315,3 +315,12 @@ repeated google.protobuf.Any values = 1;
 ====
 Note, that there is a repeated Element (=Array) in a repeated element (also Array). This inner array shall always consist of 2 Elements; First is the message, second is the timestamp.
 ====
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====
