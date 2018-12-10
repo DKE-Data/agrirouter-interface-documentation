@@ -71,3 +71,15 @@ Further information: https://help.sap.com/viewer/e765b2a5b99540ce84da397c20cc199
 </p>
 ++++
 
+
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====

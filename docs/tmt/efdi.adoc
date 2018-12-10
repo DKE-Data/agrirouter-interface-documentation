@@ -98,3 +98,15 @@ The current List of Categories includes the following Categories:
 |9 |*Basic Data* |Fundamental values that are relevant for the whole system
 |10 |*Proprietary Data* |Manufacturer specific data (not part of the standard)
 |=================================================================================================================================
+
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====

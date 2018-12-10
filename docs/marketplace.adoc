@@ -196,3 +196,12 @@ Select box:
 |28 |Product Photos / Screenshots |1 < n < 6 |Max. 1400 width pixel Resolution in .jpg or .png
 |29 |Hardware-Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
 |===============================================================================================================
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+

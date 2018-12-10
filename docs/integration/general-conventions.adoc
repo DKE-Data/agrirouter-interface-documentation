@@ -40,3 +40,14 @@ Even though, this is not relevant for a proper communication with the agrirouter
 
 * If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data, if you have different times
 ====
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====

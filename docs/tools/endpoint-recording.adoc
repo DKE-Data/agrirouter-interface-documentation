@@ -6,6 +6,14 @@
 
 == Endpoint Recording
 
+
+[NOTE]
+====
+The endpoint recording is only available for developer accounts and end user  accounts, that are activated as test user accounts.
+====
+
+
+
 Every agrirouter account includes a functionality to record communication on that account and specific for every endpoint. To record data, the user can start and stop the recorder in the agrirouter UI.
 
 ++++
@@ -61,3 +69,14 @@ In a developer account, records can be uploaded additionally to the recording fu
 
 
 As a developer, you are able to replay recorded commands.
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====

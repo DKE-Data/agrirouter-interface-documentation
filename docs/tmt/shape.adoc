@@ -26,3 +26,15 @@ The zip file must at least include the following files:
 * SHP: The main file including the geometry
 * SHX: The index file indexing the geometry features
 * DBF: The dBASE Table, including the attribute information of the features
+
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====

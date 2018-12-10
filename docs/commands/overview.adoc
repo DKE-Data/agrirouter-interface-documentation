@@ -30,3 +30,14 @@ Following a list of all commands; specific definitions follow in the next subcha
 ====
 Those are the commands, that have the agrirouter as destination. Messages have other endpoints as destination. They are sent to the agrirouter like commands, but the agrirouter recognizes, that he only has to route and perhaps filter them.
 ====
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====

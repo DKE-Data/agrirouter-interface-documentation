@@ -84,3 +84,16 @@ Depending on the  link:./docs/integration/analyzeResult.adoc#ResponseType[result
 === Usage metrix
 
 As an application provider, you can download link:./docs/usage_metrix.adoc[usage metrics] to check, which account consumed how much data.
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:./index.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|====
+
+

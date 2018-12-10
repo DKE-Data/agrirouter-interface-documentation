@@ -16,8 +16,6 @@ Every endpoint has to report his capabilities of sending and receiving messages 
 [NOTE]
 ====
 * agrirouter specific commands are not part of the Capabilities, each application just has to support all of them.
-
-* For the certification process it is required to send the capabilities message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
 ====
 
 The list of technical message types can include any TechnicalMessageFormat mentioned in 17 Technical Message types.
@@ -114,11 +112,6 @@ The subscription command is used to subscribe for a list of technical message ty
 To avoid mismatches between publishing applications and applications only receiving addressed messages, it is adviced to subscribe for any technical message type and DDI, your application shall handle, if there are no specific reasons not to do so.
 ====
 
-//TODO: Remove the following Note? At least add link to certification
-[NOTE]
-====
-For the certification process it is required to send the subscribtions message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
-====
 
 The list of technical message types can include any TechnicalMessageFormat mentioned 
 //TODO Link to Technical Message types list.
@@ -191,3 +184,15 @@ For the certification process it is required to send the device description mess
 ====
 
 //TODO Link For the format, please refer to 17.2 iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description
+
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====

@@ -62,3 +62,14 @@ Additionally, developers can manage their own applications:
 == Administrator
 
 The administrator account is only accessible by DKE. DKE can manage application, technical message types and information types and certification.
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../index.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+
