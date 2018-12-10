@@ -2,6 +2,8 @@
 
 agrirouter currently supports 2 environments of the whole agrirouter connectivity platform.
 
+The required URLs can be found in link:./messageSending.adoc[message sending] and link:./authorization.adoc[authorization].
+
 == Quality assurance
 
 The quality assurance environment (“QA”) is used to develop and test applications in a save and uncritical eco system. Please note, that the quality assurance environment shall not be used by end customers.

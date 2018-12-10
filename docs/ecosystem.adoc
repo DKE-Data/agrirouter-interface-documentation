@@ -21,7 +21,7 @@ The agrirouter is a central data exchange platform, but to understand its full p
 //TODO: Is there a better place for this?
 === Overview of the architecture
 
-This chapter gives a high-level overview about the agrirouter Connectivity-Platform architecture, an application can interact with.
+This chapter gives a high-level overview about the agrirouter Connectivity-Platform architecture, an application can interact with. 
 
 ++++
 <p align="center">
@@ -29,7 +29,6 @@ This chapter gives a high-level overview about the agrirouter Connectivity-Platf
  <i>agrirouter Connectivity-Platform IT architecture</i>
 </p>
 ++++
-//TODO: There is an arrow and a box "teamset" needed to aim to AppInstance!
 
  
 == Machines

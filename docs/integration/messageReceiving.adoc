@@ -17,9 +17,8 @@ Results for commands and messages from calls for messages are returned to the ou
 
 == MQTT
 
-The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The outbox is the topic delivered with the “commands” attribute of the onboarding request. The app instance has to subscribe for this topic.
+The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The outbox is the topic delivered with the “commands” attribute of the onboarding request. The app instance has to subscribe for this topic. The adresse can be found in link:./messageSending.adoc[Message Sending].
 
-//TODO The addresses can be found in chapter 14.2Using MQTT.
 
 == REST
 

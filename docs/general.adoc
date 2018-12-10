@@ -19,7 +19,7 @@ The agrirouter is a cloud solution, that allows farmers and contractors to trans
 Users can configure data transfer permissions centrally on the agrirouter Connectivity-Platform, to control what data can be exchanged between which endpoints. Every end user has his own account, where he can organize the data exchange between all of his endpoints. Data can be published on the agrirouter Connectivity-Platform and routed to interested and allowed endpoints. Other users accounts can be connected as endpoints to a users agrirouter account.
 
 The agrirouter Connectivity-Platform provides a common cross-vendor data exchange mechanism and protocol to exchange several common message formats, which can be implemented by different machine manufacturers and application providers. Examples for the common message formats are ISOXML, images and videos.
-//TODO: Add link to TMTs
+A full list of Message Types can be found link:./tmt/overview.adoc[here].
 
 The transmission and evaluation of live telemetry data is getting more and more important. 
 With the agrirouter Connectivity-Platform, machines can send telemetry data to the agrirouter, where data is automatically distributed to several applications, based on permissions and configuration. 

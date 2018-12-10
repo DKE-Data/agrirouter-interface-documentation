@@ -4,8 +4,7 @@
 :toc-title:
 :toclevels: 4
 
-These commands are used to control the delivery of messages from the feed to the app instance through the outbox.
-//TODO: Link to Outbox- and Feed-Concept
+These commands are used to control the delivery of messages from the feed to the app instance through the outbox. See also link:../endpoint.adoc[architecture of an Endpoint]
 
 == Paging
 
@@ -65,7 +64,29 @@ To receive the Message ids of all available messages or a specific filtered list
 |TypeURL |types.agrirouter/agrirouter.feed.request.MessageQuery
 |==============================================================
 
-//TODO Link See 16.2.2 Message Query and Filtering.
+==== Parameters[[Parameters_For_header_List]]
+The command can include one or more filter criteria. If one filter is not provided, this means, that this filter is ignored.
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |message_id |string |The message ID to request, delete or confirm the message
+|2 |technical_message_type |string |The technical message type of the message
+|3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
+|4 |chunk_contextID |string |The chunk context corresponding to the chunk list
+|5 |payload_size |int64 |The size of the payload
+|6 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the recording time point
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|=====================================================================================================================================
+
+[NOTE]
+====
+The result is sorted ascellading by the senderID.
+====
+
+Within the sender-reciever package, the messages are sorted primary by the timestamp and secondary by the sequence number.
+
+The header is a list of Sender+Receiver-Touples with a sublist of message headers. This sublist is sorted by the timestamp and – if multiple messages with the same timestamp exist – the Message Sequence Number.
 
 === Result
 
@@ -121,29 +142,8 @@ The feed includes an array of message headers
 
 [NOTE]
 ====
-As a telemetry platform can receive messages for multipla Virtual CUs, the receiver field is used to determine the correct virtual CU.
+As a telemetry platform can receive messages for multiple Virtual CUs, the receiver field is used to determine the correct virtual CU.
 ====
-
-[cols="1,3,2,4",options="header",]
-|=====================================================================================================================================
-|# |Name |Type |Description
-|1 |message_id |string |The message ID to request, delete or confirm the message
-|2 |technical_message_type |string |The technical message type of the message
-|3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
-|4 |chunk_contextID |string |The chunk context corresponding to the chunk list
-|5 |payload_size |int64 |The size of the payload
-|6 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the recording time point
-|7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
-|=====================================================================================================================================
-
-[NOTE]
-====
-The result is sorted ascellading by the senderID.
-====
-
-Within the sender-reciever package, the messages are sorted primary by the timestamp and secondary by the sequence number.
-
-The header is a list of Sender+Receiver-Touples with a sublist of message headers. This sublist is sorted by the timestamp and – if multiple messages with the same timestamp exist – the Message Sequence Number.
 
 === Errors
 
@@ -164,7 +164,7 @@ Every app Instance can request a single or a list of messages to be forwarded fr
 |typeURL |types.agrirouter/agrirouter.feed.request.MessageQuery
 |==============================================================
 
-See 16.2.2Message Query and Filtering.
+See <<Parameters_For_header_List>> for parameters and Filtering.
 
 === Result
 
@@ -277,7 +277,7 @@ An app instance can delete message from its feed, if it does not want to consume
 |typeURL |types.agrirouter/agrirouter.feed.request.MessageQuery
 |==============================================================
 
-//TODO Link See 16.2.2Message Query and Filtering.
+See <<Parameters_For_header_List>> for parameters and Filtering.
 
 === Result
 
@@ -290,11 +290,9 @@ An app instance can delete message from its feed, if it does not want to consume
 
 === Errors
 
-If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
+If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see link:../ErrorCodes.adoc[the error list].
 
-//TOD: Check, what`s missing here!.
 
-//TODO That's not absolutely clean
 = Controlling the outbox 
 
 To make sure, that no message gets lost due to e.g. a loss of internet connection while delivering a message, the app instance has to confirm the receival of every message.

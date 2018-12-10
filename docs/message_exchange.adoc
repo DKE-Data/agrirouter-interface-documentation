@@ -58,7 +58,7 @@ Messages can be directly addressed to one or more endpoints. They can also be pu
 As a machine has its own endpoint in the agrirouter account, it is possible to address messages to a machine.
 
 To deliver messages, that are addressed to a machine, agrirouter needs to know, which application instance (CU or Virtual CU) currently is connected to that machine. Therefore, delivery of messages to a machine can only work, if the connected CU or Virtual CU properly reports its teamset including the EFDI Device Description. 
-//TODO: Add Link to description of Teamset here
+The command to define a teamset can be found link:../tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[here].
 
 Currently, this is an optional feature of Virtual CU or CUs and not required for a certification.
 
@@ -112,7 +112,7 @@ The header includes information on how to handle the message. When sending a mes
 When receiving a message, it includes the source, creation date, technical message type and a unique ID
 
 
-//TODO Add Links for message header creation
+The header creation is described link:./integration/buildmessage.adoc#building-the-envelope[here]
 
 === Payload
 
@@ -139,8 +139,7 @@ The definition of a new technical message type is possible.
 
 == Capabilities
 
-Each endpoint has to describe, which technical message types it can send and/or receive. The listing of those technical message types is called capabilities. Each endpoint has to provide its capabilities when starting to communicate with the agrirouter. The capabilities, an endpoint generally supports (e.g. with all optional features enabled) is required for the Certification process.
-//TODO see 6.5 Application certification.
+Each endpoint has to describe, which technical message types it can send and/or receive. The listing of those technical message types is called capabilities. Each endpoint has to provide its capabilities when starting to communicate with the agrirouter. The capabilities, an endpoint generally supports (e.g. with all optional features enabled) is required for the link:./certification.adoc[Certification process].
 
 [NOTE]
 ====
@@ -238,13 +237,12 @@ A routing consists of:
 
 
 
-//TODO: MultiLine Formating
 *Image Description:*
 
 ====
 
 1. EP 1 sends 2 messages, each addressed to EP2 and EP3. 
-2. While both messages of TMT1 receive the destination, because there is a routing given in agrirouter, Only the TMT2 message for EP2 arrives at its destination, because there is no routing given between EP1 and EP3 for TMT2.
+2. While both messages of TMT1 reach the destination, because there is a routing given in agrirouter, Only the TMT2 message for EP2 arrives at its destination, because there is no routing given between EP1 and EP3 for TMT2.
 
 ====
 

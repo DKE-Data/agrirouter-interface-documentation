@@ -228,18 +228,14 @@ The result token is a base64 encoded JSON object including the following paramet
 |expires |DataTime |The date and time (in UTC), when the regcode becomes invalid
 |=======================================================================================================================================================
 
-//TODO: Example Template
-[source,JavaScript]
-====
-    {
+**EXAMPLE**
 
+    {
     "account": "31c83d5d-c307-42f9-80b1-6fc9324823b8", +
     "regcode": "f75bfbd41b",
-
     "expires": "2018-02-27T10:49:04.901Z"
-
     }
-====
+
 
 == Authorization for CUs and non-cloud-software
 

@@ -4,11 +4,9 @@
 :toc-title:
 :toclevels: 4
 
-//TODO: Im Prozess besser darstellen, dass Capabilities als erstes gesendet werden müssen
 
-//TODO: Nachrichtenliste [{}] statt [[]]
 
-//TODO: Encoding in Protobuf: "Das TechnicalMessageType-Protobuf muss nochmal in den RequestPayloadWrapper rein"
+
 == Major development technologies
 
 To perform an agrirouter integration, you will need knowledge to the following technologies:
@@ -20,7 +18,7 @@ To perform an agrirouter integration, you will need knowledge to the following t
 * *Optional*
 ** *secured MQTT* for the communication (see https://mqtt.org)
 ** *ISO11783* and *EFDI* for telemetry data
-//TODO: Link EFDI
+(see https://aef-online.org)
 
 
 

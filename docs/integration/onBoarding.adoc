@@ -54,8 +54,7 @@ The following parts of onboarding are *not* required for CU onboarding:
 
 == Workflow for Virtual CUs
 
-Onboarding virtual CUs through a telemetry platform is done using a command. This will in particular be described later.
-//TODO See 16.5 Commands for telemetry platforms
+Onboarding virtual CUs through a telemetry platform is done using a command. This is described in link:../tmt/cloud.adoc[Cloud solution commands].
 
 From the end user’s perspective, it is mostly dependend on the telemetry platform, if there is any selection mechanism or if it is done automatically.
 
@@ -88,8 +87,8 @@ If the link:./authorization.adoc[authorization prozess] is done using parameter 
 
 === Telemetry Platforms
 
-A telemetry platform has to be onboarded using the authorization process. Once it is onboarded, it can onboard virtual CUs by itself. Therefore, it can use a special command. Commands are described in a later chapter.
-//TODO:  please refer to 16.5.1 Onboarding a Virtual CU.
+A telemetry platform has to be onboarded using the authorization process. Once it is onboarded, it can onboard virtual CUs by itself. Therefore, it can use a special command. This is described in link:../tmt/cloud.adoc[Cloud solution commands].
+
 
 == Collecting and setting up relevant information
 
@@ -238,7 +237,7 @@ Possible values: PEM,P12
 |7 |timeZone |String |A TimeZone like this: “+03:00”
 |================================================================================================================
 
-//TODO: Create CODE Template
+**EXAMPLE**
 [source,javascript]
 ----
 {
@@ -294,7 +293,7 @@ It includes the accountId, so that an app provider can check, if this accountId 
 ===== Failure
 
 In case of Failure, an error message is provided.
-//TODO: Add possible error messages
+Possible ErrorMessages can be found link:../ErrorCodes.adoc[here].
 
 == Sending Onboarding Request
 

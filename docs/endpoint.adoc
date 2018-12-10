@@ -20,8 +20,7 @@ On the other side, it is part of the agrirouter and forwards messages to routing
 
 [NOTE]
 ====
-The terms “subscription” and “subscribing” are well known by MQTT addicted developers. In this document however, subscribtions describe a technique of the agrirouter endpoint. It works like an MQTT subscription, it’s however important to notice, that MQTT is mostly not the context of these words in the document except for the relevant chapter for MQTT communication.
-//TODO 8.6.2!
+The terms “subscription” and “subscribing” are well known by MQTT addicted developers. In this document however, subscribtions describe a technique of the agrirouter endpoint. It works like an MQTT subscription, it’s however important to notice, that MQTT is mostly not the context of these words in the document except for the relevant chapter for link:./communication.adoc#mqtt[MQTT communication].
 ====
 
 == Inbox

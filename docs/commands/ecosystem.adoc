@@ -85,6 +85,7 @@ The status can be one of the following values:
 
 [cols="",options="header",]
 |========
+|Status
 |active
 |inactive
 |========
@@ -134,7 +135,7 @@ This request is used for request a list of endpoints, that support a technical m
 |typeURL |types.agrirouter/agrirouter.request.payload.account.ListEndpointsQuery
 |===============================================================================
 
-//TODO Link For further information, see 16.4.1.2Command
+For further information, see  link:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints, that support a technical message type]
 
 === Result
 
@@ -145,7 +146,7 @@ This request is used for request a list of endpoints, that support a technical m
 |typeURL |types.agrirouter/agrirouter.response.payload.account.ListEndpointsResponse
 |===================================================================================
 
-//TODO Link For further information, see 16.4.1.3
+For further information, see link:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints, that support a technical message type]
 
 
 === Errors
