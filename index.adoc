@@ -3,7 +3,6 @@
 :toc:
 :toc-title:
 :toclevels: 4
-=======
 
 [abstract]
 == Abstract
@@ -81,18 +80,7 @@ Every AppInstance can send link:./docs/tmt/overview.adoc[messages] and link:./do
 
 Depending on the  link:./docs/integration/analyzeResult.adoc#ResponseType[resultType], the Result can be link:./docs/integration/analyzeResult.adoc[analyzed].
 
-=======
-For further communication, it's important to understand the link:/docs/endpoint.adoc[Elements of an endpoint] and the link:/docs/communication.adoc[Basics of Communication].
-=======
-== Terms and short descriptions
-
-A short description naming all the agrirouter specific terms and their connection to each other can be found link:/terms.adoc[here]
 
 === Usage metrix
 
 As an application provider, you can download link:./docs/usage_metrix.adoc[usage metrics] to check, which account consumed how much data.
-=======
-When link:/docs/integration/messageSending.adoc[sending messages], the result will be link:docs/integration/messageReceiving.adoc[received through the outbox] and can be link:./docs/integration/analyzeResult.adoc[analyzed] depending on the link:/docs/tmt/overview.adoc[technical message type] and the link:./docs/resultCodes.adoc[resultCodes].
-=======
-
-== Development tools
