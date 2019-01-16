@@ -79,6 +79,14 @@ or
 
 Content-Type: “application/x-protobuf”
 
+[NOTE]
+====
+Unimportant, which Content-Type you use, make sure, that your implementation includes "application/json" in the "accept"-Parameter of the HTTP Call. 
+
+The Inbox of agrirouter is not able to return protobuf and will return a status of 4xx, if it can't find json in the accepted responses.
+====
+
+
 === Body
 
 The body consists of the message package, that was created in the previous paragraphs.

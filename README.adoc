@@ -27,6 +27,11 @@ The purpose of this documentation is to create deep knowledge about the third pa
 
 This documentation is an open source project. We invite everybody to open issues, fork the documentation or create pull requests to fix or extend this documentation.
 
+
+= Documentation 
+
+To integrate your application with the agrirouter, it's important to understand the link:./docs/concepts.adoc[general concepts].
+
 == Terms and short descriptions
 
 A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
