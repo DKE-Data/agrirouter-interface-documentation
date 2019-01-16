@@ -152,6 +152,14 @@ What you will find:
 
 ====
 
+[NOTE]
+====
+**TroubleShooting**
+
+If you experience problems with the message exchange and have parts of the message, that are 3 bytes longer than they should be, this is a typical hint for having packed data in an additional Any-Container.
+
+====
+
 === ParameterList
 
 The result of a request to the outbox is an *array* of messages each including the following parameters:
