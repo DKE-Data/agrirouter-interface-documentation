@@ -37,7 +37,7 @@ Communication units can also be tablets or other devices and should meet the fol
 
 A telemetry platform is a cloud software solution, that provides access to multiple so called virtual CUs. Virtual CUs are comparable to real CUs, but in difference, they do not implement the agrirouter protocol. Virtual CUs implement a proprietary protocol to connect to the telemetry platform only.
 
-The telemetry platform is connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform differs from the onboarding process of a CU, as the user might not have to enter a TAN in the CU. In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
+The telemetry platform is connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform differs from the onboarding process of a CU, as the user might not have to enter a registration code in the CU. In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
 
 A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetry-units/. 
 
