@@ -236,6 +236,35 @@ repeated google.protobuf.Any values = 1;
 }
 ----
 
+Each measure includes 2 Any-Objects. 
+
+The first Any-Object is named
+   
+   message
+
+and includes a bytes object of the following structure
+
+    syntax = "proto3";
+
+    package gateway;
+
+    option java_package = "com.sap.iotservices.common.protobuf.gateway";
+    option java_outer_classname = "MeasureRequestMessageProtos";
+
+    message MeasureRequestMessage {
+
+        bytes message = 1;
+    }
+
+The second Any-Object is named
+
+  timestamp
+
+and includes a String representing the milliseconds until 01.01.1970:00:00:00.000.
+
+
+
+
 [NOTE]
 ====
 Please note, that this definition is part of the message definition below (when it comes to definition of the whole message).
@@ -311,12 +340,24 @@ repeated google.protobuf.Any values = 1;
 }
 ----
 
-[NOTE]
+[EXAMPLE]
 ====
-Note, that there is a repeated Element (=Array) in a repeated element (also Array). This inner array shall always consist of 2 Elements; First is the message, second is the timestamp.
+Here is an example for a message sent to request the unfiltered endpoint list. It's of course sent as binary, but to be able to put it into this documentation, it's encoded in Base64:
+
+    CiQ3OWRmZDkxOC03MDUxLTQ3MWEtOWI3My0zZjNjMjNkZWNhMzgSJDgyYThiYzIzLTdjYzItNDMx
+    YS1iNzdlLTBiNzRmOWE1M2NiNyCXlv7hBSqDAgrGAQoibWVzc2FnZS9nb29nbGUucHJvdG9idWYu
+    Qnl0ZXNWYWx1ZRKfAQqcAVMKJDE2NDlhNWQ4LTNkZWMtNDZlYi05ZDkxLWI0MWNlOWFhMjEyMhAB
+    Gh1ka2U6bGlzdF9lbmRwb2ludHNfdW5maWx0ZXJlZEIKCJeW/uEFEMCEPUcKRQo1YWdyaXJvdXRl
+    ci5yZXF1ZXN0LnBheWxvYWQuYWNjb3VudC5MaXN0RW5kcG9pbnRzUXVlcnkSDAoIaW1nOmpwZWcQ
+    Ago4CiV0aW1lc3RhbXAvZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEg8KDTE1NDc2NjgyNDcw
+    MDA=
+
+What you will find:
+
+* sensorAlternateID: 0525cc41-37c4-45b6-9c0d-8a12502c8faa
+* capabilityAlternateId: 79dfd918-7051-471a-9b73-3f3c23deca38
+* technicalMessageType: dke:list_endpoints_unfiltered
 ====
-
-
 
 ==== Link Section
 This page is found in every file and links to the major topics

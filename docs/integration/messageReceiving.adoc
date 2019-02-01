@@ -69,6 +69,26 @@ The result format depends on the setting of the Accept-Header in the GET Request
 ----
 
 === Protobuf Result
+
+The result of a protobuf call is delivered as a CommandResponseList, that includes a List of CommandResponses, which includes the sender ID (sensorAlternateId) and a List of Any-Elements value. This list only includes 1 CommandResponseMessage-Element (Index is 0).
+
+
+[source,javascript]
+----
+syntax = "proto3";
+
+package gateway;
+
+option java_package = "com.sap.iotservices.common.protobuf.gateway";
+option java_outer_classname = "CommandResponseMessageProtos";
+
+message CommandResponseMessage {
+
+    bytes message = 1;
+}
+----
+
+
 [source,javascript]
 ----
 syntax = "proto3";
@@ -117,6 +137,21 @@ message CommandResponseList {
 }
 ----
 
+[NOTE]
+====
+Here is an example for an unfiltered endpoint list. It’s of course sent as binary, but to be able to put it into this documentation, it’s encoded in Base64:
+
+    XgjIARAKGiQ2N2QxY2ZjMC02ZjA5LTRhZmYtYjlhZi05NTk4MzViMjZjNmYiJDI3YmEyYmZiLTk3YTAtNGFiZC1iYTQ4LTU2MzZiYjNlYWYyMioLCJyW/uEFEMC3oVfEBwrBBwpOdHlwZXMuYWdyaXJvdXRlci5jb20vYWdyaXJvdXRlci5yZXNwb25zZS5wYXlsb2FkLmFjY291bnQuTGlzdEVuZHBvaW50c1Jlc3BvbnNlEu4GCvUBCiQwNTI1Y2M0MS0zN2M0LTQ1YjYtOWMwZC04YTEyNTAyYzhmYWESKEFncmlyb3V0ZXIgQVBJIEltcGxlbWVudGF0aW9uIEV4YW1wbGUgQ1UaC2FwcGxpY2F0aW9uIgZhY3RpdmUqDAoIaW1nOmpwZWcQAioLCgdpbWc6cG5nEAIqHgoaaXNvOjExNzgzOi0xMDp0YXNrZGF0YTp6aXAQAioRCg1zaHA6c2hhcGU6emlwEAIqCwoHdmlkOmF2aRACKgsKB3ZpZDptcDQQAioLCgd2aWQ6d212EAIyGURLRTpEYXRhOkV4YW1wbGVDVTowMDAwMDQKfwokMWMyY2Y2ZjctZmEwOS00MDRhLWE5M2ItYmNiMmIyYWUzY2U1EihBZ3Jpcm91dGVyIEFQSSBJbXBsZW1lbnRhdGlvbiBFeGFtcGxlIENVGgthcHBsaWNhdGlvbiIGYWN0aXZlMhhES0VEYXRhOkV4YW1wbGVDVTowMDAwMDIK9wEKJDgyYThiYzIzLTdjYzItNDMxYS1iNzdlLTBiNzRmOWE1M2NiNxIoQWdyaXJvdXRlciBBUEkgSW1wbGVtZW50YXRpb24gVHV0b3JpYWxDVRoLYXBwbGljYXRpb24iBmFjdGl2ZSoMCghpbWc6anBlZxACKgsKB2ltZzpwbmcQAioeChppc286MTE3ODM6LTEwOnRhc2tkYXRhOnppcBACKhEKDXNocDpzaGFwZTp6aXAQAioLCgd2aWQ6YXZpEAIqCwoHdmlkOm1wNBACKgsKB3ZpZDp3bXYQAjIbMDAwMDAxLUV4YW1wbGVDVUZvclR1dG9yaWFsClgKJDgwYjlmOWQ1LWMwODMtNGE2Zi1hMDk0LTU5NTNmMjg3ZDRkYxIZVGVzdEFjY291bnRfT2ZfQ29udHJhY3RvchoNcGFpcmVkQWNjb3VudCIGYWN0aXZlClYKJGMyZDhmMmFmLTI0ODQtNGYzNy05ZTg1LTU1MzgxOTAzMTc3YhIOTWVzc2FnZSBSZXBsYXkaFm1lc3NhZ2VSZWNvcmRpbmdSZXBsYXkiBmFjdGl2ZQpHCiQ3ZDRhZGQ1Ny1mNWM1LTQ3YjctYTQ3ZC1mYzkxYjVkZjZjM2ISCFN0YW5kYXJkGg1lbmRwb2ludEdyb3VwIgZhY3RpdmU=
+
+What you will find:
+
+* 3 CU endpoints with different capabilities
+* 1 connected account
+* 1 Message/Replay Tool
+* 1 Group "Standard"
+
+====
+
 === ParameterList
 
 The result of a request to the outbox is an *array* of messages each including the following parameters:
@@ -126,10 +161,10 @@ The result of a request to the outbox is an *array* of messages each including t
 |Name |Type |Description
 |capabilityAlternateId |String |Equals value from onboarding
 |sensorAlternateId |String |Source of the message
-|command |String |The Base64 encoded message or a protobuf object, if agrirouter sent a protobuf object.
+|CommandResponseList |String |The Base64 encoded message or a protobuf object, if agrirouter sent a protobuf object.
 |=======================================================================================================
 
-As this Array can include multiple messages, all further steps need to be done in a loop.
+For a full documentation of this Message format, see the link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/c327148f820e4d3888fb4b73c7f0ef80.html?q=com.sap.iotservices.common.protobuf.gateway[SAP documentation].
 
 
 
