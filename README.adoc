@@ -30,8 +30,6 @@ This documentation is an open source project. We invite everybody to open issues
 
 = Documentation 
 
-To integrate your application with the agrirouter, it's important to understand the link:./docs/concepts.adoc[general concepts].
-
 == Terms and short descriptions
 
 A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
