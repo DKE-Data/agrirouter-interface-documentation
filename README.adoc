@@ -72,11 +72,13 @@ First, you should always keep in mind the link:./docs/integration/general-conven
 
 There are several environments for test and production in different areas of the world. They can be found in the link:./docs/integration/environments.adoc[Environments].
 
-FarmingSoftware and Telemetry Platforms have to perform an link:./docs/integration/authorization.adoc[Authorization Process] to clarify, that the account user is known. CUs may also perform it, but that is not required
+FarmingSoftware and Telemetry Platforms have to perform an link:./docs/integration/authorization.adoc[Authorization Process] to clarify, that the account user is known. CUs may also perform it, but that is not required.
 
 To communicate with the agrirouter, an application Instance needs to be link:./docs/integration/onBoarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be link:docs/integration/revoke.adoc[Revoked].
 
 For further communication, it's important to understand the link:./docs/endpoint.adoc[Elements of an endpoint] and the link:./docs/communication.adoc[Basics of Communication].
+
+When developing a telemetry platform, the link:./docs/telemetry-platform-concept.adoc[concepts of a telemetry platform] should be understood.
 
 To send a message, it has to be built first. Read link:./docs/integration/buildmessage.adoc[here] about building messages and commands.
 

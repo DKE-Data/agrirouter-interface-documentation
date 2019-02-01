@@ -93,11 +93,11 @@ The body consists of the message package, that was created in the previous parag
 
 == Receiving a Response
 
-HTTP Messages always get confirmed by the agrirouter. For the HTTP REST Gateway, the agrirouter will simply send a HTTP Status 200 OK. For MQTT, there will not be any response.
+HTTP Messages always get confirmed by the agrirouter. For the HTTP REST Gateway, the agrirouter will simply send a HTTP Status between 200 and 299. For MQTT, there will not be any response.
 
 == Header
 
-The Header has a HTTP Status 200
+The Header has a HTTP Status between 200 and 299.
 
 == Body
 
