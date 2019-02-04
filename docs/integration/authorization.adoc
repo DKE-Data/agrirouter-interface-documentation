@@ -105,8 +105,8 @@ For example the application could send a redirect (HTTP Status 300) to directly 
 [cols="1,2,4",options="header",]
 |===========================================================================
 |Area |Environment |URL
-|EU1 |Quality Assurance |https://agrirouter-qa.cfapps.eu1.hana.ondemand.com/
-|EU1 |Productive |https://goto.my-agrirouter.com/
+|EU |Quality Assurance |https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/
+|EU |Productive |https://goto.my-agrirouter.com/
 |===========================================================================
 
 The authorization Link is a HTTP GET Request that has to be called from a browser.

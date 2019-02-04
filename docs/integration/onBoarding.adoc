@@ -146,7 +146,7 @@ The request must be a HTTP Post request to
 [cols="2,1,5",options="header",]
 |=======================================================================================================================================================================================
 |Environment |Area |URL
-|Quality Assurance |EU1 |https://agrirouter-registration-service-hubqa-eu1.cfapps.eu1.hana.ondemand.com/[https://agrirouter-registration-service-hubqa-eu1.cfapps.eu1.hana.ondemand.com]
+|Quality Assurance |EU1 |: https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com/[: https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com/]
 |Production |EU1 |https://agrirouter-registration-service.cfapps.eu1.hana.ondemand.com/[https://agrirouter-registration-service.cfapps.eu1.hana.ondemand.com]
 |=======================================================================================================================================================================================
 
@@ -515,9 +515,9 @@ Example:
 
 "gatewayId": "3",
 
-"measures": "https://dke-qa.eu1.cp.iot.sap/iot/gateway/rest/measures/c067272a-d3a7-4dcf-ab58-5c45ba66ad60",
+"measures": "https://dke-qa.eu10.cp.iot.sap/iot/gateway/rest/measures/c067272a-d3a7-4dcf-ab58-5c45ba66ad60",
 
-"commands": "https://dke-qa.eu1.cp.iot.sap/iot/gateway/rest/commands/c067272a-d3a7-4dcf-ab58-5c45ba66ad60"
+"commands": "https://dke-qa.eu10.cp.iot.sap/iot/gateway/rest/commands/c067272a-d3a7-4dcf-ab58-5c45ba66ad60"
 
 },
 

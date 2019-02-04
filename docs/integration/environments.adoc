@@ -12,12 +12,13 @@ The quality assurance environment (“QA”) is used to develop and test applica
 
 The productive environment is used by your end customers with tested and certified apps. This environment is very scalable and made for a huge number of users.
 
-== Areas
+= Areas
 
-Currently, there is only one Area: EU1. Every app instance is onboarded to environments in this area. With upcoming availability of the agrirouter in more and more countries, there might be additional areas created. This could happen for performance reasons or legal requirements of different countries. If new areas become required, this document will be updated, providing all the required information.
+Currently, there is only one Area: EU for europe. Every app instance is onboarded to environments in this area. With upcoming availability of the agrirouter in more and more countries, there might be additional areas created. This could happen for performance reasons or legal requirements of different countries. If new areas become required, this document will be updated, providing all the required information.
 
 
-
+= Keys and urls
+The keys and URLs for the environments can be found link:./../keys.adoc[in keys.]
 
 
 

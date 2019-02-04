@@ -18,12 +18,12 @@ Within this document, there are several public or private keys mentioned, that a
 
 == Agrirouter public keys
 
-These are the public keys used by the agrirouter.
+These are the public keys used by the agrirouter. These are required for example to verify redirect messages from agrirouter in the link:./integration/authorization.adoc[authorization process].
 
 [cols=",",options="header",]
 |===============================================================
-|Environment |Public Key
-|EU1 QA a|
+|Area |Environment |Public Key
+|EU | Quality Assurance "QA" |
 -----BEGIN PUBLIC KEY-----
 
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy8xF9661acn+iS+QS+9Y
@@ -42,7 +42,7 @@ qwIDAQAB
 
 -----END PUBLIC KEY-----
 
-|EU1 Production a|
+|EU | Production |
 -----BEGIN PUBLIC KEY-----
 
 MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwCxD31sYtzH9NTfZ6n8H
@@ -62,6 +62,18 @@ RwIDAQAB
 -----END PUBLIC KEY-----
 
 |===============================================================
+
+== MQTT communication
+To establish a connection to the agrirouter MQTT broker, there is a certificate required. 
+Those can be found here:
+
+[cols=",",options="header",]
+|===============================================================
+|Area |Environment |Public Key
+|EU | Quality Assurance "QA" | link:../assets/certificates/eu-qa-ca-cert.pem[Download here]|
+|EU | Productive | link:../assets/certificates/eu-prod-ca-cert.pem[Download here]|
+|===============================================================
+
 
 == Application keys
 
