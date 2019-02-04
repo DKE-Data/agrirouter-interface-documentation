@@ -37,6 +37,7 @@ It can be any of these formats:
 |link:./image.adoc[img:jpeg] |Image |A JPEG File
 |link:./image.adoc[img:png] |Image |A Portable Network Graphics File
 |link:./shape.adoc[shp:shape:zip] |Shape |A zip file including a Shape dataset
+|link:./pdf.adoc[doc:pdf] |PDF |A pdf document
 |link:./video.adoc[vid:avi] |Video |An AVI Video
 |link:./video.adoc[vid:mp4] |Video |A MPEG4 Video
 |link:./video.adoc[vid:wmv] |Video |A wmv Video

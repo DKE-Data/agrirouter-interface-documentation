@@ -1,0 +1,38 @@
+= Images
+:imagesdir: ./../../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+== doc:pdf - A PDF Document
+
+
+=== Definition
+
+This format is used to exchange PDF documents. It can forward the binary PDF-Content, but currently no file name or other meta data.
+
+=== Command
+
+[cols=",",]
+|==================
+|Command |img:bmp
+|Protobuf Schema |-
+|TypeURL |“”
+|==================
+
+=== Format
+
+The pdf file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+
+
+
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====
