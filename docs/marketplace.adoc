@@ -158,7 +158,7 @@ Select box:
 |19 |SIM card from hardware provider |1 |Yes / No
 |20 |WIFI communication |1 |Yes / No
 |21 |Hotspot functionality |1 |Yes / No
-|22 |Input possibility for entering the agrirouter TAN number | a|
+|22 |Input possibility for entering the agrirouter Registration Code | a|
 Select box:
 
 1.  ISOBUS-Terminal
