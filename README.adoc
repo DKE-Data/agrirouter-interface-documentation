@@ -56,7 +56,7 @@ Once, your app is certified, it can be displayed at the marketplace. Learn more 
 
 == Application and Endpoint management
 
-Learn, how to handle your applications endpoints link:./docs/application_endpoint_management.adoc[here].
+Learn, how to manage your applications endpoints link:./docs/application_endpoint_management.adoc[here].
 
 == Service & Support
 
@@ -64,21 +64,28 @@ For feature- or bug reports, you can contact the support. See link:./docs/servic
 
 == Integration
 
-the integration with agrirouter is described in the link:./docs/general-integration-process.adoc[general integration process].
+The integration with agrirouter is described in the link:./docs/general-integration-process.adoc[general integration process].
 
-These chapters describe all requirements to integrate an application with agrirouter.
+The following chapters describe all requirements to integrate an application with agrirouter.
 
+=== Before we begin
 First, you should always keep in mind the link:./docs/integration/general-conventions.adoc[General conventions].
 
 There are several environments for test and production in different areas of the world. They can be found in the link:./docs/integration/environments.adoc[Environments].
 
+=== Connecting your app instance
 FarmingSoftware and Telemetry Platforms have to perform an link:./docs/integration/authorization.adoc[Authorization Process] to clarify, that the account user is known. CUs may also perform it, but that is not required.
 
 To communicate with the agrirouter, an application Instance needs to be link:./docs/integration/onBoarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all AppInstances of a specific customer can be link:docs/integration/revoke.adoc[Revoked].
 
+=== Some information on the concepts
+
 For further communication, it's important to understand the link:./docs/endpoint.adoc[Elements of an endpoint] and the link:./docs/communication.adoc[Basics of Communication].
 
-When developing a telemetry platform, the link:./docs/telemetry-platform-concept.adoc[concepts of a telemetry platform] should be understood.
+When developing a telemetry platform, the link:./docs/telemetry-platform-concepts.adoc[concepts of a telemetry platform] should be understood.
+
+=== Communicate with agrirouter
+
 
 To send a message, it has to be built first. Read link:./docs/integration/buildmessage.adoc[here] about building messages and commands.
 
