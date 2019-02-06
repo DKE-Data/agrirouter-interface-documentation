@@ -10,6 +10,11 @@
 Results for commands and messages from calls for messages are returned to the outbox. An application instance receives them from the outbox and can than decode the data.
 
 
+[NOTE]
+====
+Please be aware, that an online platform response in general might take up to a minute and the agrirouter is no different from that. So, don't set a too short timeout for your requests.
+====
+
 [IMPORTANT]
 ====
 *Any feed query message has to be confirmed to be deleted from the feed. If you do not confirm a feed message, you will receive it over and over again, until you confirm it.*
