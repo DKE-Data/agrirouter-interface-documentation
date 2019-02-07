@@ -201,5 +201,5 @@ For the format, please refer to  link:../tmt/efdi.adoc[iso:11783:-10:device_desc
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../index.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
 |====
