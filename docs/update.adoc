@@ -17,7 +17,7 @@ However, whenever the maximum capabilities of your software change, you'll need 
 2. After testing, a certification has to be done
 
 ==== On deployment and after Software Update
-After update, the app instance has to inform agrirouter about its new capabilities by sending its capabilities again.
+After update, the app instance has to inform agrirouter about its new capabilities by sending its new capabilities including the new certificationVersionId.
 
 === Safe updates
 When updating your software, the OnboardingResponse received from link:./integration/onBoarding.adoc[onboarding] must be stored so that it is not deleted during update.
