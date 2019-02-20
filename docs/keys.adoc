@@ -129,7 +129,10 @@ The endpoint certificate is used to encrypt the communication with the agriroute
 [IMPORTANT]
 ====
 The certificate you receive during link:./integration/onboarding.adoc[onboarding] is valid for a duration of 1 year. 
+
 After that, you have to perform the link:./integration/reonboarding.adoc[reonboarding].
+
+**Be aware**, that this can require user interaction.
 ====
 
 
