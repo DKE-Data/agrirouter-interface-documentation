@@ -116,6 +116,17 @@ The direction describes, if messages shall be sendable or receivable:
 * The concept of groups is only used to give a little more comfort to the end user when setting rules. It is currently not possible to address a message to the group.
 ====
 
+[NOTE]
+====
+**Implementation advices**
+
+If your application can send messages without user interaction, it is adviced to update the endpoint list in a cyclic manor, e.g. every 5 minutes.
+
+If your application only sends messages, if a user is present, it is adviced to update the endpoint list depending on the user interaction, e.g. manually with an "update" button or integrated in another user interaction like opening the destination selection dialog.
+
+__These are advices, not requirements__
+====
+
 === Errors
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
