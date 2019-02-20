@@ -15,7 +15,7 @@ Every communication is introduced by the App Instance. The agrirouter endpoint w
 After application registration, the communication is secured using the SSL certificate retrieved during the onboarding process. The agrirouter provides PK12 certificates as well as PEM certificates which can be set within the SSL context of the request to ensure authenticated communication with the agrirouter.
 
 Once after the validation has happened, the agrirouter provides all necessary security informations to establish a messaging connection. The developer is obliged to store this certificate, or the tokens secured and encrypted within the application. 
-Receiving the certificate is described in link:integration/onBoarding.adoc[onboarding] .
+Receiving the certificate is described in link:integration/onboarding.adoc[onboarding] .
 
 == Different layers, “The onion principle”
 

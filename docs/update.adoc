@@ -20,7 +20,7 @@ However, whenever the maximum capabilities of your software change, you'll need 
 After update, the app instance has to inform agrirouter about its new capabilities by sending its new capabilities including the new certificationVersionId.
 
 === Safe updates
-When updating your software, the OnboardingResponse received from link:./integration/onBoarding.adoc[onboarding] must be stored so that it is not deleted during update.
+When updating your software, the OnboardingResponse received from link:./integration/onboarding.adoc[onboarding] must be stored so that it is not deleted during update.
 
 If the data gets lost during update, your software can still perform the link:./integration/reonboarding.adoc[reonboarding], if you can reconstruct the uniqueID used in onboarding, but this might require user interaction.  
 
