@@ -126,7 +126,7 @@ It includes an array of Message:
 
 To display the message, replace all fields in the message with the corresponding values from the map.
 
-The possible codes can be found in the link:./../ErrorCodes.adoc[error code list], specific values will be described in more detail within the corresponding link:./../commands/overview.adoc[Commands chapter].
+The possible codes can be found in the link:./../error-codes.adoc[error code list], specific values will be described in more detail within the corresponding link:./../commands/overview.adoc[Commands chapter].
 
 
 
