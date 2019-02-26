@@ -4,7 +4,6 @@
 :toc-title:
 :toclevels: 4
 
-NOTE: This chapter is not yet fully implemented
 
 Applications are software products, that have implemented an interface to the agrirouter. There are 3 Types of possible applications:
 
