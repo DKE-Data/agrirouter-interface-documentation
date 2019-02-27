@@ -13,16 +13,16 @@ However, whenever the maximum capabilities of your software change, you'll need 
 
 === What has to be done?
 ==== While development
-1. You have to create a new software version in the agrirouter UI
+1. You have to create a new certification version in the agrirouter UI
 2. After testing, a certification has to be done
 
-==== On deployment and after Software Update
-After update, the app instance has to inform agrirouter about its new capabilities by sending its new capabilities including the new certificationVersionId.
+==== On deployment and after software update
+After update, the app instance has to inform agrirouter about its new capabilities by sending its new capabilities including the ID of the new certification version (certificationVersionId).
 
 === Safe updates
-When updating your software, the OnboardingResponse received from link:./integration/onboarding.adoc[onboarding] must be stored so that it is not deleted during update.
+When updating your software, the onboarding information received from link:./integration/onBoarding.adoc[onboarding] must be stored so that it is not deleted during update.
 
-If the data gets lost during update, your software can still perform the link:./integration/reonboarding.adoc[reonboarding], if you can reconstruct the uniqueID used in onboarding, but this might require user interaction.  
+If the data gets lost during update, your software can still perform the link:./integration/reonboarding.adoc[reonboarding], if you can reconstruct the uniqueID used in onboarding, but this might require user interaction.
 
 
 ==== Link Section
@@ -31,5 +31,3 @@ This page is found in every file and links to the major topics
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====
-
-
