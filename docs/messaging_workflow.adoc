@@ -138,7 +138,7 @@ The TAN for a new CU can be created by the end user clicking “Generate TAN”(
 ++++
 <p align="center">
  <img src="./../assets/images/ig1\image32.png" width="292px" height="164px"><br>
- <i>Registration code for a CU</i>
+ <i>registration code for a CU</i>
 </p>
 ++++
 
