@@ -39,7 +39,7 @@ The agrirouter offers two different communication protocols for the common commu
 * REST via HTTP(S)
 * MQTT
 
-The commands exchanged with the agrirouter are protobuf encoded (in both directions). 
+The commands exchanged with the agrirouter are protobuf encoded (in both directions).
 
 MQTT clients MUST send commands as base64 encoded strings embedded into a JSON frame structure.
 
@@ -47,7 +47,7 @@ REST based clients have the choice to transfer the commands in the same format a
 
 The advantage of using MQTT is that polling for message delivery (see following chapters) will not be needed. REST however has to be used anyway for the registration of the endpoint. Therefore, applications have to be able to do REST communication anyway.
 
-The internal Google Protocol Buffer (protobuf) definitions for the communication with the agrirouter are available in GitHub repository under following URL: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions 
+The internal Google Protocol Buffer (protobuf) definitions for the communication with the agrirouter are available in GitHub repository under following URL: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions
 
 
 == Request sending frequency
@@ -70,7 +70,7 @@ agrirouter needs some time to process commands and forward messages, that are re
 
 == agrirouter Endpoints
 
-This chapter gives an overview about the endpoints including their base requirement and definition. 
+This chapter gives an overview about the endpoints including their base requirement and definition.
 
 The full chapter can be found link:./endpoint.adoc[here].
 
@@ -119,11 +119,11 @@ The whole chapter can be found link:./integration/authorization.adoc[here].
 
 
 
-=== Creating a registration code (TAN)
+=== Creating a registration code
 
 ==== For CUs
 
-The TAN for a new CU can be created by the end user clicking “Generate TAN”(1) in agrirouters’ control center. He has to select the desired CU(2) and gets a 10-digit code consisting of letters and numbers(3). A CU needs an interface to input this registration code.
+The registration code for a new CU can be created by the end user clicking “Telemetry Connection”(1) in agrirouters’ control center. He has to select the desired CU(2) and gets a 10-digit code consisting of letters and numbers(3). A CU needs an interface to input this registration code.
 
 ++++
 <p align="center">
@@ -309,7 +309,7 @@ A certified telemetry platform (having received a certificate by DKE) can onboar
 
 Regarding messaging, there is no difference between a real-world CU and a virtual CU onboarded by a certified telemetry platform. The connecting telemetry platform has to implement the same communication pattern as it applies to all other endpoints categories.
 
-[IMPORTANT] 
+[IMPORTANT]
 ====
 There will be a trusted Relationship between the agrirouter and certified telemetry platform. The communication between the telemetry platform and the agrirouter will be realized using MQTT messaging over a designated messaging component. As mentioned before the payload has to be Google Protocol Buffer encoded, the communication pattern will be asynchronous most of the time.
 ====
@@ -332,4 +332,3 @@ This page is found in every file and links to the major topics
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====
-
