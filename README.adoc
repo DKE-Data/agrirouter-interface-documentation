@@ -104,21 +104,6 @@ As an application provider, you can download link:./docs/usage_metrix.adoc[usage
 Read here, how to handle link:./docs/update.adoc[new versions and updates].
 
 
-== BACKUP: Old documentation
-The former documentation was split into 2 files, the 
-
-**outdated** 
-link:./assets/documents/integration-guide-part-1.pdf[Integration Guide Part 1] and the 
-
-**outdated** 
-link:./assets/documents/integration-guide-part-2.pdf[Integration Guide Part 2] 
-
-[WARNING]
-====
-These files are outdated and will no longer be updated.
-====
-
-
 ==== Link Section
 This page is found in every file and links to the major topics
 [width="100%"]
