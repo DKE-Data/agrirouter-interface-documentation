@@ -30,6 +30,11 @@ This documentation is an open source project. We invite everybody to open issues
 
 = Documentation 
 
+== Registration
+
+To start the development, you will need to link:./docs/registration.adoc[create an account].
+
+
 == Terms and short descriptions
 
 A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
