@@ -112,7 +112,7 @@ The header includes information on how to handle the message. When sending a mes
 When receiving a message, it includes the source, creation date, technical message type and a unique ID
 
 
-The header creation is described link:./integration/buildmessage.adoc#building-the-envelope[here]
+The header creation is described link:./integration/build-message.adoc#building-the-envelope[here]
 
 === Payload
 
