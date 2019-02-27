@@ -185,7 +185,7 @@ The whole chapter can be found link:./docs/ecosystem.adoc[here].
 ====
 
 //About the general concepts of message Exchange
-The whole chapter can be found link:./docs/message_exchange.adoc[here]
+The whole chapter can be found link:./docs/message-exchange.adoc[here]
 
 '''
 
@@ -243,7 +243,7 @@ The whole chapter can be found link:./docs/message_exchange.adoc[here]
 ====
 
 //About the general messaging workflow
-The whole chapter can be found link:./docs/messaging_workflow.adoc[here]
+The whole chapter can be found link:./docs/messaging-workflow.adoc[here]
 
 
 '''

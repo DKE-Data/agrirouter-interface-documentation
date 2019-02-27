@@ -167,7 +167,7 @@ In case of failure, an Acknowledgement with Message or an Acknowledgement with F
 
 === Errors
 
-Errors will be reported using ACK_WITH_FAILURE. For a list of possible errors, see the link:../ErrorCodes.adoc[error list].
+Errors will be reported using ACK_WITH_FAILURE. For a list of possible errors, see the link:../error-codes.adoc[error list].
 
 
 === Example

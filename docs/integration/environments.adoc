@@ -2,7 +2,7 @@
 
 agrirouter currently supports 2 environments of the whole agrirouter connectivity platform.
 
-The required URLs can be found in link:./messageSending.adoc[message sending] and link:./authorization.adoc[authorization].
+The required URLs can be found in link:./message-sending.adoc[message sending] and link:./authorization.adoc[authorization].
 
 == Quality assurance
 

@@ -290,7 +290,7 @@ See <<Parameters_For_header_List>> for parameters and Filtering.
 
 === Errors
 
-If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see link:../ErrorCodes.adoc[the error list].
+If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see link:../error-codes.adoc[the error list].
 
 
 = Controlling the outbox 

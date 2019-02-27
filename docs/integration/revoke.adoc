@@ -43,7 +43,7 @@ The Request shall include the following header information:
 |Name |Type |Description
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
-|X-Agrirouter-Signature |[Signature] |see link:./onBoarding.adoc#signing-requests[Signing requests]
+|X-Agrirouter-Signature |[Signature] |see link:./onboarding.adoc#signing-requests[Signing requests]
 |=============================================================
 
 === Body
