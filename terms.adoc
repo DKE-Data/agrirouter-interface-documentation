@@ -4,12 +4,6 @@
 :toc-title:
 :toclevels: 4
 
-[WARNING]
-====
-This document is still work in progress. If you are looking for a full documentation, better look at
-the link:./assets/documents/integration-guide-part-1.pdf[Integration Guide Part 1] or  link:./assets/documents/integration-guide-part-2.pdf[Integration Guide Part 2]
-====
-
 
 [abstract]
 == agrirouter in a nutshell
@@ -100,7 +94,7 @@ The whole chapter can be found link:./docs/applications.adoc[here]
 
 
 
-
+====
 * There is 1 agrirouter solution, with multiple accounts, one for each end user. An end user equals a Farm, a Contractor, etc.
 
 * Every Account can onboard multiple Application Instances.
@@ -121,6 +115,7 @@ The whole chapter can be found link:./docs/applications.adoc[here]
 
 * Applications, Virtual CUs, other users accounts and Machines are endpoints, that can be source or target of a message.
 
+====
 
 The whole chapter can be found link:./docs/ecosystem.adoc[here].
 

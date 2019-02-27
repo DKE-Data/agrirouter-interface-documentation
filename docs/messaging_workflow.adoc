@@ -146,7 +146,7 @@ The TAN for a new CU can be created by the end user clicking “Generate TAN”(
 
 ==== For applications
 
-Applications receive a TAN using the link:authorization.adoc[authorization process].
+Applications receive a TAN using the link:./integration/authorization.adoc[authorization process].
 
 ==== For virtual endpoints of telemetry platforms
 

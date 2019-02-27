@@ -17,7 +17,7 @@ As the authorization process – in difference to the rest of the communication 
 
 The authorization process is major for farming software and telemetry platforms, for CUs it is an optional function.
 
-For CUs, this requires additional infrastructure, therefore DKE advices to use the TAN exchange process.
+For CUs, this requires additional infrastructure, therefore DKE advices to use the registration code exchange process.
 
 == Authorization of farming software
 
@@ -224,7 +224,7 @@ The result token is a base64 encoded JSON object including the following paramet
 |=======================================================================================================================================================
 |Name |Type |Description
 |account |String |The unique id of the user account on agrirouter , that will be provided to you in the metrics exports for billing
-|regcode |String |If response-type=onboard, this regcode will deliver a Registration Code equal to clicking the generate TAN-Button in the agrirouter ui
+|regcode |String |If response-type=onboard, this regcode will deliver a Registration Code equal to clicking the RegistrationCode when clicking "+Telemetry"-Button and select a CU in the agrirouter ui
 |expires |DataTime |The date and time (in UTC), when the regcode becomes invalid
 |=======================================================================================================================================================
 

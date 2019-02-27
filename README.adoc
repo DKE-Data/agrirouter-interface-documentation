@@ -100,6 +100,9 @@ Depending on the  link:./docs/integration/analyzeResult.adoc#ResponseType[result
 
 As an application provider, you can download link:./docs/usage_metrix.adoc[usage metrics] to check, which account consumed how much data.
 
+=== Behaviour after SoftwareUpdate
+Read here, how to handle link:./docs/update.adoc[new versions and updates].
+
 
 == BACKUP: Old documentation
 The former documentation was split into 2 files, the 

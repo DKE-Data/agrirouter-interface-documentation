@@ -1,4 +1,4 @@
-= Images
+= Documents
 :imagesdir: ./../../assets/images/
 :toc:
 :toc-title:
