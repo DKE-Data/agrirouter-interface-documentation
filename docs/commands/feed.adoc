@@ -44,10 +44,6 @@ A message with id, source and timestamp fits the filter, if
 * (source is part of senders or senders is empty) AND
 * (timestamp is within validity_period or validity_period is empty)
 
-[NOTE]
-====
-Make sure, that you never request a validity period with a sentFrom older than 4 Weeks (28 days); agrirouter will return an error message instead of the header list for that. In case, you request a period within those 28 days and receive an error anyway, compare your local time with the agrirouter answer to avoid a time difference.
-====
 
 == Call for Message Header List
 
@@ -332,7 +328,6 @@ MessageConfirm is simply an array of message IDs.
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
 
-.
 
 
 
