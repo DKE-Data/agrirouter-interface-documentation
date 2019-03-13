@@ -4,6 +4,10 @@
 :toc-title:
 :toclevels: 4
 
+== General Password policies
+For security reasons, a password assigned to an account only stays valid for a period of 6 month. 
+After that time, the user will be informed when trying to log in for the next time to his agrirouter UI. 
+
 == End-User (Farmers, Contractors, Consultants)
 
 The end-user has access to the graphical user interface of the agrirouter for end users.
