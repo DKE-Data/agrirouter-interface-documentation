@@ -148,6 +148,8 @@ The whole chapter can be found link:./docs/ecosystem.adoc[here].
 
 * agrirouter forwards the messages to the feed of all relevant endpoints.
 
+* If message pushing is active, the message will directly be delivered to the endpoints outbox
+
 **Routings:**
 
 * Messages are only delivered, if there is a routing for that.
@@ -206,19 +208,19 @@ The whole chapter can be found link:./docs/message-exchange.adoc[here]
 
 * After onboarding, each app instance can communicate with its endpoint using REST or MQTT.
 
-* App instances using REST send requests and receive responses from their inbox or outbox.
+* App instances using REST send requests and receive responses from their outbox.
 
-* App instances using MQTT send requests and receive responses from their inbox or outbox.
+* App instances using MQTT send requests and receive responses from their outbox.
 
 * Using the desired protocol, App Instances send commands and messages to their inbox.
 
-* The response for a request to the inbox buffer will be the information, that the command or message is being processed.
+* The response for a request to the inbox buffer of a REST endpointwill be the information, that the command or message is being processed.
+
+* For an MQTT endpoint, there will be no processing information.
 
 * App Instances using the REST protocol will have to poll for a result of this processing at the outbox.
 
 * App instances using the MQTT protocol will only receive the result without polling or confirmation.
-
-* The result of the reception of the command or message will be the response of the inbox.
 
 * Messages, that are no commands for the agrirouter will be forwarded to addressing and routing.
 
@@ -230,7 +232,9 @@ The whole chapter can be found link:./docs/message-exchange.adoc[here]
 
 * App Instances call for messages from their feed by sending a command to their inbox.
 
-* The agrirouter will than forward the desired messages from the endpoints feed to its outbox.
+* The agrirouter will then forward the desired messages from the endpoints feed to its outbox.
+
+* Additionally, app instances can activate the message pushing, so that they receive messages directly through their outbox.
 
 * App Instances can call for a filtered header list of available messages.
 

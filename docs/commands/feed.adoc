@@ -215,7 +215,7 @@ The header includes the whole envelope of a message
 |1 |receiver_id |string |The receiver; might be a secondary endpoint like a virtual CU behind a telemetry platform
 |2 |technical_message_type |string |The technical message type of the message
 |3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
-|4 |chunk_contextID |string |The chunk context corresponding to the chunk list
+|4 |chunk_context |agrirouter.commons.ChunkComponent |The chunk component
 |5 |payload_size |int64 |The size of the payload
 |6 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the recording time point
 |7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point

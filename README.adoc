@@ -61,6 +61,9 @@ Once, your app is certified, it can be displayed at the marketplace. Learn more 
 
 == Application and Endpoint management
 
+For communication with agrirouter, you need to setup an link:./docs/applications.adoc[application].
+
+
 Learn, how to manage your applications endpoints link:./docs/application-endpoint-management.adoc[here].
 
 == Service & Support
@@ -94,9 +97,13 @@ When developing a telemetry platform, the link:./docs/telemetry-platform-concept
 
 To send a message, it has to be built first. Read link:./docs/integration/build-message.adoc[here] about building messages and commands.
 
-When link:./docs/integration/message-sending.adoc[sending messages], the result will be link:./docs/integration/message-receiving.adoc[received through the outbox].
+Every AppInstance can send messages and commands the same way.
 
-Every AppInstance can send link:./docs/tmt/overview.adoc[messages] and link:./docs/commands/overview.adoc[commands] the same way.
+While link:./docs/tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, link:./docs/commands/overview.adoc[commands] are used to link:./docs/commands/ecosystem.adoc[explore the ecosystem], link:./docs/commands/endpoint.adoc[configure your endpoint] and link:./docs/commands/feed.adoc[request messages from the feed]. 
+
+When link:./docs/integration/message-sending.adoc[sending messages], the result will be link:./docs/integration/message-receiving.adoc[received through the outbox].
+Additionally, link:./docs/integration/message-pushing.adoc[Push Notifications] will be delivered through the outbox.
+
 
 Depending on the  link:./docs/integration/analyze-result.adoc#ResponseType[resultType], the Result can be link:./docs/integration/analyze-result.adoc[analyzed].
 

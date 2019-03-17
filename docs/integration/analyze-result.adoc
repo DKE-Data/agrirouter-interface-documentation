@@ -22,37 +22,38 @@ The envelope is a protobuf object, that can be found in message agrirouter.respo
 Parameters are:
 
 [cols="1,3,2,4",options="header",]
-|========================================================================================================================
+|========
 |# |Name |Type |Description
 |1 |response_code |int64 |A HTTP-like response code indicating the result
 |2 |type |ResponseBodyType |An indicator of the correct decoding protobuf description
 |3 |application_message_id |String |the corresponding message, that this answer is assigned to.
 |4 |message_id |String |The agrirouter internal message ID used to be written to the agrirouter log and for confirmation.
 |5 |timestamp |TimeStamp |The timestamp of the Result creation
-|========================================================================================================================
+|========
 
 === response_code
 
 The response code indicates success or failure of a request.
 
 [cols="1,2",options="header",]
-|==========================================================================================================================================================
+|========
 |HTTP Response Code |Description
 |200 |request processed/received successfully.
 |201 |request processed/received and data created (this would be valid in cases for response to subscriptions, capabilities, teamset context messages, etc)
 |400 |validation of request failed, messages in the body specifies the type of request failure
 |413 |request too large
 |503 |request cannot be processed at the moment, probably due to temporary overload
-|==========================================================================================================================================================
+|========
+
 
 === ResponseType
 [[ResponseType]]
-The type is required to determine the correct schema for the body:
+The type is required to determine the correct schema for the body.
 
-The following List shows the corresponding Protobuf schemata for each ResponseType
+The following List shows the corresponding Protobuf schemata for each ResponseType:
 
 [cols="1,2,3",options="header",]
-|=====================================================================================================================================
+|========
 |ResponseBodyType |Schema (.proto) |Comment
 |MESSAGES |agrirouter.feed.response. MessageQueryResponse |A list of messages as result of a request for messages
 |ACK |There is no Schema for this, the payload will just have a size of 0 bytes |An acknowledgement of a message
@@ -63,7 +64,8 @@ The following List shows the corresponding Protobuf schemata for each ResponseTy
 |ACK_FOR_FEED_FAILED_MESSAGE |agrirouter.feed.response.FailedMessageQueryResponse |Response for failed requests to feed queries
 |ENDPOINTS_LISTING |agrirouter.response.payload.account.ListEndpointsResponse |Used for a response which contains the endpoint listing
 |CLOUD_REGISTRATIONS |agrirouter.cloud.registration.OnboardingResponse |The result of a Virtual CU registration
-|=====================================================================================================================================
+|PUSH_NOTIFICATION |agrirouter.feed.push.notification| An actively pushed message
+|========
 
 Analysing the results is described in the specific chapters of process description for the relevant commands.
 
