@@ -238,11 +238,25 @@ If the command is a feed command requesting messages from the feed, the app inst
 </p>
 ++++
 
-
 [IMPORTANT]
 ====
 The first message to a new endpoint **always** has to be the link:./commands/endpoint.adoc[Capabilities Message]!
 ====
+
+
+== Flow of push notifications
+When activated, agrirouter will deliver messages directly as push notifications. 
+
+
+++++
+<p align="center">
+ <img src="./../assets/images/general/message-push-flow.png" width="575px" height="300px"><br>
+ <i>Command flow for push Notifications</i>
+</p>
+++++
+
+For further information, see link:./push-notification.adoc[ the chapter about push notifications].
+
 
 
 == Terms
