@@ -14,7 +14,7 @@ The app instance can send a request for messages to its endpoint (2), agrirouter
 Received messages need to be confirmed (6) to delete the message from the feed (7).
 ++++
 <p align="center">
- <img src="./../../assets/images/general/message-request.png" width="568px" height="599px"><br>
+ <img src="./../../assets/images/general/message-request.png"><br>
 <i>Receiving messages through feed</i>
 </p>
 ++++
@@ -26,7 +26,7 @@ With push notifications activated, a copy of each message sent to the feed(1) is
 
 ++++
 <p align="center">
- <img src="./../../assets/images/general/message-push.png" width="568px" height="599px"><br>
+ <img src="./../../assets/images/general/message-push.png" ><br>
 <i>Receiving messages with push notifications</i>
 </p>
 ++++
