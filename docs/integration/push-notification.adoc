@@ -22,7 +22,7 @@ Received messages need to be confirmed (6) to delete the message from the feed (
 
 
 === Push Notifications
-With push notifications activated, a copy of each message sent to the feed is directly copied to the outbox. 
+With push notifications activated, a copy of each message sent to the feed(1) is directly copied to the outbox(2) and delivered to the AppInstance (directly via MQTT or through polling using HTTP)(3).  Pushed messages need to be confirmed(4) as well as requested messages to be deleted from the feed (5).
 
 ++++
 <p align="center">
@@ -31,16 +31,17 @@ With push notifications activated, a copy of each message sent to the feed is di
 </p>
 ++++
 
-Pushed messages need to be confirmed as well as requested messages.
+
 
 [NOTE]
 ====
 Messages in the outbox persist for a short time. If an app instance was not connected to agrirouter for a while, the messages will be deleted from the outbox, however, they persist in the message feed. 
 
 Every app instance should therefore check its feed in a periodic manor. 
+For HTTP REST clients, this should be at least every 4 hours, for MQTT clients, this should be done at least every 3 days. 
 ====
 
-Push Notifications can be activated through the link:../commmands/endpoint.adoc#capabilities[Capabilities message].
+Push Notifications can be activated through the link:../commmands/endpoint.adoc#capabilities[Capabilities command].
 
 
 === Analyse Push Messages
@@ -101,6 +102,9 @@ There is no paging mechanism available in Push notifications
 //TODO: Multiple requests required here?
 
 =====
+
+=== Delivery Order
+While messages from the feed are delivered "in order", messages directly pushed might be unsorted; chunked file messages could for example "overtake" each other on the way from Endpoint1 to Endpoint2.
 
 
 

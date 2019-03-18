@@ -97,12 +97,13 @@ When developing a telemetry platform, the link:./docs/telemetry-platform-concept
 
 To send a message, it has to be built first. Read link:./docs/integration/build-message.adoc[here] about building messages and commands.
 
-Every AppInstance can send messages and commands the same way.
+Every AppInstance can link:./docs/integration/message-sending.adoc[send messages] and commands the same way.
 
 While link:./docs/tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, link:./docs/commands/overview.adoc[commands] are used to link:./docs/commands/ecosystem.adoc[explore the ecosystem], link:./docs/commands/endpoint.adoc[configure your endpoint] and link:./docs/commands/feed.adoc[request messages from the feed]. 
 
-When link:./docs/integration/message-sending.adoc[sending messages], they will be link:./docs/integration/message-receiving.adoc[received through the outbox] by the receiving AppInstance.
-Additionally, link:./docs/integration/message-pushing.adoc[Push Notifications] will be delivered through the outbox.
+Command results and messages from other endpoints will be link:./docs/integration/message-receiving.adoc[received through the outbox] by the receiving AppInstance.
+
+Messages from other endpoints are put into the outbox by link:./docs/integration/message-pushing.adoc[Push Notifications] as well as by link:./docs/commands/feed[requesting the feed content].
 
 
 Depending on the  link:./docs/integration/analyze-result.adoc#ResponseType[resultType], the Result can be link:./docs/integration/analyze-result.adoc[analyzed].
