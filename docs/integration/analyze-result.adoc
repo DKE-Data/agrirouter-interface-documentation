@@ -79,7 +79,7 @@ The message_id is a unique ID of this message on the agrirouter. Use this id for
 
 [NOTE]
 ====
-Deletion and/or confirmation is only required for messages received from the feed, not for commands
+Deletion and/or confirmation is only required for messages (no matter if requested from feed or actively pushed), not for commands
 ====
 
 === timestamp
