@@ -102,7 +102,16 @@ The Result is a list of message headers (“envelopes”) without the message pa
 |2 |page |Page |The current page of the message
 |3 |chunk_contexts |ChunkComponent (repeated) |A list of all chunk contexts
 |4 |feed |Feed (repeated) |A message from the feed
+|5 |String| Pending Message Ids (repeated)| A list of all pending messages
 |==========================================================================
+
+[NOTE]
+=====
+With release of the active push functionality, the pending 
+messages list is deprecated and will no longer be filled. 
+
+Messages can now be confirmed as bundles over a longer period of time.
+=====
 
 The Query metrics informs about several result parameters:
 
