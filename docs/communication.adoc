@@ -255,7 +255,7 @@ When activated, agrirouter will deliver messages directly as push notifications.
 </p>
 ++++
 
-For further information, see link:./push-notification.adoc[ the chapter about push notifications].
+For further information, see link:./integration/push-notification.adoc[ the chapter about push notifications].
 
 
 
