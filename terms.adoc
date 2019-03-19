@@ -214,7 +214,7 @@ The whole chapter can be found link:./docs/message-exchange.adoc[here]
 
 * Using the desired protocol, App Instances send commands and messages to their inbox.
 
-* The response for a request to the inbox buffer of a REST endpointwill be the information, that the command or message is being processed.
+* The HTTP response for a request to the inbox buffer of a REST endpoint through the inbox will be the information, that the command or message is being processed.
 
 * For an MQTT endpoint, there will be no processing information.
 
