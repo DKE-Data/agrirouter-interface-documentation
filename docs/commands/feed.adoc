@@ -279,10 +279,12 @@ See <<Parameters_For_header_List>> for parameters and Filtering.
 
 [cols=",",]
 |=====================================
-|ResultCode |ACK
-|Protobuf Schema |None, simply 0 bytes
-|typeURL |“”
+|ResultCode |ACK_WITH_MESSAGE
+|Protobuf Schema |message
+|typeURL |“agrirouter.commons.Messages”
 |=====================================
+
+In case of success, you receive VAL_000206 and a list of MessageIDs that could be confirmed.
 
 === Errors
 
@@ -319,10 +321,12 @@ MessageConfirm is simply an array of message IDs.
 
 [cols=",",]
 |=====================================
-|ResultCode |ACK
-|Protobuf Schema |None, simply 0 bytes
-|typeURL |“”
+|ResultCode |ACK_WITH_MESSAGE
+|Protobuf Schema |message
+|typeURL |“agrirouter.commons.Messages”
 |=====================================
+
+In case of success, you receive VAL_000206 and a list of MessageIDs that could be confirmed.
 
 === Errors
 
