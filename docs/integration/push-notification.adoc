@@ -6,6 +6,17 @@
 
 
 == General Overview
+[IMPORTANT]
+=====
+The current release of the agrirouter push notification service misses the field receiver_id. Therefore, in the CURRENT version, push notifications should only be used by systems, that know the receiver of a message, as there can only be one receipient. This fits for:
+- Farming Software
+- CUs (**ATTENTION**: You will not recognize, that a TaskSet is addressed for a specific machine)
+
+For Telemetry Platforms, there is currently no way to check, which VCU shall receive the message.
+
+An update resolving this will be delivered soon.
+=====
+
 === Standard behaviour
 The normal behaviour of agrirouter is to put incoming messages from other endpoints to the feed of the receiving endpoint(1).
 
@@ -65,6 +76,8 @@ The push message element includes
 =====
 For the first release, the push message array will always include only one entry. If multiple messages shall be delivered,
 multiple Push notifications are delivered; each including one message.
+
+However, make sure, that you check the possible multiple FeedMessages delivered with foreach functionalities to be future proof
 =====
 
 
@@ -77,29 +90,27 @@ Each message includes a header and a payload:
 |=====
 
 
-//TODO: Fix that depending on Mr. Grimms answer.
-The header includes the basic information about the message   and equals the message headers received from the link:./../commands/feed.adoc[feed] except for the receipient id.
+The header includes the basic information about the message   and equals the message headers received from the link:./../commands/feed.adoc[feed].
 
 [cols="1,3,2,4",options="header",]
-|=====
+|=====================================================================================================================================
 |# |Name |Type |Description
 |1 |technical_message_type |string |The technical message type of the message
 |2 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
-|3 |chunk_context |ChunkContext |The chunk context corresponding to the chunk list
+|3 |chunk_context |agrirouter.commons.ChunkComponent |The chunk component
 |4 |payload_size |int64 |The size of the payload
 |5 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the recording time point
 |6 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
 |7 |sender_id |string |The endpoint ID of the sender
 |8 |created_at |Timestamp |The timestamp, when this message was added to the receiving endpoints feed
-|=====
-
+|=====================================================================================================================================
 
 
 
 [NOTE]
 =====
 There is no paging mechanism available in Push notifications
-//TODO: Multiple requests required here?
+All messages will be delivered in responses with a maximum size of 1 MB. So, as long as you receive push notifications, you should keep on polling, if there are more of them.
 
 =====
 

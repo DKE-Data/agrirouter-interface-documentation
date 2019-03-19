@@ -116,7 +116,6 @@ Version Number of the certification: (Integer (!) version Id) this is a version 
 ====
 
 
-// TODO Links
 All required steps are available in Endpoint Software Management (see Figure 11 and Figure 12 ) in the section agrirouter for developers (1) in the launch pad:
 
 * List of existing applications (2)
