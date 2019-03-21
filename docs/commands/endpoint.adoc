@@ -87,13 +87,13 @@ Possible values
 
 [NOTE]
 ====
-In the current release, Enabled and Enabled_HighSpeed will result in the same behaviour directly delivering a message as a push notification.
+In the current release, `Enabled` and `Enabled_HighSpeed` will result in the same behaviour directly delivering a message as a push notification.
 
-In the future, especially when the load of agrirouter grows, Enabled Message Push will lead to a pushing of messages bundled over a specific time frame. When this is implemented and activated, only Enabled_HighSpeed will still deliver the messages directly.
+In the future, especially when the load of agrirouter grows, enabled message push will lead to a pushing of messages bundled over a specific time frame. When this is implemented and activated, only `Enabled_HighSpeed` will still deliver the messages directly.
 
 It should however only be used, if it is absolutely necessary and might have to be renewed after a while to lower the work load of agrirouter as much as possible.
 
-If Message pushing is used in your software, please make sure you use "enabled" as long as you don't require a close-to-realtime delivery.
+If message pushing is used in your software, please make sure you use "enabled" as long as you don't require a close-to-realtime delivery.
 
 ====
 
