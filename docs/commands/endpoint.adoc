@@ -93,7 +93,7 @@ In the future, especially when the load of agrirouter grows, enabled message pus
 
 It should however only be used, if it is absolutely necessary and might have to be renewed after a while to lower the work load of agrirouter as much as possible.
 
-If message pushing is used in your software, please make sure you use "enabled" as long as you don't require a close-to-realtime delivery.
+If message pushing is used in your software, please make sure you use enabled message push as long as you don't require a close-to-realtime delivery.
 
 ====
 
