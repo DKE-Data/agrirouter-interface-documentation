@@ -61,7 +61,7 @@ Direction can be one of those values:
 |2 |Send & Receive
 |=================
 
-Those are the values of an Enumeration, see protobuf files.
+Those are the values of an enumeration, see protobuf files.
 See link:https://github.com/DKE-Data/agrirouter-api-protobuf-definitions/blob/develop/src/main/resources/com/dke/data/agrirouter/proto/messaging/request/payload/endpoint/capabilities.proto[Capabilities.proto]
 
 ==== app_certification_id
@@ -106,13 +106,13 @@ If message pushing is used in your software, please make sure you use enabled me
 |typeURL |types.agrirouter/agrirouter.response.payload.endpoint.CapabilityResponse
 |=================================================================================
 
-The result is a simple __ACK__ or an __ACK_WITH_MESSAGES__
+The result is a simple `ACK` or an `ACK_WITH_MESSAGES`.
 
-If the same capabilities message is sent twice, an ACK_WITH_MESSAGES will be returned with a message indicating, that the capabilities did not change.
+If the same capabilities message is sent twice, an `ACK_WITH_MESSAGES` will be returned with a message indicating, that the capabilities did not change.
 
 === Errors & Warnings
 
-If the message was malformed, an ACK_WITH_FAILURE will be returned.
+If the message was malformed, an `ACK_WITH_FAILURE` will be returned.
 
 === Example
 ----
@@ -143,7 +143,7 @@ The subscription command is used to subscribe for a list of technical message ty
 * Subscriptions can be defined for a specific message type, not for a specific sender.
 * Each new subscription list sent by an endpoint deletes old subscriptions
 
-* Always send all required subscribtions in one Command.
+* Always send all required subscriptions in one Command.
 
 * Sending a new capabilities message will delete all subscriptions
 
