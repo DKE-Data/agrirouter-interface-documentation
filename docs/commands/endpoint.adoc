@@ -70,9 +70,9 @@ This is the application ID received when creating the application.
 
 ==== app_certification_version_id
 
-This is the certificationVersionId received when creating the application version.
+This is the certification version ID received when creating the application version.
 
-==== enable_push_notifications 
+==== enable_push_notifications
 
 This setting activates or deactivates link:../push-notifications.adoc[push notifications].
 
@@ -89,9 +89,9 @@ Possible values
 ====
 In the current release, Enabled and Enabled_HighSpeed will result in the same behaviour directly delivering a message as a push notification.
 
-In the future, especially when the load of agrirouter grows, Enabled Message Push will lead to a pushing of messages bundled over a specific time frame. When this is implemented and activated, only Enabled_HighSpeed will still deliver the messages directly. 
+In the future, especially when the load of agrirouter grows, Enabled Message Push will lead to a pushing of messages bundled over a specific time frame. When this is implemented and activated, only Enabled_HighSpeed will still deliver the messages directly.
 
-It should however only be used, if it is absolutely necessary and might have to be renewed after a while to lower the work load of agrirouter as much as possible. 
+It should however only be used, if it is absolutely necessary and might have to be renewed after a while to lower the work load of agrirouter as much as possible.
 
 If Message pushing is used in your software, please make sure you use "enabled" as long as you don't require a close-to-realtime delivery.
 
@@ -107,7 +107,7 @@ If Message pushing is used in your software, please make sure you use "enabled" 
 |=================================================================================
 
 The result is a simple __ACK__ or an __ACK_WITH_MESSAGES__
- 
+
 If the same capabilities message is sent twice, an ACK_WITH_MESSAGES will be returned with a message indicating, that the capabilities did not change.
 
 === Errors & Warnings
@@ -158,7 +158,7 @@ To avoid mismatches between publishing applications and applications only receiv
 ====
 
 
-The list of technical message types can include any TechnicalMessageFormat mentioned 
+The list of technical message types can include any TechnicalMessageFormat mentioned
 link:../tmt/overview.adoc[ in the list of technical message types].
 
 === Command

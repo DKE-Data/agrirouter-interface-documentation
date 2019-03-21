@@ -103,7 +103,7 @@ While link:./docs/tmt/overview.adoc[messages] are meant to be forwarded to other
 
 Command results and messages from other endpoints will be link:./docs/integration/message-receiving.adoc[received through the outbox] by the receiving application instance.
 
-Messages from other endpoints are put into the outbox by link:./docs/integration/push-notification.adoc[Push Notifications] as well as by link:./docs/commands/feed[requesting the feed content].
+Messages from other endpoints are put into the outbox by link:./docs/integration/push-notification.adoc[push notifications] as well as by link:./docs/commands/feed[requesting the feed content].
 
 
 Depending on the  link:./docs/integration/analyze-result.adoc#ResponseType[resultType], the Result can be link:./docs/integration/analyze-result.adoc[analyzed].
