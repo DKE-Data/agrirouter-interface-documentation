@@ -9,6 +9,7 @@
 [IMPORTANT]
 =====
 The current release of the agrirouter push notification service misses the field receiver_id. Therefore, in the CURRENT version, push notifications should only be used by systems, which know the receiver of a message, as there can only be one receipient. This fits for:
+
 - Farming Software
 - CUs (**ATTENTION**: You will not recognize, that a task set is addressed for a specific machine)
 
@@ -46,7 +47,8 @@ With push notifications activated, a copy of each message sent to the feed(1) is
 
 [NOTE]
 ====
-Messages in the outbox persist for a short time. If an app instance was not connected to agrirouter for a while, the messages will be deleted from the outbox, however, they persist in the message feed.
+Messages in the outbox persist for a short time (for CUs, you can assume 2 hours, for MQTT its up to 3 days). If an app instance was not connected to agrirouter for a while, the messages will be deleted from the outbox, however, they persist in the message feed.
+
 
 Every app instance should therefore check its feed in a periodic manor.
 For HTTP REST clients, this should be at least every 4 hours, for MQTT clients, this should be done at least every 3 days.
