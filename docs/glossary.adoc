@@ -111,6 +111,11 @@ The message itself will be received and processed by the CU, but addressing it t
 |Message 
 |A message is an information or perhaps a request, that is sent from an endpoint to any other endpoint. A message is a possible payload of a command
 
+
+|Message pushing
+|Message pushing is a function of the agrirouter that directly forwards incoming messages to the outbox of an endpoint. 
+
+
 |Teamset 
 |A teamset is a set of connected machines which work and move together and are connected to the same communication unit.
 

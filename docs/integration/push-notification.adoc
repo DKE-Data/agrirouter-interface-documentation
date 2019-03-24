@@ -1,0 +1,130 @@
+= Push Notifications
+:imagesdir: ./../../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+
+== General Overview
+[IMPORTANT]
+=====
+The current release of the agrirouter push notification service misses the field receiver_id. Therefore, in the CURRENT version, push notifications should only be used by systems, which know the receiver of a message, as there can only be one receipient. This fits for:
+
+- Farming Software
+- CUs (**ATTENTION**: You will not recognize, that a task set is addressed for a specific machine)
+
+For Telemetry Platforms, there is currently no way to check, which VCU shall receive the message.
+
+An update resolving the lack of functionality will be delivered soon.
+=====
+
+=== Standard behaviour
+The normal behaviour of agrirouter is to put incoming messages from other endpoints to the feed of the receiving endpoint(1).
+
+The app instance can send a request for messages to its endpoint (2), agrirouter will search for messages in the feed(3), so that they are forwarded to the outbox(4), where they can be requested from (REST) or will directly be delivered (MQTT)(5).
+
+Received messages need to be confirmed (6) to delete the message from the feed (7).
+++++
+<p align="center">
+ <img src="./../../assets/images/general/message-request.png"><br>
+<i>Receiving messages through feed</i>
+</p>
+++++
+
+
+
+=== Push Notifications
+With push notifications activated, a copy of each message sent to the feed(1) is directly copied to the outbox(2) and delivered to the app instance (directly via MQTT or through polling using HTTP)(3).  Pushed messages need to be confirmed(4) as well as requested messages to be deleted from the feed (5).
+
+++++
+<p align="center">
+ <img src="./../../assets/images/general/message-push.png" ><br>
+<i>Receiving messages with push notifications</i>
+</p>
+++++
+
+
+
+[NOTE]
+====
+Messages in the outbox persist for a short time (for CUs, you can assume 2 hours, for MQTT its up to 3 days). If an app instance was not connected to agrirouter for a while, the messages will be deleted from the outbox, however, they persist in the message feed.
+
+
+Every app instance should therefore check its feed in a periodic manor.
+For HTTP REST clients, this should be at least every 4 hours, for MQTT clients, this should be done at least every 3 days.
+====
+
+Push notifications can be activated through the link:../commmands/endpoint.adoc#capabilities[Capabilities command].
+
+
+=== Analyse Push Messages
+A push message will be received directly through the outbox without any command sent to the inbox.
+
+[cols=",",]
+|=====
+|ResultCode |PUSH_NOTIFICATION
+|Protobuf Schema |agrirouter.feed.push.notification.proto
+|typeURL |types.agrirouter/agrirouter.feed.push.notification
+|=====
+
+The push message element includes
+[cols="1,3,2,4",options="header",]
+|=====
+|# |Name |Type |Description
+|1 |messages| [FeedMessage] | An array of FeedMessages
+|=====
+
+[REMARK]
+=====
+For the first release, the push message array will always include only one entry. If multiple messages shall be delivered,
+multiple Push notifications are delivered; each including one message.
+
+However, make sure, that you check the possible multiple FeedMessages delivered with foreach functionalities to be future proof
+=====
+
+
+Each message includes a header and a payload:
+[cols="1,1,1,4",options="header",]
+|=====
+|# |Name |Type |Description
+|1 |header |Header |The header of the message
+|2 |content|Any | An "Any"-Object including the payload
+|=====
+
+
+The header includes the basic information about the message   and equals the message headers received from the link:./../commands/feed.adoc[feed].
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |technical_message_type |string |The technical message type of the message
+|2 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
+|3 |chunk_context |agrirouter.commons.ChunkComponent |The chunk component
+|4 |payload_size |int64 |The size of the payload
+|5 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the recording time point
+|6 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|7 |sender_id |string |The endpoint ID of the sender
+|8 |created_at |Timestamp |The timestamp, when this message was added to the receiving endpoints feed
+|=====================================================================================================================================
+
+
+
+[NOTE]
+=====
+There is no paging mechanism available in Push notifications
+All messages will be delivered in responses with a maximum size of 1 MB. So, as long as you receive push notifications, you should keep on polling, if there are more of them.
+
+=====
+
+=== Delivery Order
+While messages from the feed are delivered "in order", messages directly pushed might be unsorted; chunked file messages could for example "overtake" each other on the way from Endpoint1 to Endpoint2.
+
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|====

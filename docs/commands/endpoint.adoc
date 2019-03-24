@@ -7,9 +7,9 @@
 
 This chapter will list all messages to tell the agrirouter, what the endpoint is capable of, who it is and what it wants to receive.
 
-=== Capabilities Command
+== Capabilities Command
 
-==== Definition
+=== Definition
 
 Every endpoint has to report his capabilities of sending and receiving messages after onboarding and when the capabilities change ( e.g. an application functionality is extended by a new module). This is required from agrirouter to know, if specific messages can be routed to an endpoint and to show the correct choosable Information Types in the User Interface for routing.
 
@@ -20,7 +20,7 @@ Every endpoint has to report his capabilities of sending and receiving messages 
 
 The list of technical message types can include any TechnicalMessageFormat mentioned in 17 Technical Message types.
 
-==== Command
+=== Command
 
 [cols=",",]
 |=====================================================================================
@@ -29,7 +29,7 @@ The list of technical message types can include any TechnicalMessageFormat menti
 |TypeURL |types.agrirouter/agrirouter.request.payload.endpoint.CapabilitySpecification
 |=====================================================================================
 
-Parameters are an Array of elements of the following:
+Parameters are the following elements:
 
 [cols="1,2,2,4",options="header",]
 |=================================================================================
@@ -37,7 +37,10 @@ Parameters are an Array of elements of the following:
 |1 |capabilities |Array of capabilities |The list of capabilities of this endpoint
 |2 |app_certification_id |String |The application ID assigned by agrirouter
 |3 |app_certification_version_id |String |The ID of the apps certification version
+|4 |enable_push_notifications |PushNotification | The activation state of push notifications
 |=================================================================================
+
+==== Capabilities
 
 The technical message type can be a technical message type of DKE or a proprietary message type.
 
@@ -58,10 +61,43 @@ Direction can be one of those values:
 |2 |Send & Receive
 |=================
 
-Those are the values of an Enumeration, see protobuf files.
+Those are the values of an enumeration, see protobuf files.
 See link:https://github.com/DKE-Data/agrirouter-api-protobuf-definitions/blob/develop/src/main/resources/com/dke/data/agrirouter/proto/messaging/request/payload/endpoint/capabilities.proto[Capabilities.proto]
 
-==== Result
+==== app_certification_id
+
+This is the application ID received when creating the application.
+
+==== app_certification_version_id
+
+This is the certification version ID received when creating the application version.
+
+==== enable_push_notifications
+
+This setting activates or deactivates link:../push-notifications.adoc[push notifications].
+
+Possible values
+[cols=",",]
+|=================================================================================
+|Number| Constant Name
+|0 | DISABLED
+|1 | ENABLED
+|2 | ENABLED_HIGH_FREQUENCY
+|=================================================================================
+
+[NOTE]
+====
+In the current release, `Enabled` and `Enabled_HighSpeed` will result in the same behaviour directly delivering a message as a push notification.
+
+In the future, especially when the load of agrirouter grows, enabled message push will lead to a pushing of messages bundled over a specific time frame. When this is implemented and activated, only `Enabled_HighSpeed` will still deliver the messages directly.
+
+It should however only be used, if it is absolutely necessary and might have to be renewed after a while to lower the work load of agrirouter as much as possible.
+
+If message pushing is used in your software, please make sure you use enabled message push as long as you don't require a close-to-realtime delivery.
+
+====
+
+=== Result
 
 [cols=",",]
 |=================================================================================
@@ -70,15 +106,15 @@ See link:https://github.com/DKE-Data/agrirouter-api-protobuf-definitions/blob/de
 |typeURL |types.agrirouter/agrirouter.response.payload.endpoint.CapabilityResponse
 |=================================================================================
 
-The result is a simple __ACK__ or an __ACK_WITH_MESSAGES__
- 
-If the same capabilities message is sent twice, an ACK_WITH_MESSAGES will be returned with a message indicating, that the capabilities did not change.
+The result is a simple `ACK` or an `ACK_WITH_MESSAGES`.
 
-==== Errors & Warnings
+If the same capabilities message is sent twice, an `ACK_WITH_MESSAGES` will be returned with a message indicating, that the capabilities did not change.
 
-If the message was malformed, an ACK_WITH_FAILURE will be returned.
+=== Errors & Warnings
 
-==== Example
+If the message was malformed, an `ACK_WITH_FAILURE` will be returned.
+
+=== Example
 ----
     {
         "capabilities":[
@@ -88,7 +124,9 @@ If the message was malformed, an ACK_WITH_FAILURE will be returned.
             {"technicalMessageType":"iso:11783:-10:time_log:protobuf",
             "direction":2},
         ],
-        "appCertificationId": "aef23ef23-442d-fada-dbde-44e5bcead","appCertificationVersionId": "233eefaf2-4488-44da-d5d2-55e5dcbad"
+        "appCertificationId": "aef23ef23-442d-fada-dbde-44e5bcead",
+        "appCertificationVersionId": "233eefaf2-4488-44da-d5d2-55e5dcbad",
+        enable_push_notifications: ENABLED
 
 
     }
@@ -105,7 +143,7 @@ The subscription command is used to subscribe for a list of technical message ty
 * Subscriptions can be defined for a specific message type, not for a specific sender.
 * Each new subscription list sent by an endpoint deletes old subscriptions
 
-* Always send all required subscribtions in one Command.
+* Always send all required subscriptions in one Command.
 
 * Sending a new capabilities message will delete all subscriptions
 
@@ -120,7 +158,7 @@ To avoid mismatches between publishing applications and applications only receiv
 ====
 
 
-The list of technical message types can include any TechnicalMessageFormat mentioned 
+The list of technical message types can include any TechnicalMessageFormat mentioned
 link:../tmt/overview.adoc[ in the list of technical message types].
 
 === Command
@@ -167,7 +205,7 @@ In case of failure, an Acknowledgement with Message or an Acknowledgement with F
 
 === Errors
 
-Errors will be reported using ACK_WITH_FAILURE. For a list of possible errors, see the link:../error-codes.adoc[error list].
+Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors, see the link:../error-codes.adoc[error list].
 
 
 === Example

@@ -18,7 +18,6 @@ The agrirouter is a central data exchange platform, but to understand its full p
 </p>
 ++++
 
-//TODO: Is there a better place for this?
 === Overview of the architecture
 
 This chapter gives a high-level overview about the agrirouter Connectivity-Platform architecture, an application can interact with. 
