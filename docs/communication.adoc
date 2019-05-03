@@ -148,6 +148,38 @@ This only appears to command results, not to messages, that are sent to the feed
 ====
 
 
+==== Router Devices
+When using MQTT for a Telemetry platform or a Farming software with multiple accounts, multiple MQTT Connections to different brokers would be required. To avoid this, agrirouter introduced so called **Router devices**
+
+===== General function
+Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one MQTT Broker.
+
+
+++++
+<p align="center">
+ <img src="./../assets/images/general/router-devices1.png"><br>
+ <i>Using Router devices vs. not using router devices</i>
+</p>
+++++
+
+++++
+<p align="center">
+ <img src="./../assets/images/general/router-devices2.png"><br>
+ <i>Using router devices vs. communication using communication units</i>
+</p>
+++++
+
+====== Setup of router devices
+Router devices can be set up and managed in the agrirouter developers UI
+++++
+<p align="center">
+ <img src="./../assets/images/general/router-devices-screen1.png"><br>
+ <i>Router device management in the agrirouter developers UI</i>
+</p>
+++++
+
+The setup and usage of router devices is described in the chapter link:./router-devices.adoc[router devices].
+
 === Comparison of protocols
 
 Both protocols have several advantages and disadvantages. To select the right protocol for your needs, check the following table
