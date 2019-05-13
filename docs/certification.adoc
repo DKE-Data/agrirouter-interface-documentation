@@ -25,6 +25,7 @@ Which tests are relevant for your implementation depend on several factors:
 === Type of application
 
 Which kind of app do you develop?::
+
 * Communication unit (CU)
     . The Onboarding procedure is relevant
 
@@ -85,7 +86,7 @@ Shall your application receive Technical Message Types except for EFDI?::
 
 
 === For Telemetry platforms
-If your app does perform as a telemetry platform, you need to support:
+If your app does perform as a telemetry platform, you need to support::
 * Cloud onboarding
 * Cloud offboarding
 * Sending capabilties in behalf of the VCU
