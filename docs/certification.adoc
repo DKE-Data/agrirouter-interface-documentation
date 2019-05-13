@@ -84,6 +84,12 @@ Shall your application receive Technical Message Types except for EFDI?::
 . The chunking mechanism to merge chunks is relevant
 * NO
 
+Does your app support push notifications?::
+* YES
+. It's tested, if push notifications are activated in the capabilities message
+. It's tested, if pushed messages are confirmed
+
+
 
 === For Telemetry platforms
 If your app does perform as a telemetry platform, you need to support::
@@ -99,6 +105,8 @@ The following parts are always relevant:
 * Revoking
 
 * Reonboarding
+
+* Sending the capabilities (which need to be a subset of the capabilities mentioned in the version)
 
 * **Clean your feed**: After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
 
