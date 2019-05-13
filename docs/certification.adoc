@@ -98,6 +98,8 @@ The following parts are always relevant:
 
 * Revoking
 
+* Reonboarding
+
 * **Clean your feed**: After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
 
 
