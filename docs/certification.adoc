@@ -5,7 +5,7 @@
 :toclevels: 4
 
 
-== General
+== In General
 
 Every application needs to be certified to be onboardable to the agrirouter. The certification process ensures, that the communication protocol of the agrirouter is successfully implemented and the application is able to communicate correctly with the agrirouter.
 
@@ -22,6 +22,17 @@ DKE and the agrirouter support team will release a list of certified partners, w
 == Certification tests
 Not all of the certification tests are necessary for your implementation, the selection depends on several parameters:
 
+== Always necessary
+The following parts are always necessary:
+
+* link:./integration/revoke.adoc[Revoking]
+
+* link:./integration/reonboarding.adoc[Reonboarding]
+
+* link:./commands/endpoint.adoc#capabilities-command[Sending the capabilities] (which need to be a subset of the capabilities mentioned in the version)
+
+* **Clean your feed**: After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
+
 === Type of application
 
 Which kind of application do you develop?::
@@ -36,61 +47,41 @@ Which kind of application do you develop?::
 
 === Protocol layer
 
-Which protocol and format do you want to use?::
-* HTTP REST
-=> **Which Format do you use?**
-** JSON
-. All tests are done for JSON REST
+Which communication protocol and format do you want to use?::
 
-** PROTOBUF
-. All tests ar done using native protobuf
+* REST via HTTP
+** Do you use JSON?
+. All certification steps are performed using encoded JSON for the tests.
+
+** Do you use native PROTOBUF?
+. All certification steps are performed using native protobuf for the tests.
     
 * MQTT
-=> **Do you use router devices?**
+** Do you use router devices?
+. All tests are done using a link:./communication.adoc[router device] which was onboarded within a given account.
 
-** YES
-. All tests are done using a link:./communication.adoc[router device]
-
-** NO
-. All tests are done using the credentials delivered while onboarding
+** Do you use single endpoints?
+. All tests are done using the credentials delivered while onboarding endpoints within a given account.
 
 === Sending messages
 
-Shall your application send EFDI?::
-* YES
-. Setting the TeamsetContextID and changing it, when the machine configuration changes is relevant.
+* Is your application able to send EFDI?
+. Setting the `TeamsetContextID` and changing it, when the machine configuration changes is necessary.
 
-* NO
+* Is your application able send technical message types except for EFDI??
+. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to create chunks is necessary.
 
-Shall your application send Technical Message Types except for EFDI?::
-* YES
-. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to create chunks is relevant
-
-* NO
-
-Does your software want to publish data?::
-* YES
-. Your software must link:./commands/ecosystem.adoc[request the endpoint list], so that you can make sure you don't publish data without any receipient available
+* Does your application want to publish data?::
+. Your software must link:./commands/ecosystem.adoc[request the endpoint list], so that you can make sure you don't publish data without any recipient available
 
 === Receiving messages
 
-Shall your application receive EFDI?::
-* YES
-. 
-
-* NO
-
-Shall your application receive Technical Message Types except for EFDI?::
-* YES
+* Is your application able to receive technical message types except for EFDI?::
 . The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to merge chunks is relevant
-* NO
 
-Does your app support push notifications?::
-* YES
+* Is your application able to support push notifications?::
 . It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
 . It's tested, if pushed messages are confirmed
-
-
 
 === For Telemetry platforms
 If your app does perform as a telemetry platform, you need to support::
@@ -99,24 +90,9 @@ If your app does perform as a telemetry platform, you need to support::
 * Sending link:./commands/endpoint.adoc#capabilities-command[capabilities message] in behalf of the VCU
 * link:./commands/feed.adoc[Reading feed] in behalf of the VCU
 
-
-== Always relevant
-The following parts are always relevant:
-
-* link:./integration/revoke.adoc[Revoking]
-
-* link:./integration/reonboarding.adoc[Reonboarding]
-
-* link:./commands/endpoint.adoc#capabilities-command[Sending the capabilities] (which need to be a subset of the capabilities mentioned in the version)
-
-* **Clean your feed**: After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
-
-
-
 ==== Link Section
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====
-
