@@ -27,12 +27,12 @@ Which tests are relevant for your implementation depend on several factors:
 Which kind of app do you develop?::
 
 * Communication unit (CU)
-    . The Onboarding procedure is relevant
+    . The link:./integration/onboarding.adoc[Onboarding procedure] is relevant
 
 * Telemetry Platform or Farming Software
-    . The authorization process is relevant
+    . The link:./integration/authorization.adoc[authorization process] is relevant
     
-    . Secured onboarding is relevant
+    . The link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[secured onboarding] is relevant
 
 === Protocol layer
 
@@ -49,7 +49,7 @@ Which protocol and format do you want to use?::
 => **Do you use router devices?**
 
 ** YES
-. All tests are done using a router device
+. All tests are done using a link:./communication.adoc[router device]
 
 ** NO
 . All tests are done using the credentials delivered while onboarding
@@ -64,12 +64,13 @@ Shall your application send EFDI?::
 
 Shall your application send Technical Message Types except for EFDI?::
 * YES
-. The chunking mechanism to create chunks is relevant
+. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to create chunks is relevant
+
 * NO
 
 Does your software want to publish data?::
 * YES
-. Your software must request the endpoint list, so that you can make sure you don't publish data without any receipient available
+. Your software must link:./commands/ecosystem.adoc[request the endpoint list], so that you can make sure you don't publish data without any receipient available
 
 === Receiving messages
 
@@ -81,32 +82,32 @@ Shall your application receive EFDI?::
 
 Shall your application receive Technical Message Types except for EFDI?::
 * YES
-. The chunking mechanism to merge chunks is relevant
+. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to merge chunks is relevant
 * NO
 
 Does your app support push notifications?::
 * YES
-. It's tested, if push notifications are activated in the capabilities message
+. It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
 . It's tested, if pushed messages are confirmed
 
 
 
 === For Telemetry platforms
 If your app does perform as a telemetry platform, you need to support::
-* Cloud onboarding
-* Cloud offboarding
-* Sending capabilties in behalf of the VCU
-* Reading feed in behalf of the VCU
+* link:.commands/cloud.adoc#onboarding-a-virtual-cu[Cloud onboarding]
+* link:./commands/cloud.adoc#removing-a-virtual-cu[Cloud offboarding]
+* Sending link:./commands/endpoint.adoc#capabilities-command[capabilities message] in behalf of the VCU
+* link:./commands/feed.adoc[Reading feed] in behalf of the VCU
 
 
 == Always relevant
 The following parts are always relevant:
 
-* Revoking
+* link:./integration/revoke.adoc[Revoking]
 
-* Reonboarding
+* link:./integration/reonboarding.adoc[Reonboarding]
 
-* Sending the capabilities (which need to be a subset of the capabilities mentioned in the version)
+* link:./commands/endpoint.adoc#capabilities-command[Sending the capabilities] (which need to be a subset of the capabilities mentioned in the version)
 
 * **Clean your feed**: After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
 
