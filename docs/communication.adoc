@@ -158,7 +158,7 @@ Without router devices, an application would need to create multiple MQTT connec
 ++++
 <p align="center">
  <img src="./../assets/images/general/router-devices1.png"><br>
- <i>Using Router devices vs. not using router devices</i>
+ <i>Using router devices vs. not using router devices</i>
 </p>
 ++++
 
@@ -170,11 +170,11 @@ Without router devices, an application would need to create multiple MQTT connec
 ++++
 
 ====== Setup of router devices
-Router devices can be set up and managed in the agrirouter developers UI
+Router devices can be set up and managed within the agrirouter developer UI
 ++++
 <p align="center">
  <img src="./../assets/images/general/router-devices-screen1.png"><br>
- <i>Router device management in the agrirouter developers UI</i>
+ <i>Router device management in the agrirouter developer UI</i>
 </p>
 ++++
 
