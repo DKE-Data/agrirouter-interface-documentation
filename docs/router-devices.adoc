@@ -5,9 +5,9 @@
 :toclevels: 4
 
 == General function
-Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one MQTT Broker.
+Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one MQTT broker.
 
-When using MQTT for a Telemetry platform or a Farming software with multiple accounts, multiple MQTT Connections to different brokers would be required. To avoid this, agrirouter introduced so called **Router devices**
+When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced the **router devices** which allow routing multiple connections for virtual endpoints.
 
 
 ++++
@@ -25,15 +25,15 @@ When using MQTT for a Telemetry platform or a Farming software with multiple acc
 ++++
 
 == Setup of router devices
-Router devices can be set up and managed in the agrirouter developers UI
+Router devices can be set up and managed in the agrirouter developer UI
 ++++
 <p align="center">
  <img src="./../assets/images/general/router-devices-screen1.png"><br>
- <i>Router device management in the agrirouter developers UI</i>
+ <i>Router device management in the agrirouter developer UI</i>
 </p>
 ++++
 
-When clicking on "New Router device", a new device is automatically generated. 
+When clicking on "New Router device", a new device will be generated.
 ++++
 <p align="center">
  <img src="./../assets/images/general/router-devices-screen2.png"><br>
@@ -49,15 +49,15 @@ To check the connection properties, click on "Connection Details".
 </p>
 ++++
 
-The Certificate can be downloaded as PEM or P12 
+The certificate for the router device can be downloaded as PEM or P12.
 ++++
 <p align="center">
  <img src="./../assets/images/general/router-devices-screen4.png"><br>
- <i>Download Certificate of router device</i>
+ <i>Download certificate of router device</i>
 </p>
 ++++
 
-The file includes a JSON structure with all the information of the router device
+The file includes a JSON structure containing all necessary information for the router device
 [source,javascript]
 ----
 {
@@ -76,4 +76,4 @@ The file includes a JSON structure with all the information of the router device
 }
 ----
 
-ConnectionCriteria and Authentication of a single endpoint can be replaced by the data given from the router device, so that every software component of a specific manufacturer can communicate using one router device, as long as all the relevant app instances are connected to the same server. There cannot be multiple connections using the same router device. 
+`ConnectionCriteria` and `Authentication` of a single endpoint can be replaced by the data given from the router device, so that every software component of a specific manufacturer can communicate using one router device, as long as all the application instance is connected to the same server. There cannot exist multiple connections using the same router device.
