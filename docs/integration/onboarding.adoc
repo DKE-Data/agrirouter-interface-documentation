@@ -494,7 +494,7 @@ The result is a json object including the information required for onboarding.
 |5 |sensorAlternateId |String |The deviceID used to mark the source of the communication from this device
 |========================================================================================================
 
-Example for onboarding a REST endpoint:
+Example for onboarding an REST endpoint:
 [source,javascript]
 ----
 {
