@@ -94,7 +94,7 @@ Does your app support push notifications?::
 
 === For Telemetry platforms
 If your app does perform as a telemetry platform, you need to support::
-* link:.commands/cloud.adoc#onboarding-a-virtual-cu[Cloud onboarding]
+* link:.commands/cloud.adoc[Cloud onboarding]
 * link:./commands/cloud.adoc#removing-a-virtual-cu[Cloud offboarding]
 * Sending link:./commands/endpoint.adoc#capabilities-command[capabilities message] in behalf of the VCU
 * link:./commands/feed.adoc[Reading feed] in behalf of the VCU
