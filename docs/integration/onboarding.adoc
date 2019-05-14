@@ -494,7 +494,7 @@ The result is a json object including the information required for onboarding.
 |5 |sensorAlternateId |String |The deviceID used to mark the source of the communication from this device
 |========================================================================================================
 
-Example:
+Example for onboarding an REST endpoint:
 [source,javascript]
 ----
 {
@@ -525,6 +525,29 @@ Example:
 
 "sensorAlternateId": "5564ce96-385f-448a-9502-9ea3c940a259",
 
+}
+----
+
+Example for onboarding an MQTT Endpoint
+[source,javascript]
+----
+{
+  "deviceAlternateId": "341cb230-83a7-45a1-a023-34cc1f1d58f5",
+  "capabilityAlternateId": "bb8e66c9-e8e1-4a06-959e-f3a1940a68e0",
+  "sensorAlternateId": "19e90568-9275-4023-879d-432c379081fe",
+  "connectionCriteria": {
+    "gatewayId": "2",
+    "measures": "measures/341cb230-83a7-45a1-a023-34cc1f1d58f5",
+    "commands": "commands/341cb230-83a7-45a1-a023-34cc1f1d58f5",
+    "host": "dke-qa.eu10.cp.iot.sap",
+    "port": "8883",
+    "clientId": "341cb230-83a7-45a1-a023-34cc1f1d58f5"
+  },
+  "authentication": {
+    "type": "PEM",
+    "secret": "xC6zMirxXHDsXDXFR4gE42qq79l7AheIvqiW",
+    "certificate": "-----BEGIN ENCRYPTED PRIVATE KEY-----\n...-----END CERTIFICATE-----\n"
+  }
 }
 ----
 
