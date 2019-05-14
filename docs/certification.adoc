@@ -53,7 +53,7 @@ Which communication protocol and format do you want to use?::
 ** Do you use JSON?
 . All certification steps are performed using encoded JSON for the tests.
 
-** Do you use native PROTOBUF?
+** Do you use native protobuf?
 . All certification steps are performed using native protobuf for the tests.
     
 * MQTT
