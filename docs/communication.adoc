@@ -152,7 +152,7 @@ This only appears to command results, not to messages, that are sent to the feed
 When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced a **router devices** which allows to use just one connection for multiple, virtual endpoints.
 
 ===== General function
-Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one MQTT Broker.
+Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one single MQTT broker.
 
 
 ++++
