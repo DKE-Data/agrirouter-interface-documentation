@@ -6,33 +6,56 @@
 
 == What is Paho?
 
-Paho is an Eclipse tool fo connect to an MQTT Broker.
-
-First, read the getting Started Guide: https://help.sap.com/viewer/e765b2a5b99540ce84da397c20cc1993/Cloud/en-US/4954c48d016f40eeb5fcaf1cd596b909.html
-
-Secondly, download and install Paho: https://help.sap.com/viewer/e765b2a5b99540ce84da397c20cc1993/Cloud/en-US/53ad3e974dba4d49970113e0fd80ab07.html
-
-== Format Certificate for Paho
-
-The certificate needs to be formatted to work with PAHO:
-
-Copy the whole certificate field, replace the \n with new Lines (\r+\n) and save it in an *.pem file
-
-Install openssl.
-
-Format the certificate:
-
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image4.png" width="642px" height="42px"><br>
- <i></i>
-</p>
-++++
+Paho is an Eclipse tool to connect to an MQTT broker. Further information on the tool can be found link:https://www.eclipse.org/paho/[at the project page]
 
 
-== Setup Paho Certificate
+A description on how to install paho can be found link:https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US/13db11a65036448ea5194b2a8e922c62.html[here]
 
-To setup the certificate, open the connecton options and enable SSL. Then add the certificate file
+== Preconditions
+=== OpenSSL
+To format the certificates, link:https://www.openssl.org/[openssl] is required.
+
+=== Install TrustStore
+
+To communicate with the agrirouter via MQTT two certificates are required. The first certificate is a general certificate to communicate with the server, the second certificate is the one that is client specific.
+
+First, the general certificate need to be added to your systems trust store. Download those certificates following this link:../keys.adoc[keys page].
+
+To add the certificates to your local trust store:
+
+* First copy the .pem-File(s) to the location of JAVA_HOME\lib\security (your local JRE-installation).
+* Start a console and navigate to JAVA_HOME\lib\security (cmd.exe on windows; **Important**: Admin rights might be required.)
+* Run the following command, where "changeit" should be the keyword of your keystore (default, if you did not change it)
+
+[source,bash]
+----
+keytool -import -alias ca -file eu-qa-ca-cert.pem -keystore cacerts -storepass changeit
+----
+
+This keystore is described in the Paho UI as "Truststore"
+
+==Communication with a specific client
+
+
+== Setup Endpoint in MQTT
+=== Create KeyStore
+Onboarding an MQTT endpoint provides a certificate, an MQTT client id and two topics; see link:../integration/onboarding.adoc[onboarding].
+
+Alternatively, the connection can be setup using a link:../router-device.adoc[router device].
+
+The certificate received from onboarding process needs to be formatted to work with PAHO (PAHO only, not needed for most of the other clients):
+
+* Copy the whole certificate field, replace the "\n" with line breaks (\r+\n) and save it to a *.pem file
+* Call the following command from within the folder you stored the *.pem file:
+[source,bash]
+----
+openssl pkcs12 -export -in myCert.pem -inkey myCert.pem -out myCert.jks
+----
+
+
+=== Setup Paho SSL Connection
+
+Open the connection options and enable SSL. Then add the certificate files for truststore (general MQTT Certificates) and keystore (your onboarding results certificate)
 
 ++++
 <p align="center">
@@ -42,10 +65,8 @@ To setup the certificate, open the connecton options and enable SSL. Then add th
 ++++
 
 
-Further information: https://help.sap.com/viewer/e765b2a5b99540ce84da397c20cc1993/Cloud/en-US/711642e551f4477c882c5561853ee7c7.html
-
 == Setup the connection criteria of Paho:
-
+Read the connection criteria from the onboarding result and click on connect.
 ++++
 <p align="center">
  <img src="./../../assets/images/ig2/image6.png" width="800px" height="139px"><br>
