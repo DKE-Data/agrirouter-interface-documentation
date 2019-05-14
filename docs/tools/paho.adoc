@@ -6,7 +6,7 @@
 
 == What is Paho?
 
-Paho is an Eclipse tool to connect to an MQTT Broker. Further information on the tool can be found link:https://www.eclipse.org/paho/[at the project page]
+Paho is an Eclipse tool to connect to an MQTT broker. Further information on the tool can be found link:https://www.eclipse.org/paho/[at the project page]
 
 
 A description on how to install paho can be found link:https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US/13db11a65036448ea5194b2a8e922c62.html[here]
@@ -17,14 +17,14 @@ To format the certificates, link:https://www.openssl.org/[openssl] is required.
 
 === Install TrustStore
 
-To communicate with MQTT, there are 2 certificates required. The first one is a general certificate to communicate with the server, the second one is the one that is client specific. 
+To communicate with the agrirouter via MQTT two certificates are required. The first certificate is a general certificate to communicate with the server, the second certificate is the one that is client specific.
 
-First, the general certificates need to be added to your systems trust store. Download those certificates at the link:../keys.adoc[keys page].
+First, the general certificate need to be added to your systems trust store. Download those certificates following this link:../keys.adoc[keys page].
 
-To add them to your keystore:
+To add the certificates to your local trust store:
 
-* copy the .pem-File(s) to the location of JAVA_HOME\lib\security (so, your jre-Installation). 
-* Start a console and navigate to JAVA_HOME\lib\security (cmd.exe on windows; **Important**: Admin rights might be required)
+* First copy the .pem-File(s) to the location of JAVA_HOME\lib\security (your local JRE-installation).
+* Start a console and navigate to JAVA_HOME\lib\security (cmd.exe on windows; **Important**: Admin rights might be required.)
 * Run the following command, where "changeit" should be the keyword of your keystore (default, if you did not change it)
 
 [source,bash]
