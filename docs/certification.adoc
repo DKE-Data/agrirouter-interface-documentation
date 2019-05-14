@@ -7,7 +7,7 @@
 
 == General
 
-Every application needs to be certified to be onboardable to the agrirouter. The certification makes sure, that the communication protocol of the agrirouter was successfully implemented and the application is able to communicate with the agrirouter.
+Every application needs to be certified to be onboardable to the agrirouter. The certification process ensures, that the communication protocol of the agrirouter is successfully implemented and the application is able to communicate correctly with the agrirouter.
 
 A certification is needed any time, the app changes its capabilities.
 
