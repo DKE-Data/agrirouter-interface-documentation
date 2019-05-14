@@ -24,15 +24,15 @@ Not all of the certification tests are necessary for your implementation, the se
 
 === Type of application
 
-Which kind of app do you develop?::
+Which kind of application do you develop?::
 
 * Communication unit (CU)
-    . The link:./integration/onboarding.adoc[Onboarding procedure] is relevant
+    . The link:./integration/onboarding.adoc[Onboarding procedure] is necessary.
 
-* Telemetry Platform or Farming Software
-    . The link:./integration/authorization.adoc[authorization process] is relevant
+* Telemetry platform or farming software
+    . The link:./integration/authorization.adoc[authorization process] is necessary.
     
-    . The link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[secured onboarding] is relevant
+    . The link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[secured onboarding] is necessary.
 
 === Protocol layer
 
