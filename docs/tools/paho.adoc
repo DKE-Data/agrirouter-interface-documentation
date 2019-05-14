@@ -39,14 +39,14 @@ This keystore is described in the Paho UI as "Truststore"
 
 == Setup Endpoint in MQTT
 === Create KeyStore
-Onboarding an MQTT endpoint delivers a certificate, an id and two topics; see link:../integration/onboarding.adoc[onboarding].
+Onboarding an MQTT endpoint provides a certificate, an MQTT client id and two topics; see link:../integration/onboarding.adoc[onboarding].
 
 Alternatively, the connection can be setup using a link:../router-device.adoc[router device].
 
-The certificate received from onboarding needs to be formatted to work with PAHO:
+The certificate received from onboarding process needs to be formatted to work with PAHO (PAHO only, not needed for most of the other clients):
 
-* Copy the whole certificate field, replace the "\n" with line breaks (\r+\n) and save it in an *.pem file
-* Call the following command from within the folder, where you stored the .pem-File:
+* Copy the whole certificate field, replace the "\n" with line breaks (\r+\n) and save it to a *.pem file
+* Call the following command from within the folder you stored the *.pem file:
 [source,bash]
 ----
 openssl pkcs12 -export -in myCert.pem -inkey myCert.pem -out myCert.jks
@@ -55,7 +55,7 @@ openssl pkcs12 -export -in myCert.pem -inkey myCert.pem -out myCert.jks
 
 === Setup Paho SSL Connection
 
-Open the connection options and enable SSL. Then add the certificate files for truststore (general MQTT Certificates) and keystore (Your onboarding results certificate)
+Open the connection options and enable SSL. Then add the certificate files for truststore (general MQTT Certificates) and keystore (your onboarding results certificate)
 
 ++++
 <p align="center">
