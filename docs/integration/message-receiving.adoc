@@ -17,7 +17,7 @@ Please be aware, that an online platform response in general might take up to a 
 
 [IMPORTANT]
 ====
-*Any feed query message has to be confirmed to be deleted from the feed. If you do not confirm a feed message, you will receive it over and over again, until you confirm it.*
+*Any feed query message has to be confirmed or deleted to be deleted from the feed. If you do not confirm, your customer will receive an email about outdated messages.*
 ====
 
 == MQTT
