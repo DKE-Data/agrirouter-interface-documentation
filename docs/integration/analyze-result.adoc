@@ -38,8 +38,7 @@ The response code indicates success or failure of a request.
 [cols="1,2",options="header",]
 |========
 |HTTP Response Code |Description
-|0 | This is the response code for push notifications, as those messages are no response to any request.
-|200 |request processed/received successfully.
+|200 |request processed/received successfully. Also used with PUSH-Notifications
 |201 |request processed/received and data created (this would be valid in cases for response to subscriptions, capabilities, teamset context messages, etc)
 |400 |validation of request failed, messages in the body specifies the type of request failure
 |413 |request too large
