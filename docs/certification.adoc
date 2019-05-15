@@ -68,7 +68,7 @@ Which communication protocol and format do you want to use?::
 * Is your application able to send EFDI?
 . Setting the `TeamsetContextID` and changing it, when the machine configuration changes is necessary.
 
-* Is your application able send technical message types except for EFDI??
+* Is your application able to send technical message types except for EFDI?
 . The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to create chunks is necessary.
 
 * Does your application want to publish data?::
@@ -76,10 +76,10 @@ Which communication protocol and format do you want to use?::
 
 === Receiving messages
 
-* Is your application able to receive technical message types except for EFDI?::
+* Is your application able to receive technical message types except for EFDI?
 . The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to merge chunks is relevant
 
-* Is your application able to support push notifications?::
+* Is your application able to support push notifications?
 . It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
 . It's tested, if pushed messages are confirmed
 
