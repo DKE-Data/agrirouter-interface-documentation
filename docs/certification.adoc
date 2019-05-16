@@ -11,6 +11,11 @@ Every application needs to be certified to be onboardable to the agrirouter. The
 
 A certification is needed any time, the app changes its capabilities, changes the commands or uses a different protocol to communicate with the agrirouter.
 
+[NOTE]
+=====
+For a new certification version, capabilities can never be removed. It is only allowed to add capabilities for a new version. The capabilities request however can of course only include a subset that is smaller than in the version before.
+=====
+
 == Out of focus
 
 The certification will not check, if an application is able to work with the data sent over the agrirouter. The process will only check, if the application can send and receive data for the technical message types, that were selected for the certification version.
