@@ -9,8 +9,6 @@
 
 At http://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the application or hardware provider to present their own apps, functions, modules or hardware solutions.
 
-This information must be created before going live under http://tptest.my-agrirouter.com/tptest/ in the content management test environment according DKE specifications. DKE quality management reviewes, approves and releases this information for go live.
-
 After the certification process is finished, application or hardware provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
 
 ++++
@@ -34,7 +32,7 @@ The following content is required from *application provider*:
 |# |Description |Quantity |Remarks
 |1 |App / Module Name |1 |-
 |2 |Software Version |1 |-
-|3 |Release Date / Last Update |1 |-
+|3 |agrirouter certified |1 |-
 |4 |Reference to App (in case of a module) |1 |-
 |5 |Download link to App Provider |1 |-
 |6 |Keywords |10 |-
@@ -100,7 +98,7 @@ The following content is required from *hardware provider*:
 |# |Description |Quantity |Remarks
 |1 |Hardware Name |1 |-
 |2 |Hardware Version |1 |-
-|3 |Release Date / Last Update |1 |-
+|3 |agrirouter certified |1 |-
 |4 |Link to Hardware Provider |1 |-
 |5 |Keywords |10 |-
 |6 |Short description in 3 basic languages DE, EN, FR |< 150 characters |-
