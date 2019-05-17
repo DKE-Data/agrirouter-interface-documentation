@@ -70,7 +70,7 @@ Learn, how to manage your applications endpoints link:./docs/application-endpoin
 
 For feature- or bug reports, you can contact the support. See link:./docs/service-support.adoc[here]
 
-In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://my-agrirouter.com/support/system-status/​[Status Page].
+In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://my-agrirouter.com/support/system-status[Status Page].
 
 [Important]
 ====
