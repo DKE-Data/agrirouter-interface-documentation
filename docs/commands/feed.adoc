@@ -293,7 +293,7 @@ See <<Parameters_For_header_List>> for parameters and Filtering.
 |typeURL |“agrirouter.commons.Messages”
 |=====================================
 
-In case of success, you receive VAL_000206 and a list of MessageIDs that could be confirmed.
+In case of success, you receive VAL_000209 and a list of MessageIDs that could be confirmed.
 
 === Errors
 
