@@ -6,17 +6,7 @@
 
 
 == General Overview
-[IMPORTANT]
-=====
-The current release of the agrirouter push notification service misses the field receiver_id. Therefore, in the CURRENT version, push notifications should only be used by systems, which know the receiver of a message, as there can only be one receipient. This fits for:
 
-- Farming Software
-- CUs (**ATTENTION**: You will not recognize, that a task set is addressed for a specific machine)
-
-For Telemetry Platforms, there is currently no way to check, which VCU shall receive the message.
-
-An update resolving the lack of functionality will be delivered soon.
-=====
 
 === Standard behaviour
 The normal behaviour of agrirouter is to put incoming messages from other endpoints to the feed of the receiving endpoint(1).
@@ -97,14 +87,15 @@ The header includes the basic information about the message   and equals the mes
 [cols="1,3,2,4",options="header",]
 |=====================================================================================================================================
 |# |Name |Type |Description
-|1 |technical_message_type |string |The technical message type of the message
-|2 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
-|3 |chunk_context |agrirouter.commons.ChunkComponent |The chunk component
-|4 |payload_size |int64 |The size of the payload
-|5 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the recording time point
-|6 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
-|7 |sender_id |string |The endpoint ID of the sender
-|8 |created_at |Timestamp |The timestamp, when this message was added to the receiving endpoints feed
+|1 |receiver_id |string |The ID of the receiver of the message. This can be the app itself, an attached machine or a Virtual CU
+|2 |technical_message_type |string |The technical message type of the message
+|3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
+|4 |chunk_context |agrirouter.commons.ChunkComponent |The chunk component
+|5 |payload_size |int64 |The size of the payload
+|6 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the recording time point
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|8 |sender_id |string |The endpoint ID of the sender
+|9 |created_at |Timestamp |The timestamp, when this message was added to the receiving endpoints feed
 |=====================================================================================================================================
 
 

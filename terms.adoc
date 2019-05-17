@@ -220,7 +220,7 @@ The whole chapter can be found link:./docs/message-exchange.adoc[here]
 
 * App Instances using the REST protocol will have to poll for a result of this processing at the outbox.
 
-* App instances using the MQTT protocol will only receive the result without polling or confirmation.
+* App instances using the MQTT protocol will only receive the result without polling.
 
 * Messages, that are no commands for the agrirouter will be forwarded to addressing and routing.
 

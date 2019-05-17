@@ -67,7 +67,7 @@ In terms of agrirouter onboarding result, the outbox is called comands due to th
 
 == Feed
 
-The feed receives all messages from the agrirouter due to addressing of messages and subscribtions of the endpoint, given there is a routing for that. Messages in the feed are stored for a maximum of 4 weeks, before the are deleted. The user will get informant about that, if there are messages, that were not delivered for 3 weeks or more. An app instance can either request the messages to be forwarded to its outbox or request to delete the messages. If it requests the forwarding to the outbox, the messages are only deleted from the feed, when the app instance confirms having received those messages.
+The feed receives all messages from the agrirouter due to addressing of messages and subscribtions of the endpoint, given there is a routing for that. Messages in the feed are stored for a maximum of 4 weeks, before the are deleted. The user will get informed about that, if there are messages, that were not delivered for 3 weeks or more. An app instance can either request the messages to be forwarded to its outbox or request to delete the messages. If it requests the forwarding to the outbox, the messages are only deleted from the feed, when the app instance confirms having received those messages.
 
 ++++
 <p align="center">

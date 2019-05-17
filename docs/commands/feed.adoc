@@ -312,7 +312,13 @@ Once a message was downloaded from the outbox, the Client has to confirm, that i
 
 [NOTE]
 ====
-As long as the receival of a message is not confirmed, it will be delivered again and again by agrirouter, whenever the client tries to download messages, it called for. When a message is confirmed, it will be deleted from the feed.
+When a message is confirmed, it will be deleted from the feed.
+
+As long as it is not confirmed, it will be delivered in a FeedRequest or FeedHeaderRequest again, if there is no specific filter to avoid this. 
+Messages shall always be confirmed to avoid Emails to customers about old messages in the endpoints feed.
+
+The old behavior, where a message was delivered over and over again with a FeedMessageRequest, even though it was not specifically requested, was removed with the introduction of push notifications.
+
 ====
 
 === Command

@@ -108,7 +108,7 @@ If message pushing is used in your software, please make sure you use enabled me
 
 The result is a simple `ACK` or an `ACK_WITH_MESSAGES`.
 
-If the same capabilities message is sent twice, an `ACK_WITH_MESSAGES` will be returned with a message indicating, that the capabilities did not change.
+If the same capabilities message is sent twice and the push notification status is not changed, an `ACK_WITH_MESSAGES` will be returned with a message indicating, that the capabilities did not change.
 
 === Errors & Warnings
 
