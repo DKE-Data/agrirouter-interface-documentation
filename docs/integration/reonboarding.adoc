@@ -11,11 +11,26 @@ Re-onboarding allows an endpoint to get new client certificates and updates on U
 
 Internally, the endpoint gets the same identification (deviceAlternateId, sensorAlternateId and capabilityAlternateId remain the same), thus all rules, filters and buffered messages remain valid and do not get lost
 
+
+[IMPORTANT]
+====
+Reonboarding is major as certificates are only valid for currently *one year*
+====
+
 === Why should an endpoint be re-onboarded?
 
-If an app instance loses parts of its onboarding information, it can be reonboarded using the onboarding process.
+The current solution is, that the onboarding certificates are valid only one year!
+After that, the respective endpoint will still be displayed in the Control Center, but cannot be used any more.
+At this point, the same endpoint needs to be re-onboarded so that it can be used for another year. 
 
-Additionally, the endpoint URLs might change. Even though, this is currently not planned, it could be a result of scaling.
+Reonboarding has also to be done, when an app is updated in a way, that its certification version id changes.
+
+
+Additionally, if an app instance loses parts of its onboarding information, it can be reonboarded using the onboarding process.
+
+Also, the endpoint URLs might change. Even though, this is currently not planned, it could be a result of scaling.
+
+
 
 === How does re-onboarding work?
 
@@ -28,11 +43,11 @@ The external Id *must be the same* as for the initial onboarding, as this is use
 
 Capabilities may be sent, but do not have to (these are stored within the agrirouter from initial onboarding)
 
-Reonboarding has to be done, when an app is updated in a way, that its certification version id changes.
 
+For the CU re-onboarding only a new TAN is needed. 
+Simply send the same onboarding request again and use the new TAN.
 
-
-
+For the farming software and telemetry platform we suggest to calculate the valid time and renew the agrirouter automatically bevor the certificates will be invalid.
 
 
 ==== Link Section
