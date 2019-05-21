@@ -30,12 +30,15 @@ Not all of the certification tests are necessary for your implementation, the se
 == Always necessary
 The following parts are always necessary:
 
-* link:./integration/revoke.adoc[Revoking]
 
 * link:./integration/reonboarding.adoc[Reonboarding]
 
-* link:./commands/endpoint.adoc#capabilities-command[Sending the capabilities] (which need to be a subset of the capabilities mentioned in the version)
-
+* link:./commands/endpoint.adoc#capabilities-command[Sending the capabilities] 
+[REMARK]
+=====
+The capabilities reported through the capabilities command may not include more capabilities then reported in the agrirouter UI when setting up the certification version.
+To pass the test, every listed technical message type from certification version needs to be exchanged in the reported directions. 
+=====
 * **Clean your feed**: After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
 
 === Type of application
@@ -50,6 +53,9 @@ Which kind of application do you develop?::
     
     . The link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[secured onboarding] is necessary.
 
+
+    . link:./integration/revoke.adoc[Revoking] is required
+    
 === Protocol layer
 
 Which communication protocol and format do you want to use?::
