@@ -8,6 +8,19 @@ The required URLs can be found in link:./message-sending.adoc[message sending] a
 
 The quality assurance environment (“QA”) is used to develop and test applications in a save and uncritical eco system. Please note, that the quality assurance environment shall not be used by end customers.
 
+The number of endpoints in QA are limited to:
+[width="100%" cols="3,1" header="true"]
+|====
+|Endpoint Type| Maximum
+
+| Applications ( CUs / telemetry plattforms / Farming Software) | 200
+| Machines | 300
+| Virtual CU | 100
+| paired accounts (incomming or outgoing)| 100 
+| groups | 20 
+|====
+
+
 == Productive
 
 The productive environment is used by your end customers with tested and certified apps. This environment is very scalable and made for a huge number of users.
