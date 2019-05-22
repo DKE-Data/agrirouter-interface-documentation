@@ -39,6 +39,8 @@ The following parts are always necessary:
 The capabilities reported through the capabilities command may not include more capabilities then reported in the agrirouter UI when setting up the certification version.
 To pass the test, every listed technical message type from certification version needs to be exchanged in the reported directions. 
 =====
+
+
 * **Clean your feed**: After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
 
 === Type of application
@@ -93,6 +95,14 @@ Which communication protocol and format do you want to use?::
 * Is your application able to support push notifications?
 . It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
 . It's tested, if pushed messages are confirmed
+
+
+* If your application is capable of receiving any technical message type, it is major to link:./commands/endpoint.adoc#subscription-command[subscribe for message types]
+[REMARK]
+=====
+Subscribing is required to receive all messagetypes published to the agrirouter. This is especially required to receive message types published from a different account using the account pairing.
+=====
+
 
 === For Telemetry platforms
 If your app does perform as a telemetry platform, you need to support::
