@@ -15,7 +15,7 @@ Please also check the link:./integration-steps.adoc[advice on integration with a
 ++++
 
 
-After the first contact with the company DKE-Data and signing the App- and Hardware Provider agreement, an agrirouter developer account can be created in the link:https://agrirouter-qa.cfapps.eu1.hana.ondemand.com/um/register/developer[agrirouter quality assurance (QA) environment].
+After the first contact with the company DKE-Data and signing the App- and Hardware Provider agreement, an agrirouter developer account can be created in the link:https://my-agrirouter.com/en/registration/[agrirouter quality assurance (QA) environment].
 
 In the developer account, a new application (farming software, communication unit or telemetry platform) can be added. The app provider has to create a first Certification version in the UI, that can be approved by DKE.
 
