@@ -117,6 +117,16 @@ The agrirouter provides an MQTT Broker serverside, so, an app instance has to co
 
 agrirouter provides one MQTT Server per Endpoint, so there is no danger or chance to subscribe for messages of another endpoint
 
+==== General setup
+
+An MQTT Connection requires 2 types of Certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
+
+This is required to setup an MQTT Connection over SSL.
+
+Additionally, TLS needs to be activated and the TLS-Certificate can either be the certificate received during link:./integration/onboarding.adoc[onboarding] or from the link:./router-devices.adoc[Router Devices].
+
+
+
 ==== Communication with the Inbox
 
 Using MQTT, the app instance will publish the request and after a while, the agrirouter will publish the response. Polling is not required.
@@ -144,7 +154,10 @@ If there are messages available in the outbox, agrirouter will simply publish th
 
 [IMPORTANT]
 ====
-This only appears to command results, not to messages, that are sent to the feed by another app instance. Those messages still have to be requested through the inbox but are automatically delivered through the outbox afterwards.
+This only appears to command results, not to messages, that are sent to the feed by another app instance. 
+Those messages still have to be requested through the inbox but are automatically delivered through the outbox afterwards.
+
+**Exception**: If link:./integration/push-notification.adoc[Push Notifications] are activated, the messages are delivered without a special feed request.
 ====
 
 
