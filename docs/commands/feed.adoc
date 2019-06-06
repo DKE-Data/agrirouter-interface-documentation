@@ -57,7 +57,7 @@ To receive the Message ids of all available messages or a specific filtered list
 |==============================================================
 |Command |dke:feed_header_query
 |Protobuf Schema |agrirouter.feed.request.MessageQuery
-|TypeURL |types.agrirouter/agrirouter.feed.request.MessageQuery
+|TypeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
 |==============================================================
 
 ==== Parameters[[Parameters_For_header_List]]
@@ -90,7 +90,7 @@ The header is a list of Sender+Receiver-Touples with a sublist of message header
 |======================================================================
 |ResultCode |ACK_FOR_FEED_HEADER_LIST
 |Protobuf Schema |agrirouter.feed.response.HeaderQueryResponse
-|typeURL |types.agrirouter/agrirouter.feed.response.HeaderQueryResponse
+|typeURL |types.agrirouter.com/agrirouter.feed.response.HeaderQueryResponse
 |======================================================================
 
 The Result is a list of message headers (“envelopes”) without the message payload.
@@ -166,7 +166,7 @@ Every app Instance can request a single or a list of messages to be forwarded fr
 |==============================================================
 |Command |dke:feed_message_query
 |Protobuf Schema |agrirouter.feed.request.MessageQuery
-|typeURL |types.agrirouter/agrirouter.feed.request.MessageQuery
+|typeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
 |==============================================================
 
 See <<Parameters_For_header_List>> for parameters and Filtering.
@@ -279,7 +279,7 @@ An app instance can delete message from its feed, if it does not want to consume
 |==============================================================
 |Command |dke:feed_delete
 |Protobuf Schema |agrirouter.feed.request.MessageQuery
-|typeURL |types.agrirouter/agrirouter.feed.request.MessageQuery
+|typeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
 |==============================================================
 
 See <<Parameters_For_header_List>> for parameters and Filtering.
@@ -327,7 +327,7 @@ The old behavior, where a message was delivered over and over again with a FeedM
 |================================================================
 |Command |dke:feed_confirm
 |Protobuf Schema |agrirouter.feed.request.MessageConfirm
-|typeURL |types.agrirouter/agrirouter.feed.request.MessageConfirm
+|typeURL |types.agrirouter.com/agrirouter.feed.request.MessageConfirm
 |================================================================
 
 MessageConfirm is simply an array of message IDs.
