@@ -45,6 +45,9 @@ A glossary can be found link:./docs/glossary.adoc[here]
 
 There are several ids required for communication, a list of descriptions can be found link:./docs/ids-and-definitions.adoc[here].
 
+
+Each agrirouter account has a limited number of endpoints, see link:./docs/limitations.adoc[here].
+
 == Development Resources
 
 A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found link:./docs/development-resources.adoc[here].

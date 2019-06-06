@@ -1,0 +1,25 @@
+
+= Limitations to number of endpoints
+
+The number of endpoints in QA as well as in Productive is limited as to:
+
+[width="100%" cols="3,1" header="true"]
+|====
+|Endpoint Type| Maximum
+
+| Applications ( CUs / telemetry platforms / Farming Software) | 200
+| Machines | 300
+| Virtual CU | 100
+| paired accounts (incomming or outgoing)| 100 
+| groups | 20 
+|====
+
+This limitation is defined per agrirouter account.
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+
