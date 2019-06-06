@@ -36,9 +36,9 @@ Based on the type of your application, different tests might be required. Check 
 >s|CU (Telemetry Connections) >s|Farming Software  >s| Telemetry Platforms
  1.5+^.^|link:./integration/onboarding.adoc[Onboarding] 2.1+^|link:./integration/authorization.adoc[Authorization Process]
  2.1+^|link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
- | 1.1+^| link:./commands/cloud.adoc#onboarding[VCU onboarding]
+ | 1.1+^| link:./commands/cloud.adoc#onboardinga-a-virtual-cu[VCU onboarding]
  2.1+^|link:./integration/revoke.adoc[Revoking]
- | 1.1+^| link:./commands/cloud.adoc#offboarding[VCU offboarding]
+ | 1.1+^| link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
  3.1+^|link:./integration/reonboarding.adoc[Reonboarding]
  3.1+^|link:./commands/endpoint.adoc#capabilities-command[Sending the capabilities]
  2.1+|  | link:./commands/endpoint.adoc#capabilities-command[Send Capabilities] (link:./telemetry-platform-concepts.adoc[for each VCU])
