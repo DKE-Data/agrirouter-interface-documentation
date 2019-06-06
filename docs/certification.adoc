@@ -27,38 +27,70 @@ DKE and the agrirouter support team will release a list of certified partners, w
 == Certification tests
 Not all of the certification tests are necessary for your implementation, the selection depends on several parameters:
 
-== Always necessary
-The following parts are always necessary:
+=== Based on the application type
 
+Based on the type of your application, different tests might be required. Check link:./applications.adoc[here], which type suites your requirements best.
 
-* link:./integration/reonboarding.adoc[Reonboarding]
+[cols=",,",width="100%"]
+|============================
+>s|CU (Telemetry Connections) >s|Farming Software  >s| Telemetry Platforms
+ 1.5+^.^|link:./integration/onboarding.adoc[Onboarding] 2.1+^|link:./integration/authorization.adoc[Authorization Process]
+ 2.1+^|link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
+ | 1.1+^| link:./commands/cloud.adoc#onboarding[VCU onboarding]
+ 2.1+^|link:./integration/revoke.adoc[Revoking]
+ | 1.1+^| link:./commands/cloud.adoc#offboarding[VCU offboarding]
+ 3.1+^|link:./integration/reonboarding.adoc[Reonboarding]
+ 3.1+^|link:./commands/endpoint.adoc#capabilities-command[Sending the capabilities]
+ 2.1+|  | link:./commands/endpoint.adoc#capabilities-command[Send Capabilities] (link:./telemetry-platform-concepts.adoc[for each VCU])
+ 3.1+^|link:./certification.adoc#clean-your-feed[Clean your feed]
+ 2.1+|  | link:./certification.adoc#clean-your-feed[Clean your feed] (link:./telemetry-platform-concepts.adoc[for each VCU])
 
-* link:./commands/endpoint.adoc#capabilities-command[Sending the capabilities] 
+|============================
+
 [REMARK]
 =====
 The capabilities reported through the capabilities command may not include more capabilities then reported in the agrirouter UI when setting up the certification version.
 To pass the test, every listed technical message type from certification version needs to be exchanged in the reported directions. 
 =====
 
+==== Clean your feed
+After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
 
-* **Clean your feed**: After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
 
-=== Type of application
+=== Based on direction
+==== Sending messages
 
-Which kind of application do you develop?::
+* Is your application able to send EFDI?
+. Setting the `TeamsetContextID` and changing it, when the machine configuration changes is necessary.
 
-* Communication unit (CU)
-    . The link:./integration/onboarding.adoc[Onboarding procedure] is necessary.
+* Is your application able to send technical message types except for EFDI?
+. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to create chunks is necessary.
 
-* Telemetry platform or farming software
-    . The link:./integration/authorization.adoc[authorization process] is necessary.
+* Does your application want to publish data?::
+. Your software must link:./commands/ecosystem.adoc[request the endpoint list], so that you can make sure you don't publish data without any recipient available
+
+==== Receiving messages
+
+* Is your application able to receive technical message types except for EFDI?
+. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to merge chunks is relevant
+
+* Is your application able to support push notifications?
+. It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
+. It's tested, if pushed messages are confirmed
+
+
+* If your application is capable of receiving any technical message type, it is major to link:./commands/endpoint.adoc#subscription-command[subscribe for message types]
+[REMARK]
+=====
+Subscribing is required to receive all messagetypes published to the agrirouter. This is especially required to receive message types published from a different account using the account pairing.
+
+It is optional to en- or disable subscriptions (e.g. by providing a UI), for the certification however it has to be shown, that subscriptions are possible.
+=====
+
     
-    . The link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[secured onboarding] is necessary.
+=== Based on Protocol layer
 
-
-    . link:./integration/revoke.adoc[Revoking] is required
-    
-=== Protocol layer
+agrirouter provides 2 protocols with several possible adjustments. The tests take that in account.
 
 Which communication protocol and format do you want to use?::
 
@@ -76,40 +108,6 @@ Which communication protocol and format do you want to use?::
 ** Do you use single endpoints?
 . All tests are done using the credentials delivered while onboarding endpoints within a given account.
 
-=== Sending messages
-
-* Is your application able to send EFDI?
-. Setting the `TeamsetContextID` and changing it, when the machine configuration changes is necessary.
-
-* Is your application able to send technical message types except for EFDI?
-. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to create chunks is necessary.
-
-* Does your application want to publish data?::
-. Your software must link:./commands/ecosystem.adoc[request the endpoint list], so that you can make sure you don't publish data without any recipient available
-
-=== Receiving messages
-
-* Is your application able to receive technical message types except for EFDI?
-. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to merge chunks is relevant
-
-* Is your application able to support push notifications?
-. It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
-. It's tested, if pushed messages are confirmed
-
-
-* If your application is capable of receiving any technical message type, it is major to link:./commands/endpoint.adoc#subscription-command[subscribe for message types]
-[REMARK]
-=====
-Subscribing is required to receive all messagetypes published to the agrirouter. This is especially required to receive message types published from a different account using the account pairing.
-=====
-
-
-=== For Telemetry platforms
-If your app does perform as a telemetry platform, you need to support::
-* link:.commands/cloud.adoc[Cloud onboarding]
-* link:./commands/cloud.adoc#removing-a-virtual-cu[Cloud offboarding]
-* Sending link:./commands/endpoint.adoc#capabilities-command[capabilities message] in behalf of the VCU
-* link:./commands/feed.adoc[Reading feed] in behalf of the VCU
 
 ==== Link Section
 This page is found in every file and links to the major topics
