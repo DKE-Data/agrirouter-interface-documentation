@@ -26,7 +26,7 @@ The list of technical message types can include any TechnicalMessageFormat menti
 |=====================================================================================
 |Command |dke:capabilities
 |Protobuf Schema |agrirouter.request.payload.endpoint.CapabilitySpecification
-|TypeURL |types.agrirouter/agrirouter.request.payload.endpoint.CapabilitySpecification
+|TypeURL |types.agrirouter.com/agrirouter.request.payload.endpoint.CapabilitySpecification
 |=====================================================================================
 
 Parameters are the following elements:
@@ -103,7 +103,7 @@ If message pushing is used in your software, please make sure you use enabled me
 |=================================================================================
 |ResultCode |ACK
 |Protobuf Schema |agrirouter.response.payload.endpoint.CapabilityResponse
-|typeURL |types.agrirouter/agrirouter.response.payload.endpoint.CapabilityResponse
+|typeURL |types.agrirouter.com/agrirouter.response.payload.endpoint.CapabilityResponse
 |=================================================================================
 
 The result is a simple `ACK` or an `ACK_WITH_MESSAGES`.
@@ -167,7 +167,7 @@ link:../tmt/overview.adoc[ in the list of technical message types].
 |==========================================================================
 |Command |dke:subscription
 |Protobuf Schema |agrirouter.request.payload.endpoint.Subscription
-|TypeURL |types.agrirouter/agrirouter.request.payload.endpoint.Subscription
+|TypeURL |types.agrirouter.com/agrirouter.request.payload.endpoint.Subscription
 |==========================================================================
 
 ==== Parameters
