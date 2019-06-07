@@ -7,7 +7,7 @@ The number of endpoints in QA as well as in Productive is limited as to:
 |====
 |Endpoint Type| Maximum
 
-| Applications ( CUs / telemetry platforms / Farming Software) | 200
+| Applications ( CUs / telemetry platforms / Farming Software) | 300
 | Machines | 300
 | Virtual CU | 100
 | paired accounts (incomming or outgoing)| 100 
