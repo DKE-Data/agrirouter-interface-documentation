@@ -1,0 +1,31 @@
+
+= Limitations to number of endpoints
+
+The number of endpoints in agrirouter is limited as to:
+
+[width="100%" cols="3,1" header="true"]
+|====
+|Endpoint Type| Maximum
+
+| Applications ( CUs / telemetry platforms / Farming Software) | 300
+| Machines | 300
+| Virtual CU | 100
+| paired accounts (incomming or outgoing)| 100 
+| groups | 20 
+|====
+
+This limitation is defined per agrirouter account.
+
+= Endpoint inactivity:
+
+Accounts with endpoints older than 1 year, without activity will receive a notification via E-Mail about the upcomming automatic offboarding.
+
+Endpoints older than 18 months will be automaticly offboarded, the account will receive a E-Mail about it.
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+
