@@ -1,7 +1,7 @@
 
 = Limitations to number of endpoints
 
-The number of endpoints in QA as well as in Productive is limited as to:
+The number of endpoints in agrirouter is limited as to:
 
 [width="100%" cols="3,1" header="true"]
 |====
