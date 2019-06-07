@@ -16,6 +16,11 @@ The number of endpoints in agrirouter is limited as to:
 
 This limitation is defined per agrirouter account.
 
+Endpoint inactivity: 
+Accounts with endpoints older than 1 year, without activity will receive a notification via E-Mail about the upcomming automatic offboarding.
+
+Endpoints older than 18 months will be automaticly offboarded, the account will receive a E-Mail about it.
+
 ==== Link Section
 This page is found in every file and links to the major topics
 [width="100%"]
