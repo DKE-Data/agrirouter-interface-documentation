@@ -23,7 +23,7 @@ This documentation is an open source project. We invite everybody to open issues
 In general, there are 3 major topics to add your software or hardware to the agrirouter ecosystem.
 
 
-[.top,cols="2a,3a,3a,3a"]
+[cols="<.<2a,<.<3a,<.<3a,<.<3a"]
 |===
 |<<The legal side>>
 |<<Marketing>>
