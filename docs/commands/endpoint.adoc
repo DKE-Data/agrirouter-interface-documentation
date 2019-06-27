@@ -201,7 +201,7 @@ The DDIs field is only required, if the subscription is used for a subscription 
 
 In case of success, an Acknowledgement is received.
 
-In case of failure, an Acknowledgement with Message or an Acknowledgement with Failure is received. In both cases, the protobuf format will be agrirouter.commons.messages. See 15.8.1 Messages.
+In case of failure, an Acknowledgement with Message or an Acknowledgement with Failure is received. In both cases, the protobuf format will be agrirouter.commons.messages.
 
 === Errors
 
