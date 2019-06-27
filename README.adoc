@@ -150,6 +150,9 @@ Messages from other endpoints are put into the outbox by link:./docs/integration
 
 Depending on the  link:./docs/integration/analyze-result.adoc#ResponseType[resultType], the Result can be link:./docs/integration/analyze-result.adoc[analyzed].
 
+== Testing the application
+Before publishing the app for everyone, it should be tested. Therefore, you can link:./docs/invite-testers.adoc[invite beta testers] from your developers account.
+
 == Certification
 
 Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./docs/certification.adoc[here].
