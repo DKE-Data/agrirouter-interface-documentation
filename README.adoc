@@ -25,17 +25,13 @@ In general, there are 3 major topics to add your software or hardware to the agr
 
 [cols="<.<2a,<.<3a,<.<3a,<.<3a"]
 |===
-|<<The legal side>>
-|<<Marketing>>
-|<<Development>>
-
-|||
-* <<Basics>>
+|<<The legal side>> |<<Marketing>> |<<Development>> |<<Maintenance>>
+| | |* <<Basics>>
 * <<Development Resources>>
 * <<Integration>>
 * <<Certification>>
-* <<Service & Support>>
-| <<Maintenance>>
+* <<Service & Support>>|
+
 
 |===
 
