@@ -5,7 +5,7 @@ This chapter shall describe a possible way of handling the integration with the 
 1.  *Get basic knowledge:* First, read the basic concepts of agrirouter architecture and link:./ecosystem.adoc[ecosystem]; described in this documentation.
 2.  *Decide, what you want to implement:*
 a.  *Read* the several non-agrirouter-relevant technical message types (e.g. TaskData, Images, Telemetry) as a general overview of possible capabilities.
-b.  *Decide, which messages are relevant* for you and which information you could consume or provide. This way, you could e.g. forward the requirement for a TaskController Integration or a Camera attachment possibility at a CU to the relevant departments and it’.s more common that it will be there in time.
+b.  *Decide, which messages are relevant* for you and which information you could consume or provide. This way, you could e.g. forward the requirement for a TaskController Integration or a Camera attachment possibility at a CU to the relevant departments and it’s more common that it will be there in time.
 c.  *Synchronize your plans:* Dependend on your role in the company make sure, management, marketing, sales and developers have the same idea of the upcoming product
 3.  *Decide, how to implement:* Once you made these decisions, let’s not care about the messages for a while and work out a possible architecture:
 a.  *Read* about the onion principle of communication and the command flow.
@@ -20,7 +20,9 @@ a.  *PreCreate market place entry:* Even though your app is not yet tested, prep
 b.  *Check the markedplace entry:* Should be done by a developer: Read the marked place entry and make sure, you support all the described functionality as described in the marked place entry and in the integration guide or linked documents.
 7.  *Test your app:* agrirouter provides the possibility to select test users for a not yet certified app. Select some customers or your internal staff to check, if your app runs smooth with agrirouter and with common other endpoints. For a farming software, a corresponding Communication Unit could be such an endpoint
 8.  *Certify your app:* Select your desired test institute and let your app be certified for public release.
-9.  *Release to public:* Activate your market place entry and let people know, that your app is up and running.
+9. *Deploy productive app:* Setup your application in the productive environment and adjust all settings relevant to contact the productive environment.
+10. *Test productive:* Using a test account make sure, that your application works on the productive environment as supposed
+11.  *Release to public:* Remove the "coming soon" batch from your market place entry and let people know, that your app is up and running.
 
 
 

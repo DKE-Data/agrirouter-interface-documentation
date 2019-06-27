@@ -1,7 +1,7 @@
 
 = General Integration process
 
-To maximize the quality of the agrirouter ecosystem, there are several requirements additional to the general development of the application itself. This chapter shall describe all necessary steps additional to the development of the application to integrate this app with the agrirouter.
+To maximize the quality of the agrirouter ecosystem, there are several requirements development of applications. This chapter shall describe all necessary steps for the development of the application to integrate this app with the agrirouter.
 
 Please also check the link:./integration-steps.adoc[advice on integration with agrirouter].
 
@@ -9,25 +9,22 @@ Please also check the link:./integration-steps.adoc[advice on integration with a
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image4.png" width="642px" height="254px"><br>
+<img src="./../assets/images/general/process_development.png" width="642px" height="254px"><br>
 <i>General agrirouter integration process</i>
 </p>
 ++++
 
-
-After the first contact with the company DKE-Data and signing the App- and Hardware Provider agreement, an agrirouter developer account can be created in the link:https://my-agrirouter.com/en/registration/[agrirouter quality assurance (QA) environment].
-
-In the developer account, a new application (farming software, communication unit or telemetry platform) can be added. The app provider has to create a first Certification version in the UI, that can be approved by DKE.
+In the developer account, a new application (farming software, communication unit or telemetry platform) can be added. The app provider has to create a first Certification version in the UI, that can be approved by the agrirouter support team.
 
 Afterwards, it is possible to register and onboard app instances of this app as well as any other app. It is important to know, that the quality assurance environment is not made for real life productive data exchange, but only for test of the connectivity of a software. The number of endpoints, that can be created on the quality assurance environment is limited.
 
 Once the connectivity to agrirouter is successfully developed and tested, the developer sends a request to agrirouter support team for starting a certification process.
 
-DKE will provide a list of trusted partners for agrirouter certification on the https://my-agrirouter.com/support/ website.
+A list of trusted partners for agrirouter certification can be found link:https://my-agrirouter.com/en/support/certification/[here]
 
 If the agrirouter certification of the application is successful, it is recommended to do live test on the agrirouter production environment with real accounts of selected farmers. The developer can add those accounts to his test environment in the developers’ user interface.
 
-To release the new application to public, the app provider can create an application description in the agrirouter marketplace. See https://my-agrirouter.com/marketplace/apps/
+After release of the software, the registered application instances can be link:./docs/application-endpoint-management.adoc[maintained], e.g. based on the link:./docs/usage-metrix.adoc[usage metrics]
 
 
 

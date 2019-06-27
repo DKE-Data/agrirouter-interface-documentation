@@ -293,7 +293,7 @@ For further information, see link:./integration/push-notification.adoc[ the chap
 
 == Terms
 
-A command-process consists of a call (1.1) to the inbox. This call consists of the request and a processing status response. Agrirouter will return a result through the outbox. If a message list was delivered from the feed, the messages have to be confirmed.
+A command-process consists of a call (1.1) to the inbox. This call consists of the request and a processing status response. agrirouter will return a result through the outbox. If a message list was delivered from the feed, the messages have to be confirmed.
 
 
 

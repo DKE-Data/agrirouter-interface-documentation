@@ -1,41 +1,103 @@
-= agrirouter-interface-documentation
 :imagesdir: assets/images
-:toc:
-:toc-title:
-:toc-levels: 4
-
-[abstract]
-== Abstract
 ++++
 <p align="center">
  <img src="./assets/images/agrirouter.svg">
 </p>
 ++++
 
-The agrirouter is a universal data exchange platform for farmers and agricultural contractors that makes it possible to connect machinery and agricultural software, regardless of vendor or manufacturer. Agrirouter does not save data; it transfers data. As a universal data exchange platform, agrirouter fills a gap on the way to Farming 4.0. Its underlying concept unites cross-vendor and discrimination-free data transfer. You retain full control over your data. Even data exchange with service providers (e.g. agricultural contractors) and other partners is uncomplicated: Data are very rapidly transferred via the online connection, and if you wish, is intelligently connected to other datasets.
+=== What is the agrirouter?
+More information on agrirouter can be found link:./docs/general.adoc[here]
 
-=== The current project you're looking at
+=== Purpose of this documentation
+
+The purpose of this documentation is to create deep knowledge about the third party integration into the agrirouter solution. It shall include all information necessary to develop an integration with the agrirouter interface in an application.
 
 This repository includes the documentation of the interface for the agrirouter solution.
 Its main purpose is to allow developers to onboard their applications to the agrirouter.
 
-== Purpose of this documentation
-
-The purpose of this documentation is to create deep knowledge about the third party integration into the agrirouter solution. It shall include all information necessary to develop an integration with the agrirouter interface in an application.
-
-== Call for Participation
+=== Call for Participation
 
 This documentation is an open source project. We invite everybody to open issues, fork the documentation or create pull requests to fix or extend this documentation.
 
-
-= Documentation
-
-== Registration
-
-To start the development, you will need to link:./docs/registration.adoc[create an account].
+= Adding your solution to agrirouter
+In general, there are 3 major topics to add your software or hardware to the agrirouter ecosystem.
 
 
-== Terms and short descriptions
+[cols="2a,3a,3a,3a"]
+|===
+|<<The legal side>>
+|<<Marketing>>
+|<<Development>>
+
+* <<Basics>>
+* <<Development Resources>>
+* <<Integration>>
+* <<Certification>>
+* <<Service & Support>>
+| <<Maintenance>>
+
+|===
+
+[NOTE]
+====
+The steps 1, 2 and 3 can be started in parallel, which means that your marketing department could setup the marketplace entry, while your developers are implementing the agrirouter API and your legal department handles the app provider agreement.
+====
+
+= The legal side
+++++
+<p align="center">
+ <img src="./assets/images/general/process_firstcontact.png"><br>
+</p>
+++++
+For legal reasons, it is required that every app provider signs the app provider agreement. 
+You can get this document by contacting the DKE staff by selecting a contact from link:https://my-agrirouter.com/en/company/contact/[the contacts page].
+
+[NOTE]
+====
+These contacts are only relevant for the business side, for development support, please refer to the link:./docs/service-support.adoc[Service&Support]
+====
+
+= Marketing
+== Marketplace
+
+The market place for link:https://my-agrirouter.com/en/marketplace/apps/[Apps] or  link:https://my-agrirouter.com/en/marketplace/telemetryconnection/[Hardware] lists all compatible components of the agrirouter ecosystem.
+At this place, you can list your solution.
+Learn more about the setup of your marketplace entry link:./docs/marketplace.adoc[here].
+
+
+= Development
+== General process of integration
+++++
+<p align="center">
+ <img src="./assets/images/general/process_development.png"><br>
+</p>
+++++
+
+== Basics
+=== Concepts and Ecosystem
+To integrate your software solution with agrirouter, you should first understand how the link:./docs/ecosystem.adoc[ecosystem] of agrirouter works. 
+++++
+<p align="center">
+ <img src="./assets/images/ig1\image10.png" width="642px" height="321px"><br>
+ <i>The agrirouter ecosystem of members</i>
+</p>
+++++
+
+In general, the communication consists of 3 steps:
+++++
+<p align="center">
+ <img src="./assets/images/general/general_process.png" width="70%"><br>
+ <i>The agrirouter ecosystem of members</i>
+</p>
+++++
+
+
+
+For further communication, it's important to understand the link:./docs/endpoint.adoc[Elements of an endpoint] and the link:./docs/communication.adoc[Basics of Communication].
+
+When developing a telemetry platform, the link:./docs/telemetry-platform-concepts.adoc[concepts of a telemetry platform] should be understood.
+
+=== Terms and short descriptions
 
 A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
 
@@ -45,37 +107,19 @@ A glossary can be found link:./docs/glossary.adoc[here]
 
 There are several ids required for communication, a list of descriptions can be found link:./docs/ids-and-definitions.adoc[here].
 
+== Registration
+To start the development, you will need to link:./docs/registration.adoc[create a developer account].
+
+== Application management
+
+For communication with agrirouter, you need to setup an link:./docs/applications.adoc[application].
+
 == Development Resources
 
 A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found link:./docs/development-resources.adoc[here].
 
 The keys and certificates required for communication can be found link:./docs/keys.adoc[here].
 
-== Certification
-
-Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./docs/certification.adoc[here].
-
-== Marketplace
-
-Once, your app is certified, it can be displayed at the marketplace. Learn more about that link:./docs/marketplace.adoc[here].
-
-== Application and Endpoint management
-
-For communication with agrirouter, you need to setup an link:./docs/applications.adoc[application].
-
-
-Learn, how to manage your applications endpoints link:./docs/application-endpoint-management.adoc[here].
-
-== Service & Support
-
-For feature- or bug reports, you can contact the support. See link:./docs/service-support.adoc[here]
-
-In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://my-agrirouter.com/support/system-status[Status Page].
-
-[Important]
-====
-This status page shows the availability of the productive environment!
-====
 
 == Integration
 
@@ -89,18 +133,12 @@ First, you should always keep in mind the link:./docs/integration/general-conven
 There are several environments for test and production in different areas of the world. They can be found in the link:./docs/integration/environments.adoc[Environments].
 
 === Connecting your app instance
-FarmingSoftware and Telemetry Platforms have to perform an link:./docs/integration/authorization.adoc[Authorization Process] to clarify, that the account user is known. CUs may also perform it, but that is not required.
+FarmingSoftware and Telemetry Platforms have to perform an link:./docs/integration/authorization.adoc[Authorization Process] to clarify, that the account user is known.
 
 To communicate with the agrirouter, an application Instance needs to be link:./docs/integration/onboarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all application instance of a specific customer can be link:docs/integration/revoke.adoc[Revoked].
 
-=== Some information on the concepts
 
-For further communication, it's important to understand the link:./docs/endpoint.adoc[Elements of an endpoint] and the link:./docs/communication.adoc[Basics of Communication].
-
-When developing a telemetry platform, the link:./docs/telemetry-platform-concepts.adoc[concepts of a telemetry platform] should be understood.
-
-=== Communicate with agrirouter
-
+=== Communicate with agrirouter endpoints
 
 To send a message, it has to be built first. Read link:./docs/integration/build-message.adoc[here] about building messages and commands.
 
@@ -115,16 +153,40 @@ Messages from other endpoints are put into the outbox by link:./docs/integration
 
 Depending on the  link:./docs/integration/analyze-result.adoc#ResponseType[resultType], the Result can be link:./docs/integration/analyze-result.adoc[analyzed].
 
+== Certification
+
+Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./docs/certification.adoc[here].
+
+
+== Maintenance
 
 === Usage metrix
 
 As an application provider, you can download link:./docs/usage-metrix.adoc[usage metrics] to check, which account consumed how much data.
 
+
+=== Endpoint management
+
+Learn, how to manage your applications endpoints link:./docs/application-endpoint-management.adoc[here].
+
+
 === Behaviour after SoftwareUpdate
+
 Read here, how to handle link:./docs/update.adoc[new versions and updates].
 
 
-==== Link Section
+=== Service & Support
+
+For feature requests or bug reports, you can link:./docs/service-support.adoc[contact the support.]
+
+In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://my-agrirouter.com/support/system-status[Status Page].
+
+[Important]
+====
+This status page shows the availability of the productive environment!
+====
+
+== Link Section
 This page is found in every file and links to the major topics
 [width="100%"]
 |====

@@ -24,7 +24,7 @@ After creating your account, please also send an email to support@my-agrirouter.
 
 [IMPORTANT]
 ====
-You hould only create one developer account per app provider. So, if your company has multiple developers, 1 developer should handle the developer account; the other developers can use end user accounts to test and develop the application.
+You should only create one developer account per app provider. So, if your company has multiple developers, 1 developer should handle the developer account; the other developers can use end user accounts to test and develop the application.
 ====
 
 [IMPORTANT]

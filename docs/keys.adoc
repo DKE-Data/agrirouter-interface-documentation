@@ -16,7 +16,7 @@ Within this document, there are several public or private keys mentioned, that a
 |Endpoint Certificate |The certificate of an endpoint, used for the encrypted communication with the agrirouter |Standard communication in REST or MQTT; “Everything after onboarding”
 |=====================================================================================================================================================================================
 
-== Agrirouter public keys
+== agrirouter public keys
 
 These are the public keys used by the agrirouter. These are required for example to verify redirect messages from agrirouter in the link:./integration/authorization.adoc[authorization process].
 

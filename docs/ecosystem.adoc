@@ -5,8 +5,6 @@
 :toclevels: 4
 
 
-NOTE: This chapter is not yet fully implemented
-
 
 The agrirouter is a central data exchange platform, but to understand its full power, it’s important to understand, that the data provided from the agrirouter comes from the applications attached to the agrirouter. The following figure lists different Applications, that can be attached to one end user account.
 
