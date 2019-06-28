@@ -54,7 +54,7 @@ You can get this document by contacting the DKE staff contacting Dr. Ing Jens MÃ
 These contacts are only relevant for the business side, for development support, please refer to the link:./docs/service-support.adoc[Service&Support]
 ====
 
-= Marketplace
+= MarketPlace
 
 The market place for link:https://my-agrirouter.com/en/marketplace/apps/[Apps] or  link:https://my-agrirouter.com/en/marketplace/telemetryconnection/[Hardware] lists all compatible components of the agrirouter ecosystem.
 At this place, you can list your solution.
