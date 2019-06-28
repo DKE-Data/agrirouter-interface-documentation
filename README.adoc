@@ -25,12 +25,12 @@ In general, there are 3 major topics to add your software or hardware to the agr
 
 [cols="<.<2a,<.<3a,<.<3a,<.<3a"]
 |===
-|<<The legal side>> |<<Marketing>> |<<Development>> |<<Maintenance>>
+|<<Provider agreement>> |<<MarketPlace>> |<<Interface Integration>> |<<Maintenance>>
 | | |* <<Basics>>
 * <<Development Resources>>
 * <<Integration>>
 * <<Certification>>
-* <<Service & Support>>|
+| * <<Service & Support>>|
 
 
 |===
@@ -40,29 +40,28 @@ In general, there are 3 major topics to add your software or hardware to the agr
 The steps 1, 2 and 3 can be started in parallel, which means that your marketing department could setup the marketplace entry, while your developers are implementing the agrirouter API and your legal department handles the app provider agreement.
 ====
 
-= The legal side
+= Provider agreement
 ++++
 <p align="center">
  <img src="./assets/images/general/process_firstcontact.png"><br>
 </p>
 ++++
 For legal reasons, it is required that every app provider signs the app provider agreement. 
-You can get this document by contacting the DKE staff by selecting a contact from link:https://my-agrirouter.com/en/company/contact/[the contacts page].
+You can get this document by contacting the DKE staff contacting Dr. Ing Jens Möller, see link:https://my-agrirouter.com/en/company/contact/[the contacts page].
 
 [NOTE]
 ====
 These contacts are only relevant for the business side, for development support, please refer to the link:./docs/service-support.adoc[Service&Support]
 ====
 
-= Marketing
-== Marketplace
+= Marketplace
 
 The market place for link:https://my-agrirouter.com/en/marketplace/apps/[Apps] or  link:https://my-agrirouter.com/en/marketplace/telemetryconnection/[Hardware] lists all compatible components of the agrirouter ecosystem.
 At this place, you can list your solution.
 Learn more about the setup of your marketplace entry link:./docs/marketplace.adoc[here].
 
 
-= Development
+= Interface Integration
 == General process of integration
 ++++
 <p align="center">
