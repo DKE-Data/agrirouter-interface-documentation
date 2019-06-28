@@ -31,9 +31,14 @@ Parallel to the certification process, application or hardware provider can crea
 To setup the entry in the marketplace, app providers can create an account at https://my-agrirouter.com/en/interner-bereich/my-agrirouter/registration/.
 If your app is not directly certified, select the "coming soon" label to mark, that it is not yet available for end customers.
 
-After certification process is finalized, the app provider may remove the "coming soon". In general, the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner bereich/my agrirouter/choose maintance/[here]. Changes are reviewed before activation to make avoid changes without certification.
+After certification process is finalized, the app provider may remove the "coming soon". In general, the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my agrirouter/choose maintance/[here]. Changes are reviewed before activation to make avoid changes without certification.
 
 Some examples of DKE partners are available at https://my-agrirouter.com/en/marketplace/apps/ .
+
+[IMPORTANT]
+====
+After initial setup and after every change, the entry has to be approved by the agrirouter support team.
+====
 
 The following content is required from *application provider*:
 
