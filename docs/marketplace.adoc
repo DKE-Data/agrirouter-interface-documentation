@@ -4,15 +4,6 @@
 :toc-title:
 :toclevels: 4
 
-== General process
-++++
-<p align="center">
- <img src="./../assets/images/general/process_marketplace.png"><br>
-</p>
-++++
-
-This process can be performed in parallel to the link:./general-integration-process.adoc[integration process].
-
 == What is the agrirouter MarketPlace?
 
 At https://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the application or hardware provider to present their own apps, functions, modules or hardware solutions.
@@ -26,23 +17,44 @@ Parallel to the certification process, application or hardware provider can crea
 </p>
 ++++
 
-== Setup
+Some examples of DKE partners are available at https://my-agrirouter.com/en/marketplace/apps/ .
+
+== General process
+++++
+<p align="center">
+ <img src="./../assets/images/general/process_marketplace.png"><br>
+</p>
+++++
+
+This process can be performed in parallel to the link:./general-integration-process.adoc[integration process].
+
+
+== Create Marketplace account
 
 To setup the entry in the marketplace, app providers can create an account at https://my-agrirouter.com/en/interner-bereich/my-agrirouter/registration/.
-If your app is not directly certified, select the "coming soon" label to mark, that it is not yet available for end customers.
 
-After certification process is finalized, the app provider may remove the "coming soon". In general, the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my agrirouter/choose maintance/[here]. Changes are reviewed before activation to make avoid changes without certification.
+== Create Solution in the Marketplace
 
-Some examples of DKE partners are available at https://my-agrirouter.com/en/marketplace/apps/ .
 
 [IMPORTANT]
 ====
 After initial setup and after every change, the entry has to be approved by the agrirouter support team.
 ====
 
-The following content is required from *application provider*:
 
-[cols=",,,",options="header",]
+== Select "coming soon" label
+
+If your app is not directly certified, select the "coming soon" label to mark, that it is not yet available for end customers.
+
+After certification process is finalized, the app provider may remove the "coming soon". In general, the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my agrirouter/choose maintance/[here]. Changes are reviewed before activation to make avoid changes without certification.
+
+
+The following content is required from *application provider* (FarmingSoftware or Telemetry Software):
+
+.Click to open table
+[%collapsible]
+====
+[cols="1,4,1,4",options="header",]
 |=======================================================================================
 |# |Description |Quantity |Remarks
 |1 |App / Module Name |1 |-
@@ -105,10 +117,14 @@ Select box:
 |19 |App Screenshots |3 < n < 6 |Max. 1400 width pixel Resolution in .jpg or .png
 |20 |App Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
 |=======================================================================================
+====
 
 The following content is required from *hardware provider*:
 
-[cols="1,4,4,4",options="header",]
+.Click to open Table
+[%collapsible]
+====
+[cols="1,4,1,4",options="header",]
 |===============================================================================================================
 |# |Description |Quantity |Remarks
 |1 |Hardware Name |1 |-
@@ -209,7 +225,7 @@ Select box:
 |28 |Product Photos / Screenshots |1 < n < 6 |Max. 1400 width pixel Resolution in .jpg or .png
 |29 |Hardware-Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
 |===============================================================================================================
-
+====
 
 ==== Link Section
 This page is found in every file and links to the major topics
