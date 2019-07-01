@@ -21,7 +21,7 @@ Parallel to the certification process, application or hardware provider can crea
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image47.png" width="642px" height="470px"><br>
+ <img src="./../assets/images/ig1\image47.png" width="633px" height="307px"><br>
  <i>my-agrirouter.com Marketplace</i>
 </p>
 ++++
