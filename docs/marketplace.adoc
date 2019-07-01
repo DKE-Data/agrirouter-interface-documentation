@@ -39,14 +39,11 @@ To setup the entry in the marketplace, app providers can create an account at ht
 [IMPORTANT]
 ====
 After initial setup and after every change, the entry has to be approved by the agrirouter support team.
+
+The app provider is responsible for keeping his entry up to date.
 ====
 
-
-== Select "coming soon" label
-
-If your app is not directly certified, select the "coming soon" label to mark, that it is not yet available for end customers.
-
-After certification process is finalized, the app provider may remove the "coming soon". In general, the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my agrirouter/choose maintance/[here]. Changes are reviewed before activation to make avoid changes without certification.
+In general, the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my-agrirouter/choose-maintance/[here]. Changes are reviewed before activation to avoid changes without certification.
 
 
 The following content is required from *application provider* (FarmingSoftware or Telemetry Software):
@@ -119,9 +116,9 @@ Select box:
 |=======================================================================================
 ====
 
-The following content is required from *hardware provider*:
+The following content is required from *hardware provider* (Communication Units (CUs) or Telemetry Platforms):
 
-.Click to open Table
+.Click to open table
 [%collapsible]
 ====
 [cols="1,4,1,4",options="header",]
@@ -226,6 +223,16 @@ Select box:
 |29 |Hardware-Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
 |===============================================================================================================
 ====
+
+== Select "coming soon" label
+
+If your app is not directly certified, select the "coming soon" label to mark, that it is not yet available for end customers.
+
+After certification process is finalized, the app provider may remove the "coming soon". 
+
+== Approve from support team
+
+Whenever you change your marketplace entry, the agrirouter support team will review your changes before they become visible in the public marketplace entry. This is done to avoid changes in the capabilities of your software without recertification. This check only applies the capabilities and the communication interface with agrirouter, not the overall functions of your software/hardware.
 
 ==== Link Section
 This page is found in every file and links to the major topics
