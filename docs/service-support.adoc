@@ -57,11 +57,7 @@ Please provide the following information to report issues with the graphical use
 * if issue occurs on a mobile device, on which device this happens (e. g. iPhone 7, iPad Mini, Galaxy S7 etc.)
 * a screenshot of the issue
 
-== Workshops and Trainings
 
-DKE and other companies might offer trainings or workshops for onboarding and development of software for the agrirouter. To see a list of these workshops and trainings, see https://www.dke-data.com/category/news/. 
-
-If there are no offers available and you feel like you might need one, don’t hesitate to send a request for training to info@dke-data.com.
 
 == Feature Requests
 

@@ -1,0 +1,71 @@
+= Basic Concepts of agrirouter
+:imagesdir: ./../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+=== Concepts and Ecosystem
+This page shall give you a short overview of the hierachies, concepts and technical connections important to know about agrirouter. For further information jump into the linked topics pages.
+
+To integrate your software solution with agrirouter, you should first understand how the link:./ecosystem.adoc[ecosystem] of agrirouter works. 
+++++
+<p align="center">
+ <img src="./../assets/images/ig1\image10.png" width="642px" height="321px"><br>
+ <i>The agrirouter ecosystem of members</i>
+</p>
+++++
+
+
+There are different types of communication partners, which are called app instances:
+++++
+<p align="center">
+ <img src="./../assets/images/ig1/image11.png" width="70%"><br>
+ <i>The different types of app instances: CU, Application, Virtual CU, Machine, Account</i>
+</p>
+++++
+
+
+In general, the communication consists of 3 steps:
+++++
+<p align="center">
+ <img src="./../assets/images/general/general_process.png" width="70%"><br>
+ <i>The 3 steps of communication: Onboarding, Communication, Revoking</i>
+</p>
+++++
+
+For communication, it's important to understand the link:./endpoint.adoc[Elements of an endpoint] and the link:./communication.adoc[Basics of Communication].
+
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image26.png" width="70%"><br>
+ <i>The elements of an endpoint: Communicate with Inbox and Outbox, Handle Feed and Subscriptions and send Messages through the routings to other endpoints</i>
+</p>
+++++
+
+
+When developing a telemetry platform, the link:./telemetry-platform-concepts.adoc[concepts of a telemetry platform] should be understood.
+++++
+<p align="center">
+<img src="./../assets/images/ig2\telemetryconcept.png" width="619px" height="366px"><br>
+<i>Endpoints of a Telemetry Platform</i>
+</p>
+++++
+
+== Terms and short descriptions
+
+A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
+
+A list of shortings can be found link:./docs/shortings.adoc[here]
+
+A glossary can be found link:./docs/glossary.adoc[here]
+
+There are several ids required for communication, a list of descriptions can be found link:./docs/ids-and-definitions.adoc[here].
+
+
+= Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
+
