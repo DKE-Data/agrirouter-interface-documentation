@@ -232,7 +232,7 @@ After certification process is finalized, the app provider may remove the "comin
 
 == Approve from support team
 
-Whenever you change your marketplace entry, the agrirouter support team will review your changes before they become visible in the public marketplace entry. This is done to avoid changes in the capabilities of your software without recertification. This check only applies the capabilities and the communication interface with agrirouter, not the overall functions of your software/hardware.
+Whenever you change your marketplace entry, the agrirouter support team will review your changes before they become visible in the public marketplace entry. This is done to avoid changes in the capabilities of your software without recertification. This check only applies to the capabilities and the communication interface with agrirouter, not the overall functions of your software/hardware.
 
 ==== Link Section
 This page is found in every file and links to the major topics
