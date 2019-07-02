@@ -30,7 +30,7 @@ In general, there are 4 major topics to add your software or hardware to the agr
 
 Steps 1, 2 and 3 can be started in parallel
 
-* link:./docs/provider-agreement.adoc[1. Provider Agreement] 
+* link:./docs/provider-agreement.adoc[1. Provider Agreement]
 * link:./docs/marketplace.adoc[2. Marketplace]
 
 
@@ -57,7 +57,7 @@ For advanced developers, here is a list of quick links for the most common topic
 * link:./docs/commands/overview.adoc[List of Commands for the agrirouter interface]
 * link:./docs/keys.adoc[The agrirouter keys]
 * link:./docs/error-codes.adoc[Error Codes]
-* link:./docs/environments.adoc[Environments]
+* link:./docs/integration/environments.adoc[Environments]
 * link:./docs/urls.adoc[Relevant URLs]
 
 === Tools & Support

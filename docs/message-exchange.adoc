@@ -39,7 +39,7 @@ The following graph shows the way of a message through the agrirouter:
 
 Every endpoint can send messages to specific endpoints and/or publish them.
 
-Every end user can provide routings to allow this message delivery. Per default, no routings are set and therefore, the delivery is disallowed. This can be changed easily by the end user. See the link:https://lb.my-agrirouter.com[Learning box] for further details. 
+Every end user can provide routings to allow this message delivery. Per default, no routings are set and therefore, the delivery is disallowed. This can be changed easily by the end user. See the link:https://lb.my-agrirouter.com[Learning box] for further details.
 
 If messages are sent published, they are only delivered to those allowed endpoints that subscribed for this message type. If messages are sent directly and recipients are mentioned in the address lists, they are delivered, if the endpoint supports this message type and if there is a routing allowing the delivery.
 
@@ -57,8 +57,8 @@ Messages can be directly addressed to one or more endpoints. They can also be pu
 === Sending messages to machines
 As a machine has its own endpoint in the agrirouter account, it is possible to address messages to a machine.
 
-To deliver messages, that are addressed to a machine, agrirouter needs to know, which application instance (CU or Virtual CU) currently is connected to that machine. Therefore, delivery of messages to a machine can only work, if the connected CU or Virtual CU properly reports its teamset including the EFDI Device Description. 
-The command to define a teamset can be found link:../tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[here].
+To deliver messages, that are addressed to a machine, agrirouter needs to know, which application instance (CU or Virtual CU) currently is connected to that machine. Therefore, delivery of messages to a machine can only work, if the connected CU or Virtual CU properly reports its teamset including the EFDI Device Description.
+The command to define a teamset can be found link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[here].
 
 Currently, this is an optional feature of Virtual CU or CUs and not required for a certification.
 
@@ -211,7 +211,7 @@ A message, that is addressed to this endpoint will be published in the connected
 
 [NOTE]
 ====
-By default, connected accounts do not forward subscriptions. This means: If App Instance 1 in Account A publishes a message of TMT2 and App Instance 4 in Account B is subscribed for that, the message will **not** be delivered, even though the accounts are connected. However, there is a setting in the account connection to forward those subscriptions, see 
+By default, connected accounts do not forward subscriptions. This means: If App Instance 1 in Account A publishes a message of TMT2 and App Instance 4 in Account B is subscribed for that, the message will **not** be delivered, even though the accounts are connected. However, there is a setting in the account connection to forward those subscriptions, see
 
 ====
 
@@ -241,7 +241,7 @@ A routing consists of:
 
 ====
 
-1. EP 1 sends 2 messages, each addressed to EP2 and EP3. 
+1. EP 1 sends 2 messages, each addressed to EP2 and EP3.
 2. While both messages of TMT1 reach the destination, because there is a routing given in agrirouter, Only the TMT2 message for EP2 arrives at its destination, because there is no routing given between EP1 and EP3 for TMT2.
 
 ====
@@ -284,4 +284,3 @@ This page is found in every file and links to the major topics
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
-

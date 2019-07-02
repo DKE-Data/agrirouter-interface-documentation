@@ -11,7 +11,7 @@ Before starting with the integration, it's important to understand the link:./ba
 * link:./ecosystem.adoc[Ecosystem]
 * link:./endpoint.adoc[Elements of an endpoint]
 * link:./message-exchange.adoc[Concepts of Message Exchange]
-* link:./communication.adoc[Concepts of communication] 
+* link:./communication.adoc[Concepts of communication]
 * link:./messaging-workflow.adoc[Messaging Workflows]
 * link:./telemetry-platform-concepts.adoc[Concepts for Telemetry Platforms integration]
 
@@ -61,7 +61,7 @@ First, you should always keep in mind the link:./integration/general-conventions
 
 There are several environments for test and production in different areas of the world. They can be found in the link:./integration/environments.adoc[Environments].
 
-Even though certification is part of the integration process for the productive environment, you should contact the link:./certification.adoc#certificationInstitutes[relevant certification institut] once you have an overview of what you want to build, to check, which technical requirements for the certifications are important to concern in the development.
+Even though certification is part of the integration process for the productive environment, you should contact the link:./certification.adoc[relevant certification institut] once you have an overview of what you want to build, to check, which technical requirements for the certifications are important to concern in the development.
 
 === Connecting your app instance
 FarmingSoftware and Telemetry Platforms have to perform an link:./integration/authorization.adoc[Authorization Process] to clarify, that the account user is known.
@@ -79,7 +79,7 @@ While link:./tmt/overview.adoc[messages] are meant to be forwarded to other endp
 
 Command results and messages from other endpoints will be link:./integration/message-receiving.adoc[received through the outbox] by the receiving application instance.
 
-Messages from other endpoints are put into the outbox by link:./integration/push-notification.adoc[push notifications] as well as by link:./commands/feed[requesting the feed content].
+Messages from other endpoints are put into the outbox by link:./integration/push-notification.adoc[push notifications] as well as by link:./commands/feed.adoc[requesting the feed content].
 
 
 Depending on the  link:./integration/analyze-result.adoc#ResponseType[resultType], the result can be link:./integration/analyze-result.adoc[analyzed].

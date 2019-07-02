@@ -74,7 +74,7 @@ This is the certification version ID received when creating the application vers
 
 ==== enable_push_notifications
 
-This setting activates or deactivates link:../push-notifications.adoc[push notifications].
+This setting activates or deactivates link:../integration/push-notification.adoc[push notifications].
 
 Possible values
 [cols=",",]

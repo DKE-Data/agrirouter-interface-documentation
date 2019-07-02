@@ -7,7 +7,7 @@
 === Concepts and Ecosystem
 This page shall give you a short overview of the hierachies, concepts and technical connections important to know about agrirouter. For further information jump into the linked topics pages.
 
-To integrate your software solution with agrirouter, you should first understand how the link:./ecosystem.adoc[ecosystem] of agrirouter works. 
+To integrate your software solution with agrirouter, you should first understand how the link:./ecosystem.adoc[ecosystem] of agrirouter works.
 ++++
 <p align="center">
  <img src="./../assets/images/ig1\image10.png" width="642px" height="321px"><br>
@@ -55,11 +55,11 @@ When developing a telemetry platform, the link:./telemetry-platform-concepts.ado
 
 A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
 
-A list of shortings can be found link:./docs/shortings.adoc[here]
+A list of shortings can be found link:./shortings.adoc[here]
 
-A glossary can be found link:./docs/glossary.adoc[here]
+A glossary can be found link:./glossary.adoc[here]
 
-There are several ids required for communication, a list of descriptions can be found link:./docs/ids-and-definitions.adoc[here].
+There are several ids required for communication, a list of descriptions can be found link:./ids-and-definitions.adoc[here].
 
 
 = Link Section
@@ -68,4 +68,3 @@ This page is found in every file and links to the major topics
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
-

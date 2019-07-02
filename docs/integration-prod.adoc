@@ -16,7 +16,7 @@ Once the development in the Quality Assurance Environment is finished, you can s
 
 == 4.1 Create developer account
 
-Once you're done with testing in QA, you can link:./account.adoc[create an account in the productive environment].
+Once you're done with testing in QA, you can link:./accounts.adoc[create an account in the productive environment].
 
 == 4.2 Register & submit your solution
 
@@ -44,7 +44,7 @@ If your app is a CU, it will from this point on be visible to all users wanting 
 
 == 4.5 Test Interface & Messaging
 
-After certification is done, you can test your application in the production environment, which means, that you can link:../invite-testers.adoc[invite real test customers to test the connection in their everyday work] or just ask users to onboard your app (the tester status is not required when your app is _Approved_ but it helps to keep an overview of your testers).
+After certification is done, you can test your application in the production environment, which means, that you can link:./invite-testers.adoc[invite real test customers to test the connection in their everyday work] or just ask users to onboard your app (the tester status is not required when your app is _Approved_ but it helps to keep an overview of your testers).
 
 To connect your app to the production environment, You need to update the following information in your application:
 
@@ -55,7 +55,7 @@ To connect your app to the production environment, You need to update the follow
 ** authorization
 ** onboarding
 ** reonboarding
-** revoking 
+** revoking
 
 The URLS can be found link:./urls.adoc[here].
 
@@ -72,7 +72,7 @@ When you decide that your application is successfully up and running and tested 
 There are no additional steps required in the agrirouter UI or the agrirouter interface
 
 == How to proceed
-Once you published your software and customers start using it, you should link:./../maintenance.adoc[maintain your solution].
+Once you published your software and customers start using it, you should link:./maintenance.adoc[maintain your solution].
 
 
 == Link Section

@@ -24,7 +24,7 @@ The following paragraphs give a short overview of what you will learn in the lin
 =====
 
 //General information on agrirouter
-The whole chapter can be found link:./docs/general.adoc[here]
+The whole chapter can be found link:./general.adoc[here]
 
 '''
 
@@ -46,7 +46,7 @@ The whole chapter can be found link:./docs/general.adoc[here]
 ====
 
 //About accounts
-The whole chapter can be found link:./docs/accounts.adoc[here]
+The whole chapter can be found link:./accounts.adoc[here]
 
 '''
 
@@ -78,7 +78,7 @@ The whole chapter can be found link:./docs/accounts.adoc[here]
 
 
 //About applications
-The whole chapter can be found link:./docs/applications.adoc[here]
+The whole chapter can be found link:./applications.adoc[here]
 
 '''
 
@@ -117,7 +117,7 @@ The whole chapter can be found link:./docs/applications.adoc[here]
 
 ====
 
-The whole chapter can be found link:./docs/ecosystem.adoc[here].
+The whole chapter can be found link:./ecosystem.adoc[here].
 
 ''''
 
@@ -187,7 +187,7 @@ The whole chapter can be found link:./docs/ecosystem.adoc[here].
 ====
 
 //About the general concepts of message Exchange
-The whole chapter can be found link:./docs/message-exchange.adoc[here]
+The whole chapter can be found link:./message-exchange.adoc[here]
 
 '''
 
@@ -247,7 +247,7 @@ The whole chapter can be found link:./docs/message-exchange.adoc[here]
 ====
 
 //About the general messaging workflow
-The whole chapter can be found link:./docs/messaging-workflow.adoc[here]
+The whole chapter can be found link:./messaging-workflow.adoc[here]
 
 
 '''
@@ -259,6 +259,5 @@ The whole chapter can be found link:./docs/messaging-workflow.adoc[here]
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:./README.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
-

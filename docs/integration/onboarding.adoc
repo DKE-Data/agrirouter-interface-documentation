@@ -286,7 +286,7 @@ It includes the accountId, so that an app provider can check, if this accountId 
 ===== Failure
 
 In case of Failure, an error message is provided.
-Possible ErrorMessages can be found link:../ErrorCodes.adoc[here].
+Possible ErrorMessages can be found link:../error-codes.adoc[here].
 
 == Sending Onboarding Request
 
@@ -459,7 +459,7 @@ The request has several possible response codes indicating Success or Failure:
 |Code |Possible problem
 |201 |Success; Analyze onboarding result to get started
 |400 |The Request was invalid
-|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the link:./../ErrorCodes.adoc[error message]
+|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the link:./../error-codes.adoc[error message]
 |========================================================================================================
 
 ==== Success

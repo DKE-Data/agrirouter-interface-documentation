@@ -44,7 +44,7 @@ Every app instance should therefore check its feed in a periodic manor.
 For HTTP REST clients, this should be at least every 4 hours, for MQTT clients, this should be done at least every 3 days.
 ====
 
-Push notifications can be activated through the link:../commmands/endpoint.adoc#capabilities[Capabilities command].
+Push notifications can be activated through the link:../commands/endpoint.adoc#capabilities[Capabilities command].
 
 
 === Analyse Push Messages
