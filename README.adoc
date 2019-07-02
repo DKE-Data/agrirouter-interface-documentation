@@ -33,138 +33,31 @@ Steps 1, 2 and 3 can be started in parallel
 * link:./docs/provider-agreement.adoc[1. Provider Agreement] 
 * link:./docs/marketplace.adoc[2. Marketplace]
 
-For the whole integration process (3.x and 4.x) it makes sense to first understand the link:./docs/basic-concepts.adoc[basic concepts of agrirouter].
 
-* <<3. Interface Integration in Quality Assurance>>
-* <<4. Interface Integration in Production>>
+
+* link:./docs/integration-qa.adoc[3. Interface Integration in Quality Assurance]
+* link:./docs/integration-prod.adoc[4. Interface Integration in Production]
+
+
+
+
+== Quicklinks
+For advanced developers, here is a list of quick links for the most common topics
+
+* link:./docs/tmt/overview.adoc[List of Technical Message Types]
+* link:./docs/command/overview.adoc[List of Commands for the agrirouter interface]
+* link:./docs/keys.adoc[The agrirouter keys]
+* link:./docs/glossary.adoc[Glossary]
+* link:./docs/error-codes.adoc[Error Codes]
 * link:./docs/service-support.adoc[Service & Support]
 * link:./docs/training.adoc[Training]
 
 
-=== Development Resources
 
-A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found link:./docs/development-resources.adoc[here].
-
-The keys and certificates required for communication can be found link:./docs/keys.adoc[here].
-
-
-
-== 3. Interface Integration in Quality Assurance
-=== General process of integration in QA
-++++
-<p align="center">
- <img src="./assets/images/general/process_integration_qa.png"><br>
-</p>
-++++
-
-=== 3.1 Registration
-To start the development, you will need to link:./docs/registration.adoc[create a developer account].
-
-=== 3.2 Register & Submit your solution
-
-For communication with agrirouter, you need to setup an link:./docs/applications.adoc[application] in the Quality assurance environment.
-
-=== 3.3 Waiting approval by support team
-
-Whenever you create a new application version, agrirouter support team will have to approve this application. Please send an email to support@my-agrirouter.com including the application version ID to request confirmation.
-
-=== 3.4 Integration
-
-The integration with agrirouter is described in the link:./docs/general-integration-process.adoc[general integration process].
-
-The following chapters describe all requirements to integrate an application with agrirouter.
-
-==== Before we begin
-First, you should always keep in mind the link:./docs/integration/general-conventions.adoc[General conventions].
-
-There are several environments for test and production in different areas of the world. They can be found in the link:./docs/integration/environments.adoc[Environments].
-
-==== Connecting your app instance
-FarmingSoftware and Telemetry Platforms have to perform an link:./docs/integration/authorization.adoc[Authorization Process] to clarify, that the account user is known.
-
-To communicate with the agrirouter, an application Instance needs to be link:./docs/integration/onboarding.adoc[onboarded]. An application instance can be link:docs/integration/reonboarding.adoc[ReOnboarded] or all application instance of a specific customer can be link:docs/integration/revoke.adoc[Revoked].
-
-
-=== Communicate with agrirouter endpoints
-
-To send a message, it has to be built first. Read link:./docs/integration/build-message.adoc[here] about building messages and commands.
-
-Every application instance can link:./docs/integration/message-sending.adoc[send messages] and commands the same way.
-
-While link:./docs/tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, link:./docs/commands/overview.adoc[commands] are used to link:./docs/commands/ecosystem.adoc[explore the ecosystem], link:./docs/commands/endpoint.adoc[configure your endpoint] and link:./docs/commands/feed.adoc[request messages from the feed].
-
-Command results and messages from other endpoints will be link:./docs/integration/message-receiving.adoc[received through the outbox] by the receiving application instance.
-
-Messages from other endpoints are put into the outbox by link:./docs/integration/push-notification.adoc[push notifications] as well as by link:./docs/commands/feed[requesting the feed content].
-
-
-Depending on the  link:./docs/integration/analyze-result.adoc#ResponseType[resultType], the Result can be link:./docs/integration/analyze-result.adoc[analyzed].
-
-
-
-
-
-== 4. Interface Integration in Production
-=== General process of integration in Production
-++++
-<p align="center">
- <img src="./assets/images/general/process_integration_prod.png"><br>
-</p>
-++++
-
-=== 4.1 Create developer account
-
-Ones you're done with testing in QA, you can link:./account.adoc[create an account in the productive environment].
-
-=== 4.2 Register & submit your solution
-
-For communication with agrirouter, you need to setup an link:./docs/applications.adoc[application] in the productive environment.
-
-
-
-=== 4.3 Certification
-
-Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./docs/certification.adoc[here].
-
-=== 4.4 Approve from support team
-
-
-=== 4.5 Test Interface & Messaging
-
-=== 4.6 Approve for your end customer
-
-
-
-== Maintenance
-
-=== Usage metrix
-
-As an application provider, you can download link:./docs/usage-metrix.adoc[usage metrics] to check, which account consumed how much data.
-
-
-=== Endpoint management
-
-Learn, how to manage your applications endpoints link:./docs/application-endpoint-management.adoc[here].
-
-=== Behaviour after SoftwareUpdate
-
-Read here, how to handle link:./docs/update.adoc[new versions and updates].
-
-
-=== Service & Support
-
-For feature requests or bug reports, you can link:./docs/service-support.adoc[contact the support.]
-
-In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://my-agrirouter.com/support/system-status[Status Page].
-
-[Important]
-====
-This status page shows the availability of the productive environment!
-====
 
 == Link Section
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:./README.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:./README.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/shortings.adoc[shortings]|link:./docs/terms.adoc[agrirouter in a nutshell]
 |====

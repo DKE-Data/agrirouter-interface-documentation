@@ -50,7 +50,6 @@ Additionally, developers can manage their own applications:
 * Add new software versions for Certification
 * Manage the required capabilities of the application
 * Block specific endpoints, e.g. to avoid misusage of applications
-* Add testers to test an application before releasing to public
 * Replay Endpoint Records
 * Export metrics of agrirouter usage for billing purpose
 
@@ -74,5 +73,5 @@ The administrator account is only accessible by DKE. DKE can manage application,
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====

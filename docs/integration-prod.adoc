@@ -1,0 +1,55 @@
+= Interface Integration in Production
+:imagesdir: ./../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+== General process of integration in Production
+++++
+<p align="center">
+ <img src="../assets/images/general/process_integration_prod.png"><br>
+</p>
+++++
+
+== 4.1 Create developer account
+
+Ones you're done with testing in QA, you can link:./account.adoc[create an account in the productive environment].
+
+== 4.2 Register & submit your solution
+
+For communication with agrirouter, you need to setup an link:./applications.adoc[application] in the productive environment.
+
+
+
+== 4.3 Certification
+
+Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./certification.adoc[here].
+
+== 4.4 Approve from support team
+
+
+== 4.5 Test Interface & Messaging
+
+== 4.6 Approve for your end customer
+
+
+=== Usage metrix
+
+As an application provider, you can download link:./docs/usage-metrix.adoc[usage metrics] to check, which account consumed how much data.
+
+
+=== Endpoint management
+
+Learn, how to manage your applications endpoints link:./docs/application-endpoint-management.adoc[here].
+
+=== Behaviour after SoftwareUpdate
+
+Read here, how to handle link:./docs/update.adoc[new versions and updates].
+
+
+== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:./README.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|====

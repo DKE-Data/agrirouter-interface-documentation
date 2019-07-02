@@ -1,0 +1,82 @@
+= 3. Interface Integration in Quality Assurance
+:imagesdir: ./../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+== Development Resources
+
+A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found link:./development-resources.adoc[here].
+
+The keys and certificates required for communication can be found link:./keys.adoc[here].
+
+
+
+
+== General process of integration in QA
+++++
+<p align="center">
+ <img src="../assets/images/general/process_integration_qa.png"><br>
+</p>
+++++
+
+
+
+== 3.1 Create developer account
+To start the development, you will need to link:./registration.adoc[create a developer account].
+
+== 3.2 Register & Submit your solution
+
+For communication with agrirouter, you need to link:./applications.adoc[setup an application] in the Quality assurance environment.
+
+== 3.3 Waiting approval by support team
+
+Whenever you create a new application version, agrirouter support team will have to approve this application. Please send an email to support@my-agrirouter.com including the application version ID to request confirmation.
+
+== 3.4 Integrate interface in your solution
+
+The integration with agrirouter is described in the link:./general-integration-process.adoc[general integration process].
+
+The following chapters describe all requirements to integrate an application with agrirouter.
+
+=== Before we begin
+First, you should always keep in mind the link:./integration/general-conventions.adoc[General conventions].
+
+There are several environments for test and production in different areas of the world. They can be found in the link:./integration/environments.adoc[Environments].
+
+=== Connecting your app instance
+FarmingSoftware and Telemetry Platforms have to perform an link:./integration/authorization.adoc[Authorization Process] to clarify, that the account user is known.
+
+To communicate with the agrirouter, an application Instance needs to be link:./integration/onboarding.adoc[onboarded]. An application instance can be link:./integration/reonboarding.adoc[ReOnboarded] or all application instance of a specific customer can be link:./integration/revoke.adoc[Revoked].
+
+
+=== Communicate with agrirouter endpoints
+
+To send a message, it has to be built first. Read link:./integration/build-message.adoc[here] about building messages and commands.
+
+Every application instance can link:./integration/message-sending.adoc[send messages] and commands the same way.
+
+While link:./tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, link:./commands/overview.adoc[commands] are used to link:./commands/ecosystem.adoc[explore the ecosystem], link:./commands/endpoint.adoc[configure your endpoint] and link:./commands/feed.adoc[request messages from the feed].
+
+Command results and messages from other endpoints will be link:./integration/message-receiving.adoc[received through the outbox] by the receiving application instance.
+
+Messages from other endpoints are put into the outbox by link:./integration/push-notification.adoc[push notifications] as well as by link:./commands/feed[requesting the feed content].
+
+
+Depending on the  link:./integration/analyze-result.adoc#ResponseType[resultType], the Result can be link:./integration/analyze-result.adoc[analyzed].
+
+== 3.5 Test Interface and messaging
+
+In status _Approved for Testing_, application developers can link:./docs/invite-testers.adoc[add other accounts for testing their application]. If a certification version is in status _Approved for Testing_, instances with this certification version can be onboarded in these test accounts and an external test can be started. The developers account automatically is an end user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
+
+[IMPORTANT]
+====
+As the application currently only communicates with the agrirouter Quality assurance environment, it cannot be onboarded in the Production environment. See link:./integration-prod.adoc[Integration in Production] for those further steps.
+====
+
+== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|====

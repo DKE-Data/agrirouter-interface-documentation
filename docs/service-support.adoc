@@ -4,12 +4,45 @@
 :toc-title:
 :toclevels: 4
 
-
-The agrirouter support team provides several contact possibilities. A contact field and further information can be found link:https://my-agrirouter.com/support/[here]. 
-
-To get in contact with agrirouter support team, you can also send an email to support@my-agrirouter.com
+== agrirouter Status
+In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://my-agrirouter.com/support/system-status[Status Page].
 
 
+
+++++
+<p align="center">
+ <img src="./../assets/images/general/system_status.png" width="586px" height="335px"><br>
+ <i>Current status of agrirouter productive environment</i>
+</p>
+++++
+
+[Important]
+====
+This status page shows the availability of the productive environment!
+====
+
+== agrirouter System events
+
+Updates, bugfixes and general server issues can require server maintenance every now and then, which might result in connectivity issues for a short time. To avoid unexpected behaviour, those maintenances are reported in advance. A list of events can be seen at link:https://my-agrirouter.com/nc/en/support/system-events/[at the status page].
+
+++++
+<p align="center">
+ <img src="./../assets/images/general/system_events.png" width="634px" height="299px"><br>
+ <i>List of agrirouter system events</i>
+</p>
+++++
+
+[IMPORTANT]
+====
+You should click the subscription button to subscribe for system events and receive an email every time, a maintenance is scheduled.
+====
+
+++++
+<p align="center">
+ <img src="./../assets/images/general/system_events_subscribe.png" width="634px" height="299px"><br>
+ <i>Subscribe for agrirouter system events</i>
+</p>
+++++
 
 == Getting in contact with the agrirouter support team as a developer
 
@@ -19,7 +52,7 @@ The agrirouter support team provides support for developers for their integratio
 
 Helping with your request is easier, if you provide all information necessary to check the problem. Please check, which of the following topics fits your problem; it could even fit multiple problems
 
-=== For endpoint related incidents
+==== For endpoint related incidents
 
 Please submit the following information with your request:
 
@@ -28,7 +61,7 @@ Please submit the following information with your request:
 * Endpoint Software Id
 * Endpoint Software Version Id
 
-(all of the above can be found in the endpoint details by clicking the ‘Info’ button next to the delete button)
+All of the above can be found in the endpoint details by clicking the ‘Info’ button next to the delete button.
 
 ++++
 <p align="center">
@@ -40,15 +73,15 @@ Please submit the following information with your request:
 
 
 
-=== For commands related incidents
+==== For commands related incidents
 
 Please provide the commands sent from and received by the endpoint, if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see link:./tools/endpoint-recording.adoc[here].
 
-=== For account related incidents
+==== For account related incidents
 
 Please provide the account Id. See screenshot for the endpoint relevant information above.
 
-=== For UI related incidents
+==== For UI related incidents
 
 Please provide the following information to report issues with the graphical user interface of the agrirouter
 
@@ -92,7 +125,7 @@ agrirouter support team will get back to you on your request, please be informed
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
 
 
