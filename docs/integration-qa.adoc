@@ -4,14 +4,29 @@
 :toc-title:
 :toclevels: 4
 
+== Basic Concepts
+
+Before starting with the integration, it's important to understand the link:./basic-concepts.adoc[basic concepts of agrirouter] including topics like:
+
+* link:./ecosystem.adoc[Ecosystem]
+* link:./endpoint.adoc[Elements of an endpoint]
+* link:./message-exchange.adoc[Concepts of Message Exchange]
+* link:./communication.adoc[Concepts of communication] 
+* link:./messaging-workflow.adoc[Messaging Workflows]
+* link:./telemetry-platform-concepts.adoc[Concepts for Telemetry Platforms integration]
+
+
 == Development Resources
 
-A list of tools for the agrirouter development as well as a list of libraries and usefull development resources can be found link:./development-resources.adoc[here].
+There are several development resources which can be found in link:./development-resources.adoc[the list of development resources] including topics like:
 
-The keys and certificates required for communication can be found link:./keys.adoc[here].
-
-
-
+* link:./keys.adoc[The keys & Certificates]
+* link:https://github.com/DKE-Data/agrirouter-postman-tools[Postman collection for onboarding and Revoking]
+* link:./tools/paho.adoc[Paho for MQTT Connection]
+* link:./tools/arts.adoc[The agrirouter protobuf toolset]
+* link:./tools/endpoint-recording.adoc[The endpoint recording]
+* link:https://github.com/DKE-Data[The github Account with documentation and APIs]
+* link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial[A video tutorial on the integration process]
 
 == General process of integration in QA
 ++++
@@ -25,9 +40,13 @@ The keys and certificates required for communication can be found link:./keys.ad
 == 3.1 Create developer account
 To start the development, you will need to link:./registration.adoc[create a developer account].
 
+There is also a link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial/blob/master/02-create-developer-account/index.adoc[Video Tutorial on creating an account]
+
 == 3.2 Register & Submit your solution
 
 For communication with agrirouter, you need to link:./applications.adoc[setup an application] in the Quality assurance environment.
+
+There is also a link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial/blob/master/03-create-application/index.adoc[Video Tutorial on registering applications]
 
 == 3.3 Waiting approval by support team
 
@@ -35,14 +54,14 @@ Whenever you create a new application version, agrirouter support team will have
 
 == 3.4 Integrate interface in your solution
 
-The integration with agrirouter is described in the link:./general-integration-process.adoc[general integration process].
-
 The following chapters describe all requirements to integrate an application with agrirouter.
 
 === Before we begin
 First, you should always keep in mind the link:./integration/general-conventions.adoc[General conventions].
 
 There are several environments for test and production in different areas of the world. They can be found in the link:./integration/environments.adoc[Environments].
+
+Even though certification is part of the integration process for the productive environment, you should contact the link:./certification.adoc#certificationInstitutes[relevant certification institut] once you have an overview of what you want to build, to check, which technical requirements for the certifications are important to concern in the development.
 
 === Connecting your app instance
 FarmingSoftware and Telemetry Platforms have to perform an link:./integration/authorization.adoc[Authorization Process] to clarify, that the account user is known.
@@ -63,16 +82,21 @@ Command results and messages from other endpoints will be link:./integration/mes
 Messages from other endpoints are put into the outbox by link:./integration/push-notification.adoc[push notifications] as well as by link:./commands/feed[requesting the feed content].
 
 
-Depending on the  link:./integration/analyze-result.adoc#ResponseType[resultType], the Result can be link:./integration/analyze-result.adoc[analyzed].
+Depending on the  link:./integration/analyze-result.adoc#ResponseType[resultType], the result can be link:./integration/analyze-result.adoc[analyzed].
 
 == 3.5 Test Interface and messaging
 
-In status _Approved for Testing_, application developers can link:./docs/invite-testers.adoc[add other accounts for testing their application]. If a certification version is in status _Approved for Testing_, instances with this certification version can be onboarded in these test accounts and an external test can be started. The developers account automatically is an end user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
+In status _Approved for Testing_, application developers can link:./invite-testers.adoc[add other accounts for testing their application]. If a certification version is in status _Approved for Testing_, instances with this certification version can be onboarded in these test accounts and an external test can be started. The developers account automatically is an end user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
 
 [IMPORTANT]
 ====
 As the application currently only communicates with the agrirouter Quality assurance environment, it cannot be onboarded in the Production environment. See link:./integration-prod.adoc[Integration in Production] for those further steps.
 ====
+
+
+== How to proceed
+
+Once you finished the tests and see your app ready to be published, you can proceed with the link:./integration-prod.adoc[integration in the productive environment].
 
 == Link Section
 This page is found in every file and links to the major topics

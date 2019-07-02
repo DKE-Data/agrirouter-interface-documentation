@@ -141,14 +141,7 @@ As the requests need to be signed, the public key has to be stored within the ag
 
 The endpoint URL differs, depending on your desired geolocation and the Quality Assurance or Productive Environment.
 
-The request must be a HTTP Post request to
-
-[cols="2,1,5",options="header",]
-|=======================================================================================================================================================================================
-|Area |Environment |URL
-|EU |Quality Assurance | https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com/[https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com/]
-|EU |Production |https://agrirouter-registration-service.cfapps.eu1.hana.ondemand.com/[https://agrirouter-registration-service.cfapps.eu1.hana.ondemand.com]
-|=======================================================================================================================================================================================
+The request must be a HTTP Post request to link:./../urls.adoc#onboardingEndpointURLs[the URL found here].
 
 [NOTE]
 ====

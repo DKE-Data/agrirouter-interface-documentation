@@ -1,8 +1,12 @@
 = Provider agreement
+:toc:
+:toc-title:
+:toclevels: 4
 
+== General process
 ++++
 <p align="center">
- <img src="./assets/images/general/process_firstcontact.png"><br>
+ <img src="../assets/images/general/process_firstcontact.png"><br>
 </p>
 ++++
 For legal reasons, it is required that every app provider signs the app provider agreement. 
@@ -10,5 +14,12 @@ You can get this document by contacting the DKE staff contacting Dr. Ing Jens MÃ
 
 [NOTE]
 ====
-These contacts are only relevant for the business side, for development support, please refer to the link:./docs/service-support.adoc[Service&Support]
+These contacts are only relevant for the business side, for development support, please refer to the link:./service-support.adoc[Service&Support]
 ====
+
+== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|====
