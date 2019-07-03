@@ -44,6 +44,12 @@ You should click the subscription button to subscribe for system events and rece
 </p>
 ++++
 
+== Limitations
+
+Each agrirouter account has a limited number of endpoints, see link:./limitations.adoc[here].
+
+
+
 == Getting in contact with the agrirouter support team as a developer
 
 The agrirouter support team provides support for developers for their integration with the agrirouter. To ask a question, simply send an email to support@my-agrirouter.com. Please understand, that agrirouter support team only provides agrirouter specific answers, no answers specialized for your coding language, environment or used frameworks. You might however be lucky to get such a specific answer, if agrirouter support team has one, so feel free to mention this information as well.

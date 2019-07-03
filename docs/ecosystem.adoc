@@ -23,7 +23,7 @@ This chapter gives a high-level overview about the agrirouter Connectivity-Platf
 ++++
 <p align="center">
  <img src="./../assets/images/ig1\image23.png" width="626px" height="451px"><br>
- <i>agrirouter Connectivity-Platform IT architecture</i>
+ <i>agrirouter Connectivity-Platform architecture</i>
 </p>
 ++++
 

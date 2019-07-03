@@ -31,7 +31,7 @@ On this page you will find a list of URLs relevant for your work with the agriro
 [cols="2,1,5",options="header",]
 |====
 |Area |Environment |URL
-|EU |Quality Assurance | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/um/register/developer
+|EU |Quality Assurance | https://my-agrirouter.com/en/registration/
 |EU |Production |https://goto.my-agrirouter.com/um/register/developer
 |====
 

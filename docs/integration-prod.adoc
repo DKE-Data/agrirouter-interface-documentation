@@ -16,7 +16,9 @@ Once the development in the Quality Assurance Environment is finished, you can s
 
 == 4.1 Create developer account
 
-Once you're done with testing in QA, you can link:./accounts.adoc[create an account in the productive environment].
+Once you're done with testing in QA, you can link:./registration.adoc[create an account in the productive environment].
+
+You can read link:./accounts.adoc[here] more about the different types of accounts or directly find the URLs for signup link:./urls.adoc[here].
 
 == 4.2 Register & submit your solution
 
@@ -58,6 +60,12 @@ To connect your app to the production environment, You need to update the follow
 ** revoking
 
 The URLS can be found link:./urls.adoc[here].
+
+
+[IMPORTANT]
+====
+Each agrirouter account has a limited number of endpoints, see link:./limitations.adoc[here].
+====
 
 
 

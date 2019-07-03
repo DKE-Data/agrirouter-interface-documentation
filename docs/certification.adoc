@@ -5,45 +5,108 @@
 :toclevels: 4
 
 
-== General
+== In General
 
-Every Application needs to be certified to be onboardable to the agrirouter. The certification makes sure, that the communication protocol of the agrirouter was successfully implemented and the application is able to communicate with the agrirouter.
+Every application needs to be certified to be onboardable to the agrirouter. The certification process ensures, that the communication protocol of the agrirouter is successfully implemented and the application is able to communicate correctly with the agrirouter.
 
-A certification is needed any time, the app changes its capabilities.
+A certification is needed any time, the app changes its capabilities, changes the commands or uses a different protocol to communicate with the agrirouter.
+
+[NOTE]
+=====
+For a new certification version, capabilities can never be removed. It is only allowed to add capabilities for a new version. The capabilities request however can of course only include a subset that is smaller than in the version before.
+=====
 
 == Out of focus
 
-The certification will not check, if an application “understands” the data sent over agrirouter, it will only check, if the application can send and receive data marked as such Technical message types, that were selected in the Certification Version.
+The certification will not check, if an application is able to work with the data sent over the agrirouter. The process will only check, if the application can send and receive data for the technical message types, that were selected for the certification version.
 
 == Certification institutes
 
-DKE and the agrirouter support team will release a list of certified partners, that are able and allowed to do the certification process. Please refer to https://my-agrirouter.com/support/downloads/.
+DKE and the agrirouter support team will release a list of certified partners, who are able and allowed to certificate applications. Please refer to https://my-agrirouter.com/support/downloads/ for all information regarding the certification institutes.
 
-== Tests
+== Certification tests
+Not all of the certification tests are necessary for your implementation, the selection depends on several parameters:
 
-=== For farming software and telemetry platforms
+=== Based on the application type
 
-The test for farming software and telemetry platforms will check the following workflows:
+Based on the type of your application, different tests might be required. Check link:./applications.adoc[here], which type suites your requirements best.
 
-* Onboarding of a Farming Software or Telemetry Platform
-* Capabilities
-* Receive data
-** Respecting capabilities
-* Send data
-** Respecting capabilities
+[cols=",,",width="100%"]
+|============================
+>s|CU (Telemetry Connections) >s|Farming Software  >s| Telemetry Platforms
+ 1.5+^.^|link:./integration/onboarding.adoc[Onboarding] 2.1+^|link:./integration/authorization.adoc[Authorization Process]
+ 2.1+^|link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
+ | 1.1+^| link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding]
+ 2.1+^|link:./integration/revoke.adoc[Revoking]
+ | 1.1+^| link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
+ 3.1+^|link:./integration/reonboarding.adoc[Reonboarding]
+ 3.1+^|link:./commands/endpoint.adoc#capabilities-command[Sending the capabilities]
+ 2.1+|  | link:./commands/endpoint.adoc#capabilities-command[Send Capabilities] (link:./telemetry-platform-concepts.adoc[for each VCU])
+ 3.1+^|link:./certification.adoc#clean-your-feed[Clean your feed]
+ 2.1+|  | link:./certification.adoc#clean-your-feed[Clean your feed] (link:./telemetry-platform-concepts.adoc[for each VCU])
 
-=== For Communication Units
+|============================
 
-The test for communication units will check the following workflows:
+[REMARK]
+=====
+The capabilities reported through the capabilities command may not include more capabilities then reported in the agrirouter UI when setting up the certification version.
+To pass the test, every listed technical message type from certification version needs to be exchanged in the reported directions. 
+=====
 
-* Onboarding of Communication Units
-* Capabilities
-* Receive data
-** Respecting capabilities
-* Send data
-** Respecting capabilities
+==== Clean your feed
+After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages
 
 
+=== Based on direction
+==== Sending messages
+
+* Is your application able to send EFDI?
+. Setting the `TeamsetContextID` and changing it, when the machine configuration changes is necessary.
+
+* Is your application able to send technical message types except for EFDI?
+. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to create chunks is necessary.
+
+* Does your application want to publish data?::
+. Your software must link:./commands/ecosystem.adoc[request the endpoint list], so that you can make sure you don't publish data without any recipient available
+
+==== Receiving messages
+
+* Is your application able to receive technical message types except for EFDI?
+. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to merge chunks is relevant
+
+* Is your application able to support push notifications?
+. It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
+. It's tested, if pushed messages are confirmed
+
+
+* If your application is capable of receiving any technical message type, it is major to link:./commands/endpoint.adoc#subscription-command[subscribe for message types]
+[REMARK]
+=====
+Subscribing is required to receive all messagetypes published to the agrirouter. This is especially required to receive message types published from a different account using the account pairing.
+
+It is optional to en- or disable subscriptions (e.g. by providing a UI), for the certification however it has to be shown, that subscriptions are possible.
+=====
+
+    
+=== Based on Protocol layer
+
+agrirouter provides 2 protocols with several possible adjustments. The tests take that in account.
+
+Which communication protocol and format do you want to use?::
+
+* REST via HTTP
+** Do you use JSON?
+. All certification steps are performed using encoded JSON for the tests.
+
+** Do you use native protobuf?
+. All certification steps are performed using native protobuf for the tests.
+    
+* MQTT
+** Do you use router devices?
+. All tests are done using a link:./communication.adoc[router device] which was onboarded within a given account.
+
+** Do you use single endpoints?
+. All tests are done using the credentials delivered while onboarding endpoints within a given account.
 
 
 ==== Link Section

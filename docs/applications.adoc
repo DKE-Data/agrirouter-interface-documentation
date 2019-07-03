@@ -110,13 +110,13 @@ Version Number of the certification: (Integer (!) version Id) this is a version 
 |===============================================================================================================================================================================================
 [NOTE]
 ====
-* The applicationCertificationVersion is not the software Version (like 1.3.12), but just an internal identifier for the DKE certification.
+* The applicationCertificationVersion is not the software Version, but just an internal identifier for the DKE certification.
 
 * An Application can also be the software part of a CU. see link:./glossary.adoc[Glossary].
 ====
 
 
-All required steps are available in Endpoint Software Management (see Figure 11 and Figure 12 ) in the section agrirouter for developers (1) in the launch pad:
+All required steps are available in Endpoint Software Management in the section agrirouter for developers (1) in the launch pad:
 
 * List of existing applications (2)
 * Registration of new application (3)

@@ -26,7 +26,7 @@ The list of technical message types can include any TechnicalMessageFormat menti
 |=====================================================================================
 |Command |dke:capabilities
 |Protobuf Schema |agrirouter.request.payload.endpoint.CapabilitySpecification
-|TypeURL |types.agrirouter/agrirouter.request.payload.endpoint.CapabilitySpecification
+|TypeURL |types.agrirouter.com/agrirouter.request.payload.endpoint.CapabilitySpecification
 |=====================================================================================
 
 Parameters are the following elements:
@@ -43,6 +43,16 @@ Parameters are the following elements:
 ==== Capabilities
 
 The technical message type can be a technical message type of DKE or a proprietary message type.
+
+[IMPORTANT]
+====
+Sending the capabilities command will **delete** any subscription that was made from your application instance. 
+
+It doesn't matter, if the capabilities changed, subscriptions are always deleted.
+
+Make sure, you send the subscriptions again after sending the capabilities.
+====
+
 
 [cols="1,2,2,4",options="header",]
 |================================================================================
@@ -167,7 +177,7 @@ link:../tmt/overview.adoc[ in the list of technical message types].
 |==========================================================================
 |Command |dke:subscription
 |Protobuf Schema |agrirouter.request.payload.endpoint.Subscription
-|TypeURL |types.agrirouter/agrirouter.request.payload.endpoint.Subscription
+|TypeURL |types.agrirouter.com/agrirouter.request.payload.endpoint.Subscription
 |==========================================================================
 
 ==== Parameters
@@ -201,7 +211,7 @@ The DDIs field is only required, if the subscription is used for a subscription 
 
 In case of success, an Acknowledgement is received.
 
-In case of failure, an Acknowledgement with Message or an Acknowledgement with Failure is received. In both cases, the protobuf format will be agrirouter.commons.messages. See 15.8.1 Messages.
+In case of failure, an Acknowledgement with Message or an Acknowledgement with Failure is received. In both cases, the protobuf format will be agrirouter.commons.messages.
 
 === Errors
 

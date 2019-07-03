@@ -155,7 +155,7 @@ The parameters as overview:
 |Parameter |Type |Description
 |application_message_id |String |A unique ID for this message. UUID required
 |application_message_seq_no |int64 |An indicator, in which order the client sent the message. The smallest sequence number must be >0.
-|technical_message_type |string |The TMT; see 17 Technical Message
+|technical_message_type |string |The TMT; see link:../tmt/overview.adoc[Technical Message Types]
 |team_set_context_id |string |The relevant teamset for this message; just in case, it changes
 |mode |mode |DIRECT, PUBLISH or PUBLISH_WITH_DIRECT
 |recipients |string(repeated) |A list of endpoint IDs to forward the message to

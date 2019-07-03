@@ -10,11 +10,11 @@
 </p>
 ++++
 For legal reasons, it is required that every app provider signs the app provider agreement. 
-You can get this document by contacting the DKE staff contacting Dr. Ing Jens Möller, see link:https://my-agrirouter.com/en/company/contact/[the contacts page].
+You can get this document by contacting Dr. Ing Jens Möller, see link:https://my-agrirouter.com/en/company/contact/[the contacts page].
 
 [NOTE]
 ====
-These contacts are only relevant for the business side, for development support, please refer to the link:./service-support.adoc[Service&Support]
+These contacts are only relevant for the business side, for development or end user support, please refer to the link:./service-support.adoc[Service&Support]
 ====
 
 == Link Section

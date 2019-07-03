@@ -1,7 +1,7 @@
 :imagesdir: assets/images
 ++++
 <p align="center">
- <img src="./assets/images/agrirouter.svg">
+ <img src="./assets/images/agrirouter.svg" width="20%" height="20%" align="left"><br><br>
 </p>
 ++++
 
