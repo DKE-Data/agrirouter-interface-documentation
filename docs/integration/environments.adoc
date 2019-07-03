@@ -17,6 +17,8 @@ The productive environment is used by your end customers with tested and certifi
 Currently, there is only one Area: EU for europe. Every app instance is onboarded to environments in this area. With upcoming availability of the agrirouter in more and more countries, there might be additional areas created. This could happen for performance reasons or legal requirements of different countries. If new areas become required, this document will be updated, providing all the required information.
 
 
+
+
 = Keys and urls
 The keys and URLs for the environments can be found link:./../keys.adoc[in keys.]
 

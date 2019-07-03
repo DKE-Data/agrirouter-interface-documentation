@@ -95,6 +95,15 @@ Possible values
 |2 | ENABLED_HIGH_FREQUENCY
 |=================================================================================
 
+[IMPORTANT]
+====
+Sending the capabilities command will **delete** any subscription that was made from your application instance. 
+
+It doesn't matter, if the capabilities changed, subscriptions are always deleted.
+
+Make sure, you send the subscriptions again after sending the capabilities.
+====
+
 [NOTE]
 ====
 In the current release, `Enabled` and `Enabled_HighSpeed` will result in the same behaviour directly delivering a message as a push notification.
@@ -113,7 +122,7 @@ If message pushing is used in your software, please make sure you use enabled me
 |=================================================================================
 |ResultCode |ACK
 |Protobuf Schema |agrirouter.response.payload.endpoint.CapabilityResponse
-|typeURL |types.agrirouter/agrirouter.response.payload.endpoint.CapabilityResponse
+|typeURL |types.agrirouter.com/agrirouter.response.payload.endpoint.CapabilityResponse
 |=================================================================================
 
 The result is a simple `ACK` or an `ACK_WITH_MESSAGES`.

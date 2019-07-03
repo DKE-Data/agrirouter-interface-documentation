@@ -152,7 +152,10 @@ If there are messages available in the outbox, agrirouter will simply publish th
 
 [IMPORTANT]
 ====
-This only appears to command results, not to messages, that are sent to the feed by another app instance. Those messages still have to be requested through the inbox but are automatically delivered through the outbox afterwards.
+This only appears to command results, not to messages, that are sent to the feed by another app instance. 
+Those messages still have to be requested through the inbox but are automatically delivered through the outbox afterwards.
+
+**Exception**: If link:./integration/push-notification.adoc[Push Notifications] are activated, the messages are delivered without a special feed request.
 ====
 
 
