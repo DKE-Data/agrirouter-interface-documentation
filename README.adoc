@@ -28,15 +28,13 @@ In general, there are 4 major topics to add your software or hardware to the agr
 </p>
 ++++
 
-Steps 1, 2 and 3 can be started in parallel
-
-* link:./docs/provider-agreement.adoc[1. Provider Agreement]
-* link:./docs/marketplace.adoc[2. Marketplace]
+* link:./docs/provider-agreement.adoc[Step 1 - Provider Agreement]
+* link:./docs/marketplace.adoc[Step 2 - Marketplace]
 
 
 
-* link:./docs/integration-qa.adoc[3. Interface Integration in Quality Assurance]
-* link:./docs/integration-prod.adoc[4. Interface Integration in Production]
+* link:./docs/integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
+* link:./docs/integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
 
 
 
