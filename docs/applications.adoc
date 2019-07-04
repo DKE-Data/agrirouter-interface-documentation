@@ -21,9 +21,9 @@ A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketp
 
 Please note, that there might be additional CUs in development.
 
-[IMPORTANT] 
+[IMPORTANT]
 ====
-Communication units can also be tablets or other devices and should meet the following *base requirements*: 
+Communication units can also be tablets or other devices and should meet the following *base requirements*:
 
 
 * Every single device has to have internet connectivity and must be able to communicate via HTTP(S) with REST or via MQTT. The communication consists mainly of payloads in Google Protocol Buffer format.
@@ -38,7 +38,7 @@ A telemetry platform is a cloud software solution, that provides access to multi
 
 The telemetry platform is connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform differs from the onboarding process of a CU, as the user might not have to enter a registration code in the CU. In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
 
-A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetry-units/. 
+A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetry-units/.
 
 Please note, that there might be additional telemetry systems in development of the compatibility.
 
@@ -46,7 +46,7 @@ Please note, that there might be additional telemetry systems in development of 
 
 Farming software can be a cloud application or a software released on a single device like PC or Smartphone. Farming software mostly consumes data to provide extra services for farmers or contractor. FMIS (Farm Management and Information Systems) are a common example for farming software.
 
-A list of compatible CUs can be found here: 
+A list of compatible CUs can be found here:
 
 https://my-agrirouter.com/en/marketplace/apps/
 
@@ -110,7 +110,7 @@ Version Number of the certification: (Integer (!) version Id) this is a version 
 |===============================================================================================================================================================================================
 [NOTE]
 ====
-* The applicationCertificationVersion is not the software Version (like 1.3.12), but just an internal identifier for the DKE certification.
+* The applicationCertificationVersion is not the software Version, but just an internal identifier for the DKE certification.
 
 * An Application can also be the software part of a CU. see link:./glossary.adoc[Glossary].
 ====
@@ -201,7 +201,7 @@ For all certification requests in status _submitted_, agrirouter administrators 
 * either to rejected, making further processing impossible, or
 * it can be set to _Approved for Testing_ if the certification request was successful.
 
-In status _Approved for Testing_, application developers can register farmers’ accounts as test accounts. If a certification version is in status _Approved for Testing_, instances with this certification version can be registered in these test accounts and an external test can be started. The developers account automatically is an end user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
+In status _Approved for Testing_, application developers can link:./invite-testers.adoc[register farmers’ accounts as test accounts]. If a certification version is in status _Approved for Testing_, instances with this certification version can be registered in these test accounts and an external test can be started. The developers account automatically is an end user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
 
 Using other accounts is not possible, because the certification version is not yet approved by DKE for public use. When the certification request is in status _Approved for Testing_, the agrirouter administrator can either finally set the status of the request to _Approved_ in case of successful testing or _rejected_ if testing was not successful.
 
@@ -213,6 +213,5 @@ Using other accounts is not possible, because the certification version is not y
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
-

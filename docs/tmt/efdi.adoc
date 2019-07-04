@@ -71,7 +71,7 @@ EFDI Time Logs are as well comparable to ISO11783 TimeLogs.
 
 === DDIs
 
-Telematic sensor values are assigned to DDIs, a standardized list of possible sensor and task information. A full list can be found here: https://dictionary.isobus.net.
+Telematic sensor values are assigned to DDIs, a standardized list of possible sensor and task information. A full list can be found here: https://isobus.net.
 
 The TimeLogs message includes a list of DDI numbers and their corresponding current values. The agrirouter can filter timelog messages for DDIs, that are part of a routing. The DDI list provides a number area for proprietary DDIs, that can have a specific definition for each manufacturer.
 
@@ -99,14 +99,17 @@ The current List of Categories includes the following Categories:
 |10 |*Proprietary Data* |Manufacturer specific data (not part of the standard)
 |=================================================================================================================================
 
+The assignment of specific DDIs to groups can be found link:https://lb.my-agrirouter.com/en/telemetry-parameter-configuration/[here]
 
-
-
+[IMPORTANT]
+====
+The categories list is only relevant for the UI of agrirouter, it is not used in the interface communication!
+====
 
 
 ==== Link Section
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====

@@ -26,7 +26,7 @@ Some examples of DKE partners are available at https://my-agrirouter.com/en/mark
 </p>
 ++++
 
-This process can be performed in parallel to the link:./general-integration-process.adoc[integration process].
+This process can be performed in parallel to the link:./integration-qa.adoc[integration process in QA].
 
 
 == 2.1 Create Marketplace account
@@ -238,6 +238,5 @@ Whenever you change your marketplace entry, the agrirouter support team will rev
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
-

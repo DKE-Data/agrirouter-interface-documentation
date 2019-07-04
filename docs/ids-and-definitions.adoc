@@ -25,16 +25,16 @@ The agrirouter api uses several IDs, which can be a little confusing. But don’
 |A UUID representing a Certification for one app. An app has to be certified every time, a new version with changed capabilities against agrirouter are implemented.
 
 |deviceAlternateId 
-|The Id of the endpoint of an application instance
+|The Id of the endpoint of an application instance. It’s used to address the outbox and inbox.
 
 |endpointId 
-|The endpointId is the unique address of an Application Instance on the agrirouter. It’s used to address the outbox and inbox and to directly address an endpoint from a different endpoint
+|The endpointId is the unique address of an Application Instance on the agrirouter.  It's used to directly address an endpoint from a different endpoint and to mark the source of a message. 
 
 |gatewayId 
 |This is a simple enumeration to determine the protocol type of the communication. It’s either 2=MQTT or 3=REST
 
 |sensorAlternateId 
-|The Id of the recorder or the final receiver of a message
+|The endpointId equals the sensorAlternateId
 
 |======================================================================================================================================================================================================
 
@@ -51,7 +51,7 @@ sensorAlternateID and deviceAlternateId seem to be pretty equal, but the context
 You will find  "="  signs in the following sub chapters. In this context, = does *NOT* mean, that the values of the ids are equal, but that they represent the same device
 ====
 
-=== An Farming Software sends a TaskData
+=== A Farming Software sends a TaskData
 
 For apps, the solution is pretty easy:
 
@@ -227,7 +227,7 @@ The value can be found in the agrirouter UI endpoint Information
 </p>
 ++++
 
-**endpointId = deviceAlternateId**
+**endpointId = sensorAlternateId**
 
 == gatewayId
 
@@ -311,6 +311,6 @@ An end user cannot see this value.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
 

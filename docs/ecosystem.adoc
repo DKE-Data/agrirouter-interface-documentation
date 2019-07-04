@@ -5,8 +5,6 @@
 :toclevels: 4
 
 
-NOTE: This chapter is not yet fully implemented
-
 
 The agrirouter is a central data exchange platform, but to understand its full power, it’s important to understand, that the data provided from the agrirouter comes from the applications attached to the agrirouter. The following figure lists different Applications, that can be attached to one end user account.
 
@@ -25,7 +23,7 @@ This chapter gives a high-level overview about the agrirouter Connectivity-Platf
 ++++
 <p align="center">
  <img src="./../assets/images/ig1\image23.png" width="626px" height="451px"><br>
- <i>agrirouter Connectivity-Platform IT architecture</i>
+ <i>agrirouter Connectivity-Platform architecture</i>
 </p>
 ++++
 
@@ -75,6 +73,6 @@ Each CU only sends one teamset, every teamset can only be part of one CU. If mul
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
 

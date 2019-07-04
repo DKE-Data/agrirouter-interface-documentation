@@ -176,7 +176,7 @@ See <<Parameters_For_header_List>> for parameters and Filtering.
 [cols=",",]
 |===============================================================================
 |ResultCode |ACK_FOR_FEED_MESSAGE
-|Protobuf Schema |types.agrirouter/agrirouter.feed.response.MessageQueryResponse
+|Protobuf Schema |types.agrirouter.com/agrirouter.feed.response.MessageQueryResponse
 |===============================================================================
 
 The Result is a list of message headers (“envelopes”) without the message payload.
@@ -341,7 +341,7 @@ MessageConfirm is simply an array of message IDs.
 |typeURL |“agrirouter.commons.Messages”
 |=====================================
 
-In case of success, you receive VAL_000206 and a list of MessageIDs that could be confirmed.
+In case of success, you receive VAL_000209 and a list of MessageIDs that could be confirmed.
 
 === Errors
 
@@ -356,5 +356,5 @@ If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====

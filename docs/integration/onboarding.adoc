@@ -141,14 +141,7 @@ As the requests need to be signed, the public key has to be stored within the ag
 
 The endpoint URL differs, depending on your desired geolocation and the Quality Assurance or Productive Environment.
 
-The request must be a HTTP Post request to
-
-[cols="2,1,5",options="header",]
-|=======================================================================================================================================================================================
-|Area |Environment |URL
-|EU |Quality Assurance | https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com/[https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com/]
-|EU |Production |https://agrirouter-registration-service.cfapps.eu1.hana.ondemand.com/[https://agrirouter-registration-service.cfapps.eu1.hana.ondemand.com]
-|=======================================================================================================================================================================================
+The request must be a HTTP Post request to link:./../urls.adoc#onboardingEndpointURLs[the URL found here].
 
 [NOTE]
 ====
@@ -293,7 +286,7 @@ It includes the accountId, so that an app provider can check, if this accountId 
 ===== Failure
 
 In case of Failure, an error message is provided.
-Possible ErrorMessages can be found link:../ErrorCodes.adoc[here].
+Possible ErrorMessages can be found link:../error-codes.adoc[here].
 
 == Sending Onboarding Request
 
@@ -466,7 +459,7 @@ The request has several possible response codes indicating Success or Failure:
 |Code |Possible problem
 |201 |Success; Analyze onboarding result to get started
 |400 |The Request was invalid
-|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the link:./../ErrorCodes.adoc[error message]
+|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the link:./../error-codes.adoc[error message]
 |========================================================================================================
 
 ==== Success
@@ -621,5 +614,5 @@ If you experience problems with an invalid signature, (Code 107), try the follow
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====

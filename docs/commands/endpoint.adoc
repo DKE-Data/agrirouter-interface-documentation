@@ -44,6 +44,16 @@ Parameters are the following elements:
 
 The technical message type can be a technical message type of DKE or a proprietary message type.
 
+[IMPORTANT]
+====
+Sending the capabilities command will **delete** any subscription that was made from your application instance. 
+
+It doesn't matter, if the capabilities changed, subscriptions are always deleted.
+
+Make sure, you send the subscriptions again after sending the capabilities.
+====
+
+
 [cols="1,2,2,4",options="header",]
 |================================================================================
 |# |Name |Type |Description
@@ -248,5 +258,5 @@ For the format, please refer to  link:../tmt/efdi.adoc[iso:11783:-10:device_desc
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====

@@ -42,7 +42,7 @@ An application Instance has to perform a GET request to this endpoint to receive
 
 == Format of received messages
 
-Agrirouter returns an array of messages, so, there can be multiple responses in one response package.
+agrirouter returns an array of messages, so, there can be multiple responses in one response package.
 
 The result format depends on the setting of the Accept-Header in the GET Request to the Outbox:
 
@@ -190,5 +190,5 @@ For a full documentation of this Message format, see the link:https://help.sap.c
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====

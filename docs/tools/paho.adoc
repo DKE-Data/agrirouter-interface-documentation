@@ -41,7 +41,7 @@ This keystore is described in the Paho UI as "Truststore"
 === Create KeyStore
 Onboarding an MQTT endpoint provides a certificate, an MQTT client id and two topics; see link:../integration/onboarding.adoc[onboarding].
 
-Alternatively, the connection can be setup using a link:../router-device.adoc[router device].
+Alternatively, the connection can be setup using a link:../router-devices.adoc[router device].
 
 The certificate received from onboarding process needs to be formatted to work with PAHO (PAHO only, not needed for most of the other clients):
 
@@ -102,5 +102,5 @@ Read the connection criteria from the onboarding result and click on connect.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
 |====

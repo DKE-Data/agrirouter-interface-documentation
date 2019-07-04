@@ -29,7 +29,7 @@ To perform an agrirouter integration, you will need knowledge to the following t
 
 * For MQTT Tests, you can use link:./tools/paho.adoc[Paho]
 
-* Especially for Protobuf Development, you can use the link:./tools/arts.adoc[Agrirouter Protobuf Toolset]
+* Especially for Protobuf Development, you can use the link:./tools/arts.adoc[agrirouter Protobuf Toolset]
 
 * To create and play traces, use the link:./tools/endpoint-recording.adoc[Endpoint Recording]
 
@@ -40,7 +40,7 @@ Following resources can help developers to integrate their applications to the a
 [cols=",,",options="header",]
 |====================================================================================================================================================
 |Name |URL |Description
-|Agrirouter main page |https://my-agrirouter.com |The official website of the agrirouter
+|agrirouter main page |https://my-agrirouter.com |The official website of the agrirouter
 |GitHub |https://github.com/dke-data/ |Official GitHub with libraries and resources
 |DDI Dictionary |https://dictionary.isobus.net/ |The official list of standardized Sensor values
 |AEF |https://aef-online.org  |The official website of the Agricultural Electronics Foundation. This group defines EFDI and the standards of ISOXML.
@@ -53,6 +53,6 @@ Following resources can help developers to integrate their applications to the a
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
 

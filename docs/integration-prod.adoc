@@ -1,0 +1,91 @@
+= Interface Integration in Production
+:imagesdir: ./../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+== General process of integration in Production
+
+Once the development in the Quality Assurance Environment is finished, you can start to prepare your application for the production environment
+
+++++
+<p align="center">
+ <img src="../assets/images/general/process_integration_prod.png"><br>
+</p>
+++++
+
+== 4.1 Create developer account
+
+Once you're done with testing in QA, you can link:./registration.adoc[create an account in the productive environment].
+
+You can read link:./accounts.adoc[here] more about the different types of accounts or directly find the URLs for signup link:./urls.adoc[here].
+
+== 4.2 Register & submit your solution
+
+For communication with agrirouter, you need to setup an link:./applications.adoc[application] in the productive environment.
+
+
+== 4.3 Contact Certification Company
+
+Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./certification.adoc[here].
+
+[IMPORTANT]
+====
+Please recognize, that the certification will be done in the Quality Assurance Environment
+====
+
+
+== 4.4 Approve from support team
+When the certification is successfully approved, the app will be set to status _Approved_ .
+
+[NOTE]
+====
+If your app is a CU, it will from this point on be visible to all users wanting to add a new Telemetry connection.
+====
+
+
+== 4.5 Test Interface & Messaging
+
+After certification is done, you can test your application in the production environment, which means, that you can link:./invite-testers.adoc[invite real test customers to test the connection in their everyday work] or just ask users to onboard your app (the tester status is not required when your app is _Approved_ but it helps to keep an overview of your testers).
+
+To connect your app to the production environment, You need to update the following information in your application:
+
+* applicationId
+* certificationVersionId
+* Certificate for the authorization process (if Telemetry Platform or Farming Software)
+* The URLs for:
+** authorization
+** onboarding
+** reonboarding
+** revoking
+
+The URLS can be found link:./urls.adoc[here].
+
+
+[IMPORTANT]
+====
+Each agrirouter account has a limited number of endpoints, see link:./limitations.adoc[here].
+====
+
+
+
+== 4.6 Approve for your end customer
+When you decide that your application is successfully up and running and tested with the production environment, you can take all the steps relevant to publish your software to your customers like
+
+* deploying it on the server
+* advertising it
+* flashing hardware with it
+* etc.
+
+There are no additional steps required in the agrirouter UI or the agrirouter interface
+
+== How to proceed
+Once you published your software and customers start using it, you should link:./maintenance.adoc[maintain your solution].
+
+
+== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|====
