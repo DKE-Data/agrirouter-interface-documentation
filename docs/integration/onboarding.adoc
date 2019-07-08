@@ -135,7 +135,9 @@ As the requests need to be signed, the public key has to be stored within the ag
 </p>
 ++++
 
+=== External Id
 
+The external Id - to be seen in the <<Body Information>> of the onboarding request - needs to be a URN, which fits to the definitions in the link:./general-conventions.adoc[general conventions].
 
 == onboarding Endpoint URLs
 
