@@ -95,6 +95,11 @@ To pass the test, every listed technical message type from certification version
 ==== Clean your feed
 After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages. For the certification process, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification process. Please check the specific time periods with your certification institute.
 
+==== Test coverage for telemetry platforms
+For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 
+Telemetry platforms must at least support the onboarding and offboarding; see above. They can however also support other functionalities like Farming Software. In this case, additional tests apply for the platform itself. 
+
+
 ==== TimeStamps
 It will be tested, that the software uses UTC Timestamp for every message, it sends. See also the link:./integration/general-conventions.adoc[General Conventions].
 
@@ -151,6 +156,11 @@ These tests are only required, if your application can receive data
 . link:./commands/feed.adoc#call-for-specific-messages[FeedMessageQuery]
 . link:./commands/feed.adoc#call-for-message-deletion[DeleteMessage]
 . link:./commands/feed.adoc#call-for-message-list-confirmation[Confirm Message]
+
+[REMARK]
+====
+The major requirement here is "Clean your feed", in preparation of the certification, it will be checked, which of the commands from the list above your software supports. Those commands will than be checked.
+====
 
 * If your application is capable of receiving any technical message type, it is major to link:./commands/endpoint.adoc#subscription-command[subscribe for message types]
 [REMARK]
