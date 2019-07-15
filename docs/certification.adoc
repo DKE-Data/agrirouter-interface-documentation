@@ -95,7 +95,7 @@ For telemetry platforms, it will be checked in advance of the test, which functi
 Telemetry platforms must at least support the onboarding and offboarding; see above. They can however also support other functionalities like Farming Software. In this case, additional tests apply for the platform itself. 
 
 
-=== Commands
+=== Based on commands
 
 It will be checked in advance by the certification company, which commands are supported by your software in which characteristic, those will be checked. Here is an overview of those commands:
 
