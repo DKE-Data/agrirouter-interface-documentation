@@ -44,14 +44,6 @@ Parameters are the following elements:
 
 The technical message type can be a technical message type of DKE or a proprietary message type.
 
-[IMPORTANT]
-====
-Sending the capabilities command will **delete** any subscription that was made from your application instance. 
-
-It doesn't matter, if the capabilities changed, subscriptions are always deleted.
-
-Make sure, you send the subscriptions again after sending the capabilities.
-====
 
 
 [cols="1,2,2,4",options="header",]
@@ -151,6 +143,12 @@ If the message was malformed, an `ACK_WITH_FAILURE` will be returned.
     }
 ----
 
+=== Certification Requirements
+
+The capabilities reported through the capabilities command may not include more capabilities than reported in the agrirouter UI when setting up the certification version.
+To pass the test, every listed technical message type from certification version needs to be exchanged in the reported directions. 
+
+
 == Subscribtion Command
 
 === Definition
@@ -234,6 +232,17 @@ Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors,
  <img src="./../../assets/images/ig2/image45.png" width="438px" height="174px">
 </p>
 ++++
+
+=== Certification Requirements
+
+If your application is capable of receiving any technical message type, it is major to subscribe for message types.
+
+It is optional to en- or disable subscriptions (e.g. by providing a UI), for the certification however it has to be shown, that subscriptions are possible.
+
+The DDIs field is only required, if the subscription is used for a subscription of Telemetry values. Same applies to Position.
+
+
+
 
 
 == Sending a teamset using device Descriptions
