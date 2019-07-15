@@ -156,10 +156,11 @@ These tests are only required, if your application can receive data
 === Based on message protocol layer and message format
 
 If your software supports REST or MQTT with JSON, sending and receiving of those formats is checked.
+
 If your software supports REST with NativeProtobuf, sending and receiving of those formats is checked.
 
 
-=== General Requirements
+=== General requirements
 ==== TimeStamps
 It will be tested, that the software uses UTC Timestamp for every message, it sends. See also the link:./integration/general-conventions.adoc[general conventions].
 
