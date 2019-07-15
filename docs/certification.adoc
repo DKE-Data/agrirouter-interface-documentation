@@ -36,10 +36,10 @@ To fullfill the certification, there are several requirements, of which several 
 *  The link:./marketplace.adoc[Marketplace entry] has been created with "Coming soon" label
 * Following information are available about the company:
 ** Name
-** Address
+** Address (where billing and offer shall be placed by certification company)
 *  Following information are available for a first level customer support:
 ** Email
-** Address (where billing and offer shall be placed by certification company)
+** Address
 ** Phone
 ** URL
 * A link:./registration.adoc[quality assurance environment developer account of the app provider]
