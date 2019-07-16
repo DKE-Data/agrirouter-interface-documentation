@@ -185,7 +185,7 @@ It's tested, if pushed messages are confirmed
 
 
     
-=== Based on message protocol layer and message format
+==== Based on message protocol layer and message format
 
 If your software supports REST or MQTT with JSON, sending and receiving of those formats is checked.
 
