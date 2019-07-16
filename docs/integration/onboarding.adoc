@@ -294,7 +294,7 @@ Possible ErrorMessages can be found link:../error-codes.adoc[here].
 The call for the authorization server URL shall not time out. Delivering a page or redirecting to a different URL is OK.
 
 
-== Sending Onboarding Request
+== Onboarding Request
 
 To onboard a new endpoint, the endpoint has to send an onboarding request providing the registration code to agrirouter.
 

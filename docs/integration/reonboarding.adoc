@@ -49,6 +49,10 @@ Simply send the same onboarding request again and use the new TAN.
 
 For the farming software and telemetry platform we suggest to calculate the valid time and renew the agrirouter automatically bevor the certificates will be invalid.
 
+=== Certification Requirements
+
+The external ID used for reonboarding needs to be a URN, that fits an existing endpoint.
+
 
 ==== Link Section
 This page is found in every file and links to the major topics

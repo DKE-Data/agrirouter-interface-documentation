@@ -133,7 +133,7 @@ The Paging information is included in the page parameter:
 
 The chunk context is an Array of available chunk contexts within this messages. If there are multiple of them, this means, that there are multiple chunked messages to be realigned.
 
-The chunk context is described in 13.2 Chunking big messages
+The chunk context is described in link:./build-message.adoc#chunking-big-messages[chunking big messages] .
 
 The feed includes an array of message headers
 

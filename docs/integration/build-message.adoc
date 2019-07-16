@@ -28,6 +28,7 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 * EFDI telemetry messages cannot be chunked, as they are analyzed for the routing of telemetry data on agrirouter.
 ====
 
+
 ++++
 <p align="center">
  <img src="./../../assets/images/ig2/image43.png" width="100%" ><br>
@@ -143,6 +144,12 @@ If it is recognized, that a message needs to be split into multiple chunks, star
 ====
 agrirouter does neither check nor inform about Chunks, that have not yet been delivered to agrirouter. It will forward the single parts and the receiving endpoint(s) will have to take care of realigning the parts.
 ====
+
+
+=== Certification Requirements
+
+* The chunk payload may not exceed a size of 1 MB
+* The context_id needs to be a uuid
 
 == Building the Envelope
 

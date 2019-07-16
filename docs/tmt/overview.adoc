@@ -44,7 +44,14 @@ It can be any of these formats:
 |===========================================================================================================================
 
 
+=== Certification Requirements
 
+With exception for the Technical Message Types of Information Type Telemetry, all data needs to be encoded in Base64. It will be checked, if data is encoded in Base64 and - in case a message is bigger than 1 MB - that each chunk includes a valid Base64-Encoded String. 
+
+[NOTE]
+====
+First split the data, then encode in Base64.
+====
 
 
 

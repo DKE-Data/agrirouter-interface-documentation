@@ -69,37 +69,40 @@ Based on the type of your application, different tests might be required. Check 
 [cols="1,2,4",options="header",]
 |====
 |MessageType |Major for |Description
-|link:./integration/onboarding.adoc[Onboarding] | CUs | Create a new endpoint at the agrirouter link:./integration/onboard.adoc#certification-requirements-1[Certification Requirements)]
+
+|link:./integration/onboarding.adoc#onboarding-request[Onboarding] | CUs | Create a new endpoint at the agrirouter link:./integration/onboarding.adoc#certification-requirements-1[(Certification Requirements)]
 |link:./integration/authorization.adoc[Authorization] 
 |Telemetry Platforms
 
 Farming Software 
-|Authorize creating a new endpoint link:./integration/authorization.adoc#certification-requirements[Certification Requirements)] 
-|link:./integration/onboarding.adoc#sending-a-verification-request[Verification (optional, if supported)]
+|Authorize creating a new endpoint link:./integration/authorization.adoc#certification-requirements[(Certification Requirements)] 
+
+|link:./integration/onboarding.adoc#verification-request[Verification (optional, if supported)]
 |Telemetry Platforms
 
 Farming Software 
-|Verify the account for a new endpoint link:./integration/onboard.adoc#certification-requirements[Certification Requirements)]
+|Verify the account for a new endpoint link:./integration/onboarding.adoc#certification-requirements[(Certification Requirements)]
+
 |link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
 |Telemetry Platforms
 
 Farming Software 
-|Create a new endpoint at the agrirouter link:./integration/onboard.adoc#certification-requirements-1[Certification Requirements)]
+|Create a new endpoint at the agrirouter link:./integration/onboard.adoc#certification-requirements-1[(Certification Requirements)]
 
-|link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding] |Telemetry Platforms | Create a new endpoint for a virtual CU link:./commands/cloud.adoc#certification-requirements[Certification Requirements)]
+|link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding] |Telemetry Platforms | Create a new endpoint for a virtual CU link:./commands/cloud.adoc#certification-requirements[(Certification Requirements)]
 |link:./integration/revoke.adoc[Revoking] 
 |Telemetry Platforms
 
 Farming Software 
-|Remove an endpoint or all endpoints of a specific account link:./integration/revoke.adoc#certification-requirements[Certification Requirements)]
+|Remove an endpoint or all endpoints of a specific account link:./integration/revoke.adoc#certification-requirements[(Certification Requirements)]
 |link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
 |Telemetry Platforms only 
-|Remove a virtual CU endpoint  link:./commands/cloud.adoc#certification-requirements-1[Certification Requirements)]
+|Remove a virtual CU endpoint  link:./commands/cloud.adoc#certification-requirements-1[(Certification Requirements)]
 |link:./integration/reonboarding.adoc[Reonboarding] 
 |Always
-|Receive new credentials including new certificates for an endpoint link:./integration/onboard.adoc#certification-requirements[Certification Requirements)]
+|Receive new credentials including new certificates for an endpoint link:./integration/reonboarding.adoc#certification-requirements[(Certification Requirements)]
 |<<Account management>> |CUs only | Change the endpoint, the CU is communicating with
-|<<Clean your feed>> |Always |Make sure, you don't miss messages 
+|<<Clean your feed>> |Always |Make sure, you don't leave messages in your feed
 |====
 
 
@@ -112,16 +115,16 @@ It will be checked in advance by the certification company, which commands are s
 [cols="1,2,9",options="header",]
 |====
 |MessageType |Condition |Description
-|link:./commands/endpoint.adoc#capabilities-command[dke:capabilities] | Always |Endpoint to announce ist capabilities in terms of technical message types that can be sent / received link:./endpoint.adoc#certification-requirements[(Certification Requirements)]
-|link:./commands/endpoint.adoc#subscribtion-command[dke:subscription] |If app can receive messages |Endpoint to subscribe for a certain technical message type, so that it receives published messages of this typelink:./endpoint.adoc#certification-requirements-1[(Certification Requirements)]
-|link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query] |If app can receive messages |Endpoint to query for metadata of messages in its message feed (type, size, sender, time sent etc.) link:./feed.adoc#certification-requirements[(Certification Requirements)]
-|link:./commands/feed.adoc#call-for-messages[dke:feed_message_query] |If app can receive messages |Endpoint to query for messages in its message feed link:./feed.adoc#certification-requirements-2[(Certification Requirements)]
+|link:./commands/endpoint.adoc#capabilities-command[dke:capabilities] | Always |Endpoint to announce ist capabilities in terms of technical message types that can be sent / received link:./commands/endpoint.adoc#certification-requirements[(Certification Requirements)]
+|link:./commands/endpoint.adoc#subscribtion-command[dke:subscription] |If app can receive messages |Endpoint to subscribe for a certain technical message type, so that it receives published messages of this typelink:./commands/endpoint.adoc#certification-requirements-1[(Certification Requirements)]
+|link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query] |If app can receive messages |Endpoint to query for metadata of messages in its message feed (type, size, sender, time sent etc.) link:./commands/feed.adoc#certification-requirements[(Certification Requirements)]
+|link:./commands/feed.adoc#call-for-messages[dke:feed_message_query] |If app can receive messages |Endpoint to query for messages in its message feed link:./commands/feed.adoc#certification-requirements-2[(Certification Requirements)]
 |link:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm] |If app can receive messages |Endpoint to confirm that it has received a certain message (or set of messages) link:./feed.adoc#certification-requirements-4[(Certification Requirements)]
-|link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete] |If app can receive messages |Endpoint to delete messages from its message feed link:./feed.adoc#certification-requirements-5[(Certification Requirements)]
-|link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] |If app can send messages |Endpoint to get a list of endpoints to which messages of a certain type can be sent (considering routing rules in place) link:./ecosystem.adoc#certification-requirements[(Certification Requirements)]
-|link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] |Fully Optional |Endpoint to get a list of endpoints to which messages of a certain type can be sent (not considering routing rules)link:./ecosystem.adoc#certification-requirements-1[(Certification Requirements)]
-|link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf] |If app can send messages | Reporting a new teamset to agrirouter and the ecosystem link:./ecosystem.adoc#certification-requirements[(Certification Requirements)]
-|link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[iso:11783:-10:time_log:protobuf] |If app can send messages |Sending Telemetry data for the current teamset link:./ecosystem.adoc#certification-requirements-1[(Certification Requirements)]
+|link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete] |If app can receive messages |Endpoint to delete messages from its message feed link:./commands/feed.adoc#certification-requirements-5[(Certification Requirements)]
+|link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] |If app can send messages |Endpoint to get a list of endpoints to which messages of a certain type can be sent (considering routing rules in place) link:./commands/ecosystem.adoc#certification-requirements[(Certification Requirements)]
+|link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] |Fully Optional |Endpoint to get a list of endpoints to which messages of a certain type can be sent (not considering routing rules)link:./commands/ecosystem.adoc#certification-requirements-1[(Certification Requirements)]
+|link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf] |If app can send messages | Reporting a new teamset to agrirouter and the ecosystem link:./tmt/efdi.adoc#certification-requirements[(Certification Requirements)]
+|link:./tmt/efdi.adoc#call-for-endpoints-that-support-a-technical-message-type[iso:11783:-10:time_log:protobuf] |If app can send messages |Sending Telemetry data for the current teamset link:./tmt/efdi.adoc#certification-requirements-1[(Certification Requirements)]
 |====
 
 
@@ -140,9 +143,9 @@ These tests are only required, if your application can send data
 [cols="1,2,9",options="header",]
 |====
 |MessageType |Condition |Description
-|link:./integration/build-message.adoc#chunking-big-messages[Building chunks] | link:./tmt/overview.adoc[All TMTs except for EFDI] |Split big messages into several messages before sending. link:./endpoint.adoc#certification-requirements[(Certification Requirements)]
-| Base64 encoding |link:./tmt/overview.adoc[All TMTs except for EFDI]  |Base64 encoding binary data before building the message
-| Base64 encoded Zip| link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape] | Accessable Zip Folders need to be sent 
+|link:./integration/build-message.adoc#chunking-big-messages[Building chunks] | link:./tmt/overview.adoc[All TMTs except for EFDI] |Split big messages into several messages before sending. link:./integration/build-message.adoc#certification-requirements[(Certification Requirements)]
+| Base64 encoding |link:./tmt/overview.adoc[All TMTs except for EFDI]  |Base64 encoding binary data before building the message link:./tmt/overview.adoc#certification-requirements[(Certification Requirements)]
+| Exchange Zip Folders| link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape] | Accessable Zip Folders need to be sent 
 
 link:./tmt/taskdata.adoc#certification-requirements[Certification Requirements for TaskData]
 
