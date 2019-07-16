@@ -206,7 +206,7 @@ Steps:
 
 [NOTE]
 ====
-* Many implementations of the Verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible, that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
+* Many implementations of the verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible, that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
 
 * The public keys can be found at Certificates and keys
 ====
@@ -230,6 +230,10 @@ The result token is a base64 encoded JSON object including the following paramet
     "regcode": "f75bfbd41b",
     "expires": "2018-02-27T10:49:04.901Z"
     }
+
+=== Certification requirements
+
+The call for the authorization URL shall not time out. It shall display a page or redirect to a different page. HTTP Return codes indicating an error are not OK, given the onboarding itself worked.
 
 
 == Authorization for CUs and non-cloud-software

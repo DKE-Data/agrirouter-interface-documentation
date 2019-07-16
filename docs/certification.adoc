@@ -59,40 +59,50 @@ The following information are not necessary to start the certification process b
 * Is this an initial certification or a recertification for a new version of an existing software
 
 
-
-
 == Certification tests
-Not all of the certification tests are necessary for your implementation, the selection depends on several parameters:
+Not all of the certification tests are necessary for your implementation, the selection depends on several parameters and attributes of the specific application. These are listed in the following chapters
 
 === Based on the application type
 
 Based on the type of your application, different tests might be required. Check link:./applications.adoc[here], which type suites your requirements best.
 
-[cols=",,",width="100%"]
-|============================
->s|CU (Telemetry Connections) >s|Farming Software  >s| Telemetry Platforms
- 1.6+^.^|link:./integration/onboarding.adoc[onboarding] 2.1+^|link:./integration/authorization.adoc[authorization process]
- 2.1+^|link:./integration/onboarding.adoc#sending-a-verification-request[verification (optional, if supported)]
- 2.1+^|link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[secured onboarding]
- | 1.1+^| link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding]
- 2.1+^|link:./integration/revoke.adoc[revoking]
- | 1.1+^| link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
- 3.1+^|link:./integration/reonboarding.adoc[reonboarding]
- 3.1+^|link:./commands/endpoint.adoc#capabilities-command[sending the capabilities]
- 2.1+|  | link:./commands/endpoint.adoc#capabilities-command[send capabilities] (link:./telemetry-platform-concepts.adoc[for each VCU])
- 3.1+^|link:./certification.adoc#clean-your-feed[Clean your feed]
- 2.1+|  | link:./certification.adoc#clean-your-feed[Clean your feed] (link:./telemetry-platform-concepts.adoc[for each VCU])
- | <<Account management>> 
- 2.1+|
-|============================
+[cols="1,2,4",options="header",]
+|====
+|MessageType |Major for |Description
+|link:./integration/onboarding.adoc[Onboarding] | CUs | Create a new endpoint at the agrirouter link:./integration/onboard.adoc#certification-requirements-1[Certification Requirements)]
+|link:./integration/authorization.adoc[Authorization] 
+|Telemetry Platforms
+
+Farming Software 
+|Authorize creating a new endpoint link:./integration/authorization.adoc#certification-requirements[Certification Requirements)] 
+|link:./integration/onboarding.adoc#sending-a-verification-request[Verification (optional, if supported)]
+|Telemetry Platforms
+
+Farming Software 
+|Verify the account for a new endpoint link:./integration/onboard.adoc#certification-requirements[Certification Requirements)]
+|link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
+|Telemetry Platforms
+
+Farming Software 
+|Create a new endpoint at the agrirouter link:./integration/onboard.adoc#certification-requirements-1[Certification Requirements)]
+
+|link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding] |Telemetry Platforms | Create a new endpoint for a virtual CU link:./commands/cloud.adoc#certification-requirements[Certification Requirements)]
+|link:./integration/revoke.adoc[Revoking] 
+|Telemetry Platforms
+
+Farming Software 
+|Remove an endpoint or all endpoints of a specific account link:./integration/revoke.adoc#certification-requirements[Certification Requirements)]
+|link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
+|Telemetry Platforms only 
+|Remove a virtual CU endpoint  link:./commands/cloud.adoc#certification-requirements-1[Certification Requirements)]
+|link:./integration/reonboarding.adoc[Reonboarding] 
+|Always
+|Receive new credentials including new certificates for an endpoint link:./integration/onboard.adoc#certification-requirements[Certification Requirements)]
+|<<Account management>> |CUs only | Change the endpoint, the CU is communicating with
+|<<Clean your feed>> |Always |Make sure, you don't miss messages 
+|====
 
 
-==== Clean your feed
-After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages. For the certification process, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification process. Please check the specific time periods with your certification company.
-
-==== Test coverage for telemetry platforms
-For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 
-Telemetry platforms must at least support the onboarding and offboarding; see above. They can however also support other functionalities like Farming Software. In this case, additional tests apply for the platform itself. 
 
 
 === Based on commands
@@ -102,55 +112,74 @@ It will be checked in advance by the certification company, which commands are s
 [cols="1,2,9",options="header",]
 |====
 |MessageType |Condition |Description
-|link:./commands/endpoint.adoc#capabilities-command[dke:capabilities] | Always |Endpoint to announce ist capabilities in terms of technical message types that can be sent / received
-|link:./commands/endpoint.adoc#subscribtion-command[dke:subscription] |If app can receive messages |Endpoint to subscribe for a certain technical message type, so that it receives published messages of this type
-|link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query] |If app can receive messages |Endpoint to query for metadata of messages in its message feed (type, size, sender, time sent etc.)
-|link:./commands/feed.adoc#call-for-messages[dke:feed_message_query] |If app can receive messages |Endpoint to query for messages in its message feed
-|link:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm] |If app can receive messages |Endpoint to confirm that it has received a certain message (or set of messages)
-|link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete] |If app can receive messages |Endpoint to delete messages from its message feed
-|link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] |If app can send messages |Endpoint to get a list of endpoints to which messages of a certain type can be sent (considering routing rules in place)
-|link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] |Fully Optional |Endpoint to get a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
-|link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf] |If app can send messages | Reporting a new teamset to agrirouter and the ecosystem
-|link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[iso:11783:-10:time_log:protobuf] |If app can send messages |Sending Telemetry data for the current teamset
+|link:./commands/endpoint.adoc#capabilities-command[dke:capabilities] | Always |Endpoint to announce ist capabilities in terms of technical message types that can be sent / received link:./endpoint.adoc#certification-requirements[(Certification Requirements)]
+|link:./commands/endpoint.adoc#subscribtion-command[dke:subscription] |If app can receive messages |Endpoint to subscribe for a certain technical message type, so that it receives published messages of this typelink:./endpoint.adoc#certification-requirements-1[(Certification Requirements)]
+|link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query] |If app can receive messages |Endpoint to query for metadata of messages in its message feed (type, size, sender, time sent etc.) link:./feed.adoc#certification-requirements[(Certification Requirements)]
+|link:./commands/feed.adoc#call-for-messages[dke:feed_message_query] |If app can receive messages |Endpoint to query for messages in its message feed link:./feed.adoc#certification-requirements-2[(Certification Requirements)]
+|link:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm] |If app can receive messages |Endpoint to confirm that it has received a certain message (or set of messages) link:./feed.adoc#certification-requirements-4[(Certification Requirements)]
+|link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete] |If app can receive messages |Endpoint to delete messages from its message feed link:./feed.adoc#certification-requirements-5[(Certification Requirements)]
+|link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] |If app can send messages |Endpoint to get a list of endpoints to which messages of a certain type can be sent (considering routing rules in place) link:./ecosystem.adoc#certification-requirements[(Certification Requirements)]
+|link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] |Fully Optional |Endpoint to get a list of endpoints to which messages of a certain type can be sent (not considering routing rules)link:./ecosystem.adoc#certification-requirements-1[(Certification Requirements)]
+|link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf] |If app can send messages | Reporting a new teamset to agrirouter and the ecosystem link:./ecosystem.adoc#certification-requirements[(Certification Requirements)]
+|link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[iso:11783:-10:time_log:protobuf] |If app can send messages |Sending Telemetry data for the current teamset link:./ecosystem.adoc#certification-requirements-1[(Certification Requirements)]
 |====
 
 
 
 
-=== Based on direction
-==== Sending messages
+=== Based on other conditions
+
+
+==== Apps sending messages
 [REMARK]
 =====
 These tests are only required, if your application can send data 
 =====
 
-* Is your application able to send technical message types except for EFDI?
-. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to create chunks is necessary.
-. The correct sending of Base64 encoded data is checked
 
-* Does your application send the TaskData or Shape messageformat?
-. The correct sending of the Base64-encoded zip folder will be checked.
+[cols="1,2,9",options="header",]
+|====
+|MessageType |Condition |Description
+|link:./integration/build-message.adoc#chunking-big-messages[Building chunks] | link:./tmt/overview.adoc[All TMTs except for EFDI] |Split big messages into several messages before sending. link:./endpoint.adoc#certification-requirements[(Certification Requirements)]
+| Base64 encoding |link:./tmt/overview.adoc[All TMTs except for EFDI]  |Base64 encoding binary data before building the message
+| Base64 encoded Zip| link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape] | Accessable Zip Folders need to be sent 
 
-* The adressing will be tested:
-** Sending a message to one receipient
-** Sending a message to multiple receipients
-** Publishing a message
-** Publishing a message and sending it directly to 1 receipient
-** Publishing a message and sending it directly to multiple receipients
+link:./tmt/taskdata.adoc#certification-requirements[Certification Requirements for TaskData]
+
+link:./tmt/shape.adoc#certification-requirements[Certification Requirements for Shape]
+
+|Message Adressing
+
+| Always 
+
+a| The different ways to send a message will be checked, depending on which of these functionalities your application supports:
+
+* Sending a message to one receipient
+* Sending a message to multiple receipients
+* Publishing a message
+* Publishing a message and sending it directly to 1 receipient
+* Publishing a message and sending it directly to multiple receipients
+
+|====
 
 
-==== Receiving messages
+
+
+==== Apps receiving messages
 [REMARK]
 =====
 These tests are only required, if your application can receive data 
 =====
 
-* Is your application able to receive technical message types except for EFDI?
-. The link:./integration/build-message.adoc#chunking-big-messages[chunking mechanism] to merge chunks is relevant
+[cols="1,2,9",options="header",]
+|====
+|MessageType |Condition |Description
+|link:./integration/build-message.adoc#chunking-big-messages[Merging chunks] | link:./tmt/overview.adoc[All TMTs except for EFDI] |Reconnect the split big messages. link:./endpoint.adoc#certification-requirements[(Certification Requirements)]
+|Push notifications |Always (Optional)  | It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
 
-* Is your application able to support push notifications?
-. It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
-. It's tested, if pushed messages are confirmed
+It's tested, if pushed messages are confirmed
+|====
+
 
     
 === Based on message protocol layer and message format
@@ -174,6 +203,12 @@ It will be tested, that the software uses UTC Timestamp for every message, it se
 
 If supported, it's checked, if a CU correctly changes the agrirouter endpoint, it is communicating with, when the account in the CU is changed.
 
+==== Clean your feed
+After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages. For the certification process, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification process. Please check the specific time periods with your certification company.
+
+==== Test coverage for telemetry platforms
+For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 
+Telemetry platforms must at least support the onboarding and offboarding; see above. They can however also support other functionalities like Farming Software. In this case, additional tests apply for the platform itself. 
 
 == Recertification cases
 
