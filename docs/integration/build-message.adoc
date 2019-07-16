@@ -150,6 +150,7 @@ agrirouter does neither check nor inform about Chunks, that have not yet been de
 
 * The chunk payload may not exceed a size of 1 MB
 * The context_id needs to be a uuid
+* The chunks need to be enumerated incremental, beginning at 1
 
 == Building the Envelope
 
