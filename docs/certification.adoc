@@ -175,7 +175,7 @@ These tests are only required, if your application can receive data
 |====
 |MessageType |Condition |Description
 |link:./integration/build-message.adoc#chunking-big-messages[Merging chunks] | link:./tmt/overview.adoc[All TMTs except for EFDI] |Reconnect the split big messages. link:./endpoint.adoc#certification-requirements[(Certification Requirements)]
-|Push notifications |Always (Optional)  | It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
+|link:./integration/push-notification.adoc[Push notifications] |Always (Optional)  | It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
 
 It's tested, if pushed messages are confirmed
 |====
