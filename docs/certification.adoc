@@ -221,6 +221,7 @@ An application has to be recertified, if one of the following things apply:
 * The basic message protocol (MQTT or REST) has changed
 * The basic message format (JSON or Native Protobuf) has changed
 * The list of implemented commands changed
+* Push Notifications are activated in the capabilities
 
 ==== Link Section
 This page is found in every file and links to the major topics
