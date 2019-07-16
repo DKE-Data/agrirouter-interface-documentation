@@ -156,6 +156,8 @@ Once the request has been submitted by the application developer (the status of 
 
 Every application (communication unit, farming software or telemetry platform) has to be certified by the DKE or a trusted partner of the DKE. During this certification process every application gets a unique certification identifier. This identifier ensures that the certification can only be applied to the single version of the application.
 
+All information on certification can be found link:./certification.adoc[here].
+
 The certification process shall disclose name, version information and supported technical message types, in order to allow the agrirouter to check whether the application supports a certain technical message type and to properly display the name of the application as an endpoint in an end-user’s account after registration of an instance of the endpoint.
 
 The certification process also ensures, that there will be a unique ID for the application which the application can send to the agrirouter in order to allow the agrirouter to look up its capabilities.

@@ -205,6 +205,13 @@ Both protocols have several advantages and disadvantages. To select the right pr
 |Steps for Call and Result |3 |min. 4; polling
 |=============================================
 
+== Advice on protocol choice
+
+Every app provider is free to select his prefered format from the list above.
+
+DKE however advices to use MQTT using RouterDevices for any application that handles multiple endpoints (e.g. Telemetry Platforms, but also Farming Software, that is a cloud software and communicates in behalf of multiple accounts) or sends data in a frequency higher than 1 message per minute. 
+
+
 == Abstraction of communication workflows
 
 To avoid graphs with too many arrows, we simplifiy the upcoming requests, abstracting MQTT and REST. Whatever protocol you use, a Request and Response in this document will look like this:
