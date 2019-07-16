@@ -163,6 +163,7 @@ a| The different ways to send a message will be checked, depending on which of t
 * Publishing a message and sending it directly to 1 receipient
 * Publishing a message and sending it directly to multiple receipients
 
+| <<Buffering>> | Always| Buffer data, if agrirouter connection fails
 |====
 
 
@@ -212,6 +213,12 @@ After the several tests of receiving or rejecting messages, it will be checked i
 ==== Test coverage for telemetry platforms
 For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 
 Telemetry platforms must at least support the onboarding and offboarding; see above. They can however also support other functionalities like Farming Software. In this case, additional tests apply for the platform itself. 
+
+==== Buffering
+
+If the internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data for at least 2 weeks or 100 MB of data, that needs to be sent, when the connection is reastablished.
+
+The app instance needs to check for reconnection at least once per minute.
 
 == Recertification cases
 
