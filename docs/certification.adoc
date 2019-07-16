@@ -87,7 +87,7 @@ Farming Software
 |Telemetry Platforms
 
 Farming Software 
-|Create a new endpoint at the agrirouter link:./integration/onboard.adoc#certification-requirements-1[(Certification Requirements)]
+|Create a new endpoint at the agrirouter link:./integration/onboarding.adoc#certification-requirements-1[(Certification Requirements)]
 
 |link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding] |Telemetry Platforms | Create a new endpoint for a virtual CU link:./commands/cloud.adoc#certification-requirements[(Certification Requirements)]
 |link:./integration/revoke.adoc[Revoking] 
@@ -119,12 +119,12 @@ It will be checked in advance by the certification company, which commands are s
 |link:./commands/endpoint.adoc#subscribtion-command[dke:subscription] |If app can receive messages |Endpoint to subscribe for a certain technical message type, so that it receives published messages of this typelink:./commands/endpoint.adoc#certification-requirements-1[(Certification Requirements)]
 |link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query] |If app can receive messages |Endpoint to query for metadata of messages in its message feed (type, size, sender, time sent etc.) link:./commands/feed.adoc#certification-requirements[(Certification Requirements)]
 |link:./commands/feed.adoc#call-for-messages[dke:feed_message_query] |If app can receive messages |Endpoint to query for messages in its message feed link:./commands/feed.adoc#certification-requirements-2[(Certification Requirements)]
-|link:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm] |If app can receive messages |Endpoint to confirm that it has received a certain message (or set of messages) link:./feed.adoc#certification-requirements-4[(Certification Requirements)]
-|link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete] |If app can receive messages |Endpoint to delete messages from its message feed link:./commands/feed.adoc#certification-requirements-5[(Certification Requirements)]
+|link:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm] |If app can receive messages |Endpoint to confirm that it has received a certain message (or set of messages) link:./commands/feed.adoc#certification-requirements-3[(Certification Requirements)]
+|link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete] |If app can receive messages |Endpoint to delete messages from its message feed link:./commands/feed.adoc#certification-requirements-4[(Certification Requirements)]
 |link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] |If app can send messages |Endpoint to get a list of endpoints to which messages of a certain type can be sent (considering routing rules in place) link:./commands/ecosystem.adoc#certification-requirements[(Certification Requirements)]
 |link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] |Fully Optional |Endpoint to get a list of endpoints to which messages of a certain type can be sent (not considering routing rules)link:./commands/ecosystem.adoc#certification-requirements-1[(Certification Requirements)]
 |link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf] |If app can send messages | Reporting a new teamset to agrirouter and the ecosystem link:./tmt/efdi.adoc#certification-requirements[(Certification Requirements)]
-|link:./tmt/efdi.adoc#call-for-endpoints-that-support-a-technical-message-type[iso:11783:-10:time_log:protobuf] |If app can send messages |Sending Telemetry data for the current teamset link:./tmt/efdi.adoc#certification-requirements-1[(Certification Requirements)]
+|link:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf] |If app can send messages |Sending Telemetry data for the current teamset link:./tmt/efdi.adoc#certification-requirements-1[(Certification Requirements)]
 |====
 
 
