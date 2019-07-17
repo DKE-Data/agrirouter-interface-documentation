@@ -28,7 +28,7 @@ There are multiple certification companies, a list can be found link:https://my-
 
 == Certification Requirements
 
-To fullfill the certification, there are several requirements, of which several have to be finished before the certification process can start.
+To fullfill the certification, there are several requirements, of which several have to be finished before the certification can start.
 
 === Prerequists
 
