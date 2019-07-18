@@ -9,11 +9,11 @@
 
 Every application needs to be certified to be onboardable to the agrirouter. The certification ensures, that the communication protocol of the agrirouter is successfully implemented and the application is able to communicate correctly with the agrirouter.
 
-A certification is needed any time, the app changes its capabilities, changes the commands or uses a different protocol to communicate with the agrirouter.
+A certification is needed any time, the app changes its capabilities or their sending directions, changes the commands or uses a different protocol to communicate with the agrirouter.
 
 [NOTE]
 =====
-For a new certification version, capabilities can never be removed. It is only allowed to add capabilities for a new version. The capabilities request however can of course only include a subset that is smaller than in the version before.
+For a new certification version, capabilities can never be removed. Neither can a sending direction of a capability be removed. It is only allowed to add capabilities or sending directions for a new version. The capabilities command however can of course only include a subset that is smaller than in the version before.
 =====
 
 == Out of focus
@@ -28,7 +28,7 @@ There are multiple certification companies, a list can be found link:https://my-
 
 == Certification Requirements
 
-To fullfill the certification, there are several requirements, of which several have to be finished before the certification can start.
+To pass the certification tests, there are several requirements, of which several have to be fulfilled before the certification can start.
 
 === Prerequists
 
@@ -43,7 +43,7 @@ To fullfill the certification, there are several requirements, of which several 
 ** Phone
 ** URL
 * A link:./registration.adoc[quality assurance environment developer account of the app provider]
-* application Id and certification version Id of link:./applications.adoc[an application in the quality assurance Environment].
+* application Id and certification version Id of link:./applications.adoc[an application in the quality assurance environment].
 
 == Further requirements
 
@@ -51,16 +51,18 @@ The following information are not necessary to start the certification process b
 
 * A link:./registration.adoc[production environment developer account of the app provider]
 * application Id and certification version Id of link:./applications.adoc[an application in the production environment].
-* Version, Name and Description of the application to certify
+* Version, name and description of the application to certify
 * message protocol (MQTT/REST)
 * message format (JSON/Native Protobuf)
 * The capabilities of the app including link:./tmt/overview.adoc[the technical message types] and the sending directions
 * A list of link:./commands/overview.adoc[all commands], that are used by the app
-* Is this an initial certification or a recertification for a new version of an existing software
+* Is this an initial certification or a recertification for a new version of an existing software?
 
 
 == Certification tests
-Not all of the certification tests are necessary for your implementation, the selection depends on several parameters and attributes of the specific application. These are listed in the following chapters
+Not all of the certification tests are necessary for your implementation. 
+
+The selection depends on several parameters and attributes of the specific application. These parameters are listed in the following chapters
 
 === Based on the application type
 
@@ -94,12 +96,12 @@ Farming Software
 Farming Software 
 |Remove an endpoint or all endpoints of a specific account 
 |link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
-|Telemetry Platforms only 
+|Telemetry Platforms 
 |Remove a virtual CU endpoint  
 |link:./integration/reonboarding.adoc[Reonboarding] 
 |Always
 |Receive new credentials including new certificates for an endpoint 
-|<<Account management>> |CUs only | Change the endpoint, the CU is communicating with
+|<<Account management>> |CUs | Change the endpoint, the CU is communicating with
 |<<Clean your feed>> |Always |Make sure, you don't leave messages in your feed
 |====
 
@@ -108,7 +110,7 @@ Farming Software
 
 === Based on commands
 
-It will be checked in advance by the certification company, which commands are supported by your software in which characteristic, those will be checked. Here is an overview of those commands:
+It will be checked in advance by the certification company, which commands are supported by your software in which characteristic. Those will be checked. Here is an overview of the commands:
 
 [cols="1,2,9",options="header",]
 |====
@@ -122,7 +124,7 @@ It will be checked in advance by the certification company, which commands are s
 |link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] |If app can send messages |Endpoint to get a list of endpoints to which messages of a certain type can be sent (considering routing rules in place) 
 |link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] |Fully Optional |Endpoint to get a list of endpoints to which messages of a certain type can be sent (not considering routing rules)l
 |link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf] |If app can send messages | Reporting a new teamset to agrirouter and the ecosystem 
-|link:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf] |If app can send messages |Sending Telemetry data for the current teamset 
+|link:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf] |If app can send messages |Sending telemetry data for the current teamset 
 |====
 
 
@@ -143,7 +145,7 @@ These tests are only required, if your application can send data
 |MessageType |Condition |Description
 |link:./integration/build-message.adoc#chunking-big-messages[Building chunks] | link:./tmt/overview.adoc[All TMTs except for EFDI] |Split big messages into several messages before sending. 
 | Base64 encoding |link:./tmt/overview.adoc[All TMTs except for EFDI]  |Base64 encoding binary data before building the message 
-| Exchange Zip Folders| link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape] | Accessable Zip Folders need to be sent 
+| Exchange Zip Folders| link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape] | Accessable zip folders need to be sent 
 
 |Message Adressing
 
@@ -188,12 +190,12 @@ If your software supports REST with NativeProtobuf, sending and receiving of tho
 
 
 === General requirements
-==== TimeStamps
+==== Timestamps
 It will be tested, that the software uses UTC Timestamp for every message, it sends. See also the link:./integration/general-conventions.adoc[general conventions].
 
 ==== Id requirements
 
-* Every application message Id has to be a unique UUID.
+* Every application message Id has to be a UUID.
 * On every start up, the sequence number needs to start at 1 and has to be incremented with every command/message.
 * The link:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked
 
@@ -210,9 +212,9 @@ Telemetry platforms must at least support the onboarding and offboarding; see ab
 
 ==== Buffering
 
-If the internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data for at least 2 weeks or 100 MB of data, that needs to be sent, when the connection is reastablished.
+If the internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data, that needs to be sent, when the connection is reastablished.
 
-The app instance needs to check for reconnection at least once per minute.
+The app instance needs to check for reconnection on its own.
 
 == Recertification cases
 
