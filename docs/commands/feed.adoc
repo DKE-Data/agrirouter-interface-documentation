@@ -154,10 +154,6 @@ As a telemetry platform can receive messages for multiple Virtual CUs, the recei
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
 
-=== Certification Requirements
-It is checked in advance, which of the 3 fields senderId, MessageId and validity Period your software supports in which combination. Those combinations will be checked and have to create valid requests, that would not create error messages from the agrirouter. For example, the list of message Ids - if used - needs a list of UUIDs, empty Strings or the endpoint names would be invalid.
-
-
 
 == Call for messages
 
@@ -248,8 +244,6 @@ Within the sender-reciever package, the messages are sorted primary by the times
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
 
-=== Certification Requirements
-It is checked in advance, which of the 3 fields senderId, MessageId and validity Period your software supports in which combination. Those combinations will be checked and have to create valid requests, that would not create error messages from the agrirouter. For example, the list of message Ids - if used - needs a list of UUIDs, empty Strings or the endpoint names would be invalid.
 
 
 === Chunked messages
@@ -307,8 +301,6 @@ In case of success, you receive VAL_000209 and a list of MessageIDs that could b
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see link:../error-codes.adoc[the error list].
 
 
-=== Certification Requirements
-It is checked in advance, which of the 3 fields senderId, MessageId and validity Period your software supports in which combination. Those combinations will be checked and have to create valid requests, that would not create error messages from the agrirouter. For example, the list of message Ids - if used - needs a list of UUIDs, empty Strings or the endpoint names would be invalid.
 
 
 = Controlling the outbox 
@@ -357,10 +349,6 @@ In case of success, you receive VAL_000209 and a list of MessageIDs that could b
 === Errors
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
-
-
-=== Certification Requirements
-The list of message Ids - if used - needs a list of UUIDs, empty Strings or the endpoint names would be invalid.
 
 
 

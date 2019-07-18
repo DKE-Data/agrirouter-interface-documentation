@@ -290,9 +290,6 @@ It includes the accountId, so that an app provider can check, if this accountId 
 In case of Failure, an error message is provided.
 Possible ErrorMessages can be found link:../error-codes.adoc[here].
 
-=== Certification Requirements
-The call for the authorization server URL shall not time out. Delivering a page or redirecting to a different URL is OK.
-
 
 == Onboarding Request
 
@@ -603,9 +600,6 @@ Possible Error codes
 |0109 |Application header is not the same as the application associated with the given endpoints or multiple applications found for the given enpoints. |
 |========================================================================================================================================================
 
-=== Certification Requirements
-
-A valid URN shall be used to identify the new endpoint.
 
 === Handling Signature Issues
 

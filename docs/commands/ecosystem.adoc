@@ -131,9 +131,6 @@ __These are advices, not requirements__
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
 
-=== Certification Requirements
-The technical message type needs to be a valid name of a technical message type, the direction needs to be a value from the list above.
-
 
 == Call for filtered list of endpoints, that support a specific message type
 
@@ -167,9 +164,6 @@ For further information, see link:./ecosystem.adoc##call-for-endpoints-that-supp
 === Errors
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
-
-=== Certification Requirements
-The technical message type needs to be a valid name of a technical message type, the direction needs to be a value from the list above.
 
 
 

@@ -94,14 +94,6 @@ The response is an empty message using a HTTP Return code to indicate the result
 |=================================
 
 
-=== Certification Requirements
-
-* The timestamp shall fit the current UTC time
-* The accountId must be a UUID
-* The list of endpoints shall not be empty and may only include UUIDs
-
-
-
 
 ==== Link Section
 This page is found in every file and links to the major topics

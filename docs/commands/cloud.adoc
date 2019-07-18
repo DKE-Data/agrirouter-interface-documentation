@@ -84,10 +84,6 @@ If any of the onboarding Requests failed, failures includes a list of failed req
 |============================================================================
 
 
-=== Certification Requirements
-
-The external Ids of the endpoints to be onboarded shall be in form of  URNs. They need to be unique.
-See also the link:../integration/general-conventions.adoc[general conventions]
 
 == Removing a Virtual Cu
 
@@ -133,9 +129,6 @@ This command is send by the telemetry platform itself, NOT by the Virtual CU tha
 See list of error codes.
 
 
-=== Certification Requirements
-
-The Ids requested for offboarding need to be valid UUIDs.
 
 ==== Link Section
 This page is found in every file and links to the major topics
