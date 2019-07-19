@@ -60,8 +60,8 @@ Whenever you create a new application version, agrirouter support team will have
 
 Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./certification.adoc[here].
 
-Once you know, which kind of application you want to create, you should get in contact with the link:https://my-agrirouter.com/support/certification[certification company] to clarify, which specific requirements you will have to fullfill to pass the certification.
-This will help you to define your implementation and add all requirements for certification.
+Once you know, which kind of application you want to create, you should get in contact with one of the link:https://my-agrirouter.com/support/certification[certification companies] to clarify, which specific requirements you will have to fullfill to pass the certification.
+This will help you to adapt your implementation for the certification process and add all requirements for certification.
 
 Make sure to have all link:./certification.adoc#Prerequists[prerequists] available.
 
