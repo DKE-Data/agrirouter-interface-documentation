@@ -25,7 +25,7 @@ You can read link:./accounts.adoc[here] more about the different types of accoun
 For communication with agrirouter, you need to setup an link:./applications.adoc[application] in the productive environment.
 
 
-== 4.3 Aprove from  certification company
+== 4.3 Approval from the certification company
 
 The certification company will perform the certification - partly with your support - and create a certificate to proof, that your solution is compatible with agrirouter.
 
