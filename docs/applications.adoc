@@ -158,6 +158,9 @@ Every application (communication unit, farming software or telemetry platform) h
 
 The certification shall disclose name, version information and supported technical message types, in order to allow the agrirouter to check whether the application supports a certain technical message type and to properly display the name of the application as an endpoint in an end-user’s account after registration of an instance of the endpoint.
 
+
+All information on certification can be found link:./certification.adoc[here].
+
 The certification also ensures, that there will be a unique ID for the application which the application can send to the agrirouter in order to allow the agrirouter to look up its capabilities.
 
 The certification allows the agrirouter to check the state of the application with a given ID. The agrirouter needs that to make sure, that only certified apps communicate with the productive platform.
