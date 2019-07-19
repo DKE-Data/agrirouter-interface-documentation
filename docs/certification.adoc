@@ -47,7 +47,7 @@ To pass the certification tests, there are several requirements, of which severa
 
 == Further requirements
 
-The following information are not necessary to start the certification process but will be required before finishing it:
+The following information are not necessary to start the certification but will be required before finishing it:
 
 * A link:./registration.adoc[production environment developer account of the app provider]
 * application Id and certification version Id of link:./applications.adoc[an application in the production environment].
@@ -204,7 +204,7 @@ It will be tested, that the software uses UTC Timestamp for every message, it se
 If supported, it's checked, if a CU correctly changes the agrirouter endpoint, it is communicating with, when the account in the CU is changed.
 
 ==== Clean your feed
-After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages. For the certification process, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification process. Please check the specific time periods with your certification company.
+After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages. For the certification, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification. Please check the specific time periods with your certification company.
 
 ==== Test coverage for telemetry platforms
 For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 

@@ -109,7 +109,7 @@ Both IDs are the same, they can be found in the agrirouter software endpoint UI 
 
 === CertificationVersionID
 
-The CertificationVersionID is the ID unique to this specific app certification process. It can be found when clicking on the required Endpoint Software Version:
+The CertificationVersionID is the ID unique to this specific app certification. It can be found when clicking on the required Endpoint Software Version:
 
 ++++
 <p align="center">

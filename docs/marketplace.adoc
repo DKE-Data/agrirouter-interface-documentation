@@ -8,7 +8,7 @@
 
 At https://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the application or hardware provider to present their own apps, functions, modules or hardware solutions.
 
-Parallel to the certification process, application or hardware provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
+Parallel to the certification, application or hardware provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
 
 ++++
 <p align="center">
@@ -228,7 +228,7 @@ Select box:
 
 If your app is not directly certified, select the "coming soon" label to mark, that it is not yet available for end customers.
 
-After certification process is finalized, the app provider may remove the "coming soon". 
+After certification is finalized, the app provider may remove the "coming soon". 
 
 == 2.4 Approve from support team
 

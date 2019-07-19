@@ -139,7 +139,7 @@ The definition of a new technical message type is possible.
 
 == Capabilities
 
-Each endpoint has to describe, which technical message types it can send and/or receive. The listing of those technical message types is called capabilities. Each endpoint has to provide its capabilities when starting to communicate with the agrirouter. The capabilities, an endpoint generally supports (e.g. with all optional features enabled) is required for the link:./certification.adoc[Certification process].
+Each endpoint has to describe, which technical message types it can send and/or receive. The listing of those technical message types is called capabilities. Each endpoint has to provide its capabilities when starting to communicate with the agrirouter. The capabilities, an endpoint generally supports (e.g. with all optional features enabled) is required for the link:./certification.adoc[Certification].
 
 [NOTE]
 ====
