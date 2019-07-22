@@ -23,9 +23,6 @@ The zip file has to be formatted to a Base64-encoding of its binary data. It mus
 
 
 
-
-
-
 ==== Link Section
 This page is found in every file and links to the major topics
 [width="100%"]

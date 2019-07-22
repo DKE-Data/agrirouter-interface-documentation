@@ -206,7 +206,7 @@ Steps:
 
 [NOTE]
 ====
-* Many implementations of the Verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible, that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
+* Many implementations of the verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible, that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
 
 * The public keys can be found at Certificates and keys
 ====

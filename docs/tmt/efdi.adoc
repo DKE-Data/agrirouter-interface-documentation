@@ -49,6 +49,7 @@ The result indicates, if the teamset could be forwarded to an addressed endpoint
 If a CU sends a teamset, applications are able to address messages directly to the devices. These messages are then delivered to the CU.
 ====
 
+
 == iso:11783:-10:time_log:protobuf - EFDI TimeLog
 
 The EFDI timelog is comparable to IOSOXML Binary Log data. The format with all its parameters can be received from the AEF repository.
@@ -105,7 +106,6 @@ The assignment of specific DDIs to groups can be found link:https://lb.my-agriro
 ====
 The categories list is only relevant for the UI of agrirouter, it is not used in the interface communication!
 ====
-
 
 ==== Link Section
 This page is found in every file and links to the major topics

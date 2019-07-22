@@ -95,10 +95,6 @@ The response is an empty message using a HTTP Return code to indicate the result
 
 
 
-
-
-
-
 ==== Link Section
 This page is found in every file and links to the major topics
 [width="100%"]

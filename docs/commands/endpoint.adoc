@@ -44,14 +44,6 @@ Parameters are the following elements:
 
 The technical message type can be a technical message type of DKE or a proprietary message type.
 
-[IMPORTANT]
-====
-Sending the capabilities command will **delete** any subscription that was made from your application instance. 
-
-It doesn't matter, if the capabilities changed, subscriptions are always deleted.
-
-Make sure, you send the subscriptions again after sending the capabilities.
-====
 
 
 [cols="1,2,2,4",options="header",]
@@ -236,6 +228,8 @@ Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors,
 ++++
 
 
+
+
 == Sending a teamset using device Descriptions
 
 === Definition
@@ -244,7 +238,7 @@ The teamset describes a list of devices attached to the communication unit. The 
 
 [NOTE]
 ====
-For the certification process it is required to send the device description message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
+For the certification it is required to send the device description message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
 ====
 
 For the format, please refer to  link:../tmt/efdi.adoc[iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description]

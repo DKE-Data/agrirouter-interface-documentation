@@ -21,13 +21,6 @@ This format is used to exchange application maps as a zip file.
 
 The zip file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
 
-The zip file must at least include the following files:
-
-* SHP: The main file including the geometry
-* SHX: The index file indexing the geometry features
-* DBF: The dBASE Table, including the attribute information of the features
-
-
 
 
 

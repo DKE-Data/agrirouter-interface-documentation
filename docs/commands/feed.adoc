@@ -133,7 +133,7 @@ The Paging information is included in the page parameter:
 
 The chunk context is an Array of available chunk contexts within this messages. If there are multiple of them, this means, that there are multiple chunked messages to be realigned.
 
-The chunk context is described in 13.2 Chunking big messages
+The chunk context is described in link:./build-message.adoc#chunking-big-messages[chunking big messages] .
 
 The feed includes an array of message headers
 
@@ -154,7 +154,8 @@ As a telemetry platform can receive messages for multiple Virtual CUs, the recei
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
 
-== Call for specific messages
+
+== Call for messages
 
 === Definition
 
@@ -243,7 +244,7 @@ Within the sender-reciever package, the messages are sorted primary by the times
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
 
-.
+
 
 === Chunked messages
 
@@ -300,6 +301,8 @@ In case of success, you receive VAL_000209 and a list of MessageIDs that could b
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see link:../error-codes.adoc[the error list].
 
 
+
+
 = Controlling the outbox 
 
 To make sure, that no message gets lost due to e.g. a loss of internet connection while delivering a message, the app instance has to confirm the receival of every message.
@@ -346,9 +349,6 @@ In case of success, you receive VAL_000209 and a list of MessageIDs that could b
 === Errors
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
-
-
-
 
 
 

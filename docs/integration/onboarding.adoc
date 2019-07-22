@@ -109,7 +109,7 @@ Both IDs are the same, they can be found in the agrirouter software endpoint UI 
 
 === CertificationVersionID
 
-The CertificationVersionID is the ID unique to this specific app certification process. It can be found when clicking on the required Endpoint Software Version:
+The CertificationVersionID is the ID unique to this specific app certification. It can be found when clicking on the required Endpoint Software Version:
 
 ++++
 <p align="center">
@@ -165,7 +165,7 @@ All signatures used for the onboarding and revocation process shall be created b
 
 Agrirouter will look up the public key for the app id specified and verify the signature.
 
-== Sending a Verification Request
+== Verification Request
 
 The verification request is used to actually check, if the endpoint is for the desired application and account before actually onboarding it.
 
@@ -290,7 +290,8 @@ It includes the accountId, so that an app provider can check, if this accountId 
 In case of Failure, an error message is provided.
 Possible ErrorMessages can be found link:../error-codes.adoc[here].
 
-== Sending Onboarding Request
+
+== Onboarding Request
 
 To onboard a new endpoint, the endpoint has to send an onboarding request providing the registration code to agrirouter.
 
@@ -599,7 +600,8 @@ Possible Error codes
 |0109 |Application header is not the same as the application associated with the given endpoints or multiple applications found for the given enpoints. |
 |========================================================================================================================================================
 
-===== Handling Signature Issues
+
+=== Handling Signature Issues
 
 If you experience problems with an invalid signature, (Code 107), try the following:
 

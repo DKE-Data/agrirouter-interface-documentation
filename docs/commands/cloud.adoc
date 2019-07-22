@@ -84,6 +84,7 @@ If any of the onboarding Requests failed, failures includes a list of failed req
 |============================================================================
 
 
+
 == Removing a Virtual Cu
 
 === Definition
@@ -126,7 +127,6 @@ This command is send by the telemetry platform itself, NOT by the Virtual CU tha
 === Errors
 
 See list of error codes.
-
 
 
 
