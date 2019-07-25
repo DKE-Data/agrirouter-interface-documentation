@@ -300,7 +300,7 @@ The JSON setup looks like this:
 
 "capabilityAlternateId": "\{\{capabilityAlternateId}}",
 
-"measures": [{"\{\{encoded_request}}", "\{\{$timestamp}}"}]
+"measures": [["\{\{encoded_request}}", "\{\{$timestamp}}"]]
 
 }
 ----
