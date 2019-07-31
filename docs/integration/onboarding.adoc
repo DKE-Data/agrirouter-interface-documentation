@@ -574,8 +574,7 @@ On Failure, a JSON object including an error message is received, e.g.:
 }
 ----
 
-Possible Error codes can be found link:../error-codes.adoc#onboarding-error-codes[ in the error list]
-
+Possible Error codes can be found link:../error-codes.adoc#onboarding-errorcodes[ in the error list]
 
 
 === Handling Signature Issues
