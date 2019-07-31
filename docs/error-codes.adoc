@@ -90,22 +90,21 @@ With the messages we will have place holders for values which would be injected 
 |ErrorCode |Error Text 
 |0010 |The account is inactive 
 |0011 |Unknown account. 
-|0020 |The account is not Approved for use with this application 
-|0021 |The provided application certification is unknown 
-|0022 |The provided application certification is not in the proper status. 
+|0020 |The account is not approved for use with this application 
+|0021 |The provided application certification is not known 
+|0022 |The application certification version ID is not in the proper status for this request. 
 |0023 |The endpoint was previously onboarded and is blocked for use. 
-|0024 |The provided application certification is not accepted for this request. 
+|0024 |The provided application certification is not accepted for this request as it does not allow onboarding CU endpoints. 
 |0100 |Invalid payload. 
-|0101 |The certification Id provided is not valid for this request. 
-|0102 |The gateway Id provided is not valid 
-|0103 |The certificated type provided is not valid 
-|0104 |The gateway id provided is not valid for this device. The gateway Id can not be changed when reonboarding an existent device in account 
-|0105 |The application id provided is not valid. 
-|0105 |You\'ve made too many requests in a short period of time. 
-|0106 |Missing $\{constants.Validation.SIGNATURE.APPLICATION_ID_HEADER_FIELD} or $ 
+|0101 |The application certification version ID provided is not valid for this request.
+|0102 |The gateway Id provided is not valid.The gateway ID cannot be changed when reonboarding an endpoint. 
+|0103 |The certificated type provided is not valid. 
+|0104 |The gateway ID provided is not valid. The gateway ID cannot be changed when reonboarding an endpoint.
+|0105 |The application id provided is not valid for this request. Registration code is not generated for given application ID.
+|0106 |Missing ${constants.Validation.SIGNATURE.APPLICATION_ID_HEADER_FIELD} or ${constants.Validation.SIGNATURE.AGRIROUTER_SIGNATURE_HEADER_FIELD} header(s)
 |0107 |Invalid signature 
 |0108 |Application cannot be validated as application header is not the same as the application associated with the given registration code. 
-|0109 |Application header is not the same as the application associated with the given endpoints or multiple applications found for the given enpoints. 
+|0109 |Application header is not the same as the application associated with the given endpoints or multiple applications found for given enpoints. 
 |0110 |Signing header is invalid. The request has timed out or UTCTimestamp is not provided
 |0111 |The application ID provided is not valid. The application ID cannot be changed when reonboarding an endpoint. 
 |0112 |You've made too many requests in a short period of time. 
