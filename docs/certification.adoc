@@ -153,8 +153,8 @@ These tests are only required, if your application can send data
 
 a| The different ways to send a message will be checked, depending on which of these functionalities your application supports:
 
-* Sending a message to one receipient
-* Sending a message to multiple receipients
+* Sending a message directly to one receipient
+* Sending a message directly to multiple receipients
 * Publishing a message
 * Publishing a message and sending it directly to 1 receipient
 * Publishing a message and sending it directly to multiple receipients
