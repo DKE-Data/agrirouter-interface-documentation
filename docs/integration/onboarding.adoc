@@ -41,7 +41,7 @@ Telemetry systems and Farming Software need to assign their own userID to the ac
 
 [NOTE]
 ====
-The CU onboarding mechanism needs less steps than the Farming Software and Telemetry software, as it is only required for those applications consuming data to know which user is assigned to which account.
+The CU onboarding mechanism needs less steps than the Farming Software and Telemetry software, but it does not give any information on the account before onboarding is performed.
 
 The following parts of onboarding are *not* required for CU onboarding:
 

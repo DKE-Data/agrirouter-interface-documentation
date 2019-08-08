@@ -11,7 +11,7 @@ Following a list of all commands; specific definitions follow in the linked chap
 [cols="1,2,9",options="header",]
 |====
 |MessageType |Schema (.proto) |Comment
-|link:./endpoint.adoc[dke:capabilities] |agrirouter.request.payload.endpoint.CapabilitySpecification |Endpoint to announce ist capabilities in terms of technical message types that can be sent / received
+|link:./endpoint.adoc[dke:capabilities] |agrirouter.request.payload.endpoint.CapabilitySpecification |Endpoint to announce its capabilities in terms of technical message types that can be sent / received
 |link:./endpoint.adoc[dke:subscription] |agrirouter.request.payload.endpoint.Subscription |Endpoint to subscribe for a certain technical message type, so that it receives published messages of this type
 |link:./feed.adoc[dke:feed_header_query] |agrirouter.feed.request.MessageQuery |Endpoint to query for metadata of messages in its message feed (type, size, sender, time sent etc.)
 |link:./feed.adoc[dke:feed_message_query] |agrirouter.feed.request.MessageQuery |Endpoint to query for messages in its message feed
