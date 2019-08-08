@@ -65,7 +65,7 @@ The aggregated result will have the following structure:
 In any agrirouter developer account (account management -> export metrics), these usage statistics can be exported for your applications.
 
 **Update**
-As the payment concept changed to a flatrate model per sending directions, these statistics are not relevant for the billing anymore, but they give you a good overview of how much communication really exists.
+As the payment concept changed to a flatrate model per sending directions (and of course per app instance), the statistics of who sent how much are not relevant for the billing anymore, but they list of endpoints and the accounts, they are assigned to helps to organize the billing process for the app provider.
 
 ==== Link Section
 This page is found in every file and links to the major topics
