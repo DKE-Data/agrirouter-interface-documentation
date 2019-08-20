@@ -102,7 +102,6 @@ Farming Software
 |Always
 |Receive new credentials including new certificates for an endpoint 
 |<<Account management>> |CUs | Change the endpoint, the CU is communicating with
-|<<Clean your feed>> |Always |Make sure, you don't leave messages in your feed
 |====
 
 
@@ -205,6 +204,10 @@ If supported, it's checked, if a CU correctly changes the agrirouter endpoint, i
 
 ==== Clean your feed
 After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages. For the certification, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification. Please check the specific time periods with your certification company.
+
+==== Valid commands
+The testee has to show that it can build and send all commands relevant for his implementation without producing an ACK_WITH_FAILURE at agrirouter mentioning an invalid message.
+
 
 ==== Test coverage for telemetry platforms
 For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 

@@ -7,7 +7,7 @@
 
 == What is this process used for?
 
-The authorization process was designed to give application providers of consuming applications (e.g. farming software, but in general every application that consumes data) the chance to make sure, they know, which account is assigned to which agrirouter account. Otherwise, fake accounts could consume data on their costs.
+The authorization process was designed to give application providers of applications the chance to make sure, they know, which account is assigned to which agrirouter account. Otherwise, fake accounts could consume data on their costs.
 
 [NOTE]
 ====
@@ -21,7 +21,7 @@ For CUs, this requires additional infrastructure, therefore DKE advices to use t
 
 == Authorization of farming software
 
-As application providers of farming software have to pay for the receiving of raw data, the application provider should make sure, that only such agrirouter accounts can onboard one of his applications, that he can assign to one of his users.
+As application providers have to pay for application instances communicating with agrirouter, the application provider should make sure, that only such agrirouter accounts can onboard one of his applications, that he can assign to one of his users.
 
 [NOTE]
 ====
