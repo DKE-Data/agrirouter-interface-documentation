@@ -77,3 +77,8 @@ The file includes a JSON structure containing all necessary information for the 
 ----
 
 `ConnectionCriteria` and `Authentication` of a single endpoint can be replaced by the data given from the router device, so that every software component of a specific manufacturer can communicate using one router device, as long as all the application instance is connected to the same server. There cannot exist multiple connections using the same router device.
+
+[Important]
+====
+For a proper connection, you need to use the deviceAlternateId as clientId, *not* the connectionCriteria.ClientId!
+====
