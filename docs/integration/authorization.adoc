@@ -244,8 +244,10 @@ To perform authorization for software, that is not provided as a cloud solution,
 ++++
 
 
-
-
+[IMPORTANT]
+====
+Make sure, you save all the information returned from the authorization request, as you will e.g. need the account id for the link:./revoke.adoc[Revoke functionality]!
+====
 
 
 ==== Link Section
