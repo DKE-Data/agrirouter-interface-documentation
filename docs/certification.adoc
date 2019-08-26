@@ -45,7 +45,7 @@ To pass the certification tests, there are several requirements, of which severa
 * A link:./registration.adoc[quality assurance environment developer account of the app provider]
 * application Id and certification version Id of link:./applications.adoc[an application in the quality assurance environment].
 
-== Further requirements
+=== Further requirements
 
 The following information are not necessary to start the certification but will be required before finishing it:
 
@@ -205,8 +205,6 @@ a|Receive new credentials including new certificates for an endpoint
 |====
 
 
-
-
 === Based on commands
 
 It will be checked in advance by the certification company, which commands are supported by your software in which characteristic. Those will be checked. Here is an overview of the commands:
@@ -296,11 +294,7 @@ a| Reporting a new teamset to agrirouter and the ecosystem
 
 
 
-
-=== Based on other conditions
-
-
-==== Apps sending messages
+=== Apps sending messages
 [REMARK]
 =====
 These tests are only required, if your application can send data 
@@ -354,7 +348,7 @@ a| The different ways to send a message will be checked, depending on which of t
 
 
 
-==== Apps receiving messages
+=== Apps receiving messages
 [REMARK]
 =====
 These tests are only required, if your application can receive data 
@@ -386,24 +380,23 @@ It's tested, if pushed messages are confirmed
 
 
     
-==== Based on message protocol layer and message format
+=== Based on message protocol layer and message format
 
 If your software supports REST or MQTT with JSON, sending and receiving of those formats is checked.
 
 If your software supports REST with NativeProtobuf, sending and receiving of those formats is checked.
 
 
-=== General requirements
-==== Timestamps
+=== Timestamps
 It will be tested, that the software uses UTC Timestamp for every message, it sends. See also the link:./integration/general-conventions.adoc[general conventions].
 
-==== Id requirements
+=== Id requirements
 
 * Every application message Id has to be a UUID.
 * On every start up, the sequence number needs to start at 1 and has to be incremented with every command/message.
 * The link:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked
 
-==== Account management
+=== Account management
 
 If supported, it's checked, if a CU correctly changes the agrirouter endpoint, it is communicating with, when the account in the CU is changed.
 
@@ -414,7 +407,7 @@ If supported, it's checked, if a CU correctly changes the agrirouter endpoint, i
 * No messages are sent to a wrong account
 
 
-==== Teamset reports
+=== Teamset reports
 
 The app to be certified needs to report teamsets and provide unique teamset-Ids:
 
@@ -424,7 +417,7 @@ The app to be certified needs to report teamsets and provide unique teamset-Ids:
 * A change of the machine configuration (removing a machine) leads to a new teamset context id
 * A change of the machine configuration (changing a device description) leads to a new teamset context id
 
-==== Clean your feed
+=== Clean your feed
 After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages. For the certification, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification. Please check the specific time periods with your certification company.
 
 *Expected results:*
@@ -432,14 +425,14 @@ After the several tests of receiving or rejecting messages, it will be checked i
 * All messages are removed from the feed of the endpoint (either be deleting or receiving and confirming) within a certain period of time (defined by the certification company due to process dependency).
 
 
-==== Valid commands
+=== Valid commands
 The app to be certified has to show that it can build and send all commands relevant for its implementation without producing an ACK_WITH_FAILURE at agrirouter mentioning an invalid message.
 
 *Expected results*
 
 * All relevant all commands for the implementation can be built and sent as valid commands (=without producing an ACK_WITH_FAILURE at agrirouter mentioning an invalid message)
 
-==== Error handling
+=== Error handling
 All errors that show up during communication with agrirouter need to be documented by the app to be certified.
 Application have to document or display, if any error accours in communication with agrirouter. 
 
@@ -453,7 +446,7 @@ In particular:
 
 * The app provider can show an error message received from agrirouter to the certification company. This can be an administration functionality.
 
-==== Buffering
+=== Buffering
 
 If the internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data, that needs to be sent, when the connection is reastablished.
 
@@ -463,7 +456,7 @@ The app instance needs to check for reconnection on its own.
 
 * It is checked, if an app instance of an app to be certified will retry to send a dataset, that should have been sent, when the agrirouter was offline. This applies for EFDI as well as for every other technical message type
 
-==== Test coverage for telemetry platforms
+=== Test coverage for telemetry platforms
 For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 
 Telemetry platforms must at least support the onboarding and offboarding; see above. They can however also support other functionalities like Farming Software. In this case, additional tests apply for the platform itself. 
 
