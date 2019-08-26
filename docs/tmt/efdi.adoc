@@ -59,6 +59,13 @@ The Message iso:11783:-10:time_log:protobuf includes a list of live telemetry da
 
 EFDI Time Logs are as well comparable to ISO11783 TimeLogs.
 
+[IMPORTANT]
+====
+Make sure, that a timelog message never exceeds the limit of 1MB of data. If this should ever be the case in your app,
+split this message into multiple timelog messages.
+====
+
+
 === Command
 
 [cols=",",]
