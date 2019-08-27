@@ -213,7 +213,7 @@ The request body is a JSON object including the following Parameters:
 |# |Name |Type |Description
 |1 |id |String |The unique ID of the endpoint; we advice to create a URN
 |2 |applicationId |String |The application ID for the application, provided in the agrirouter developer UI
-|3 |certificationId |String |The ID of the certification software version provided in the agrirouter developer UI
+|3 |certificationVersionId |String |The ID of the certification software version provided in the agrirouter developer UI
 |4 |gatewayId |String a|
 The desired communication protocol after onboarding
 
@@ -419,7 +419,7 @@ The request body is a JSON object including the following Parameters:
 |# |Name |Type |Description
 |1 |id |String |The unique ID of the endpoint; we advice to create a URN
 |2 |applicationId |String |The application ID for the application, provided in the agrirouter developer UI
-|3 |certificationId |String |The ID of the certification software version provided in the agrirouter developer UI
+|3 |certificationVersionId |String |The ID of the certification software version provided in the agrirouter developer UI
 |4 |gatewayId |String a|
 The desired communication protocol after onboarding
 
