@@ -64,17 +64,18 @@ Not all of the certification tests are necessary for your implementation.
 
 The selection depends on several parameters and attributes of the specific application. These parameters are listed in the following chapters
 
+
 === Based on the application type
 
 Based on the type of your application, different tests might be required. Check link:./applications.adoc[here], which type suites your requirements best.
 
 [cols="1,2,4",options="header",]
 |====
-|MessageType |Major for |Description
+|MessageType |Major for |Expected Results/Acceptance Criteria
 
-|link:./integration/onboarding.adoc#onboarding-request[Onboarding] | CUs a| Create a new endpoint at the agrirouter
-
-*Expected Results*:
+|link:./integration/onboarding.adoc#onboarding-request[Onboarding] 
+| CUs 
+a| __"Create a new endpoint at the agrirouter"__
 
 * General criteria for successful onboarding:
 ** A new endpoint is visible in the certification account
@@ -99,9 +100,8 @@ Based on the type of your application, different tests might be required. Check 
 |Telemetry Platforms
 
 Farming Software 
-a|Authorize creating a new endpoint
+a| __"Authorize creating a new endpoint"__
 
-*Expected results:*
 
 * After clicking the "Connect"-Button, there must be a website delivered to the browser (no timeout). 
 ** The website shall indicate, that the onboarding worked or - in case of onboarding errors after authorization - show an error.
@@ -113,9 +113,7 @@ a|Authorize creating a new endpoint
 |Telemetry Platforms
 
 Farming Software 
-a|Verify the account for a new endpoint
-
-*Expected results:*
+a| __"Verify the account for a new endpoint"__
 
 * After clicking the "Connect"-Button, there must be a website delivered to the browser (no timeout). 
 ** The app to be certified shows the Account ID or compares it with another account ID (entered however) and throws an error for a non-fitting Account.
@@ -127,10 +125,7 @@ a|Verify the account for a new endpoint
 |Telemetry Platforms
 
 Farming Software 
-a|Create a new endpoint at the agrirouter 
-
-
-*Expected results:*
+a| __"Create a new endpoint at the agrirouter"__ 
 
 * General criteria for successful secured onboarding:
 ** A new endpoint is visible in the certification account
@@ -154,11 +149,8 @@ a|Create a new endpoint at the agrirouter
 
 |link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding] 
 |Telemetry Platforms 
-a| Create a new endpoint for a virtual CU 
+a| __"Create a new endpoint for a virtual CU"__
 
-
-
-*Expected results:*
 
 * A new endpoint representing the VCU shows up in the certification account
 * The external ID is a valid URN
@@ -167,25 +159,22 @@ a| Create a new endpoint for a virtual CU
 |Telemetry Platforms
 
 Farming Software 
-a|Remove an endpoint or all endpoints of a specific account 
+a| __"Remove an endpoint or all endpoints of a specific account"__ 
 
-*Expected results:*
 
 * The specific endpoint disappears from the certification account.
 
 |link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
 |Telemetry Platforms 
-a|Remove a virtual CU endpoint  
+a| __"Remove a virtual CU endpoint"__  
 
-*Expected results:*
 
 * The specific endpoint disappears from the certification account.
 
 |link:./integration/reonboarding.adoc[Reonboarding] 
 |Always
-a|Receive new credentials including new certificates for an endpoint 
+a| __"Receive new credentials including new certificates for an endpoint "__
 
-*Expected results*
 
 * The app instance uses the same external ID as it used for onboarding
 * New credentials can be provided to communicate with agrirouter
@@ -193,17 +182,7 @@ a|Receive new credentials including new certificates for an endpoint
 * In case of the following errors, an error message is required:
 ** Wrong account: During reonboarding, the user is logged in with a different agrirouter account than before. This should result in a new endpoint onboarding in a different account.
 
-
-
-
-|<<Account management>> (if supported) 
-|CUs 
-| Change the endpoint, the CU is communicating with
-
-
-
 |====
-
 
 === Based on commands
 
@@ -211,12 +190,11 @@ It will be checked in advance by the certification company, which commands are s
 
 [cols="1,2,9",options="header",]
 |====
-|MessageType |Condition |Description
+|MessageType |Condition |Expected Results/Acceptance Criteria
 |link:./commands/endpoint.adoc#capabilities-command[dke:capabilities] 
 | Always 
-a|Endpoint to announce ist capabilities in terms of technical message types that can be sent / received 
+a| __"App to announce its capabilities in terms of technical message types that can be sent / received"__
 
-*Expected results*
 
 * Setting routes (as sender or/and as receiver) is possible
 * All information types defined in the certification version of the app to be certified can be selected
@@ -224,64 +202,58 @@ a|Endpoint to announce ist capabilities in terms of technical message types that
 
 |link:./commands/endpoint.adoc#subscribtion-command[dke:subscription] 
 |If app can receive messages 
-a|App Instance subscribes for a certain technical message type, so that it receives published messages of this type
+a| __"App Instance subscribes for a certain technical message type, so that it receives published messages of this type"__
 
-*Expected results*
 
 * The app receives published messages of every technical message type mentioned in its certification version as a receipient.
 
 
 |link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query] 
 |If app can receive messages 
-a|App Instance queries for metadata of messages in its message feed (type, size, sender, time sent etc.) 
+a| __"App Instance queries for metadata of messages in its message feed (type, size, sender, time sent etc.)"__
 
-*Expected results*
 
-* see <<Clean your feed>>
+* see __"Clean your feed"__
 
 
 
 |link:./commands/feed.adoc#call-for-messages[dke:feed_message_query] 
 |If app can receive messages 
-a|App Instance queries for messages in its message feed 
+a| __"App Instance queries for messages in its message feed"__
 
-*Expected results*
 
-* see <<Clean your feed>>
+* see __"Clean your feed"__
 
 
 |link:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm] 
 |If app can receive messages 
-a|App Instance confirms that it has received a certain message (or set of messages) 
+a| __"App Instance confirms that it has received a certain message (or set of messages)"__
 
-*Expected results*
 
-* see <<Clean your feed>>
+* see __"Clean your feed"__
 
 
 |link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete] 
 |If app can receive messages 
-a|App Instance deletes messages from its message feed 
+a| __"App Instance deletes messages from its message feed"__
 
-*Expected results*
 
-* see <<Clean your feed>>
+* see __"Clean your feed"__
 
 
 |link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] 
 |Fully optional
-|App Instance gets a list of endpoints to which messages of a certain type can be sent (considering routing rules in place) 
+a| __"App Instance gets a list of endpoints to which messages of a certain type can be sent (considering routing rules in place) "__
 
 
 |link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] 
 |Fully Optional 
-|App Instance gets a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
+a| __"App Instance gets a list of endpoints to which messages of a certain type can be sent (not considering routing rules)"__
 
 |link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf] 
 |If app can send messages 
-a| Reporting a new teamset to agrirouter and the ecosystem 
+a| __"Reporting a new teamset to agrirouter and the ecosystem"__ 
 
-*Expected results*
 
 * If the app reports machines connected via ISOBUS, the AEF conformance test "TaskController" is required to make sure, no invalid DeviceDescriptions are published
 * If the app reports self-built device descriptions (e.g. by translating a TractorECU or using Bluetooth beacons), the reported device descriptions have to be compatible with ISO11783-10 Annex F
@@ -289,7 +261,9 @@ a| Reporting a new teamset to agrirouter and the ecosystem
 
 |link:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf] 
 |If app can send messages 
-|Sending telemetry data for the current teamset 
+a| __"Sending telemetry data for the current teamset"__
+see __"Teamset reports"__
+
 |====
 
 
@@ -303,28 +277,25 @@ These tests are only required, if your application can send data
 
 [cols="1,2,9",options="header",]
 |====
-|MessageType |Condition |Description
+|MessageType |Condition |Expected Results/Acceptance Criteria
 |link:./integration/build-message.adoc#chunking-big-messages[Building chunks] 
 | link:./tmt/overview.adoc[All TMTs except for EFDI] 
-a|Split big messages into several messages before sending. 
+a| __"Split big messages into several messages before sending. "__
 
-*Expected results*
 
 * The sending of a file with a size of more than 1 MB is possible. The chunks context information is filled
 
 | Base64 encoding 
 |link:./tmt/overview.adoc[All TMTs except for EFDI]  
-a|Base64 encoding binary data before building the message 
+a| __"Base64 encoding binary data before building the message "__
 
-*Expected results*
 
 * A file that shall be sent is encoded in Base64
 
 | Exchange Zip Folders
 | link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape] 
-a| Accessable zip folders need to be sent 
+a| __"Accessable zip folders need to be sent"__ 
 
-*Expected results*
 
 * The TaskData.zip and/or Shape.zip are valid zip files that can be unpacked
 
@@ -332,18 +303,20 @@ a| Accessable zip folders need to be sent
 
 | Always 
 
-a| The different ways to send a message will be checked, depending on which of these functionalities your application supports.
+a| __"The different ways to send a message will be checked, depending on which of these functionalities your application supports."__
 
-*Expected results*
 
 * Sending a message directly to one receipient
 * Sending a message directly to multiple receipients
 * Publishing a message
 * Publishing a message and sending it directly to 1 receipient
 * Publishing a message and sending it directly to multiple receipients
-
-| <<Buffering>> | Always| Buffer data, if agrirouter connection fails
 |====
+
+
+
+
+
 
 
 
@@ -356,12 +329,11 @@ These tests are only required, if your application can receive data
 
 [cols="1,2,9",options="header",]
 |====
-|MessageType |Condition |Description
+|MessageType |Condition |Expected Results/Acceptance Criteria
 |Merging chunks 
 | link:./tmt/overview.adoc[All TMTs except for EFDI] 
-a|Reconnect the split big messages.
+a| __"Reconnect the split big messages."__
 
-*Expected results*
 
 * The receiving of a file that consists of 1 chunk without chunk context is possible
 * The receiving of a file that consists of 1 chunk with chunk context is possible
@@ -373,97 +345,88 @@ a|Reconnect the split big messages.
 
 |link:./integration/push-notification.adoc[Push notifications] 
 |Always (Optional)  
-| It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
+a| 
 
-It's tested, if pushed messages are confirmed
+* It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
+
+* It's tested, if pushed messages are confirmed
 |====
 
 
-    
-=== Based on message protocol layer and message format
+=== Other requirements
+[cols="1,6",options="header",]
+|====
+|Topic |Expected Results/Acceptance Criteria
+|Timestamps
+a| __"It will be tested, that the software uses UTC Timestamp for every message, it sends. See also the link:./integration/general-conventions.adoc[general conventions]."__
 
-If your software supports REST or MQTT with JSON, sending and receiving of those formats is checked.
+|Id requirements
 
-If your software supports REST with NativeProtobuf, sending and receiving of those formats is checked.
-
-
-=== Timestamps
-It will be tested, that the software uses UTC Timestamp for every message, it sends. See also the link:./integration/general-conventions.adoc[general conventions].
-
-=== Id requirements
-
+a|
 * Every application message Id has to be a UUID.
 * On every start up, the sequence number needs to start at 1 and has to be incremented with every command/message.
 * The link:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked
 
-=== Account management
-
-If supported, it's checked, if a CU correctly changes the agrirouter endpoint, it is communicating with, when the account in the CU is changed.
-
-*Expected results:*
+| Account management
+a| __"If supported, it's checked, if a CU correctly changes the agrirouter endpoint, it is communicating with, when the account in the CU is changed."__
 
 * After creating a new account/user in the app to be certified, the test steps must be repeated with the new account. 
 * Differentiation between different accounts exists
 * No messages are sent to a wrong account
 
 
-=== Teamset reports
+|Teamset reports
+a| __"The app to be certified needs to report teamsets and provide unique teamset-Ids:"__
 
-The app to be certified needs to report teamsets and provide unique teamset-Ids:
-
-*Expected results:*
 
 * A change of the machine configuration (adding a machine) leads to a new machine in the agrirouter UI
 * A change of the machine configuration (removing a machine) leads to a new teamset context id
 * A change of the machine configuration (changing a device description) leads to a new teamset context id
 
-=== Clean your feed
-After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages. For the certification, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification. Please check the specific time periods with your certification company.
+|Clean your feed
+a| __"After the several tests of receiving or rejecting messages, it will be checked if the feed is empty. So: Make sure, your feed will be cleaned by either requesting and confirming or deleting messages. For the certification, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification. Please check the specific time periods with your certification company."__
 
-*Expected results:*
 
 * All messages are removed from the feed of the endpoint (either be deleting or receiving and confirming) within a certain period of time (defined by the certification company due to process dependency).
 
 
-=== Valid commands
-The app to be certified has to show that it can build and send all commands relevant for its implementation without producing an ACK_WITH_FAILURE at agrirouter mentioning an invalid message.
-
-*Expected results*
+|Valid commands
+a| __"The app to be certified has to show that it can build and send all commands relevant for its implementation without producing an ACK_WITH_FAILURE at agrirouter mentioning an invalid message."__
 
 * All relevant all commands for the implementation can be built and sent as valid commands (=without producing an ACK_WITH_FAILURE at agrirouter mentioning an invalid message)
 
-=== Error handling
-All errors that show up during communication with agrirouter need to be documented by the app to be certified.
+| Error handling
+a| __"All errors that show up during communication with agrirouter need to be documented by the app to be certified.
 Application have to document or display, if any error accours in communication with agrirouter. 
 
 In particular:
 
 * agrirouter system massages
 * agrirouter validation messages
+"__
 
-
-*Expeced results*
 
 * The app provider can show an error message received from agrirouter to the certification company. This can be an administration functionality.
 
-=== Buffering
-
-If the internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data, that needs to be sent, when the connection is reastablished.
-
-The app instance needs to check for reconnection on its own.
-
-*Expected results*
+| Buffering
+a| __"If the internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data, that needs to be sent, when the connection is reastablished.
+The app instance needs to check for reconnection on its own."__
 
 * It is checked, if an app instance of an app to be certified will retry to send a dataset, that should have been sent, when the agrirouter was offline. This applies for EFDI as well as for every other technical message type
 
-=== Test coverage for telemetry platforms
-For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 
-Telemetry platforms must at least support the onboarding and offboarding; see above. They can however also support other functionalities like Farming Software. In this case, additional tests apply for the platform itself. 
-
-
-*Expected results*
+| Test coverage for telemetry platforms
+a| __"For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 
+Telemetry platforms must at least support the onboarding and offboarding; see above. They can however also support other functionalities like Farming Software. In this case, additional tests apply for the platform itself. "__
 
 * All requirements described above need to work with 2 different VCUs and - if sending and/or receiving is supported by the platform itself - by the Telemetry platform.
+
+|====
+
+=== Message protocol layer and message format
+
+If your software supports REST or MQTT with JSON, sending and receiving of those formats is checked.
+
+If your software supports REST with NativeProtobuf, sending and receiving of those formats is checked.
 
 == Recertification cases
 
