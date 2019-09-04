@@ -4,10 +4,9 @@
 :toc-title:
 :toclevels: 4
 
-
 == In General
 
-Every application needs to be certified to be onboardable to the agrirouter. The certification ensures, that the communication protocol of the agrirouter is successfully implemented and the application is able to communicate correctly with the agrirouter.
+Every application needs to be certified to be onboardable to the agrirouter. The certification ensures, that the communication protocol of the agrirouter is successfully implemented and the application can communicate correctly with the agrirouter.
 
 A certification is needed any time, the app changes its capabilities or their sending directions, changes the commands or uses a different protocol to communicate with the agrirouter.
 
@@ -22,13 +21,11 @@ The certification will not check, if an application is able to work with the dat
 
 == Certification companies
 
-
 There are multiple certification companies, a list can be found link:https://my-agrirouter.com/support/certification/[here].
-
 
 == Certification Requirements
 
-To pass the certification tests, there are several requirements, of which several have to be fulfilled before the certification can start.
+To pass the certification tests, there are several requirements, of which several must be fulfilled before the certification can start.
 
 === Prerequists
 
@@ -52,18 +49,16 @@ The following information are not necessary to start the certification but will 
 * A link:./registration.adoc[production environment developer account of the app provider]
 * application Id and certification version Id of link:./applications.adoc[an application in the production environment].
 * Version, name and description of the application to certify
-* message protocol (MQTT/REST)
-* message format (JSON/Native Protobuf)
+* used message protocol (MQTT/REST)
+* used message format (JSON/Native Protobuf)
 * The capabilities of the app including link:./tmt/overview.adoc[the technical message types] and the sending directions
 * A list of link:./commands/overview.adoc[all commands], that are used by the app
 * Is this an initial certification or a recertification for a new version of an existing software?
-
 
 == Certification tests
 Not all of the certification tests are necessary for your implementation. 
 
 The selection depends on several parameters and attributes of the specific application. These parameters are listed in the following chapters
-
 
 === Based on the application type
 
@@ -75,107 +70,87 @@ Based on the type of your application, different tests might be required. Check 
 
 |link:./integration/onboarding.adoc#onboarding-request[Onboarding] 
 | CUs 
-a| __"Create a new endpoint at the agrirouter"__
-
-* General criteria for successful onboarding:
-** A new endpoint is visible in the certification account
-** The external Id is a valid URN, see link:general.adoc[general requirements]
-** The following application information is visible in the agrirouter UI:
-*** An application name
-*** An application manufacturer
-*** A valid supportURL is available
-*** Following information are available:
-**** EMail
-**** Address
-**** Phone number
+a| 
+* A new endpoint is visible in the certification account
+* The external Id is a valid URN, see link:general.adoc[general requirements]
+* The following application information is visible in the agrirouter UI:
+** An application name
+** An application manufacturer
+** A valid support URL is available
+** By clicking on the support URL the following information are available:
+*** Email
+*** Address
+*** Phone number
 * After an endpoint was deleted by the user, a new onboarding must be possible
 * In case of any error during onboarding
 ** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available)
 ** The error message includes the error code returned from agrirouter
 ** The error code does not simply copy the error message from agrirouter
-** Also error codes, that might not yet be documented have to be displayed
-
+** Error codes, that might not yet be documented have to be displayed also
 
 |link:./integration/authorization.adoc[Authorization] 
 |Telemetry Platforms
 
 Farming Software 
-a| __"Authorize creating a new endpoint"__
-
-
+a|
 * After clicking the "Connect"-Button, there must be a website delivered to the browser (no timeout). 
 ** The website shall indicate, that the onboarding worked or - in case of onboarding errors after authorization - show an error.
 * After clicking the "Reject"-Button, there must be a website delivered to the browser (no timeout). 
 ** The website shall indicate, that something went wrong.
 
-
 |link:./integration/onboarding.adoc#verification-request[Verification (optional, if supported)]
 |Telemetry Platforms
 
 Farming Software 
-a| __"Verify the account for a new endpoint"__
-
+a| 
 * After clicking the "Connect"-Button, there must be a website delivered to the browser (no timeout). 
 ** The app to be certified shows the Account ID or compares it with another account ID (entered however) and throws an error for a non-fitting Account.
 * After clicking the "Reject"-Button, there must be a website delivered to the browser (no timeout). 
 ** The website shall indicate, that something went wrong.
 
-
 |link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
 |Telemetry Platforms
 
 Farming Software 
-a| __"Create a new endpoint at the agrirouter"__ 
-
-* General criteria for successful secured onboarding:
-** A new endpoint is visible in the certification account
-** The external Id is a valid URN, see link:general.adoc[general requirements]
-** The following application information is visible in the agrirouter UI:
-*** An application name
-*** An application manufacturer
-*** A valid supportURL is available
-*** Following information are available:
-**** EMail
-**** Address
-**** Phone number
+a| 
+* A new endpoint is visible in the certification account
+* The external Id is a valid URN, see link:general.adoc[general requirements]
+* The following application information is visible in the agrirouter UI:
+** An application name
+** An application manufacturer
+** A valid support URL is available
+** By clicking on the support URL the following information are available:
+*** EMail
+*** Address
+*** Phone number
 * After an endpoint was deleted by the user, a new onboarding must be possible
 * In case of any error during onboarding
 ** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available)
 ** The error message includes the error code returned from agrirouter
 ** The error code does not simply copy the error message from agrirouter
-** Also error codes, that might not yet be documented have to be displayed
-
-
+** Error codes, that might not yet be documented have to be displayed also
 
 |link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding] 
 |Telemetry Platforms 
-a| __"Create a new endpoint for a virtual CU"__
-
-
+a|
 * A new endpoint representing the VCU shows up in the certification account
-* The external ID is a valid URN
+* The external ID is a valid URN, see link:general.adoc[general requirements]
 
 |link:./integration/revoke.adoc[Revoking] 
 |Telemetry Platforms
 
 Farming Software 
-a| __"Remove an endpoint or all endpoints of a specific account"__ 
-
-
+a|
 * The specific endpoint disappears from the certification account.
 
 |link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
 |Telemetry Platforms 
-a| __"Remove a virtual CU endpoint"__  
-
-
+a|
 * The specific endpoint disappears from the certification account.
 
 |link:./integration/reonboarding.adoc[Reonboarding] 
 |Always
-a| __"Receive new credentials including new certificates for an endpoint "__
-
-
+a| 
 * The app instance uses the same external ID as it used for onboarding
 * New credentials can be provided to communicate with agrirouter
 * After a successful reonboarding, the endpoint has to communicate with agrirouter over those new credentials
@@ -193,80 +168,57 @@ It will be checked in advance by the certification company, which commands are s
 |MessageType |Condition |Expected Results/Acceptance Criteria
 |link:./commands/endpoint.adoc#capabilities-command[dke:capabilities] 
 | Always 
-a| __"App to announce its capabilities in terms of technical message types that can be sent / received"__
-
-
+a| 
 * Setting routes (as sender or/and as receiver) is possible
 * All information types defined in the certification version of the app to be certified can be selected
 
-
 |link:./commands/endpoint.adoc#subscribtion-command[dke:subscription] 
 |If app can receive messages 
-a| __"App Instance subscribes for a certain technical message type, so that it receives published messages of this type"__
-
-
+a| 
 * The app receives published messages of every technical message type mentioned in its certification version as a receipient.
-
 
 |link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query] 
 |If app can receive messages 
-a| __"App Instance queries for metadata of messages in its message feed (type, size, sender, time sent etc.)"__
-
-
+a|
 * see __"Clean your feed"__
-
-
 
 |link:./commands/feed.adoc#call-for-messages[dke:feed_message_query] 
 |If app can receive messages 
-a| __"App Instance queries for messages in its message feed"__
-
-
+a| 
 * see __"Clean your feed"__
-
 
 |link:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm] 
 |If app can receive messages 
-a| __"App Instance confirms that it has received a certain message (or set of messages)"__
-
-
+a| 
 * see __"Clean your feed"__
-
 
 |link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete] 
 |If app can receive messages 
-a| __"App Instance deletes messages from its message feed"__
-
-
+a| 
 * see __"Clean your feed"__
-
 
 |link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] 
 |Fully optional
-a| __"App Instance gets a list of endpoints to which messages of a certain type can be sent (considering routing rules in place) "__
-
+a| 
+* App Instance queries for metadata of messages in its message feed (type, size, sender, time sent etc.)
 
 |link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] 
 |Fully Optional 
-a| __"App Instance gets a list of endpoints to which messages of a certain type can be sent (not considering routing rules)"__
+a|
+* App Instance gets a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
 
 |link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf] 
 |If app can send messages 
-a| __"Reporting a new teamset to agrirouter and the ecosystem"__ 
-
-
+a|
 * If the app reports machines connected via ISOBUS, the AEF conformance test "TaskController" is required to make sure, no invalid DeviceDescriptions are published
 * If the app reports self-built device descriptions (e.g. by translating a TractorECU or using Bluetooth beacons), the reported device descriptions have to be compatible with ISO11783-10 Annex F
 
-
 |link:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf] 
 |If app can send messages 
-a| __"Sending telemetry data for the current teamset"__
-see __"Teamset reports"__
+a|
+* see __"Teamset reports"__
 
 |====
-
-
 
 === Apps sending messages
 [REMARK]
@@ -274,51 +226,33 @@ see __"Teamset reports"__
 These tests are only required, if your application can send data 
 =====
 
-
 [cols="1,2,9",options="header",]
 |====
 |MessageType |Condition |Expected Results/Acceptance Criteria
 |link:./integration/build-message.adoc#chunking-big-messages[Building chunks] 
 | link:./tmt/overview.adoc[All TMTs except for EFDI] 
-a| __"Split big messages into several messages before sending. "__
-
-
+a|
 * The sending of a file with a size of more than 1 MB is possible. The chunks context information is filled
 
 | Base64 encoding 
 |link:./tmt/overview.adoc[All TMTs except for EFDI]  
-a| __"Base64 encoding binary data before building the message "__
-
-
+a|
 * A file that shall be sent is encoded in Base64
 
 | Exchange Zip Folders
 | link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape] 
-a| __"Accessable zip folders need to be sent"__ 
-
-
+a| 
 * The TaskData.zip and/or Shape.zip are valid zip files that can be unpacked
 
 |Message Adressing
-
 | Always 
-
-a| __"The different ways to send a message will be checked, depending on which of these functionalities your application supports."__
-
-
+a| 
 * Sending a message directly to one receipient
 * Sending a message directly to multiple receipients
 * Publishing a message
 * Publishing a message and sending it directly to 1 receipient
 * Publishing a message and sending it directly to multiple receipients
 |====
-
-
-
-
-
-
-
 
 
 === Apps receiving messages
@@ -332,23 +266,17 @@ These tests are only required, if your application can receive data
 |MessageType |Condition |Expected Results/Acceptance Criteria
 |Merging chunks 
 | link:./tmt/overview.adoc[All TMTs except for EFDI] 
-a| __"Reconnect the split big messages."__
-
-
+a|
 * The receiving of a file that consists of 1 chunk without chunk context is possible
 * The receiving of a file that consists of 1 chunk with chunk context is possible
 * The receiving of a file that consists of 2 chunks is possible
 * The receiving of a file that consists of more than 2 chunks is possible
 * The receiving of a file of multiple chunks, which are not delivered in the right order is possible
 
-
-
 |link:./integration/push-notification.adoc[Push notifications] 
-|Always (Optional)  
+|Always (if supported)  
 a| 
-
 * It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
-
 * It's tested, if pushed messages are confirmed
 |====
 
