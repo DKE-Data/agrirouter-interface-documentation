@@ -54,7 +54,7 @@ The following information are not necessary to start the certification but will 
 * The capabilities of the app including link:./tmt/overview.adoc[the technical message types] and the sending directions
 * A list of link:./commands/overview.adoc[all commands], that are used by the app
 * Is this an initial certification or a recertification for a new version of an existing software?
-* For each command, the application version supports, at least one extracted version has to be provided to the certification institute.
+* For relevant test case, at least one extracted original message (as JSON or Base64-Encoded Protobuf) has to be provided to the certification institute.
 
 == Certification tests
 Not all of the certification tests are necessary for your implementation. 
@@ -78,7 +78,7 @@ Based on the type of your application, different tests might be required. Check 
 | CUs 
 a| 
 * A new endpoint is visible in the certification account
-* The external Id is a valid URN, see link:general.adoc[general requirements]
+* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
 * The following application information is visible in the agrirouter UI:
 ** An application name
 ** An application manufacturer
@@ -88,7 +88,7 @@ a|
 *** Address
 *** Phone number
 * After an endpoint was deleted by the user, a new onboarding must be possible
-* In case of any error during onboarding
+* In case of any error during onboarding (with the same (reonboarding) or a different External ID (new onboarding))
 ** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available)
 ** The error message includes the error code returned from agrirouter
 ** The error code does not simply copy the error message from agrirouter
@@ -99,20 +99,18 @@ a|
 
 Farming Software 
 a|
-* After clicking the "Connect"-Button, there must be a website delivered to the browser (no timeout). 
-** The website shall indicate, that the onboarding worked or - in case of onboarding errors after authorization - show an error.
-* After clicking the "Reject"-Button, there must be a website delivered to the browser (no timeout). 
-** The website shall indicate, that something went wrong.
+* After clicking the "Connect"-Button, the success of onboarding shall be shown to the user; e.g. by displaying a website or updating the own UI. 
+* After clicking the "Reject"-Button, the failure to onboard shall be shown to the user. 
+** The notification shall indicate, that the onboarding was rejected.
 
 |link:./integration/onboarding.adoc#verification-request[Verification (optional, if supported)]
 |Telemetry Platforms
 
 Farming Software 
 a| 
-* After clicking the "Connect"-Button, there must be a website delivered to the browser (no timeout). 
-** The app to be certified shows the Account ID or compares it with another account ID (entered however) and throws an error for a non-fitting Account.
-* After clicking the "Reject"-Button, there must be a website delivered to the browser (no timeout). 
-** The website shall indicate, that something went wrong.
+* After clicking the "Connect"-Button, the success of verification shall be shown to the user; e.g. by displaying a website or updating the own UI. 
+* After clicking the "Reject"-Button, the failure to verify shall be shown to the user. 
+** The notification shall indicate, that the onboarding was rejected.
 
 |link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
 |Telemetry Platforms
@@ -120,7 +118,7 @@ a|
 Farming Software 
 a| 
 * A new endpoint is visible in the certification account
-* The external Id is a valid URN, see link:general.adoc[general requirements]
+* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
 * The following application information is visible in the agrirouter UI:
 ** An application name
 ** An application manufacturer
@@ -142,6 +140,8 @@ a|
 Farming Software 
 a|
 * The specific endpoint disappears from the certification account.
+* After an endpoint was deleted by the user, revoking must be possible
+
 
 |link:./integration/reonboarding.adoc[Reonboarding] 
 |Always
@@ -157,7 +157,7 @@ a|
 |Telemetry Platforms 
 a|
 * A new endpoint representing the VCU shows up in the certification account
-* The external ID is a valid URN, see link:general.adoc[general requirements]
+* The external ID is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
 * A notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the successfull onboarding
 * In case of an error, a  notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the reason
 
@@ -186,6 +186,11 @@ a|
 a| 
 * The app receives published messages of every technical message type mentioned in its certification version as a receipient.
 
+[NOTE]
+====
+An application can optionally offer the possibility to deactivate subscriptions for specific message types. During certifications, all subscriptions are required.
+====
+
 |link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query] 
 |If app can receive messages 
 a|
@@ -207,12 +212,12 @@ a|
 * see __"Clean your feed"__
 
 |link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] 
-|Fully optional
+|Optional, if supported
 a| 
 * App Instance gets a list of endpoints to which messages of a certain type can be sent
 
 |link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] 
-|Fully Optional 
+|Optional, if supported
 a|
 * App Instance gets a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
 
@@ -256,7 +261,7 @@ a|
 * The TaskData.zip and/or Shape.zip are valid zip files that can be unpacked
 
 |Message Adressing
-| Always 
+| Always; optional, if supported 
 a| 
 * Sending a message directly to one receipient
 * Sending a message directly to multiple receipients
@@ -351,7 +356,7 @@ a|
 ** agrirouter system massages
 ** agrirouter validation messages
 
-* The app provider can show an error message received from agrirouter to the certification company. This can be an administration functionality.
+* The app provider can show an error message received from agrirouter to the certification company. This can be an administration functionality (e.g. log or ui).
 
 * Error messages shown to an end user shall include the error code and a self-defined message of the app provider (not just the SAP error message).
 
