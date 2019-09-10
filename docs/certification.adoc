@@ -54,9 +54,15 @@ The following information are not necessary to start the certification but will 
 * The capabilities of the app including link:./tmt/overview.adoc[the technical message types] and the sending directions
 * A list of link:./commands/overview.adoc[all commands], that are used by the app
 * Is this an initial certification or a recertification for a new version of an existing software?
+* For each command, the application version supports, at least one extracted version has to be provided to the certification institute.
 
 == Certification tests
 Not all of the certification tests are necessary for your implementation. 
+
+[NOTE]
+====
+ The term __"All TMTs"__ on this page means "All Technical Message Types, that were reported in the Application Certification Version.
+====
 
 The selection depends on several parameters and attributes of the specific application. These parameters are listed in the following chapters
 
@@ -130,21 +136,10 @@ a|
 ** The error code does not simply copy the error message from agrirouter
 ** Error codes, that might not yet be documented have to be displayed also
 
-|link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding] 
-|Telemetry Platforms 
-a|
-* A new endpoint representing the VCU shows up in the certification account
-* The external ID is a valid URN, see link:general.adoc[general requirements]
-
 |link:./integration/revoke.adoc[Revoking] 
 |Telemetry Platforms
 
 Farming Software 
-a|
-* The specific endpoint disappears from the certification account.
-
-|link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
-|Telemetry Platforms 
 a|
 * The specific endpoint disappears from the certification account.
 
@@ -157,6 +152,20 @@ a|
 * In case of the following errors, an error message is required:
 ** Wrong account: During reonboarding, the user is logged in with a different agrirouter account than before. This should result in a new endpoint onboarding in a different account.
 
+
+|link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding] 
+|Telemetry Platforms 
+a|
+* A new endpoint representing the VCU shows up in the certification account
+* The external ID is a valid URN, see link:general.adoc[general requirements]
+* A notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the successfull onboarding
+* In case of an error, a  notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the reason
+
+|link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
+|Telemetry Platforms 
+a|
+* The specific endpoint disappears from the certification account.
+* In case of an error, a notification is provided to the initiator of the offboarding
 |====
 
 === Based on commands
@@ -200,7 +209,7 @@ a|
 |link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints] 
 |Fully optional
 a| 
-* App Instance queries for metadata of messages in its message feed (type, size, sender, time sent etc.)
+* App Instance gets a list of endpoints to which messages of a certain type can be sent
 
 |link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered] 
 |Fully Optional 
@@ -210,7 +219,7 @@ a|
 |link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf] 
 |If app can send messages 
 a|
-* If the app reports machines connected via ISOBUS, the AEF conformance test "TaskController" is required to make sure, no invalid DeviceDescriptions are published
+* If the app reports machines connected via ISOBUS, the AEF conformance test "TaskController" is adviced
 * If the app reports self-built device descriptions (e.g. by translating a TractorECU or using Bluetooth beacons), the reported device descriptions have to be compatible with ISO11783-10 Annex F
 
 |link:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf] 
@@ -233,7 +242,9 @@ These tests are only required, if your application can send data
 | link:./tmt/overview.adoc[All TMTs except for EFDI] 
 a|
 * The sending of a file with a size of more than 1 MB is possible. The chunks context information is filled
-
+* The chunkContextId is equal for all chunks that represent 1 file.
+* The chunkContextId changes when a new file is sent
+* The chunks have to be enumerated in ChunkComponent.current starting from 1, ChunkComponent.total has to equal the highest Chunk number
 | Base64 encoding 
 |link:./tmt/overview.adoc[All TMTs except for EFDI]  
 a|
@@ -342,6 +353,8 @@ a|
 
 * The app provider can show an error message received from agrirouter to the certification company. This can be an administration functionality.
 
+* Error messages shown to an end user shall include the error code and a self-defined message of the app provider (not just the SAP error message).
+
 | Buffering
 | If the internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data, that needs to be sent, when the connection is reastablished.
 
@@ -378,6 +391,11 @@ An application has to be recertified, if one of the following things apply:
 * The basic message format (JSON or Native Protobuf) has changed
 * The list of implemented commands changed
 * Push Notifications are activated in the capabilities
+
+[IMPORTANT]
+====
+The supportet TMTs as well as the used Protocol and Format are assigned to the certification. A change of any of those functionalities will cause an invalidity of the certificate, which will block your applications communication to agrirouter.
+====
 
 ==== Link Section
 This page is found in every file and links to the major topics
