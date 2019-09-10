@@ -61,7 +61,7 @@ Not all of the certification tests are necessary for your implementation.
 
 [NOTE]
 ====
- The term __"All TMTs"__ on this page means "All Technical Message Types, that were reported in the Application Certification Version.
+The term __"All TMTs"__ on this page means "All Technical Message Types, that were reported in the Application Certification Version.
 ====
 
 The selection depends on several parameters and attributes of the specific application. These parameters are listed in the following chapters
