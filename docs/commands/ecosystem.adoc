@@ -42,7 +42,7 @@ The direction describes, if messages shall be sendable or receivable:
 |Nr |Direction
 |0 |Send
 |1 |Receive
-|2 |Send and Receive
+|2 |Send or Receive
 |===================
 
 === Result
