@@ -92,7 +92,7 @@ a|
 ** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available)
 ** The error message includes the error code returned from agrirouter
 ** The error code does not simply copy the error message from agrirouter
-** Error codes, that might not yet be documented have to be displayed also
+** Error codes, that might not yet be documented have to be displayed as well
 
 |link:./integration/authorization.adoc[Authorization] 
 |Telemetry Platforms
@@ -119,7 +119,7 @@ Farming Software
 a| 
 * A new endpoint is visible in the certification account
 * The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
-* The following application information is visible in the agrirouter UI:
+* The following application information is visible in the agrirouter UI (Needed to be setup in agrirouter developer UI):
 ** An application name
 ** An application manufacturer
 ** A valid support URL is available
@@ -149,6 +149,7 @@ a|
 * The app instance uses the same external ID as it used for onboarding
 * New credentials can be provided to communicate with agrirouter
 * After a successful reonboarding, the endpoint has to communicate with agrirouter over those new credentials
+* An app instance can also be reonboarded with the same id, if it was deleted in the agrirouter UI or revoked before
 * In case of the following errors, an error message is required:
 ** Wrong account: During reonboarding, the user is logged in with a different agrirouter account than before. This should result in a new endpoint onboarding in a different account.
 
@@ -353,7 +354,7 @@ a| All errors that show up during communication with agrirouter need to be docum
 
 a|
 * Application have to document or display, if any error accours in communication with agrirouter. In particular:
-** agrirouter system massages
+** agrirouter system messages
 ** agrirouter validation messages
 
 * The app provider can show an error message received from agrirouter to the certification company. This can be an administration functionality (e.g. log or ui).
@@ -371,10 +372,9 @@ a|
 | Test coverage for telemetry platforms
 a| For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs. 
 
-Telemetry platforms must at least support the onboarding and offboarding; see above. They can however also support other functionalities like Farming Software. 
+Telemetry platforms must at least support the onboarding and offboarding of VCUs as well as the Secured Onboarding and Authorization. 
 
-
-In this case, additional tests apply for the platform itself. 
+Tests are setup depending on the capabilities of the TelemetryPlatform itself and its VCUs.
 
 a|
 * All requirements described above need to work with 2 different VCUs and - if sending and/or receiving is supported by the platform itself - by the Telemetry platform.
