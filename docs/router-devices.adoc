@@ -85,7 +85,7 @@ For a proper connection, you need to use the `deviceAlternateId` as `clientId`, 
 
 [WARNING]
 ====
-Everytime, the certificate is downloaded, it is updated in the agrirouters backend. So, make sure, you store the certificate in a secure place after you downloaded it and only click the download button again, when you want to update your certificate (see below).
+Everytime the certificate is downloaded, it is updated in the agrirouter backend. So, make sure, you store the certificate in a secure place after you downloaded it and only click the download button again, when you want to update your certificate (see below).
 ====
 
 === Certificate update
