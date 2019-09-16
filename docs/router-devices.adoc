@@ -85,11 +85,11 @@ For a proper connection, you need to use the `deviceAlternateId` as `clientId`, 
 
 [WARNING]
 ====
-Everytime the certificate is downloaded, it is updated in the agrirouter backend. Make sure you store the certificate in a secure place after you downloaded it and only click the download button again if you want to update your certificate (see below).
+Every time the certificate is downloaded, it is updated in the agrirouter backend. Make sure you store the certificate in a secure place after you downloaded it and only click the download button again if you want to update your certificate (see below).
 ====
 
 === Certificate update
 
-Like the certificates received, when onboarding an endpoint, the router devices certificates have a limited validity period of 1 year.
+As well as the certificates received after onboarding an endpoint, the certificates of the router device have a limited validity period of 1 year as well.
 To make sure, that the communication is not blocked after 1 year, the certificate needs to be updated.
 To update a certificate, the developer has to upen the details of the certificate view and click on download.
