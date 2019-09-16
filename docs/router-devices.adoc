@@ -78,7 +78,18 @@ The file includes a JSON structure containing all necessary information for the 
 
 `ConnectionCriteria` and `Authentication` of a single endpoint can be replaced by the data given from the router device, so that every software component of a specific manufacturer can communicate using one router device, as long as all the application instance is connected to the same server. There cannot exist multiple connections using the same router device.
 
-[Important]
+[WARNING]
 ====
 For a proper connection, you need to use the deviceAlternateId as clientId, *not* the connectionCriteria.ClientId!
 ====
+
+[WARNING]
+====
+Everytime, the certificate is downloaded, it is updated in the agrirouters backend. So, make sure, you store the certificate in a secure place after you downloaded it and only click the download button again, when you want to update your certificate (see below).
+====
+
+=== Certificate update
+
+Like the certificates received, when onboarding an endpoint, the router devices certificates have a limited validity period of 1 year. 
+To make sure, that the communication is not blocked after 1 year, the certificate needs to be updated.
+To update a certificate, the developer has to upen the details of the certificate view and click on download.
