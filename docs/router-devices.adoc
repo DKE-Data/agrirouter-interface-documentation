@@ -80,7 +80,7 @@ The file includes a JSON structure containing all necessary information for the 
 
 [WARNING]
 ====
-For a proper connection, you need to use the deviceAlternateId as clientId, *not* the connectionCriteria.ClientId!
+For a proper connection, you need to use the `deviceAlternateId` as `clientId`, *not* the `connectionCriteria.clientId`!
 ====
 
 [WARNING]
@@ -90,6 +90,6 @@ Everytime, the certificate is downloaded, it is updated in the agrirouters backe
 
 === Certificate update
 
-Like the certificates received, when onboarding an endpoint, the router devices certificates have a limited validity period of 1 year. 
+Like the certificates received, when onboarding an endpoint, the router devices certificates have a limited validity period of 1 year.
 To make sure, that the communication is not blocked after 1 year, the certificate needs to be updated.
 To update a certificate, the developer has to upen the details of the certificate view and click on download.
