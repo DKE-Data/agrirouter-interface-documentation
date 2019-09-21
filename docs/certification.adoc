@@ -72,22 +72,22 @@ Based on the type of your application, different tests are required. Check link:
 
 [cols="1,2,4",options="header",]
 |====
-|MessageType |Major for |Expected Results/Acceptance Criteria
+|Message type |Major for |Expected results / Acceptance criteria
 
 |link:./integration/onboarding.adoc#onboarding-request[Onboarding]
 | CUs
 a|
-* A new endpoint is visible in the certification account
-* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
+* A new endpoint is visible in the certification account.
+* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements].
 * The following application information is visible in the agrirouter UI:
-** An application name
-** An application manufacturer
+** The application name
+** The application manufacturer
 ** A valid support URL is available
-** By clicking on the support URL the following information are available:
-*** Email
+** By clicking on the support URL the following information is available:
+*** Mail
 *** Address
 *** Phone number
-* After an endpoint was deleted by the user, a new onboarding must be possible
+* After an endpoint was deleted by the user, a new onboarding has to be possible.
 * In case of any error during onboarding (with the same (reonboarding) or a different External ID (new onboarding))
 ** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available)
 ** The error message includes the error code returned from agrirouter
