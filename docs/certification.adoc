@@ -48,11 +48,11 @@ The following information are not necessary to start the certification but will 
 
 * A link:./registration.adoc[production environment developer account of the application provider]
 * application Id and certification version Id of link:./applications.adoc[an application in the production environment].
-* Version, name and description of the application to certify
-* used message protocol (MQTT/REST)
-* used message format (JSON/Native Protobuf)
-* The capabilities of the application including link:./tmt/overview.adoc[the technical message types] and the sending directions
-* A list of link:./commands/overview.adoc[all commands], that are used by the app
+* Version, name and description of the application to certify.
+* Used message protocol (MQTT/REST).
+* Used message format (JSON/Native Protobuf).
+* Capabilities of the application including link:./tmt/overview.adoc[the technical message types] and the sending directions
+* A list of link:./commands/overview.adoc[all commands], that are used by the application.
 * Is this an initial certification or a recertification for a new version of an existing software?
 * For relevant test case, at least one extracted original message (as JSON or Base64-Encoded Protobuf) has to be provided to the certification institute.
 
