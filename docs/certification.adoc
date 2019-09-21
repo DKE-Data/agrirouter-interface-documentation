@@ -95,39 +95,39 @@ a|
 ** Error codes, that might not yet be documented have to be displayed as well.
 
 |link:./integration/authorization.adoc[Authorization]
-|Telemetry Platforms
+|Telemetry platform
 
-Farming Software
+Farming software
 a|
-* After clicking the "Connect"-Button, the success of onboarding shall be shown to the user; e.g. by displaying a website or updating the own UI.
-* After clicking the "Reject"-Button, the failure to onboard shall be shown to the user.
-** The notification shall indicate, that the onboarding was rejected.
+* After clicking the "Connect"-Button, the success of the onboarding should be shown to the user; e.g. by displaying a website or updating the own UI.
+* After clicking the "Reject"-Button, the failure to onboard should be shown to the user.
+** The notification should indicate, that the onboarding was rejected.
 
 |link:./integration/onboarding.adoc#verification-request[Verification (optional, if supported)]
-|Telemetry Platforms
+|Telemetry platform
 
-Farming Software
+Farming software
 a|
-* After clicking the "Connect"-Button, the success of verification shall be shown to the user; e.g. by displaying a website or updating the own UI.
-* After clicking the "Reject"-Button, the failure to verify shall be shown to the user.
-** The notification shall indicate, that the onboarding was rejected.
+* After clicking the "Connect"-Button, the success of verification should be shown to the user; e.g. by displaying a website or updating the own UI.
+* After clicking the "Reject"-Button, the failure to verify should be shown to the user.
+** The notification should indicate, that the onboarding was rejected.
 
 |link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
-|Telemetry Platforms
+|Telemetry platform
 
-Farming Software
+Farming software
 a|
 * A new endpoint is visible in the certification account
 * The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
 * The following application information is visible in the agrirouter UI (Needed to be setup in agrirouter developer UI):
-** An application name
-** An application manufacturer
+** The application name
+** The application manufacturer
 ** A valid support URL is available
 ** By clicking on the support URL the following information are available:
-*** EMail
+*** Mail
 *** Address
 *** Phone number
-* After an endpoint was deleted by the user, a new onboarding must be possible
+* After an endpoint was deleted by the user, a new onboarding has to be possible
 * In case of any error during onboarding
 ** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available)
 ** The error message includes the error code returned from agrirouter
@@ -135,9 +135,9 @@ a|
 ** Error codes, that might not yet be documented have to be displayed also
 
 |link:./integration/revoke.adoc[Revoking]
-|Telemetry Platforms
+|Telemetry platform
 
-Farming Software
+Farming software
 a|
 * The specific endpoint disappears from the certification account.
 * After an endpoint was deleted by the user, revoking must be possible
@@ -155,7 +155,7 @@ a|
 
 
 |link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding]
-|Telemetry Platforms
+|Telemetry platform
 a|
 * A new endpoint representing the VCU shows up in the certification account
 * The external ID is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
@@ -163,7 +163,7 @@ a|
 * In case of an error, a  notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the reason
 
 |link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
-|Telemetry Platforms
+|Telemetry platform
 a|
 * The specific endpoint disappears from the certification account.
 * In case of an error, a notification is provided to the initiator of the offboarding
@@ -254,7 +254,7 @@ a|
 | Base64 encoding
 |link:./tmt/overview.adoc[All TMTs except for EFDI]
 a|
-* A file that shall be sent is encoded in Base64
+* A file that should be sent is encoded in Base64
 
 | Exchange Zip Folders
 | link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape]
@@ -359,20 +359,20 @@ a|
 
 * The application provider can show an error message received from agrirouter to the certification company. This can be an administration functionality (e.g. log or ui).
 
-* Error messages shown to an end user shall include the error code and a self-defined message of the application provider (not just the SAP error message).
+* Error messages shown to an end user should include the error code and a self-defined message of the application provider (not just the SAP error message).
 
 | Buffering
-| If the Internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data, that needs to be sent, when the connection is reestablished.
+| If the Internet connection gets lost or agrirouter is not available for another reason, the application instance should buffer data, that needs to be sent, when the connection is reestablished.
 
 The application instance needs to check for reconnection on its own.
 a|
 * It's checked, if an application instance keeps trying to communicate with agrirouter, when it's not available.
 * It is checked, if an application instance of an application to be certified will retry to send a dataset, that should have been sent, when the agrirouter was offline. This applies for EFDI as well as for every other technical message type
 
-| Test coverage for telemetry platforms
-a| For telemetry platforms, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs.
+| Test coverage for Telemetry platform
+a| For Telemetry platform, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs.
 
-Telemetry platforms must at least support the onboarding and offboarding of VCUs as well as the Secured Onboarding and Authorization.
+Telemetry platform must at least support the onboarding and offboarding of VCUs as well as the Secured Onboarding and Authorization.
 
 Tests are setup depending on the capabilities of the telemetry platform itself and its VCUs.
 
