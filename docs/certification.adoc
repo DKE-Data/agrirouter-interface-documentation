@@ -8,7 +8,7 @@
 
 Every application needs to be certified to communicate with the agrirouter. The certification ensures, that the communication protocol of the agrirouter is successfully implemented and the application can communicate correctly with the agrirouter.
 
-A certification is needed any time, the application changes its capabilities or their sending directions, changes the commands or uses a different protocol to communicate with the agrirouter.
+A certification is needed any time the application changes its capabilities or their sending directions, changes the commands or uses a different protocol to communicate with the agrirouter.
 
 [NOTE]
 =====
@@ -399,7 +399,7 @@ An application has to be recertified, if one of the following things apply:
 
 [IMPORTANT]
 ====
-The supportet TMTs as well as the used Protocol and Format are assigned to the certification. A change of any of those functionalities will cause an invalidity of the certificate, which will block your applications communication to agrirouter.
+The supported TMTs as well as the used Protocol and Format are assigned to the certification. A change of any of those functionalities will cause an invalidity of the certificate, which will block your applications communication to agrirouter.
 ====
 
 ==== Link Section
