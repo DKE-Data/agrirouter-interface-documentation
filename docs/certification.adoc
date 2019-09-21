@@ -339,7 +339,6 @@ a|
 * After the several tests of receiving or rejecting messages, it will be checked if the feed is empty.
 * All messages are removed from the feed of the endpoint (either be deleting or receiving and confirming) within a certain period of time.
 
-
 |Valid commands
 |The application to be certified has to show that it can build and send all commands relevant for its implementation without producing an ACK_WITH_FAILURE at agrirouter mentioning an invalid message.
 a|
@@ -354,8 +353,7 @@ a|
 ** agrirouter system messages
 ** agrirouter validation messages
 
-* The application provider can show an error message received from agrirouter to the certification company. This can be an administration functionality (e.g. log or ui).
-
+* The application provider can show an error message received from agrirouter to the certification company. This can be an administration functionality (e.g. log or UI).
 * Error messages shown to an end user should include the error code and a self-defined message of the application provider (not just the SAP error message).
 
 | Buffering
@@ -369,7 +367,7 @@ a|
 | Test coverage for Telemetry platform
 a| For Telemetry platform, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs.
 
-Telemetry platform must at least support the onboarding and offboarding of VCUs as well as the Secured Onboarding and Authorization.
+Telemetry platform must at least support the onboarding and offboarding of VCUs as well as the secured onboarding and authorization.
 
 Tests are setup depending on the capabilities of the telemetry platform itself and its VCUs.
 
