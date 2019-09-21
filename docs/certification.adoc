@@ -374,7 +374,7 @@ a| For telemetry platforms, it will be checked in advance of the test, which fun
 
 Telemetry platforms must at least support the onboarding and offboarding of VCUs as well as the Secured Onboarding and Authorization.
 
-Tests are setup depending on the capabilities of the TelemetryPlatform itself and its VCUs.
+Tests are setup depending on the capabilities of the telemetry platform itself and its VCUs.
 
 a|
 * All requirements described above need to work with 2 different VCUs and - if sending and/or receiving is supported by the platform itself - by the Telemetry platform.
