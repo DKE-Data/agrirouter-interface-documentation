@@ -325,12 +325,12 @@ a|
 |The application to be certified needs to report teamsets and provide unique teamset Ids.
 a|
 
-* A change of the machine configuration (adding a machine) leads to a new machine in the agrirouter UI
-* A change of the machine configuration (removing a machine) leads to a new teamset context id
-* A change of the machine configuration (changing a device description) leads to a new teamset context id
+* A change of the machine configuration (adding a machine) leads to a new machine in the agrirouter UI.
+* A change of the machine configuration (removing a machine) leads to a new teamset context Id.
+* A change of the machine configuration (changing a device description) leads to a new teamset context Id
 
 |Clean your feed
-a|Make sure, your feed will be cleaned by either requesting and confirming or deleting messages.
+a|Make sure, your feed will be cleaned by confirming or deleting messages after receiving them.
 [REMARK]
 ====
 For the certification, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification. Please check the specific time periods with your certification company.
