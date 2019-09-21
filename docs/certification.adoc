@@ -147,8 +147,8 @@ a|
 |Always
 a|
 * The application instance uses the same external Id as it has used for onboarding.
-* New credentials can be provided to communicate with agrirouter
-* After a successful reonboarding, the endpoint has to communicate with agrirouter over those new credentials
+* New credentials can be provided to communicate with agrirouter.
+* After a successful reonboarding, the endpoint has to communicate with agrirouter using those new credentials
 * An application instance can also be reonboarded with the same id, if it was deleted in the agrirouter UI or revoked before
 * In case of the following errors, an error message is required:
 ** Wrong account: During reonboarding, the user is logged in with a different agrirouter account than before. This should result in a new endpoint onboarding in a different account.
