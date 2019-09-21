@@ -317,9 +317,9 @@ a|
 | Account management
 |If supported, it's checked if a CU correctly changes the agrirouter endpoint it is communicating with when the account in the CU is changed.
 a|
-* After creating a new account/user in the application to be certified, the test steps must be repeated with the new account.
-* Differentiation between different accounts exists
-* No messages are sent to a wrong account
+* After creating a new account / user in the application to be certified, the test steps have to be repeated with the new account.
+* Differentiation between different accounts exists.
+* No messages are sent to a wrong account.
 
 
 |Teamset reports
