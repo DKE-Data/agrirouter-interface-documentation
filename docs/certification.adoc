@@ -215,12 +215,12 @@ a|
 |link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints]
 |Optional, if supported.
 a|
-* The application instance gets a list of endpoints to which messages of a certain type can be sent.
+* The application instance receives a list of endpoints to which messages of a certain type can be sent.
 
 |link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered]
 |Optional, if supported.
 a|
-* The application instance gets a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
+* The application instance receives a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
 
 |link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf]
 |If application can send messages
