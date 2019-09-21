@@ -17,7 +17,7 @@ For a new certification version capabilities can never be removed. Neither can a
 
 == Out of focus
 
-The certification will not check, if an application is able to work with the data sent over the agrirouter. The process will only check, if the application can send and receive data for the technical message types, that were selected for the certification version.
+The certification will not check if an application is able to work with the data sent over the agrirouter. The process will only check, if the application can send and receive data for the technical message types which were selected for the certification version earlier on.
 
 == Certification companies
 
