@@ -29,9 +29,9 @@ To pass the certification tests there are multiple requirements have to be fulfi
 
 === Prerequisites
 
-*  The link:./provider-agreement.adoc[DKE application Provider Agreement] has to be signed
-*  The link:./marketplace.adoc[Marketplace entry] has been created with "Coming soon" label
-* Following information are available about the company:
+*  The link:./provider-agreement.adoc[DKE application provider agreement] has to be signed.
+*  The link:./marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
+*  The following information about the company is available:
 ** Name
 ** Address (where billing and offer shall be placed by certification company)
 *  Following information are available for a first level customer support:
