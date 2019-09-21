@@ -40,7 +40,7 @@ To pass the certification tests there are multiple requirements have to be fulfi
 ** Phone
 ** URL
 * A link:./registration.adoc[quality assurance environment developer account of the application provider]
-* application Id and certification version Id of link:./applications.adoc[an application in the quality assurance environment].
+* The application Id and certification version Id of link:./applications.adoc[the application in the production environment].
 
 === Further requirements
 
