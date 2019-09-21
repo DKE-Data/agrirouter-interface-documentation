@@ -34,7 +34,7 @@ To pass the certification tests there are multiple requirements have to be fulfi
 *  The following information about the company is available:
 ** Name
 ** Address (where billing and offer should be placed by the certification company)
-*  Following information are available for a first level customer support:
+*  The following first level customer support information is available:
 ** Email
 ** Address
 ** Phone
