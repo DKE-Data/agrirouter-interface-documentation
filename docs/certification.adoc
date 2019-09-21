@@ -117,22 +117,22 @@ a|
 
 Farming software
 a|
-* A new endpoint is visible in the certification account
-* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
-* The following application information is visible in the agrirouter UI (Needed to be setup in agrirouter developer UI):
+* A new endpoint is visible in the certification account.
+* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements].
+* The following application information is visible in the agrirouter UI:
 ** The application name
 ** The application manufacturer
 ** A valid support URL is available
-** By clicking on the support URL the following information are available:
+** By clicking on the support URL the following information is available:
 *** Mail
 *** Address
 *** Phone number
-* After an endpoint was deleted by the user, a new onboarding has to be possible
-* In case of any error during onboarding
-** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available)
-** The error message includes the error code returned from agrirouter
-** The error code does not simply copy the error message from agrirouter
-** Error codes, that might not yet be documented have to be displayed also
+* After an endpoint was deleted by the user, a new onboarding has to be possible.
+* In case of any error during the onboarding (with the same (re-onboarding) or a different external Id (new onboarding)):
+** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available).
+** The error message includes the error code returned from agrirouter.
+** The error code does not simply copy the error message from agrirouter.
+** Error codes, that might not yet be documented have to be displayed as well.
 
 |link:./integration/revoke.adoc[Revoking]
 |Telemetry platform
