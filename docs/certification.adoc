@@ -321,9 +321,8 @@ a|
 * Differentiation between different accounts exists.
 * No messages are sent to a wrong account.
 
-
 |Teamset reports
-|The application to be certified needs to report teamsets and provide unique teamset-Ids
+|The application to be certified needs to report teamsets and provide unique teamset Ids.
 a|
 
 * A change of the machine configuration (adding a machine) leads to a new machine in the agrirouter UI
