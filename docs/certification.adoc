@@ -179,11 +179,11 @@ It will be checked in advance by the certification company, which commands are s
 |link:./commands/endpoint.adoc#capabilities-command[dke:capabilities]
 | Always
 a|
-* Setting routes (as sender or/and as receiver) is possible
-* All information types defined in the certification version of the application to be certified can be selected
+* Setting routes (as sender or/and as receiver) is possible.
+* All information types defined in the certification version of the application to be certified can be selected.
 
 |link:./commands/endpoint.adoc#subscribtion-command[dke:subscription]
-|If application can receive messages
+|If the application can receive messages.
 a|
 * The application receives published messages of every technical message type mentioned in its certification version as a receipient.
 
@@ -193,34 +193,34 @@ An application can optionally offer the possibility to deactivate subscriptions 
 ====
 
 |link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query]
-|If application can receive messages
+|If application can receive messages.
 a|
 * see __"Clean your feed"__
 
 |link:./commands/feed.adoc#call-for-messages[dke:feed_message_query]
-|If application can receive messages
+|If application can receive messages.
 a|
 * see __"Clean your feed"__
 
 |link:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm]
-|If application can receive messages
+|If application can receive messages.
 a|
 * see __"Clean your feed"__
 
 |link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete]
-|If application can receive messages
+|If application can receive messages.
 a|
 * see __"Clean your feed"__
 
 |link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints]
-|Optional, if supported
+|Optional, if supported.
 a|
-* application Instance gets a list of endpoints to which messages of a certain type can be sent
+* The application instance gets a list of endpoints to which messages of a certain type can be sent.
 
 |link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered]
-|Optional, if supported
+|Optional, if supported.
 a|
-* application Instance gets a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
+* The application instance gets a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
 
 |link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf]
 |If application can send messages
