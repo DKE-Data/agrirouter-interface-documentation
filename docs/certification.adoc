@@ -12,7 +12,7 @@ A certification is needed any time the application changes its capabilities or t
 
 [NOTE]
 =====
-For a new certification version, capabilities can never be removed. Neither can a sending direction of a capability be removed. It is only allowed to add capabilities or sending directions for a new version. The capabilities command however can of course only include a subset that is smaller than in the version before.
+For a new certification version capabilities can never be removed. Neither can a sending direction of a capability be removed. It is only allowed to add capabilities or sending directions for a new version. The capabilities command however can of course only include a subset that is smaller than in the version before.
 =====
 
 == Out of focus
