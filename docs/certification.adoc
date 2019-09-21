@@ -312,7 +312,7 @@ a|
 a|
 * Every application message Id has to be a UUId.
 * On every start up, the sequence number needs to start at 1 and has to be incremented with every command / message.
-* The link:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked
+* The link:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked.
 
 | Account management
 |If supported, it's checked, if a CU correctly changes the agrirouter endpoint, it is communicating with, when the account in the CU is changed.
