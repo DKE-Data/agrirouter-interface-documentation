@@ -247,10 +247,10 @@ These tests are only required, if your application can send messages.
 |link:./integration/build-message.adoc#chunking-big-messages[Building chunks]
 | link:./tmt/overview.adoc[All TMTs except for EFDI]
 a|
-* The sending of a file with a size of more than 1 MB is possible. The chunks context information is filled
-* The chunkContextId is equal for all chunks that represent 1 file.
-* The chunkContextId changes when a new file is sent
-* The chunks have to be enumerated in ChunkComponent.current starting from 1, ChunkComponent.total has to equal the highest Chunk number
+* The sending of a file with a size of more than 1 MB is possible. The chunks context information is filled.
+* The `chunkContextId` is equal for all chunks that represent 1 file.
+* The `chunkContextId` changes when a new file is sent.
+* The chunks have to be enumerated in `ChunkComponent.current` starting from 1, `ChunkComponent.total` has to equal the highest chunk number
 | Base64 encoding
 |link:./tmt/overview.adoc[All TMTs except for EFDI]
 a|
