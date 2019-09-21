@@ -254,9 +254,9 @@ a|
 | Base64 encoding
 |link:./tmt/overview.adoc[All TMTs except for EFDI]
 a|
-* A file that should be sent is encoded in Base64
+* A file that should be sent is encoded in Base64.
 
-| Exchange Zip Folders
+| Exchange zipped Folders
 | link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape]
 a|
 * The TaskData.zip and/or Shape.zip are valid zip files that can be unpacked
