@@ -223,13 +223,13 @@ a|
 * The application instance receives a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
 
 |link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf]
-|If application can send messages
+|If application can send messages.
 a|
-* If the application reports machines connected via ISOBUS, the AEF conformance test "TaskController" is adviced
-* If the application reports self-built device descriptions (e.g. by translating a TractorECU or using Bluetooth beacons), the reported device descriptions have to be compatible with ISO11783-10 Annex F
+* If the application reports machines connected via ISOBUS, the AEF conformance test "TaskController" is adviced.
+* If the application reports self-built device descriptions (e.g. by translating a TractorECU or using Bluetooth beacons), the reported device descriptions have to be compatible with ISO11783-10 Annex F.
 
 |link:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf]
-|If application can send messages
+|If application can send messages.
 a|
 * see __"Teamset reports"__
 
@@ -238,7 +238,7 @@ a|
 === Apps sending messages
 [REMARK]
 =====
-These tests are only required, if your application can send data
+These tests are only required, if your application can send messages.
 =====
 
 [cols="1,2,9",options="header",]
