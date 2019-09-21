@@ -54,7 +54,7 @@ The following information is not required to start the certification but will be
 * The capabilities of the application including link:./tmt/overview.adoc[the technical message types] and  sending directions.
 * A list of link:./commands/overview.adoc[all commands], that are used by the application.
 * Is this an initial certification or a recertification for a new version of an existing software?
-* For some test case there has to be at last one extracted original message (as JSON or Base64-Encoded native Protobuf) has to be provided to the certification institute.
+* For some test case there has to be at last one extracted original message (as JSON or Base64-Encoded native Protobuf) provided to the certification institute.
 
 == Certification tests
 Not all of the certification tests are necessary for your implementation.
