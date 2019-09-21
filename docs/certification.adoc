@@ -88,11 +88,11 @@ a|
 *** Address
 *** Phone number
 * After an endpoint was deleted by the user, a new onboarding has to be possible.
-* In case of any error during onboarding (with the same (reonboarding) or a different External ID (new onboarding))
-** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available)
-** The error message includes the error code returned from agrirouter
-** The error code does not simply copy the error message from agrirouter
-** Error codes, that might not yet be documented have to be displayed as well
+* In case of any error during the onboarding (with the same (re-onboarding) or a different external Id (new onboarding)):
+** An error message is shown to the user (**Remark:** During onboarding, there is always a UI available).
+** The error message includes the error code returned from agrirouter.
+** The error code does not simply copy the error message from agrirouter.
+** Error codes, that might not yet be documented have to be displayed as well.
 
 |link:./integration/authorization.adoc[Authorization]
 |Telemetry Platforms
