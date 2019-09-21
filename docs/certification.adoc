@@ -256,19 +256,19 @@ a|
 a|
 * A file that should be sent is encoded in Base64.
 
-| Exchange zipped Folders
+| Exchange zipped folders
 | link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape]
 a|
 * The `TaskData.zip` and / or `Shape.zip` are valid zip files that can be unpacked.
 
-|Message Adressing
-| Always; optional, if supported
+|Message addressing
+| Always; optional, if supported.
 a|
-* Sending a message directly to one receipient
-* Sending a message directly to multiple receipients
-* Publishing a message
-* Publishing a message and sending it directly to 1 receipient
-* Publishing a message and sending it directly to multiple receipients
+* Sending a message directly to one recipient.
+* Sending a message directly to multiple recipient.
+* Publishing a message.
+* Publishing a message and sending it directly to 1 recipient.
+* Publishing a message and sending it directly to multiple recipient.
 |====
 
 
