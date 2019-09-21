@@ -61,14 +61,14 @@ Not all of the certification tests are necessary for your implementation. The ce
 
 [NOTE]
 ====
-The term __"All TMTs"__ on this page means "All Technical Message Types, that were reported in the Application Certification Version.
+The term __"All TMTs"__ on this page means "All Technical Message Types, that were reported in the application certification version".
 ====
 
 The selection depends on several parameters and attributes of the specific application. These parameters are listed in the following chapters
 
 === Based on the application type
 
-Based on the type of your application, different tests might be required. Check link:./applications.adoc[here], which type suites your requirements best.
+Based on the type of your application, different tests are required. Check link:./applications.adoc[here], which type of application suites your requirements best.
 
 [cols="1,2,4",options="header",]
 |====
