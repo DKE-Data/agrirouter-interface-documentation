@@ -243,7 +243,7 @@ These tests are only required, if your application can send messages.
 
 [cols="1,2,9",options="header",]
 |====
-|MessageType |Condition |Expected Results/Acceptance Criteria
+|Message type |Condition |Expected results / Acceptance criteria
 |link:./integration/build-message.adoc#chunking-big-messages[Building chunks]
 | link:./tmt/overview.adoc[All TMTs except for EFDI]
 a|
