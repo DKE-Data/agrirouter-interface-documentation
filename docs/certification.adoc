@@ -388,7 +388,7 @@ An application has to be re-certified, if one of the following things apply:
 
 * A new technical message type and/or direction is supported by your application
 * The basic message protocol (MQTT or REST) has changed
-* The basic message format (JSON or Native Protobuf) has changed
+* The basic message format (JSON or native Protobuf) has changed
 * The list of implemented commands changed
 * Push notifications are activated in the capabilities
 
