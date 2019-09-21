@@ -157,10 +157,10 @@ a|
 |link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding]
 |Telemetry platform
 a|
-* A new endpoint representing the VCU shows up in the certification account
+* A new endpoint representing the VCU shows up in the certification account.
 * The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
-* A notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the successfull onboarding
-* In case of an error, a  notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the reason
+* A notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the successfull onboarding.
+* In case of an error, a  notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the reason.
 
 |link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
 |Telemetry platform
@@ -175,7 +175,7 @@ It will be checked in advance by the certification company, which commands are s
 
 [cols="1,2,9",options="header",]
 |====
-|MessageType |Condition |Expected Results/Acceptance Criteria
+|Message type |Condition |Expected results / Acceptance criteria
 |link:./commands/endpoint.adoc#capabilities-command[dke:capabilities]
 | Always
 a|
