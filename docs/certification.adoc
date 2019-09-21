@@ -29,12 +29,12 @@ To pass the certification tests there are multiple requirements have to be fulfi
 
 === Prerequisites
 
-*  The link:./provider-agreement.adoc[DKE application provider agreement] has to be signed.
-*  The link:./marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
-*  The following information about the company is available:
+* The link:./provider-agreement.adoc[DKE application provider agreement] has to be signed.
+* The link:./marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
+* The following information about the company is available:
 ** Name
 ** Address (where billing and offer should be placed by the certification company)
-*  The following first level customer support information is available:
+* The following first level customer support information is available:
 ** Mail
 ** Address
 ** Phone
@@ -47,7 +47,7 @@ To pass the certification tests there are multiple requirements have to be fulfi
 The following information is not required to start the certification but will be required before finishing it:
 
 * A link:./registration.adoc[production environment developer account of the application provider]
-* application Id and certification version Id of link:./applications.adoc[an application in the production environment].
+* The application Id and certification version Id of link:./applications.adoc[an application in the production environment].
 * Version, name and description of the application to certify.
 * Used message protocol (MQTT/REST).
 * Used message format (JSON/Native Protobuf).
