@@ -33,7 +33,7 @@ To pass the certification tests there are multiple requirements have to be fulfi
 *  The link:./marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
 *  The following information about the company is available:
 ** Name
-** Address (where billing and offer shall be placed by certification company)
+** Address (where billing and offer should be placed by the certification company)
 *  Following information are available for a first level customer support:
 ** Email
 ** Address
