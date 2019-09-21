@@ -353,7 +353,7 @@ a|
 a| All errors that show up during communication with agrirouter need to be documented by the application to be certified.
 
 a|
-* Application have to document or display, if any error accours in communication with agrirouter. In particular:
+* Application have to document or display, if any error occurs in communication with agrirouter. In particular:
 ** agrirouter system messages
 ** agrirouter validation messages
 
@@ -362,7 +362,7 @@ a|
 * Error messages shown to an end user shall include the error code and a self-defined message of the application provider (not just the SAP error message).
 
 | Buffering
-| If the internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data, that needs to be sent, when the connection is reastablished.
+| If the Internet connection gets lost or agrirouter is not available for another reason, the application instance shall buffer data, that needs to be sent, when the connection is reestablished.
 
 The application instance needs to check for reconnection on its own.
 a|
