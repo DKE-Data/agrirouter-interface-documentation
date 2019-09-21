@@ -146,7 +146,7 @@ a|
 |link:./integration/reonboarding.adoc[Reonboarding]
 |Always
 a|
-* The application instance uses the same external ID as it used for onboarding
+* The application instance uses the same external Id as it has used for onboarding.
 * New credentials can be provided to communicate with agrirouter
 * After a successful reonboarding, the endpoint has to communicate with agrirouter over those new credentials
 * An application instance can also be reonboarded with the same id, if it was deleted in the agrirouter UI or revoked before
@@ -158,7 +158,7 @@ a|
 |Telemetry platform
 a|
 * A new endpoint representing the VCU shows up in the certification account
-* The external ID is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
+* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
 * A notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the successfull onboarding
 * In case of an error, a  notification is shown in the UI of the telemetry platform or the VCU, that informs the user about the reason
 
@@ -308,9 +308,9 @@ a|
 * It's checked, if sent messages are in a range of +/- 1 minute of UTC
 
 |Id requirements
-| There are several general requirements on Counters and IDs communicated to agrirouter
+| There are several general requirements on Counters and Ids communicated to agrirouter
 a|
-* Every application message Id has to be a UUID.
+* Every application message Id has to be a UUId.
 * On every start up, the sequence number needs to start at 1 and has to be incremented with every command/message.
 * The link:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked
 
