@@ -275,26 +275,26 @@ a|
 === Applications receiving messages
 [REMARK]
 =====
-These tests are only required, if your application can receive data
+These tests are only required, if your application can receive data.
 =====
 
 [cols="1,2,9",options="header",]
 |====
-|MessageType |Condition |Expected Results/Acceptance Criteria
+|Message type |Condition |Expected results / Acceptance criteria
 |Merging chunks
 | link:./tmt/overview.adoc[All TMTs except for EFDI]
 a|
-* The receiving of a file that consists of 1 chunk without chunk context is possible
-* The receiving of a file that consists of 1 chunk with chunk context is possible
-* The receiving of a file that consists of 2 chunks is possible
-* The receiving of a file that consists of more than 2 chunks is possible
-* The receiving of a file of multiple chunks, which are not delivered in the right order is possible
+* The receiving of a file that consists of 1 chunk without chunk context is possible.
+* The receiving of a file that consists of 1 chunk with chunk context is possible.
+* The receiving of a file that consists of 2 chunks is possible.
+* The receiving of a file that consists of more than 2 chunks is possible.
+* The receiving of a file of multiple chunks, which are not delivered in the right order is possible.
 
 |link:./integration/push-notification.adoc[Push notifications]
-|Always (if supported)
+|Always (if supported).
 a|
-* It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message]
-* It's tested, if pushed messages are confirmed
+* It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message].
+* It's tested if pushed messages are confirmed by the application after receiving them.
 |====
 
 
