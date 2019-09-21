@@ -301,17 +301,17 @@ a|
 === Other requirements
 [cols="1,3,3",options="header",]
 |====
-|Topic |Description |Expected Results/Acceptance Criteria
+|Topic |Description |Expected results / Acceptance criteria
 |Timestamps
-a| It will be tested, that the software uses UTC Timestamp for every message, it sends. See also the link:./integration/general-conventions.adoc[general conventions].
+a| It will be tested, that the software uses UTC Timestamp for every message it sends. See also the link:./integration/general-conventions.adoc[general conventions].
 a|
-* It's checked, if sent messages are in a range of +/- 1 minute of UTC
+* It's checked if sent messages are in a range of +/- 1 minute of UTC.
 
 |Id requirements
-| There are several general requirements on Counters and Ids communicated to agrirouter
+| There are several general requirements on counters and Ids communicated to agrirouter.
 a|
 * Every application message Id has to be a UUId.
-* On every start up, the sequence number needs to start at 1 and has to be incremented with every command/message.
+* On every start up, the sequence number needs to start at 1 and has to be incremented with every command / message.
 * The link:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked
 
 | Account management
