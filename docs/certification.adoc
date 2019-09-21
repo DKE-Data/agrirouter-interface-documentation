@@ -57,7 +57,7 @@ The following information is not required to start the certification but will be
 * For some test case there has to be at last one extracted original message (as JSON or Base64-Encoded native Protobuf) provided to the certification company.
 
 == Certification tests
-Not all of the certification tests are necessary for your implementation.
+Not all of the certification tests are necessary for your implementation. The certification company is able to tell you which of the tests are necessary to full fill all requirements.
 
 [NOTE]
 ====
