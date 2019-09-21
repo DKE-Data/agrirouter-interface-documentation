@@ -25,7 +25,7 @@ There are multiple certification companies, a list can be found link:https://my-
 
 == Certification Requirements
 
-To pass the certification tests, there are several requirements, of which several must be fulfilled before the certification can start.
+To pass the certification tests there are multiple requirements have to be fulfilled before the certification can start.
 
 === Prerequisites
 
