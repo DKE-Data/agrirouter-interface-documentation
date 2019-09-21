@@ -44,7 +44,7 @@ To pass the certification tests there are multiple requirements have to be fulfi
 
 === Additional requirements during the process
 
-The following information is not necessary to start the certification but will be required before finishing it:
+The following information is not required to start the certification but will be required before finishing it:
 
 * A link:./registration.adoc[production environment developer account of the application provider]
 * application Id and certification version Id of link:./applications.adoc[an application in the production environment].
