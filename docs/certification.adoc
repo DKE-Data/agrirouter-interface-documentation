@@ -385,7 +385,7 @@ a|
 
 If your software supports REST or MQTT with JSON, sending and receiving of those formats is checked.
 
-If your software supports REST with NativeProtobuf, sending and receiving of those formats is checked.
+If your software supports REST with native Protobuf, sending and receiving of those formats is checked.
 
 == Recertification cases
 
