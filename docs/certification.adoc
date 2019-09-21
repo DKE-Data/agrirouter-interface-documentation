@@ -235,7 +235,7 @@ a|
 
 |====
 
-=== Apps sending messages
+=== Applications sending messages
 [REMARK]
 =====
 These tests are only required, if your application can send messages.
@@ -272,7 +272,7 @@ a|
 |====
 
 
-=== Apps receiving messages
+=== Applications receiving messages
 [REMARK]
 =====
 These tests are only required, if your application can receive data
