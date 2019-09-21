@@ -140,7 +140,7 @@ a|
 Farming software
 a|
 * The specific endpoint disappears from the certification account.
-* After an endpoint was deleted by the user, revoking must be possible
+* After an endpoint was deleted by the user, revoking has to be possible.
 
 
 |link:./integration/reonboarding.adoc[Reonboarding]
