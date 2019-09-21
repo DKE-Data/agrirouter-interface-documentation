@@ -337,8 +337,6 @@ For the certification, the rule of cleaning your feed applies with a shorter per
 ====
 a|
 * After the several tests of receiving or rejecting messages, it will be checked if the feed is empty.
-
-
 * All messages are removed from the feed of the endpoint (either be deleting or receiving and confirming) within a certain period of time.
 
 
