@@ -384,17 +384,17 @@ If your software supports REST with native Protobuf, sending and receiving of th
 
 == Recertification cases
 
-An application has to be recertified, if one of the following things apply:
+An application has to be re-certified, if one of the following things apply:
 
 * A new technical message type and/or direction is supported by your application
 * The basic message protocol (MQTT or REST) has changed
 * The basic message format (JSON or Native Protobuf) has changed
 * The list of implemented commands changed
-* Push Notifications are activated in the capabilities
+* Push notifications are activated in the capabilities
 
 [IMPORTANT]
 ====
-The supported TMTs as well as the used Protocol and Format are assigned to the certification. A change of any of those functionalities will cause an invalidity of the certificate, which will block your applications communication to agrirouter.
+The supported TMTs as well as the used protocol and format are assigned to the certification. A change of any of those functionalities will cause an invalidity of the certificate, which will block your applications communication to agrirouter.
 ====
 
 ==== Link Section
