@@ -402,6 +402,11 @@ An application has to be recertified, if one of the following things apply:
 The supportet TMTs as well as the used Protocol and Format are assigned to the certification. A change of any of those functionalities will cause an invalidity of the certificate, which will block your applications communication to agrirouter.
 ====
 
+[IMPORTANT]
+====
+In the unlikely event of an update of agrirouter software, which requires changes in the app providers software (e.g. a new error code, that shall be handled), a new certification is *not required*. However, the app provider is responsible for keeping his software up to date.
+====
+
 ==== Link Section
 This page is found in every file and links to the major topics
 [width="100%"]
