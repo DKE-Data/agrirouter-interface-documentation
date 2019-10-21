@@ -31,7 +31,7 @@ The event type is one of the following:
 [cols=",",options="header",]
 |========================================================================================
 |Event |Description
-|ACKNOWLEDGEMENT |Acknowledgement created by agrirouter in response to message
+|ACKNOWLEDGMENT |Acknowledgment created by agrirouter in response to message
 |CONFIRMED |Message was confirmed by specified endpoint
 |DELETED |Message was deleted by specified endpoint
 |DELIVERED |Message was delivered to specified endpoint (but not yet confirmed)
