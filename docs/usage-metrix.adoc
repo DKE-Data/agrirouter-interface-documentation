@@ -31,12 +31,13 @@ The event type is one of the following:
 [cols=",",options="header",]
 |========================================================================================
 |Event |Description
-|SENT |Message was sent by specified endpoint
-|ERROR |Message was returned because of an error (e. g. missing team context ID)
-|DELIVERED |Message was delivered to specified endpoint (but not yet confirmed)
+|ACKNOWLEDGEMENT |Acknowledgement created by agrirouter in response to message
 |CONFIRMED |Message was confirmed by specified endpoint
 |DELETED |Message was deleted by specified endpoint
+|DELIVERED |Message was delivered to specified endpoint (but not yet confirmed)
+|ERROR |Message was returned because of an error (e. g. missing team context ID)
 |OFFBOARDED |Message was deleted, because the specified endpoint was deleted / offboarded
+|SENT |Message was sent by specified endpoint
 |TIMEOUT |Message was deleted because of a timeout (4 weeks rule)
 |========================================================================================
 
