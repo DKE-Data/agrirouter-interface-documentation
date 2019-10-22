@@ -56,11 +56,11 @@ The following List shows the corresponding Protobuf schemata for each ResponseTy
 |========
 |ResponseBodyType |Schema (.proto) |Comment
 |MESSAGES |agrirouter.feed.response. MessageQueryResponse |A list of messages as result of a request for messages
-|ACK |There is no Schema for this, the payload will just have a size of 0 bytes |An acknowledgement of a message
-|ACK_WITH_MESSAGES |agrirouter.commons.Messages |An acknowledgement with messages; e.g. warnings.
+|ACK |There is no Schema for this, the payload will just have a size of 0 bytes |An acknowledgment of a message
+|ACK_WITH_MESSAGES |agrirouter.commons.Messages |An acknowledgment with messages; e.g. warnings.
 |ACK_WITH_FAILURE |agrirouter.commons.Messages |Represents a failure response in correlation to a message sent to the agrirouter
-|ACK_FOR_FEED_HEADER_LIST |agrirouter.feed.response.HeaderQueryResponse |Used for acknowledgements for feed envelope requests
-|ACK_FOR_FEED_MESSAGE |agrirouter.feed.response.MessageQueryResponse |Used for acknowledgements for feed payload requests.
+|ACK_FOR_FEED_HEADER_LIST |agrirouter.feed.response.HeaderQueryResponse |Used for acknowledgments for feed envelope requests
+|ACK_FOR_FEED_MESSAGE |agrirouter.feed.response.MessageQueryResponse |Used for acknowledgments for feed payload requests.
 |ACK_FOR_FEED_FAILED_MESSAGE |agrirouter.feed.response.FailedMessageQueryResponse |Response for failed requests to feed queries
 |ENDPOINTS_LISTING |agrirouter.response.payload.account.ListEndpointsResponse |Used for a response which contains the endpoint listing
 |CLOUD_REGISTRATIONS |agrirouter.cloud.registration.OnboardingResponse |The result of a Virtual CU registration
