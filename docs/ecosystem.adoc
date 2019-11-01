@@ -34,6 +34,15 @@ You might wonder, why machines are not listed as applications. The answer is eas
 
 (Virtual) CUs, that are connected to the ISOBUS can provide the device description of connected machines and send live telemetry data. If a CU provides the device description of connected machines, these machines can be addressed by agrirouter messages. A farmer could for example send an initial taskset to his seeder and the taskset is delivered to whichever CU reports to agrirouter, that it is connected to this seeder.
 
+[NOTE]
+=====
+
+Machines are filtered through their ISO11783 ClientNAME.(a.k.a. WorkingSet Master Name). The full definition of this can be found in the corresponding standards (ISO11783 link:https://www.iso.org/standard/61581.html[Part 10 for TaskController Knowledge] and ISO11783 link:https://www.iso.org/standard/74366.html[Part 5 for definition of the ClientNAME]). 
+
+**Important**: 
+In older versions of the standard, the ClientNAME was only required to be unique across the bus, which lead some manufacturers to use the same ClientNAME for different machines (e.g. multiple tractors), that would never be connected to the same CAN Bus. A further filtering to find a unique ID can be done by adding the DeviceSerialNumber to extend the ClientNAME.  
+=====
+
 == Communication addresses: Endpoints
 
 An endpoint is an addressable communication address for an application instance connected to the agrirouter. One application instance can be part of multiple agrirouter accounts or there can be multiple instances of the same application in one agrirouter account. An example for multiple instances of the same application in one account are multiple CUs onboarded to one account.
