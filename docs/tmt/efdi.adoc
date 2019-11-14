@@ -32,7 +32,7 @@ For information on filtering and assigning machines by their name, see link:../e
 |==================================================
 |Command |iso:11783:-10:device_description:protobuf
 |Protobuf Schema |EFDI; available at AEF Repository
-|TypeURL |iso:11783:-10:device_description:protobuf
+|TypeURL |types.agrirouter.com\efdi.ISO11783_TaskData
 |==================================================
 
 The teamset message is part of EFDI and therefore currently not available here. It will be available by AEF.
@@ -75,7 +75,7 @@ split this message into multiple timelog messages.
 |==================================================
 |Command |iso:11783:-10:time_log:protobuf
 |Protobuf Schema |EFDI; available at AEF Repository
-|TypeURL |iso:11783:-10:time_log:protobuf
+|TypeURL |types.agrirouter.com\efdi.TimeLog
 |==================================================
 
 == Content of Telemetry messages
