@@ -56,6 +56,11 @@ The following information is not required to start the certification but will be
 * Is this an initial certification or a recertification for a new version of an existing software?
 * For some test case there has to be at last one extracted original message (as JSON or Base64-Encoded native Protobuf) provided to the certification company.
 
+== Certification timeout
+
+Once the certification is started, it needs to be successfully passed within 10 weeks. Otherwise, additional costs could be incurred. It is important to respect this time range as part of the implementation planning. 
+
+
 == Certification tests
 Not all of the certification tests are necessary for your implementation. The certification company is able to tell you which of the tests are necessary to full fill all requirements.
 
