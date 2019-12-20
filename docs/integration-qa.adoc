@@ -8,12 +8,69 @@
 
 Before starting with the integration, it's important to understand the link:./basic-concepts.adoc[basic concepts of agrirouter] including topics like:
 
-* link:./ecosystem.adoc[Ecosystem]
-* link:./endpoint.adoc[Elements of an endpoint]
-* link:./message-exchange.adoc[Concepts of Message Exchange]
-* link:./communication.adoc[Concepts of communication]
-* link:./messaging-workflow.adoc[Messaging Workflows]
-* link:./telemetry-platform-concepts.adoc[Concepts for Telemetry Platforms integration]
+=== Ecosystem
+
+++++
+<p align="center">
+ <img src="./../assets/images/ig1\image10.png" width="642px" height="321px"><br>
+ <i>The agrirouter ecosystem of members</i>
+</p>
+++++
+
+The agrirouter ecosystem and the members of it are described in the chapter link:./ecosystem.adoc[Ecosystem].
+
+=== Endpoints
+
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image26.png" width="623px" height="268px"><br>
+ <i>Architecture of an endpoint</i>
+</p>
+++++
+
+The elements of an endpoint are described in the chepter link:./endpoint.adoc[Elements of an endpoint].
+
+=== Communication
+++++
+<p align="center">
+ <img src="./../assets/images/ig2/image31.png" width="543px" height="313px"><br>
+ <i>The onion principal of communication</i>
+</p>
+++++
+
+The different layers of communication between an app instance and agrirouter is described in the link:./communication.adoc[Concepts of communication]
+
+=== Message Exchange
+++++
+<p align="center">
+ <img src="./../assets/images/ig1\image13.png" width="634px" height="314px"><br>
+ <i>Way of a message through agrirouter</i>
+</p>
+++++
+
+The basic concepts of message exchanged are described in the link:./message-exchange.adoc[Concepts of Message Exchange]
+
+This chapter handles for example the concepts of addressing members of the ecosystem.
+
+=== Messaging Workflows
+++++
+<p align="center">
+ <img src="./../assets/images/general/general_process.png" width="543px" height="313px"><br>
+ <i>Messaging Workflow and lifecycle of an endpoint</i>
+</p>
+++++
+
+There is a common lifecycle for an endpoint, that is described in the link:./messaging-workflow.adoc[Messaging Workflows].
+
+=== Telemetry Platforms integration
+++++
+<p align="center">
+<img src="./../assets/images/ig2\telemetryplatform.png" width="619px" height="366px"><br>
+<i>Telemetry Platforms are cloud systems that communicate for multiple CUs</i>
+</p>
+++++
+
+If your system involves communication units, that communicate to your cloud solution in a proprietary way, take a look at the link:./telemetry-platform-concepts.adoc[Concepts for Telemetry Platforms integration]
 
 [IMPORTANT]
 ====
@@ -73,23 +130,39 @@ The following chapters describe all requirements to integrate an application wit
 === Before we begin
 First, you should always keep in mind the link:./integration/general-conventions.adoc[General conventions].
 
-There are several environments for test and production in different areas of the world. They can be found in the link:./integration/environments.adoc[Environments].
+There are several environments for test and production in different areas of the world. Their different parameters like URLs and certificates can be found in the link:./integration/environments.adoc[Environments].
 
-Even though certification is part of the integration process for the productive environment, you should contact the link:./certification.adoc[relevant certification institut] once you have an overview of what you want to build, to check, which technical requirements for the certifications are important to concern in the development.
+=== General lifecycle of an endpoint
+++++
+<p align="center">
+ <img src="../assets/images/general/lifecycle.png"><br>
+</p>
+++++
 
 === Connecting your app instance
+
+==== Authorization
 FarmingSoftware and Telemetry Platforms have to perform an link:./integration/authorization.adoc[Authorization Process] to clarify, that the account user is known.
 
-To communicate with the agrirouter, an application Instance needs to be link:./integration/onboarding.adoc[onboarded]. An application instance can be link:./integration/reonboarding.adoc[ReOnboarded] or all application instance of a specific customer can be link:./integration/revoke.adoc[Revoked].
+==== Onboarding
+
+To communicate with the agrirouter, an application Instance needs to be link:./integration/onboarding.adoc[onboarded]. An application instance can be link:./integration/reonboarding.adoc[ReOnboarded].
 
 
 === Communicate with agrirouter endpoints
 
+==== Building messages
+
 To send a message, it has to be built first. Read link:./integration/build-message.adoc[here] about building messages and commands.
+
+
+==== Sending messages and commands
 
 Every application instance can link:./integration/message-sending.adoc[send messages] and commands the same way.
 
 While link:./tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, link:./commands/overview.adoc[commands] are used to link:./commands/ecosystem.adoc[explore the ecosystem], link:./commands/endpoint.adoc[configure your endpoint] and link:./commands/feed.adoc[request messages from the feed].
+
+==== Receiving messages and command answers
 
 Command results and messages from other endpoints will be link:./integration/message-receiving.adoc[received through the outbox] by the receiving application instance.
 
@@ -97,6 +170,10 @@ Messages from other endpoints are put into the outbox by link:./integration/push
 
 
 Depending on the  link:./integration/analyze-result.adoc#ResponseType[resultType], the result can be link:./integration/analyze-result.adoc[analyzed].
+
+=== End of life for an endpoint
+
+When an endpoint shall be deleted, it can be link:./integration/revoke.adoc[Revoked].
 
 == 3.6 Test Interface and messaging
 

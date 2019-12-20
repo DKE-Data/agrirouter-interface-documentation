@@ -70,7 +70,7 @@ The whole chapter can be found link:./accounts.adoc[here]
 
 * Users can onboard application instances of an application to their account.
 
-* These onboarded application instances can than communicate with apps within this agrirouter account.
+* These onboarded application instances can than communicate with instances of other apps within this agrirouter account.
 
 * Apps need to be certified to be onboarded to the agrirouter.
 
@@ -87,7 +87,7 @@ The whole chapter can be found link:./applications.adoc[here]
 
 ++++
 <p align="center">
- <img src="./assets/images/ig1\image11.png" width="634px" height="400px"><br>
+ <img src="../assets/images/ig1/image11.png" width="634px" height="400px"><br>
  <i>A schema of the hierachy of agrirouter app instances</i>
 </p>
 ++++
@@ -208,19 +208,19 @@ The whole chapter can be found link:./message-exchange.adoc[here]
 
 * After onboarding, each app instance can communicate with its endpoint using REST or MQTT.
 
-* App instances using REST send requests and receive responses from their outbox.
+* App instances using REST send requests to their inbox and receive responses from their outbox.
 
-* App instances using MQTT send requests and receive responses from their outbox.
+* App instances using MQTT send requests to their inbox and receive responses from their outbox.
 
 * Using the desired protocol, App Instances send commands and messages to their inbox.
 
 * The HTTP response for a request to the inbox buffer of a REST endpoint through the inbox will be the information, that the command or message is being processed.
 
-* For an MQTT endpoint, there will be no processing information.
+* For an MQTT endpoint, there will be no processing information for a request to the inbox.
 
 * App Instances using the REST protocol will have to poll for a result of this processing at the outbox.
 
-* App instances using the MQTT protocol will only receive the result without polling.
+* App instances using the MQTT protocol will receive the result without polling.
 
 * Messages, that are no commands for the agrirouter will be forwarded to addressing and routing.
 

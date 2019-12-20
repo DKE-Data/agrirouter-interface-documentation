@@ -5,65 +5,27 @@
 :toclevels: 4
 
 
+== Types of applications
+
 Applications are software products, that have implemented an interface to the agrirouter. There are 3 Types of possible applications:
 
-== Communication Units
-
-Communication units (CU) are mobile applications, mostly running on embedded systems or mobile devices to establish a connection to the agrirouter “in the fields”. CUs are used to collect information like machine data or geo positions.
-
-CUs are usually but not necessary connected to machines via ISOBUS and collect their data during the common ISOBUS interaction.
-
-CUs should have a stable internet connection to provide live data. Otherwise, a CU should buffer generated messages to send them, once the internet connection returns.
-
-Like any other endpoint, CUs are able to request information from the agrirouter, e.g. to inform a driver about other machines positions (fleet management). The more important job of CUs however is to provide data to agrirouter.
-
-A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetry-units/.
-
-Please note, that there might be additional CUs in development.
-
-[IMPORTANT]
-====
-Communication units can also be tablets or other devices and should meet the following *base requirements*:
+* link:ecosystem.adoc#_communication_units[Communication Units]
+* link:ecosystem.adoc#_farming_software[Farming Software]
+* link:ecosystem.adoc#_telemetry_platform_and_virtual_cus[Telemetry Platforms and virtual CUs]
 
 
-* Every single device has to have internet connectivity and must be able to communicate via HTTP(S) with REST or via MQTT. The communication consists mainly of payloads in Google Protocol Buffer format.
-
-* Endpoints without a constant internet connectivity are not able to send real time data. Sending recorded data after establishing an internet connection will be a valid use case for endpoints not having internet connectivity during the main working process of a machine.
-
-====
-
-== Telemetry platform and virtual CUs
-
-A telemetry platform is a cloud software solution, that provides access to multiple so called virtual CUs. Virtual CUs are comparable to real CUs, but in difference, they do not implement the agrirouter protocol. Virtual CUs implement a proprietary protocol to connect to the telemetry platform only.
-
-The telemetry platform is connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform differs from the onboarding process of a CU, as the user might not have to enter a registration code in the CU. In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
-
-A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetry-units/.
-
-Please note, that there might be additional telemetry systems in development of the compatibility.
-
-== Farming software
-
-Farming software can be a cloud application or a software released on a single device like PC or Smartphone. Farming software mostly consumes data to provide extra services for farmers or contractor. FMIS (Farm Management and Information Systems) are a common example for farming software.
-
-A list of compatible CUs can be found here:
-
-https://my-agrirouter.com/en/marketplace/apps/
-
-Please note, that there might be additional software in development of the compatibility.
-
-
-
-== Mixed Applications
+== Selecting the application type
 
 It’s not always obvious, to which category a new application belongs. To simplify the decision, DKE advices the following decision tree:
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image6.png" width="619px" height="366px"><br>
+<img src="./../assets/images/general/decisiontree_apptype.png" width="619px" height="366px"><br>
 <i>Decision Tree: What type of application do I create?</i>
 </p>
 ++++
+
+For more information on the different types of applications, take a look at the link:./ecosystem.adoc[ecosystem].
 
 == Register Application
 
