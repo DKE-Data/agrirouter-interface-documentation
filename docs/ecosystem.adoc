@@ -34,7 +34,7 @@ CUs are usually but not necessarily connected to machines via ISOBUS and collect
 
 CUs should have a stable internet connection to provide live data. Otherwise, a CU should buffer generated messages to send them, once the internet connection returns.
 
-Like any other endpoint, CUs are able to request information from the agrirouter, e.g. to inform a driver about other machine positions (fleet management). The more important job of CUs however is to provide data to agrirouter.
+Like any other endpoint, CUs are able to request information from the agrirouter, e.g. to inform a driver about other machine positions (fleet management). The more important job of CUs, however, is to provide data to agrirouter.
 
 A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetryconnection/.
 
