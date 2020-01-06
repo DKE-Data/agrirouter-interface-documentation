@@ -177,7 +177,7 @@ When an endpoint shall be deleted, it can be link:./integration/revoke.adoc[Revo
 
 == 3.6 Test Interface and messaging
 
-In status _Approved for Testing_, application developers can link:./invite-testers.adoc[add other accounts for testing their application]. If a certification version is in status _Approved for Testing_, instances with this certification version can be onboarded in these test accounts and an external test can be started. The developers account automatically is an end user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
+In status _Approved for Testing_, application developers can link:./invite-testers.adoc[add other accounts for testing their application]. If a certification version is in status _Approved for Testing_, instances with this certification version can be onboarded in these test accounts and an external test can be started. The developers account automatically is an end-user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
 
 [IMPORTANT]
 ====
