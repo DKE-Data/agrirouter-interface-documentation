@@ -2,7 +2,7 @@
 
 == Introduction
 
-Telemetry Platforms are cloud systems, that bundle the communication of multiple communication units and is also used to translate the proprietary communication between the communication units and the cloud platform to the agrirouter communication protocol described in this documentation. 
+Telemetry Platforms are cloud systems, that bundle the communication of multiple communication units and are also used to translate the proprietary communication between the communication units and the cloud platform to the agrirouter communication protocol described in this documentation. 
 
 ++++
 <p align="center">
@@ -31,6 +31,20 @@ The telemetry platform handles the on- and offboarding of virtual CUs, therefore
 
 Telemetry platforms offer commands to on- and offboard virtual CUs. Those can be found in the link:./commands/cloud.adoc[Cloud command list].
 
+=== Capabilities
+
+==== In the UI: Summarized capabilities 
+
+When link:./applications.adoc#_register_application[creating a telemetry platform in the agrirouter UI], the capabilities have to be selected. For a telemetry platform, the capabilities selected in the UI summarize all capabilities of the platform itself as well as any Virtual CU that could be onboarded through the telemetry platform. This means, that if your telemetry platform has its own functionalities (e.g. an integrated Farm Management System), those capabilities have to be selected as well.
+
+
+==== After onboarding the telemetry platform
+
+The link:./commands/endpoint.adoc#_capabilities_command[capabilities command] has to be sent directly after onboarding the telemetry platform. A telemetry platform, that has no own functionality and is only used to onboard and delete virtual CUs does not have any capabilities, so an empty capabilities command has to be sent.
+
+==== After onboarding a virtual CU
+
+After onboarding a virtual CU, the capabilities command for this virtual CU has to be sent, indicating only those capabilities that the virtual CU really is capable of.
 
 ==== Link Section
 This page is found in every file and links to the major topics

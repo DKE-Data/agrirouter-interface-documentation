@@ -16,6 +16,11 @@ A communication with agrirouter requires several, partly parallel actions to tak
 </p>
 ++++
 
+[NOTE]
+====
+The displayed workflow is just one possible solution. It is up to the app provider or his developer to find the most practical workflow of requesting, which messages are available and requesting or deleting those messages.
+====
+
 Every application instance communicates to the agrirouter in sessions. The first message can be sent after onboarding is done. It shall report the capabilities.
 
 These capabilities must match those stated in the application version certification or a subset of them.
@@ -25,10 +30,6 @@ If the endpoint wants to ‘listen’ to certain messages, it must subscribe to 
 Every request sent to the agrirouter inbox will be acknowledged by the agrirouter, indicating whether the request could be processed successfully, with warning or it could not be processed because of errors; in that case, an error code and an error message in English are returned.
 
 
-[NOTE]
-====
-The displayed workflow is just one possible solution. It is up to the app provider or his developer to find the most practical workflow of requesting, which messages are available and requesting or deleting those messages.
-====
 
 
 
@@ -75,7 +76,7 @@ This chapter gives an overview about the endpoints including their base requirem
 The full chapter can be found link:./endpoint.adoc[here].
 
 == Authorization process for endpoints
-This process is required to make sur, that an app provider knows the end user of an app instance of his application.
+This process is required to make sure, that an app provider knows the end user of an app instance of his application.
 
 The whole chapter can be found link:./integration/authorization.adoc[here].
 
@@ -287,41 +288,8 @@ If the app instance intends to send binary content to its endpoint, the app inst
 
 == Telemetry platform integrations
 
-To simplify and optimize the connection of telemetry platforms, there are several additional functionalities for such platforms. A telemetry platform can onboard virtual CUs itself, so that it is not necessary to enter a registration code in the terminal of a virtual CU
+To simplify and optimize the connection of telemetry platforms, there are several additional functionalities for such platforms. A telemetry platform can onboard virtual CUs itself, so that it is not necessary to enter a registration code in the terminal of a virtual CU. More information can be found in the link:telemetry-platform-concepts.adoc[chapter about telemetry platforms].
 
-=== Integration Concept
-
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image38.png" width="642px" height="215px"><br>
- <i>Telemetry platform Integration Concept Overview</i>
-</p>
-++++
-
-
-
-
-=== Device Onboarding
-
-A certified telemetry platform (having received a certificate by DKE) can onboard new virtual CUs in an automated way. The agrirouter provides a designated API for automated virtual CU onboarding.
-
-=== Virtual CU and Messaging
-
-Regarding messaging, there is no difference between a real-world CU and a virtual CU onboarded by a certified telemetry platform. The connecting telemetry platform has to implement the same communication pattern as it applies to all other endpoints categories.
-
-[IMPORTANT]
-====
-There will be a trusted Relationship between the agrirouter and certified telemetry platform. The communication between the telemetry platform and the agrirouter will be realized using MQTT messaging over a designated messaging component. As mentioned before the payload has to be Google Protocol Buffer encoded, the communication pattern will be asynchronous most of the time.
-====
-
-=== Levels of the Cloud Solution
-
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image39.png" width="642px" height="343px"><br>
- <i>Comparing agrirouter hierarchy with a possible cloud platform hierarchy</i>
-</p>
-++++
 
 
 
@@ -332,3 +300,5 @@ This page is found in every file and links to the major topics
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
+
+
