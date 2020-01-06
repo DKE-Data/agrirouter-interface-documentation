@@ -62,7 +62,7 @@ Communication units can also be tablets or other devices and should meet the fol
 </p>
 ++++
 
-Farming software can be a cloud application or a software released on a single device like PC or Smartphone. Farming software mostly consumes data to provide extra services for farmers or contractor. FMIS (Farm Management and Information Systems) are a common example for farming software.
+Farming software can be a cloud application or software released on a single device like PC or Smartphone. Farming software mostly consumes data to provide extra services for farmers or contractor. FMIS (Farm Management and Information Systems) are a common example for farming software.
 
 A list of farming software applications can be found here:
 
