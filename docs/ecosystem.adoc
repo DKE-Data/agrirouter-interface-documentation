@@ -30,11 +30,11 @@ The agrirouter is a central data exchange platform, but to understand its full p
 
 Communication units (CU) are mobile applications, mostly running on embedded systems or mobile devices to establish a connection to the agrirouter “in the fields”. CUs are used to collect information like machine data or geo positions.
 
-CUs are usually but not necessary connected to machines via ISOBUS and collect their data during the common ISOBUS interaction using an ISOBUS TaskController or DataLogger.
+CUs are usually but not necessarily connected to machines via ISOBUS and collect their data during the common ISOBUS interaction using an ISOBUS TaskController or DataLogger.
 
 CUs should have a stable internet connection to provide live data. Otherwise, a CU should buffer generated messages to send them, once the internet connection returns.
 
-Like any other endpoint, CUs are able to request information from the agrirouter, e.g. to inform a driver about other machines positions (fleet management). The more important job of CUs however is to provide data to agrirouter.
+Like any other endpoint, CUs are able to request information from the agrirouter, e.g. to inform a driver about other machine positions (fleet management). The more important job of CUs however is to provide data to agrirouter.
 
 A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetryconnection/.
 
@@ -82,7 +82,7 @@ Please note, that there might be additional software in development of the compa
 
 A telemetry platform is a cloud software solution, that handles the communication of so called "virtual CUs" with the agrirouter. Virtual CUs are comparable to real CUs, but in difference, they do not implement the agrirouter protocol. Virtual CUs implement a proprietary protocol to connect to the telemetry platform only.
 
-The telemetry platform is connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform equals the process of onboarding a Farming software. 
+The telemetry platform is connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform equals the process of onboarding a Farming software.
 Virtual CUs can be onboarded by the telemetry platform without user interaction.
 
  In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
@@ -92,7 +92,7 @@ A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketp
 Please note, that there might be additional telemetry systems in development of the compatibility.
 
 
- 
+
 == Machines
 
 You might wonder, why machines are not listed as applications. The answer is easy: Machines cannot be directly connected to the agrirouter. Machines are always connected through an application like a CU or a virtual CU.
@@ -102,17 +102,17 @@ You might wonder, why machines are not listed as applications. The answer is eas
 [NOTE]
 =====
 
-Machines are filtered through their ISO11783 ClientNAME.(a.k.a. WorkingSet Master Name). The full definition of this can be found in the corresponding standards (ISO11783 link:https://www.iso.org/standard/61581.html[Part 10 for TaskController Knowledge] and ISO11783 link:https://www.iso.org/standard/74366.html[Part 5 for definition of the ClientNAME]). 
+Machines are filtered through their ISO11783 ClientNAME.(a.k.a. WorkingSet Master Name). The full definition of this can be found in the corresponding standards (ISO11783 link:https://www.iso.org/standard/61581.html[Part 10 for TaskController Knowledge] and ISO11783 link:https://www.iso.org/standard/74366.html[Part 5 for definition of the ClientNAME]).
 
-**Important**: 
-In older versions of the standard, the ClientNAME was only required to be unique across the bus, which lead some manufacturers to use the same ClientNAME for different machines (e.g. multiple tractors), that would never be connected to the same CAN Bus. A further filtering to find a unique ID can be done by adding the DeviceSerialNumber to extend the ClientNAME.  
+**Important**:
+In older versions of the standard, the ClientNAME was only required to be unique across the bus, which lead some manufacturers to use the same ClientNAME for different machines (e.g. multiple tractors), that would never be connected to the same CAN Bus. A further filtering to find a unique ID can be done by adding the DeviceSerialNumber to extend the ClientNAME.
 =====
 
 
 
 == Overview of the architecture
 
-This chapter gives a high-level overview about the agrirouter Connectivity-Platform architecture, an application can interact with. 
+This chapter gives a high-level overview about the agrirouter Connectivity-Platform architecture, an application can interact with.
 
 ++++
 <p align="center">
@@ -162,4 +162,3 @@ This page is found in every file and links to the major topics
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
-
