@@ -47,7 +47,7 @@ Communication units can also be tablets or other devices and should meet the fol
 
 * Every single device has to have internet connectivity and must be able to communicate via HTTP(S) with REST or via MQTT. The communication consists mainly of payloads in Google Protocol Buffer format.
 
-* Endpoints without a constant internet connectivity are not able to send real time data. Sending recorded data after establishing an internet connection will be a valid use case for endpoints not having internet connectivity during the main working process of a machine.
+* Endpoints without constant internet connectivity are not able to send real time data. Sending recorded data after establishing an internet connection will be a valid use case for endpoints not having internet connectivity during the main working process of a machine.
 
 ====
 
