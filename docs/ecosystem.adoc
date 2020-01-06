@@ -68,7 +68,7 @@ A list of farming software applications can be found here:
 
 https://my-agrirouter.com/en/marketplace/apps/
 
-Please note, that there might be additional software in development of the compatibility.
+Please note, that there might be additional software in the development of the compatibility.
 
 
 === Telemetry platform and virtual CUs
