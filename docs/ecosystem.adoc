@@ -85,7 +85,7 @@ A telemetry platform is a cloud software solution, that handles the communicatio
 The telemetry platform is connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform equals the process of onboarding a Farming software.
 Virtual CUs can be onboarded by the telemetry platform without user interaction.
 
- In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
+In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
 
 A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetryconnection/.
 
