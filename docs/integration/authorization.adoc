@@ -114,7 +114,7 @@ The authorization Link is a HTTP GET Request that has to be called from a browse
 
 To provide a link for authorization, create a link like this:
 
-**__\{\{agrirouter-url}}/application/\{\{applicationID}}/authorize?\{\{response_type}}&\{\{state}}&\{\{redirectURL}}__**
+**__\{\{agrirouter-url}}/application/\{\{applicationID}}/authorize?\{\{response_type}}&\{\{state}}&\{\{redirect_uri}}__**
 
 [cols="2,3,3",options="header",]
 |=====================================================================================
