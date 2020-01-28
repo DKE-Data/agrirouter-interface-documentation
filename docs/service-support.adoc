@@ -48,6 +48,91 @@ You should click the subscription button to subscribe for system events and rece
 
 Each agrirouter account has a limited number of endpoints, see link:./limitations.adoc[here].
 
+== Endpoint information in the agrirouter UI
+
+In case of any issues with a test endpoint or the endpoint of a customer, agrirouter provides a few information on each endpoint.
+
+To display the information select the particular endpoint and take a look at the endpoint information and the endpoint details.
+
+=== Endpoint information
+
+The endpoint information offers the IDs that the app instance should use for communication with agrirouter:
+++++
+<p align="center">
+ <img src="./../assets/images/ig1\image46.png" width="586px" height="335px"><br>
+ <i>Endpoint information used with agrirouter</i>
+</p>
+++++
+
+=== Endpoint details
+
+The endpoint details shows an extended list of information about the app instance and the status of communication:
+
+++++
+<p align="center">
+ <img src="./../assets/images/general\endpoint_details.png" width="586px" height="335px"><br>
+ <i>Endpoint information used with agrirouter</i>
+</p>
+++++
+
+
+==== General endpoint details
+
+[cols=",",]
+|===============================================================================
+|Field |Description
+|Description |Description as maintained by user
+|Status |Activity status of endpoint (activated /deactivated)
+|Type |Type of software as displayed today
+|Machine class |EFDI machine class, displayed for machines only
+|Onboarding Date & Time |Date and time when the endpoint was onboarded
+|External ID |External id of endpoint as provided during onboarding
+|Provider |Name of software provider of endpoint
+|Endpoint Software |Software name as displayed in current version
+|Version number |Software version as displayed today
+|===============================================================================
+
+
+==== Outgoing messages information
+
+Information on messages that were sent *from* the app instance over the agrirouter.
+
+[cols=",",]
+|===============================================================================
+|Field |Description
+|Last Sent message |Date & Time when the last message was sent by this endpoint and processed within the agrirouter
+|Meta-Information |Meta-Information of last sent message
+|Information type of last sent message |Information type as provided in message header.
+|Size of last sent message |Size of message payload in bytes.
+|===============================================================================
+
+
+
+==== Incoming messages information
+
+Information on messages that were received *by* the app instance from its endpoint respectively the feed.
+
+[cols=",",]
+|===============================================================================
+|Field |Description
+|Number of messages |Number of messages in feed of the endpoint that have not been confirmed yet.
+|Last received message: Date & Time |Date and time when the last message was received by the respective endpoint (i.e. status ‘confirmed’ in usage metrics).
+|Meta Information of last received message |Metadata (e.g. file name) of last message received (confirmed) by this endpoint.
+|Information type of last received message |Information type as provided in message header of last message received (confirmed).
+|Size of last received message |Size of message payload in bytes of last message received (confirmed).
+|===============================================================================
+
+=== Remote Maintenance for customers
+
+The agrirouter start page provides a tile "Remote Maintenance" for every user, that redirects him to the Remote Desktop Software "TeamViewer". ( See https://www.teamviewer.com/en/ ). Your service and support can use this software to take a look at a customers desktop and help the customer to work with the agrirouter user interface or any other software on his desktop.
+
+++++
+<p align="center">
+ <img src="./../assets/images/general/remote_maintenance.png" width="586px" height="335px"><br>
+ <i>Remote maintenance tile</i>
+</p>
+++++
+
 
 
 == Getting in contact with the agrirouter support team as a developer

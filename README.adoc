@@ -70,7 +70,7 @@ For advanced developers, here is a list of quick links for the most common topic
 === Tools & Support
 * link:./docs/service-support.adoc[Service & Support]
 * link:./docs/training.adoc[Training]
-* link:./docs/maintenance.adoc[Maintenance]
+* link:./docs/maintenance.adoc[Maintenance of applications]
 
 
 

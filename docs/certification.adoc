@@ -387,6 +387,14 @@ If your software supports REST or MQTT with JSON, sending and receiving of those
 
 If your software supports REST with native Protobuf, sending and receiving of those formats is checked.
 
+==== For HTTP REST
+
+[cols="1,3,3",options="header",]
+|====
+|Topic |Description |Expected results / Acceptance criteria
+|Polling |It is checked, if your application does not flood agrirouter with polls |The application shall not poll the outbox of each app instance more often than described link:./messaging-workflow.adoc#request-sending-frequency[here].
+|====
+
 == Recertification cases
 
 An application has to be re-certified, if one of the following things apply:

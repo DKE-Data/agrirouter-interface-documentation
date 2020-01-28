@@ -82,7 +82,7 @@ Each message includes a header and a payload:
 |=====
 
 
-The header includes the basic information about the message   and equals the message headers received from the link:./../commands/feed.adoc[feed].
+The header includes the basic information about the message and equals the message headers received from the link:./../commands/feed.adoc[feed].
 
 [cols="1,3,2,4",options="header",]
 |=====================================================================================================================================
@@ -96,9 +96,14 @@ The header includes the basic information about the message   and equals the mes
 |7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
 |8 |sender_id |string |The endpoint ID of the sender
 |9 |created_at |Timestamp |The timestamp, when this message was added to the receiving endpoints feed
+|10 | message_id |String | Internal AgriRouter message ID representing this message and its payload
+|11 | metadata | agrirouter.commons.Metadata| Additional metadata information to help differentiate between messages of the same type 
 |=====================================================================================================================================
 
-
+[NOTE]
+====
+In case of a chunked message, the meta information will always be available in the *first* message.
+====
 
 [NOTE]
 =====
@@ -106,6 +111,18 @@ There is no paging mechanism available in Push notifications
 All messages will be delivered in responses with a maximum size of 1 MB. So, as long as you receive push notifications, you should keep on polling, if there are more of them.
 
 =====
+
+==== Metadata
+From agrirouter Release 1.2, messages can be extended by metadata to provide further information.
+
+The metadata field includes the following fields:
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |file_name |string |The corresponding file name of the sent file; relevant e.g. if multiple TaskDataSets are sent.
+|=====================================================================================================================================
+
 
 === Delivery Order
 While messages from the feed are delivered "in order", messages directly pushed might be unsorted; chunked file messages could for example "overtake" each other on the way from Endpoint1 to Endpoint2.

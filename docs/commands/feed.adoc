@@ -10,7 +10,8 @@ These commands are used to control the delivery of messages from the feed to the
 
 Due to the huge number of messages, that could be delivered with a single call for messages, it would be a bad idea, to deliver all those message headers in one big package. Therefore, a paging mechanism was introduced to split the whole list of messages or message headers. into several pages, each including a maximum number of messages or a maximum overall size of the Result.
 
-All pages will be the result of one single GET Request, if all messages are delivered to the outbox, when the endpoint requests them. If not all messages have been delivered from feed to the outbox at this point in time, the endpoint will have to poll for the messages. In MQTT, all Pages are delivered one after each other.
+All pages will be the result of one single GET Request, if all messages are delivered to the outbox, when the endpoint requests them. If not all messages have been delivered from feed to the outbox at this point in time, the endpoint will have to poll for the messages(Make sure to meet the link:../messaging-workflow.adoc#request-sending-frequency[request frequency requirements]). In MQTT, all Pages are delivered one after each other.
+
 
 [NOTE]
 ====
@@ -34,8 +35,8 @@ The validity Period has following parameters.
 [cols="1,3,2,4",options="header",]
 |==============================================
 |# |Name |Type |Description
-|1 |sentFrom |Timestamp |Begin of the time span
-|2 |sentTo |Timestamp |End of the time span
+|1 |sentFrom |google.protobuf.Timestamp |Begin of the time span
+|2 |sentTo |google.protobuf.Timestamp |End of the time span
 |==============================================
 
 A message with id, source and timestamp fits the filter, if
@@ -43,6 +44,18 @@ A message with id, source and timestamp fits the filter, if
 * (id is part of messageIDs or messageIDs is empty) AND
 * (source is part of senders or senders is empty) AND
 * (timestamp is within validity_period or validity_period is empty)
+
+== Metadata
+From agrirouter Release 1.2, messages can be extended by metadata to provide further information.
+
+The metadata field includes the following fields:
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |file_name |string |The corresponding file name of the sent file; relevant e.g. if multiple TaskDataSets are sent.
+|=====================================================================================================================================
+
+Metadata are part of the MessageQueryResponse and the MessageHeaderQueryResponse; see below.
 
 
 == Call for Message Header List
@@ -71,7 +84,7 @@ The command can include one or more filter criteria. If one filter is not provid
 |3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
 |4 |chunk_contextID |string |The chunk context corresponding to the chunk list
 |5 |payload_size |int64 |The size of the payload
-|6 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the time when the message orignally was sent
+|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp, that was provided by the sender. It should be the time when the message orignally was sent
 |7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
 |=====================================================================================================================================
 
@@ -101,7 +114,7 @@ The Result is a list of message headers (“envelopes”) without the message pa
 |1 |queryMetrics |QueryMetrics |A summarize of the response
 |2 |page |Page |The current page of the message
 |3 |chunk_contexts |ChunkComponent (repeated) |A list of all chunk contexts
-|4 |feed |Feed (repeated) |A message from the feed
+|4 |feed |Feed (repeated) |A list of messages from and for a specific endpoint
 |5 |String| Pending Message Ids (repeated)| A list of all pending messages
 |==========================================================================
 
@@ -149,6 +162,23 @@ The feed includes an array of message headers
 ====
 As a telemetry platform can receive messages for multiple Virtual CUs, the receiver field is used to determine the correct virtual CU.
 ====
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |message_id |string |The message ID of the message
+|2 |technical_message_type |string |The technical message type of the message
+|3 |team_set_context_id |string |The teamset ID assigned with the message.
+|4 |chunk_contextID |string |The chunk context corresponding to the chunk list
+|5 |payload_size |int64 |The size of the payload
+|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp, that was provided by the sender.
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|8 |current_chunk |int64 |The chunk counter of the current chunk
+|9 |created_at |google.protobuf.Timestamp |The time at which the message was inserted into the endpoints feed within the agrirouter
+|10 |metadata |agrirouter.commons.Metadata |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|=====================================================================================================================================
+
+
 
 === Errors
 
@@ -227,10 +257,12 @@ The header includes the whole envelope of a message
 |3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
 |4 |chunk_context |agrirouter.commons.ChunkComponent |The chunk component
 |5 |payload_size |int64 |The size of the payload
-|6 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the time when the message was originally sent
+|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp, that was provided by the sender. It should be the time when the message was originally sent
 |7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
 |8 |sender_id |string |The endpoint ID of the sender
-|9 |created_at |Timestamp |The timestamp, when this message was added to the receiving endpoints feed
+|9 |created_at |google.protobuf.Timestamp |The timestamp, when this message was added to the receiving endpoints feed
+|10 |message_id |String |Internal AgriRouter message ID representing this message and its payload
+|11 |metadata |agrirouter.commons.Metadata |Additional metadata information to help differentiate between messages of the same type 
 |=====================================================================================================================================
 
 [NOTE]

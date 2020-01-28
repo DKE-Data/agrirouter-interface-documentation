@@ -106,6 +106,7 @@ Using REST, the communication with the Outbox requires polling:
 </p>
 ++++
 
+Make sure to meet the link:./messaging-workflow.adoc#request-sending-frequency[request frequency requirements].
 
 === MQTT
 

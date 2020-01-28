@@ -152,7 +152,7 @@ Select box:
 12. CLAAS
 13. John Deere
 14. Kubota
-15. CNH Industrial
+15. https://www.cnhindustrial.com[CNH Industrial]
 
 |13 |Construction year |1 < n a|
 Select box:

@@ -53,7 +53,7 @@ The internal Google Protocol Buffer (protobuf) definitions for the communication
 
 == Request sending frequency
 
-agrirouter needs some time to process commands and forward messages, that are received through one of the endpoints. To avoid mixing up communication and requesting the next message before receiving the result of the last command, the agrirouter support team advices, to have a minimum time laps between sending of 2 requests to the agrirouter:
+agrirouter needs some time to process commands and forward messages, that are received through one of the endpoints. To avoid mixing up communication and requesting the next message before receiving the result of the last command, the agrirouter support team advices, to have a minimum time laps of a few seconds between sending of 2 requests to the agrirouter:
 
 [cols=",",options="header",]
 |=============================================
