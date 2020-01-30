@@ -24,6 +24,12 @@ This format is used to exchange a bitmap file. It can forward the binary bmp-Con
 
 The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
 
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
+
+
 == img:jpg – JPEG Image
 
 === Definition
@@ -42,6 +48,11 @@ This format is used to exchange a bitmap file. It can forward the binary jpeg-Co
 === Format
 
 The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
 
 == img:png – PNG Image
 
@@ -62,6 +73,10 @@ This format is used to exchange a bitmap file. It can forward the binary png-Con
 
 The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
 
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
 
 
 

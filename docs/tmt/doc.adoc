@@ -24,7 +24,10 @@ This format is used to exchange PDF documents. It can forward the binary PDF-Con
 
 The pdf file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
 
-
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
 
 
 

@@ -21,7 +21,12 @@ This format is used to exchange an avi video file. It can forward the binary avi
 
 === Format
 
-The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+The avi file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
 
 == vid:wmv – WMV Video Files
 
@@ -40,7 +45,12 @@ This format is used to exchange an wmv video file. It can forward the binary wmv
 
 === Format
 
-The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+The wmv file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
 
 == vid:mp4 – MPEG4 Video Files
 
@@ -59,9 +69,12 @@ This format is used to exchange an MPEG4 video file. It can forward the binary m
 
 === Format
 
-The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+The mp4 file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
 
-
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
 
 
 
