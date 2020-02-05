@@ -379,6 +379,9 @@ Tests are setup depending on the capabilities of the telemetry platform itself a
 a|
 * All requirements described above need to work with 2 different VCUs and - if sending and/or receiving is supported by the platform itself - by the Telemetry platform.
 
+| Base64 Encoding
+a| Base64 Encoded strings shall *not* include line breaks. 
+a| Neither Base64 encoded files nor the Base64-encoded messages may include line breaks
 |====
 
 === Message protocol layer and message format
