@@ -53,10 +53,11 @@ On this page you will find a list of URLs relevant for your work with the agriro
 |====
 |Area |Environment |URL
 |EU |Quality Assurance |https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com/
-|EU |Production |https://agrirouter-registration-service.cfapps.eu10.hana.ondemand.com/
+|EU |Production |https://onboard.my-agrirouter.com
 |====
 
 Sending an onboarding request is described link:./integration/onboarding.adoc[here].
+
 
 == Authorization URL
 
