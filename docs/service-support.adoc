@@ -70,7 +70,7 @@ The endpoint details shows an extended list of information about the app instanc
 
 ++++
 <p align="center">
- <img src="./../assets/images/general\endpoint_details.png" width="586px" height="335px"><br>
+ <img src="./../assets/images/general\endpoint_details_extended.png"><br>
  <i>Endpoint information used with agrirouter</i>
 </p>
 ++++
@@ -128,7 +128,7 @@ The agrirouter start page provides a tile "Remote Maintenance" for every user, t
 
 ++++
 <p align="center">
- <img src="./../assets/images/general/remote_maintenance.png" width="586px" height="335px"><br>
+ <img src="./../assets/images/general/remote_maintenance.png" width="686px" height="335px"><br>
  <i>Remote maintenance tile</i>
 </p>
 ++++
