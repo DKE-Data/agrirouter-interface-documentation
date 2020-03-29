@@ -9,7 +9,7 @@
 
 === Definition
 
-This format is used to exchange PDF documents. It can forward the binary PDF-Content, but currently no file name or other meta data.
+This format is used to exchange PDF documents. It can forward the binary PDF-Content, meta data like the flename can be forwarded using the metadata element in the request.
 
 === Command
 

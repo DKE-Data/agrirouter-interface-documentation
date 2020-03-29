@@ -9,7 +9,7 @@
 
 === Definition
 
-This format is used to exchange a bitmap file. It can forward the binary bmp-Content, but currently no file name or other meta data.
+This format is used to exchange a bitmap file. It can forward the binary bmp-Content, meta data like the flename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -34,7 +34,7 @@ The base64-encoding of the binary file is not the same as the base64 encoding of
 
 === Definition
 
-This format is used to exchange a bitmap file. It can forward the binary jpeg-Content, but currently no file name or other meta data.
+This format is used to exchange a bitmap file. It can forward the binary jpeg-Content, meta data like the flename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -58,7 +58,7 @@ The base64-encoding of the binary file is not the same as the base64 encoding of
 
 === Definition
 
-This format is used to exchange a bitmap file. It can forward the binary png-Content, but currently no file name or other meta data.
+This format is used to exchange a bitmap file. It can forward the binary png-Content, meta data like the flename can be forwarded using the metadata element in the request.
 
 === Command
 

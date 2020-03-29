@@ -6,7 +6,7 @@
 
 == Definition
 
-This format is used to exchange application maps as a zip file.
+This format is used to exchange application maps as a zip file, meta data like the flename can be forwarded using the metadata element in the request.
 
 == Command
 

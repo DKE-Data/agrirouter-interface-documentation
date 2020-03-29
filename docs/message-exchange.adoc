@@ -259,7 +259,17 @@ To simplify the creation of routings, endpoints can be grouped in the end user�
 
 === The default group
 
-Sometimes, new machines are added to the ecosystem, because a (Virtual) CU is connected to a new machine or a Virtual CU is created by a telemetry platform. If this happens, a new endpoint for that machine is created in the end users agrirouter account. As the end user is not always logged in to setup routings, he can just setup routings for this – not deletable – default group. Every new endpoint is automatically assigned to the default group. Any endpoint can be removed from that group, the default group itself however cannot be deleted.
+=== The default groups
+
+==== The CU and machine group 
+Sometimes, new machines are added to the ecosystem, because a  Cu is connected, a (Virtual) CU is connected to a new machine or a Virtual CU is created by a telemetry platform. If this happens, a new endpoint for that machine is created in the end users agrirouter account. As the end user is not always logged in to setup routings, he can just setup routings for this â€“ not deletable â€“ default group. Every new endpoint is automatically assigned to the default group. Any endpoint can be removed from that group, the default group itself however cannot be deleted.
+
+==== The farming software and telemetry platform group
+If a new farming software or a telemetry platform is connected, it is automatically added to the group of farming software and telemetry platforms. Any endpoint can be removed from that group, the default group itself however cannot be deleted.
+
+==== Routings between the default groups
+The two default groups are connected through routings, so that any data can be exchanged in both ways.
+
 
 == Routing of telemetry data
 
