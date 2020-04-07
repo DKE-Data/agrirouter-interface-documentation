@@ -85,9 +85,9 @@ The endpoint details shows an extended list of information about the app instanc
 |Status |Activity status of endpoint (activated /deactivated)
 |Type |Type of software as displayed today
 |Machine class |EFDI machine class, displayed for machines only
-|Onboarding Date & Time |Date and time when the endpoint was onboarded
+|Connection Date & Time |Date and time when the endpoint was onboarded
 |External ID |External id of endpoint as provided during onboarding
-|Provider |Name of software provider of endpoint
+|Software Provider |Name of software provider of endpoint
 |Endpoint Software |Software name as displayed in current version
 |Version number |Software version as displayed today
 |===============================================================================
@@ -100,12 +100,21 @@ Information on messages that were sent *from* the app instance over the agrirout
 [cols=",",]
 |===============================================================================
 |Field |Description
-|Last Sent message |Date & Time when the last message was sent by this endpoint and processed within the agrirouter
+|Last Processed message |Date & Time when the last message was sent by this endpoint and processed within the agrirouter
 |Meta-Information |Meta-Information of last sent message
 |Information type of last sent message |Information type as provided in message header.
-|Size of last sent message |Size of message payload in bytes.
+|Size of last sent message |Size of message payload in MB.
 |===============================================================================
 
+==== Feed
+
+Information on messages in the feed
+
+[cols=",",]
+|===============================================================================
+|Field |Description
+|Number of messages |Number of messages in feed of the endpoint that have not been confirmed yet.
+|===============================================================================
 
 
 ==== Incoming messages information
@@ -115,11 +124,10 @@ Information on messages that were received *by* the app instance from its endpoi
 [cols=",",]
 |===============================================================================
 |Field |Description
-|Number of messages |Number of messages in feed of the endpoint that have not been confirmed yet.
 |Last received message: Date & Time |Date and time when the last message was received by the respective endpoint (i.e. status ‘confirmed’ in usage metrics).
 |Meta Information of last received message |Metadata (e.g. file name) of last message received (confirmed) by this endpoint.
 |Information type of last received message |Information type as provided in message header of last message received (confirmed).
-|Size of last received message |Size of message payload in bytes of last message received (confirmed).
+|Size of last received message |Size of message payload in MB of last message received (confirmed).
 |===============================================================================
 
 === Remote Maintenance for customers
