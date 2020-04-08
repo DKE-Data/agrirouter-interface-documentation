@@ -85,7 +85,7 @@ The endpoint details shows an extended list of information about the app instanc
 |Status |Activity status of endpoint (activated /deactivated)
 |Type |Type of software as displayed today
 |Machine class |EFDI machine class, displayed for machines only
-|Onboarding Date & Time |Date and time when the endpoint was onboarded
+|Onboarding Date & Time (UTC) |Date and time when the endpoint was onboarded
 |External ID |External id of endpoint as provided during onboarding
 |Software Provider |Name of software provider of endpoint
 |Endpoint Software |Software name as displayed in current version
