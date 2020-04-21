@@ -91,6 +91,10 @@ To communicate with the agrirouter, an application Instance needs to be link:./i
 
 To send a message, it has to be built first. Read link:./integration/build-message.adoc[here] about building messages and commands.
 
+List of possible content:
+
+* link:commands/overview.adoc[Commands]
+* link:tmt/overview.adoc[TechnicalMessageTypes]
 
 ==== Sending messages and commands
 
