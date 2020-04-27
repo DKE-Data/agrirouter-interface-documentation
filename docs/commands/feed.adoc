@@ -260,7 +260,7 @@ The header includes the whole envelope of a message
 |6 |sent_timestamp |google.protobuf.Timestamp |The timestamp, that was provided by the sender. It should be the time when the message was originally sent
 |7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point.
 |8 |sender_id |string |The endpoint ID of the sender.
-|9 |created_at |google.protobuf.Timestamp |The timestamp, when this message was added to the receiving endpoints feed
+|9 |created_at |google.protobuf.Timestamp |The timestamp, when this message was added to the receiving endpoints feed.
 |10 |message_id |String |Internal AgriRouter message ID representing this message and its payload
 |11 |metadata |agrirouter.commons.Metadata |Additional metadata information to help differentiate between messages of the same type 
 |=====================================================================================================================================
