@@ -24,6 +24,10 @@ If there is nothing different mentioned in the relevant chapter, all timestamps 
 
  “2018-06-14T14:53:28.123Z”.
 
+== Base64
+
+Base64 as defined in link:https://tools.ietf.org/html/rfc4648[RFC4648] does *not* include line breaks. Make sure, that your software creates Base64-Strings without linebreaks.
+
 == Time Synchronisation
 
 As agrirouter exchanges data between different applications in different environments, it is very important to have a common current time. Therefore, you should match the result timestamp of an agrirouter command with your local time and compensate too big differences (>1 minute), when setting the timestamp of your agrirouter commands.
