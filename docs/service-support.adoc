@@ -66,7 +66,7 @@ The endpoint information offers the IDs that the app instance should use for com
 
 === Endpoint details
 
-The endpoint details shows an extended list of information about the app instance and the status of communication:
+The endpoint details show an extended list of information about the app instance and the status of communication:
 
 ++++
 <p align="center">
@@ -226,5 +226,4 @@ This page is found in every file and links to the major topics
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
-
 
