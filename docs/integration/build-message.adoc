@@ -147,7 +147,7 @@ agrirouter does neither check nor inform about Chunks, that have not yet been de
 
 == Creating Metadata
 
-agrirouter messages can include Metadata. This way, additional information about a file can be transmitted. 
+agrirouter messages can include metadata. This way, additional information about a file can be transmitted. 
 
 Currently, the following parameters are possible:
 [cols=",,",options="header",]
@@ -160,7 +160,7 @@ Adding metadata is an optional feature since release 1.2 of the agrirouter. Olde
 
 *Important*
 ====
- In case of a chunked message, that shall include metadata, the *first* message shall include the meta data field.
+ In case of a chunked message, that shall include metadata, every single message shall include the metadata field.
 ====
 
 

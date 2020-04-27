@@ -96,13 +96,13 @@ The header includes the basic information about the message and equals the messa
 |7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
 |8 |sender_id |string |The endpoint ID of the sender
 |9 |created_at |Timestamp |The timestamp, when this message was added to the receiving endpoints feed
-|10 | message_id |String | Internal AgriRouter message ID representing this message and its payload
+|10 | message_id |String | Internal agrirouter message ID representing this message and its payload
 |11 | metadata | agrirouter.commons.Metadata| Additional metadata information to help differentiate between messages of the same type 
 |=====================================================================================================================================
 
 [NOTE]
 ====
-In case of a chunked message, the meta information will always be available in the *first* message.
+In case of a chunked message, the meta information will always be available in every single message.
 ====
 
 [NOTE]
@@ -113,7 +113,7 @@ All messages will be delivered in responses with a maximum size of 1 MB. So, as 
 =====
 
 ==== Metadata
-From agrirouter Release 1.2, messages can be extended by metadata to provide further information.
+From Release 1.2 of the agrirouter, messages can be extended by metadata to provide further information.
 
 The metadata field includes the following fields:
 
