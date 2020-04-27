@@ -125,7 +125,7 @@ Information on messages that were *received by* the app instance from its endpoi
 |===============================================================================
 |Field |Description
 |Last received message: Date & Time |Date and time when the last message was received by the endpoint (i.e. status ‘confirmed’ in usage metrics).
-|Meta Information of last received message |Metadata (e.g. file name) of last message received (confirmed) by this endpoint.
+|Meta Information of last received message |Meta information (e.g. file name) of the last message received (confirmed) by this endpoint.
 |Information type of last received message |Information type as provided in message header of last message received (confirmed).
 |Size of last received message |Size of message payload in MB of last message received (confirmed).
 |===============================================================================
