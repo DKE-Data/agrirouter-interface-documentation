@@ -156,7 +156,7 @@ Currently, the following parameters are possible:
 |file_name |String |The name of the file that is sent. Used especially for TaskSets
 |=====================================================================================================================================
 
-Adding meta data is an optional feature since release of agrirouter version 1.2. Older systems might not interpret the information, however, they are still compatible.
+Adding metadata is an optional feature since release 1.2 of the agrirouter. Older systems might not interpret the information, however, they are still compatible.
 
 *Important*
 ====
