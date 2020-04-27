@@ -119,7 +119,7 @@ Information on messages in the feed
 
 ==== Incoming messages information
 
-Information on messages that were received *by* the app instance from its endpoint respectively the feed.
+Information on messages that were *received by* the app instance from its endpoint respectively the feed.
 
 [cols=",",]
 |===============================================================================
@@ -226,4 +226,3 @@ This page is found in every file and links to the major topics
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
 |====
-
