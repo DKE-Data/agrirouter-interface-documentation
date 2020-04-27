@@ -46,7 +46,7 @@ A message with id, source and timestamp fits the filter, if
 * (timestamp is within validity_period or validity_period is empty)
 
 == Metadata
-From agrirouter Release 1.2, messages can be extended by metadata to provide further information.
+With release 1.2, messages can be extended by metadata to provide further information about the message itself.
 
 The metadata field includes the following fields:
 [cols="1,3,2,4",options="header",]
