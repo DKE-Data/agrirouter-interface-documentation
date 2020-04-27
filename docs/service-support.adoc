@@ -87,7 +87,7 @@ The endpoint details show an extended list of information about the app instance
 |Machine class |EFDI machine class, displayed for machines only.
 |Onboarding Date & Time (UTC) |Date and time when the endpoint was onboarded.
 |External ID |External ID of the endpoint as provided during onboarding.
-|Software Provider |Name of software provider.
+|Software Provider |Name of the software provider.
 |Endpoint Software |Name of software.
 |Version number |Current version of software.
 |===============================================================================
