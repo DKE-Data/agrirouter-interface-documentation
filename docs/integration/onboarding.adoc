@@ -578,7 +578,7 @@ Possible Error codes can be found link:../error-codes.adoc#onboarding-errorcodes
 
 ==== Onboarding Result in the agrirouter UI
 
-When a new endpoint is onboarded, its name consists of the ApplicationName and an onboarding timestamp.
+When a new endpoint is onboarded, its name consists of the name of the application and the onboarding timestamp.
 ++++
 <p align="center">
  <img src="./../../assets/images/general/endpointName.png"><br>
