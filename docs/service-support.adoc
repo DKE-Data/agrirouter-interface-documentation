@@ -102,7 +102,7 @@ Information on messages that were sent *from* the app instance over the agrirout
 |Field |Description
 |Last Processed message |Date & Time when the last message was sent by this endpoint and processed within the agrirouter.
 |Meta-Information |Meta information of the last sent message.
-|Information type of last sent message |Information type as provided in message header.
+|Information type of last sent message |Information type as provided in the message header.
 |Size of last sent message |Size of the message payload in MB.
 |===============================================================================
 
