@@ -52,7 +52,7 @@ The metadata field includes the following fields:
 [cols="1,3,2,4",options="header",]
 |=====================================================================================================================================
 |# |Name |Type |Description
-|1 |file_name |string |The corresponding file name of the sent file; relevant e.g. if multiple TaskDataSets are sent.
+|1 |file_name |string |The corresponding name of the file that is sent; relevant e.g. if multiple TaskDataSets are sent.
 |=====================================================================================================================================
 
 Metadata are part of the MessageQueryResponse and the MessageHeaderQueryResponse; see below.
