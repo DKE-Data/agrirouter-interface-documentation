@@ -182,7 +182,7 @@ The parameters as overview:
 |recipients |string(repeated) |A list of endpoint IDs to forward the message to.
 |chunk_info |ChunkComponent |The chunking information for split messages.
 |timestamp |google.protobuf.Timestamp |The timestamp, when the message was created.
-|metadata | agrirouter.commons.Metadata | Metadata about the sent message
+|metadata | agrirouter.commons.Metadata | Metadata about the sent message.
 |=====================================================================================================================================
 
 For the timestamp format definition, please refer to: link:https://github.com/google/protobuf/blob/master/src/google/protobuf/timestamp.proto[TimeStamps].
