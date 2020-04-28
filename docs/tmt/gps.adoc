@@ -10,7 +10,7 @@
 
 === Definition
 
-The message gps:info includes a list of GPS Positions. If recording GPS position in a rate higher than the sending rate is required, the GPS positions need to be stored and sent in one package.
+The message `gps:info` includes a list of GPS positions. If recording GPS position in a higher rate than the sending rate is required, the GPS positions need to be stored and sent in one package.
 
 
 This format is used to report the GPS position of a CU or virtual CU independend of an attached machine. 
