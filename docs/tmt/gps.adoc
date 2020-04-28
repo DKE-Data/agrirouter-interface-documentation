@@ -49,7 +49,7 @@ Each GPS position has the following parameters, that are equal to ISO11783-10 Ti
 |6 |hdop |double |10^-1 Quality HDOP Quality information
 |7 |number_of_satellites |uint32 |Current number of satellites used to calculate this position
 |8 |gps_utc_timestamp |google.protobuf.Timestamp |Date and time of record
-|9 |field_status| FieldStatus | The current position status
+|9 |field_status| FieldStatus | Current position status
 |================================================================================================
 
 The Position status can be one of the following values:
