@@ -94,7 +94,7 @@ To send a message, it has to be built first. Read link:./integration/build-messa
 List of possible message content:
 
 * link:commands/overview.adoc[Commands to interact with the agrirouter]
-* link:tmt/overview.adoc[TechnicalMessageTypes]
+* link:tmt/overview.adoc[Technical message types to exchange data between endpoints of the agrirouter]
 
 ==== Sending messages and commands
 
