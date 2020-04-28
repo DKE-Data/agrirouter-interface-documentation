@@ -35,7 +35,7 @@ The message consists of a list of GPS positions.
 |1 |gps_entries |GPSList |A list of GPS positions.
 |================================================================================================
 
-Each GPS position has the following parameters, that are equal to ISO11783-10 TimeLog Entries and therefore also equal to EFDI GPS information; just without machine data
+Each GPS position has the following parameters, that are equal to ISO11783-10 TimeLog entries and therefore also equal to EFDI GPS information; just without machine data.
 
 
 [cols="1,3,3,4",options="header",]
