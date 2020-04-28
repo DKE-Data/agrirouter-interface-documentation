@@ -576,6 +576,15 @@ On Failure, a JSON object including an error message is received, e.g.:
 
 Possible Error codes can be found link:../error-codes.adoc#onboarding-errorcodes[ in the error list]
 
+==== Onboarding Result in the agrirouter UI
+
+When a new endpoint is onboarded, its name consists of the name of the application and the onboarding timestamp.
+++++
+<p align="center">
+ <img src="./../../assets/images/general/endpointName.png"><br>
+ <i>Endpoint name including timestamp</i>
+</p>
+++++
 
 === Handling Signature Issues
 

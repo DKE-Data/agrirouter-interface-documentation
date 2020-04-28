@@ -104,6 +104,7 @@ Command results and messages from other endpoints will be link:./integration/mes
 
 Messages from other endpoints are put into the outbox by link:./integration/push-notification.adoc[push notifications] as well as by link:./commands/feed.adoc[requesting the feed content].
 
+==== Analysing messages
 
 Depending on the  link:./integration/analyze-result.adoc#ResponseType[resultType], the result can be link:./integration/analyze-result.adoc[analyzed].
 

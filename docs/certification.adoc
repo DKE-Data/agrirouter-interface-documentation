@@ -54,7 +54,7 @@ The following information is not required to start the certification but will be
 * The capabilities of the application including link:./tmt/overview.adoc[the technical message types] and  sending directions.
 * A list of link:./commands/overview.adoc[all commands], that are used by the application.
 * Is this an initial certification or a recertification for a new version of an existing software?
-* For some test case there has to be at last one extracted original message (as JSON or Base64-Encoded native Protobuf) provided to the certification company.
+* For some test case there has to be at least one extracted original message (as JSON or Base64-Encoded native Protobuf) provided to the certification company.
 
 == Certification timeout
 
@@ -389,6 +389,14 @@ a| Neither Base64 encoded files nor the Base64-encoded messages may include line
 If your software supports REST or MQTT with JSON, sending and receiving of those formats is checked.
 
 If your software supports REST with native Protobuf, sending and receiving of those formats is checked.
+
+==== For HTTP REST
+
+[cols="1,3,3",options="header",]
+|====
+|Topic |Description |Expected results / Acceptance criteria
+|Polling |It is checked, that your application does not flood agrirouter with polls |The application shall not poll the outbox of each app instance more often than described link:./messaging-workflow.adoc#request-sending-frequency[here].
+|====
 
 == Recertification cases
 

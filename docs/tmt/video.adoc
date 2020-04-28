@@ -8,7 +8,7 @@
 
 === Definition
 
-This format is used to exchange an avi video file. It can forward the binary avi-Content, but currently no file name or other meta data.
+This format is used to exchange an avi video file. It can forward the binary avi-Content, metadata like the flename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -21,13 +21,18 @@ This format is used to exchange an avi video file. It can forward the binary avi
 
 === Format
 
-The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+The avi file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
 
 == vid:wmv – WMV Video Files
 
 === Definition
 
-This format is used to exchange an wmv video file. It can forward the binary wmv-Content, but currently no file name or other meta data.
+This format is used to exchange an wmv video file. It can forward the binary wmv-Content, metadata like the flename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -40,13 +45,18 @@ This format is used to exchange an wmv video file. It can forward the binary wmv
 
 === Format
 
-The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+The wmv file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
 
 == vid:mp4 – MPEG4 Video Files
 
 === Definition
 
-This format is used to exchange an MPEG4 video file. It can forward the binary mp4-Content, but currently no file name or other meta data.
+This format is used to exchange an MPEG4 video file. It can forward the binary mp4-Content, metadata like the flename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -59,9 +69,12 @@ This format is used to exchange an MPEG4 video file. It can forward the binary m
 
 === Format
 
-The bmp file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
+The mp4 file has to be formatted to a Base64-encoding of its binary data. It must be sent as a string.
 
-
+[NOTE]
+====
+The base64-encoding of the binary file is not the same as the base64 encoding of the message. It is an additional step!
+====
 
 
 

@@ -145,6 +145,24 @@ If it is recognized, that a message needs to be split into multiple chunks, star
 agrirouter does neither check nor inform about Chunks, that have not yet been delivered to agrirouter. It will forward the single parts and the receiving endpoint(s) will have to take care of realigning the parts.
 ====
 
+== Creating Metadata
+
+agrirouter messages can include metadata. This way, additional information about a file can be transmitted. 
+
+Currently, the following parameters are possible:
+[cols=",,",options="header",]
+|=====================================================================================================================================
+|Parameter |Type |Description
+|file_name |String |The name of the file that is sent. Used especially for TaskSets
+|=====================================================================================================================================
+
+Adding metadata is an optional feature since release 1.2 of the agrirouter. Older systems might not interpret the information, however, they are still compatible.
+
+*Important*
+====
+ In case of a chunked message, that shall include metadata, every single message shall include the metadata field.
+====
+
 
 
 == Building the Envelope
@@ -160,13 +178,14 @@ The parameters as overview:
 |application_message_seq_no |int64 |An indicator, in which order the client sent the message. The smallest sequence number must be >0.
 |technical_message_type |string |The TMT; see link:../tmt/overview.adoc[Technical Message Types]
 |team_set_context_id |string |The relevant teamset for this message; just in case, it changes
-|mode |mode |DIRECT, PUBLISH or PUBLISH_WITH_DIRECT
-|recipients |string(repeated) |A list of endpoint IDs to forward the message to
-|chunk_info |ChunkComponent |The chunking information for split messages
-|timestamp |timestamp |The timestamp, when the message was created
+|mode |mode |DIRECT, PUBLISH or PUBLISH_WITH_DIRECT.
+|recipients |string(repeated) |A list of endpoint IDs to forward the message to.
+|chunk_info |ChunkComponent |The chunking information for split messages.
+|timestamp |google.protobuf.Timestamp |The timestamp, when the message was created.
+|metadata | agrirouter.commons.Metadata | Metadata about the sent message.
 |=====================================================================================================================================
 
-For the timestamp format definition, please refer to: link:https://github.com/google/protobuf/blob/master/src/google/protobuf/timestamp.proto
+For the timestamp format definition, please refer to: link:https://github.com/google/protobuf/blob/master/src/google/protobuf/timestamp.proto[TimeStamps].
 
 [NOTE]
 ====
