@@ -52,7 +52,7 @@ Each GPS position has the following parameters, that are equal to ISO11783-10 Ti
 |9 |field_status| FieldStatus | Current position status
 |================================================================================================
 
-The Position status can be one of the following values:
+The Position status can have one of the following values:
 [cols="1,2,5",options="header",]
 |================================================================================================
 |# |Name |Description
