@@ -62,7 +62,7 @@ The Position status can be one of the following values:
 |3 |D_PRECISE_GNSS | Higher GPS Quality
 |4 |D_RTK_FINTEGER | RTK with fix
 |5 |D_RTK_FLOAT | RTK without fix
-|6 |D_EST_DR_MODE | Dead Reckoning Mode (see https://www.furuno.com/en/gnss/technical/tec_dead )
+|6 |D_EST_DR_MODE | Dead Reckoning Mode (see https://www.furuno.com/en/gnss/technical/tec_dead)
 |7 |D_MANUAL_INPUT | Position entered by operator
 |8 |D_SIMULATE_MODE | Input by a GPS simulator
 |9-13 |RESERVED |Values reserved
