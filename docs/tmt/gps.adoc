@@ -74,7 +74,7 @@ The Field status shall indicate, if a machine is on a field, on the road or offr
 [cols="1,2,5",options="header",]
 |================================================================================================
 |# |Name |Description
-|0 |FS_UNKNOWN | The position status is not known
+|0 |FS_UNKNOWN | The position status is not known, should be the default if there is no other status
 |1 |FS_INFIELD | The device is on a field
 |2 |FS_ONROAD | The device is on a road
 |3 |FS_OFFROAD | The device is off road
