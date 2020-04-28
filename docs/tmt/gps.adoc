@@ -70,7 +70,7 @@ The Position status can be one of the following values:
 |15 |D_NOT_AVAILABLE |No GPS Receiver available
 |================================================================================================
 
-The FieldStatus shall indicate, if a machine is on a field, on the road or offroad
+The Field status shall indicate, if a machine is on a field, on the road or offroad.
 [cols="1,2,5",options="header",]
 |================================================================================================
 |# |Name |Description
