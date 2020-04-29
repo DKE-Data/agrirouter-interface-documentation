@@ -1,0 +1,104 @@
+= GPS
+:imagesdir: ./../../assets/images/
+:toc:
+:toc-title:
+:toclevels: 4
+
+
+
+== gps:info - GPS Position information
+
+=== Definition
+
+The message `gps:info` includes a list of GPS positions. If recording GPS position in a higher rate than the sending rate is required, the GPS positions need to be stored and sent in one package.
+
+
+This format is used to report the GPS position of a CU or virtual CU independend of an attached machine. 
+
+
+=== Command
+
+[cols=",",]
+|==================================================
+|Command |gps:info
+|Protobuf Schema |agrirouter.technicalmessagetype.GPSList
+|TypeURL |"types.agrirouter.com/agrirouter.technicalmessagetype.GPSList"
+|==================================================
+
+The corresponding protobuf message can be found here: https://github.com/DKE-Data/agrirouter-tmt-protobuf-definitions
+
+The message consists of a list of GPS positions. 
+
+[cols="1,3,3,4",options="header",]
+|================================================================================================
+|# |Name |Type |Description
+|1 |gps_entries |GPSList |A list of GPS positions.
+|================================================================================================
+
+Each GPS position has the following parameters, that are equal to ISO11783-10 TimeLog entries and therefore also equal to EFDI GPS information; just without machine data.
+
+
+[cols="1,3,3,4",options="header",]
+|================================================================================================
+|# |Name |Type |Description
+|1 |position_north |double |Longitude position WGS84 position in degree
+|2 |position_east |double |Latitude position WGS84 position in degree
+|3 |position_up |sint64 |Vertical position relative to WGS84 (in Millimeters)
+|4 |position_status |PositionStatus | Current GPS Quality
+|5 |pdop |double |10^-1 Quality PDOP Quality information
+|6 |hdop |double |10^-1 Quality HDOP Quality information
+|7 |number_of_satellites |uint32 |Current number of satellites used to calculate this position
+|8 |gps_utc_timestamp |google.protobuf.Timestamp |Date and time of record
+|9 |field_status| FieldStatus | Current position status
+|================================================================================================
+
+The Position status can have one of the following values:
+[cols="1,2,5",options="header",]
+|================================================================================================
+|# |Name |Description
+|0 |D_NO_GPS | Receiver can't deliver GPS position
+|1 |D_GNSS | Low quality GPS
+|2 |D_DGNSS | Median GPS quality
+|3 |D_PRECISE_GNSS | Higher GPS Quality
+|4 |D_RTK_FINTEGER | RTK with fix
+|5 |D_RTK_FLOAT | RTK without fix
+|6 |D_EST_DR_MODE | Dead Reckoning Mode (see https://www.furuno.com/en/gnss/technical/tec_dead)
+|7 |D_MANUAL_INPUT | Position entered by operator
+|8 |D_SIMULATE_MODE | Input by a GPS simulator
+|9-13 |RESERVED |Values reserved
+|14 |D_ERROR | Error receiving GPS position from the GPS receiver
+|15 |D_NOT_AVAILABLE |No GPS Receiver available
+|================================================================================================
+
+The Field status shall indicate, if a device is on a field, on the road or offroad.
+[cols="1,2,5",options="header",]
+|================================================================================================
+|# |Name |Description
+|0 |FS_UNKNOWN | The position status is not known, should be the default if there is no other status
+|1 |FS_INFIELD | The device is on a field
+|2 |FS_ONROAD | The device is on a road
+|3 |FS_OFFROAD | The device is off road
+|================================================================================================
+
+
+*REMARK*
+====
+FS_UNKNOWN should be the default value if there is no other status known for sure.
+====
+
+=== Format
+
+The `gps:info` has **NOT** to be formatted to a Base64 encoding! It must be sent binary with a technical message type `gps:info` set.
+
+=== Result
+
+The result indicates, if there was a receipient for the message.
+
+
+
+==== Link Section
+This page is found in every file and links to the major topics
+[width="100%"]
+|====
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|====
