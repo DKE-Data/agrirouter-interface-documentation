@@ -35,7 +35,7 @@ It can be any of these formats:
 |link:./taskdata.adoc[iso:11783:-10:taskdata:zip] |TaskData |A zipfile including a TaskData Set
 |link:./efdi.adoc[iso:11783:-10:device_description:protobuf] |Telemetry |A set of device descriptions connected to a CU. Also called “TeamSet”
 |link:./efdi.adoc[iso:11783:-10:time_log:protobuf] |Telemetry |Life telemetry data based on the devicedescription
-|link:./gps.adoc[gps:info] |Generic |GPS information without machine data
+|link:./gps.adoc[gps:info] |Telemetry |GPS information without machine data
 |link:./image.adoc[img:bmp] |Image |A Bitmap File
 |link:./image.adoc[img:jpeg] |Image |A JPEG File
 |link:./image.adoc[img:png] |Image |A Portable Network Graphics File
