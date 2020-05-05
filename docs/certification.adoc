@@ -250,17 +250,20 @@ These tests are only required, if your application can send messages.
 |====
 |Message type |Condition |Expected results / Acceptance criteria
 |link:./integration/build-message.adoc#chunking-big-messages[Building chunks]
-| link:./tmt/overview.adoc[All TMTs except for EFDI]
+| link:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
 a|
 * The sending of a file with a size of more than 1 MB is possible. The chunks context information is filled.
 * The `chunkContextId` is equal for all chunks that represent 1 file.
 * The `chunkContextId` changes when a new file is sent.
 * The chunks have to be enumerated in `ChunkComponent.current` starting from 1, `ChunkComponent.total` has to equal the highest chunk number
 | Base64 encoding
-|link:./tmt/overview.adoc[All TMTs except for EFDI]
+|link:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
 a|
 * A file that should be sent is encoded in Base64.
-
+| Sending gps:info and/or EFDI
+| App can send gps:info and/or EFDI
+a| * GPS Position Lists are not Base64-Encoded
+* EFDI Datasets are not Base64-encoded
 | Exchange zipped folders
 | link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape]
 a|
@@ -287,14 +290,20 @@ These tests are only required, if your application can receive data.
 |====
 |Message type |Condition |Expected results / Acceptance criteria
 |Merging chunks
-| link:./tmt/overview.adoc[All TMTs except for EFDI]
+| link:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
 a|
 * The receiving of a file that consists of 1 chunk without chunk context is possible.
 * The receiving of a file that consists of 1 chunk with chunk context is possible.
 * The receiving of a file that consists of 2 chunks is possible.
 * The receiving of a file that consists of more than 2 chunks is possible.
 * The receiving of a file of multiple chunks, which are not delivered in the right order is possible.
-
+| Receive gps:info and EFDI
+| App can receive gps:info and/or EFDI
+a| * The application can receive gps:info and EFDI that are not Base64-encoded
+|Receive Base64 encoded TMTs
+| link:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
+a|
+* The receiving of a file that is base64-encoded is possible.
 |link:./integration/push-notification.adoc[Push notifications]
 |Always (if supported).
 a|
