@@ -309,6 +309,7 @@ a|
 a|
 * It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message].
 * It's tested if pushed messages are confirmed by the application after receiving them.
+* There has to be a concept for the case if push notifications are not delivered from the AR because an outage appeared or the push notification gets lost in another way. We recommend to check the feed at least once a day for messages that were not delivered via push notification.
 |====
 
 
