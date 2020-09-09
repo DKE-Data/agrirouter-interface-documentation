@@ -21,7 +21,7 @@ If the contract with a customer ends, app providers should revoke their connecti
 
 === General
 
-Deleting a CU is done through a DELETE-Request to the following endpoint:
+Deleting the endpoint of a FarmingSoftware or a Telemetry Platform is done through a DELETE-Request to the following endpoint:
 
 [cols="2,4",options="header",]
 |====================================
