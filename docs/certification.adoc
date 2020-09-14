@@ -260,6 +260,7 @@ a|
 |link:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
 a|
 * A file that should be sent is encoded in Base64.
+* If multiple chunks are required, each chunk is a valid Base64 string.
 | Sending gps:info and/or EFDI
 | App can send gps:info and/or EFDI
 a| * GPS Position Lists are not Base64-Encoded

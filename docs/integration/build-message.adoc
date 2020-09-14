@@ -25,6 +25,8 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 ====
 * agrirouter messages can have a maximum size of 1 MB each. If a message is too large, agrirouter will respond with a HTTP code 413 “Request too large”. Please note, that the relevant size value is the size of the protobuf format, which will increase with conversion to Base64.
 
+* Some data formats like images, videos, taskdata and shape require their message content to be Base64 encoded. In this case, each chunk needs to be a valid Base64 string. This means, that the Base64 encoding has to be performed on each chunk **after** splitting the binary data into chunks.
+
 * EFDI telemetry messages cannot be chunked, as they are analyzed for the routing of telemetry data on agrirouter.
 ====
 
