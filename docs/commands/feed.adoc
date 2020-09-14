@@ -329,7 +329,7 @@ Messages sent to the agrirouter can be split into multiple chunks, if the messag
 ++++
 
 
-Only those message, that were not created by the agrirouter and that are not of type EFDI can be chunked.
+Only those message, that were not created by the agrirouter and that are not of type EFDI or GPS:INFO can be chunked.
 
 ==== Recognizing chunked messages in the feed
 
@@ -338,6 +338,11 @@ To recognize chunked messages, request the message header query and see, if you 
 ==== Pulling chunked messages from the feed
 
 Chunked messages can be pulled like any other message type. make sure to request all chunks at once, so that you can make sure, that the message can be rebuild successfully before confirming chunks, which would delete them from the feed.
+
+==== Merging all chunks
+
+Chunked messages are each Base64 encoded, so they need to be Base64 decoded each for itself before the resulting binary data can be merged. 
+
 
 == Call for message deletion
 
