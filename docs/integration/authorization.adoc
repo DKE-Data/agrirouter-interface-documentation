@@ -134,7 +134,7 @@ A number to identify the request result on server side. The provided Number shou
 * Unique
 * Not guessable
 
-|\{\{redirect_uri}} | |Could extend your entered redirect URL
+|\{\{redirect_uri}} | |Could extend your entered redirect URL. The base redirect URL needs to be configured by the application developer in the UI. If this query parameter is omitted, the configured URL will be used. This parameter can override the configured URL as long as the configured URL is a substring of the one defined in the request (e.g. configured: example.com/callback | query parameter: example.com/callback/customer15). 
 |=====================================================================================
 
 [CAUTION]
