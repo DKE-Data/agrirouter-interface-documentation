@@ -80,6 +80,8 @@ The virtual CU as well as the telemetry platform are endpoints in the agrirouter
 
 The Unique Identifier for an endusers or developers account. Relevant for billing.
 
+IMPORTANT: The account ID is used for invoicing. Therefore it should be saved with the onboarding reponse together, so the check of the invoice is possible. If the account ID is missing comparing the items on the invoice is not possible, since the invoicing is based on the account ID.
+
 A UUID describing the account of an end user. In one account, there can be multiple endpoints. One account however has one set of login credentials for the agrirouter UI.
 
 === Where to find
