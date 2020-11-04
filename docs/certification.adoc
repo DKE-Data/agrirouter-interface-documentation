@@ -329,6 +329,11 @@ a|
 * On every start up, the sequence number needs to start at 1 and has to be incremented with every command / message.
 * The link:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked.
 
+|Billing requirements
+| To avoid problems during the invoicing and billing process, there are some requirements to support the whole process.
+a|
+* The application should save the `accountId` provided during the onboarding process. The account ID is part of the billing / invoicing and can used to check the invoice, therefore, it should be saved.
+
 | Account management
 |If supported, it is checked if the application / communication unit correctly changes the agrirouter endpoint used for the communication when changing the account internally.
 a|
