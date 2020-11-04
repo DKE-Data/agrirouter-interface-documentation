@@ -223,6 +223,8 @@ The result token is a base64 encoded JSON object including the following paramet
 |expires |DataTime |The date and time (in UTC), when the regcode becomes invalid
 |=======================================================================================================================================================
 
+IMPORTANT: The account ID is used for invoicing. Therefore it should be saved with the onboarding reponse together, so the check of the invoice is possible. If the account ID is missing comparing the items on the invoice is not possible, since the invoicing is based on the account ID.
+
 **EXAMPLE**
 
     {
