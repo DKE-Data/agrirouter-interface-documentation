@@ -230,11 +230,16 @@ Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors,
 
 
 
-== Sending a teamset using device Descriptions
+== Sending a teamset using device descriptions
 
 === Definition
 
-The teamset describes a list of devices attached to the communication unit. The most common devices are agricultural machines connected to the CU as ISO11783-10 TaskControllers. For more information on ISO11783-10, please refer to https://aef-online.org
+The teamset describes a list of devices attached to the communication unit. The most common devices are agricultural machines connected to the CU as ISO11783-10 task controllers. For more information on ISO11783-10, please refer to https://aef-online.org
+
+[IMPORTANT]
+====
+Please note that the device description has to sent every time before the maschine starts sending live telemetry data to ensure, that each other endpoint is able to update their formerly received devices descriptions and new endpoints get the latest updates as well.
+====
 
 [NOTE]
 ====
