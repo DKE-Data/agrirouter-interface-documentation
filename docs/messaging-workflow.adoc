@@ -209,6 +209,11 @@ The device descriptions are needed by the agrirouter to
 * determine the relevant CU when sending a Message directly to a machine
 * filter for DDIs that are allowed to be sent to specific endpoints
 
+[IMPORTANT]
+====
+Please note that the device description has to be sent every time before the maschine starts sending live telemetry data to ensure, that each other endpoint is able to update their formerly received devices descriptions and new endpoints get the latest updates as well.
+====
+
 The timelog telemetry data is analyzed, so that a filtering for value categories like fuel consumption is possible.
 
 ++++
