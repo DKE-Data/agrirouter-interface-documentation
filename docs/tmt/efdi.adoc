@@ -68,6 +68,10 @@ Make sure, that a timelog message never exceeds the limit of 1MB of data. If thi
 split this message into multiple timelog messages.
 ====
 
+[IMPORTANT]
+====
+Please note that the device description has to be sent every time before the maschine starts sending live telemetry data to ensure, that each other endpoint is able to update their formerly received devices descriptions and new endpoints get the latest updates as well.
+====
 
 === Command
 
