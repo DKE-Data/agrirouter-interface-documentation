@@ -234,7 +234,7 @@ Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors,
 
 === Definition
 
-The teamset describes a list of devices attached to the communication unit. The most common devices are agricultural machines connected to the CU as ISO11783-10 task controllers. For more information on ISO11783-10, please refer to https://aef-online.org
+The teamset describes a list of devices attached to the communication unit. The most common devices are agricultural machines connected to the CU via an ISO11783-10 task controller client. For more information on ISO11783-10, please refer to https://aef-online.org
 
 [IMPORTANT]
 ====
