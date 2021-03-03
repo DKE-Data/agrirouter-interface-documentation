@@ -69,7 +69,7 @@ The message exchange describes the exchange of messages between application inst
 </p>
 ++++
 
-The basic concepts of message exchange are described in the link:./message-exchange.adoc[concepts of message exchange]
+The basic concepts of message exchange are described in the link:./message-exchange.adoc[concepts of message exchange].
 This chapter handles, for example, the concepts of addressing members of the ecosystem.
 
 
