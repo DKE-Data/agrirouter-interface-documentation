@@ -76,7 +76,7 @@ REST is a wellknown principle for online APIs. For more information on REST, ple
 * https://en.wikipedia.org/wiki/Representational_state_transfer
 * https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340
 
-REST uses HTTP requests, that results in a HTTP Response.
+REST uses HTTP requests, that results in an HTTP Response.
 
 [NOTE]
 ====
@@ -114,15 +114,15 @@ MQTT is a subscription based protocol. Therefore, the client can be informed by 
 
 * https://mqtt.org/
 
-The agrirouter provides a MQTT Broker serverside, so, an app instance has to connect to this server with its client.
+The agrirouter provides an MQTT Broker serverside, so, an app instance has to connect to this server with its client.
 
 The agrirouter provides one MQTT Server per Endpoint, so there is no danger or chance to subscribe for messages of another endpoint.
 
 ==== General setup
 
-A MQTT connection requires 2 types of certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
+An MQTT connection requires 2 types of certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
 
-This is required to setup a MQTT Connection over SSL.
+This is required to setup an MQTT Connection over SSL.
 
 Additionally, TLS needs to be activated and the TLS-Certificate can either be the certificate received during link:./integration/onboarding.adoc[onboarding] or from the link:./router-devices.adoc[Router Devices].
 
@@ -161,7 +161,7 @@ Those messages still have to be requested through the inbox but are automaticall
 
 
 ==== Router Devices
-When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced **router devices** which allows to use just one connection for multiple, virtual endpoints.
+When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced **router devices** which allow to use just one connection for multiple, virtual endpoints.
 
 ===== General function
 Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one single MQTT broker.
