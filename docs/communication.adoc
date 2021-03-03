@@ -8,7 +8,7 @@
 
 Communication with the agrirouter includes communication with inbox AND outbox, unimportant, if an app only sends messages or only consumes messages. Every message or command is sent to the inbox, results are always delivered through the outbox.
 
-== Prequisits for communication
+== Prerequisites for communication
 
 Every communication is introduced by the App Instance. The agrirouter endpoint will never contact the app instance.
 
@@ -31,7 +31,7 @@ Therefore:
 
 **** the protocol layer of REST using Request and Response or MQTT using Publish and Subscribe.
 
-With except to the EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the receipants based on the routings and subscribtions.
+With except to the EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the recipients based on the routings and subscribtions.
 
 ++++
 <p align="center">
@@ -41,15 +41,15 @@ With except to the EFDI telemetry messages (DeviceDescription and live data), ag
 ++++
 
 
-An exception is the EFDI telemetry messages.
+An exception are the EFDI telemetry messages.
 
 The device descriptions are needed by the agrirouter to
 
-* determine the relevant CU when sending a Message directly to a machine
+* determine the relevant CU when sending a message directly to a machine
 * filter for DDIs that are allowed to be sent to specific endpoints
 * be sent to endpoints, that subscribe for telemetry data, after the device description was already sent
 
-The life telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
+The live telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
 
 ++++
 <p align="center">
@@ -71,12 +71,12 @@ The protocol layer describes the basic communicaton layer. All agrirouter commun
 
 === REST
 
-REST is a wellknown principle for online apis. For more information on REST, please see following recources:
+REST is a wellknown principle for online APIs. For more information on REST, please see following resources:
 
 * https://en.wikipedia.org/wiki/Representational_state_transfer
 * https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340
 
-REST uses HTTP requests, that result in an HTTP Response.
+REST uses HTTP requests, that results in a HTTP Response.
 
 [NOTE]
 ====
@@ -114,15 +114,15 @@ MQTT is a subscription based protocol. Therefore, the client can be informed by 
 
 * https://mqtt.org/
 
-The agrirouter provides an MQTT Broker serverside, so, an app instance has to connect to this server with its client.
+The agrirouter provides a MQTT Broker serverside, so, an app instance has to connect to this server with its client.
 
-agrirouter provides one MQTT Server per Endpoint, so there is no danger or chance to subscribe for messages of another endpoint
+The agrirouter provides one MQTT Server per Endpoint, so there is no danger or chance to subscribe for messages of another endpoint.
 
 ==== General setup
 
-An MQTT Connection requires 2 types of Certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
+A MQTT connection requires 2 types of certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
 
-This is required to setup an MQTT Connection over SSL.
+This is required to setup a MQTT Connection over SSL.
 
 Additionally, TLS needs to be activated and the TLS-Certificate can either be the certificate received during link:./integration/onboarding.adoc[onboarding] or from the link:./router-devices.adoc[Router Devices].
 
@@ -161,7 +161,7 @@ Those messages still have to be requested through the inbox but are automaticall
 
 
 ==== Router Devices
-When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced a **router devices** which allows to use just one connection for multiple, virtual endpoints.
+When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced **router devices** which allows to use just one connection for multiple, virtual endpoints.
 
 ===== General function
 Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one single MQTT broker.
@@ -208,14 +208,14 @@ Both protocols have several advantages and disadvantages. To select the right pr
 
 == Advice on protocol choice
 
-Every app provider is free to select his prefered format from the list above.
+Every app provider is free to select his preferred format from the list above.
 
 DKE however advices to use MQTT using RouterDevices for any application that handles multiple endpoints (e.g. Telemetry Platforms, but also Farming Software, that is a cloud software and communicates in behalf of multiple accounts) or sends data in a frequency higher than 1 message per minute. 
 
 
 == Abstraction of communication workflows
 
-To avoid graphs with too many arrows, we simplifiy the upcoming requests, abstracting MQTT and REST. Whatever protocol you use, a Request and Response in this document will look like this:
+To avoid graphs with too many arrows, we simplify the upcoming requests, abstracting MQTT and REST. Whatever protocol you use, a request and response in this document will look like this:
 
 ==== Abstraction of Calls to the Inbox
 
@@ -241,12 +241,12 @@ To avoid graphs with too many arrows, we simplifiy the upcoming requests, abstra
 
 == Endpoint Adresses
 
-The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refere to link:./integration/onboarding.adoc[Send onboarding Request].
+The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refer to link:./integration/onboarding.adoc[Send onboarding Request].
 
 
 == Assigning a result to a request
 
-The assignment between messages sent to the Inbox and their corresponding message in the outbox is done by comparing the application_message_id provided by the app. Therefore, this application_message_id **should be unique**.
+The assignment between messages sent to the inbox and their corresponding messages in the outbox is done by comparing the application_message_id provided by the app. Therefore, this application_message_id **should be unique**.
 
 
 [CAUTION]
@@ -258,7 +258,7 @@ If a message is not correctly encoded, so that the agrirouter cannot decode it, 
 
 == Flow for sending messages
 
-Sending messages to the agrirouter creates an ACK-Message in the outbox of the agrirouter
+Sending messages to the agrirouter creates an ACK-Message in the outbox of the agrirouter.
 
 ++++
 <p align="center">
@@ -318,7 +318,7 @@ A command-process consists of a call (1.1) to the inbox. This call consists of t
 
 
 ==== Link Section
-This page is found in every file and links to the major topics
+This page is found in every file and links to the major topics.
 [width="100%"]
 |====
 |link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
