@@ -26,7 +26,7 @@ In each agrirouter account, there are different types of communication partners,
 </p>
 ++++
 
-The ist of link:./ecosystem.adoc#applications[Application Types] helps to find out, which type of application you should create.
+The list of link:./ecosystem.adoc#applications[Application Types] helps to find out, which type of application you should create.
 
 === Endpoints
 Each app instance communicates with its corresponding endpoint in the agrirouter.
