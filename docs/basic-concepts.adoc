@@ -75,7 +75,7 @@ This chapter handles, for example, the concepts of addressing members of the eco
 
 
 === Life cycle 
-In general, the life cycle of an Endpoint consists of 3 steps:
+In general, the life cycle of an endpoint consists of 3 steps:
 
 * link:./integration/onboarding.adoc[Onboarding]
 * Communication (see above)
@@ -102,11 +102,11 @@ When developing a telemetry platform, the link:./telemetry-platform-concepts.ado
 
 == Terms and short descriptions
 
-A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
+A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here].
 
-A list of shortings can be found link:./shortings.adoc[here]
+A list of shortings can be found link:./shortings.adoc[here].
 
-A glossary can be found link:./glossary.adoc[here]
+A glossary can be found link:./glossary.adoc[here].
 
 There are several ids required for communication, a list of descriptions can be found link:./ids-and-definitions.adoc[here].
 
