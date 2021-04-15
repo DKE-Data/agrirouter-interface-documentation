@@ -202,13 +202,18 @@ Steps:
 
  * concatenate _*state*_ and _*token*_ from the query
  * create the SHA256 hash of the concatenated string
- * verify the authenticity of the _*signature*_ with the agrirouter public key and generated hash
+ * verify the authenticity of the _*signature*_ with the **agrirouter public key** and generated hash
+
+[CAUTION]
+====
+Make sure you **do not** use the public key you got when you created your application in agrirouter!
+
+You **have to** use the key from link:../keys.adoc[Certificates and keys]!
+====
 
 [NOTE]
 ====
 * Many implementations of the verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible, that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
-
-* The public keys can be found at Certificates and keys
 ====
 
 ==== Analyse the result in token
