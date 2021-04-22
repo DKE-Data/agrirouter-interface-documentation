@@ -2,7 +2,7 @@
 This document contains a brief overview of the contents of the documentation.
 
 /assets link:./assets[->] :: The folder contains all immages and other raw data for the documentation.
-/ertificates link:./assets/certificates[->] ::: The folder contains the certificates for the connection to the *agrirouter*.
+/certificates link:./assets/certificates[->] ::: The folder contains the certificates for the connection to the *agrirouter*.
 eu-prod-ca-cert.pem link:./assets/certificates/eu-prod-ca-cert.pem[->] :::: The certificate file for the connection to the PROD envrionment of the *agrirouter*.
 eu-qa-ca-cert.pem link:./assets/certificates/eu-qa-ca-cert.pem[->] :::: The certificate file for the connection to the QA envrionment of the *agrirouter*.
 /images link:./assets/images[->] ::: All images used in the documentation. The content of the directory is not listed explicitly.
