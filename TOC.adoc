@@ -8,6 +8,6 @@ eu-qa-ca-cert.pem link:./assets/certificates/eu-qa-ca-cert.pem[->] :::: The cert
 /images link:./assets/images[->] ::: All images used in the documentation. The content of the directory is not listed explicitly.
 errorcodes.xlsx link:./assets/errorcodes.xlx[->] :: Common error codes during the communication with the *agrirouter*. 
 /docs link:./docs[->] :: The folder contains all documents.
-.gitignore link:./,gitignore[->] :: Technical file, can be ignored.
+.gitignore link:./.gitignore[->] :: Technical file, can be ignored.
 LICENSE link:./LICENSE[->] :: License information for this project.
 README.adoc link:./README.adoc[->] :: Entry point for the documentation and the file that is shown on startup of the page.
