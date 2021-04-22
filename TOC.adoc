@@ -1,5 +1,5 @@
 = Table of contents
-This document contains a brief overview of the contents of the docmentation.
+This document contains a brief overview of the contents of the documentation.
 
 /assets link:./assets[->] :: The folder contains all immages and other raw data for the documentation.
 /ertificates link:./assets/certificates[->] ::: The folder contains the certificates for the connection to the *agrirouter*.
