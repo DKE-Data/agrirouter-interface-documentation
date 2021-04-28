@@ -41,7 +41,7 @@ The AEF protobuf files can be found here: https://github.com/aefev/fmisei-spec/t
 
 *Remark*
 
-Access to the AEF repository can be requested at the AEF Office, see https://aef-online.org
+Access to the AEF repository *for AEF members* can be requested at the AEF Office, see https://aef-online.org
 
 === Result
 
