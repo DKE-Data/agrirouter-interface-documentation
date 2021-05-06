@@ -39,16 +39,14 @@ To pass the certification tests there are multiple requirements have to be fulfi
 ** Address
 ** Phone
 ** URL
-* A link:./registration.adoc[quality assurance environment developer account of the application provider]
-* The application Id and certification version Id of link:./applications.adoc[the application in the quality assurance environment].
+* A link:./registration.adoc[production environment developer account of the application provider]
+* The application Id and certification version Id of link:./applications.adoc[an application in the production environment].
+* Version, name and description of the application to certify.
 
 === Additional requirements during the process
 
 The following information is not required to start the certification but will be required before finishing it:
 
-* A link:./registration.adoc[production environment developer account of the application provider]
-* The application Id and certification version Id of link:./applications.adoc[an application in the production environment].
-* Version, name and description of the application to certify.
 * Message protocol of the application (MQTT / REST).
 * Message format of the application (JSON / Native Protobuf).
 * The capabilities of the application including link:./tmt/overview.adoc[the technical message types] and  sending directions.
