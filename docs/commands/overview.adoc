@@ -25,7 +25,7 @@ Following a list of all commands; specific definitions follow in the linked chap
 
 [NOTE]
 ====
-Those are the commands, that have the agrirouter as destination. Messages have other endpoints as destination. They are sent to the agrirouter like commands, but the agrirouter recognizes, that he only has to route and perhaps filter them.
+Those are the commands, that have the agrirouter as destination. Messages have other endpoints as destination. They are sent to the agrirouter like commands, but the agrirouter recognizes that he only has to route and perhaps filter them.
 ====
 
 Additionally, the following commands influence the behaviour of agrirouter, even though they might be sent to a destination endpoint through agrirouter:
@@ -43,5 +43,5 @@ Additionally, the following commands influence the behaviour of agrirouter, even
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

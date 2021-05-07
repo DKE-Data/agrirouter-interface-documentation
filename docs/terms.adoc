@@ -60,7 +60,7 @@ The whole chapter can be found link:./accounts.adoc[here]
 
 * An application can be a communication unit, a telemetry platform or a farming software.
 
-* Companies and developers can create software, that integrate an interface to the agrirouter.
+* Companies and developers can create software that integrate an interface to the agrirouter.
 
 * This software is called application.
 
@@ -113,7 +113,7 @@ The whole chapter can be found link:./applications.adoc[here]
 
 * If there are 2 CUs installed on a real-world machine, a machine can be found in multiple teamsets and therefore even in multiple accounts.
 
-* Applications, Virtual CUs, other users accounts and Machines are endpoints, that can be source or target of a message.
+* Applications, Virtual CUs, other users accounts and Machines are endpoints that can be source or target of a message.
 
 ====
 
@@ -134,7 +134,7 @@ The whole chapter can be found link:./ecosystem.adoc[here].
 
 * agrirouter provides an inbox, an outbox and a feed unique for each endpoint.
 
-* an application instance can subscribe for technical message types, that it would like to receive from endpoints in that account.
+* an application instance can subscribe for technical message types that it would like to receive from endpoints in that account.
 
 **Message forwarding:**
 
@@ -144,7 +144,7 @@ The whole chapter can be found link:./ecosystem.adoc[here].
 
 * Instead of or in addition to the recipients list, a message can also be published.
 
-* If a message is published, agrirouter adds all endpoints to the recipients list, that are subscribed for this TMT.
+* If a message is published, agrirouter adds all endpoints to the recipients list that are subscribed for this TMT.
 
 * agrirouter forwards the messages to the feed of all relevant endpoints.
 
@@ -214,7 +214,7 @@ The whole chapter can be found link:./message-exchange.adoc[here]
 
 * Using the desired protocol, App Instances send commands and messages to their inbox.
 
-* The HTTP response for a request to the inbox buffer of a REST endpoint through the inbox will be the information, that the command or message is being processed.
+* The HTTP response for a request to the inbox buffer of a REST endpoint through the inbox will be the information that the command or message is being processed.
 
 * For an MQTT endpoint, there will be no processing information for a request to the inbox.
 
@@ -222,7 +222,7 @@ The whole chapter can be found link:./message-exchange.adoc[here]
 
 * App instances using the MQTT protocol will receive the result without polling.
 
-* Messages, that are no commands for the agrirouter will be forwarded to addressing and routing.
+* Messages that are no commands for the agrirouter will be forwarded to addressing and routing.
 
 * Commands will be processed by the agrirouter.
 
@@ -240,7 +240,7 @@ The whole chapter can be found link:./message-exchange.adoc[here]
 
 * A message containing a list of message headers will then be delivered to the outbox.
 
-* An app instance can call for a list of endpoints, that can receive a specific technical message format.
+* An app instance can call for a list of endpoints that can receive a specific technical message format.
 
 * A list of endpoints will then be delivered to the outbox.
 
@@ -259,5 +259,5 @@ The whole chapter can be found link:./messaging-workflow.adoc[here]
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====

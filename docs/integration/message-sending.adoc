@@ -81,7 +81,7 @@ Content-Type: “application/x-protobuf”
 
 [NOTE]
 ====
-Unimportant, which Content-Type you use, make sure, that your implementation includes "application/json" in the "accept"-Parameter of the HTTP Call. 
+Regardless which Content-Type you use, make sure that your implementation includes "application/json" in the "accept"-Parameter of the HTTP Call. 
 
 The Inbox of agrirouter is not able to return protobuf and will return a status of 4xx, if it can't find json in the accepted responses.
 ====
@@ -89,7 +89,7 @@ The Inbox of agrirouter is not able to return protobuf and will return a status 
 
 === Body
 
-The body consists of the message package, that was created in the previous paragraphs.
+The body consists of the message package that was created in the previous paragraphs.
 
 == Receiving a Response
 
@@ -117,5 +117,5 @@ The result code of this simply informs you, if the endpoint was reachable and if
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

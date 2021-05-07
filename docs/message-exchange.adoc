@@ -57,7 +57,7 @@ Messages can be directly addressed to one or more endpoints. They can also be pu
 === Sending messages to machines
 As a machine has its own endpoint in the agrirouter account, it is possible to address messages to a machine.
 
-To deliver messages, that are addressed to a machine, agrirouter needs to know, which application instance (CU or Virtual CU) currently is connected to that machine. Therefore, delivery of messages to a machine can only work, if the connected CU or Virtual CU properly reports its teamset including the EFDI Device Description.
+To deliver messages that are addressed to a machine, agrirouter needs to know, which application instance (CU or Virtual CU) currently is connected to that machine. Therefore, delivery of messages to a machine can only work, if the connected CU or Virtual CU properly reports its teamset including the EFDI Device Description.
 The command to define a teamset can be found link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[here].
 
 Currently, this is an optional feature of Virtual CU or CUs and not required for a certification.
@@ -120,13 +120,13 @@ The payload includes the encoded raw data of the message content. Its structure 
 
 == Information types and Technical message types
 
-The technical message type describes the type (e.g. the format) of the content of an agrirouter message. Every endpoint capable of sending such a message declares, that it is able to create a valid message of such type. Every endpoint capable of receiving such a message declares, that it can interpret that message.
+The technical message type describes the type (e.g. the format) of the content of an agrirouter message. Every endpoint capable of sending such a message declares that it is able to create a valid message of such type. Every endpoint capable of receiving such a message declares that it can interpret that message.
 
 Information types are an abstraction of the technical message types to simplify the setting up of routings.
 
 One technical message type can be part of multiple Information types.
 
-Each technical message type must be assigned to an information type, which represents its meaning and purpose. The technical message types Bitmap, PNG and JPEG for example are summarized as Information Type “Image”. This means, that endpoints can send Bitmaps, PNGs and JPEGs, if a routing for Images exists.
+Each technical message type must be assigned to an information type, which represents its meaning and purpose. The technical message types Bitmap, PNG and JPEG for example are summarized as Information Type “Image”. This means that endpoints can send Bitmaps, PNGs and JPEGs, if a routing for Images exists.
 
 Technical message types are defined by groups outside the agrirouter project. If message types are missing, DKE will add a useful standardized message type. DKE however will not standardize any formats.
 
@@ -143,7 +143,7 @@ Each endpoint has to describe, which technical message types it can send and/or 
 
 [NOTE]
 ====
-Some applications are offered with several optional features, that are only available to the end user under specific circumstances, e.g. if he buys a special package. an app instance, that has such optional features should always send those capabilities to the agrirouter, that it really supports under its current configuration. Otherwise, this might lead to data exchange problems.
+Some applications are offered with several optional features that are only available to the end user under specific circumstances, e.g. if he buys a special package. an app instance that has such optional features should always send those capabilities to the agrirouter that it really supports under its current configuration. Otherwise, this might lead to data exchange problems.
 ====
 
 == Subscriptions
@@ -180,7 +180,7 @@ Messages can be sent to other users’ accounts, if this users account is connec
 
 For guidance, how to connect 2 accounts, see the link:https://lb.my-agrirouter.com[Learning box].
 
-A message, that is addressed to this endpoint will be published in the connected account. An app instance, that wants to receive messages from a different account has to subscribe its endpoint to the desired technical message type. The process is visible in the following graph:
+A message that is addressed to this endpoint will be published in the connected account. An app instance that wants to receive messages from a different account has to subscribe its endpoint to the desired technical message type. The process is visible in the following graph:
 
 ++++
 <p align="center">
@@ -199,7 +199,7 @@ A message, that is addressed to this endpoint will be published in the connected
 1. App Instance 1 sends a message of TMT1 to the Endpoint EP9. As there is a routing, agrirouter will forward that message.
 
 
-2. agrirouter recognizes, that EP9 in real is the connection to Contractor Johns account. Therefore, it now handles the message like an incoming message, published in EP 7 of Contractor Johns account. agrirouter looks for endpoints, that are:
+2. agrirouter recognizes that EP9 in real is the connection to Contractor Johns account. Therefore, it now handles the message like an incoming message, published in EP7 of Contractor Johns account. agrirouter looks for endpoints that are:
 
 * Part of Contractor Johns account
 * have an existing Routing with TMT1 and EP7
@@ -219,7 +219,7 @@ By default, connected accounts do not forward subscriptions. This means: If App 
 
 === General
 
-To control the message flow between endpoints and to avoid sensitive data being forwarded to the wrong endpoints, end users can setup routings. Only forwardings, that are allowed by these routings will be performed by the agrirouter.
+To control the message flow between endpoints and to avoid sensitive data being forwarded to the wrong endpoints, end users can setup routings. Only forwardings that are allowed by these routings will be performed by the agrirouter.
 
 A routing consists of:
 
@@ -292,5 +292,5 @@ A more specific definition of EFDI messages can be found link:./tmt/efdi.adoc[he
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====

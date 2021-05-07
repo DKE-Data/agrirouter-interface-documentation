@@ -45,23 +45,15 @@ With except to the EFDI telemetry messages (DeviceDescription and live data), ag
 ++++
 
 
-<<<<<<< HEAD
-For EFDI telemetry message, the device descriptions are needed by the agrirouter to
-=======
 An exception are the EFDI telemetry messages.
 
 The device descriptions are needed by the agrirouter to
->>>>>>> origin/develop
 
 * determine the relevant CU when sending a message directly to a machine
 * filter for DDIs that are allowed to be sent to specific endpoints
-* be sent to endpoints, that subscribe for telemetry data, after the device description was already sent
+* be sent to endpoints that subscribe to telemetry data after the device description was already sent
 
-<<<<<<< HEAD
-Life telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
-=======
-The live telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
->>>>>>> origin/develop
+The live telemetry data is analysed so that filtering for value categories like fuel consumption is possible.
 
 ++++
 <p align="center">
@@ -74,7 +66,7 @@ The live telemetry data is analysed, so that a filtering for value categories li
 
 [NOTE]
 ====
-Even if a client uses native protobuf for communication instead of JSON, a command has to be put into a payload wrapper, that mentions the message/command type.
+Even if a client uses native protobuf for communication instead of JSON, a command has to be put into a payload wrapper that mentions the message/command type.
 ====
 == The protocol layer
 
@@ -83,20 +75,16 @@ The protocol layer describes the basic communication layer. All agrirouter commu
 
 === REST
 
-<<<<<<< HEAD
-REST is a well-known principle for online APIs. For more information on REST, please see following resources:
-=======
 REST is a wellknown principle for online APIs. For more information on REST, please see following resources:
->>>>>>> origin/develop
 
 * https://en.wikipedia.org/wiki/Representational_state_transfer
 * https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340
 
-REST uses HTTP requests, that results in an HTTP Response.
+REST uses HTTP requests that results in an HTTP Response.
 
 [NOTE]
 ====
-REST is based on single, request only methods, therefore, the agrirouter cannot contact any endpoint. This means, that the endpoint for example has to poll for new messages in the outbox.
+REST is based on single, request only methods, therefore, the agrirouter cannot contact any endpoint. This means that the endpoint for example has to poll for new messages in the outbox.
 ====
 
 ==== Communication Workflow with the Inbox
@@ -136,11 +124,7 @@ The agrirouter provides one MQTT Server per Endpoint, so there is no danger or c
 
 ==== General setup
 
-<<<<<<< HEAD
-An MQTT Connection requires 2 types of certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
-=======
 An MQTT connection requires 2 types of certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
->>>>>>> origin/develop
 
 This is required to setup an MQTT Connection over SSL.
 
@@ -181,11 +165,7 @@ Those messages still have to be requested through the inbox but are automaticall
 
 
 ==== Router Devices
-<<<<<<< HEAD
-When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced a **router device** which allows to use just one connection for multiple, virtual endpoints.
-=======
 When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced **router devices** which allow to use just one connection for multiple, virtual endpoints.
->>>>>>> origin/develop
 
 ===== General function
 Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one single MQTT broker.
@@ -234,7 +214,7 @@ Both protocols have several advantages and disadvantages. To select the right pr
 
 Every app provider is free to select his preferred format from the list above.
 
-DKE however advises to use MQTT using RouterDevices for any application that handles multiple endpoints (e.g. Telemetry Platforms, but also Farming Software, that is a cloud software and communicates on behalf of multiple accounts) or sends data at a frequency higher than 1 message per minute. 
+DKE however advises to use MQTT using RouterDevices for any application that handles multiple endpoints (e.g. Telemetry Platforms, but also Farming Software that is a cloud software and communicates on behalf of multiple accounts) or sends data at a frequency higher than 1 message per minute. 
 
 
 == Abstraction of communication workflows
@@ -345,6 +325,6 @@ A command-process consists of a call (1.1) to the inbox. This call consists of t
 This page is found in every file and links to the major topics.
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====
 

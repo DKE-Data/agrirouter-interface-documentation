@@ -15,7 +15,7 @@ The applications are not running on the agrirouter, but they connect to the agri
 An application instance represents a single software product or user account in a cloud software.
 
 |agrirouter Account 
-|An agrirouter account is a logical space on the agrirouter, that is used by one person or company. (e.g. a farm or contractor)
+|An agrirouter account is a logical space on the agrirouter that is used by one person or company. (e.g. a farm or contractor)
 
 |agrirouter Message Format 
 |An agrirouter command consists of a agrirouter command header (also called envelope) and the content (sometimes also called payload). The header contains fields such as the sender ID, the list of recipients, and the technical message type.
@@ -27,7 +27,7 @@ An application instance represents a single software product or user account in 
 |Capabilities are a list of technical message types, an app instance supports to send or receive
 
 |Command 
-|A command is sent to the agrirouter from any endpoint. It consists of a header and an agrirouter control message (e.g. a TeamSet Message). The most common type of command includes a message of a specific message type, that shall be forwarded to one or more endpoints
+|A command is sent to the agrirouter from any endpoint. It consists of a header and an agrirouter control message (e.g. a TeamSet Message). The most common type of command includes a message of a specific message type that shall be forwarded to one or more endpoints
 
 |Communication Unit (CU) 
 |An application acts as a communication unit when
@@ -36,7 +36,7 @@ An application instance represents a single software product or user account in 
 * It manages the agrirouter communication for these machines. It sends machine data to agrirouter, and receives and processes messages addressed to machines
 
 |Directly Connected Endpoints 
-|A directly connected endpoint is any application, that communicates with its own endpoint at the agrirouter.
+|A directly connected endpoint is any application that communicates with its own endpoint at the agrirouter.
 
 |EFDI 
 |EFDI (Extended FMIS Data Interchange) is the working title of an upcoming standard of the Agricultural Industry Electronics Foundation (AEF).
@@ -80,7 +80,7 @@ DDIs are used, for example, in device descriptions to describe properties, the s
 
 DDIs are also used to identify the data records in telemetry messages.
 
-agrirouter users can filter telemetry data for DDI Categories, that abstract all DDIs into 10 categories. A list of DDIs and their Category assignment can be found here:
+agrirouter users can filter telemetry data for DDI Categories that abstract all DDIs into 10 categories. A list of DDIs and their Category assignment can be found here:
 
 A filtering for specific DDIs could not be provided, as this would have been too complex for the end user.
 
@@ -109,7 +109,7 @@ A message can be addressed to a machine as the recipient. This tells the agrirou
 The message itself will be received and processed by the CU, but addressing it to the machine makes sure that it goes to the right one.
 
 |Message 
-|A message is an information or perhaps a request, that is sent from an endpoint to any other endpoint. A message is a possible payload of a command
+|A message is an information or perhaps a request that is sent from an endpoint to any other endpoint. A message is a possible payload of a command
 
 
 |Message pushing

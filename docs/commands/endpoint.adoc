@@ -50,7 +50,7 @@ The technical message type can be a technical message type of DKE or a proprieta
 |================================================================================
 |# |Name |Type |Description
 |1 |technical_message_type |String |The name of the capability
-|2 |direction |Direction |The message direction, that is part of the capabilities
+|2 |direction |Direction |The message direction that is part of the capabilities
 |================================================================================
 
 Direction can be one of those values:
@@ -119,7 +119,7 @@ If message pushing is used in your software, please make sure you use enabled me
 
 The result is a simple `ACK` or an `ACK_WITH_MESSAGES`.
 
-If the same capabilities message is sent twice and the push notification status is not changed, an `ACK_WITH_MESSAGES` will be returned with a message indicating, that the capabilities did not change.
+If the same capabilities message is sent twice and the push notification status is not changed, an `ACK_WITH_MESSAGES` will be returned with a message indicating that the capabilities did not change.
 
 === Errors & Warnings
 
@@ -147,7 +147,7 @@ If the message was malformed, an `ACK_WITH_FAILURE` will be returned.
 
 === Definition
 
-The subscription command is used to subscribe for a list of technical message types. Being subscribed for a technical message type means, that your endpoint will receive a message of such TMT, whenever any other endpoint sends such a TMT to “publish” and a routing between the sender and your applications endpoint is given.
+The subscription command is used to subscribe for a list of technical message types. Being subscribed for a technical message type means that your endpoint will receive a message of such TMT, whenever any other endpoint sends such a TMT to “publish” and a routing between the sender and your applications endpoint is given.
 
 [NOTE]
 ====
@@ -252,5 +252,5 @@ For the format, please refer to  link:../tmt/efdi.adoc[iso:11783:-10:device_desc
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

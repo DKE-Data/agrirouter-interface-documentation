@@ -8,7 +8,7 @@ These commands are used to control the delivery of messages from the feed to the
 
 == Paging
 
-Due to the huge number of messages, that could be delivered with a single call for messages, it would be a bad idea, to deliver all those message headers in one big package. Therefore, a paging mechanism was introduced to split the whole list of messages or message headers. into several pages, each including a maximum number of messages or a maximum overall size of the Result.
+Due to the huge number of messages that could be delivered with a single call for messages, it would be a bad idea, to deliver all those message headers in one big package. Therefore, a paging mechanism was introduced to split the whole list of messages or message headers. into several pages, each including a maximum number of messages or a maximum overall size of the Result.
 
 All pages will be the result of one single GET Request, if all messages are delivered to the outbox, when the endpoint requests them. If not all messages have been delivered from feed to the outbox at this point in time, the endpoint has to poll for the messages (make sure to meet the link:../messaging-workflow.adoc#request-sending-frequency[request frequency requirements]). Using MQTT, all pages are delivered one after another.
 
@@ -27,7 +27,7 @@ Reading the messages, the message headers from the feed or deleting messages fro
 |# |Name |Type |Description
 |1 |message_ids |String(repeated) |A list of agrirouter message IDs
 |2 |senders |String(repeated) |A list of message senders
-|3 |validity_period |Validity Period |A time span, that the messages were sent in
+|3 |validity_period |Validity Period |A time span that the messages were sent in
 |================================================================================
 
 The validity Period has following parameters.
@@ -58,7 +58,7 @@ The metadata field includes the following fields:
 Metadata are part of the MessageQueryResponse and the MessageHeaderQueryResponse; see below.
 
 =======
-The command can include one or more filter criteria. If one filter is not provided, this means, that this filter is ignored.
+The command can include one or more filter criteria. If one filter is not provided, this means that this filter is ignored.
 
 == Call for Message Header List
 
@@ -87,8 +87,8 @@ For parameter description see <<Message Query and Filtering>>.
 |3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
 |4 |chunk_contextID |string |The chunk context corresponding to the chunk list
 |5 |payload_size |int64 |The size of the payload
-|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp, that was provided by the sender. It should be the time when the message orignally was sent
-|7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp that was provided by the sender. It should be the time when the message orignally was sent
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point
 |=====================================================================================================================================
 =======
 === Result
@@ -159,7 +159,7 @@ The Paging information is included in the page parameter:
 |2 |total |int32 |The total number of pages
 |===============================================
 
-The chunk context is an Array of available chunk contexts within this messages. If there are multiple of them, this means, that there are multiple chunked messages to be realigned.
+The chunk context is an Array of available chunk contexts within this messages. If there are multiple of them, this means that there are multiple chunked messages to be realigned.
 
 The chunk context is described in link:./build-message.adoc#chunking-big-messages[chunking big messages] .
 
@@ -183,8 +183,8 @@ It includes the list of headers which again includes the following information:
 |3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
 |4 |chunk_contextID |string |The chunk context corresponding to the chunk list
 |5 |payload_size |int64 |The size of the payload
-|6 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the time when the message orignally was sent
-|7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|6 |sent_timestamp |timestamp |The timestamp that was provided by the sender. It should be the time when the message orignally was sent
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point
 |=====================================================================================================================================
 
 
@@ -202,8 +202,8 @@ As a telemetry platform can receive messages for multiple Virtual CUs, the recei
 |3 |team_set_context_id |string |The teamset ID assigned with the message.
 |4 |chunk_contextID |string |The chunk context corresponding to the chunk list
 |5 |payload_size |int64 |The size of the payload
-|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp, that was provided by the sender.
-|7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp that was provided by the sender.
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point
 |8 |current_chunk |int64 |The chunk counter of the current chunk
 |9 |created_at |google.protobuf.Timestamp |The time at which the message was inserted into the endpoints feed within the agrirouter
 |10 |metadata |agrirouter.commons.Metadata |Additional metadata information helping to differentiate between messages of the same type. 
@@ -296,8 +296,8 @@ The header includes the whole envelope of a message
 |3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
 |4 |chunk_context |agrirouter.commons.ChunkComponent |The chunk component.
 |5 |payload_size |int64 |The size of the payload.
-|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp, that was provided by the sender. It should be the time when the message was originally sent.
-|7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point.
+|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp that was provided by the sender. It should be the time when the message was originally sent.
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point.
 |8 |sender_id |string |The endpoint ID of the sender.
 |9 |created_at |google.protobuf.Timestamp |The timestamp, when this message was added to the receiving endpoints feed.
 |10 |message_id |String |Internal agrirouter message ID representing this message and its payload.
@@ -329,7 +329,7 @@ Messages sent to the agrirouter can be split into multiple chunks, if the messag
 ++++
 
 
-Only those message, that were not created by the agrirouter and that are not of type EFDI or GPS:INFO can be chunked.
+Only those message that were not created by the agrirouter and that are not of type EFDI or GPS:INFO can be chunked.
 
 ==== Recognizing chunked messages in the feed
 
@@ -337,7 +337,7 @@ To recognize chunked messages, request the message header query and see, if you 
 
 ==== Pulling chunked messages from the feed
 
-Chunked messages can be pulled like any other message type. make sure to request all chunks at once, so that you can make sure, that the message can be rebuild successfully before confirming chunks, which would delete them from the feed.
+Chunked messages can be pulled like any other message type. make sure to request all chunks at once, so that you can make sure that the message can be rebuild successfully before confirming chunks, which would delete them from the feed.
 
 ==== Merging all chunks
 
@@ -381,13 +381,13 @@ If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific
 
 = Controlling the outbox 
 
-To make sure, that no message gets lost due to e.g. a loss of internet connection while delivering a message, the app instance has to confirm the receival of every message.
+To make sure that no message gets lost due to e.g. a loss of internet connection while delivering a message, the app instance has to confirm the receival of every message.
 
 == Call for message list confirmation
 
 === Definition
 
-Once a message was downloaded from the outbox, the Client has to confirm, that it properly received this message/those messages.
+Once a message was downloaded from the outbox, the Client has to confirm that it properly received this message/those messages.
 
 [NOTE]
 ====
@@ -432,5 +432,5 @@ If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

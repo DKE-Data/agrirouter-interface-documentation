@@ -53,7 +53,7 @@ The internal Google Protocol Buffer (protobuf) definitions for the communication
 
 == Request sending frequency
 
-agrirouter needs some time to process commands and forward messages, that are received through one of the endpoints. To avoid mixing up communication and requesting the next message before receiving the result of the last command, the agrirouter support team advices, to have a minimum time laps of a few seconds between sending of 2 requests to the agrirouter:
+agrirouter needs some time to process commands and forward messages that are received through one of the endpoints. To avoid mixing up communication and requesting the next message before receiving the result of the last command, the agrirouter support team advices, to have a minimum time laps of a few seconds between sending of 2 requests to the agrirouter:
 
 [cols=",",options="header",]
 |=============================================
@@ -76,7 +76,7 @@ This chapter gives an overview about the endpoints including their base requirem
 The full chapter can be found link:./endpoint.adoc[here].
 
 == Authorization process for endpoints
-This process is required to make sure, that an app provider knows the end user of an app instance of his application.
+This process is required to make sure that an app provider knows the end user of an app instance of his application.
 
 The whole chapter can be found link:./integration/authorization.adoc[here].
 
@@ -168,13 +168,13 @@ An example for an onboarding request can be found in the postman collection, whi
 
 == Reonboarding
 
-Whenever an app instance receives an update of its software, it possibly needs to reonboard to agrirouter to receive its certificates and the endpoint IDs again. Reonboarding equals the onboarding request. Important is, that the same app instance id is used again, so that agrirouter recognizes the reonboarding and the routings and group settings of the endpoint persist. Otherwise, it would create a new endpoint.
+Whenever an app instance receives an update of its software, it possibly needs to reonboard to agrirouter to receive its certificates and the endpoint IDs again. Reonboarding equals the onboarding request. It is important that the same app instance id is used again, so that agrirouter recognizes the reonboarding and the routings and group settings of the endpoint persist. Otherwise, it would create a new endpoint.
 
 == Communication and Message exchange
 
 === The onion principle of commands and messages
 
-agrirouter is a platform, that is mostly used to transport messages *through* it and not towards it.
+agrirouter is a platform that is mostly used to transport messages *through* it and not towards it.
 
 
 ++++
@@ -256,7 +256,7 @@ agrirouter stores messages of an endpoint in its feed. This feed is part of the 
 
 === Requesting available messages
 
-To receive a list of all buffered messages from the feed of the endpoint, the application has to request the list of available messages. agrirouter will than forward a message header list to the outbox. The app instance can request each message by its unique ID afterwards. It’s up to the developer to decide on a useful order of requesting the buffered messages. Ann application could for example use the principles of _last in first out_ or _first in first out_ or priories specific technical message formats. It would also be possible for timelogs to request every n-th message and requests the messages in between afterwards, so that the app could create a graph, that is getting more and more precise (like a preview becoming a real view).
+To receive a list of all buffered messages from the feed of the endpoint, the application has to request the list of available messages. agrirouter will than forward a message header list to the outbox. The app instance can request each message by its unique ID afterwards. It’s up to the developer to decide on a useful order of requesting the buffered messages. Ann application could for example use the principles of _last in first out_ or _first in first out_ or priories specific technical message formats. It would also be possible for timelogs to request every n-th message and requests the messages in between afterwards, so that the app could create a graph that is getting more and more precise (like a preview becoming a real view).
 
 === Relevant Message formats
 
@@ -298,7 +298,7 @@ To simplify and optimize the connection of telemetry platforms, there are severa
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====
 
 

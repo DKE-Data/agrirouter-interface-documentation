@@ -9,4 +9,4 @@ The service department of an app provider or DKE Partner can receive training fo
 
 == Materials for end customers
 
-To learn about agrirouter, end customers can take a look at the link:https://lb.my-agrirouter.com[Learning Box], that Provides Videos to understand agrirouter and its handling.
+To learn about agrirouter, end customers can take a look at the link:https://lb.my-agrirouter.com[Learning Box] that Provides Videos to understand agrirouter and its handling.

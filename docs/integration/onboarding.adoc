@@ -152,7 +152,7 @@ Like every URL in this document, these URLs might change in the future or there 
 
 == Signing requests
 
-For onboarding, the agrirouter must be sure, that the requests actually come from an instance of the app specified in the request. Therefore, the payload must be signed with the applications private key. The corresponding public key must be maintained by the developer in agrirouter per application, see above.
+For onboarding, the agrirouter must be sure that the requests actually come from an instance of the app specified in the request. Therefore, the payload must be signed with the applications private key. The corresponding public key must be maintained by the developer in agrirouter per application, see above.
 
 A Payload encryption is not needed since all communication is encrypted with TLS
 
@@ -283,7 +283,7 @@ For a successful result, the body will include a JSON object like this:
 }
 ----
 
-It includes the accountId, so that an app provider can check, if this accountId might already be known. For apps, that can be onboarded only once (like an FMIS, where it doesn’t make any sense to have 2 of the same kind), this would mean, that onboarding is not needed.
+It includes the accountId, so that an app provider can check, if this accountId might already be known. For apps that can be onboarded only once (like an FMIS, where it doesn’t make any sense to have 2 of the same kind), this would mean that onboarding is not needed.
 
 ===== Failure
 
@@ -462,7 +462,7 @@ The request has several possible response codes indicating Success or Failure:
 |Code |Possible problem
 |201 |Success; Analyze onboarding result to get started
 |400 |The Request was invalid
-|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the link:./../error-codes.adoc[error message]
+|401 |Unauthorized; meaning that one of the given header parameters is wrong. Refer to the link:./../error-codes.adoc[error message]
 |========================================================================================================
 
 ==== Success
@@ -603,5 +603,5 @@ If you experience problems with an invalid signature, (Code 107), try the follow
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviationtions]|link:../terms.adoc[agrirouter in a nutshell]
 |====

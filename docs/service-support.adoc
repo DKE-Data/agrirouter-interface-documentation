@@ -132,7 +132,7 @@ Information on messages that were *received by* the app instance from its endpoi
 
 === Remote Maintenance for customers
 
-The agrirouter start page provides a tile "Remote Maintenance" for every user, that redirects him to the Remote Desktop Software "TeamViewer". ( See https://www.teamviewer.com/en/ ). Your service and support can use this software to take a look at a customers desktop and help the customer to work with the agrirouter user interface or any other software on his desktop.
+The agrirouter start page provides a tile "Remote Maintenance" for every user that redirects him to the Remote Desktop Software "TeamViewer". ( See https://www.teamviewer.com/en/ ). Your service and support can use this software to take a look at a customers desktop and help the customer to work with the agrirouter user interface or any other software on his desktop.
 
 ++++
 <p align="center">
@@ -145,7 +145,7 @@ The agrirouter start page provides a tile "Remote Maintenance" for every user, t
 
 == Getting in contact with the agrirouter support team as a developer
 
-The agrirouter support team provides support for developers for their integration with the agrirouter. To ask a question, simply send an email to support@my-agrirouter.com. Please understand, that agrirouter support team only provides agrirouter specific answers, no answers specialized for your coding language, environment or used frameworks. You might however be lucky to get such a specific answer, if agrirouter support team has one, so feel free to mention this information as well.
+The agrirouter support team provides support for developers for their integration with the agrirouter. To ask a question, simply send an email to support@my-agrirouter.com. Please understand that agrirouter support team only provides agrirouter specific answers, no answers specialized for your coding language, environment or used frameworks. You might however be lucky to get such a specific answer, if agrirouter support team has one, so feel free to mention this information as well.
 
 === Required information
 
@@ -224,5 +224,5 @@ agrirouter support team will get back to you on your request, please be informed
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====

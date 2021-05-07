@@ -21,7 +21,7 @@ DKE is currently not allowed to provide the documentation for EFDI.
 The message iso:11783:-10:device_description:protobuf is used to understand, which machine is attached to which CU or Virtual CU and which machine provides which DDI. EFDI Device Descriptions are protobuf encoded, the data structure however is mainly equal to the form of an ISO11783-10 TaskData.
 
 
-This format is used to report devices, that are attached to the agrirouter through a CU. These devices including the CU are known as a teamset, having their own teamsetID.
+This format is used to report devices that are attached to the agrirouter through a CU. These devices including the CU are known as a teamset, having their own teamsetID.
 
 For information on filtering and assigning machines by their name, see link:../ecosystem.adoc[ecosystem].
 
@@ -58,13 +58,13 @@ If a CU sends a teamset, applications are able to address messages directly to t
 The EFDI timelog is comparable to IOSOXML Binary Log data. The format with all its parameters can be received from the AEF repository.
 
 
-The Message iso:11783:-10:time_log:protobuf includes a list of live telemetry data. For those live telemetry data, agrirouter is able to select only those DDIs to be forwarded to an endpoint, that were selected by the end user when creating routings.
+The Message iso:11783:-10:time_log:protobuf includes a list of live telemetry data. For those live telemetry data, agrirouter is able to select only those DDIs to be forwarded to an endpoint that were selected by the end user when creating routings.
 
 EFDI Time Logs are as well comparable to ISO11783 TimeLogs.
 
 [IMPORTANT]
 ====
-Make sure, that a timelog message never exceeds the limit of 1MB of data. If this should ever be the case in your app,
+Make sure that a timelog message never exceeds the limit of 1MB of data. If this should ever be the case in your app,
 split this message into multiple timelog messages.
 ====
 
@@ -84,7 +84,7 @@ split this message into multiple timelog messages.
 
 Telematic sensor values are assigned to DDIs, a standardized list of possible sensor and task information. A full list can be found here: https://isobus.net.
 
-The TimeLogs message includes a list of DDI numbers and their corresponding current values. The agrirouter can filter timelog messages for DDIs, that are part of a routing. The DDI list provides a number area for proprietary DDIs, that can have a specific definition for each manufacturer.
+The TimeLogs message includes a list of DDI numbers and their corresponding current values. The agrirouter can filter timelog messages for DDIs that are part of a routing. The DDI list provides a number area for proprietary DDIs that can have a specific definition for each manufacturer.
 
 === Categories
 
@@ -123,5 +123,5 @@ The categories list is only relevant for the UI of agrirouter, it is not used in
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

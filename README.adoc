@@ -78,5 +78,5 @@ For advanced developers, here is a list of quick links for the most common topic
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:./README.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/shortings.adoc[shortings]|link:./docs/terms.adoc[agrirouter in a nutshell]
+|link:./README.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/abbreviations.adoc[abbreviations]|link:./docs/terms.adoc[agrirouter in a nutshell]
 |====

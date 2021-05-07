@@ -13,11 +13,11 @@ To communicate with all the other endpoints in the eco system of the specific ag
 * which TMT they can receive
 * which TMT they are subscribed for
 
-== Call for endpoints, that support a technical message type
+== Call for endpoints that support a technical message type
 
 === Definition
 
-Every App Instance can call for a list of endpoints, that are capable of receiving or sending specific messages. This request does not filter for available routings.
+Every App Instance can call for a list of endpoints that are capable of receiving or sending specific messages. This request does not filter for available routings.
 
 === Command
 
@@ -132,11 +132,11 @@ __These are advices, not requirements__
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
 
 
-== Call for filtered list of endpoints, that support a specific message type
+== Call for filtered list of endpoints that support a specific message type
 
 === Definition
 
-This request is used for request a list of endpoints, that support a technical message type and has corresponding routings to the requesting endpoint.
+This request is used for request a list of endpoints that support a technical message type and has corresponding routings to the requesting endpoint.
 
 === Command
 
@@ -147,7 +147,7 @@ This request is used for request a list of endpoints, that support a technical m
 |typeURL |types.agrirouter.com/agrirouter.request.payload.account.ListEndpointsQuery
 |===============================================================================
 
-For further information, see  link:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints, that support a technical message type]
+For further information, see  link:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]
 
 === Result
 
@@ -158,7 +158,7 @@ For further information, see  link:./ecosystem.adoc##call-for-endpoints-that-sup
 |typeURL |types.agrirouter.com/agrirouter.response.payload.account.ListEndpointsResponse
 |===================================================================================
 
-For further information, see link:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints, that support a technical message type]
+For further information, see link:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]
 
 
 === Errors
@@ -172,5 +172,5 @@ If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

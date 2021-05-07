@@ -6,7 +6,7 @@
 
 == Overview of the ecosystem
 
-The agrirouter is a central data exchange platform, but to understand its full power, it’s important to understand, that the data provided from the agrirouter comes from the applications attached to the agrirouter. The following figure lists different Applications, that can be attached to one end-user account.
+The agrirouter is a central data exchange platform, but to understand its full power, it’s important to understand that the data provided from the agrirouter comes from the applications attached to the agrirouter. The following figure lists different Applications that can be attached to one end-user account.
 
 
 ++++
@@ -38,7 +38,7 @@ Like any other endpoint, CUs are able to request information from the agrirouter
 
 A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetryconnection/.
 
-Please note, that there might be additional CUs in development.
+Please note that there might be additional CUs in development.
 
 [IMPORTANT]
 ====
@@ -68,7 +68,7 @@ A list of farming software applications can be found here:
 
 https://my-agrirouter.com/en/marketplace/apps/
 
-Please note, that there might be additional software in the development of the compatibility.
+Please note that there might be additional software in the development of the compatibility.
 
 
 === Telemetry platform and virtual CUs
@@ -80,7 +80,7 @@ Please note, that there might be additional software in the development of the c
 </p>
 ++++
 
-A telemetry platform is a cloud software solution, that handles the communication of so-called "virtual CUs" with the agrirouter. Virtual CUs are comparable to real CUs, but indifference, they do not implement the agrirouter protocol. A virtual CU implements a proprietary protocol to connect to the telemetry platform only.
+A telemetry platform is a cloud software solution that handles the communication of so-called "virtual CUs" with the agrirouter. Virtual CUs are comparable to real CUs, but indifference, they do not implement the agrirouter protocol. A virtual CU implements a proprietary protocol to connect to the telemetry platform only.
 
 The telemetry platform is connected to the agrirouter providing the data of selected virtual CUs to the connected agrirouter account. The onboarding process of a telemetry platform equals the process of onboarding a Farming software.
 Virtual CUs can be onboarded by the telemetry platform without user interaction.
@@ -89,7 +89,7 @@ In the agrirouter UI, the telemetry platform and each virtual CU are displayed a
 
 A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetryconnection/.
 
-Please note, that there might be additional telemetry systems in the development of the compatibility.
+Please note that there might be additional telemetry systems in the development of the compatibility.
 
 
 
@@ -97,7 +97,7 @@ Please note, that there might be additional telemetry systems in the development
 
 You might wonder, why machines are not listed as applications. The answer is easy: Machines cannot be directly connected to the agrirouter. Machines are always connected through an application like a CU or a virtual CU.
 
-(Virtual) CUs, that are connected to the ISOBUS can provide the device description of connected machines and send live telemetry data. If a CU provides the device description of connected machines, these machines can be addressed by agrirouter messages. A farmer could, for example, send an initial taskset to his seeder and the taskset is delivered to whichever CU reports to agrirouter, that it is connected to this seeder.
+(Virtual) CUs that are connected to the ISOBUS can provide the device description of connected machines and send live telemetry data. If a CU provides the device description of connected machines, these machines can be addressed by agrirouter messages. A farmer could, for example, send an initial taskset to his seeder and the taskset is delivered to whichever CU reports to agrirouter that it is connected to this seeder.
 
 [NOTE]
 =====
@@ -105,7 +105,7 @@ You might wonder, why machines are not listed as applications. The answer is eas
 Machines are filtered through their ISO11783 ClientNAME.(a.k.a. WorkingSet Master Name). The full definition of this can be found in the corresponding standards (ISO11783 link:https://www.iso.org/standard/61581.html[Part 10 for TaskController Knowledge] and ISO11783 link:https://www.iso.org/standard/74366.html[Part 5 for the definition of the ClientNAME]).
 
 **Important**:
-In older versions of the standard, the ClientNAME was only required to be unique across the bus, which leads some manufacturers to use the same ClientNAME for different machines (e.g. multiple tractors), that would never be connected to the same CAN Bus. Further filtering to find a unique ID can be done by adding the DeviceSerialNumber to extend the ClientNAME.
+In older versions of the standard, the ClientNAME was only required to be unique across the bus, which leads some manufacturers to use the same ClientNAME for different machines (e.g. multiple tractors) that would never be connected to the same CAN Bus. Further filtering to find a unique ID can be done by adding the DeviceSerialNumber to extend the ClientNAME.
 =====
 
 
@@ -160,5 +160,5 @@ Each CU only sends one teamset, every teamset can only be part of one CU. If mul
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====

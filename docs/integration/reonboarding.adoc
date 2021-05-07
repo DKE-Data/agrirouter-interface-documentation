@@ -19,7 +19,7 @@ Reonboarding is major as certificates are only valid for currently *one year*
 
 === Why should an endpoint be re-onboarded?
 
-The current solution is, that the onboarding certificates are valid only one year!
+The current solution is that the onboarding certificates are valid only one year!
 After that, the respective endpoint will still be displayed in the Control Center, but cannot be used any more.
 At this point, the same endpoint needs to be re-onboarded so that it can be used for another year. 
 
@@ -58,5 +58,5 @@ DKE advices to visualize the validity period of the certificate to inform the us
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====
