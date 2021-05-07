@@ -1,5 +1,5 @@
 = Building Messages and Commands
-:imagesdir: ./._images/
+:imagesdir: ../../assets/images
 :toc:
 :toc-title:
 :toclevels: 4
@@ -8,14 +8,8 @@
 
 Creating a message includes several steps. This can be seen in the graph below:
 
-++++
-<p align="center">
- <img src="./._images/ig2/image42.png" width="100%"><br>
-<i>Workflow of creating a message</i>
-</p>
-++++
-
-
+.Workflow of creating a message
+image::ig2/image42.png[Workflow of creating a message]
 
 == Chunking big messages
 
@@ -30,15 +24,8 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 * EFDI telemetry messages cannot be chunked, as they are analyzed for the routing of telemetry data on agrirouter.
 ====
 
-
-++++
-<p align="center">
- <img src="./._images/ig2/image43.png" width="100%" ><br>
-<i>Workflow of creating a chunked message</i>
-</p>
-++++
-
-
+.Workflow of creating a chunked message
+image::ig2/image43.png[Workflow of creating a chunked message]
 
 [NOTE]
 ====
