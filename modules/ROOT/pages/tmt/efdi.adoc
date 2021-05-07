@@ -118,10 +118,3 @@ The assignment of specific DDIs to groups can be found link:https://lb.my-agriro
 ====
 The categories list is only relevant for the UI of agrirouter, it is not used in the interface communication!
 ====
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====

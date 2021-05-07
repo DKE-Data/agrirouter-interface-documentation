@@ -51,12 +51,5 @@ For the farming software and telemetry platform we suggest to calculate the vali
 
 [NOTE]
 ====
-DKE advices to visualize the validity period of the certificate to inform the user about required reonboarding in advance.
+DKE advises to visualize the validity period of the certificate to inform the user about required re-onboarding in advance.
 ====
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====

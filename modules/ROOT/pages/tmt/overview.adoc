@@ -41,13 +41,3 @@ It can be any of these formats:
 |xref:./video.adoc[vid:mp4] |Video |A MPEG4 Video
 |xref:./video.adoc[vid:wmv] |Video |A wmv Video
 |===========================================================================================================================
-
-
-
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====

@@ -21,12 +21,3 @@ Currently, there is only one Area: EU for europe. Every app instance is onboarde
 
 = Keys and urls
 The keys and URLs for the environments can be found xref:./../keys.adoc[in keys.]
-
-
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====

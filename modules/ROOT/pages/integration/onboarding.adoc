@@ -557,15 +557,3 @@ If you experience problems with an invalid signature, (Code 107), try the follow
 * make sure, you encoded the whole body
 * compare the signature with the result of the node server tool delivered with the postman collection
 * check the timestamp. If your local time is ahead of or too far behind agrirouter servers time, it will not recognize the signature as valid. The agrirouter HTTP answer includes a timestamp reporting agrirouters server time.
-
-
-
-
-
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviationtions]|link:../terms.adoc[agrirouter in a nutshell]
-|====

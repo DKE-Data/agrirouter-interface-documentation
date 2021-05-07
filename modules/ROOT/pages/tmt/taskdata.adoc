@@ -25,10 +25,3 @@ The zip file data has to be transferred in a Base64 representation of its binary
 ====
 The base64-encoding of the binary chunk/file data is not the same as the base64 encoding of the message. It is an additional step!
 ====
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====

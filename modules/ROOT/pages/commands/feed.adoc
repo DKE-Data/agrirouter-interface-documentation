@@ -421,12 +421,3 @@ In case of success, you receive VAL_000209 and a list of MessageIDs that could b
 === Errors
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
-
-
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====

@@ -49,14 +49,3 @@ image::./._images/ig1\image45.png[Endpoint recording in a developer account,640,
 
 
 As a developer, you are able to replay recorded commands.
-
-
-
-
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====

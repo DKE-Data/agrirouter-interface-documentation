@@ -75,16 +75,3 @@ image::./._images/ig2/image7.png[Paho UserInterface,800,144]
 
 .Basic Functions in Paho UI
 image::./._images/ig2/image8.png[Basic Functions in Paho UI,678,356]
-
-
-
-
-
-
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====

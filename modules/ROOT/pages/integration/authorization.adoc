@@ -228,11 +228,3 @@ image::./._images/ig1\image27.png[Authorization for non-cloud-applications,640,1
 Make sure, you save all the information returned from the authorization request, as you will e.g. need the account id for the xref:./revoke.adoc[Revoke functionality]!
 ====
 
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====
-

@@ -36,12 +36,3 @@ Additionally, the following commands influence the behaviour of agrirouter, even
 |xref:./endpoint.adoc[iso:11783:-10:device_description:protobuf] |efdi.ISO11783_DeviceDescription |Communication Unit to send a device description message including a teamset Context ID
 |xref:./../tmt/efdi.adoc[iso:11783:-10:time_log:protobuf] |efdi.TimeLog |Live telemetry data according to ISO11783 TimeLog specification, encoded in protobuf
 |====
-
-
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====
