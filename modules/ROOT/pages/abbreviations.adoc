@@ -19,10 +19,3 @@ As agrirouter uses multiple, sometimes quite long special terms, these terms are
 |TMT |Technical Message Type
 |VCU |Virtual CU; Virtual Communication Unit
 |===============================================
-
-
-
-
-===
-
-

@@ -94,12 +94,8 @@ The value is delivered with the authentication request. The value is also part o
 
 The value can be found in the agrirouter UI endpoint Information.
 
-++++
-<p align="center">
-<img src="_images/ig2/image49.png" width="512px" height="419px" /><br>
-<i>agrirouter account ID</i>
-</p>
-++++
+.agrirouter account ID
+image::ig2/image49.png[512,419,agrirouter account ID]
 
 
 
@@ -116,24 +112,16 @@ A UUID identifying an application regardless of the software version.
 The value cannot be found by the api, it has to be entered into the application by the developer.
 
 The developer can find the ID in his developer account:
-++++
-<p align="center">
-<img src="_images/ig2/image10.png" width="800px" height="419px" /><br>
-<i>application ID (second row below the icon)</i>
-</p>
-++++
+.application ID (second row below the icon)
+image::ig2/image10.png[800,419,application ID (second row below the icon)]
 
 
 ==== As End User
 
 The value can be found in the agrirouter UI endpoint information
 
-++++
-<p align="center">
-<img src="_images/ig2/image49.png" width="512px" height="419px" /><br>
-<i>applicationID = endpoint software ID</i>
-</p>
-++++
+.applicationID = endpoint software ID
+image::ig2/image49.png[512,419,applicationID = endpoint software ID]
 
 
 
@@ -167,24 +155,16 @@ The value cannot be found by the API. It has to be entered by the developer.
 
 The developer can find the certificationVersionID in his endpoint software overview:
 
-++++
-<p align="center">
-<img src="_images/ig2/image23.png" width="800px" height="419px" /><br>
-<i>certificationVersionId (see below the title)</i>
-</p>
-++++
+.certificationVersionId (see below the title)
+image::ig2/image23.png[800,419,certificationVersionId (see below the title)]
 
 
 ==== As End User
 
 The value can be found in the agrirouter UI endpoint Information
 
-++++
-<p align="center">
-<img src="_images/ig2/image49.png" width="512px" height="419px" /><br>
-<i>certificationVersionId = endpoint software version ID</i>
-</p>
-++++
+.certificationVersionId = endpoint software version ID
+image::ig2/image49.png[512,419,certificationVersionId = endpoint software version ID]
 
 
 
@@ -222,12 +202,8 @@ The value is delivered with the onboarding request.
 
 The value can be found in the agrirouter UI endpoint Information
 
-++++
-<p align="center">
-<img src="_images/ig2/image49.png" width="512px" height="419px" /><br>
-<i>agrirouter endpoint ID</i>
-</p>
-++++
+.agrirouter endpoint ID
+image::ig2/image49.png[512,419,agrirouter endpoint ID]
 
 **endpointId = sensorAlternateId**
 

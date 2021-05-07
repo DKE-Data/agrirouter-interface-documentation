@@ -26,11 +26,7 @@ There are several development resources which can be found in xref:./development
 * link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial[A video tutorial on the integration process]
 
 == General process of integration in QA
-++++
-<p align="center">
- <img src="._images/general/process_integration_qa.png"><br>
-</p>
-++++
+image::general/process_integration_qa.png[]
 
 
 
@@ -69,11 +65,7 @@ First, you should always keep in mind the xref:./integration/general-conventions
 There are several environments for test and production in different areas of the world. Their different parameters like URLs and certificates can be found in the xref:./integration/environments.adoc[Environments].
 
 === General lifecycle of an endpoint
-++++
-<p align="center">
- <img src="._images/general/lifecycle.png"><br>
-</p>
-++++
+image::general/lifecycle.png[]
 
 === Connecting your app instance
 

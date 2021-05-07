@@ -1,3 +1,6 @@
 name: agrirouter-interface-documentation
+title: agrirouter Interface Documentation
 version: latest
 start_page: ROOT:introduction.adoc
+nav:
+  - modules/ROOT/nav.adoc

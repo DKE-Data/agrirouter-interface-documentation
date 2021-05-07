@@ -31,11 +31,7 @@ Therefore:
 
 **** the protocol layer of REST using Request and Response or MQTT using Publish and Subscribe.
 
-<<<<<<< HEAD
-With exception to the EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the recipients based on the routings and subscriptions.
-=======
-With except to the EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the recipients based on the routings and subscribtions.
->>>>>>> origin/develop
+With exception of EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the recipients based on the routings and subscriptions.
 
 .The onion principle for a non-telemetry message
 image::ig2/image31.png[The onion principle for a non-telemetry message,543,313]
@@ -147,28 +143,16 @@ When using MQTT for a telemetry platform or a farming software with multiple acc
 Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one single MQTT broker.
 
 
-++++
-<p align="center">
- <img src="_images/general/router-devices1.png"><br>
- <i>Using router devices vs. not using router devices</i>
-</p>
-++++
+.Using router devices vs. not using router devices
+image::general/router-devices1.png[Using router devices vs. not using router devices]
 
-++++
-<p align="center">
- <img src="_images/general/router-devices2.png"><br>
- <i>Using router devices vs. communication using communication units</i>
-</p> 
-++++
+.Using router devices vs. communication using communication units
+image::general/router-devices2.png[Using router devices vs. communication using communication units]
 
 ====== Setup of router devices
 Router devices can be set up and managed within the agrirouter developer UI
-++++
-<p align="center">
- <img src="_images/general/router-devices-screen1.png"><br>
- <i>Router device management in the agrirouter developer UI</i>
-</p>
-++++
+.Router device management in the agrirouter developer UI
+image::general/router-devices-screen1.png[Router device management in the agrirouter developer UI]
 
 The setup and usage of router devices is described in the chapter xref:./router-devices.adoc[router devices].
 

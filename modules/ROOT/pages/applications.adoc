@@ -18,12 +18,8 @@ Applications are software products that have implemented an interface to the agr
 
 It’s not always obvious, to which category a new application belongs. To simplify the decision, DKE advices the following decision tree:
 
-++++
-<p align="center">
-<img src="_images/general/decisiontree_apptype.png" width="619px" height="366px"><br>
-<i>Decision Tree: What type of application do I create?</i>
-</p>
-++++
+.Decision Tree: What type of application do I create?
+image::general/decisiontree_apptype.png[Decision Tree: What type of application do I create?,619,366]
 
 For more information on the different types of applications, take a look at the xref:./ecosystem.adoc[ecosystem].
 
@@ -33,12 +29,8 @@ Applications must be certified before they can be provided to the public.
 
 After creating an agrirouter developer account in quality assurance environment, it is possible to register a communication unit, application or telemetry platform.
 
-++++
-<p align="center">
-<img src="_images/ig1\image5.png" width="642px" height="364px"><br>
-<i>agrirouter endpoint software management</i>
-</p>
-++++
+.agrirouter endpoint software management
+image::ig1\image5.png[agrirouter endpoint software management,642,364]
 
 
 
@@ -86,12 +78,8 @@ All required steps are available in Endpoint Software Management in the section 
 * Application versions (5)
 * Creation of new application version (6)
 
-++++
-<p align="center">
- <img src="_images/ig1\image7.png" width="467px" height="513px"><br>
-<i>agrirouter application registration</i>
-</p>
-++++
+.agrirouter application registration
+image::ig1\image7.png[agrirouter application registration,467,513]
 
 
 
@@ -99,11 +87,7 @@ When a new version has been created, the supported capabilities for this version
 
 After submitting, DKE will receive a notification and set the status to _Approved for Testing_ or _Approved_, so that instances of this endpoint can be onboarded. Please also send an email to support@my-agrirouter.com, once you created a new software version that shall be approved for testing.
 
-++++
-<p align="center">
- <img src="_images/ig1\image8.png" width="391px" height="126px">
-</p>
-++++
+image::ig1\image8.png[,391,126]
 
 
 Figure 8 agrirouter warning
@@ -127,11 +111,7 @@ The certification also ensures that there will be a unique ID for the applicatio
 
 The certification allows the agrirouter to check the state of the application with a given ID. The agrirouter needs that to make sure that only certified apps communicate with the productive platform.
 
-++++
-<p align="center">
- <img src="_images/ig1\image9.png" width="469px" height="172px">
-</p>
-++++
+image::ig1\image9.png[,469,172]
 
 
 Figure 9 Workflow for application certification; status flow

@@ -86,7 +86,7 @@ The whole chapter can be found xref:./applications.adoc[here]
 
 
 .A schema of the hierachy of agrirouter app instances
-image::._images/ig1/image11.png[A schema of the hierachy of agrirouter app instances,634,400]
+image::ig1/image11.png[A schema of the hierachy of agrirouter app instances,634,400]
 
 
 

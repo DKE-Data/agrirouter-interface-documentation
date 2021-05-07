@@ -1,0 +1,9 @@
+* xref:introduction.adoc[Introduction]
+* xref:commands/overview.adoc[Commands]
+** xref:commands/cloud.adoc[Telemetry Platforms]
+** xref:commands/ecosystem.adoc[Read the ecosystem]
+** xref:commands/endpoint.adoc[Endpoint management]
+** xref:commands/feed.adoc[Message feed]
+* Appendix
+** xref:abbreviations.adoc[Abbreviations]
+** xref:glossary.adoc[Glossary]

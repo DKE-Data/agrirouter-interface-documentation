@@ -24,12 +24,8 @@ image::./._images/ig1\image41.png[Endpoint Recording main view,407,213]
 image::./._images/ig1\image42.png[Endpoint Recording Overview,565,89]
 
 
-++++
-<p align="center">
- <img src="./._images/ig1\image43.png" width="204px" height="210px"><br>
-<i>Start Recording of messages &amp; commands</i>
-</p>
-++++
+.Start Recording of messages &amp; commands
+image::./._images/ig1\image43.png[Start Recording of messages &amp; commands,204,210]
 
 
 After recording started, the recording is displayed in the list of active records. 
@@ -48,12 +44,8 @@ Every account may store 10 recordings with a maximum size of 10 MB in a sum.
 
 In a developer account, records can be uploaded additionally to the recording functionalities, which are available in both account types; end user and developer.
 
-++++
-<p align="center">
- <img src="./._images/ig1\image45.png" width="640px" height="104px"><br>
-<i>Endpoint recording in a developer account</i>
-</p>
-++++
+.Endpoint recording in a developer account
+image::./._images/ig1\image45.png[Endpoint recording in a developer account,640,104]
 
 
 As a developer, you are able to replay recorded commands.

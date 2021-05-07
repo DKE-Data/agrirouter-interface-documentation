@@ -52,12 +52,8 @@ image::ig1\image46.png[Endpoint information used with agrirouter,586,335]
 
 The endpoint details show an extended list of information about the app instance and the status of communication:
 
-++++
-<p align="center">
- <img src="_images/general\endpoint_details_extended.png"><br>
- <i>Endpoint information used with agrirouter</i>
-</p>
-++++
+.Endpoint information used with agrirouter
+image::general\endpoint_details_extended.png[Endpoint information used with agrirouter]
 
 
 ==== General endpoint details

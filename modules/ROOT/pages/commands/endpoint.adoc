@@ -221,11 +221,7 @@ Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors,
 
 === Example
 
-++++
-<p align="center">
- <img src="./._images/ig2/image45.png" width="438px" height="174px">
-</p>
-++++
+image::./._images/ig2/image45.png[,438,174]
 
 
 

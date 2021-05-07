@@ -79,12 +79,8 @@ Those can be found here:
 
 The keys of the application can be found at the endpoint software overview when selecting an application and clicking on edit.
 
-++++
-<p align="center">
-<img src="_images/ig2/image11.png" width="362px" height="350px" /><br>
-<i>Private and public key of an application in agrirouter</i>
-</p>
-++++
+.Private and public key of an application in agrirouter
+image::ig2/image11.png[362,350,Private and public key of an application in agrirouter]
 
 
 

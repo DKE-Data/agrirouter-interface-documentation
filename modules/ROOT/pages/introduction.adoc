@@ -1,21 +1,14 @@
 :imagesdir: assets/images
-++++
-<p align="center">
- <img src="_images/agrirouter.svg" width="20%" height="20%" align="left"><br><br>
-</p>
-++++
+image::agrirouter.svg
 
 == What is the agrirouter?
 More information on agrirouter can be found xref:general.adoc[here]
 
 == Basic Concepts
 
-++++
-<p align="center">
- <a href="./docs/basic-concepts.adoc"><img src="_images/ig1\image10.png" width="642px" height="321px"></a><br>
- <i>The agrirouter ecosystem of members</i>
-</p>
-++++
+.The agrirouter ecosystem of members
+[link=./docs/basic-concepts.adoc]
+image::ig1\image10.png[The agrirouter ecosystem of members,642,321]
 
 As a developer it's also important to understand the xref:basic-concepts.adoc[basic concepts]
 
@@ -30,12 +23,8 @@ This documentation is an open source project. We invite everybody to open issues
 
 == Adding your solution to agrirouter
 In general, there are 4 major topics to add your software or hardware to the agrirouter ecosystem.
-++++
-<p align="center">
- <img src="_images/general/process_all.png"><br>
- <i>Integration process for agrirouter</i>
-</p>
-++++
+.Integration process for agrirouter
+image::general/process_all.png[Integration process for agrirouter]
 
 * xref:provider-agreement.adoc[Step 1 - Provider Agreement]
 * xref:marketplace.adoc[Step 2 - Marketplace]

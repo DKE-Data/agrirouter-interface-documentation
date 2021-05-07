@@ -4,11 +4,7 @@
 :toclevels: 4
 
 == General process
-++++
-<p align="center">
- <img src="._images/general/process_firstcontact.png"><br>
-</p>
-++++
+image::general/process_firstcontact.png[]
 For legal reasons, it is required that every app provider signs the app provider agreement. 
 You can get this document by contacting Dr. Ing Jens Möller, see link:https://my-agrirouter.com/en/company/contact/[the contacts page].
 

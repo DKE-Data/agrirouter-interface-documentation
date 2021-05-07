@@ -381,11 +381,3 @@ What you will find:
 * sensorAlternateID: 0525cc41-37c4-45b6-9c0d-8a12502c8faa
 * capabilityAlternateId: 79dfd918-7051-471a-9b73-3f3c23deca38
 * technicalMessageType: dke:list_endpoints_unfiltered
-====
-
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
-|====

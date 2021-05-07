@@ -39,20 +39,12 @@ In the developers UI, he has to:
 * Provide a redirect URL, to which agrirouter shall deliver the authorization result using HTTP 301 Browser redirect.(3)
 * Provide a public key for his encryption or create a key pair on the agrirouter frontend
 
-++++
-<p align="center">
- <img src="./._images/ig2/image10.png" width="636px" height="361px"><br>
-<i>Application overview</i>
-</p>
-++++
+.Application overview
+image::./._images/ig2/image10.png[Application overview,636,361]
 
 
-++++
-<p align="center">
- <img src="./._images/ig2/image11.png" width="362px" height="350px"><br>
-<i>Application settings</i>
-</p>
-++++
+.Application settings
+image::./._images/ig2/image11.png[Application settings,362,350]
 
 
 
@@ -72,12 +64,8 @@ image::./._images/ig2/image12.png[fuf.me is an alias for localhost,466,181]
 
 The authentication process works as follows:
 
-++++
-<p align="center">
- <img src="./._images/ig2/image13.png" width="619px" height="376px"><br>
-<i>Authorization Workflow</i>
-</p>
-++++
+.Authorization Workflow
+image::./._images/ig2/image13.png[Authorization Workflow,619,376]
 
 
 To better understand, what happens here, try the following:
@@ -168,12 +156,8 @@ The following parameters will be delivered in the GET-Queue:
 |(3) |error |String |If error is delivered, user declined connection!
 |============================================================================================================
 
-++++
-<p align="center">
- <img src="./._images/ig2/image15.png" width="542px" height="265px"><br>
-<i>Example of an authorization result</i>
-</p>
-++++
+.Example of an authorization result
+image::./._images/ig2/image15.png[Example of an authorization result,542,265]
 
 
 ==== Checking for errors
@@ -235,12 +219,8 @@ IMPORTANT: The account ID is used for invoicing. Therefore it should be saved wi
 
 To perform authorization for software that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
 
-++++
-<p align="center">
- <img src="./._images/ig1\image27.png" width="640px" height="155px"><br>
-<i>Authorization for non-cloud-applications</i>
-</p>
-++++
+.Authorization for non-cloud-applications
+image::./._images/ig1\image27.png[Authorization for non-cloud-applications,640,155]
 
 
 [IMPORTANT]

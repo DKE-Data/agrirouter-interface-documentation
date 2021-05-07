@@ -16,11 +16,7 @@ image::ig1\image47.png[my-agrirouter.com Marketplace,633,307]
 Some examples of DKE partners are available at https://my-agrirouter.com/en/marketplace/apps/ .
 
 == General process
-++++
-<p align="center">
- <img src="_images/general/process_marketplace.png"><br>
-</p>
-++++
+image::general/process_marketplace.png[]
 
 This process can be performed in parallel to the xref:./integration-qa.adoc[integration process in QA].
 

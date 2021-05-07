@@ -81,12 +81,8 @@ In general, the life cycle of an endpoint consists of 3 steps:
 === Concept of a telemetry platform
 
 When developing a telemetry platform, the xref:./telemetry-platform-concepts.adoc[concepts of a telemetry platform] should be understood.
-++++
-<p align="center">
-<img src="_images/ig2\telemetryconcept.png" width="619px" height="366px"><br>
-<i>Endpoints of a Telemetry Platform</i>
-</p>
-++++
+.Endpoints of a Telemetry Platform
+image::ig2\telemetryconcept.png[Endpoints of a Telemetry Platform,619,366]
 
 == Terms and short descriptions
 
