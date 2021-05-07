@@ -25,7 +25,7 @@ To add the certificates to your local trust store:
 
 * First copy the .pem-File(s) to the location of JAVA_HOME\lib\security (your local JRE-installation).
 * Start a console and navigate to JAVA_HOME\lib\security (cmd.exe on windows; **Important**: Admin rights might be required.)
-* Run the following command, where "changeit" should be the keyword of your keystore (default, if you did not change it)
+* Run the following command, where "changeit" should be the keyword of your keystore (default  if you did not change it)
 
 [source,bash]
 ----

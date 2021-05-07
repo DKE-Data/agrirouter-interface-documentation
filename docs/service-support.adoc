@@ -145,11 +145,11 @@ The agrirouter start page provides a tile "Remote Maintenance" for every user th
 
 == Getting in contact with the agrirouter support team as a developer
 
-The agrirouter support team provides support for developers for their integration with the agrirouter. To ask a question, simply send an email to support@my-agrirouter.com. Please understand that agrirouter support team only provides agrirouter specific answers, no answers specialized for your coding language, environment or used frameworks. You might however be lucky to get such a specific answer, if agrirouter support team has one, so feel free to mention this information as well.
+The agrirouter support team provides support for developers for their integration with the agrirouter. To ask a question, simply send an email to support@my-agrirouter.com. Please understand that the agrirouter support team only provides agrirouter specific answers, no answers specialized for your coding language, environment or used frameworks. You might however be lucky to get such a specific answer if agrirouter support team has one, so feel free to mention this information as well.
 
 === Required information
 
-Helping with your request is easier, if you provide all information necessary to check the problem. Please check, which of the following topics fits your problem; it could even fit multiple problems
+Helping with your request is easier if you provide all information necessary to check the problem. Please check, which of the following topics fits your problem; it could even fit multiple problems
 
 ==== For endpoint related incidents
 
@@ -174,7 +174,7 @@ All of the above can be found in the endpoint details by clicking the ‘Info’
 
 ==== For commands related incidents
 
-Please provide the commands sent from and received by the endpoint, if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see link:./tools/endpoint-recording.adoc[here].
+Please provide the commands sent from and received by the endpoint if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see link:./tools/endpoint-recording.adoc[here].
 
 ==== For account related incidents
 
@@ -199,7 +199,7 @@ Having a good idea to improve agrirouter? Don’t hesitate to send us an email t
 
 === Message formats
 
-If a message format is missing, please send us an email to support@my-agrirouter.com. DKE will check, if there is a common need for this. Please provide the following information with any request:
+If a message format is missing, please send us an email to support@my-agrirouter.com. DKE will check if there is a common need for this. Please provide the following information with any request:
 
 * *Name:* What’s the name of the new format?
 
@@ -209,12 +209,12 @@ If a message format is missing, please send us an email to support@my-agrirouter
 
 * *Documentation:* Is the format already documented? Please provide information on the required standard.
 
-* *Ability of participation:* If DKE recognizes, that the format is not yet standardized or that there are multiple possible formats, it’s very likely, that DKE will request you and other requesters to agree on a common format. Please state, that/if you are wanting to participate in such a group.
+* *Ability of participation:* If DKE recognizes that the format is not yet standardized or that there are multiple possible formats, it’s very likely that DKE will request you and other requesters to agree on a common format. Please state that/if you are wanting to participate in such a group.
 
 * *Timeline:* Please provide a timepoint, for which you would need the new format
 
 
-agrirouter support team will get back to you on your request, please be informed, that this could take a while. For test purposes, you can however start your development with a proprietary format.
+agrirouter support team will get back to you on your request, please be informed that this could take a while. For test purposes, you can however start your development with a proprietary format.
 
 
 

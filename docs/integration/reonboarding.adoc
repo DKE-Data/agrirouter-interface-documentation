@@ -14,7 +14,7 @@ Internally, the endpoint gets the same identification (deviceAlternateId, sensor
 
 [IMPORTANT]
 ====
-Reonboarding is major as certificates are only valid for currently *one year*
+Reonboarding is very important as certificates are only valid for currently *one year*
 ====
 
 === Why should an endpoint be re-onboarded?
@@ -24,7 +24,7 @@ After that, the respective endpoint will still be displayed in the Control Cente
 At this point, the same endpoint needs to be re-onboarded so that it can be used for another year. 
 
 
-Additionally, if an app instance loses parts of its onboarding information, it can be reonboarded using the onboarding process.
+Additionally if an app instance loses parts of its onboarding information, it can be reonboarded using the onboarding process.
 
 Also, the endpoint URLs might change. Even though, this is currently not planned, it could be a result of scaling.
 

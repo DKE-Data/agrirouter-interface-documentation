@@ -17,7 +17,7 @@ For a new certification version capabilities can never be removed. Neither can a
 
 == Out of focus
 
-The certification will not check if an application is able to work with the data sent over the agrirouter. The process will only check, if the application can send and receive data for the technical message types which were selected for the certification version earlier on.
+The certification will not check if an application is able to work with the data sent over the agrirouter. The process will only check  if the application can send and receive data for the technical message types which were selected for the certification version earlier on.
 
 == Certification companies
 
@@ -152,7 +152,7 @@ a|
 * The application instance uses the same external Id as it has used for onboarding.
 * New credentials can be provided to communicate with agrirouter.
 * After a successful reonboarding, the endpoint has to communicate with agrirouter using those new credentials.
-* An application instance can also be reonboarded with the same id, if it was deleted in the agrirouter UI or revoked before.
+* An application instance can also be reonboarded with the same id if it was deleted in the agrirouter UI or revoked before.
 * In case of the following errors, an error message is required:
 ** Wrong account: During reonboarding, the user is logged in with a different agrirouter account than before. This should result in a new endpoint onboarding in a different account.
 
@@ -238,7 +238,7 @@ a|
 === Applications sending messages
 [REMARK]
 =====
-These tests are only required, if your application can send messages.
+These tests are only required if your application can send messages.
 =====
 
 [cols="1,2,9",options="header",]
@@ -279,7 +279,7 @@ a|
 === Applications receiving messages
 [REMARK]
 =====
-These tests are only required, if your application can receive data.
+These tests are only required if your application can receive data.
 =====
 
 [cols="1,2,9",options="header",]
@@ -303,8 +303,8 @@ a|
 |link:./integration/push-notification.adoc[Push notifications]
 |Always (if supported).
 a|
-* It's tested, if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message].
-* It's tested if pushed messages are confirmed by the application after receiving them.
+* It is tested if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message].
+* It is tested if pushed messages are confirmed by the application after receiving them.
 * There has to be a concept for the case if push notifications are not delivered from the AR because an outage appeared or the push notification gets lost in another way. We recommend to check the feed at least once a day for messages that were not delivered via push notification.
 |====
 
@@ -365,7 +365,7 @@ a|
 a| All errors that show up during communication with agrirouter need to be documented by the application to be certified.
 
 a|
-* Application have to document or display, if any error occurs in communication with agrirouter. In particular:
+* Application has to document or display any error that occurs in communication with agrirouter. In particular:
 ** agrirouter system messages
 ** agrirouter validation messages
 
@@ -411,7 +411,7 @@ If your software supports REST with native Protobuf, sending and receiving of th
 
 == Recertification cases
 
-An application has to be re-certified, if one of the following things apply:
+An application has to be re-certified if one of the following things apply:
 
 * A new technical message type and/or direction is supported by your application
 * The basic message protocol (MQTT or REST) has changed

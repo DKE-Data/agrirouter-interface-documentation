@@ -42,7 +42,7 @@ If your application has access to the GPS time, this should be enough to keep th
 Even though, this is not relevant for a proper communication with the agrirouter, it will avoid timing problems in the analysis of data with applications that receive your data.
 
 
-* If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data, if you have different times
+* If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data if you have different times
 ====
 
 

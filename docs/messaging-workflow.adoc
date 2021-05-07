@@ -25,7 +25,7 @@ Every application instance communicates to the agrirouter in sessions. The first
 
 These capabilities must match those stated in the application version certification or a subset of them.
 
-If the endpoint wants to ‘listen’ to certain messages, it must subscribe to the appropriate technical message types, so that published messages get routed to this endpoint. Messages however will only get routed, if there is a routing for that
+If the endpoint wants to ‘listen’ to certain messages, it must subscribe to the appropriate technical message types, so that published messages get routed to this endpoint. Messages however will only get routed if there is a routing for that
 
 Every request sent to the agrirouter inbox will be acknowledged by the agrirouter, indicating whether the request could be processed successfully, with warning or it could not be processed because of errors; in that case, an error code and an error message in English are returned.
 

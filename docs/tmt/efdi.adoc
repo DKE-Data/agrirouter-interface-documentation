@@ -45,7 +45,7 @@ Access to the AEF repository *for AEF members* can be requested at the AEF Offic
 
 === Result
 
-The result indicates, if the teamset could be forwarded to an addressed endpoint or – if it was published – if there was a subscribed endpoint, who received the message. If no endpoint received the message, there will be an ACK_WITH_FAILURE
+The result indicates if the teamset could be forwarded to an addressed endpoint or – if it was published – if there was a subscribed endpoint, who received the message. If no endpoint received the message, there will be an ACK_WITH_FAILURE
 
 [NOTE]
 ====

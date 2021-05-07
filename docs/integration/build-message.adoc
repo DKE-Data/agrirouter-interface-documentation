@@ -42,7 +42,7 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 
 [NOTE]
 ====
-Sending multiple messages in one request is only possible, if the overall size of all messages payloads is below the chunking maximum size value.
+Sending multiple messages in one request is only possible if the overall size of all messages payloads is below the chunking maximum size value.
 ====
 
 The overall body of the message to the inbox shall not include more payload than allowed without chunking. So, when a message is too big for one request and needs to be chunked, these chunks have to be sent in multiple messages, they can not be added as multiple chunks to one message.
@@ -217,7 +217,7 @@ The message needs to be packaged into a message container that includes the mess
 
 === Encode in Base64
 
-This step is only required, if your app instance communicates with its endpoint using MQTT or JSON based REST.
+This step is only required if your app instance communicates with its endpoint using MQTT or JSON based REST.
 
 Encode the serialized binary protobuf stream into a base64 string. All further steps will be done in JSON from now on.
 

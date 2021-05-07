@@ -35,7 +35,7 @@ Every App Instance can call for a list of endpoints that are capable of receivin
 |2 |direction |Direction |The direction, the routing shall support
 |================================================================================================
 
-The direction describes, if messages shall be sendable or receivable:
+The direction describes if messages shall be sendable or receivable:
 
 [cols=",",options="header",]
 |===================
@@ -99,7 +99,7 @@ The Message object describes technical message type and direction.
 |2 |direction |Direction |The direction, the routing shall support
 |================================================================================================
 
-The direction describes, if messages shall be sendable or receivable:
+The direction describes if messages shall be sendable or receivable:
 
 [cols=",",options="header",]
 |===================
@@ -122,7 +122,7 @@ The direction describes, if messages shall be sendable or receivable:
 
 If your application can send messages without user interaction, it is adviced to update the endpoint list in a cyclic manor, e.g. every 5 minutes.
 
-If your application only sends messages, if a user is present, it is adviced to update the endpoint list depending on the user interaction, e.g. manually with an "update" button or integrated in another user interaction like opening the destination selection dialog.
+If your application only sends messages if a user is present, it is adviced to update the endpoint list depending on the user interaction, e.g. manually with an "update" button or integrated in another user interaction like opening the destination selection dialog.
 
 __These are advices, not requirements__
 ====

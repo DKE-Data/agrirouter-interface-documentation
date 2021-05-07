@@ -108,7 +108,7 @@ In case of a chunked message, the meta information will always be available in e
 [NOTE]
 =====
 There is no paging mechanism available in Push notifications
-All messages will be delivered in responses with a maximum size of 1 MB. So, as long as you receive push notifications, you should keep on polling, if there are more of them.
+All messages will be delivered in responses with a maximum size of 1 MB. So, as long as you receive push notifications, you should keep on polling if there are more of them.
 
 =====
 

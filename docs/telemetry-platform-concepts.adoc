@@ -2,7 +2,7 @@
 
 == Introduction
 
-Telemetry Platforms are cloud systems, that bundle the communication of multiple communication units and are also used to translate the proprietary communication between the communication units and the cloud platform to the agrirouter communication protocol described in this documentation. 
+Telemetry Platforms are cloud systems that bundle the communication of multiple communication units and are also used to translate the proprietary communication between the communication units and the cloud platform to the agrirouter communication protocol described in this documentation. 
 
 ++++
 <p align="center">
@@ -16,7 +16,7 @@ Telemetry Platforms are cloud systems, that bundle the communication of multiple
 
 A telemetry platform can communicate in behalf of itself and all of its Virtual CUs.
 All communication is performed between that telemetry platform and its in- and outbox.
-However, it is important to understand that the telemetry platform itself as well as each virtual CU has its own Feed, EndpointList, Subscription and Capabilities. To communicate with these specific part of the endpoint, the sensorAlternateId of the relevant partner (telemetry platform itself or one of its Virtual CUs) has to be used. For example, if th feed of Virtual CU 1 shall be read, the message has to include the sensorAlternateId of this Virtual CU and not the one of the platform.
+However, it is important to understand that the telemetry platform itself as well as each virtual CU has its own Feed, EndpointList, Subscription and Capabilities. To communicate with these specific part of the endpoint, the sensorAlternateId of the relevant partner (telemetry platform itself or one of its Virtual CUs) has to be used. For example if the feed of Virtual CU 1 shall be read, the message has to include the sensorAlternateId of this Virtual CU and not the one of the platform.
 
 The telemetry platform handles the on- and offboarding of virtual CUs, therefore, the sensorAlternateId in every on- and offboarding message for virtual CUs has to be the sensorAlternateId of the telemetry platform itself.
 

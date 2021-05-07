@@ -152,7 +152,7 @@ The whole chapter can be found link:./ecosystem.adoc[here].
 
 **Routings:**
 
-* Messages are only delivered, if there is a routing for that.
+* Messages are only delivered if there is a routing for that.
 
 * Routings are used to control the message flow and disallow wrong message flow.
 
@@ -182,7 +182,7 @@ The whole chapter can be found link:./ecosystem.adoc[here].
 
 * Subscriptions from a connected account can be used as subscriptions for the endpoint representing this account.
 
-* For connected accounts, messages are only delivered, if routings are created in both users’ accounts.
+* For connected accounts, messages are only delivered if routings are created in both users’ accounts.
 
 ====
 

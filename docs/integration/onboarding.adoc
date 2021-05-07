@@ -56,13 +56,13 @@ The following parts of onboarding are *not* required for CU onboarding:
 
 Onboarding virtual CUs through a telemetry platform is done using a command. This is described in link:../commands/cloud.adoc[Cloud solution commands].
 
-From the end user’s perspective, it is mostly dependend on the telemetry platform, if there is any selection mechanism or if it is done automatically.
+From the end user’s perspective, it is mostly dependent on the telemetry platform if there is any selection mechanism or if it is done automatically.
 
 == Creating a registration code
 
 === Using the agrirouter UI
 
-The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit” in agrirouters’ control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers . A CU needs an interface to input this registration code.
+The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit" in agrirouter's control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers. A CU needs an interface to input this registration code.
 
 ++++
 <p align="center">
@@ -167,7 +167,7 @@ Agrirouter will look up the public key for the app id specified and verify the s
 
 == Verification Request
 
-The verification request is used to actually check, if the endpoint is for the desired application and account before actually onboarding it.
+The verification request is used to actually check if the endpoint is for the desired application and account before actually onboarding it.
 
 === General
 
@@ -283,7 +283,7 @@ For a successful result, the body will include a JSON object like this:
 }
 ----
 
-It includes the accountId, so that an app provider can check, if this accountId might already be known. For apps that can be onboarded only once (like an FMIS, where it doesn’t make any sense to have 2 of the same kind), this would mean that onboarding is not needed.
+It includes the accountId, so that an app provider can check if this accountId might already be known. For apps that can be onboarded only once (like an FMIS, where it doesn’t make any sense to have 2 of the same kind), this would mean that onboarding is not needed.
 
 ===== Failure
 

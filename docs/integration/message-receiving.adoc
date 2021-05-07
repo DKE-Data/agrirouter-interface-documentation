@@ -176,7 +176,7 @@ The result of a request to the outbox is an *array* of messages each including t
 |Name |Type |Description
 |capabilityAlternateId |String |Equals value from onboarding
 |sensorAlternateId |String |Source of the message
-|CommandResponseList |String |The Base64 encoded message or a protobuf object, if agrirouter sent a protobuf object.
+|CommandResponseList |String |The Base64 encoded message or a protobuf object if agrirouter sent a protobuf object.
 |=======================================================================================================
 
 For a full documentation of this Message format, see the link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/c327148f820e4d3888fb4b73c7f0ef80.html?q=com.sap.iotservices.common.protobuf.gateway[SAP documentation].

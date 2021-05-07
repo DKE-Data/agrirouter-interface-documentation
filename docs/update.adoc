@@ -5,7 +5,7 @@
 :toclevels: 4
 
 == General
-Changing the software version of your app might require a change in agrirouter, if you decide to add new technical message types.
+Changing the software version of your app might require a change in agrirouter if you decide to add new technical message types.
 
 === When is a new certification version required?
 agrirouter is not interested in any internal changes of your software.
@@ -22,7 +22,7 @@ After update, the app instance has to inform agrirouter about its new capabiliti
 === Safe updates
 When updating your software, the onboarding information received from link:./integration/onBoarding.adoc[onboarding] must be stored so that it is not deleted during update.
 
-If the data gets lost during update, your software can still perform the link:./integration/reonboarding.adoc[reonboarding], if you can reconstruct the uniqueID used in onboarding, but this might require user interaction.
+If the data gets lost during update, your software can still perform the link:./integration/reonboarding.adoc[reonboarding] if you can reconstruct the uniqueID used in onboarding, but this might require user interaction.
 
 To use new capabilities after a software update that includes a new CertificationVersionId, an updated capabilities-request using the new CertificationVersionId is required.
 

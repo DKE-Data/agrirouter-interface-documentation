@@ -41,11 +41,11 @@ Every endpoint can send messages to specific endpoints and/or publish them.
 
 Every end user can provide routings to allow this message delivery. Per default, no routings are set and therefore, the delivery is disallowed. This can be changed easily by the end user. See the link:https://lb.my-agrirouter.com[Learning box] for further details.
 
-If messages are sent published, they are only delivered to those allowed endpoints that subscribed for this message type. If messages are sent directly and recipients are mentioned in the address lists, they are delivered, if the endpoint supports this message type and if there is a routing allowing the delivery.
+If messages are sent published, they are only delivered to those allowed endpoints that subscribed for this message type. If messages are sent directly and recipients are mentioned in the address lists, they are delivered if the endpoint supports this message type and if there is a routing allowing the delivery.
 
 == Message addressing
 
-Messages can be directly addressed to one or more endpoints. They can also be published to send the message to all subscribed endpoints. It is remarked in the message header, if the message is directly sent, published, or if both techniques shall be used. agrirouter will take care of not delivering a message twice to the same endpoint.
+Messages can be directly addressed to one or more endpoints. They can also be published to send the message to all subscribed endpoints. It is remarked in the message header if the message is directly sent, published, or if both techniques shall be used. agrirouter will take care of not delivering a message twice to the same endpoint.
 
 ++++
 <p align="center">
@@ -57,7 +57,7 @@ Messages can be directly addressed to one or more endpoints. They can also be pu
 === Sending messages to machines
 As a machine has its own endpoint in the agrirouter account, it is possible to address messages to a machine.
 
-To deliver messages that are addressed to a machine, agrirouter needs to know, which application instance (CU or Virtual CU) currently is connected to that machine. Therefore, delivery of messages to a machine can only work, if the connected CU or Virtual CU properly reports its teamset including the EFDI Device Description.
+To deliver messages that are addressed to a machine, agrirouter needs to know, which application instance (CU or Virtual CU) currently is connected to that machine. Therefore, delivery of messages to a machine can only work if the connected CU or Virtual CU properly reports its teamset including the EFDI Device Description.
 The command to define a teamset can be found link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[here].
 
 Currently, this is an optional feature of Virtual CU or CUs and not required for a certification.
@@ -93,7 +93,7 @@ The following example shall describe the terms and the way of a message through 
 
 * The message is addressed to another app instances endpoint.
 
-* agrirouter forwards this message to the feed of the addressed endpoint, if there is a routing.
+* agrirouter forwards this message to the feed of the addressed endpoint if there is a routing.
 
 * The addressed App Instance is than able to request agrirouter to pull this message from its endpoints feed to its endpoints outbox.
 
@@ -126,7 +126,7 @@ Information types are an abstraction of the technical message types to simplify 
 
 One technical message type can be part of multiple Information types.
 
-Each technical message type must be assigned to an information type, which represents its meaning and purpose. The technical message types Bitmap, PNG and JPEG for example are summarized as Information Type “Image”. This means that endpoints can send Bitmaps, PNGs and JPEGs, if a routing for Images exists.
+Each technical message type must be assigned to an information type, which represents its meaning and purpose. The technical message types Bitmap, PNG and JPEG for example are summarized as Information Type “Image”. This means that endpoints can send Bitmaps, PNGs and JPEGs if a routing for Images exists.
 
 Technical message types are defined by groups outside the agrirouter project. If message types are missing, DKE will add a useful standardized message type. DKE however will not standardize any formats.
 
@@ -176,7 +176,7 @@ The steps for this – in general nd with given routings – are:
 
 == Exchange with other user accounts
 
-Messages can be sent to other users’ accounts, if this users account is connected with the agrirouter account of the sending endpoint. A connected account is represented as an endpoint in the users agrirouter account.
+Messages can be sent to other users’ accounts if this users account is connected with the agrirouter account of the sending endpoint. A connected account is represented as an endpoint in the users agrirouter account.
 
 For guidance, how to connect 2 accounts, see the link:https://lb.my-agrirouter.com[Learning box].
 
