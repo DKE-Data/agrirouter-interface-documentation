@@ -6,20 +6,20 @@
 
 == General communication convention
 
-Communication with the agrirouter includes communication with inbox AND outbox, unimportant, if an app only sends messages or only consumes messages. Every message or command is sent to the inbox, results are always delivered through the outbox.
+Communication with the agrirouter includes communication with inbox AND outbox, regardless whether an app only sends messages or only consumes messages. Every message or command is sent to the inbox, results are always delivered through the outbox.
 
-== Prequisits for communication
+== Prerequisites for communication
 
-Every communication is introduced by the App Instance. The agrirouter endpoint will never contact the app instance.
+Every communication is initiated by the App Instance. The agrirouter endpoint will never contact the app instance.
 
-After application registration, the communication is secured using the SSL certificate retrieved during the onboarding process. The agrirouter provides PK12 certificates as well as PEM certificates which can be set within the SSL context of the request to ensure authenticated communication with the agrirouter.
+After application registration, the communication is secured using the SSL certificate retrieved during the onboarding process. The agrirouter provides PKCS12 certificates as well as PEM certificates which can be set within the SSL context of the request to ensure authenticated communication with the agrirouter.
 
-Once after the validation has happened, the agrirouter provides all necessary security informations to establish a messaging connection. The developer is obliged to store this certificate, or the tokens secured and encrypted within the application. 
+After the validation has happened, the agrirouter provides all necessary security information to establish a messaging connection. The developer is obliged to store this certificate or the tokens secured and encrypted within the application. 
 Receiving the certificate is described in link:integration/onboarding.adoc[onboarding] .
 
-== Different layers, “The onion principle”
+== Different layers, the "onion principle”
 
-agrirouter is a platform, that is mostly used to transport messages *through* it and not towards it.
+agrirouter is a platform that is mostly used to transport messages *through* it and not towards it.
 
 Therefore:
 
@@ -31,25 +31,23 @@ Therefore:
 
 **** the protocol layer of REST using Request and Response or MQTT using Publish and Subscribe.
 
-With except to the EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the receipants based on the routings and subscribtions.
+With exception to the EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the recipients based on the routings and subscriptions.
 
 ++++
 <p align="center">
  <img src="./../assets/images/ig2/image31.png" width="543px" height="313px"><br>
- <i>The onion principal for a non-telemetry message</i>
+ <i>The onion principle for a non-telemetry message</i>
 </p>
 ++++
 
 
-An exception is the EFDI telemetry messages.
-
-The device descriptions are needed by the agrirouter to
+For EFDI telemetry message, the device descriptions are needed by the agrirouter to
 
 * determine the relevant CU when sending a Message directly to a machine
 * filter for DDIs that are allowed to be sent to specific endpoints
 * be sent to endpoints, that subscribe for telemetry data, after the device description was already sent
 
-The life telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
+Life telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
 
 ++++
 <p align="center">
@@ -62,16 +60,16 @@ The life telemetry data is analysed, so that a filtering for value categories li
 
 [NOTE]
 ====
-Even if a client uses native protobuf for the communication instead of JSON, a command has to be put into a payload wrapper, that mentions the message/command type.
+Even if a client uses native protobuf for communication instead of JSON, a command has to be put into a payload wrapper, that mentions the message/command type.
 ====
 == The protocol layer
 
-The protocol layer describes the basic communicaton layer. All agrirouter communicaton is based on a TCP-IP communication.
+The protocol layer describes the basic communication layer. All agrirouter communication is based on a TCP-IP communication.
  When onboarding an endpoint, the developer can choose between REST and MQTT.
 
 === REST
 
-REST is a wellknown principle for online apis. For more information on REST, please see following recources:
+REST is a well-known principle for online APIs. For more information on REST, please see following resources:
 
 * https://en.wikipedia.org/wiki/Representational_state_transfer
 * https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340
@@ -85,7 +83,7 @@ REST is based on single, request only methods, therefore, the agrirouter cannot 
 
 ==== Communication Workflow with the Inbox
 
-Using REST, an app instance just receives a HTTP 200 “OK” Response. The App Instance sends a HTTP Post request over an SSL secured Connection.
+Using REST, an app instance just receives an HTTP 200 “OK” Response. The App Instance sends a HTTP Post request over an SSL secured connection.
 
 ++++
 <p align="center">
@@ -110,7 +108,7 @@ Make sure to meet the link:./messaging-workflow.adoc#request-sending-frequency[r
 
 === MQTT
 
-MQTT is a subscription based protocol. Therefore, the client can be informed by agrirouter, that new messages are available. For further information, please refer to one of the following recources:
+MQTT is a subscription based protocol. Therefore, the client can be informed by agrirouter that new messages are available. For further information, please refer to the following recource:
 
 * https://mqtt.org/
 
@@ -120,11 +118,11 @@ agrirouter provides one MQTT Server per Endpoint, so there is no danger or chanc
 
 ==== General setup
 
-An MQTT Connection requires 2 types of Certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
+An MQTT Connection requires 2 types of certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
 
 This is required to setup an MQTT Connection over SSL.
 
-Additionally, TLS needs to be activated and the TLS-Certificate can either be the certificate received during link:./integration/onboarding.adoc[onboarding] or from the link:./router-devices.adoc[Router Devices].
+Additionally, TLS needs to be activated and the TLS certificate can either be the certificate received during link:./integration/onboarding.adoc[onboarding] or from the link:./router-devices.adoc[Router Devices].
 
 ==== Communication with the Inbox
 
@@ -153,7 +151,7 @@ If there are messages available in the outbox, agrirouter will simply publish th
 
 [IMPORTANT]
 ====
-This only appears to command results, not to messages, that are sent to the feed by another app instance. 
+This only applies to command results, not to messages that are sent to the feed by another app instance. 
 Those messages still have to be requested through the inbox but are automatically delivered through the outbox afterwards.
 
 **Exception**: If link:./integration/push-notification.adoc[Push Notifications] are activated, the messages are delivered without a special feed request.
@@ -161,7 +159,7 @@ Those messages still have to be requested through the inbox but are automaticall
 
 
 ==== Router Devices
-When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced a **router devices** which allows to use just one connection for multiple, virtual endpoints.
+When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced a **router device** which allows to use just one connection for multiple, virtual endpoints.
 
 ===== General function
 Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one single MQTT broker.
@@ -178,7 +176,7 @@ Without router devices, an application would need to create multiple MQTT connec
 <p align="center">
  <img src="./../assets/images/general/router-devices2.png"><br>
  <i>Using router devices vs. communication using communication units</i>
-</p>
+</p> 
 ++++
 
 ====== Setup of router devices
@@ -210,7 +208,7 @@ Both protocols have several advantages and disadvantages. To select the right pr
 
 Every app provider is free to select his prefered format from the list above.
 
-DKE however advices to use MQTT using RouterDevices for any application that handles multiple endpoints (e.g. Telemetry Platforms, but also Farming Software, that is a cloud software and communicates in behalf of multiple accounts) or sends data in a frequency higher than 1 message per minute. 
+DKE however advises to use MQTT using RouterDevices for any application that handles multiple endpoints (e.g. Telemetry Platforms, but also Farming Software, that is a cloud software and communicates on behalf of multiple accounts) or sends data at a frequency higher than 1 message per minute. 
 
 
 == Abstraction of communication workflows
@@ -258,7 +256,7 @@ If a message is not correctly encoded, so that the agrirouter cannot decode it, 
 
 == Flow for sending messages
 
-Sending messages to the agrirouter creates an ACK-Message in the outbox of the agrirouter
+Sending messages to the agrirouter creates an ACK message in the outbox of the agrirouter
 
 ++++
 <p align="center">

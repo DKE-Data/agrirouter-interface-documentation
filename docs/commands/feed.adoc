@@ -206,7 +206,7 @@ As a telemetry platform can receive messages for multiple Virtual CUs, the recei
 |7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
 |8 |current_chunk |int64 |The chunk counter of the current chunk
 |9 |created_at |google.protobuf.Timestamp |The time at which the message was inserted into the endpoints feed within the agrirouter
-|10 |metadata |agrirouter.commons.Metadata |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|10 |metadata |agrirouter.commons.Metadata |Additional metadata information helping to differentiate between messages of the same type. 
 |=====================================================================================================================================
 
 
