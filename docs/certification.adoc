@@ -17,7 +17,7 @@ For a new certification version capabilities can never be removed. Neither can a
 
 == Out of focus
 
-The certification will not check if an application is able to work with the data sent over the agrirouter. The process will only check  if the application can send and receive data for the technical message types which were selected for the certification version earlier on.
+The certification will not check if an application is able to work with the data sent over the agrirouter. The process will only check if the application can send and receive data for the technical message types which were selected for the certification version earlier on.
 
 == Certification companies
 
@@ -49,7 +49,7 @@ The following information is not required to start the certification but will be
 
 * Message protocol of the application (MQTT / REST).
 * Message format of the application (JSON / Native Protobuf).
-* The capabilities of the application including link:./tmt/overview.adoc[the technical message types] and  sending directions.
+* The capabilities of the application including link:./tmt/overview.adoc[the technical message types] and sending directions.
 * A list of link:./commands/overview.adoc[all commands] that are used by the application.
 * Is this an initial certification or a recertification for a new version of an existing software?
 * For some test case there has to be at least one extracted original message (as JSON or Base64-Encoded native Protobuf) provided to the certification company.
@@ -163,7 +163,7 @@ a|
 * A new endpoint representing the VCU shows up in the certification account.
 * The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
 * A notification is shown in the UI of the telemetry platform or the VCU that informs the user about the successfull onboarding.
-* In case of an error, a  notification is shown in the UI of the telemetry platform or the VCU that informs the user about the reason.
+* In case of an error, a notification is shown in the UI of the telemetry platform or the VCU that informs the user about the reason.
 
 |link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
 |Telemetry platform
@@ -373,12 +373,12 @@ a|
 * Error messages shown to an end user should include the error code and a self-defined message of the application provider (not just the SAP error message).
 
 | Buffering
-| If the Internet connection gets lost or agrirouter is not available for another reason, the application instance should buffer data that needs to be sent when the connection is reestablished.
+| If the Internet connection gets lost or agrirouter is not available for another reason, the application instance should buffer data that needs to be sent when the connection is re-established.
 
 The application instance needs to check for reconnection on its own.
 a|
-* It's checked, if an application instance keeps trying to communicate with agrirouter, when it's not available.
-* It is checked, if an application instance of an application to be certified will retry to send a dataset that should have been sent, when the agrirouter was offline. This applies for EFDI as well as for every other technical message type
+* It is checked if an application instance keeps trying to communicate with agrirouter when it is not available.
+* It is checked if an application instance will retry to send a dataset that should have been sent when the agrirouter was offline. This applies for EFDI as well as for every other technical message type
 
 | Test coverage for Telemetry platform
 a| For Telemetry platform, it will be checked in advance of the test, which functionalities are required for the platform itself and which functionalities are required for its Virtual CUs.

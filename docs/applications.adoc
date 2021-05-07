@@ -144,7 +144,7 @@ The app provider has to create a new version in the agrirouter user interface. T
 
 Once he selected all the desired capabilities for the new version, he can submit this version and the status changes to _submitted._
 
-DKE initially decides  if this version can be certified and sets the status to _Approved for testing_.
+DKE initially decides if this version can be certified and sets the status to _Approved for testing_.
 
 An application developer and his listed test customers can now onboard instances of the new application version.
 
