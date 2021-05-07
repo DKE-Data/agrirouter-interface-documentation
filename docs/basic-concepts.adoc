@@ -26,7 +26,7 @@ In each agrirouter account, there are different types of communication partners,
 </p>
 ++++
 
-The ist of link:./ecosystem.adoc#applications[Application Types] helps to find out, which type of application you should create.
+The list of link:./ecosystem.adoc#applications[Application Types] helps to find out, which type of application you should create.
 
 === Endpoints
 Each app instance communicates with its corresponding endpoint in the agrirouter.
@@ -69,13 +69,13 @@ The message exchange describes the exchange of messages between application inst
 </p>
 ++++
 
-The basic concepts of message exchanged are described in the link:./message-exchange.adoc[concepts of message exchange]
+The basic concepts of message exchange are described in the link:./message-exchange.adoc[concepts of message exchange].
 This chapter handles, for example, the concepts of addressing members of the ecosystem.
 
 
 
 === Life cycle 
-In general, the life cycle of an Endpoint consists of 3 steps:
+In general, the life cycle of an endpoint consists of 3 steps:
 
 * link:./integration/onboarding.adoc[Onboarding]
 * Communication (see above)
@@ -102,11 +102,11 @@ When developing a telemetry platform, the link:./telemetry-platform-concepts.ado
 
 == Terms and short descriptions
 
-A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here]
+A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here].
 
-A list of shortings can be found link:./shortings.adoc[here]
+A list of shortings can be found link:./shortings.adoc[here].
 
-A glossary can be found link:./glossary.adoc[here]
+A glossary can be found link:./glossary.adoc[here].
 
 There are several ids required for communication, a list of descriptions can be found link:./ids-and-definitions.adoc[here].
 
