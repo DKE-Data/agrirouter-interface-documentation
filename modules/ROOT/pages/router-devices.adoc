@@ -1,5 +1,5 @@
 = Router Devices
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -12,14 +12,14 @@ When using MQTT for a telemetry platform or a farming software with multiple acc
 
 ++++
 <p align="center">
- <img src="./../assets/images/general/router-devices2.png"><br>
+ <img src="_images/general/router-devices2.png"><br>
  <i>Using Router devices vs. not using router devices</i>
 </p>
 ++++
 
 ++++
 <p align="center">
- <img src="./../assets/images/general/router-devices1.png"><br>
+ <img src="_images/general/router-devices1.png"><br>
  <i>Using router devices vs. communication using communication units</i>
 </p>
 ++++
@@ -28,7 +28,7 @@ When using MQTT for a telemetry platform or a farming software with multiple acc
 Router devices can be set up and managed in the agrirouter developer UI
 ++++
 <p align="center">
- <img src="./../assets/images/general/router-devices-screen1.png"><br>
+ <img src="_images/general/router-devices-screen1.png"><br>
  <i>Router device management in the agrirouter developer UI</i>
 </p>
 ++++
@@ -36,7 +36,7 @@ Router devices can be set up and managed in the agrirouter developer UI
 When clicking on "New Router device", a new device will be generated.
 ++++
 <p align="center">
- <img src="./../assets/images/general/router-devices-screen2.png"><br>
+ <img src="_images/general/router-devices-screen2.png"><br>
  <i>Router device management in the agrirouter developers UI</i>
 </p>
 ++++
@@ -44,7 +44,7 @@ When clicking on "New Router device", a new device will be generated.
 To check the connection properties, click on "Connection Details".
 ++++
 <p align="center">
- <img src="./../assets/images/general/router-devices-screen3.png"><br>
+ <img src="_images/general/router-devices-screen3.png"><br>
  <i>Router device details</i>
 </p>
 ++++
@@ -52,7 +52,7 @@ To check the connection properties, click on "Connection Details".
 The certificate for the router device can be downloaded as PEM or P12.
 ++++
 <p align="center">
- <img src="./../assets/images/general/router-devices-screen4.png"><br>
+ <img src="_images/general/router-devices-screen4.png"><br>
  <i>Download certificate of router device</i>
 </p>
 ++++

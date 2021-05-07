@@ -6,7 +6,7 @@ Telemetry Platforms are cloud systems that bundle the communication of multiple 
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig2\telemetryplatform.png" width="619px" height="366px"><br>
+<img src="_images/ig2\telemetryplatform.png" width="619px" height="366px"><br>
 <i>Telemetry Platforms are cloud systems that communicate for multiple CUs</i>
 </p>
 ++++
@@ -22,34 +22,29 @@ The telemetry platform handles the on- and offboarding of virtual CUs, therefore
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig2\telemetryconcept.png" width="619px" height="366px"><br>
+<img src="_images/ig2\telemetryconcept.png" width="619px" height="366px"><br>
 <i>Telemetry Platforms only share an in- and outbox with their virtual CUs</i>
 </p>
 ++++
 
 === Commands
 
-Telemetry platforms offer commands to on- and offboard virtual CUs. Those can be found in the link:./commands/cloud.adoc[Cloud command list].
+Telemetry platforms offer commands to on- and offboard virtual CUs. Those can be found in the xref:./commands/cloud.adoc[Cloud command list].
 
 === Capabilities
 
 ==== In the UI: Summarized capabilities 
 
-When link:./applications.adoc#_register_application[creating a telemetry platform in the agrirouter UI], the capabilities have to be selected. For a telemetry platform, the capabilities selected in the UI summarize all capabilities of the platform itself as well as any Virtual CU that could be onboarded through the telemetry platform. This means that if your telemetry platform has its own functionalities (e.g. an integrated Farm Management System), those capabilities have to be selected as well.
+When xref:./applications.adoc#_register_application[creating a telemetry platform in the agrirouter UI], the capabilities have to be selected. For a telemetry platform, the capabilities selected in the UI summarize all capabilities of the platform itself as well as any Virtual CU that could be onboarded through the telemetry platform. This means that if your telemetry platform has its own functionalities (e.g. an integrated Farm Management System), those capabilities have to be selected as well.
 
 
 ==== After onboarding the telemetry platform
 
-The link:./commands/endpoint.adoc#_capabilities_command[capabilities command] has to be sent directly after onboarding the telemetry platform. A telemetry platform that has no own functionality and is only used to onboard and delete virtual CUs does not have any capabilities, so an empty capabilities command has to be sent.
+The xref:./commands/endpoint.adoc#_capabilities_command[capabilities command] has to be sent directly after onboarding the telemetry platform. A telemetry platform that has no own functionality and is only used to onboard and delete virtual CUs does not have any capabilities, so an empty capabilities command has to be sent.
 
 ==== After onboarding a virtual CU
 
 After onboarding a virtual CU, the capabilities command for this virtual CU has to be sent, indicating only those capabilities that the virtual CU really is capable of.
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===
 

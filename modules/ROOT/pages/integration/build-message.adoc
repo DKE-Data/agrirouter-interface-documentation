@@ -1,5 +1,5 @@
 = Building Messages and Commands
-:imagesdir: ./../../assets/images/
+:imagesdir: ./._images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -10,7 +10,7 @@ Creating a message includes several steps. This can be seen in the graph below:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image42.png" width="100%"><br>
+ <img src="./._images/ig2/image42.png" width="100%"><br>
 <i>Workflow of creating a message</i>
 </p>
 ++++
@@ -33,7 +33,7 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image43.png" width="100%" ><br>
+ <img src="./._images/ig2/image43.png" width="100%" ><br>
 <i>Workflow of creating a chunked message</i>
 </p>
 ++++
@@ -49,7 +49,7 @@ The overall body of the message to the inbox shall not include more payload than
 
 == Encode content to its Technical Message Type
 
-Encoding a message in its required technical message type depends on the message type. The message types for agrirouter commands are described further in the specific chapters that can be found link:./../tmt/overview.adoc[here].
+Encoding a message in its required technical message type depends on the message type. The message types for agrirouter commands are described further in the specific chapters that can be found xref:./../tmt/overview.adoc[here].
 
 == Encode content in Protobuf
 
@@ -178,7 +178,7 @@ The parameters as overview:
 |Parameter |Type |Description
 |application_message_id |String |A unique ID for this message. UUID required
 |application_message_seq_no |int64 |An indicator, in which order the client sent the message. The smallest sequence number must be >0.
-|technical_message_type |string |The TMT; see link:../tmt/overview.adoc[Technical Message Types]
+|technical_message_type |string |The TMT; see xref:../tmt/overview.adoc[Technical Message Types]
 |team_set_context_id |string |The relevant teamset for this message; just in case, it changes
 |mode |mode |DIRECT, PUBLISH or PUBLISH_WITH_DIRECT.
 |recipients |string(repeated) |A list of endpoint IDs to forward the message to.
@@ -387,5 +387,5 @@ What you will find:
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

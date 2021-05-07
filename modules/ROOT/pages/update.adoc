@@ -1,5 +1,5 @@
 = Handling new versions and updates
-:imagesdir: ./assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -20,15 +20,10 @@ However, whenever the maximum capabilities of your software change, you'll need 
 After update, the app instance has to inform agrirouter about its new capabilities by sending its new capabilities including the ID of the new certification version (certificationVersionId).
 
 === Safe updates
-When updating your software, the onboarding information received from link:./integration/onBoarding.adoc[onboarding] must be stored so that it is not deleted during update.
+When updating your software, the onboarding information received from xref:./integration/onBoarding.adoc[onboarding] must be stored so that it is not deleted during update.
 
-If the data gets lost during update, your software can still perform the link:./integration/reonboarding.adoc[reonboarding] if you can reconstruct the uniqueID used in onboarding, but this might require user interaction.
+If the data gets lost during update, your software can still perform the xref:./integration/reonboarding.adoc[reonboarding] if you can reconstruct the uniqueID used in onboarding, but this might require user interaction.
 
 To use new capabilities after a software update that includes a new CertificationVersionId, an updated capabilities-request using the new CertificationVersionId is required.
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===

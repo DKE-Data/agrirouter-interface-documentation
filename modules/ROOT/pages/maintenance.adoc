@@ -7,13 +7,13 @@ agrirouter provides several tools for maintenance, see below
 
 == Usage metrix
 
-As an application provider, you can download link:./usage-metrix.adoc[usage metrics] to check, which account consumed and sent how much data.
+As an application provider, you can download xref:./usage-metrix.adoc[usage metrics] to check, which account consumed and sent how much data.
 
 
 == Endpoint management
 
-Learn, how to manage your applications endpoints link:./application-endpoint-management.adoc[here].
+Learn, how to manage your applications endpoints xref:./application-endpoint-management.adoc[here].
 
 == Behaviour after SoftwareUpdate
 
-Read here, how to handle link:./update.adoc[new versions and updates].
+Read here, how to handle xref:./update.adoc[new versions and updates].

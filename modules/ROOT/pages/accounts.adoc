@@ -1,5 +1,5 @@
 = Accounts
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -24,7 +24,7 @@ The user interface offers possibilities to handle the account:
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image2.png" width="456px" height="663px"><br>
+<img src="_images/ig1\image2.png" width="456px" height="663px"><br>
 <i> User Interface for End Users</i>
 </p>
 ++++
@@ -55,7 +55,7 @@ Additionally, developers can manage their own applications:
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image3.png" width="473px" height="615px"><br>
+<img src="_images/ig1\image3.png" width="473px" height="615px"><br>
 <i>User Interface for Developers</i>
 </p>
 ++++
@@ -69,9 +69,4 @@ The administrator account is only accessible by DKE. DKE can manage application,
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===

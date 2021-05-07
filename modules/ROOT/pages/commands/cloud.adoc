@@ -1,5 +1,5 @@
 = Commands for telemetry platforms
-:imagesdir: ./../../assets/images/
+:imagesdir: ./._images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -35,7 +35,7 @@ The onboarding Request includes an Array of EndpointRegistrationDetails
 |2 |Name |String |The name that shall be displayed in the agrirouter UI
 |=======================================================================
 
-For the ID, please respect the Naming convention in link:../integration/general-conventions.adoc[String Identifiers convention]
+For the ID, please respect the Naming convention in xref:../integration/general-conventions.adoc[String Identifiers convention]
 
 === Result
 
@@ -134,6 +134,6 @@ See list of error codes.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====
 

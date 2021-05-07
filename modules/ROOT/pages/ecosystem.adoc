@@ -1,5 +1,5 @@
 = agrirouter ecosystem
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -8,25 +8,16 @@
 
 The agrirouter is a central data exchange platform, but to understand its full power, it’s important to understand that the data provided from the agrirouter comes from the applications attached to the agrirouter. The following figure lists different Applications that can be attached to one end-user account.
 
-
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image10.png" width="642px" height="321px"><br>
- <i>The agrirouter ecosystem of members</i>
-</p>
-++++
+.The agrirouter ecosystem of members
+image::ig1/image10.png[The agrirouter ecosystem of members,642,321]
 
 == Applications
 
 
 === Communication Units
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\ecosystem_cu.png" width="642px" height="321px"><br>
- <i>Communication units in the agrirouter ecosystem</i>
-</p>
-++++
+.Communication units in the agrirouter ecosystem
+image::ig1\ecosystem_cu.png[Communication units in the agrirouter ecosystem,642,321]
 
 Communication units (CU) are mobile applications, mostly running on embedded systems or mobile devices to establish a connection to the agrirouter “in the fields”. CUs are used to collect information like machine data or geo positions.
 
@@ -55,12 +46,8 @@ Communication units can also be tablets or other devices and should meet the fol
 
 === Farming software
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\ecosystem_farming_software.png" width="642px" height="321px"><br>
- <i>Farming Software Applications in the agrirouter ecosystem</i>
-</p>
-++++
+.Farming Software Applications in the agrirouter ecosystem
+image::ig1\ecosystem_farming_software.png[Farming Software Applications in the agrirouter ecosystem,642,321]
 
 Farming software can be a cloud application or software released on a single device like a PC or Smartphone. Farming software mostly consumes data to provide extra services for farmers or contractors. FMIS (Farm Management and Information Systems) are a common example of farming software.
 
@@ -73,12 +60,8 @@ Please note that there might be additional software in the development of the co
 
 === Telemetry platform and virtual CUs
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\ecosystem_telemetry.png" width="642px" height="321px"><br>
- <i>Telemetry platform with virtual CUs in the agrirouter ecosystem</i>
-</p>
-++++
+.Telemetry platform with virtual CUs in the agrirouter ecosystem
+image::ig1\ecosystem_telemetry.png[Telemetry platform with virtual CUs in the agrirouter ecosystem,642,321]
 
 A telemetry platform is a cloud software solution that handles the communication of so-called "virtual CUs" with the agrirouter. Virtual CUs are comparable to real CUs, but indifference, they do not implement the agrirouter protocol. A virtual CU implements a proprietary protocol to connect to the telemetry platform only.
 
@@ -114,12 +97,8 @@ In older versions of the standard, the ClientNAME was only required to be unique
 
 This chapter gives a high-level overview of the agrirouter Connectivity-Platform architecture, an application can interact with.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image23.png" width="626px" height="451px"><br>
- <i>agrirouter Connectivity-Platform architecture</i>
-</p>
-++++
+.agrirouter Connectivity-Platform architecture
+image::ig1\image23.png[agrirouter Connectivity-Platform architecture,626,451]
 
 === Communication addresses: Endpoints
 
@@ -131,12 +110,8 @@ The address of an endpoint ( in this case the "__deviceAlternateId__") is used b
 
 It is possible to connect 2 agrirouter accounts with each other using the email address of the end-users and setting up a connection using the graphical user interface of agrirouter. Each connected agrirouter account gets its own endpoint in the partner's agrirouter account and vice versa.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image12.png" width="642px" height="354px"><br>
- <i>List of paired accounts</i>
-</p>
-++++
+.List of paired accounts
+image::ig1\image12.png[List of paired accounts,642,354]
 
 
 [IMPORTANT]
@@ -156,9 +131,4 @@ Each CU only sends one teamset, every teamset can only be part of one CU. If mul
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===

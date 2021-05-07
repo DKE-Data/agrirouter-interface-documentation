@@ -1,5 +1,5 @@
 = Read the eco system
-:imagesdir: ./../../assets/images/
+:imagesdir: ./._images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -147,7 +147,7 @@ This request is used for request a list of endpoints that support a technical me
 |typeURL |types.agrirouter.com/agrirouter.request.payload.account.ListEndpointsQuery
 |===============================================================================
 
-For further information, see  link:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]
+For further information, see  xref:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]
 
 === Result
 
@@ -158,7 +158,7 @@ For further information, see  link:./ecosystem.adoc##call-for-endpoints-that-sup
 |typeURL |types.agrirouter.com/agrirouter.response.payload.account.ListEndpointsResponse
 |===================================================================================
 
-For further information, see link:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]
+For further information, see xref:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]
 
 
 === Errors
@@ -172,5 +172,5 @@ If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

@@ -2,7 +2,7 @@
 :toc:
 :toc-title:
 :toclevels: 4
-:imagesdir: ./../../assets/images/
+:imagesdir: ./._images/
 
 == Endpoint Recording
 
@@ -16,25 +16,17 @@ The endpoint recording is only available for developer accounts and end user  ac
 
 Every agrirouter account includes a functionality to record communication on that account and specific for every endpoint. To record data, the user can start and stop the recorder in the agrirouter UI.
 
-++++
-<p align="center">
- <img src="./../../assets/images/ig1\image41.png" width="407px" height="213px"><br>
- <i>Endpoint Recording main view</i>
-</p>
-++++
+.Endpoint Recording main view
+image::./._images/ig1\image41.png[Endpoint Recording main view,407,213]
+
+
+.Endpoint Recording Overview
+image::./._images/ig1\image42.png[Endpoint Recording Overview,565,89]
 
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig1\image42.png" width="565px" height="89px"><br>
- <i>Endpoint Recording Overview</i>
-</p>
-++++
-
-
-++++
-<p align="center">
- <img src="./../../assets/images/ig1\image43.png" width="204px" height="210px"><br>
+ <img src="./._images/ig1\image43.png" width="204px" height="210px"><br>
 <i>Start Recording of messages &amp; commands</i>
 </p>
 ++++
@@ -42,12 +34,8 @@ Every agrirouter account includes a functionality to record communication on tha
 
 After recording started, the recording is displayed in the list of active records. 
 
-++++
-<p align="center">
- <img src="./../../assets/images/ig1\image44.png" width="647px" height="120px"><br>
- <i>Recording View</i>
-</p>
-++++
+.Recording View
+image::./._images/ig1\image44.png[Recording View,647,120]
 
 Recording can be stopped, downloaded or deleted.
 
@@ -62,7 +50,7 @@ In a developer account, records can be uploaded additionally to the recording fu
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig1\image45.png" width="640px" height="104px"><br>
+ <img src="./._images/ig1\image45.png" width="640px" height="104px"><br>
 <i>Endpoint recording in a developer account</i>
 </p>
 ++++
@@ -78,5 +66,5 @@ As a developer, you are able to replay recorded commands.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

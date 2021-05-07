@@ -1,75 +1,63 @@
 = Basic Concepts of agrirouter
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
 
 === Ecosystem
 
-The agrirouter ecosystem and the members of it are described in the chapter link:./ecosystem.adoc[ecosystem].
+The agrirouter ecosystem and the members of it are described in the chapter xref:./ecosystem.adoc[ecosystem].
 
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image10.png" width="642px" height="321px"><br>
- <i>The agrirouter ecosystem of members</i>
-</p>
-++++
+.The agrirouter ecosystem of members
+image::ig1\image10.png[The agrirouter ecosystem of members,642,321]
 
 === Applications and App Instances
 
 In each agrirouter account, there are different types of communication partners, which are called app instances:
 ++++
 <p align="center">
- <img src="./../assets/images/ig1/image11.png" width="70%"><br>
+ <img src="_images/ig1/image11.png" width="70%"><br>
  <i>The different types of app instances: CU, Application, Virtual CU, Machine, Account</i>
 </p>
 ++++
 
-The list of link:./ecosystem.adoc#applications[Application Types] helps to find out, which type of application you should create.
+The list of xref:./ecosystem.adoc#applications[Application Types] helps to find out, which type of application you should create.
 
 === Endpoints
 Each app instance communicates with its corresponding endpoint in the agrirouter.
 
-For communication, it's important to understand the link:./endpoint.adoc[elements of an endpoint].
+For communication, it's important to understand the xref:./endpoint.adoc[elements of an endpoint].
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig2/image26.png" width="70%"><br>
+ <img src="_images/ig2/image26.png" width="70%"><br>
  <i>The elements of an endpoint: Communicate with Inbox and Outbox, Handle Feed and Subscriptions and send Messages through the routings to other endpoints</i>
 </p>
 ++++
 
 === Communication
  
-To communicate with agrirouter, it's important to understand the link:./communication.adoc[basics of communication]
+To communicate with agrirouter, it's important to understand the xref:./communication.adoc[basics of communication]
 
 ==== Messaging Workflow
 
 The communication workflow describes, which messages have to be send to agrirouter to exchange information with the agrirouter endpoint. 
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image22.png" width="609px" height="726px"><br>
- <i>General messaging workflow</i>
-</p>
-++++
+.General messaging workflow
+image::ig1\image22.png[General messaging workflow,609,726]
 
 
-This workflow can be found in the chapter link:.//messaging-workflow.adoc[messaging workflows].
+This workflow can be found in the chapter xref:.//messaging-workflow.adoc[messaging workflows].
 
 ==== Message Exchange
 
 The message exchange describes the exchange of messages between application instances over the agrirouter.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image13.png" width="634px" height="314px"><br>
- <i>Way of a message through agrirouter</i>
-</p>
-++++
+.Way of a message through agrirouter
+image::ig1\image13.png[Way of a message through agrirouter,634,314]
 
-The basic concepts of message exchange are described in the link:./message-exchange.adoc[concepts of message exchange].
+The basic concepts of message exchange are described in the xref:./message-exchange.adoc[concepts of message exchange].
 This chapter handles, for example, the concepts of addressing members of the ecosystem.
 
 
@@ -77,13 +65,13 @@ This chapter handles, for example, the concepts of addressing members of the eco
 === Life cycle 
 In general, the life cycle of an endpoint consists of 3 steps:
 
-* link:./integration/onboarding.adoc[Onboarding]
+* xref:./integration/onboarding.adoc[Onboarding]
 * Communication (see above)
-* link:./integration/revoke.adoc[Offboarding/Revoking]
+* xref:./integration/revoke.adoc[Offboarding/Revoking]
 
 ++++
 <p align="center">
- <img src="./../assets/images/general/general_process.png" width="70%"><br>
+ <img src="_images/general/general_process.png" width="70%"><br>
  <i>The 3 steps of communication: Onboarding, Communication, Revoking</i>
 </p>
 ++++
@@ -92,28 +80,20 @@ In general, the life cycle of an endpoint consists of 3 steps:
 
 === Concept of a telemetry platform
 
-When developing a telemetry platform, the link:./telemetry-platform-concepts.adoc[concepts of a telemetry platform] should be understood.
+When developing a telemetry platform, the xref:./telemetry-platform-concepts.adoc[concepts of a telemetry platform] should be understood.
 ++++
 <p align="center">
-<img src="./../assets/images/ig2\telemetryconcept.png" width="619px" height="366px"><br>
+<img src="_images/ig2\telemetryconcept.png" width="619px" height="366px"><br>
 <i>Endpoints of a Telemetry Platform</i>
 </p>
 ++++
 
 == Terms and short descriptions
 
-A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here].
+A short description naming all the agrirouter specific terms and their connection to each other can be found xref:./terms.adoc[here].
 
-A list of abbreviations can be found link:./abbreviations.adoc[here].
+A list of abbreviations can be found xref:./abbreviations.adoc[here].
 
-A glossary can be found link:./glossary.adoc[here].
+A glossary can be found xref:./glossary.adoc[here].
 
-There are several ids required for communication, a list of descriptions can be found link:./ids-and-definitions.adoc[here].
-
-
-= Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+There are several ids required for communication, a list of descriptions can be found xref:./ids-and-definitions.adoc[here].

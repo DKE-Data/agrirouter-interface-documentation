@@ -2,7 +2,7 @@
 
 agrirouter currently supports 2 environments of the whole agrirouter connectivity platform.
 
-The required URLs can be found in link:./message-sending.adoc[message sending] and link:./authorization.adoc[authorization].
+The required URLs can be found in xref:./message-sending.adoc[message sending] and link:./authorization.adoc[authorization].
 
 == Quality assurance
 
@@ -20,7 +20,7 @@ Currently, there is only one Area: EU for europe. Every app instance is onboarde
 
 
 = Keys and urls
-The keys and URLs for the environments can be found link:./../keys.adoc[in keys.]
+The keys and URLs for the environments can be found xref:./../keys.adoc[in keys.]
 
 
 
@@ -28,5 +28,5 @@ The keys and URLs for the environments can be found link:./../keys.adoc[in keys.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

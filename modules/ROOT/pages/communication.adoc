@@ -1,5 +1,5 @@
 = Basics of communication
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -15,7 +15,7 @@ Every communication is initiated by the App Instance. The agrirouter endpoint wi
 After application registration, the communication is secured using the SSL certificate retrieved during the onboarding process. The agrirouter provides PKCS12 certificates as well as PEM certificates which can be set within the SSL context of the request to ensure authenticated communication with the agrirouter.
 
 After the validation has happened, the agrirouter provides all necessary security information to establish a messaging connection. The developer is obliged to store this certificate or the tokens secured and encrypted within the application. 
-Receiving the certificate is described in link:integration/onboarding.adoc[onboarding] .
+Receiving the certificate is described in xref:integration/onboarding.adoc[onboarding] .
 
 == Different layers, the "onion principle”
 
@@ -37,12 +37,8 @@ With exception to the EFDI telemetry messages (DeviceDescription and live data),
 With except to the EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the recipients based on the routings and subscribtions.
 >>>>>>> origin/develop
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image31.png" width="543px" height="313px"><br>
- <i>The onion principle for a non-telemetry message</i>
-</p>
-++++
+.The onion principle for a non-telemetry message
+image::ig2/image31.png[The onion principle for a non-telemetry message,543,313]
 
 
 An exception are the EFDI telemetry messages.
@@ -55,12 +51,8 @@ The device descriptions are needed by the agrirouter to
 
 The live telemetry data is analysed so that filtering for value categories like fuel consumption is possible.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image32.png" width="644px" height="371px"><br>
- <i>The onion principle for a telemetry message</i>
-</p>
-++++
+.The onion principle for a telemetry message
+image::ig2/image32.png[The onion principle for a telemetry message,644,371]
 
 
 
@@ -91,26 +83,18 @@ REST is based on single, request only methods, therefore, the agrirouter cannot 
 
 Using REST, an app instance just receives an HTTP 200 “OK” Response. The App Instance sends a HTTP Post request over an SSL secured connection.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image33.png" width="631px" height="212px"><br>
- <i>Request and Response in HTTP</i>
-</p>
-++++
+.Request and Response in HTTP
+image::ig2/image33.png[Request and Response in HTTP,631,212]
 
 
 ==== Communication with the Outbox
 
 Using REST, the communication with the Outbox requires polling:
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image34.png" width="613px" height="145px"><br>
- <i>REST Communication with the outbox</i>
-</p>
-++++
+.REST Communication with the outbox
+image::ig2/image34.png[REST Communication with the outbox,613,145]
 
-Make sure to meet the link:./messaging-workflow.adoc#request-sending-frequency[request frequency requirements].
+Make sure to meet the xref:./messaging-workflow.adoc#request-sending-frequency[request frequency requirements].
 
 === MQTT
 
@@ -124,32 +108,24 @@ The agrirouter provides one MQTT Server per Endpoint, so there is no danger or c
 
 ==== General setup
 
-An MQTT connection requires 2 types of certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys link:./keys.adoc#MQTT-communication[here].
+An MQTT connection requires 2 types of certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys xref:./keys.adoc#MQTT-communication[here].
 
 This is required to setup an MQTT Connection over SSL.
 
-Additionally, TLS needs to be activated and the TLS certificate can either be the certificate received during link:./integration/onboarding.adoc[onboarding] or from the link:./router-devices.adoc[Router Devices].
+Additionally, TLS needs to be activated and the TLS certificate can either be the certificate received during xref:./integration/onboarding.adoc[onboarding] or from the link:./router-devices.adoc[Router Devices].
 
 ==== Communication with the Inbox
 
 Using MQTT, the app instance will publish the request and after a while, the agrirouter will publish the response. Polling is not required.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image35.png" width="618px" height="153px"><br>
- <i>Request and Response using MQTT</i>
-</p>
-++++
+.Request and Response using MQTT
+image::ig2/image35.png[Request and Response using MQTT,618,153]
 
 
 ==== Communication with the Outbox
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image36.png" width="633px" height="151px"><br>
- <i>Receiving Result from the outbox in MQTT</i>
-</p>
-++++
+.Receiving Result from the outbox in MQTT
+image::ig2/image36.png[Receiving Result from the outbox in MQTT,633,151]
 
 
 If there are messages available in the outbox, agrirouter will simply publish them to the MQTT App Instance.
@@ -160,7 +136,7 @@ If there are messages available in the outbox, agrirouter will simply publish th
 This only applies to command results, not to messages that are sent to the feed by another app instance. 
 Those messages still have to be requested through the inbox but are automatically delivered through the outbox afterwards.
 
-**Exception**: If link:./integration/push-notification.adoc[Push Notifications] are activated, the messages are delivered without a special feed request.
+**Exception**: If xref:./integration/push-notification.adoc[Push Notifications] are activated, the messages are delivered without a special feed request.
 ====
 
 
@@ -173,14 +149,14 @@ Without router devices, an application would need to create multiple MQTT connec
 
 ++++
 <p align="center">
- <img src="./../assets/images/general/router-devices1.png"><br>
+ <img src="_images/general/router-devices1.png"><br>
  <i>Using router devices vs. not using router devices</i>
 </p>
 ++++
 
 ++++
 <p align="center">
- <img src="./../assets/images/general/router-devices2.png"><br>
+ <img src="_images/general/router-devices2.png"><br>
  <i>Using router devices vs. communication using communication units</i>
 </p> 
 ++++
@@ -189,12 +165,12 @@ Without router devices, an application would need to create multiple MQTT connec
 Router devices can be set up and managed within the agrirouter developer UI
 ++++
 <p align="center">
- <img src="./../assets/images/general/router-devices-screen1.png"><br>
+ <img src="_images/general/router-devices-screen1.png"><br>
  <i>Router device management in the agrirouter developer UI</i>
 </p>
 ++++
 
-The setup and usage of router devices is described in the chapter link:./router-devices.adoc[router devices].
+The setup and usage of router devices is described in the chapter xref:./router-devices.adoc[router devices].
 
 === Comparison of protocols
 
@@ -223,29 +199,21 @@ To avoid graphs with too many arrows, we simplify the upcoming requests, abstrac
 
 ==== Abstraction of Calls to the Inbox
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image37.png" width="637px" height="99px"><br>
- <i>Abstraction of a Call or Message Sending to the Inbox</i>
-</p>
-++++
+.Abstraction of a Call or Message Sending to the Inbox
+image::ig2/image37.png[Abstraction of a Call or Message Sending to the Inbox,637,99]
 
 
 ==== Abstraction of Results from Outbox
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image38.png" width="628px" height="87px"><br>
- <i>Abstraction of a result from the outbox</i>
-</p>
-++++
+.Abstraction of a result from the outbox
+image::ig2/image38.png[Abstraction of a result from the outbox,628,87]
 
 
 = Communication of App Instance and Endpoint
 
 == Endpoint Adresses
 
-The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refer to link:./integration/onboarding.adoc[Send onboarding Request].
+The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refer to xref:./integration/onboarding.adoc[Send onboarding Request].
 
 
 == Assigning a result to a request
@@ -264,38 +232,26 @@ If a message is not correctly encoded, so that the agrirouter cannot decode it, 
 
 Sending messages to the agrirouter creates an ACK message in the outbox of the agrirouter
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image39.png" width="512px" height="210px"><br>
- <i>Send Message or Command to agrirouter</i>
-</p>
-++++
+.Send Message or Command to agrirouter
+image::ig2/image39.png[Send Message or Command to agrirouter,512,210]
 
 
 == Flow of commands
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image40.png" width="482px" height="290px"><br>
- <i>Command Flow</i>
-</p>
-++++
+.Command Flow
+image::ig2/image40.png[Command Flow,482,290]
 
 
 == Flow of requesting messages from the feed
 
 If the command is a feed command requesting messages from the feed, the app instance has to confirm the receival of the message, so that it is deleted from the feed.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image41.png" width="575px" height="348px"><br>
- <i>Command flow for reading the feed</i>
-</p>
-++++
+.Command flow for reading the feed
+image::ig2/image41.png[Command flow for reading the feed,575,348]
 
 [IMPORTANT]
 ====
-The first message to a new endpoint **always** has to be the link:./commands/endpoint.adoc[Capabilities Message]!
+The first message to a new endpoint **always** has to be the xref:./commands/endpoint.adoc[Capabilities Message]!
 ====
 
 
@@ -303,14 +259,10 @@ The first message to a new endpoint **always** has to be the link:./commands/end
 When activated, agrirouter will deliver messages directly as push notifications. 
 
 
-++++
-<p align="center">
- <img src="./../assets/images/general/message-push-flow.png" width="575px" height="300px"><br>
- <i>Command flow for push Notifications</i>
-</p>
-++++
+.Command flow for push Notifications
+image::general/message-push-flow.png[Command flow for push Notifications,575,300]
 
-For further information, see link:./integration/push-notification.adoc[ the chapter about push notifications].
+For further information, see xref:./integration/push-notification.adoc[ the chapter about push notifications].
 
 
 
@@ -325,6 +277,6 @@ A command-process consists of a call (1.1) to the inbox. This call consists of t
 This page is found in every file and links to the major topics.
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
+|xref:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====
 

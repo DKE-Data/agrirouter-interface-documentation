@@ -1,5 +1,5 @@
 = Service and Support
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -9,12 +9,8 @@ In case you experience unexpected connection issues, also check the availability
 
 
 
-++++
-<p align="center">
- <img src="./../assets/images/general/system_status.png" width="586px" height="335px"><br>
- <i>Current status of agrirouter productive environment</i>
-</p>
-++++
+.Current status of agrirouter productive environment
+image::general/system_status.png[Current status of agrirouter productive environment,586,335]
 
 [Important]
 ====
@@ -25,28 +21,20 @@ This status page shows the availability of the productive environment!
 
 Updates, bugfixes and general server issues can require server maintenance every now and then, which might result in connectivity issues for a short time. To avoid unexpected behaviour, those maintenances are reported in advance. A list of events can be seen at link:https://my-agrirouter.com/nc/en/support/system-events/[at the status page].
 
-++++
-<p align="center">
- <img src="./../assets/images/general/system_events.png" width="634px" height="299px"><br>
- <i>List of agrirouter system events</i>
-</p>
-++++
+.List of agrirouter system events
+image::general/system_events.png[List of agrirouter system events,634,299]
 
 [IMPORTANT]
 ====
 You should click the subscription button to subscribe for system events and receive an email every time, a maintenance is scheduled.
 ====
 
-++++
-<p align="center">
- <img src="./../assets/images/general/system_events_subscribe.png" width="634px" height="299px"><br>
- <i>Subscribe for agrirouter system events</i>
-</p>
-++++
+.Subscribe for agrirouter system events
+image::general/system_events_subscribe.png[Subscribe for agrirouter system events,634,299]
 
 == Limitations
 
-Each agrirouter account has a limited number of endpoints, see link:./limitations.adoc[here].
+Each agrirouter account has a limited number of endpoints, see xref:./limitations.adoc[here].
 
 == Endpoint information in the agrirouter UI
 
@@ -57,12 +45,8 @@ To display the information select the particular endpoint and take a look at the
 === Endpoint information
 
 The endpoint information offers the IDs that the app instance should use for communication with agrirouter:
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image46.png" width="586px" height="335px"><br>
- <i>Endpoint information used with agrirouter</i>
-</p>
-++++
+.Endpoint information used with agrirouter
+image::ig1\image46.png[Endpoint information used with agrirouter,586,335]
 
 === Endpoint details
 
@@ -70,7 +54,7 @@ The endpoint details show an extended list of information about the app instance
 
 ++++
 <p align="center">
- <img src="./../assets/images/general\endpoint_details_extended.png"><br>
+ <img src="_images/general\endpoint_details_extended.png"><br>
  <i>Endpoint information used with agrirouter</i>
 </p>
 ++++
@@ -134,12 +118,8 @@ Information on messages that were *received by* the app instance from its endpoi
 
 The agrirouter start page provides a tile "Remote Maintenance" for every user that redirects him to the Remote Desktop Software "TeamViewer". ( See https://www.teamviewer.com/en/ ). Your service and support can use this software to take a look at a customers desktop and help the customer to work with the agrirouter user interface or any other software on his desktop.
 
-++++
-<p align="center">
- <img src="./../assets/images/general/remote_maintenance.png" width="686px" height="335px"><br>
- <i>Remote maintenance tile</i>
-</p>
-++++
+.Remote maintenance tile
+image::general/remote_maintenance.png[Remote maintenance tile,686,335]
 
 
 
@@ -162,19 +142,15 @@ Please submit the following information with your request:
 
 All of the above can be found in the endpoint details by clicking the ‘Info’ button next to the delete button.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image46.png" width="586px" height="335px"><br>
- <i>Relevant information for agrirouter support</i>
-</p>
-++++
+.Relevant information for agrirouter support
+image::ig1\image46.png[Relevant information for agrirouter support,586,335]
 
 
 
 
 ==== For commands related incidents
 
-Please provide the commands sent from and received by the endpoint if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see link:./tools/endpoint-recording.adoc[here].
+Please provide the commands sent from and received by the endpoint if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see xref:./tools/endpoint-recording.adoc[here].
 
 ==== For account related incidents
 
@@ -220,9 +196,4 @@ agrirouter support team will get back to you on your request, please be informed
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===

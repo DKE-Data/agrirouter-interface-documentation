@@ -1,5 +1,5 @@
 = Training
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 

@@ -1,6 +1,6 @@
 = Analyse Outbox Results
 :sectlinks:
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -64,7 +64,7 @@ The following List shows the corresponding Protobuf schemata for each ResponseTy
 |ACK_FOR_FEED_FAILED_MESSAGE |agrirouter.feed.response.FailedMessageQueryResponse |Response for failed requests to feed queries
 |ENDPOINTS_LISTING |agrirouter.response.payload.account.ListEndpointsResponse |Used for a response which contains the endpoint listing
 |CLOUD_REGISTRATIONS |agrirouter.cloud.registration.OnboardingResponse |The result of a Virtual CU registration
-|PUSH_NOTIFICATION |agrirouter.feed.push.notification| An actively pushed message. See link:./push-notification.adoc[push notifications].
+|PUSH_NOTIFICATION |agrirouter.feed.push.notification| An actively pushed message. See xref:./push-notification.adoc[push notifications].
 |========
 
 Analysing the results is described in the specific chapters of process description for the relevant commands.
@@ -128,7 +128,7 @@ It includes an array of Message:
 
 To display the message, replace all fields in the message with the corresponding values from the map.
 
-The possible codes can be found in the link:./../error-codes.adoc[error code list], specific values will be described in more detail within the corresponding link:./../commands/overview.adoc[Commands chapter].
+The possible codes can be found in the xref:./../error-codes.adoc[error code list], specific values will be described in more detail within the corresponding link:./../commands/overview.adoc[Commands chapter].
 
 
 
@@ -140,5 +140,5 @@ The possible codes can be found in the link:./../error-codes.adoc[error code lis
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

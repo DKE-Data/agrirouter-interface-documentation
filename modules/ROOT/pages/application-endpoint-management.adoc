@@ -1,5 +1,5 @@
 = Managing application endpoints as app provider
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -12,7 +12,7 @@ To avoid misusage of data packages, an app provider can block a specific endpoin
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image40.png" width="642px" height="182px">
+<img src="_images/ig1\image40.png" width="642px" height="182px">
 <br>
 <i>UI to manage blocked endpoints in developer account</i>
 </p>
@@ -36,10 +36,5 @@ The _Blocking_ status can be changed by the agrirouter administrator to
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===
 

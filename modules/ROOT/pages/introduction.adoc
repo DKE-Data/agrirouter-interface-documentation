@@ -1,23 +1,23 @@
 :imagesdir: assets/images
 ++++
 <p align="center">
- <img src="./assets/images/agrirouter.svg" width="20%" height="20%" align="left"><br><br>
+ <img src="_images/agrirouter.svg" width="20%" height="20%" align="left"><br><br>
 </p>
 ++++
 
 == What is the agrirouter?
-More information on agrirouter can be found link:./docs/general.adoc[here]
+More information on agrirouter can be found xref:general.adoc[here]
 
 == Basic Concepts
 
 ++++
 <p align="center">
- <a href="./docs/basic-concepts.adoc"><img src="./assets/images/ig1\image10.png" width="642px" height="321px"></a><br>
+ <a href="./docs/basic-concepts.adoc"><img src="_images/ig1\image10.png" width="642px" height="321px"></a><br>
  <i>The agrirouter ecosystem of members</i>
 </p>
 ++++
 
-As a developer it's also important to understand the link:./docs/basic-concepts.adoc[basic concepts]
+As a developer it's also important to understand the xref:basic-concepts.adoc[basic concepts]
 
 == Purpose of this documentation
 
@@ -32,18 +32,18 @@ This documentation is an open source project. We invite everybody to open issues
 In general, there are 4 major topics to add your software or hardware to the agrirouter ecosystem.
 ++++
 <p align="center">
- <img src="./assets/images/general/process_all.png"><br>
+ <img src="_images/general/process_all.png"><br>
  <i>Integration process for agrirouter</i>
 </p>
 ++++
 
-* link:./docs/provider-agreement.adoc[Step 1 - Provider Agreement]
-* link:./docs/marketplace.adoc[Step 2 - Marketplace]
+* xref:provider-agreement.adoc[Step 1 - Provider Agreement]
+* xref:marketplace.adoc[Step 2 - Marketplace]
 
 
 
-* link:./docs/integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
-* link:./docs/integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
+* xref:integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
+* xref:integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
 
 
 
@@ -53,30 +53,25 @@ For advanced developers, here is a list of quick links for the most common topic
 
 === Concepts & Definitions:
 
-* link:./docs/basic-concepts.adoc[Basic concepts of agrirouter]
-* link:./docs/glossary.adoc[Glossary]
-* link:./docs/terms.adoc[Terms or "agrirouter in a nutshell"]
-* link:./docs/ids-and-definitions.adoc[Ids and their  correspondance to each other]
+* xref:basic-concepts.adoc[Basic concepts of agrirouter]
+* xref:glossary.adoc[Glossary]
+* xref:terms.adoc[Terms or "agrirouter in a nutshell"]
+* xref:ids-and-definitions.adoc[Ids and their  correspondance to each other]
 
 === Lists
 
-* link:./docs/tmt/overview.adoc[List of Technical Message Types]
-* link:./docs/commands/overview.adoc[List of Commands for the agrirouter interface]
-* link:./docs/keys.adoc[The agrirouter keys]
-* link:./docs/error-codes.adoc[Error Codes]
-* link:./docs/integration/environments.adoc[Environments]
-* link:./docs/urls.adoc[Relevant URLs]
+* xref:tmt/overview.adoc[List of Technical Message Types]
+* xref:commands/overview.adoc[List of Commands for the agrirouter interface]
+* xref:keys.adoc[The agrirouter keys]
+* xref:error-codes.adoc[Error Codes]
+* xref:integration/environments.adoc[Environments]
+* xref:urls.adoc[Relevant URLs]
 
 === Tools & Support
-* link:./docs/service-support.adoc[Service & Support]
-* link:./docs/training.adoc[Training]
-* link:./docs/maintenance.adoc[Maintenance of applications]
+* xref:service-support.adoc[Service & Support]
+* xref:training.adoc[Training]
+* xref:maintenance.adoc[Maintenance of applications]
 
 
 
-== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:./README.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/abbreviations.adoc[abbreviations]|link:./docs/terms.adoc[agrirouter in a nutshell]
-|====
+

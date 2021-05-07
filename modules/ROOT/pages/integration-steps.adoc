@@ -2,7 +2,7 @@
 
 This chapter shall describe a possible way of handling the integration with the agrirouter. It is not the only way of doing it, of course. For a valid and well communicated agrirouter integration, you should follow a mixure of business and development decisions:
 
-1.  *Get basic knowledge:* First, read the basic concepts of agrirouter architecture and link:./ecosystem.adoc[ecosystem]; described in this documentation.
+1.  *Get basic knowledge:* First, read the basic concepts of agrirouter architecture and xref:./ecosystem.adoc[ecosystem]; described in this documentation.
 2.  *Decide, what you want to implement:*
 a.  *Read* the several non-agrirouter-relevant technical message types (e.g. TaskData, Images, Telemetry) as a general overview of possible capabilities.
 b.  *Decide, which messages are relevant* for you and which information you could consume or provide. This way, you could e.g. forward the requirement for a TaskController Integration or a Camera attachment possibility at a CU to the relevant departments and it’s more common that it will be there in time.
@@ -27,10 +27,5 @@ b.  *Check the markedplace entry:* Should be done by a developer: Read the marke
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===
 

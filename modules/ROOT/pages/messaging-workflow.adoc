@@ -1,5 +1,5 @@
 = Application Interaction with agrirouter
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -9,12 +9,8 @@
 
 A communication with agrirouter requires several, partly parallel actions to take. The following Figure shows one possible workflow.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image22.png" width="609px" height="726px"><br>
- <i>General messaging workflow</i>
-</p>
-++++
+.General messaging workflow
+image::ig1\image22.png[General messaging workflow,609,726]
 
 [NOTE]
 ====
@@ -73,12 +69,12 @@ agrirouter needs some time to process commands and forward messages that are rec
 
 This chapter gives an overview about the endpoints including their base requirement and definition.
 
-The full chapter can be found link:./endpoint.adoc[here].
+The full chapter can be found xref:./endpoint.adoc[here].
 
 == Authorization process for endpoints
 This process is required to make sure that an app provider knows the end user of an app instance of his application.
 
-The whole chapter can be found link:./integration/authorization.adoc[here].
+The whole chapter can be found xref:./integration/authorization.adoc[here].
 
 == Onboarding Process
 
@@ -86,36 +82,24 @@ The whole chapter can be found link:./integration/authorization.adoc[here].
 
 ==== For simple CU onboarding
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image28.png" width="598px" height="197px"><br>
- <i>Process of simple CU onboarding</i>
-</p>
-++++
+.Process of simple CU onboarding
+image::ig1\image28.png[Process of simple CU onboarding,598,197]
 
 
 
 
 ==== For authenticated CU onboarding
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image29.png" width="503px" height="316px"><br>
- <i>General workflow for onboarding with user interaction and authorization</i>
-</p>
-++++
+.General workflow for onboarding with user interaction and authorization
+image::ig1\image29.png[General workflow for onboarding with user interaction and authorization,503,316]
 
 
 
 
 ==== For Farming Software or Telemetry Platform onboarding
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2\image18.png" width="538px" height="477px"><br>
- <i>Onboarding process of a Farming Software or Telemetry platform</i>
-</p>
-++++
+.Onboarding process of a Farming Software or Telemetry platform
+image::ig2\image18.png[Onboarding process of a Farming Software or Telemetry platform,538,477]
 
 
 
@@ -126,28 +110,20 @@ The whole chapter can be found link:./integration/authorization.adoc[here].
 
 The registration code for a new CU can be created by the end user clicking “Telemetry Connection”(1) in agrirouters’ control center. He has to select the desired CU(2) and gets a 10-digit code consisting of letters and numbers(3). A CU needs an interface to input this registration code.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image31.png" width="453px" height="254px"><br>
- <i>Requesting a registration code in agrirouter UI</i>
-</p>
-++++
+.Requesting a registration code in agrirouter UI
+image::ig1\image31.png[Requesting a registration code in agrirouter UI,453,254]
 
 
 
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image32.png" width="292px" height="164px"><br>
- <i>registration code for a CU</i>
-</p>
-++++
+.registration code for a CU
+image::ig1\image32.png[registration code for a CU,292,164]
 
 
 
 ==== For applications
 
-Applications receive a TAN using the link:./integration/authorization.adoc[authorization process].
+Applications receive a TAN using the xref:./integration/authorization.adoc[authorization process].
 
 ==== For virtual endpoints of telemetry platforms
 
@@ -192,12 +168,8 @@ the protocol layer of REST or MQTT.
 ++++
 With except to the EFDI telemetry messages (DeviceDescription and timelogs), agrirouter doesn’t analyse the messages inside the agrirouter command. It just checks the message type and the addressing to determine the recipients based on the routings and subscriptions.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image33.png" width="621px" height="358px"><br>
- <i>The onion principal for a non-telemetry message</i>
-</p>
-++++
+.The onion principal for a non-telemetry message
+image::ig1\image33.png[The onion principal for a non-telemetry message,621,358]
 
 
 
@@ -211,12 +183,8 @@ The device descriptions are needed by the agrirouter to
 
 The timelog telemetry data is analyzed, so that a filtering for value categories like fuel consumption is possible.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image34.png" width="630px" height="363px"><br>
- <i>The onion principle for a telemetry message</i>
-</p>
-++++
+.The onion principle for a telemetry message
+image::ig1\image34.png[The onion principle for a telemetry message,630,363]
 
 
 
@@ -225,12 +193,8 @@ The timelog telemetry data is analyzed, so that a filtering for value categories
 
 An endpoint can send messages to other endpoints via the agrirouter. Therefore, it has to create commands to call at the agrirouter. To send a message to agrirouter, the application has to encode the involved file format,
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image35.png" width="622px" height="347px"><br>
- <i>Required Data to create a message</i>
-</p>
-++++
+.Required Data to create a message
+image::ig1\image35.png[Required Data to create a message,622,347]
 
 
 
@@ -245,12 +209,8 @@ agrirouter commands like the request for messages are Protobuf-Encoded.
 
 agrirouter stores messages of an endpoint in its feed. This feed is part of the message module. Requesting a message from the agrirouter equals sending a command to the inbox, requesting agrirouter to forward the message to the outbox. The endpoint can than receive this forwarded message through the selected protocol. For HTTP REST, the endpoint has to poll at the address of the outbox. If the endpoint uses the MQTT protocol, it will receive the message from the agrirouter.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image36.png" width="623px" height="268px"><br>
- <i>Handling of messages and commands inside agrirouter endpoint; Simplified</i>
-</p>
-++++
+.Handling of messages and commands inside agrirouter endpoint; Simplified
+image::ig1\image36.png[Handling of messages and commands inside agrirouter endpoint; Simplified,623,268]
 
 
 
@@ -266,12 +226,8 @@ More relevant message formats can be found in the resources List of this documen
 
 === Resumable transfer for binary content
 
-++++
-<p align="center">
- <img src="./../assets/images/ig1\image37.png" width="642px" height="351px"><br>
- <i>Transfer for Binary Content</i>
-</p>
-++++
+.Transfer for Binary Content
+image::ig1\image37.png[Transfer for Binary Content,642,351]
 
 
 
@@ -288,17 +244,12 @@ If the app instance intends to send binary content to its endpoint, the app inst
 
 == Telemetry platform integrations
 
-To simplify and optimize the connection of telemetry platforms, there are several additional functionalities for such platforms. A telemetry platform can onboard virtual CUs itself, so that it is not necessary to enter a registration code in the terminal of a virtual CU. More information can be found in the link:telemetry-platform-concepts.adoc[chapter about telemetry platforms].
+To simplify and optimize the connection of telemetry platforms, there are several additional functionalities for such platforms. A telemetry platform can onboard virtual CUs itself, so that it is not necessary to enter a registration code in the terminal of a virtual CU. More information can be found in the xref:telemetry-platform-concepts.adoc[chapter about telemetry platforms].
 
 
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===
 
 

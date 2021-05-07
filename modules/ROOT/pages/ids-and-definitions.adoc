@@ -1,5 +1,5 @@
 = IDs IDs IDs and which is which
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -96,7 +96,7 @@ The value can be found in the agrirouter UI endpoint Information.
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig2/image49.png" width="512px" height="419px" /><br>
+<img src="_images/ig2/image49.png" width="512px" height="419px" /><br>
 <i>agrirouter account ID</i>
 </p>
 ++++
@@ -118,7 +118,7 @@ The value cannot be found by the api, it has to be entered into the application 
 The developer can find the ID in his developer account:
 ++++
 <p align="center">
-<img src="./../assets/images/ig2/image10.png" width="800px" height="419px" /><br>
+<img src="_images/ig2/image10.png" width="800px" height="419px" /><br>
 <i>application ID (second row below the icon)</i>
 </p>
 ++++
@@ -130,7 +130,7 @@ The value can be found in the agrirouter UI endpoint information
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig2/image49.png" width="512px" height="419px" /><br>
+<img src="_images/ig2/image49.png" width="512px" height="419px" /><br>
 <i>applicationID = endpoint software ID</i>
 </p>
 ++++
@@ -169,7 +169,7 @@ The developer can find the certificationVersionID in his endpoint software overv
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig2/image23.png" width="800px" height="419px" /><br>
+<img src="_images/ig2/image23.png" width="800px" height="419px" /><br>
 <i>certificationVersionId (see below the title)</i>
 </p>
 ++++
@@ -181,7 +181,7 @@ The value can be found in the agrirouter UI endpoint Information
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig2/image49.png" width="512px" height="419px" /><br>
+<img src="_images/ig2/image49.png" width="512px" height="419px" /><br>
 <i>certificationVersionId = endpoint software version ID</i>
 </p>
 ++++
@@ -224,7 +224,7 @@ The value can be found in the agrirouter UI endpoint Information
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig2/image49.png" width="512px" height="419px" /><br>
+<img src="_images/ig2/image49.png" width="512px" height="419px" /><br>
 <i>agrirouter endpoint ID</i>
 </p>
 ++++
@@ -309,10 +309,5 @@ An end user cannot see this value.
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===
 

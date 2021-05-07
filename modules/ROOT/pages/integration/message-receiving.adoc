@@ -1,5 +1,5 @@
 = Receiving Results
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -22,7 +22,7 @@ Please be aware that an online platform response in general might take up to a m
 
 == MQTT
 
-The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The outbox is the topic delivered with the “commands” attribute of the onboarding request. The app instance has to subscribe for this topic. The adresse can be found in link:./message-sending.adoc[Message Sending].
+The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The outbox is the topic delivered with the “commands” attribute of the onboarding request. The app instance has to subscribe for this topic. The adresse can be found in xref:./message-sending.adoc[Message Sending].
 
 For more information on command management using MQTT, see the link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/936e9db8c3314ec6a3a6b558d58f5428.html?q=command[Gateway Documentation].
 
@@ -190,5 +190,5 @@ For a full documentation of this Message format, see the link:https://help.sap.c
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

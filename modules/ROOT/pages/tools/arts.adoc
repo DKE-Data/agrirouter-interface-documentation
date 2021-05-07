@@ -2,7 +2,7 @@
 :toc:
 :toc-title:
 :toclevels: 4
-:imagesdir: ./../../assets/images/
+:imagesdir: ./._images/
 
 == What is ARTS?
 
@@ -12,12 +12,8 @@ The tool includes a command line as well as a user interface.
 
 The project can be found here: https://github.com/saschadoemer/agrirouter-protobuf-toolset
 
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image9.png" width="426px" height="442px"><br>
- <i>ARTS User Interface</i>
-</p>
-++++
+.ARTS User Interface
+image::./._images/ig2/image9.png[ARTS User Interface,426,442]
 
 
 
@@ -38,5 +34,5 @@ The project can be found here: https://github.com/saschadoemer/agrirouter-protob
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

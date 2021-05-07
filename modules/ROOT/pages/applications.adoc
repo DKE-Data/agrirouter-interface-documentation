@@ -1,5 +1,5 @@
 = Applications
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -9,9 +9,9 @@
 
 Applications are software products that have implemented an interface to the agrirouter. There are 3 Types of possible applications:
 
-* link:ecosystem.adoc#_communication_units[Communication Units]
-* link:ecosystem.adoc#_farming_software[Farming Software]
-* link:ecosystem.adoc#_telemetry_platform_and_virtual_cus[Telemetry Platforms and virtual CUs]
+* xref:ecosystem.adoc#_communication_units[Communication Units]
+* xref:ecosystem.adoc#_farming_software[Farming Software]
+* xref:ecosystem.adoc#_telemetry_platform_and_virtual_cus[Telemetry Platforms and virtual CUs]
 
 
 == Selecting the application type
@@ -20,12 +20,12 @@ It’s not always obvious, to which category a new application belongs. To simpl
 
 ++++
 <p align="center">
-<img src="./../assets/images/general/decisiontree_apptype.png" width="619px" height="366px"><br>
+<img src="_images/general/decisiontree_apptype.png" width="619px" height="366px"><br>
 <i>Decision Tree: What type of application do I create?</i>
 </p>
 ++++
 
-For more information on the different types of applications, take a look at the link:./ecosystem.adoc[ecosystem].
+For more information on the different types of applications, take a look at the xref:./ecosystem.adoc[ecosystem].
 
 == Register Application
 
@@ -35,7 +35,7 @@ After creating an agrirouter developer account in quality assurance environment,
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig1\image5.png" width="642px" height="364px"><br>
+<img src="_images/ig1\image5.png" width="642px" height="364px"><br>
 <i>agrirouter endpoint software management</i>
 </p>
 ++++
@@ -74,7 +74,7 @@ Version Number of the certification: (Integer (!) version Id) this is a version 
 ====
 * The applicationCertificationVersion is not the software Version, but just an internal identifier for the DKE certification.
 
-* An Application can also be the software part of a CU. see link:./glossary.adoc[Glossary].
+* An Application can also be the software part of a CU. see xref:./glossary.adoc[Glossary].
 ====
 
 
@@ -88,7 +88,7 @@ All required steps are available in Endpoint Software Management in the section 
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image7.png" width="467px" height="513px"><br>
+ <img src="_images/ig1\image7.png" width="467px" height="513px"><br>
 <i>agrirouter application registration</i>
 </p>
 ++++
@@ -101,7 +101,7 @@ After submitting, DKE will receive a notification and set the status to _Approve
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image8.png" width="391px" height="126px">
+ <img src="_images/ig1\image8.png" width="391px" height="126px">
 </p>
 ++++
 
@@ -121,7 +121,7 @@ Every application (communication unit, farming software or telemetry platform) h
 The certification shall disclose name, version information and supported technical message types, in order to allow the agrirouter to check whether the application supports a certain technical message type and to properly display the name of the application as an endpoint in an end-user’s account after registration of an instance of the endpoint.
 
 
-All information on certification can be found link:./certification.adoc[here].
+All information on certification can be found xref:./certification.adoc[here].
 
 The certification also ensures that there will be a unique ID for the application which the application can send to the agrirouter in order to allow the agrirouter to look up its capabilities.
 
@@ -129,7 +129,7 @@ The certification allows the agrirouter to check the state of the application wi
 
 ++++
 <p align="center">
- <img src="./../assets/images/ig1\image9.png" width="469px" height="172px">
+ <img src="_images/ig1\image9.png" width="469px" height="172px">
 </p>
 ++++
 
@@ -166,7 +166,7 @@ For all certification requests in status _submitted_, agrirouter administrators 
 * either to rejected, making further processing impossible, or
 * it can be set to _Approved for Testing_ if the certification request was successful.
 
-In status _Approved for Testing_, application developers can link:./invite-testers.adoc[register farmers’ accounts as test accounts]. If a certification version is in status _Approved for Testing_, instances with this certification version can be registered in these test accounts and an external test can be started. The developers account automatically is an end user account that is a test account. This means that a developer can onboard an endpoint in his account.
+In status _Approved for Testing_, application developers can xref:./invite-testers.adoc[register farmers’ accounts as test accounts]. If a certification version is in status _Approved for Testing_, instances with this certification version can be registered in these test accounts and an external test can be started. The developers account automatically is an end user account that is a test account. This means that a developer can onboard an endpoint in his account.
 
 Using other accounts is not possible, because the certification version is not yet approved by DKE for public use. When the certification request is in status _Approved for Testing_, the agrirouter administrator can either finally set the status of the request to _Approved_ in case of successful testing or _rejected_ if testing was not successful.
 
@@ -174,9 +174,4 @@ Using other accounts is not possible, because the certification version is not y
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===

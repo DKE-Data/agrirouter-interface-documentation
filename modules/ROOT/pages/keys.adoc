@@ -1,5 +1,5 @@
 = Certificates and keys
-:imagesdir: ./assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -18,7 +18,7 @@ Within this document, there are several public or private keys mentioned that ar
 
 == agrirouter public keys
 
-These are the public keys used by the agrirouter. These are required for example to verify redirect messages from agrirouter in the link:./integration/authorization.adoc[authorization process].
+These are the public keys used by the agrirouter. These are required for example to verify redirect messages from agrirouter in the xref:./integration/authorization.adoc[authorization process].
 
 [cols=",,",options="header",]
 |===============================================================
@@ -81,7 +81,7 @@ The keys of the application can be found at the endpoint software overview when 
 
 ++++
 <p align="center">
-<img src="./../assets/images/ig2/image11.png" width="362px" height="350px" /><br>
+<img src="_images/ig2/image11.png" width="362px" height="350px" /><br>
 <i>Private and public key of an application in agrirouter</i>
 </p>
 ++++
@@ -128,17 +128,12 @@ The endpoint certificate is used to encrypt the communication with the agriroute
 
 [IMPORTANT]
 ====
-The certificate you receive during link:./integration/onboarding.adoc[onboarding] is valid for a certain period (1 year). 
+The certificate you receive during xref:./integration/onboarding.adoc[onboarding] is valid for a certain period (1 year). 
 
-After that, you have to perform the link:./integration/reonboarding.adoc[reonboarding].
+After that, you have to perform the xref:./integration/reonboarding.adoc[reonboarding].
 
 **Be aware** that this can require user interaction.
 ====
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===

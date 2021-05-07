@@ -1,5 +1,5 @@
 = Architecture of an endpoint
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -10,17 +10,13 @@ The endpoint can be seen as the interface between agrirouter and an App Instance
 
 On the other side, it is part of the agrirouter and forwards messages to routing and addressing, receives addressed messages and can handle the subscribtions.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image26.png" width="623px" height="268px"><br>
- <i>Architecture of an endpoint</i>
-</p>
-++++
+.Architecture of an endpoint
+image::ig2/image26.png[Architecture of an endpoint,623,268]
 
 
 [NOTE]
 ====
-The terms “subscription” and “subscribing” are well known by MQTT addicted developers. In this document however, subscribtions describe a technique of the agrirouter endpoint. It works like an MQTT subscription, it’s however important to notice that MQTT is mostly not the context of these words in the document except for the relevant chapter for link:./communication.adoc#mqtt[MQTT communication].
+The terms “subscription” and “subscribing” are well known by MQTT addicted developers. In this document however, subscribtions describe a technique of the agrirouter endpoint. It works like an MQTT subscription, it’s however important to notice that MQTT is mostly not the context of these words in the document except for the relevant chapter for xref:./communication.adoc#mqtt[MQTT communication].
 ====
 
 == Inbox
@@ -29,12 +25,8 @@ The inbox is used to receive messages or commands from an app instance.
 
 The address of this inbox is delivered with the Response of the onboarding request as “measures”.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image27.png" width="637px" height="274px"><br>
- <i>Inbox within an agrirouter endpoint</i>
-</p>
-++++
+.Inbox within an agrirouter endpoint
+image::ig2/image27.png[Inbox within an agrirouter endpoint,637,274]
 
 
 
@@ -50,12 +42,8 @@ The outbox is used to deliver messages to an app instance.
 
 The address of this outbox is delivered with the Response of the onboarding request as “commands”.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image28.png" width="632px" height="271px"><br>
- <i>Outbox within an agrirouter endpoint</i>
-</p>
-++++
+.Outbox within an agrirouter endpoint
+image::ig2/image28.png[Outbox within an agrirouter endpoint,632,271]
 
 
 
@@ -69,12 +57,8 @@ In terms of agrirouter onboarding result, the outbox is called comands due to th
 
 The feed receives all messages from the agrirouter due to addressing of messages and subscribtions of the endpoint, given there is a routing for that. Messages in the feed are stored for a maximum of 4 weeks before they are deleted. The user will be informed when there are messages that were not delivered for 3 weeks or more. An app instance can either request the messages to be forwarded to its outbox or request to delete the messages. If it requests the forwarding to the outbox, the messages are only deleted from the feed when the app instance confirms having received those messages.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image29.png" width="627px" height="269px"><br>
- <i>The feed within an agrirouter endpoint</i>
-</p>
-++++
+.The feed within an agrirouter endpoint
+image::ig2/image29.png[The feed within an agrirouter endpoint,627,269]
 
 
 
@@ -83,21 +67,12 @@ The feed receives all messages from the agrirouter due to addressing of messages
 
 The subscription list includes a list of all Message Types and DDIs, the endpoint is subscribed for. Whenever a message is published on the agrirouter account, this will lead to putting a copy of this message into the feed, given, there is a route for that.
 
-++++
-<p align="center">
- <img src="./../assets/images/ig2/image30.png" width="585px" height="251px"><br>
- <i>Subscribtion List within an agrirouter endpoint</i>
-</p>
-++++
+.Subscribtion List within an agrirouter endpoint
+image::ig2/image30.png[Subscribtion List within an agrirouter endpoint,585,251]
 
 
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===
 

@@ -1,5 +1,5 @@
 = Authorization Process
-:imagesdir: ./../../assets/images/
+:imagesdir: ./._images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -41,7 +41,7 @@ In the developers UI, he has to:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image10.png" width="636px" height="361px"><br>
+ <img src="./._images/ig2/image10.png" width="636px" height="361px"><br>
 <i>Application overview</i>
 </p>
 ++++
@@ -49,7 +49,7 @@ In the developers UI, he has to:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image11.png" width="362px" height="350px"><br>
+ <img src="./._images/ig2/image11.png" width="362px" height="350px"><br>
 <i>Application settings</i>
 </p>
 ++++
@@ -63,12 +63,8 @@ If you do not yet have an official domain, where your application is reachable o
 
 Simply check Tracert/TraceRoute:
 
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image12.png" width="466px" height="181px"><br>
- <i>fuf.me is an alias for localhost</i>
-</p>
-++++
+.fuf.me is an alias for localhost
+image::./._images/ig2/image12.png[fuf.me is an alias for localhost,466,181]
 
 ====
 
@@ -78,7 +74,7 @@ The authentication process works as follows:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image13.png" width="619px" height="376px"><br>
+ <img src="./._images/ig2/image13.png" width="619px" height="376px"><br>
 <i>Authorization Workflow</i>
 </p>
 ++++
@@ -102,7 +98,7 @@ For example the application could send a redirect (HTTP Status 300) to directly 
 
 === Generating an authorization URL
 
-The base URL can be found link:./../urls.adoc#AuthorizationURLs[here].
+The base URL can be found xref:./../urls.adoc#AuthorizationURLs[here].
 
 The authorization Link is a HTTP GET Request that has to be called from a browser.
 
@@ -151,12 +147,8 @@ The response type onboard can be used to onboard farming applications without ha
 
 When the user clicks on the link, the agrirouter website is called. If the user is currently not logged in, he has to log in. After logging in, he is delivered a website to authorize the connection between agrirouter and the application provider:
 
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image14.png" width="252px" height="202px"><br>
- <i>Application authorization screen</i>
-</p>
-++++
+.Application authorization screen
+image::./._images/ig2/image14.png[Application authorization screen,252,202]
 
 
 === Analyse result
@@ -178,7 +170,7 @@ The following parameters will be delivered in the GET-Queue:
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image15.png" width="542px" height="265px"><br>
+ <img src="./._images/ig2/image15.png" width="542px" height="265px"><br>
 <i>Example of an authorization result</i>
 </p>
 ++++
@@ -208,7 +200,7 @@ Steps:
 ====
 Make sure you **do not** use the public key you got when you created your application in agrirouter!
 
-You **have to** use the key from link:../keys.adoc[Certificates and keys]!
+You **have to** use the key from xref:../keys.adoc[Certificates and keys]!
 ====
 
 [NOTE]
@@ -245,7 +237,7 @@ To perform authorization for software that is not provided as a cloud solution, 
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig1\image27.png" width="640px" height="155px"><br>
+ <img src="./._images/ig1\image27.png" width="640px" height="155px"><br>
 <i>Authorization for non-cloud-applications</i>
 </p>
 ++++
@@ -253,7 +245,7 @@ To perform authorization for software that is not provided as a cloud solution, 
 
 [IMPORTANT]
 ====
-Make sure, you save all the information returned from the authorization request, as you will e.g. need the account id for the link:./revoke.adoc[Revoke functionality]!
+Make sure, you save all the information returned from the authorization request, as you will e.g. need the account id for the xref:./revoke.adoc[Revoke functionality]!
 ====
 
 
@@ -261,6 +253,6 @@ Make sure, you save all the information returned from the authorization request,
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====
 

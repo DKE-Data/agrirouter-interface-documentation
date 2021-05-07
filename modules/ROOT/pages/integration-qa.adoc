@@ -1,62 +1,62 @@
 = 3. Interface Integration in Quality Assurance
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
 
 == Before we begin
 
-Before starting with the integration, it's important to understand the link:./basic-concepts.adoc[basic concepts of agrirouter]. 
+Before starting with the integration, it's important to understand the xref:./basic-concepts.adoc[basic concepts of agrirouter]. 
 
 [IMPORTANT]
 ====
-Each agrirouter account has a limited number of endpoints, see link:./limitations.adoc[here].
+Each agrirouter account has a limited number of endpoints, see xref:./limitations.adoc[here].
 ====
 
 == Development Resources
 
-There are several development resources which can be found in link:./development-resources.adoc[the list of development resources] including topics like:
+There are several development resources which can be found in xref:./development-resources.adoc[the list of development resources] including topics like:
 
-* link:./keys.adoc[The keys & Certificates]
+* xref:./keys.adoc[The keys & Certificates]
 * link:https://github.com/DKE-Data/agrirouter-postman-tools[Postman collection for onboarding and Revoking]
-* link:./tools/paho.adoc[Paho for MQTT Connection]
-* link:./tools/arts.adoc[The agrirouter protobuf toolset]
-* link:./tools/endpoint-recording.adoc[The endpoint recording]
+* xref:./tools/paho.adoc[Paho for MQTT Connection]
+* xref:./tools/arts.adoc[The agrirouter protobuf toolset]
+* xref:./tools/endpoint-recording.adoc[The endpoint recording]
 * link:https://github.com/DKE-Data[The github Account with documentation and APIs]
 * link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial[A video tutorial on the integration process]
 
 == General process of integration in QA
 ++++
 <p align="center">
- <img src="../assets/images/general/process_integration_qa.png"><br>
+ <img src="._images/general/process_integration_qa.png"><br>
 </p>
 ++++
 
 
 
 == 3.1 Create developer account
-To start the development, you will need to link:./registration.adoc[create a developer account].
+To start the development, you will need to xref:./registration.adoc[create a developer account].
 
-There is also a link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial/blob/master/02-create-developer-account/index.adoc[Video Tutorial on creating an account]
+There is also a xref:https://github.com/DKE-Data/agrirouter-api-developer-tutorial/blob/master/02-create-developer-account/index.adoc[Video Tutorial on creating an account]
 
 == 3.2 Register & Submit your solution
 
-For communication with agrirouter, you need to link:./applications.adoc[setup an application] in the Quality assurance environment.
+For communication with agrirouter, you need to xref:./applications.adoc[setup an application] in the Quality assurance environment.
 
-There is also a link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial/blob/master/03-create-application/index.adoc[Video Tutorial on registering applications]
+There is also a xref:https://github.com/DKE-Data/agrirouter-api-developer-tutorial/blob/master/03-create-application/index.adoc[Video Tutorial on registering applications]
 
 == 3.3 Waiting for approval by the support team
 
-Whenever you create a new application version, the agrirouter support team will have to approve this application. Please send an email to support@my-agrirouter.com including the application Id and the certification version ID to request confirmation. Find out where to find them link:./ids-and-definitions.adoc[here].
+Whenever you create a new application version, the agrirouter support team will have to approve this application. Please send an email to support@my-agrirouter.com including the application Id and the certification version ID to request confirmation. Find out where to find them xref:./ids-and-definitions.adoc[here].
 
 == 3.4 Contact certification company
 
-Every app needs to be certified to communicate with the agrirouter. Further information can be found link:./certification.adoc[here].
+Every app needs to be certified to communicate with the agrirouter. Further information can be found xref:./certification.adoc[here].
 
 Once you know, which kind of application you want to create, you should get in contact with one of the link:https://my-agrirouter.com/support/certification[certification companies] to clarify, which specific requirements you will have to fulfill to pass the certification.
 This will help you to adapt your implementation for the certification and add all requirements for certification.
 
-Make sure to have all link:./certification.adoc#Prerequists[prerequists] available.
+Make sure to have all xref:./certification.adoc#Prerequists[prerequists] available.
 
 
 == 3.5 Integrate interface in your solution
@@ -64,75 +64,70 @@ Make sure to have all link:./certification.adoc#Prerequists[prerequists] availab
 The following chapters describe all requirements to integrate an application with agrirouter.
 
 === Before we begin
-First, you should always keep in mind the link:./integration/general-conventions.adoc[General conventions].
+First, you should always keep in mind the xref:./integration/general-conventions.adoc[General conventions].
 
-There are several environments for test and production in different areas of the world. Their different parameters like URLs and certificates can be found in the link:./integration/environments.adoc[Environments].
+There are several environments for test and production in different areas of the world. Their different parameters like URLs and certificates can be found in the xref:./integration/environments.adoc[Environments].
 
 === General lifecycle of an endpoint
 ++++
 <p align="center">
- <img src="../assets/images/general/lifecycle.png"><br>
+ <img src="._images/general/lifecycle.png"><br>
 </p>
 ++++
 
 === Connecting your app instance
 
 ==== Authorization
-FarmingSoftware and Telemetry Platforms have to perform an link:./integration/authorization.adoc[Authorization Process] to clarify that the account user is known.
+FarmingSoftware and Telemetry Platforms have to perform an xref:./integration/authorization.adoc[Authorization Process] to clarify that the account user is known.
 
 ==== Onboarding
 
-To communicate with the agrirouter, an application Instance needs to be link:./integration/onboarding.adoc[onboarded]. An application instance can be link:./integration/reonboarding.adoc[ReOnboarded].
+To communicate with the agrirouter, an application Instance needs to be xref:./integration/onboarding.adoc[onboarded]. An application instance can be link:./integration/reonboarding.adoc[ReOnboarded].
 
 
 === Communicate with agrirouter endpoints
 
 ==== Building messages
 
-To send a message, it has to be built first. Read link:./integration/build-message.adoc[here] about building messages and commands.
+To send a message, it has to be built first. Read xref:./integration/build-message.adoc[here] about building messages and commands.
 
 List of possible message content:
 
-* link:commands/overview.adoc[Commands to interact with the agrirouter]
-* link:tmt/overview.adoc[Technical message types to exchange data between endpoints of the agrirouter]
+* xref:commands/overview.adoc[Commands to interact with the agrirouter]
+* xref:tmt/overview.adoc[Technical message types to exchange data between endpoints of the agrirouter]
 
 ==== Sending messages and commands
 
-Every application instance can link:./integration/message-sending.adoc[send messages] and commands the same way.
+Every application instance can xref:./integration/message-sending.adoc[send messages] and commands the same way.
 
-While link:./tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, link:./commands/overview.adoc[commands] are used to link:./commands/ecosystem.adoc[explore the ecosystem], link:./commands/endpoint.adoc[configure your endpoint] and link:./commands/feed.adoc[request messages from the feed].
+While xref:./tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, link:./commands/overview.adoc[commands] are used to link:./commands/ecosystem.adoc[explore the ecosystem], link:./commands/endpoint.adoc[configure your endpoint] and link:./commands/feed.adoc[request messages from the feed].
 
 ==== Receiving messages and command answers
 
-Command results and messages from other endpoints will be link:./integration/message-receiving.adoc[received through the outbox] by the receiving application instance.
+Command results and messages from other endpoints will be xref:./integration/message-receiving.adoc[received through the outbox] by the receiving application instance.
 
-Messages from other endpoints are put into the outbox by link:./integration/push-notification.adoc[push notifications] as well as by link:./commands/feed.adoc[requesting the feed content].
+Messages from other endpoints are put into the outbox by xref:./integration/push-notification.adoc[push notifications] as well as by link:./commands/feed.adoc[requesting the feed content].
 
 ==== Analysing messages
 
-Depending on the  link:./integration/analyze-result.adoc#ResponseType[resultType], the result can be link:./integration/analyze-result.adoc[analyzed].
+Depending on the  xref:./integration/analyze-result.adoc#ResponseType[resultType], the result can be link:./integration/analyze-result.adoc[analyzed].
 
 === End of life for an endpoint
 
-When an endpoint shall be deleted, it can be link:./integration/revoke.adoc[Revoked].
+When an endpoint shall be deleted, it can be xref:./integration/revoke.adoc[Revoked].
 
 == 3.6 Test Interface and messaging
 
-In status _Approved for Testing_, application developers can link:./invite-testers.adoc[add other accounts for testing their application]. If a certification version is in status _Approved for Testing_, instances with this certification version can be onboarded in these test accounts and an external test can be started. The developers account automatically is an end-user account that is a test account. This means that a developer can onboard an endpoint in his account.
+In status _Approved for Testing_, application developers can xref:./invite-testers.adoc[add other accounts for testing their application]. If a certification version is in status _Approved for Testing_, instances with this certification version can be onboarded in these test accounts and an external test can be started. The developers account automatically is an end-user account that is a test account. This means that a developer can onboard an endpoint in his account.
 
 [IMPORTANT]
 ====
-As the application currently only communicates with the agrirouter Quality assurance environment, it cannot be onboarded in the Production environment. See link:./integration-prod.adoc[Integration in Production] for those further steps.
+As the application currently only communicates with the agrirouter Quality assurance environment, it cannot be onboarded in the Production environment. See xref:./integration-prod.adoc[Integration in Production] for those further steps.
 ====
 
 
 == How to proceed
 
-Once you finished the tests and see your app ready to be published, you can proceed with the link:./integration-prod.adoc[integration in the productive environment].
+Once you finished the tests and see your app ready to be published, you can proceed with the xref:./integration-prod.adoc[integration in the productive environment].
 
-== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+=

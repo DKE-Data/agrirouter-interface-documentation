@@ -1,4 +1,4 @@
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 
 = Global Message Codes
 The below listing of messages are those which will be used as output within the ACK* messages pushed to connected endpoints of the agrirouter.
@@ -119,12 +119,7 @@ With the messages we will have place holders for values which would be injected 
 |========================================================================================================================================================
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===
 
 
 

@@ -1,5 +1,5 @@
 = Development resources
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -27,11 +27,11 @@ To perform an agrirouter integration, you will need knowledge to the following t
 
 * For REST Tests, you can use the link:https://github.com/DKE-Data/agrirouter-postman-tools[Postman Collection]
 
-* For MQTT Tests, you can use link:./tools/paho.adoc[Paho]
+* For MQTT Tests, you can use xref:./tools/paho.adoc[Paho]
 
-* Especially for Protobuf Development, you can use the link:./tools/arts.adoc[agrirouter Protobuf Toolset]
+* Especially for Protobuf Development, you can use the xref:./tools/arts.adoc[agrirouter Protobuf Toolset]
 
-* To create and play traces, use the link:./tools/endpoint-recording.adoc[Endpoint Recording]
+* To create and play traces, use the xref:./tools/endpoint-recording.adoc[Endpoint Recording]
 
 == Further Resources
 
@@ -49,10 +49,5 @@ Following resources can help developers to integrate their applications to the a
 
 
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===
 

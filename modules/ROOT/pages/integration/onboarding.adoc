@@ -1,5 +1,5 @@
 = Onboarding App Instances
-:imagesdir: ./../../assets/images/
+:imagesdir: ./._images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -11,7 +11,7 @@ The onboarding workflow is needed to onboard app instances and create endpoints 
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image17.png" width="568px" height="599px"><br>
+ <img src="./._images/ig2/image17.png" width="568px" height="599px"><br>
 <i>General onboarding workflow</i>
 </p>
 ++++
@@ -23,7 +23,7 @@ Telemetry systems and Farming Software need to assign their own userID to the ac
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image18.png" width="627px" height="551px"><br>
+ <img src="./._images/ig2/image18.png" width="627px" height="551px"><br>
 <i>onboarding Workflow for a farming software or telemetry platform</i>
 </p>
 ++++
@@ -33,7 +33,7 @@ Telemetry systems and Farming Software need to assign their own userID to the ac
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image19.png" width="627px" height="311px"><br>
+ <img src="./._images/ig2/image19.png" width="627px" height="311px"><br>
 <i>agrirouter onboarding process for a CU</i>
 </p>
 ++++
@@ -54,7 +54,7 @@ The following parts of onboarding are *not* required for CU onboarding:
 
 == Workflow for Virtual CUs
 
-Onboarding virtual CUs through a telemetry platform is done using a command. This is described in link:../commands/cloud.adoc[Cloud solution commands].
+Onboarding virtual CUs through a telemetry platform is done using a command. This is described in xref:../commands/cloud.adoc[Cloud solution commands].
 
 From the end user’s perspective, it is mostly dependent on the telemetry platform if there is any selection mechanism or if it is done automatically.
 
@@ -66,7 +66,7 @@ The registration code for a new CU can be created by the end user clicking "Onbo
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image20.png" width="642px" height="368px"><br>
+ <img src="./._images/ig2/image20.png" width="642px" height="368px"><br>
 <i>Requesting a registration code in agrirouter UI</i>
 </p>
 ++++
@@ -75,7 +75,7 @@ The registration code for a new CU can be created by the end user clicking "Onbo
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image21.png" width="291px" height="164px"><br>
+ <img src="./._images/ig2/image21.png" width="291px" height="164px"><br>
 <i>registration code for a CU</i>
 </p>
 ++++
@@ -83,11 +83,11 @@ The registration code for a new CU can be created by the end user clicking "Onbo
 
 === As result of the authorization
 
-If the link:./authorization.adoc[authorization prozess] is done using parameter _response_type=onboard_, the result will include a regcode. This regcode is a registration code.
+If the xref:./authorization.adoc[authorization prozess] is done using parameter _response_type=onboard_, the result will include a regcode. This regcode is a registration code.
 
 === Telemetry Platforms
 
-A telemetry platform has to be onboarded using the authorization process. Once it is onboarded, it can onboard virtual CUs by itself. Therefore, it can use a special command. This is described in link:../commands/cloud.adoc[Cloud solution commands].
+A telemetry platform has to be onboarded using the authorization process. Once it is onboarded, it can onboard virtual CUs by itself. Therefore, it can use a special command. This is described in xref:../commands/cloud.adoc[Cloud solution commands].
 
 
 == Collecting and setting up relevant information
@@ -100,7 +100,7 @@ Both IDs are the same, they can be found in the agrirouter software endpoint UI 
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image22.png" width="455px" height="258px"><br>
+ <img src="./._images/ig2/image22.png" width="455px" height="258px"><br>
 <i>Finding the applicationID</i>
 </p>
 ++++
@@ -113,7 +113,7 @@ The CertificationVersionID is the ID unique to this specific app certification. 
 
 ++++
 <p align="center">
- <img src="./../../assets/images/ig2/image23.png" width="519px" height="294px"><br>
+ <img src="./._images/ig2/image23.png" width="519px" height="294px"><br>
 <i>Finding the certificationVersionID</i>
 </p>
 ++++
@@ -128,22 +128,18 @@ This step is not required for CUs
 
 As the requests need to be signed, the public key has to be stored within the agrirouter. This can be done, calling “Edit” on the Endpoint Software Management Screen. The agrirouter UI offers the possibility to create a key pair, you can however create your own one and just store the public key on agrirouter.
 
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image24.png" width="409px" height="400px"><br>
- <i>Generating Private and Public Key in the agrirouter UI</i>
-</p>
-++++
+.Generating Private and Public Key in the agrirouter UI
+image::./._images/ig2/image24.png[Generating Private and Public Key in the agrirouter UI,409,400]
 
 === External Id
 
-The external Id - to be seen in the <<Body Information>> of the onboarding request - needs to be a URN, which fits to the definitions in the link:./general-conventions.adoc[general conventions].
+The external Id - to be seen in the <<Body Information>> of the onboarding request - needs to be a URN, which fits to the definitions in the xref:./general-conventions.adoc[general conventions].
 
 == onboarding Endpoint URLs
 
 The endpoint URL differs, depending on your desired geolocation and the Quality Assurance or Productive Environment.
 
-The request must be a HTTP Post request to link:./../urls.adoc#onboardingEndpointURLs[the URL found here].
+The request must be a HTTP Post request to xref:./../urls.adoc#onboardingEndpointURLs[the URL found here].
 
 [NOTE]
 ====
@@ -199,7 +195,7 @@ The Request shall include the following header information:
 |Authorization |String |“Bearer “+ the registration code
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
-|X-Agrirouter-Signature |[Signature] |see link:./onboarding.adoc#signing-requests[Signing requests]
+|X-Agrirouter-Signature |[Signature] |see xref:./onboarding.adoc#signing-requests[Signing requests]
 |=============================================================
 
 ==== Body Information
@@ -288,7 +284,7 @@ It includes the accountId, so that an app provider can check if this accountId m
 ===== Failure
 
 In case of Failure, an error message is provided.
-Possible ErrorMessages can be found link:../error-codes.adoc[here].
+Possible ErrorMessages can be found xref:../error-codes.adoc[here].
 
 
 == Onboarding Request
@@ -332,7 +328,7 @@ The Request shall include the following header information:
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
 |X-Agrirouter-Signature |[Signature] | The signature,
-see link:./onboarding.adoc#signing-requests[here]
+see xref:./onboarding.adoc#signing-requests[here]
 |========================================================================================================================
 
 ==== Body Information
@@ -462,7 +458,7 @@ The request has several possible response codes indicating Success or Failure:
 |Code |Possible problem
 |201 |Success; Analyze onboarding result to get started
 |400 |The Request was invalid
-|401 |Unauthorized; meaning that one of the given header parameters is wrong. Refer to the link:./../error-codes.adoc[error message]
+|401 |Unauthorized; meaning that one of the given header parameters is wrong. Refer to the xref:./../error-codes.adoc[error message]
 |========================================================================================================
 
 ==== Success
@@ -574,14 +570,14 @@ On Failure, a JSON object including an error message is received, e.g.:
 }
 ----
 
-Possible Error codes can be found link:../error-codes.adoc#onboarding-errorcodes[ in the error list]
+Possible Error codes can be found xref:../error-codes.adoc#onboarding-errorcodes[ in the error list]
 
 ==== Onboarding Result in the agrirouter UI
 
 When a new endpoint is onboarded, its name consists of the name of the application and the onboarding timestamp.
 ++++
 <p align="center">
- <img src="./../../assets/images/general/endpointName.png"><br>
+ <img src="./._images/general/endpointName.png"><br>
  <i>Endpoint name including timestamp</i>
 </p>
 ++++
@@ -603,5 +599,5 @@ If you experience problems with an invalid signature, (Code 107), try the follow
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviationtions]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviationtions]|link:../terms.adoc[agrirouter in a nutshell]
 |====

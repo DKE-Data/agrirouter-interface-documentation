@@ -1,5 +1,5 @@
 = EFDI
-:imagesdir: ./../../assets/images/
+:imagesdir: ./._images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -23,7 +23,7 @@ The message iso:11783:-10:device_description:protobuf is used to understand, whi
 
 This format is used to report devices that are attached to the agrirouter through a CU. These devices including the CU are known as a teamset, having their own teamsetID.
 
-For information on filtering and assigning machines by their name, see link:../ecosystem.adoc[ecosystem].
+For information on filtering and assigning machines by their name, see xref:../ecosystem.adoc[ecosystem].
 
 
 === Command
@@ -123,5 +123,5 @@ The categories list is only relevant for the UI of agrirouter, it is not used in
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

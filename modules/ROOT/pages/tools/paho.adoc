@@ -2,7 +2,7 @@
 :toc:
 :toc-title:
 :toclevels: 4
-:imagesdir: ./../../assets/images/
+:imagesdir: ./._images/
 
 == What is Paho?
 
@@ -19,7 +19,7 @@ To format the certificates, link:https://www.openssl.org/[openssl] is required.
 
 To communicate with the agrirouter via MQTT two certificates are required. The first certificate is a general certificate to communicate with the server, the second certificate is the one that is client specific.
 
-First, the general certificate need to be added to your systems trust store. Download those certificates following this link:../keys.adoc[keys page].
+First, the general certificate need to be added to your systems trust store. Download those certificates following this xref:../keys.adoc[keys page].
 
 To add the certificates to your local trust store:
 
@@ -39,9 +39,9 @@ This keystore is described in the Paho UI as "Truststore"
 
 == Setup Endpoint in MQTT
 === Create KeyStore
-Onboarding an MQTT endpoint provides a certificate, an MQTT client id and two topics; see link:../integration/onboarding.adoc[onboarding].
+Onboarding an MQTT endpoint provides a certificate, an MQTT client id and two topics; see xref:../integration/onboarding.adoc[onboarding].
 
-Alternatively, the connection can be setup using a link:../router-devices.adoc[router device].
+Alternatively, the connection can be setup using a xref:../router-devices.adoc[router device].
 
 The certificate received from onboarding process needs to be formatted to work with PAHO (PAHO only, not needed for most of the other clients):
 
@@ -57,40 +57,24 @@ openssl pkcs12 -export -in myCert.pem -inkey myCert.pem -out myCert.jks
 
 Open the connection options and enable SSL. Then add the certificate files for truststore (general MQTT Certificates) and keystore (your onboarding results certificate)
 
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image5.png" width="800px" height="321px"><br>
- <i></i>
-</p>
-++++
+.
+image::./._images/ig2/image5.png[,800,321]
 
 
 == Setup the connection criteria of Paho:
 Read the connection criteria from the onboarding result and click on connect.
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image6.png" width="800px" height="139px"><br>
- <i>Example for an onboarding result</i>
-</p>
-++++
+.Example for an onboarding result
+image::./._images/ig2/image6.png[Example for an onboarding result,800,139]
 
 
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image7.png" width="800px" height="144px"><br>
- <i>Paho UserInterface</i>
-</p>
-++++
+.Paho UserInterface
+image::./._images/ig2/image7.png[Paho UserInterface,800,144]
 
 
 == Basic functions
 
-++++
-<p align="center">
- <img src="./../../assets/images/ig2/image8.png" width="678px" height="356px"><br>
- <i>Basic Functions in Paho UI</i>
-</p>
-++++
+.Basic Functions in Paho UI
+image::./._images/ig2/image8.png[Basic Functions in Paho UI,678,356]
 
 
 
@@ -102,5 +86,5 @@ Read the connection criteria from the onboarding result and click on connect.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
+|xref:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

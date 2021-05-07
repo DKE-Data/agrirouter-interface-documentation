@@ -1,5 +1,5 @@
 = agrirouter Certification
-:imagesdir: ./../assets/images/
+:imagesdir: _images/
 :toc:
 :toc-title:
 :toclevels: 4
@@ -29,8 +29,8 @@ To pass the certification tests there are multiple requirements have to be fulfi
 
 === Prerequisites
 
-* The link:./provider-agreement.adoc[DKE application provider agreement] has to be signed.
-* The link:./marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
+* The xref:./provider-agreement.adoc[DKE application provider agreement] has to be signed.
+* The xref:./marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
 * The following information about the company is available:
 ** Name
 ** Address (where billing and offer should be placed by the certification company)
@@ -39,8 +39,8 @@ To pass the certification tests there are multiple requirements have to be fulfi
 ** Address
 ** Phone
 ** URL
-* A link:./registration.adoc[production environment developer account of the application provider]
-* The application Id and certification version Id of link:./applications.adoc[an application in the production environment].
+* A xref:./registration.adoc[production environment developer account of the application provider]
+* The application Id and certification version Id of xref:./applications.adoc[an application in the production environment].
 * Version, name and description of the application to certify.
 
 === Additional requirements during the process
@@ -49,8 +49,8 @@ The following information is not required to start the certification but will be
 
 * Message protocol of the application (MQTT / REST).
 * Message format of the application (JSON / Native Protobuf).
-* The capabilities of the application including link:./tmt/overview.adoc[the technical message types] and sending directions.
-* A list of link:./commands/overview.adoc[all commands] that are used by the application.
+* The capabilities of the application including xref:./tmt/overview.adoc[the technical message types] and sending directions.
+* A list of xref:./commands/overview.adoc[all commands] that are used by the application.
 * Is this an initial certification or a recertification for a new version of an existing software?
 * For some test case there has to be at least one extracted original message (as JSON or Base64-Encoded native Protobuf) provided to the certification company.
 
@@ -71,17 +71,17 @@ The selection depends on several parameters and attributes of the specific appli
 
 === Based on the application type
 
-Based on the type of your application, different tests are required. Check link:./applications.adoc[here], which type of application suites your requirements best.
+Based on the type of your application, different tests are required. Check xref:./applications.adoc[here], which type of application suites your requirements best.
 
 [cols="1,2,4",options="header",]
 |====
 |Message type |Major for |Expected results / Acceptance criteria
 
-|link:./integration/onboarding.adoc#onboarding-request[Onboarding]
+|xref:./integration/onboarding.adoc#onboarding-request[Onboarding]
 | CUs
 a|
 * A new endpoint is visible in the certification account.
-* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements].
+* The external Id is a valid URN, see xref:./integration/general-conventions.adoc[general requirements].
 * The following application information is visible in the agrirouter UI:
 ** The application name
 ** The application manufacturer
@@ -97,7 +97,7 @@ a|
 ** The error code does not simply copy the error message from agrirouter.
 ** Error codes that might not yet be documented have to be displayed as well.
 
-|link:./integration/authorization.adoc[Authorization]
+|xref:./integration/authorization.adoc[Authorization]
 |Telemetry platform
 
 Farming software
@@ -106,7 +106,7 @@ a|
 * After clicking the "Reject"-Button, the failure to onboard should be shown to the user.
 ** The notification should indicate that the onboarding was rejected.
 
-|link:./integration/onboarding.adoc#verification-request[Verification (optional, if supported)]
+|xref:./integration/onboarding.adoc#verification-request[Verification (optional, if supported)]
 |Telemetry platform
 
 Farming software
@@ -115,13 +115,13 @@ a|
 * After clicking the "Reject"-Button, the failure to verify should be shown to the user.
 ** The notification should indicate that the onboarding was rejected.
 
-|link:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
+|xref:./integration/onboarding.adoc#workflow-for-farming-software-and-telemetry-systems[Secured Onboarding]
 |Telemetry platform
 
 Farming software
 a|
 * A new endpoint is visible in the certification account.
-* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements].
+* The external Id is a valid URN, see xref:./integration/general-conventions.adoc[general requirements].
 * The following application information is visible in the agrirouter UI:
 ** The application name
 ** The application manufacturer
@@ -137,7 +137,7 @@ a|
 ** The error code does not simply copy the error message from agrirouter.
 ** Error codes that might not yet be documented have to be displayed as well.
 
-|link:./integration/revoke.adoc[Revoking]
+|xref:./integration/revoke.adoc[Revoking]
 |Telemetry platform
 
 Farming software
@@ -146,7 +146,7 @@ a|
 * After an endpoint was deleted by the user, revoking has to be possible.
 
 
-|link:./integration/reonboarding.adoc[Reonboarding]
+|xref:./integration/reonboarding.adoc[Reonboarding]
 |Always
 a|
 * The application instance uses the same external Id as it has used for onboarding.
@@ -157,15 +157,15 @@ a|
 ** Wrong account: During reonboarding, the user is logged in with a different agrirouter account than before. This should result in a new endpoint onboarding in a different account.
 
 
-|link:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding]
+|xref:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding]
 |Telemetry platform
 a|
 * A new endpoint representing the VCU shows up in the certification account.
-* The external Id is a valid URN, see link:./integration/general-conventions.adoc[general requirements]
+* The external Id is a valid URN, see xref:./integration/general-conventions.adoc[general requirements]
 * A notification is shown in the UI of the telemetry platform or the VCU that informs the user about the successfull onboarding.
 * In case of an error, a notification is shown in the UI of the telemetry platform or the VCU that informs the user about the reason.
 
-|link:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
+|xref:./commands/cloud.adoc#removing-a-virtual-cu[VCU offboarding]
 |Telemetry platform
 a|
 * The specific endpoint disappears from the certification account.
@@ -179,56 +179,56 @@ It will be checked in advance by the certification company, which commands are s
 [cols="1,2,9",options="header",]
 |====
 |Message type |Condition |Expected results / Acceptance criteria
-|link:./commands/endpoint.adoc#capabilities-command[dke:capabilities]
+|xref:./commands/endpoint.adoc#capabilities-command[dke:capabilities]
 | Always
 a|
 * Setting routes (as sender or/and as receiver) is possible.
 * All information types defined in the certification version of the application to be certified can be selected.
 
-|link:./commands/endpoint.adoc#subscribtion-command[dke:subscription]
+|xref:./commands/endpoint.adoc#subscribtion-command[dke:subscription]
 |If the application can receive messages.
 a|
 * The application receives published messages of every technical message type mentioned in its certification version as a receipient.
 
 * An application can optionally offer the possibility to deactivate subscriptions for specific message types. During certifications, all subscriptions are required.
 
-|link:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query]
+|xref:./commands/feed.adoc#call-for-message-header-list[dke:feed_header_query]
 |If application can receive messages.
 a|
 * see __"Clean your feed"__
 
-|link:./commands/feed.adoc#call-for-messages[dke:feed_message_query]
+|xref:./commands/feed.adoc#call-for-messages[dke:feed_message_query]
 |If application can receive messages.
 a|
 * see __"Clean your feed"__
 
-|link:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm]
+|xref:./commands/feed.adoc#call-for-message-list-confirmation[dke:feed_confirm]
 |If application can receive messages.
 a|
 * see __"Clean your feed"__
 
-|link:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete]
+|xref:./commands/feed.adoc#call-for-message-deletion[dke:feed_delete]
 |If application can receive messages.
 a|
 * see __"Clean your feed"__
 
-|link:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints]
+|xref:./commands/ecosystem.adoc#call-for-filtered-list-of-endpoints-that-support-a-specific-message-type[dke:list_endpoints]
 |Optional, if supported.
 a|
 * The application instance receives a list of endpoints to which messages of a certain type can be sent.
 
-|link:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered]
+|xref:./commands/ecosystem.adoc#call-for-endpoints-that-support-a-technical-message-type[dke:list_endpoints_unfiltered]
 |Optional, if supported.
 a|
 * The application instance receives a list of endpoints to which messages of a certain type can be sent (not considering routing rules)
 
-|link:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf]
+|xref:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf]
 |If application can send messages.
 a|
 * If the application reports machines connected via ISOBUS, the AEF conformance test "TaskController" is adviced.
 * If the application reports self-built device descriptions (e.g. by translating a TractorECU or using Bluetooth beacons), the reported device descriptions have to be compatible with ISO11783-10 Annex F.
 
-|link:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf]
+|xref:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf]
 |If application can send messages.
 a|
 * see __"Teamset reports"__
@@ -244,15 +244,15 @@ These tests are only required if your application can send messages.
 [cols="1,2,9",options="header",]
 |====
 |Message type |Condition |Expected results / Acceptance criteria
-|link:./integration/build-message.adoc#chunking-big-messages[Building chunks]
-| link:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
+|xref:./integration/build-message.adoc#chunking-big-messages[Building chunks]
+| xref:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
 a|
 * The sending of a file with a size of more than 1 MB is possible. The chunks context information is filled.
 * The `chunkContextId` is equal for all chunks that represent 1 file.
 * The `chunkContextId` changes when a new file is sent.
 * The chunks have to be enumerated in `ChunkComponent.current` starting from 1, `ChunkComponent.total` has to equal the highest chunk number
 | Base64 encoding
-|link:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
+|xref:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
 a|
 * A file that should be sent is encoded in Base64.
 * If multiple chunks are required, each chunk is a valid Base64 string.
@@ -261,7 +261,7 @@ a|
 a| * GPS Position Lists are not Base64-Encoded
 * EFDI Datasets are not Base64-encoded
 | Exchange zipped folders
-| link:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape]
+| xref:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape]
 a|
 * The `TaskData.zip` and / or `Shape.zip` are valid zip files that can be unpacked.
 
@@ -286,7 +286,7 @@ These tests are only required if your application can receive data.
 |====
 |Message type |Condition |Expected results / Acceptance criteria
 |Merging chunks
-| link:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
+| xref:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
 a|
 * The receiving of a file that consists of 1 chunk without chunk context is possible.
 * The receiving of a file that consists of 1 chunk with chunk context is possible.
@@ -297,13 +297,13 @@ a|
 | App can receive gps:info and/or EFDI
 a| * The application can receive gps:info and EFDI that are not Base64-encoded
 |Receive Base64 encoded TMTs
-| link:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
+| xref:./tmt/overview.adoc[All TMTs except for EFDI and gps:info]
 a|
 * The receiving of a file that is base64-encoded is possible.
-|link:./integration/push-notification.adoc[Push notifications]
+|xref:./integration/push-notification.adoc[Push notifications]
 |Always (if supported).
 a|
-* It is tested if push notifications are activated in the link:./commands/endpoint.adoc#capabilities-command[capabilities message].
+* It is tested if push notifications are activated in the xref:./commands/endpoint.adoc#capabilities-command[capabilities message].
 * It is tested if pushed messages are confirmed by the application after receiving them.
 * There has to be a concept for the case if push notifications are not delivered from the AR because an outage appeared or the push notification gets lost in another way. We recommend to check the feed at least once a day for messages that were not delivered via push notification.
 |====
@@ -314,7 +314,7 @@ a|
 |====
 |Topic |Description |Expected results / Acceptance criteria
 |Timestamps
-a| It will be tested that the software uses UTC Timestamp for every message it sends. See also the link:./integration/general-conventions.adoc[general conventions].
+a| It will be tested that the software uses UTC Timestamp for every message it sends. See also the xref:./integration/general-conventions.adoc[general conventions].
 a|
 * It's checked if sent messages are in a range of +/- 1 minute of UTC.
 
@@ -323,7 +323,7 @@ a|
 a|
 * Every application message Id has to be a UUId.
 * On every start up, the sequence number needs to start at 1 and has to be incremented with every command / message.
-* The link:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked.
+* The xref:./integration/general-conventions.adoc#string-identifiers-convention[external Id requirements] will be checked.
 
 |Billing requirements
 | To avoid problems during the invoicing and billing process, there are some requirements to support the whole process.
@@ -406,7 +406,7 @@ If your software supports REST with native Protobuf, sending and receiving of th
 [cols="1,3,3",options="header",]
 |====
 |Topic |Description |Expected results / Acceptance criteria
-|Polling |It is checked that your application does not flood agrirouter with polls |The application shall not poll the outbox of each app instance more often than described link:./messaging-workflow.adoc#request-sending-frequency[here].
+|Polling |It is checked that your application does not flood agrirouter with polls |The application shall not poll the outbox of each app instance more often than described xref:./messaging-workflow.adoc#request-sending-frequency[here].
 |====
 
 == Recertification cases
@@ -429,9 +429,4 @@ The supported TMTs as well as the used protocol and format are assigned to the c
 In the unlikely event of an update of agrirouter software, which requires changes in the app providers software (e.g. a new error code that shall be handled), a new certification is *not required*. However, the app provider is responsible for keeping his software up to date.
 ====
 
-==== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
-|====
+===
