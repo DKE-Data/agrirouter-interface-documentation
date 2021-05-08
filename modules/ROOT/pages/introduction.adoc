@@ -1,7 +1,8 @@
 :imagesdir: assets/images
-image::agrirouter.svg
 
-== What is the agrirouter?
+image::agrirouter.svg[agrirouter,240]
+
+= What is the agrirouter?
 More information on agrirouter can be found xref:general.adoc[here]
 
 == Basic Concepts

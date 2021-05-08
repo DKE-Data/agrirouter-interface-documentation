@@ -10,7 +10,5 @@ You can get this document by contacting Dr. Ing Jens Möller, see link:https://m
 
 [NOTE]
 ====
-These contacts are only relevant for the business side, for development or end user support, please refer to the xref:./service-support.adoc[Service&Support]
+These contacts are only relevant for the business side, for development or end user support, please refer to the xref:service-support.adoc[Service&Support]
 ====
-
-=

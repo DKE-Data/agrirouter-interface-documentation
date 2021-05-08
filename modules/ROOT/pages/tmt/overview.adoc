@@ -1,5 +1,5 @@
 = Technical Message types
-:imagesdir: ./._images/
+:imagesdir: 
 :toc:
 :toc-title:
 :toclevels: 4
@@ -16,10 +16,7 @@ In addition to the technical message types listed here, further technical messag
 The available technical message types can be found in the agrirouter UI when creating a new application:
 
 .Selecting technical message types in the agrirouter UI
-image::./._images/ig2/image47.png[Selecting technical message types in the agrirouter UI,642,380]
-
-
-Figure 39 Selecting Technical Message Types in the agrirouter UI
+image::ig2/image47.png[Selecting technical message types in the agrirouter UI,642,380]
 
 == List of technical message formats
 

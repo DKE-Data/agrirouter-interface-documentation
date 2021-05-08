@@ -12,7 +12,7 @@ agrirouter is not interested in any internal changes of your software.
 However, whenever the maximum capabilities of your software change, you'll need to create a new version in the agrirouter UI and run a new certification.
 
 === What has to be done?
-==== While development
+==== During development
 1. You have to create a new certification version in the agrirouter UI
 2. After testing, a certification has to be done
 

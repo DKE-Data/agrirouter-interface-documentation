@@ -121,5 +121,3 @@ As the application currently only communicates with the agrirouter Quality assur
 == How to proceed
 
 Once you finished the tests and see your app ready to be published, you can proceed with the xref:./integration-prod.adoc[integration in the productive environment].
-
-=

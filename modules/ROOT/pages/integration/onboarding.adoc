@@ -1,5 +1,5 @@
 = Onboarding App Instances
-:imagesdir: ./._images/
+:imagesdir: 
 :toc:
 :toc-title:
 :toclevels: 4
@@ -10,7 +10,7 @@
 The onboarding workflow is needed to onboard app instances and create endpoints in the agrirouter. The result of the onboarding process has to be stored.
 
 .General onboarding workflow
-image::./._images/ig2/image17.png[General onboarding workflow,568,599]
+image::ig2/image17.png[General onboarding workflow,568,599]
 
 
 == Workflow for Farming Software and Telemetry Systems
@@ -18,13 +18,13 @@ image::./._images/ig2/image17.png[General onboarding workflow,568,599]
 Telemetry systems and Farming Software need to assign their own userID to the accountID of the user at the agrirouter. Therefore, a verification should be performed before onboarding.
 
 .onboarding Workflow for a farming software or telemetry platform
-image::./._images/ig2/image18.png[onboarding Workflow for a farming software or telemetry platform,627,551]
+image::ig2/image18.png[onboarding Workflow for a farming software or telemetry platform,627,551]
 
 
 == Workflow for CUs
 
 .agrirouter onboarding process for a CU
-image::./._images/ig2/image19.png[agrirouter onboarding process for a CU,627,311]
+image::ig2/image19.png[agrirouter onboarding process for a CU,627,311]
 
 
 [NOTE]
@@ -53,12 +53,12 @@ From the end user’s perspective, it is mostly dependent on the telemetry platf
 The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit" in agrirouter's control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers. A CU needs an interface to input this registration code.
 
 .Requesting a registration code in agrirouter UI
-image::./._images/ig2/image20.png[Requesting a registration code in agrirouter UI,642,368]
+image::ig2/image20.png[Requesting a registration code in agrirouter UI,642,368]
 
 
 
 .registration code for a CU
-image::./._images/ig2/image21.png[registration code for a CU,291,164]
+image::ig2/image21.png[registration code for a CU,291,164]
 
 
 === As result of the authorization
@@ -79,7 +79,7 @@ The onboarding request requires several different information:
 Both IDs are the same, they can be found in the agrirouter software endpoint UI of the developers account:
 
 .Finding the applicationID
-image::./._images/ig2/image22.png[Finding the applicationID,455,258]
+image::ig2/image22.png[Finding the applicationID,455,258]
 
 
 
@@ -88,7 +88,7 @@ image::./._images/ig2/image22.png[Finding the applicationID,455,258]
 The CertificationVersionID is the ID unique to this specific app certification. It can be found when clicking on the required Endpoint Software Version:
 
 .Finding the certificationVersionID
-image::./._images/ig2/image23.png[Finding the certificationVersionID,519,294]
+image::ig2/image23.png[Finding the certificationVersionID,519,294]
 
 
 === Setting up private and public key
@@ -101,7 +101,7 @@ This step is not required for CUs
 As the requests need to be signed, the public key has to be stored within the agrirouter. This can be done, calling “Edit” on the Endpoint Software Management Screen. The agrirouter UI offers the possibility to create a key pair, you can however create your own one and just store the public key on agrirouter.
 
 .Generating Private and Public Key in the agrirouter UI
-image::./._images/ig2/image24.png[Generating Private and Public Key in the agrirouter UI,409,400]
+image::ig2/image24.png[Generating Private and Public Key in the agrirouter UI,409,400]
 
 === External Id
 
@@ -548,7 +548,7 @@ Possible Error codes can be found xref:../error-codes.adoc#onboarding-errorcodes
 
 When a new endpoint is onboarded, its name consists of the name of the application and the onboarding timestamp.
 .Endpoint name including timestamp
-image::./._images/general/endpointName.png[Endpoint name including timestamp]
+image::general/endpointName.png[Endpoint name including timestamp]
 
 === Handling Signature Issues
 

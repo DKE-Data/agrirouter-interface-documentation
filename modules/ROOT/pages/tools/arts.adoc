@@ -2,7 +2,7 @@
 :toc:
 :toc-title:
 :toclevels: 4
-:imagesdir: ./._images/
+:imagesdir: 
 
 == What is ARTS?
 
@@ -13,7 +13,7 @@ The tool includes a command line as well as a user interface.
 The project can be found here: https://github.com/saschadoemer/agrirouter-protobuf-toolset
 
 .ARTS User Interface
-image::./._images/ig2/image9.png[ARTS User Interface,426,442]
+image::ig2/image9.png[ARTS User Interface,426,442]
 
 
 

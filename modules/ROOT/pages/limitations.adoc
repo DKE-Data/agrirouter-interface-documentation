@@ -20,4 +20,4 @@ This limitation is defined per agrirouter account.
 
 Accounts with endpoints without activity and older than 1 year will receive a notification via e-mail about the upcoming automatic offboarding.
 
-Endpoints older than 18 months will be automaticly offboarded, the account will receive an e-mail about it.
+Endpoints older than 18 months will be automatically offboarded, the account will receive an e-mail about it.

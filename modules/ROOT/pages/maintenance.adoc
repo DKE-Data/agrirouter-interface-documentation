@@ -5,9 +5,9 @@ Once your software is public, you will have to maintain your software to create 
 
 agrirouter provides several tools for maintenance, see below
 
-== Usage metrix
+== Usage metrics
 
-As an application provider, you can download xref:./usage-metrix.adoc[usage metrics] to check, which account consumed and sent how much data.
+As an application provider, you can download xref:./usage-metrics.adoc[usage metrics] to check, which account consumed and sent how much data.
 
 
 == Endpoint management

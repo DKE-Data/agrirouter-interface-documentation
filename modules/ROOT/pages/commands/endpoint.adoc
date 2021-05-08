@@ -1,5 +1,5 @@
 = Commands describing the endpoint
-:imagesdir: ./._images/
+:imagesdir: 
 :toc:
 :toc-title:
 :toclevels: 4
@@ -221,7 +221,7 @@ Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors,
 
 === Example
 
-image::./._images/ig2/image45.png[,438,174]
+image::ig2/image45.png[,438,174]
 
 
 

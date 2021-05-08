@@ -1,5 +1,5 @@
 = Authorization Process
-:imagesdir: ./._images/
+:imagesdir: 
 :toc:
 :toc-title:
 :toclevels: 4
@@ -40,11 +40,11 @@ In the developers UI, he has to:
 * Provide a public key for his encryption or create a key pair on the agrirouter frontend
 
 .Application overview
-image::./._images/ig2/image10.png[Application overview,636,361]
+image::ig2/image10.png[Application overview,636,361]
 
 
 .Application settings
-image::./._images/ig2/image11.png[Application settings,362,350]
+image::ig2/image11.png[Application settings,362,350]
 
 
 
@@ -56,7 +56,7 @@ If you do not yet have an official domain, where your application is reachable o
 Simply check Tracert/TraceRoute:
 
 .fuf.me is an alias for localhost
-image::./._images/ig2/image12.png[fuf.me is an alias for localhost,466,181]
+image::ig2/image12.png[fuf.me is an alias for localhost,466,181]
 
 ====
 
@@ -65,7 +65,7 @@ image::./._images/ig2/image12.png[fuf.me is an alias for localhost,466,181]
 The authentication process works as follows:
 
 .Authorization Workflow
-image::./._images/ig2/image13.png[Authorization Workflow,619,376]
+image::ig2/image13.png[Authorization Workflow,619,376]
 
 
 To better understand, what happens here, try the following:
@@ -136,7 +136,7 @@ The response type onboard can be used to onboard farming applications without ha
 When the user clicks on the link, the agrirouter website is called. If the user is currently not logged in, he has to log in. After logging in, he is delivered a website to authorize the connection between agrirouter and the application provider:
 
 .Application authorization screen
-image::./._images/ig2/image14.png[Application authorization screen,252,202]
+image::ig2/image14.png[Application authorization screen,252,202]
 
 
 === Analyse result
@@ -157,7 +157,7 @@ The following parameters will be delivered in the GET-Queue:
 |============================================================================================================
 
 .Example of an authorization result
-image::./._images/ig2/image15.png[Example of an authorization result,542,265]
+image::ig2/image15.png[Example of an authorization result,542,265]
 
 
 ==== Checking for errors
@@ -220,7 +220,7 @@ IMPORTANT: The account ID is used for invoicing. Therefore it should be saved wi
 To perform authorization for software that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
 
 .Authorization for non-cloud-applications
-image::./._images/ig1\image27.png[Authorization for non-cloud-applications,640,155]
+image::ig1\image27.png[Authorization for non-cloud-applications,640,155]
 
 
 [IMPORTANT]

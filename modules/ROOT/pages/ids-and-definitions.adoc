@@ -6,7 +6,7 @@
 
 == Overview
 
-The agrirouter api uses several IDs, which can be a little confusing. But don’t worry, here is a short description, which ID is used for what:
+The agrirouter API uses several IDs, which can be a little confusing. But don’t worry, here is a short description, which ID is used for what:
 
 [cols="1,4",options="header",]
 |======================================================================================================================================================================================================

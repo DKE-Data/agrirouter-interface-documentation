@@ -45,7 +45,7 @@ Additionally, developers can manage their own applications:
 * Modify the information for the application like name, description or symbol
 * Add new software versions for Certification
 * Manage the required capabilities of the application
-* Block specific endpoints, e.g. to avoid misusage of applications
+* Block specific endpoints, e.g. to avoid abuse of applications
 * Replay Endpoint Records
 * Export metrics of agrirouter usage for billing purpose
 

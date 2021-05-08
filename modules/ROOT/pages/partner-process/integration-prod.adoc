@@ -77,6 +77,3 @@ There are no additional steps required in the agrirouter UI or the agrirouter in
 
 == How to proceed
 Once you published your software and customers start using it, you should xref:./maintenance.adoc[maintain your solution].
-
-
-=

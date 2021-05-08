@@ -2,7 +2,7 @@
 :toc:
 :toc-title:
 :toclevels: 4
-:imagesdir: ./._images/
+:imagesdir: 
 
 == What is Paho?
 
@@ -58,20 +58,20 @@ openssl pkcs12 -export -in myCert.pem -inkey myCert.pem -out myCert.jks
 Open the connection options and enable SSL. Then add the certificate files for truststore (general MQTT Certificates) and keystore (your onboarding results certificate)
 
 .
-image::./._images/ig2/image5.png[,800,321]
+image::ig2/image5.png[,800,321]
 
 
 == Setup the connection criteria of Paho:
 Read the connection criteria from the onboarding result and click on connect.
 .Example for an onboarding result
-image::./._images/ig2/image6.png[Example for an onboarding result,800,139]
+image::ig2/image6.png[Example for an onboarding result,800,139]
 
 
 .Paho UserInterface
-image::./._images/ig2/image7.png[Paho UserInterface,800,144]
+image::ig2/image7.png[Paho UserInterface,800,144]
 
 
 == Basic functions
 
 .Basic Functions in Paho UI
-image::./._images/ig2/image8.png[Basic Functions in Paho UI,678,356]
+image::ig2/image8.png[Basic Functions in Paho UI,678,356]

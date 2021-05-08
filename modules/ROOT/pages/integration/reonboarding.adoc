@@ -1,5 +1,5 @@
 = Reonboarding
-:imagesdir: ./._images/
+:imagesdir: 
 :toc:
 :toc-title:
 :toclevels: 4

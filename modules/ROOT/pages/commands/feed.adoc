@@ -1,5 +1,5 @@
 = Commands to control the feed
-:imagesdir: ./._images/
+:imagesdir: 
 :toc:
 :toc-title:
 :toclevels: 4
@@ -322,7 +322,7 @@ If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific
 Messages sent to the agrirouter can be split into multiple chunks if the message format is not EFDI.
 
 .Chunked messages
-image::./._images/ig2/image46.png[Chunked messages,534,292]
+image::ig2/image46.png[Chunked messages,534,292]
 
 
 Only those message that were not created by the agrirouter and that are not of type EFDI or GPS:INFO can be chunked.
