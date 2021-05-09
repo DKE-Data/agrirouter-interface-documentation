@@ -26,13 +26,11 @@ jobs:
         run: |
           antora ./antora-playbook.yml
 
-      - name: Rsync to Webspace
-        uses: trendyminds/github-actions-rsync@master
+      - name: Install SSH key
+        uses: shimataro/ssh-key-action@v2
         with:
-          RSYNC_OPTIONS: -av
-          RSYNC_TARGET: /var/www/web25462234/html/docs.my-agrirouter.com
-          RSYNC_SOURCE: build/
-        env:
-          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-          SSH_USERNAME: ${{secrets.SSH_USERNAME}}
-          SSH_HOSTNAME: ${{secrets.SSH_HOSTNAME}}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+
+      - name: Rsync to Webspace
+        run: rsync -av build/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:/var/www/web25462234/html/docs.my-agrirouter.com
