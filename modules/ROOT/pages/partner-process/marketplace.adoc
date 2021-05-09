@@ -134,12 +134,12 @@ Select box:
 2.  https://www.amazone.net/default2009.asp?for_lang=1[AMAZONE]
 3.  https://www.exel-industries.com/[EXEL Industries]
 4.  https://www.grimme.com/[GRIMME]
-5.  https://horsch.com/home/[HORSCH]
-6.  https://www.krone.de/[KRONE]
-7.  https://kuhn.com/internet/kuhncom.nsf/pakuhncom.htm[KUHN]
+5.  https://www.horsch.com/[HORSCH]
+6.  https://landmaschinen.krone.de/[KRONE]
+7.  https://kuhn.com/[KUHN]
 8.  https://lemken.com/[LEMKEN]
 9.  https://www.poettinger.at/en_in[PÖTTINGER]
-10. https://rauch.de/english/home/index.html[RAUCH]
+10. https://rauch.com[RAUCH]
 11. https://www.sdfgroup.com/[SDF]
 12. CLAAS
 13. John Deere

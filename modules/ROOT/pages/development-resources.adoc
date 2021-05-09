@@ -42,7 +42,7 @@ Following resources can help developers to integrate their applications to the a
 |Name |URL |Description
 |agrirouter main page |https://my-agrirouter.com |The official website of the agrirouter
 |GitHub |https://github.com/dke-data/ |Official GitHub with libraries and resources
-|DDI Dictionary |https://dictionary.isobus.net/ |The official list of standardized Sensor values
+|DDI Dictionary |https://www.isobus.net/isobus/ |The official list of standardized Sensor values
 |AEF |https://aef-online.org  |The official website of the Agricultural Electronics Foundation. This group defines EFDI and the standards of ISOXML.
 |====================================================================================================================================================
 
