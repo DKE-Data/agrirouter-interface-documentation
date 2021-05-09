@@ -20,7 +20,7 @@ jobs:
 
       - name: Install antora
         run: |
-          npm install -g antora
+          npm install -g @antora/cli @antora/site-generator-default
 
       - name: Run antora
         run: |
