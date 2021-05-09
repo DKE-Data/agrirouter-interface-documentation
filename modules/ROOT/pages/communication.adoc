@@ -66,7 +66,7 @@ The protocol layer describes the basic communication layer. All agrirouter commu
 REST is a well-known principle for online APIs. For more information on REST, please see following resources:
 
 * link:https://en.wikipedia.org/wiki/Representational_state_transfer[]
-* link:https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340[]
+* link:+https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340+[]
 
 REST uses HTTP requests that results in an HTTP Response.
 

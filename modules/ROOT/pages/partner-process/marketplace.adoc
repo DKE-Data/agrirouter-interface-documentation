@@ -130,17 +130,17 @@ The following content is required from *hardware provider* (Communication Units 
 |12 |Compatible with manufacturer |1 < n a|
 Select box:
 
-1.  http://www.agcocorp.com/[AGCO]
-2.  http://www.amazone.net/default2009.asp?for_lang=1[AMAZONE]
-3.  http://www.exel-industries.com/[EXEL Industries]
-4.  http://www.grimme.com/[GRIMME]
-5.  http://horsch.com/home/[HORSCH]
-6.  http://www.krone.de/[KRONE]
-7.  http://kuhn.com/internet/kuhncom.nsf/pakuhncom.htm[KUHN]
+1.  https://www.agcocorp.com/[AGCO]
+2.  https://www.amazone.net/default2009.asp?for_lang=1[AMAZONE]
+3.  https://www.exel-industries.com/[EXEL Industries]
+4.  https://www.grimme.com/[GRIMME]
+5.  https://horsch.com/home/[HORSCH]
+6.  https://www.krone.de/[KRONE]
+7.  https://kuhn.com/internet/kuhncom.nsf/pakuhncom.htm[KUHN]
 8.  https://lemken.com/[LEMKEN]
-9.  http://www.poettinger.at/en_in[PÖTTINGER]
-10. http://rauch.de/english/home/index.html[RAUCH]
-11. http://www.sdfgroup.com/[SDF]
+9.  https://www.poettinger.at/en_in[PÖTTINGER]
+10. https://rauch.de/english/home/index.html[RAUCH]
+11. https://www.sdfgroup.com/[SDF]
 12. CLAAS
 13. John Deere
 14. Kubota
