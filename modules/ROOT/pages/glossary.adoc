@@ -74,7 +74,7 @@ ISO 11783-10 describes the file-based and batch-oriented interchange format betw
 The ISOBUS standard specifies only the data but not how it is transferred between machines and FMIS.
 
 |ISOBUS DDI 
-|A DDI (literally: Data Dictionary Identifier) represents a device or process parameter in the ISOBUS norm. Over 500 DDIs are defined in ISO 11783-11, see http://dictionary.isobus.net/isobus/ .
+|A DDI (literally: Data Dictionary Identifier) represents a device or process parameter in the ISOBUS norm. Over 500 DDIs are defined in ISO 11783-11, see link:https://www.isobus.net/isobus/.
 
 DDIs are used, for example, in device descriptions to describe properties, the supported settings, and the provided data of a machine.
 

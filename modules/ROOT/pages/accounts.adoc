@@ -23,7 +23,7 @@ The user interface offers possibilities to handle the account:
 * view a list of news/updates for his account (e.g “account connected”, “endpoint onboarded”, etc.)
 
 .User Interface for End Users
-image::ig1\image2.png[User Interface for End Users,456,663]
+image::ig1/image2.png[User Interface for End Users,456,663]
 
 A specific help for handling of an end user account can be found link:https://ad.my-agrirouter.com[in the agrirouter Academy].
 
@@ -50,7 +50,7 @@ Additionally, developers can manage their own applications:
 * Export metrics of agrirouter usage for billing purpose
 
 .User Interface for Developers
-image::ig1\image3.png[User Interface for Developers,473,615]
+image::ig1/image3.png[User Interface for Developers,473,615]
 
 
 

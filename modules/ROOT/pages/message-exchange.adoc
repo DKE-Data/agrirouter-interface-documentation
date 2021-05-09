@@ -29,7 +29,7 @@ In general, there are 3 steps:
 The following graph shows the way of a message through the agrirouter:
 
 .Way of a message through agrirouter
-image::ig1\image13.png[Way of a message through agrirouter,634,314]
+image::ig1/image13.png[Way of a message through agrirouter,634,314]
 
 
 
@@ -44,7 +44,7 @@ If messages are sent published, they are only delivered to those allowed endpoin
 Messages can be directly addressed to one or more endpoints. They can also be published to send the message to all subscribed endpoints. It is remarked in the message header if the message is directly sent, published, or if both techniques shall be used. agrirouter will take care of not delivering a message twice to the same endpoint.
 
 .Message addressing to multiple endpoints; simplified
-image::ig1\image14.png[Message addressing to multiple endpoints; simplified,648,323]
+image::ig1/image14.png[Message addressing to multiple endpoints; simplified,648,323]
 
 === Sending messages to machines
 As a machine has its own endpoint in the agrirouter account, it is possible to address messages to a machine.
@@ -66,7 +66,7 @@ After an application instance received and confirmed the receipt, the message wi
 Every registered endpoint can request the list of messages available in his feed and request specific messages. agrirouter forwards those requested messages to the outbox, delivery to the endpoint depends on the protocol.
 
 .In- and outbox of an agrirouter endpoint; simplified
-image::ig1\image15.png[In- and outbox of an agrirouter endpoint; simplified,611,285]
+image::ig1/image15.png[In- and outbox of an agrirouter endpoint; simplified,611,285]
 
 [NOTE]
 ====
@@ -154,7 +154,7 @@ The steps for this – in general nd with given routings – are:
 ====
 
 .Subscribing for a message; simplified
-image::ig1\image16.png[Subscribing for a message; simplified,619,236]
+image::ig1/image16.png[Subscribing for a message; simplified,619,236]
 
 
 
@@ -167,7 +167,7 @@ For guidance, how to connect 2 accounts, see the link:https://lb.my-agrirouter.c
 A message that is addressed to this endpoint will be published in the connected account. An app instance that wants to receive messages from a different account has to subscribe its endpoint to the desired technical message type. The process is visible in the following graph:
 
 .Sending messages into another account
-image::ig1\image17.png[Sending messages into another account,630,311]
+image::ig1/image17.png[Sending messages into another account,630,311]
 
 
 
@@ -208,7 +208,7 @@ A routing consists of:
 * Receiver
 
 .Message addressing and routing through the agrirouter
-image::ig1\image18.png[Message addressing and routing through the agrirouter,636,410]
+image::ig1/image18.png[Message addressing and routing through the agrirouter,636,410]
 
 
 
@@ -255,7 +255,7 @@ A more specific definition of EFDI messages can be found xref:./tmt/efdi.adoc[he
 
 
 .Message delivery due to routings, subscription and public address
-image::ig1\image20.png[Message delivery due to routings, subscription and public address,631,344]
+image::ig1/image20.png[Message delivery due to routings, subscription and public address,631,344]
 
 
 

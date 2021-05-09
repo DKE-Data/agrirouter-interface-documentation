@@ -38,7 +38,7 @@ To communicate with agrirouter, it's important to understand the xref:./communic
 The communication workflow describes, which messages have to be send to agrirouter to exchange information with the agrirouter endpoint. 
 
 .General messaging workflow
-image::ig1\image22.png[General messaging workflow,609,726]
+image::ig1/image22.png[General messaging workflow,609,726]
 
 
 
@@ -49,7 +49,7 @@ This workflow can be found in the chapter xref:.//messaging-workflow.adoc[messag
 The message exchange describes the exchange of messages between application instances over the agrirouter.
 
 .Way of a message through agrirouter
-image::ig1\image13.png[Way of a message through agrirouter,634,314]
+image::ig1/image13.png[Way of a message through agrirouter,634,314]
 
 
 The basic concepts of message exchange are described in the xref:./message-exchange.adoc[concepts of message exchange].

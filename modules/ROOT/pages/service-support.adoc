@@ -46,7 +46,7 @@ To display the information select the particular endpoint and take a look at the
 
 The endpoint information offers the IDs that the app instance should use for communication with agrirouter:
 .Endpoint information used with agrirouter
-image::ig1\image46.png[Endpoint information used with agrirouter,586,335]
+image::ig1/image46.png[Endpoint information used with agrirouter,586,335]
 
 === Endpoint details
 
@@ -139,7 +139,7 @@ Please submit the following information with your request:
 All of the above can be found in the endpoint details by clicking the ‘Info’ button next to the delete button.
 
 .Relevant information for agrirouter support
-image::ig1\image46.png[Relevant information for agrirouter support,586,335]
+image::ig1/image46.png[Relevant information for agrirouter support,586,335]
 
 
 

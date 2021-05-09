@@ -17,7 +17,7 @@ image::ig1/image10.png[The agrirouter ecosystem of members,642,321]
 === Communication Units
 
 .Communication units in the agrirouter ecosystem
-image::ig1\ecosystem_cu.png[Communication units in the agrirouter ecosystem,642,321]
+image::ig1/ecosystem_cu.png[Communication units in the agrirouter ecosystem,642,321]
 
 Communication units (CU) are mobile applications, mostly running on embedded systems or mobile devices to establish a connection to the agrirouter “in the fields”. CUs are used to collect information like machine data or geo positions.
 
@@ -47,7 +47,7 @@ Communication units can also be tablets or other devices and should meet the fol
 === Farming software
 
 .Farming Software Applications in the agrirouter ecosystem
-image::ig1\ecosystem_farming_software.png[Farming Software Applications in the agrirouter ecosystem,642,321]
+image::ig1/ecosystem_farming_software.png[Farming Software Applications in the agrirouter ecosystem,642,321]
 
 Farming software can be a cloud application or software released on a single device like a PC or Smartphone. Farming software mostly consumes data to provide extra services for farmers or contractors. FMIS (Farm Management and Information Systems) are a common example of farming software.
 
@@ -61,7 +61,7 @@ Please note that there might be additional software in the development of the co
 === Telemetry platform and virtual CUs
 
 .Telemetry platform with virtual CUs in the agrirouter ecosystem
-image::ig1\ecosystem_telemetry.png[Telemetry platform with virtual CUs in the agrirouter ecosystem,642,321]
+image::ig1/ecosystem_telemetry.png[Telemetry platform with virtual CUs in the agrirouter ecosystem,642,321]
 
 A telemetry platform is a cloud software solution that handles the communication of so-called "virtual CUs" with the agrirouter. Virtual CUs are comparable to real CUs, but indifference, they do not implement the agrirouter protocol. A virtual CU implements a proprietary protocol to connect to the telemetry platform only.
 
@@ -98,7 +98,7 @@ In older versions of the standard, the ClientNAME was only required to be unique
 This chapter gives a high-level overview of the agrirouter Connectivity-Platform architecture, an application can interact with.
 
 .agrirouter Connectivity-Platform architecture
-image::ig1\image23.png[agrirouter Connectivity-Platform architecture,626,451]
+image::ig1/image23.png[agrirouter Connectivity-Platform architecture,626,451]
 
 === Communication addresses: Endpoints
 
@@ -111,7 +111,7 @@ The address of an endpoint ( in this case the "__deviceAlternateId__") is used b
 It is possible to connect 2 agrirouter accounts with each other using the email address of the end-users and setting up a connection using the graphical user interface of agrirouter. Each connected agrirouter account gets its own endpoint in the partner's agrirouter account and vice versa.
 
 .List of paired accounts
-image::ig1\image12.png[List of paired accounts,642,354]
+image::ig1/image12.png[List of paired accounts,642,354]
 
 
 [IMPORTANT]

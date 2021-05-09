@@ -11,7 +11,7 @@ The developer account offers several functionalities to manage the app providers
 To avoid abuse of data packages, an app provider can block a specific endpoint in the agrirouter UI. This endpoint is not able to communicate with agrirouter anymore until the blocking is removed.
 
 .UI to manage blocked endpoints in developer account
-image::ig1\image40.png[UI to manage blocked endpoints in developer account,642,182]
+image::ig1/image40.png[UI to manage blocked endpoints in developer account,642,182]
 
 
 == Blocking several or all Instances of Certified Application
