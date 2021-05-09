@@ -34,4 +34,4 @@ jobs:
 
       # very unelegant, but hoster does not support SSH key authentication :-/
       - name: Rsync to Webspace
-        run: sshpass -p ${{secrets.SSH_PASSWORD}} rsync -av build/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:/var/www/web25462234/html/docs.my-agrirouter.com
+        run: sshpass -p ${{secrets.SSH_PASSWORD}} rsync -av build/site/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:/var/www/web25462234/html/docs.my-agrirouter.com
