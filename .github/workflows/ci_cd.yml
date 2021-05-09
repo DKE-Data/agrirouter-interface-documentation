@@ -1,0 +1,38 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+
+jobs:
+  build:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Node
+        id: node
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Install antora
+        run: |
+          npm install -g antora
+
+      - name: Run antora
+        run: |
+          antora .\antora-playbook.yml
+
+      - name: Rsync to Webspace
+        uses: trendyminds/github-actions-rsync@master
+        with:
+          RSYNC_OPTIONS: -av
+          RSYNC_TARGET: /var/www/web25462234/html/docs.my-agrirouter.com
+          RSYNC_SOURCE: build/
+        env:
+          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+          SSH_USERNAME: ${{secrets.SSH_USERNAME}}
+          SSH_HOSTNAME: ${{secrets.SSH_HOSTNAME}}
