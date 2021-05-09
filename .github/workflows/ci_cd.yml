@@ -24,7 +24,7 @@ jobs:
 
       - name: Run antora
         run: |
-          antora .\antora-playbook.yml
+          antora ./antora-playbook.yml
 
       - name: Rsync to Webspace
         uses: trendyminds/github-actions-rsync@master
