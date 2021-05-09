@@ -74,7 +74,7 @@ FarmingSoftware and Telemetry Platforms have to perform an xref:./integration/au
 
 ==== Onboarding
 
-To communicate with the agrirouter, an application Instance needs to be xref:./integration/onboarding.adoc[onboarded]. An application instance can be link:./integration/reonboarding.adoc[ReOnboarded].
+To communicate with the agrirouter, an application Instance needs to be xref:./integration/onboarding.adoc[onboarded]. An application instance can be xref:./integration/reonboarding.adoc[ReOnboarded].
 
 
 === Communicate with agrirouter endpoints
@@ -92,17 +92,17 @@ List of possible message content:
 
 Every application instance can xref:./integration/message-sending.adoc[send messages] and commands the same way.
 
-While xref:./tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, link:./commands/overview.adoc[commands] are used to link:./commands/ecosystem.adoc[explore the ecosystem], link:./commands/endpoint.adoc[configure your endpoint] and link:./commands/feed.adoc[request messages from the feed].
+While xref:./tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, xref:./commands/overview.adoc[commands] are used to xref:./commands/ecosystem.adoc[explore the ecosystem], xref:./commands/endpoint.adoc[configure your endpoint] and xref:./commands/feed.adoc[request messages from the feed].
 
 ==== Receiving messages and command answers
 
 Command results and messages from other endpoints will be xref:./integration/message-receiving.adoc[received through the outbox] by the receiving application instance.
 
-Messages from other endpoints are put into the outbox by xref:./integration/push-notification.adoc[push notifications] as well as by link:./commands/feed.adoc[requesting the feed content].
+Messages from other endpoints are put into the outbox by xref:./integration/push-notification.adoc[push notifications] as well as by xref:./commands/feed.adoc[requesting the feed content].
 
 ==== Analysing messages
 
-Depending on the  xref:./integration/analyze-result.adoc#ResponseType[resultType], the result can be link:./integration/analyze-result.adoc[analyzed].
+Depending on the  xref:./integration/analyze-result.adoc#ResponseType[resultType], the result can be xref:./integration/analyze-result.adoc[analyzed].
 
 === End of life for an endpoint
 

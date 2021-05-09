@@ -14,7 +14,7 @@ image::general/process_integration_prod.png[]
 
 Once you're done with testing in QA, you can xref:./registration.adoc[create an account in the productive environment].
 
-You can read xref:./accounts.adoc[here] more about the different types of accounts or directly find the URLs for signup link:./urls.adoc[here].
+You can read xref:./accounts.adoc[here] more about the different types of accounts or directly find the URLs for signup xref:./urls.adoc[here].
 
 == 4.2 Register & submit your solution
 

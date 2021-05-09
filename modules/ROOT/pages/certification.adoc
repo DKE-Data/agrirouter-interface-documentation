@@ -261,7 +261,7 @@ a|
 a| * GPS Position Lists are not Base64-Encoded
 * EFDI Datasets are not Base64-encoded
 | Exchange zipped folders
-| xref:./tmt/taskdata.adoc[TaskData] and link:./tmt/shape.adoc[Shape]
+| xref:./tmt/taskdata.adoc[TaskData] and xref:./tmt/shape.adoc[Shape]
 a|
 * The `TaskData.zip` and / or `Shape.zip` are valid zip files that can be unpacked.
 

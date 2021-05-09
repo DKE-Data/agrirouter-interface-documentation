@@ -108,7 +108,7 @@ An MQTT connection requires 2 types of certificates. On the one hand, there is a
 
 This is required to setup an MQTT Connection over SSL.
 
-Additionally, TLS needs to be activated and the TLS certificate can either be the certificate received during xref:./integration/onboarding.adoc[onboarding] or from the link:./router-devices.adoc[Router Devices].
+Additionally, TLS needs to be activated and the TLS certificate can either be the certificate received during xref:./integration/onboarding.adoc[onboarding] or from the xref:./router-devices.adoc[Router Devices].
 
 ==== Communication with the Inbox
 
