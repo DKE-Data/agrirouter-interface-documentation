@@ -18,6 +18,10 @@ jobs:
         with:
           node-version: "14"
 
+      - name: Install sshpass
+        run: |
+          apt install -y sshpass
+
       - name: Install antora
         run: |
           npm install -g @antora/cli @antora/site-generator-default
@@ -26,11 +30,12 @@ jobs:
         run: |
           antora ./antora-playbook.yml
 
-      - name: Install SSH key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+      #      - name: Install SSH key
+      #        uses: shimataro/ssh-key-action@v2
+      #        with:
+      #          key: ${{ secrets.SSH_PRIVATE_KEY }}
+      #          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
 
+      # very unelegant, but hoster does not support SSH key authentication :-/
       - name: Rsync to Webspace
-        run: rsync -av build/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:/var/www/web25462234/html/docs.my-agrirouter.com
+        run: sshpass -p ${{secrets.SSH_PASSWORD}} rsync -av build/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:/var/www/web25462234/html/docs.my-agrirouter.com
