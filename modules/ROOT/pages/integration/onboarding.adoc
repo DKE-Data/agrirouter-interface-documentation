@@ -442,10 +442,10 @@ The result is a json object including the information required for onboarding.
 [cols="1,3,2,4",options="header",]
 |========================================================================================================
 |# |Name |Type |Description
-|1 |authentication |Object |Includes all Authetication information
+|1 |authentication |Object |Includes all authentication information
 |1.1 |certificate |String |The certificate required for communication; Public AND Private Key
 |1.2 |secret |String |The passkey for the certificate
-|1.3 |type |String |Type of Certificate; PEM or PK12
+|1.3 |type |String |Type of Certificate; PEM or PK12 _(short for PKCS#12)_
 |2 |capabilityAlternateId |String |A value that just has to be saved and sent in several scenarios
 |3 |connectionCriteria |Object |Includes all information required for further communication
 |3.1 |gatewayId |String |Assigned gateway; 2= MQTT, 3=REST
