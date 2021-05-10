@@ -64,7 +64,7 @@ Direction can be one of those values:
 |=================
 
 Those are the values of an enumeration, see protobuf files.
-See link:https://github.com/DKE-Data/agrirouter-api-protobuf-definitions/blob/develop/src/main/resources/com/dke/data/agrirouter/proto/messaging/request/payload/endpoint/capabilities.proto[Capabilities.proto]
+See link:https://github.com/search?q=repo%3ADKE-Data%2Fagrirouter-api-protobuf-definitions+filename%3Acapabilities.proto&type=Code&ref=advsearch&l=&l=[Capabilities.proto]
 
 ==== app_certification_id
 

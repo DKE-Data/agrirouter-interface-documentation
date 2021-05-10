@@ -136,10 +136,10 @@ Select box:
 4.  https://www.grimme.com/[GRIMME]
 5.  https://www.horsch.com/[HORSCH]
 6.  https://landmaschinen.krone.de/[KRONE]
-7.  https://kuhn.com/[KUHN]
+7.  https://www.kuhn.com/[KUHN]
 8.  https://lemken.com/[LEMKEN]
 9.  https://www.poettinger.at/en_in[PÖTTINGER]
-10. https://rauch.com[RAUCH]
+10. https://rauch.de/[RAUCH]
 11. https://www.sdfgroup.com/[SDF]
 12. CLAAS
 13. John Deere
