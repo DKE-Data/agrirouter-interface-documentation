@@ -256,8 +256,3 @@ A more specific definition of EFDI messages can be found xref:./tmt/efdi.adoc[he
 
 .Message delivery due to routings, subscription and public address
 image::ig1/image20.png[Message delivery due to routings, subscription and public address,631,344]
-
-
-
-
-===

@@ -244,11 +244,3 @@ The whole chapter can be found xref:./message-exchange.adoc[here]
 
 //About the general messaging workflow
 The whole chapter can be found xref:./messaging-workflow.adoc[here]
-
-
-'''
-
-
-
-
-===

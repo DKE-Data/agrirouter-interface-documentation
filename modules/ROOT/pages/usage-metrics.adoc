@@ -67,6 +67,3 @@ In any agrirouter developer account (account management -> export metrics), thes
 
 **Update**
 As the payment concept changed to a flat rate model per sending directions based on end user account. These statistics are relevant for the billing and they give you a good overview of how much communication per end user account really exists.
-
-===
-

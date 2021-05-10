@@ -117,9 +117,3 @@ With the messages we will have place holders for values which would be injected 
 |0114 |Endpoint has recently been revoked. Please wait X minutes before trying to onboard again. 
 |0115 |Application quota limit has been exceeded. 
 |========================================================================================================================================================
-
-
-===
-
-
-

@@ -48,6 +48,3 @@ Following resources can help developers to integrate their applications to the a
 
 
 
-
-===
-

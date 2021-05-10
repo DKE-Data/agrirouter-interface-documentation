@@ -130,6 +130,3 @@ After that, you have to perform the xref:./integration/reonboarding.adoc[reonboa
 
 **Be aware** that this can require user interaction.
 ====
-
-
-===

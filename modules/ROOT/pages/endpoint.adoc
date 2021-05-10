@@ -70,9 +70,3 @@ The subscription list includes a list of all Message Types and DDIs, the endpoin
 .Subscribtion List within an agrirouter endpoint
 image::ig2/image30.png[Subscribtion List within an agrirouter endpoint,585,251]
 
-
-
-
-
-===
-

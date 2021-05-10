@@ -39,5 +39,3 @@ The user is now able to onboard apps defined in your developer account.
 
 
 You can delete a tester any time.
-
-===

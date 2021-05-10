@@ -37,6 +37,3 @@ The xref:./commands/endpoint.adoc#_capabilities_command[capabilities command] ha
 ==== After onboarding a virtual CU
 
 After onboarding a virtual CU, the capabilities command for this virtual CU has to be sent, indicating only those capabilities that the virtual CU really is capable of.
-
-===
-

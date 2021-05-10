@@ -24,8 +24,3 @@ b.  *Check the markedplace entry:* Should be done by a developer: Read the marke
 10. *Test productive:* Using a test account make sure that your application works on the productive environment as supposed
 11.  *Release to public:* Remove the "coming soon" badge from your market place entry and let people know that your app is up and running.
 
-
-
-
-===
-

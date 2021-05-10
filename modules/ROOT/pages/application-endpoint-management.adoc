@@ -26,10 +26,3 @@ The _Blocking_ status can be changed by the agrirouter administrator to
 
 * _either Approved_ to allow all application instances to communicate again,
 * _or to Rejected_ as final status.
-
-
-
-
-
-===
-

@@ -25,5 +25,3 @@ When updating your software, the onboarding information received from xref:./int
 If the data gets lost during update, your software can still perform the xref:./integration/reonboarding.adoc[reonboarding] if you can reconstruct the uniqueID used in onboarding, but this might require user interaction.
 
 To use new capabilities after a software update that includes a new CertificationVersionId, an updated capabilities-request using the new CertificationVersionId is required.
-
-===

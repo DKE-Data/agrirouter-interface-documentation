@@ -187,9 +187,3 @@ If a message format is missing, please send us an email to support@my-agrirouter
 
 
 agrirouter support team will get back to you on your request, please be informed that this could take a while. For test purposes, you can however start your development with a proprietary format.
-
-
-
-
-
-===

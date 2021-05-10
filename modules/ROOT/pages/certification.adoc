@@ -428,5 +428,3 @@ The supported TMTs as well as the used protocol and format are assigned to the c
 ====
 In the unlikely event of an update of agrirouter software, which requires changes in the app providers software (e.g. a new error code that shall be handled), a new certification is *not required*. However, the app provider is responsible for keeping his software up to date.
 ====
-
-===

@@ -146,8 +146,3 @@ In status _Approved for Testing_, application developers can xref:./invite-teste
 
 Using other accounts is not possible, because the certification version is not yet approved by DKE for public use. When the certification request is in status _Approved for Testing_, the agrirouter administrator can either finally set the status of the request to _Approved_ in case of successful testing or _rejected_ if testing was not successful.
 
-
-
-
-
-===

@@ -126,9 +126,3 @@ A teamset is a set of connected machines that work and move together and are con
 A (virtual) CU is responsible for the agrirouter communication of one teamset. It sends descriptions of the machines in the teamset whenever the teamset changes or when the descriptions of at least one of the machines change (for example because of a reconfiguration or the CU connects to another machine). This way the agrirouter knows about the machines themselves, and about which machine is connected to which communication unit.
 
 Each CU only sends one teamset, every teamset can only be part of one CU. If multiple CUs are on the same network (e.g. a terminal in the tractor + a telemetry box on the baler), there will be multiple teamsets in agrirouter including the same machines and sending the same data. Apps are then responsible for filtering duplicated data. If there are no machines connected, the teamset of a CU will just be empty.
-
-
-
-
-
-===
