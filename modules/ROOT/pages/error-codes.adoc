@@ -3,7 +3,7 @@
 = Global Message Codes
 The below listing of messages are those which will be used as output within the ACK* messages pushed to connected endpoints of the agrirouter.
 
-The full list can also be downloaded link:errorcodes.xlsx[here].
+The full list can also be downloaded link:_attachments/errorcodes.xlsx[here].
 
 [NOTE]
 ====
