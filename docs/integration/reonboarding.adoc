@@ -14,7 +14,7 @@ Internally, the endpoint gets the same identification (deviceAlternateId, sensor
 
 [IMPORTANT]
 ====
-Reonboarding is very important as certificates are only valid for currently *one year*
+It is vital to have re-onboarding functionality implemented, as certificates are currently only valid for *one year*
 ====
 
 === Why should an endpoint be re-onboarded?
