@@ -6,6 +6,8 @@
 ** xref:endpoint.adoc[Endpoints]
 ** xref:accounts.adoc[Accounts]
 ** xref:communication.adoc[Communication]
+** xref:messaging-workflow.adoc[Application Interaction with agrirouter]
+** xref:message-exchange.adoc[Concept of Message Exchange]
 ** xref:development-resources.adoc[Development Resources]
 ** xref:training.adoc[Training]
 
@@ -18,6 +20,7 @@
 * xref:integration-steps.adoc[Integration]
 ** xref:integration/general-conventions.adoc[Conventions]
 ** xref:integration/environments.adoc[Environments]
+** xref:telemetry-platform-concepts.adoc[Concept of Telemetry Platforms & CU]
 
 ** Application Lifecycle
 *** xref:registration.adoc[Account Registration]
@@ -28,10 +31,11 @@
 *** xref:maintenance.adoc[Maintenance]
 *** xref:update.adoc[Updates]
 *** xref:service-support.adoc[Service & Support]
+*** xref:usage-metrics.adoc[Usage Metrics]
 ** Endpoint Lifecycle
 *** xref:integration/onboarding.adoc[Onboarding App Instances]
 *** xref:integration/authorization.adoc[Authorization]
-*** xref:integration/reonboarding.adoc[Re-Onboarding]
+*** xref:integration/re-onboarding.adoc[Re-Onboarding]
 *** xref:integration/revoking.adoc[Revoking]
 ** Messaging
 *** xref:integration/build-message.adoc[Building Messages]

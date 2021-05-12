@@ -133,7 +133,7 @@ Virtual CUs can be onboarded by their telemetry platform, a TAN generation is no
 
 To onboard a new endpoint, the endpoint has to send an onboarding request providing the TAN to agrirouter.
 
-As a result, the agrirouter will return a JSON object including the endpoint IDs and the certificates required for the further communication with agrirouter. The onboarding request shall only be done once per Application Instance. The used unique app instance ID however should be stored, as it is required for reonboarding.
+As a result, the agrirouter will return a JSON object including the endpoint IDs and the certificates required for the further communication with agrirouter. The onboarding request shall only be done once per Application Instance. The used unique app instance ID however should be stored, as it is required for re-onboarding.
 
 [NOTE]
 ====
@@ -142,9 +142,9 @@ There is no MQTT onboarding mechanism, so onboarding always has to be done using
 
 An example for an onboarding request can be found in the postman collection, which can be found link:https://github.com/DKE-Data/agrirouter-postman-tools[on GitHub].
 
-== Reonboarding
+== Re-onboarding
 
-Whenever an app instance receives an update of its software, it possibly needs to reonboard to agrirouter to receive its certificates and the endpoint IDs again. Reonboarding equals the onboarding request. It is important that the same app instance id is used again, so that agrirouter recognizes the reonboarding and the routings and group settings of the endpoint persist. Otherwise, it would create a new endpoint.
+Whenever an app instance receives an update of its software, it possibly needs to re-onboard to agrirouter to receive its certificates and the endpoint IDs again. Re-onboarding equals the onboarding request. It is important that the same app instance id is used again, so that agrirouter recognizes the re-onboarding and the routings and group settings of the endpoint persist. Otherwise, it would create a new endpoint.
 
 == Communication and Message exchange
 

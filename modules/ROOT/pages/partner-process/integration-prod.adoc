@@ -52,7 +52,7 @@ To connect your app to the production environment, You need to update the follow
 * The URLs for:
 ** authorization
 ** onboarding
-** reonboarding
+** re-onboarding
 ** revoking
 
 The URLS can be found xref:./urls.adoc[here].
