@@ -9,7 +9,7 @@ Error messages should never be shown 1:1 to the user, they should always at leas
 ====
 
 == Message Placeholders
-With the messages we will have place holders for values which would be injected into the message text at runtime. Within the output response of the ACK message we would also have an args section. The args section will contain an object map ov key value pairs for the data injected into the message. The following list defines these keys so that it clear what should be used.
+With the messages we will have place holders for values which would be injected into the message text at runtime. Within the output response of the ACK message we would also have an args section. The args section will contain an object map of key value pairs for the data injected into the message. The following list defines these keys so that it clear what should be used.
 
 [width="100%",options="header"]
 |===

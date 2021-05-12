@@ -79,10 +79,10 @@ To better understand, what happens here, try the following:
 ====
 * For testing purpose, you can just enter the url https://httpbin.org/get in your applications redirect URL (see below) to see the result of authorization.
 
-* The step “user clicks on Link” might not be needed, applications could handle that different.
+* The step "user clicks on Link” might not be needed, applications could handle that different.
 ====
 
-For example the application could send a redirect (HTTP Status 300) to directly redirect the user to the agrirouter Connection Website. The description “user clicks on Link” is simply the most understandable description we could come up with.
+For example the application could send a redirect (HTTP Status 300) to directly redirect the user to the agrirouter Connection Website. The description "user clicks on Link” is simply the most understandable description we could come up with.
 
 === Generating an authorization URL
 
@@ -167,7 +167,7 @@ If the result includes a parameter *error*, the request was declined. Possible v
 [cols=",",options="header",]
 |===============================================
 |Value |Description
-|request_declined |The user clicked on “decline”
+|request_declined |The user clicked on "decline”
 |===============================================
 
 ==== Checking authenticity

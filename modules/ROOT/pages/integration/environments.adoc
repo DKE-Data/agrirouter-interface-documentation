@@ -6,7 +6,7 @@ The required URLs can be found in xref:./message-sending.adoc[message sending] a
 
 == Quality assurance
 
-The quality assurance environment (“QA”) is used to develop and test applications in a save and uncritical eco system. Please note that the quality assurance environment shall not be used by end customers.
+The quality assurance environment ("QA”) is used to develop and test applications in a save and uncritical eco system. Please note that the quality assurance environment shall not be used by end customers.
 
 == Productive
 

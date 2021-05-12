@@ -24,7 +24,7 @@ If you publish a message, it will only reach an endpoint if there is at least on
 
 == Using MQTT
 
-The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The inbox is the topic delivered with the “measures” attribute of the onboarding request.
+The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The inbox is the topic delivered with the "measures” attribute of the onboarding request.
 
 To send a message, publish it. (Here, publish means the MQTT-Term, see https://mqtt.org) 
 
@@ -45,7 +45,7 @@ Using REST, the message is sent as a single HTTP call using HTTPs and the endpoi
 
 To send messages to the agrirouter, the app has to perform a POST request sending a message included in a Request.
 
-Messages and commands are sent to the inbox. The address of the inbox is returned with the onboarding request (“measures”) and should look like this:
+Messages and commands are sent to the inbox. The address of the inbox is returned with the onboarding request ("measures”) and should look like this:
 
 [cols="1,4",options="header",]
 |========================================================
@@ -73,11 +73,11 @@ For further information see the curl documentation on the parameters used for a 
 
 The header of the HTTP Request for the REST implementation also requires
 
-Content-Type: “application/json”
+Content-Type: "application/json”
 
 or
 
-Content-Type: “application/x-protobuf”
+Content-Type: "application/x-protobuf”
 
 [NOTE]
 ====

@@ -19,7 +19,7 @@ image::ig1/image10.png[The agrirouter ecosystem of members,642,321]
 .Communication units in the agrirouter ecosystem
 image::ig1/ecosystem_cu.png[Communication units in the agrirouter ecosystem,642,321]
 
-Communication units (CU) are mobile applications, mostly running on embedded systems or mobile devices to establish a connection to the agrirouter “in the fields”. CUs are used to collect information like machine data or geo positions.
+Communication units (CU) are mobile applications, mostly running on embedded systems or mobile devices to establish a connection to the agrirouter "in the fields”. CUs are used to collect information like machine data or geo positions.
 
 CUs are usually but not necessarily connected to machines via ISOBUS and collect their data during the common ISOBUS interaction using an ISOBUS TaskController or DataLogger.
 

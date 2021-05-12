@@ -52,7 +52,7 @@ The body includes a JSON object:
 |1 |accountId |String |The ID of the users account
 |2 |endpointIds |Array of String |An Array of endpointIds that shall be deleted.
 |3 |UTCTimestamp |String |A timestamp like this: _2018-06-20T07:29:23.457Z_
-|4 |timeZone |String |A time zone like this: _“+03:00”_
+|4 |timeZone |String |A time zone like this: _"+03:00”_
 |===============================================================================
 
 Example:
@@ -70,9 +70,9 @@ Example:
 
 ],
 
-“UTCTimestamp”: “2018-06-25T18:08:17.661890Z”,
+"UTCTimestamp”: "2018-06-25T18:08:17.661890Z”,
 
-“timeZone”: “+00:00”,
+"timeZone”: "+00:00”,
 
 }
 ----

@@ -16,7 +16,7 @@ This format is used to exchange an avi video file. It can forward the binary avi
 |==================
 |Command |vid:avi
 |Protobuf Schema |-
-|TypeURL |“”
+|TypeURL |"”
 |==================
 
 === Format
@@ -39,7 +39,7 @@ This format is used to exchange an wmv video file. It can forward the binary wmv
 |==================
 |Command |vid:wmv
 |Protobuf Schema |-
-|TypeURL |“”
+|TypeURL |"”
 |==================
 
 === Format
@@ -63,7 +63,7 @@ This format is used to exchange an MPEG4 video file. It can forward the binary m
 |==================
 |Command |vid:mp4
 |Protobuf Schema |-
-|TypeURL |“”
+|TypeURL |"”
 |==================
 
 === Format

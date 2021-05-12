@@ -63,7 +63,7 @@ image::ig2/image21.png[registration code for a CU,291,164]
 
 === As result of the authorization
 
-If the xref:./authorization.adoc[authorization prozess] is done using parameter _response_type=onboard_, the result will include a regcode. This regcode is a registration code.
+If the xref:./authorization.adoc[authorization process] is done using parameter _response_type=onboard_, the result will include a regcode. This regcode is a registration code.
 
 === Telemetry Platforms
 
@@ -98,7 +98,7 @@ image::ig2/image23.png[Finding the certificationVersionID,519,294]
 This step is not required for CUs
 ====
 
-As the requests need to be signed, the public key has to be stored within the agrirouter. This can be done, calling “Edit” on the Endpoint Software Management Screen. The agrirouter UI offers the possibility to create a key pair, you can however create your own one and just store the public key on agrirouter.
+As the requests need to be signed, the public key has to be stored within the agrirouter. This can be done, calling "Edit” on the Endpoint Software Management Screen. The agrirouter UI offers the possibility to create a key pair, you can however create your own one and just store the public key on agrirouter.
 
 .Generating Private and Public Key in the agrirouter UI
 image::ig2/image24.png[Generating Private and Public Key in the agrirouter UI,409,400]
@@ -129,7 +129,7 @@ All signatures used for the onboarding and revocation process shall be created b
 * hashing the request body (SHA256)
 * then using the private key to create an RSA signature of the hash
 * Create HEX representation of this hash
-* Add the hex string as “X-Agrirouter-Signature” to the header of the HTTP call
+* Add the hex string as "X-Agrirouter-Signature” to the header of the HTTP call
 
 Agrirouter will look up the public key for the app id specified and verify the signature.
 
@@ -164,7 +164,7 @@ The Request shall include the following header information:
 [cols="2,1,3",options="header",]
 |=============================================================
 |Name |Type |Description
-|Authorization |String |“Bearer “+ the registration code
+|Authorization |String |"Bearer "+ the registration code
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
 |X-Agrirouter-Signature |[Signature] |see xref:./onboarding.adoc#signing-requests[Signing requests]
@@ -189,7 +189,7 @@ The desired communication protocol after onboarding
 
 3: REST
 
-Example: “2”
+Example: "2”
 
 |5 |certificateType |String a|
 Type of the desired certificate;
@@ -197,7 +197,7 @@ Type of the desired certificate;
 Possible values: PEM,P12
 
 |6 |UTCTimestamp |String |A Timestamp like this: _2018-06-20T07:29:23.457Z_
-|7 |timeZone |String |A TimeZone like this: “+03:00”
+|7 |timeZone |String |A TimeZone like this: "+03:00”
 |================================================================================================================
 
 **EXAMPLE**
@@ -213,9 +213,9 @@ Possible values: PEM,P12
 
 "gatewayId": "3",
 
-“UTCTimestamp”: “2018-06-04T12:00:03.000Z”,
+"UTCTimestamp”: "2018-06-04T12:00:03.000Z”,
 
-“timeZone”: “+02:00”
+"timeZone”: "+02:00”
 
 }
 ----
@@ -296,7 +296,7 @@ The Request shall include the following header information:
 [cols="2,1,3",options="header",]
 |========================================================================================================================
 |Name |Type |Description
-|Authorization |String |“Bearer “+ the registration code _Remark: There is a space between bearer and registration code!_
+|Authorization |String |"Bearer "+ the registration code _Remark: There is a space between bearer and registration code!_
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
 |X-Agrirouter-Signature |[Signature] | The signature,
@@ -320,7 +320,7 @@ The desired communication protocol after onboarding
 
 3: REST
 
-Example: “2”
+Example: "2”
 
 |5 |certificateType |String a|
 Type of the desired certificate;
@@ -328,7 +328,7 @@ Type of the desired certificate;
 Possible values: PEM,P12
 
 |6 |UTCTimestamp |String |A Timestamp like this: _2018-06-20T07:29:23.457Z_
-|7 |timeZone |String |A TimeZone like this: “+03:00”
+|7 |timeZone |String |A TimeZone like this: "+03:00”
 |=======================================================================================================================
 
 [source,javascript]
@@ -343,9 +343,9 @@ Possible values: PEM,P12
 
 "gatewayId": "3",
 
-“UTCTimestamp”: “2018-06-04T12:00:03.000Z”,
+"UTCTimestamp”: "2018-06-04T12:00:03.000Z”,
 
-“timeZone”: “+02:00”
+"timeZone”: "+02:00”
 
 }
 ----
@@ -374,7 +374,7 @@ The Request shall include the following header information:
 [cols="2,1,3",options="header",]
 |=========================================
 |Name |Type |Description
-|Authorization |String |“Bearer “+ the registration code
+|Authorization |String |"Bearer "+ the registration code
 |Content-Type |String |application/json
 |=========================================
 
@@ -542,7 +542,7 @@ On Failure, a JSON object including an error message is received, e.g.:
 }
 ----
 
-Possible Error codes can be found xref:../error-codes.adoc#onboarding-errorcodes[ in the error list]
+Possible Error codes can be found xref:../error-codes.adoc#onboarding-errorcodes[in the error list]
 
 ==== Onboarding Result in the agrirouter UI
 
@@ -554,6 +554,6 @@ image::general/endpointName.png[Endpoint name including timestamp]
 
 If you experience problems with an invalid signature, (Code 107), try the following:
 
-* make sure, you encoded the whole body
+* make sure you encoded the whole body
 * compare the signature with the result of the node server tool delivered with the postman collection
-* check the timestamp. If your local time is ahead of or too far behind agrirouter servers time, it will not recognize the signature as valid. The agrirouter HTTP answer includes a timestamp reporting agrirouters server time.
+* check the timestamp. If your local time is ahead of or too far behind agrirouter servers time, it will not recognize the signature as valid. The agrirouter HTTP answer includes a timestamp reporting agrirouter's server time.

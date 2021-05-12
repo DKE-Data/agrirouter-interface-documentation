@@ -77,7 +77,7 @@ REST is based on single, request only methods, therefore, the agrirouter cannot 
 
 ==== Communication Workflow with the Inbox
 
-Using REST, an app instance just receives an HTTP 200 “OK” Response. The App Instance sends a HTTP Post request over an SSL secured connection.
+Using REST, an app instance just receives an HTTP 200 "OK” Response. The App Instance sends a HTTP Post request over an SSL secured connection.
 
 .Request and Response in HTTP
 image::ig2/image33.png[Request and Response in HTTP,631,212]

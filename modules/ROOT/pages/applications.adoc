@@ -83,7 +83,7 @@ image::ig1/image7.png[agrirouter application registration,467,513]
 
 
 
-When a new version has been created, the supported capabilities for this version can be defined. With the button “New”, the technical message types supported by this application version can be selected. Finally, the direction (send/receive) of the capabilities must be specified before the version can be submitted.
+When a new version has been created, the supported capabilities for this version can be defined. With the button "New”, the technical message types supported by this application version can be selected. Finally, the direction (send/receive) of the capabilities must be specified before the version can be submitted.
 
 After submitting, DKE will receive a notification and set the status to _Approved for Testing_ or _Approved_, so that instances of this endpoint can be onboarded. Please also send an email to support@my-agrirouter.com, once you created a new software version that shall be approved for testing.
 

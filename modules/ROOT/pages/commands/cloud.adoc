@@ -121,7 +121,7 @@ This command is send by the telemetry platform itself, NOT by the Virtual CU tha
 |=====================================
 |ResultCode |ACK
 |Protobuf Schema |None, simply 0 bytes
-|typeURL |„“
+|typeURL |„"
 |=====================================
 
 === Errors

@@ -23,7 +23,7 @@ This chapter only handles the message exchange on the agrirouter in a general wa
 In general, there are 3 steps:
 
 1.  An application instance sends a message to its endpoints inbox
-2.  agrirouter forwards (“routes”) this message to all relevant and permitted endpoints storage (“feed”)
+2.  agrirouter forwards ("routes”) this message to all relevant and permitted endpoints storage ("feed”)
 3.  Each application instance can call for available messages in its endpoints feed and pull them from the outbox
 
 The following graph shows the way of a message through the agrirouter:
@@ -114,7 +114,7 @@ Information types are an abstraction of the technical message types to simplify 
 
 One technical message type can be part of multiple Information types.
 
-Each technical message type must be assigned to an information type, which represents its meaning and purpose. The technical message types Bitmap, PNG and JPEG for example are summarized as Information Type “Image”. This means that endpoints can send Bitmaps, PNGs and JPEGs if a routing for Images exists.
+Each technical message type must be assigned to an information type, which represents its meaning and purpose. The technical message types Bitmap, PNG and JPEG for example are summarized as Information Type "Image”. This means that endpoints can send Bitmaps, PNGs and JPEGs if a routing for Images exists.
 
 Technical message types are defined by groups outside the agrirouter project. If message types are missing, DKE will add a useful standardized message type. DKE however will not standardize any formats.
 
@@ -238,7 +238,7 @@ To simplify the creation of routings, endpoints can be grouped in the end user�
 === The default groups
 
 ==== The CU and machine group 
-Sometimes new machines are added to the ecosystem, because a CU is connected, a (virtual) CU is connected to a new machine or a virtual CU is created by a telemetry platform. If this happens, a new endpoint for that machine is created in the end users agrirouter account. As the end user is not always logged in to setup routings, he can just setup routings for a “not deletable“ default group. Every new endpoint is automatically assigned to the default group and can be removed from that group. The default group itself however cannot be deleted.
+Sometimes new machines are added to the ecosystem, because a CU is connected, a (virtual) CU is connected to a new machine or a virtual CU is created by a telemetry platform. If this happens, a new endpoint for that machine is created in the end users agrirouter account. As the end user is not always logged in to setup routings, he can just setup routings for a "not deletable" default group. Every new endpoint is automatically assigned to the default group and can be removed from that group. The default group itself however cannot be deleted.
 
 ==== The farming software and telemetry platform group
 If a new farming software or a telemetry platform is connected, it is automatically added to the group of farming software and telemetry platforms. Any endpoint can be removed from that group, the default group itself however cannot be deleted.

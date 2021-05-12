@@ -99,7 +99,7 @@ image::ig1/image11.png[A schema of the hierachy of agrirouter app instances,634,
 
 * Applications can be CUs, Farming Software or Telemetry Platforms.
 
-* Applications of type “Telemetry platform” can onboard multiple virtual CUs.
+* Applications of type "Telemetry platform” can onboard multiple virtual CUs.
 
 * Machines are connected to CUs or Virtual CUs. Machines can be attached to different CUs or Virtual CUs.
 

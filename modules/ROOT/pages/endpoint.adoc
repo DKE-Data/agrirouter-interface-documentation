@@ -16,14 +16,14 @@ image::ig2/image26.png[Architecture of an endpoint,623,268]
 
 [NOTE]
 ====
-The terms “subscription” and “subscribing” are well known by MQTT addicted developers. In this document however, subscribtions describe a technique of the agrirouter endpoint. It works like an MQTT subscription, it’s however important to notice that MQTT is mostly not the context of these words in the document except for the relevant chapter for xref:./communication.adoc#mqtt[MQTT communication].
+The terms "subscription” and "subscribing” are well known by MQTT addicted developers. In this document however, subscribtions describe a technique of the agrirouter endpoint. It works like an MQTT subscription, it’s however important to notice that MQTT is mostly not the context of these words in the document except for the relevant chapter for xref:./communication.adoc#mqtt[MQTT communication].
 ====
 
 == Inbox
 
 The inbox is used to receive messages or commands from an app instance.
 
-The address of this inbox is delivered with the Response of the onboarding request as “measures”.
+The address of this inbox is delivered with the Response of the onboarding request as "measures”.
 
 .Inbox within an agrirouter endpoint
 image::ig2/image27.png[Inbox within an agrirouter endpoint,637,274]
@@ -40,7 +40,7 @@ In terms of agrirouter onboarding result, the inbox is called measures due to th
 
 The outbox is used to deliver messages to an app instance.
 
-The address of this outbox is delivered with the Response of the onboarding request as “commands”.
+The address of this outbox is delivered with the Response of the onboarding request as "commands”.
 
 .Outbox within an agrirouter endpoint
 image::ig2/image28.png[Outbox within an agrirouter endpoint,632,271]

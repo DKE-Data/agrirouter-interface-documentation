@@ -257,7 +257,7 @@ The TeamsetContextId is used to describe a unique combination of different machi
 
 The agrirouter team advices to use a hashing algorithm of either md5 or sha256.
 
-Examples (the key is the hash of “Hello World”):
+Examples (the key is the hash of "Hello World”):
 
 MD5:
 

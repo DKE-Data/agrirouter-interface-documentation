@@ -17,7 +17,7 @@ This format is used to exchange a bitmap file. It can forward the binary bmp-Con
 |==================
 |Command |img:bmp
 |Protobuf Schema |-
-|TypeURL |“”
+|TypeURL |"”
 |==================
 
 === Format
@@ -43,7 +43,7 @@ This format is used to exchange a bitmap file. It can forward the binary jpeg-Co
 |==================
 |Command |img:jpg
 |Protobuf Schema |-
-|TypeURL |“”
+|TypeURL |"”
 |==================
 
 === Format
@@ -67,7 +67,7 @@ This format is used to exchange a bitmap file. It can forward the binary png-Con
 |==================
 |Command |img:png
 |Protobuf Schema |-
-|TypeURL |“”
+|TypeURL |"”
 |==================
 
 === Format

@@ -14,7 +14,7 @@ This format is used to exchange application maps as a zip file, metadata like th
 |======================
 |Command |shp:shape:zip
 |Protobuf Schema |-
-|TypeURL |“”
+|TypeURL |"”
 |======================
 
 == Format
