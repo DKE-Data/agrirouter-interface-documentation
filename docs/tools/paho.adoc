@@ -25,7 +25,7 @@ To add the certificates to your local trust store:
 
 * First copy the .pem-File(s) to the location of JAVA_HOME\lib\security (your local JRE-installation).
 * Start a console and navigate to JAVA_HOME\lib\security (cmd.exe on windows; **Important**: Admin rights might be required.)
-* Run the following command, where "changeit" should be the keyword of your keystore (default, if you did not change it)
+* Run the following command, where "changeit" should be the keyword of your keystore (default  if you did not change it)
 
 [source,bash]
 ----
@@ -102,5 +102,5 @@ Read the connection criteria from the onboarding result and click on connect.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

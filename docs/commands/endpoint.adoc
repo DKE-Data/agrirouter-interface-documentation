@@ -11,7 +11,7 @@ This chapter will list all messages to tell the agrirouter, what the endpoint is
 
 === Definition
 
-Every endpoint has to report his capabilities of sending and receiving messages after onboarding and when the capabilities change ( e.g. an application functionality is extended by a new module). This is required from agrirouter to know, if specific messages can be routed to an endpoint and to show the correct choosable Information Types in the User Interface for routing.
+Every endpoint has to report his capabilities of sending and receiving messages after onboarding and when the capabilities change ( e.g. an application functionality is extended by a new module). This is required from agrirouter to know if specific messages can be routed to an endpoint and to show the correct choosable Information Types in the User Interface for routing.
 
 [NOTE]
 ====
@@ -50,7 +50,7 @@ The technical message type can be a technical message type of DKE or a proprieta
 |================================================================================
 |# |Name |Type |Description
 |1 |technical_message_type |String |The name of the capability
-|2 |direction |Direction |The message direction, that is part of the capabilities
+|2 |direction |Direction |The message direction that is part of the capabilities
 |================================================================================
 
 Direction can be one of those values:
@@ -91,7 +91,7 @@ Possible values
 ====
 Sending the capabilities command will **delete** any subscription that was made from your application instance. 
 
-It doesn't matter, if the capabilities changed, subscriptions are always deleted.
+It doesn't matter if the capabilities changed, subscriptions are always deleted.
 
 Make sure, you send the subscriptions again after sending the capabilities.
 ====
@@ -102,7 +102,7 @@ In the current release, `Enabled` and `Enabled_HighSpeed` will result in the sam
 
 In the future, especially when the load of agrirouter grows, enabled message push will lead to a pushing of messages bundled over a specific time frame. When this is implemented and activated, only `Enabled_HighSpeed` will still deliver the messages directly.
 
-It should however only be used, if it is absolutely necessary and might have to be renewed after a while to lower the work load of agrirouter as much as possible.
+It should however only be used if it is absolutely necessary and might have to be renewed after a while to lower the work load of agrirouter as much as possible.
 
 If message pushing is used in your software, please make sure you use enabled message push as long as you don't require a close-to-realtime delivery.
 
@@ -119,7 +119,7 @@ If message pushing is used in your software, please make sure you use enabled me
 
 The result is a simple `ACK` or an `ACK_WITH_MESSAGES`.
 
-If the same capabilities message is sent twice and the push notification status is not changed, an `ACK_WITH_MESSAGES` will be returned with a message indicating, that the capabilities did not change.
+If the same capabilities message is sent twice and the push notification status is not changed, an `ACK_WITH_MESSAGES` will be returned with a message indicating that the capabilities did not change.
 
 === Errors & Warnings
 
@@ -147,7 +147,7 @@ If the message was malformed, an `ACK_WITH_FAILURE` will be returned.
 
 === Definition
 
-The subscription command is used to subscribe for a list of technical message types. Being subscribed for a technical message type means, that your endpoint will receive a message of such TMT, whenever any other endpoint sends such a TMT to “publish” and a routing between the sender and your applications endpoint is given.
+The subscription command is used to subscribe for a list of technical message types. Being subscribed for a technical message type means that your endpoint will receive a message of such TMT, whenever any other endpoint sends such a TMT to “publish” and a routing between the sender and your applications endpoint is given.
 
 [NOTE]
 ====
@@ -165,7 +165,7 @@ The subscription command is used to subscribe for a list of technical message ty
 
 [TIP]
 ====
-To avoid mismatches between publishing applications and applications only receiving addressed messages, it is adviced to subscribe for any technical message type and DDI, your application shall handle, if there are no specific reasons not to do so.
+To avoid mismatches between publishing applications and applications only receiving addressed messages, it is advised to subscribe for any technical message type and DDI, your application shall handle if there are no specific reasons not to do so.
 ====
 
 
@@ -199,7 +199,7 @@ It is an array, each entry is of type agrirouter.request.payload.endpoint.Messag
 |3 |position |bool |Shall the GPS position be delivered? Only relevant for EFDI telemetry message type
 |=====================================================================================================
 
-The DDIs field is only required, if the subscription is used for a subscription of Telemetry values. Same applies to Position.
+The DDIs field is only required if the subscription is used for a subscription of Telemetry values. Same applies to Position.
 
 === Result
 
@@ -252,5 +252,5 @@ For the format, please refer to  link:../tmt/efdi.adoc[iso:11783:-10:device_desc
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

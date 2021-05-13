@@ -23,9 +23,9 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 
 [NOTE]
 ====
-* agrirouter messages can have a maximum size of 1 MB each. If a message is too large, agrirouter will respond with a HTTP code 413 “Request too large”. Please note, that the relevant size value is the size of the protobuf format, which will increase with conversion to Base64.
+* agrirouter messages can have a maximum size of 1 MB each. If a message is too large, agrirouter will respond with a HTTP code 413 “Request too large”. Please note that the relevant size value is the size of the protobuf format, which will increase with conversion to Base64.
 
-* Some data formats like images, videos, taskdata and shape require their message content to be Base64 encoded. In this case, each chunk needs to be a valid Base64 string. This means, that the Base64 encoding has to be performed on each chunk **after** splitting the binary data into chunks.
+* Some data formats like images, videos, taskdata and shape require their message content to be Base64 encoded. In this case, each chunk needs to be a valid Base64 string. This means that the Base64 encoding has to be performed on each chunk **after** splitting the binary data into chunks.
 
 * EFDI telemetry messages cannot be chunked, as they are analyzed for the routing of telemetry data on agrirouter.
 ====
@@ -42,14 +42,14 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 
 [NOTE]
 ====
-Sending multiple messages in one request is only possible, if the overall size of all messages payloads is below the chunking maximum size value.
+Sending multiple messages in one request is only possible if the overall size of all messages payloads is below the chunking maximum size value.
 ====
 
 The overall body of the message to the inbox shall not include more payload than allowed without chunking. So, when a message is too big for one request and needs to be chunked, these chunks have to be sent in multiple messages, they can not be added as multiple chunks to one message.
 
 == Encode content to its Technical Message Type
 
-Encoding a message in its required technical message type depends on the message type. The message types for agrirouter commands are described further in the specific chapters, that can be found link:./../tmt/overview.adoc[here].
+Encoding a message in its required technical message type depends on the message type. The message types for agrirouter commands are described further in the specific chapters that can be found link:./../tmt/overview.adoc[here].
 
 == Encode content in Protobuf
 
@@ -66,7 +66,7 @@ As the payload of a message is defined as an any message, the typeURL has to be 
 
 Protobuff definitions can be found here: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions
 
-The repository delivers all protobuf files, that are owned by the DKE. It might be, that you need additional protocol buffers like the EFDI telemetry messages definitions for specific message types, that cannot be delivered in this github account due to intellectual property rights. You will however find instructions, how to get those protobuf definition files.
+The repository delivers all protobuf files that are owned by the DKE. It could be the case that you need additional protocol buffers like the EFDI telemetry messages definitions for specific message types that cannot be delivered in this github account due to intellectual property rights. You will however find instructions, how to get those protobuf definition files.
 
 === Reading Protobuf definitions
 
@@ -99,7 +99,7 @@ string name=1; // Field 1 of the structure is a string called “name”
 
 int64 age=2;
 
-Direction direction=3; //A field of type direction, that describes an enum
+Direction direction=3; //A field of type direction that describes an enum
 
 repeated string hobbies=4; //A list with 0 to n elements possible
 
@@ -140,11 +140,11 @@ The protobuf ChunkComponent can be found in commons/chunk.proto.
 
 === Preparing and creating chunked messages
 
-If it is recognized, that a message needs to be split into multiple chunks, starting from here, the single message is sent to agrirouter by splitting the message body and creating multiple requests to the agrirouter, each including a new chunk element.
+If it is recognized that a message needs to be split into multiple chunks, starting from here, the single message is sent to agrirouter by splitting the message body and creating multiple requests to the agrirouter, each including a new chunk element.
 
 [NOTE]
 ====
-agrirouter does neither check nor inform about Chunks, that have not yet been delivered to agrirouter. It will forward the single parts and the receiving endpoint(s) will have to take care of realigning the parts.
+agrirouter does neither check nor inform about Chunks that have not yet been delivered to agrirouter. It will forward the single parts and the receiving endpoint(s) will have to take care of realigning the parts.
 ====
 
 == Creating Metadata
@@ -162,7 +162,7 @@ Adding metadata is an optional feature since release 1.2 of the agrirouter. Olde
 
 *Important*
 ====
- In case of a chunked message, that shall include metadata, every single message shall include the metadata field.
+ In case of a chunked message that shall include metadata, every single message shall include the metadata field.
 ====
 
 
@@ -200,24 +200,24 @@ The structure of the payload depends on the technical message type. Its always s
 
 == Connecting envelope and PayLoad
 
-Envelope and content are packaged into one container by using the technique of “Delimited Messages”. Please note, that this is *not* simply copying both memory buffers into one buffer. Please refer to https://developers.google.com/protocol-buffers/docs/techniques[https://developers.google.com/protocol-buffers/docs/techniques#streaming]
+Envelope and content are packaged into one container by using the technique of “Delimited Messages”. Please note that this is *not* simply copying both memory buffers into one buffer. Please refer to https://developers.google.com/protocol-buffers/docs/techniques[https://developers.google.com/protocol-buffers/docs/techniques#streaming]
 
 [NOTE]
 ====
 Note that this concept is not supported in all protobuf libraries (in Java and node.js it is, in C++ it is not in every version)
 ====
 
-If building streaming is required for the language and libraries, you use, Note, that Delemited messages are attached to each other like this: Length1,Content1,Length2,Content2,…. The variable size of Length is the length of a varint; see https://developers.google.com/protocol-buffers/docs/encoding#varints.
+If building streaming is required for the language and libraries that you use, please note that Delimited messages are attached to each other like this: Length1,Content1,Length2,Content2,…. The variable size of Length is the length of a varint; see https://developers.google.com/protocol-buffers/docs/encoding#varints.
 
 A solution for C++ can be found here: link:https://stackoverflow.com/questions/2340730/are-there-c-equivalents-for-the-protocol-buffers-delimited-i-o-functions-in-ja/
 
 == Message container
 
-The message needs to be packaged into a message container, that includes the message itself and a timestamp. Going forward from this step, the encoding can either be in protobuf or JSON. For MQTT, it has to be JSON, for REST, it can be both.
+The message needs to be packaged into a message container that includes the message itself and a timestamp. Going forward from this step, the encoding can either be in protobuf or JSON. For MQTT, it has to be JSON, for REST, it can be both.
 
 === Encode in Base64
 
-This step is only required, if your app instance communicates with its endpoint using MQTT or JSON based REST.
+This step is only required if your app instance communicates with its endpoint using MQTT or JSON based REST.
 
 Encode the serialized binary protobuf stream into a base64 string. All further steps will be done in JSON from now on.
 
@@ -238,7 +238,7 @@ The timestamp is the time of recording the message, not the timestamp of sending
 
 == Add Message to List of Messages
 
-The object can now be added to the list of messages, that shall be sent to the endpoint at once. It’s important to know, that all these messages have the same recipient list.
+The object can now be added to the list of messages that shall be sent to the endpoint at once. It’s important to know that all these messages have the same recipient list.
 
 === JSON
 
@@ -291,7 +291,7 @@ and includes a String representing the milliseconds until 01.01.1970:00:00:00.00
 
 [NOTE]
 ====
-Please note, that this definition is part of the message definition below (when it comes to definition of the whole message).
+Please note that this definition is part of the message definition below (when it comes to definition of the whole message).
 ====
 
 == Build message
@@ -387,5 +387,5 @@ What you will find:
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

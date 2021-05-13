@@ -104,7 +104,7 @@ When developing a telemetry platform, the link:./telemetry-platform-concepts.ado
 
 A short description naming all the agrirouter specific terms and their connection to each other can be found link:./terms.adoc[here].
 
-A list of shortings can be found link:./shortings.adoc[here].
+A list of abbreviations can be found link:./abbreviations.adoc[here].
 
 A glossary can be found link:./glossary.adoc[here].
 
@@ -115,5 +115,5 @@ There are several ids required for communication, a list of descriptions can be 
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====

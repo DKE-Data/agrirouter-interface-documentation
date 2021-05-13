@@ -6,7 +6,7 @@ The required URLs can be found in link:./message-sending.adoc[message sending] a
 
 == Quality assurance
 
-The quality assurance environment (“QA”) is used to develop and test applications in a save and uncritical eco system. Please note, that the quality assurance environment shall not be used by end customers.
+The quality assurance environment (“QA”) is used to develop and test applications in a save and uncritical eco system. Please note that the quality assurance environment shall not be used by end customers.
 
 == Productive
 
@@ -28,5 +28,5 @@ The keys and URLs for the environments can be found link:./../keys.adoc[in keys.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

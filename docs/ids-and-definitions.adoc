@@ -40,7 +40,7 @@ The agrirouter api uses several IDs, which can be a little confusing. But don’
 
 == Ids in different Environments
 
-It is important to keep in mind, that all Ids including applicationId and certificationVersionId will differ between QA and Productive environments.
+It is important to keep in mind that all Ids including applicationId and certificationVersionId will differ between QA and Productive environments.
 
 == Practical differentiation between SensorAlternateId and DeviceAlternateId
 
@@ -48,7 +48,7 @@ sensorAlternateID and deviceAlternateId seem to be pretty equal, but the context
 
 [NOTE]
 ====
-You will find  "="  signs in the following sub chapters. In this context, = does *NOT* mean, that the values of the ids are equal, but that they represent the same device
+You will find  "="  signs in the following sub chapters. In this context, = does *NOT* mean that the values of the ids are equal, but that they represent the same device
 ====
 
 === A Farming Software sends a TaskData
@@ -255,7 +255,7 @@ see above
 
 === Description
 
-The sensorAlternateID is the adress of an app instance at the agrirouter, that marks the source of a message and can be used to directly adress messages to this specific app instance or Virtual CU.
+The sensorAlternateID is the adress of an app instance at the agrirouter that marks the source of a message and can be used to directly adress messages to this specific app instance or Virtual CU.
 
 === Where to find
 
@@ -313,6 +313,6 @@ An end user cannot see this value.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====
 

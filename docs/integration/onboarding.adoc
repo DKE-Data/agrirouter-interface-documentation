@@ -56,13 +56,13 @@ The following parts of onboarding are *not* required for CU onboarding:
 
 Onboarding virtual CUs through a telemetry platform is done using a command. This is described in link:../commands/cloud.adoc[Cloud solution commands].
 
-From the end user’s perspective, it is mostly dependend on the telemetry platform, if there is any selection mechanism or if it is done automatically.
+From the end user’s perspective, it is mostly dependent on the telemetry platform if there is any selection mechanism or if it is done automatically.
 
 == Creating a registration code
 
 === Using the agrirouter UI
 
-The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit” in agrirouters’ control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers . A CU needs an interface to input this registration code.
+The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit" in agrirouter's control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers. A CU needs an interface to input this registration code.
 
 ++++
 <p align="center">
@@ -152,7 +152,7 @@ Like every URL in this document, these URLs might change in the future or there 
 
 == Signing requests
 
-For onboarding, the agrirouter must be sure, that the requests actually come from an instance of the app specified in the request. Therefore, the payload must be signed with the applications private key. The corresponding public key must be maintained by the developer in agrirouter per application, see above.
+For onboarding, the agrirouter must be sure that the requests actually come from an instance of the app specified in the request. Therefore, the payload must be signed with the applications private key. The corresponding public key must be maintained by the developer in agrirouter per application, see above.
 
 A Payload encryption is not needed since all communication is encrypted with TLS
 
@@ -167,7 +167,7 @@ Agrirouter will look up the public key for the app id specified and verify the s
 
 == Verification Request
 
-The verification request is used to actually check, if the endpoint is for the desired application and account before actually onboarding it.
+The verification request is used to actually check if the endpoint is for the desired application and account before actually onboarding it.
 
 === General
 
@@ -283,7 +283,7 @@ For a successful result, the body will include a JSON object like this:
 }
 ----
 
-It includes the accountId, so that an app provider can check, if this accountId might already be known. For apps, that can be onboarded only once (like an FMIS, where it doesn’t make any sense to have 2 of the same kind), this would mean, that onboarding is not needed.
+It includes the accountId, so that an app provider can check if this accountId might already be known. For apps that can be onboarded only once (like an FMIS, where it doesn’t make any sense to have 2 of the same kind), this would mean that onboarding is not needed.
 
 ===== Failure
 
@@ -462,7 +462,7 @@ The request has several possible response codes indicating Success or Failure:
 |Code |Possible problem
 |201 |Success; Analyze onboarding result to get started
 |400 |The Request was invalid
-|401 |Unauthorized; meaning, that one of the given header parameters is wrong. Refer to the link:./../error-codes.adoc[error message]
+|401 |Unauthorized; meaning that one of the given header parameters is wrong. Refer to the link:./../error-codes.adoc[error message]
 |========================================================================================================
 
 ==== Success
@@ -474,10 +474,10 @@ The result is a json object including the information required for onboarding.
 [cols="1,3,2,4",options="header",]
 |========================================================================================================
 |# |Name |Type |Description
-|1 |authentication |Object |Includes all Authetication information
+|1 |authentication |Object |Includes all authentication information
 |1.1 |certificate |String |The certificate required for communication; Public AND Private Key
 |1.2 |secret |String |The passkey for the certificate
-|1.3 |type |String |Type of Certificate; PEM or PK12
+|1.3 |type |String |Type of Certificate; PEM or PK12 _(short for PKCS#12)_
 |2 |capabilityAlternateId |String |A value that just has to be saved and sent in several scenarios
 |3 |connectionCriteria |Object |Includes all information required for further communication
 |3.1 |gatewayId |String |Assigned gateway; 2= MQTT, 3=REST
@@ -603,5 +603,5 @@ If you experience problems with an invalid signature, (Code 107), try the follow
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviationtions]|link:../terms.adoc[agrirouter in a nutshell]
 |====

@@ -27,11 +27,11 @@ For communication with agrirouter, you need to setup an link:./applications.adoc
 
 == 4.3 Approval from the certification company
 
-The certification company will perform the certification - with your support - and create a certificate to proof, that your solution is compatible with agrirouter.
+The certification company will perform the certification - with your support - and create a certificate to proof that your solution is compatible with agrirouter.
 
 [IMPORTANT]
 ====
-Please recognize, that the certification will be done in the quality assurance environment.
+Please recognize that the certification will be done in the quality assurance environment.
 ====
 
 
@@ -46,7 +46,7 @@ If your app is a CU, it will from this point on be visible to all users wanting 
 
 == 4.5 Test Interface & Messaging
 
-After certification is done, you can test your application in the production environment, which means, that you can link:./invite-testers.adoc[invite real test customers to test the connection in their everyday work] or just ask users to onboard your app (the tester status is not required when your app is _Approved_ but it helps to keep an overview of your testers).
+After certification is done, you can test your application in the production environment, which means that you can link:./invite-testers.adoc[invite real test customers to test the connection in their everyday work] or just ask users to onboard your app (the tester status is not required when your app is _Approved_ but it helps to keep an overview of your testers).
 
 To connect your app to the production environment, You need to update the following information in your application:
 
@@ -87,5 +87,5 @@ Once you published your software and customers start using it, you should link:.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====

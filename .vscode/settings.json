@@ -1,0 +1,13 @@
+{
+  "asciidoc.preview.useEditorStyle": false,
+  "asciidoc.preview.attributes": {},
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "asciidoc"
+  ]
+}

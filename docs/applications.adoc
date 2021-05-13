@@ -7,7 +7,7 @@
 
 == Types of applications
 
-Applications are software products, that have implemented an interface to the agrirouter. There are 3 Types of possible applications:
+Applications are software products that have implemented an interface to the agrirouter. There are 3 Types of possible applications:
 
 * link:ecosystem.adoc#_communication_units[Communication Units]
 * link:ecosystem.adoc#_farming_software[Farming Software]
@@ -123,9 +123,9 @@ The certification shall disclose name, version information and supported technic
 
 All information on certification can be found link:./certification.adoc[here].
 
-The certification also ensures, that there will be a unique ID for the application which the application can send to the agrirouter in order to allow the agrirouter to look up its capabilities.
+The certification also ensures that there will be a unique ID for the application which the application can send to the agrirouter in order to allow the agrirouter to look up its capabilities.
 
-The certification allows the agrirouter to check the state of the application with a given ID. The agrirouter needs that to make sure, that only certified apps communicate with the productive platform.
+The certification allows the agrirouter to check the state of the application with a given ID. The agrirouter needs that to make sure that only certified apps communicate with the productive platform.
 
 ++++
 <p align="center">
@@ -144,19 +144,19 @@ The app provider has to create a new version in the agrirouter user interface. T
 
 Once he selected all the desired capabilities for the new version, he can submit this version and the status changes to _submitted._
 
-DKE initially decides, if this version can be certified and sets the status to _Approved for testing_.
+DKE initially decides if this version can be certified and sets the status to _Approved for testing_.
 
 An application developer and his listed test customers can now onboard instances of the new application version.
 
 After testing, the app provider can certify his app to set it to _approved_. Now everyone can onboard instances of the app.
 
-If the app provider decides, that an app version is outdated, he can set the status for this app to _Blocked_ and instances of this app will no longer be able to send messages to or receive messages from the agrirouter. If the test fails, the app cannot be approved for testing or an app is finally blocked, the status will be set to _Rejected_.
+If the app provider decides that an app version is outdated, he can set the status for this app to _Blocked_ and instances of this app will no longer be able to send messages to or receive messages from the agrirouter. If the test fails, the app cannot be approved for testing or an app is finally blocked, the status will be set to _Rejected_.
 
 [IMPORTANT]
 ====
  * For communication it is indispensable that this certification id is transmitted with the onboarding request and the capabilities message. The developer is obliged to store this certification id as well as the application id securely in every delivered application or application instance. The storage has to be encrypted.
 
-* The agrirouter will not provide functionality to validate, that applications correctly handle the exchanged data content. Certification partners only certify the capabilities of an application for implementing the agrirouter communication protocol, meeting some requirements. DKE and the agrirouter support team is not allowed to take a look inside the message body.
+* The agrirouter will not provide functionality to validate that applications correctly handle the exchanged data content. Certification partners only certify the capabilities of an application for implementing the agrirouter communication protocol, meeting some requirements. DKE and the agrirouter support team is not allowed to take a look inside the message body.
 ====
 
 == Approval of the application certification
@@ -166,7 +166,7 @@ For all certification requests in status _submitted_, agrirouter administrators 
 * either to rejected, making further processing impossible, or
 * it can be set to _Approved for Testing_ if the certification request was successful.
 
-In status _Approved for Testing_, application developers can link:./invite-testers.adoc[register farmers’ accounts as test accounts]. If a certification version is in status _Approved for Testing_, instances with this certification version can be registered in these test accounts and an external test can be started. The developers account automatically is an end user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
+In status _Approved for Testing_, application developers can link:./invite-testers.adoc[register farmers’ accounts as test accounts]. If a certification version is in status _Approved for Testing_, instances with this certification version can be registered in these test accounts and an external test can be started. The developers account automatically is an end user account that is a test account. This means that a developer can onboard an endpoint in his account.
 
 Using other accounts is not possible, because the certification version is not yet approved by DKE for public use. When the certification request is in status _Approved for Testing_, the agrirouter administrator can either finally set the status of the request to _Approved_ in case of successful testing or _rejected_ if testing was not successful.
 
@@ -178,5 +178,5 @@ Using other accounts is not possible, because the certification version is not y
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====

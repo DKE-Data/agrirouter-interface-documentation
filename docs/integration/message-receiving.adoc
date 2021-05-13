@@ -12,7 +12,7 @@ Results for commands and messages from calls for messages are returned to the ou
 
 [NOTE]
 ====
-Please be aware, that an online platform response in general might take up to a minute and the agrirouter is no different from that. So, don't set a too short timeout for your requests.
+Please be aware that an online platform response in general might take up to a minute and the agrirouter is no different from that. So, don't set a too short timeout for your requests.
 ====
 
 [IMPORTANT]
@@ -77,7 +77,7 @@ The result format depends on the setting of the Accept-Header in the GET Request
 
 === Protobuf Result
 
-The result of a protobuf call is delivered as a CommandResponseList, that includes a List of CommandResponses, which includes the sender ID (sensorAlternateId) and a List of Any-Elements value. This list only includes 1 CommandResponseMessage-Element (Index is 0).
+The result of a protobuf call is delivered as a CommandResponseList that includes a List of CommandResponses, which includes the sender ID (sensorAlternateId) and a List of Any-Elements value. This list only includes 1 CommandResponseMessage-Element (Index is 0).
 
 
 [source,javascript]
@@ -163,7 +163,7 @@ What you will find:
 ====
 **TroubleShooting**
 
-If you experience problems with the message exchange and have parts of the message, that are 3 bytes longer than they should be, this is a typical hint for having packed data in an additional Any-Container.
+If you experience problems with the message exchange and have parts of the message that are 3 bytes longer than they should be, this is a typical hint for having packed data in an additional Any-Container.
 
 ====
 
@@ -176,7 +176,7 @@ The result of a request to the outbox is an *array* of messages each including t
 |Name |Type |Description
 |capabilityAlternateId |String |Equals value from onboarding
 |sensorAlternateId |String |Source of the message
-|CommandResponseList |String |The Base64 encoded message or a protobuf object, if agrirouter sent a protobuf object.
+|CommandResponseList |String |The Base64 encoded message or a protobuf object if agrirouter sent a protobuf object.
 |=======================================================================================================
 
 For a full documentation of this Message format, see the link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/c327148f820e4d3888fb4b73c7f0ef80.html?q=com.sap.iotservices.common.protobuf.gateway[SAP documentation].
@@ -190,5 +190,5 @@ For a full documentation of this Message format, see the link:https://help.sap.c
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

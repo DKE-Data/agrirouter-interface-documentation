@@ -69,7 +69,7 @@ The push message element includes
 For the first release, the push message array will always include only one entry. If multiple messages shall be delivered,
 multiple Push notifications are delivered; each including one message.
 
-However, make sure, that you check the possible multiple FeedMessages delivered with foreach functionalities to be future proof
+However, make sure that you check the possible multiple FeedMessages delivered with foreach functionalities to be future proof
 =====
 
 
@@ -92,8 +92,8 @@ The header includes the basic information about the message and equals the messa
 |3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
 |4 |chunk_context |agrirouter.commons.ChunkComponent |The chunk component
 |5 |payload_size |int64 |The size of the payload
-|6 |sent_timestamp |timestamp |The timestamp, that was provided by the sender. It should be the recording time point
-|7 |sequence_number |int64 |The sequence number to determine the correct order for messages, that were recorded at the same time point
+|6 |sent_timestamp |timestamp |The timestamp that was provided by the sender. It should be the recording time point
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point
 |8 |sender_id |string |The endpoint ID of the sender
 |9 |created_at |Timestamp |The timestamp, when this message was added to the receiving endpoints feed
 |10 | message_id |String | Internal agrirouter message ID representing this message and its payload
@@ -108,7 +108,7 @@ In case of a chunked message, the meta information will always be available in e
 [NOTE]
 =====
 There is no paging mechanism available in Push notifications
-All messages will be delivered in responses with a maximum size of 1 MB. So, as long as you receive push notifications, you should keep on polling, if there are more of them.
+All messages will be delivered in responses with a maximum size of 1 MB. So, as long as you receive push notifications, you should keep on polling if there are more of them.
 
 =====
 
@@ -134,5 +134,5 @@ While messages from the feed are delivered "in order", messages directly pushed 
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

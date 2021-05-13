@@ -20,7 +20,7 @@ On the other side, it is part of the agrirouter and forwards messages to routing
 
 [NOTE]
 ====
-The terms “subscription” and “subscribing” are well known by MQTT addicted developers. In this document however, subscribtions describe a technique of the agrirouter endpoint. It works like an MQTT subscription, it’s however important to notice, that MQTT is mostly not the context of these words in the document except for the relevant chapter for link:./communication.adoc#mqtt[MQTT communication].
+The terms “subscription” and “subscribing” are well known by MQTT addicted developers. In this document however, subscribtions describe a technique of the agrirouter endpoint. It works like an MQTT subscription, it’s however important to notice that MQTT is mostly not the context of these words in the document except for the relevant chapter for link:./communication.adoc#mqtt[MQTT communication].
 ====
 
 == Inbox
@@ -67,7 +67,7 @@ In terms of agrirouter onboarding result, the outbox is called comands due to th
 
 == Feed
 
-The feed receives all messages from the agrirouter due to addressing of messages and subscribtions of the endpoint, given there is a routing for that. Messages in the feed are stored for a maximum of 4 weeks, before the are deleted. The user will get informed about that, if there are messages, that were not delivered for 3 weeks or more. An app instance can either request the messages to be forwarded to its outbox or request to delete the messages. If it requests the forwarding to the outbox, the messages are only deleted from the feed, when the app instance confirms having received those messages.
+The feed receives all messages from the agrirouter due to addressing of messages and subscribtions of the endpoint, given there is a routing for that. Messages in the feed are stored for a maximum of 4 weeks before they are deleted. The user will be informed when there are messages that were not delivered for 3 weeks or more. An app instance can either request the messages to be forwarded to its outbox or request to delete the messages. If it requests the forwarding to the outbox, the messages are only deleted from the feed when the app instance confirms having received those messages.
 
 ++++
 <p align="center">
@@ -98,6 +98,6 @@ The subscription list includes a list of all Message Types and DDIs, the endpoin
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====
 

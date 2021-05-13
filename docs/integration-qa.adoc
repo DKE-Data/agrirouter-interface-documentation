@@ -78,7 +78,7 @@ There are several environments for test and production in different areas of the
 === Connecting your app instance
 
 ==== Authorization
-FarmingSoftware and Telemetry Platforms have to perform an link:./integration/authorization.adoc[Authorization Process] to clarify, that the account user is known.
+FarmingSoftware and Telemetry Platforms have to perform an link:./integration/authorization.adoc[Authorization Process] to clarify that the account user is known.
 
 ==== Onboarding
 
@@ -118,7 +118,7 @@ When an endpoint shall be deleted, it can be link:./integration/revoke.adoc[Revo
 
 == 3.6 Test Interface and messaging
 
-In status _Approved for Testing_, application developers can link:./invite-testers.adoc[add other accounts for testing their application]. If a certification version is in status _Approved for Testing_, instances with this certification version can be onboarded in these test accounts and an external test can be started. The developers account automatically is an end-user account, that is a test account. This means, that a developer can onboard an endpoint in his account.
+In status _Approved for Testing_, application developers can link:./invite-testers.adoc[add other accounts for testing their application]. If a certification version is in status _Approved for Testing_, instances with this certification version can be onboarded in these test accounts and an external test can be started. The developers account automatically is an end-user account that is a test account. This means that a developer can onboard an endpoint in his account.
 
 [IMPORTANT]
 ====
@@ -134,5 +134,5 @@ Once you finished the tests and see your app ready to be published, you can proc
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./shortings.adoc[shortings]|link:./terms.adoc[agrirouter in a nutshell]
+|link:../README.adoc[Index]|link:./general.adoc[OverView]|link:./abbreviations.adoc[abbreviations]|link:./terms.adoc[agrirouter in a nutshell]
 |====

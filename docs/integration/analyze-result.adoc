@@ -9,7 +9,7 @@
 
 In case, a JSON Object was received, the String inside the Command is a Base64 encoded protobuf object. The app instance has to decode the message into a protobuf object then.
 
-The Base64 string should be convertible to a byte stream, that includes a ResponseEnvelope and a ResponsePayLoadWrapper.
+The Base64 string should be convertible to a byte stream that includes a ResponseEnvelope and a ResponsePayLoadWrapper.
 
 == Delimiting Envelope and Payload
 
@@ -17,7 +17,7 @@ Envelope and payload of each message are packaged into one delimited message. Se
 
 == Envelope
 
-The envelope is a protobuf object, that can be found in message agrirouter.response.ResponseEnvelope
+The envelope is a protobuf object that can be found in message agrirouter.response.ResponseEnvelope
 
 Parameters are:
 
@@ -26,7 +26,7 @@ Parameters are:
 |# |Name |Type |Description
 |1 |response_code |int64 |A HTTP-like response code indicating the result
 |2 |type |ResponseBodyType |An indicator of the correct decoding protobuf description
-|3 |application_message_id |String |the corresponding message, that this answer is assigned to.
+|3 |application_message_id |String |the corresponding message that this answer is assigned to.
 |4 |message_id |String |The agrirouter internal message ID used to be written to the agrirouter log and for confirmation.
 |5 |timestamp |TimeStamp |The timestamp of the Result creation
 |========
@@ -140,5 +140,5 @@ The possible codes can be found in the link:./../error-codes.adoc[error code lis
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

@@ -35,7 +35,7 @@ The message consists of a list of GPS positions.
 |1 |gps_entries |GPSList |A list of GPS positions.
 |================================================================================================
 
-Each GPS position has the following parameters, that are equal to ISO11783-10 TimeLog entries and therefore also equal to EFDI GPS information; just without machine data.
+Each GPS position has the following parameters that are equal to ISO11783-10 TimeLog entries and therefore also equal to EFDI GPS information; just without machine data.
 
 
 [cols="1,3,3,4",options="header",]
@@ -70,7 +70,7 @@ The Position status can have one of the following values:
 |15 |D_NOT_AVAILABLE |No GPS Receiver available
 |================================================================================================
 
-The Field status shall indicate, if a device is on a field, on the road or offroad.
+The Field status shall indicate if a device is on a field, on the road or offroad.
 [cols="1,2,5",options="header",]
 |================================================================================================
 |# |Name |Description
@@ -92,7 +92,7 @@ The `gps:info` has **NOT** to be formatted to a Base64 encoding! It must be sent
 
 === Result
 
-The result indicates, if there was a receipient for the message.
+The result indicates if there was a receipient for the message.
 
 
 
@@ -100,5 +100,5 @@ The result indicates, if there was a receipient for the message.
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====

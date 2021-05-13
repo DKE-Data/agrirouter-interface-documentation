@@ -21,7 +21,7 @@ For CUs, this requires additional infrastructure, therefore DKE advices to use t
 
 == Authorization of farming software
 
-As application providers have to pay for application instances communicating with agrirouter, the application provider should make sure, that only such agrirouter accounts can onboard one of his applications, that he can assign to one of his users.
+As application providers have to pay for application instances communicating with agrirouter, the application provider should make sure that only such agrirouter accounts can onboard one of his applications that he can assign to one of his users.
 
 [NOTE]
 ====
@@ -170,7 +170,7 @@ The following parameters will be delivered in the GET-Queue:
 [cols="1,2,2,4",options="header",]
 |============================================================================================================
 |Position |Name |Type |Description
-|1 |signature |String |A base64 encoded signature to verify, that the source of the message is the agrirouter
+|1 |signature |String |A base64 encoded signature to verify that the source of the message is the agrirouter
 |2 |state |String |The value that was passed to the agrirouter in parameter State
 |3 |token |String |A base64 encoded JSON Object as Result
 |(3) |error |String |If error is delivered, user declined connection!
@@ -196,7 +196,7 @@ If the result includes a parameter *error*, the request was declined. Possible v
 
 ==== Checking authenticity
 
-Before analyzing the result, which is encoded in the *token*, it should be made sure, that the result (provided to the browser and from there to the application providers server) is really provided by the agrirouter.
+Before analyzing the result, which is encoded in the *token*, it should be made sure that the result (provided to the browser and from there to the application providers server) is really provided by the agrirouter.
 
 Steps:
 
@@ -213,7 +213,7 @@ You **have to** use the key from link:../keys.adoc[Certificates and keys]!
 
 [NOTE]
 ====
-* Many implementations of the verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible, that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
+* Many implementations of the verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
 ====
 
 ==== Analyse the result in token
@@ -223,7 +223,7 @@ The result token is a base64 encoded JSON object including the following paramet
 [cols="1,1,3",options="header",]
 |=======================================================================================================================================================
 |Name |Type |Description
-|account |String |The unique id of the user account on agrirouter , that will be provided to you in the metrics exports for billing
+|account |String |The unique id of the user account on agrirouter that will be provided to you in the metrics exports for billing
 |regcode |String |If response-type=onboard, this regcode will deliver a Registration Code equal to clicking the RegistrationCode when clicking "+Telemetry"-Button and select a CU in the agrirouter ui
 |expires |DataTime |The date and time (in UTC), when the regcode becomes invalid
 |=======================================================================================================================================================
@@ -241,7 +241,7 @@ IMPORTANT: The account ID is used for invoicing. Therefore it should be saved wi
 
 == Authorization for CUs and non-cloud-software
 
-To perform authorization for software, that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
+To perform authorization for software that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
 
 ++++
 <p align="center">
@@ -261,6 +261,6 @@ Make sure, you save all the information returned from the authorization request,
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====
 

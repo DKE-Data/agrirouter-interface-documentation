@@ -2,7 +2,7 @@
 
 == Numbering convention
 
-Within the agrirouter interface, there are several IDs or counters, that are of type int64. Due to difference between the protobuf implementation of C++ vs. e.g. Java, the ID “0” cannot be used.
+Within the agrirouter interface, there are several IDs or counters that are of type int64. Due to difference between the protobuf implementation of C++ vs. e.g. Java, the ID “0” cannot be used.
 
 IMPORTANT: All numberings begin with 1!
 
@@ -26,7 +26,7 @@ If there is nothing different mentioned in the relevant chapter, all timestamps 
 
 == Base64
 
-Base64 as defined in link:https://tools.ietf.org/html/rfc4648[RFC4648] does *not* include line breaks. Make sure, that your software creates Base64-Strings without linebreaks.
+Base64 as defined in link:https://tools.ietf.org/html/rfc4648[RFC4648] does *not* include line breaks. Make sure that your software creates Base64-Strings without linebreaks.
 
 == Time Synchronisation
 
@@ -39,10 +39,10 @@ If your application has access to the GPS time, this should be enough to keep th
 [NOTE] 
 ==== 
 * The agrirouter support team also suggests using this compensation time in your TaskController- and DataLogger- Data.
-Even though, this is not relevant for a proper communication with the agrirouter, it will avoid timing problems in the analysis of data with applications, that receive your data.
+Even though, this is not relevant for a proper communication with the agrirouter, it will avoid timing problems in the analysis of data with applications that receive your data.
 
 
-* If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data, if you have different times
+* If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data if you have different times
 ====
 
 
@@ -53,5 +53,5 @@ Even though, this is not relevant for a proper communication with the agrirouter
 This page is found in every file and links to the major topics
 [width="100%"]
 |====
-|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../shortings.adoc[shortings]|link:../terms.adoc[agrirouter in a nutshell]
+|link:../../README.adoc[Index]|link:../general.adoc[OverView]|link:../abbreviations.adoc[abbreviations]|link:../terms.adoc[agrirouter in a nutshell]
 |====
