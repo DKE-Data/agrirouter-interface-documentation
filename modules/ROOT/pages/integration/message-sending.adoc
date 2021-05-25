@@ -1,8 +1,5 @@
 = Sending a Request
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 The message or command is sent to the agrirouter using a protocol dependent request to its agrirouter inbox.
 

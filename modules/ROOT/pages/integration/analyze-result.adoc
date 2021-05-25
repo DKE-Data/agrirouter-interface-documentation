@@ -1,9 +1,6 @@
 = Analyse Outbox Results
 :sectlinks:
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == Decoding Base64
 

@@ -1,8 +1,5 @@
 = Applications
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 == Types of applications
@@ -16,7 +13,7 @@ Applications are software products that have implemented an interface to the agr
 
 == Selecting the application type
 
-It’s not always obvious, to which category a new application belongs. To simplify the decision, DKE advices the following decision tree:
+It’s not always obvious, to which category a new application belongs. To simplify the decision, DKE advises the following decision tree:
 
 .Decision Tree: What type of application do I create?
 image::general/decisiontree_apptype.png[Decision Tree: What type of application do I create?,619,366]

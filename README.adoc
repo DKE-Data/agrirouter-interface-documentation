@@ -1,8 +1,5 @@
 = agrirouter-interface-documentation
 :imagesdir: modules/ROOT/assets/images
-:toc:
-:toc-title:
-:toclevels: 4
 
 [abstract]
 == Abstract

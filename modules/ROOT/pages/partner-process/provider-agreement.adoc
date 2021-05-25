@@ -1,7 +1,4 @@
 = Provider agreement
-:toc:
-:toc-title:
-:toclevels: 4
 
 == General process
 image::general/process_firstcontact.png[]

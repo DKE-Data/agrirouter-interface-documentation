@@ -1,8 +1,5 @@
 = Authorization Process
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 == What is this process used for?
@@ -17,7 +14,7 @@ As the authorization process – in difference to the rest of the communication 
 
 The authorization process is major for farming software and telemetry platforms, for CUs it is an optional function.
 
-For CUs, this requires additional infrastructure, therefore DKE advices to use the registration code exchange process.
+For CUs, this requires additional infrastructure, therefore DKE advises to use the registration code exchange process.
 
 == Authorization of farming software
 

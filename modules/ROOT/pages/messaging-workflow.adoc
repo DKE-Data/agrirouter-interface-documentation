@@ -1,8 +1,5 @@
 = Application Interaction with agrirouter
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 == General Overview
@@ -49,11 +46,11 @@ The internal Google Protocol Buffer (protobuf) definitions for the communication
 
 == Request sending frequency
 
-agrirouter needs some time to process commands and forward messages that are received through one of the endpoints. To avoid mixing up communication and requesting the next message before receiving the result of the last command, the agrirouter support team advices, to have a minimum time laps of a few seconds between sending of 2 requests to the agrirouter:
+agrirouter needs some time to process commands and forward messages that are received through one of the endpoints. To avoid mixing up communication and requesting the next message before receiving the result of the last command, the agrirouter support team advises, to have a minimum time laps of a few seconds between sending of 2 requests to the agrirouter:
 
 [cols=",",options="header",]
 |=============================================
-|Einvironment |Adviced time between 2 requests
+|Einvironment |Advised time between 2 requests
 |Quality assurance |10 s
 |Production |5 s
 |=============================================

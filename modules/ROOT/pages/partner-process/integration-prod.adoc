@@ -1,8 +1,5 @@
 = Interface Integration in Production
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == General process of integration in Production
 

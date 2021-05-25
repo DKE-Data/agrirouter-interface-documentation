@@ -1,8 +1,5 @@
 = agrirouter Certification
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == In General
 
@@ -225,7 +222,7 @@ a|
 |xref:./tmt/efdi.adoc#iso11783-10device_descriptionprotobuf---teamsetefdi-device-description[iso:11783:-10:device_description:protobuf]
 |If application can send messages.
 a|
-* If the application reports machines connected via ISOBUS, the AEF conformance test "TaskController" is adviced.
+* If the application reports machines connected via ISOBUS, the AEF conformance test "TaskController" is advised.
 * If the application reports self-built device descriptions (e.g. by translating a TractorECU or using Bluetooth beacons), the reported device descriptions have to be compatible with ISO11783-10 Annex F.
 
 |xref:./tmt/efdi.adoc#iso11783-10time_logprotobuf---efdi-timelog[iso:11783:-10:time_log:protobuf]

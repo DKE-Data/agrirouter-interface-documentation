@@ -1,8 +1,5 @@
 = agrirouter ecosystem
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == Overview of the ecosystem
 

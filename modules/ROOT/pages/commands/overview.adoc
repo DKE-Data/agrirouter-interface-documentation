@@ -1,8 +1,5 @@
 = Overview of agrirouter commands
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 == Overview of commands
 

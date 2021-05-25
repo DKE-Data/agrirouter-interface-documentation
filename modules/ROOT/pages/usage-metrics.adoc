@@ -1,7 +1,4 @@
 = Usage Metrics
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 agrirouter collects and measures all information (event types) regarding data exchange in real time.

@@ -1,8 +1,5 @@
 = Inviting testers
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == General Information
 

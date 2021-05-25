@@ -1,8 +1,5 @@
 = Push Notifications
 :imagesdir: ../../assets/images
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 == General Overview

@@ -1,8 +1,5 @@
 = Development resources
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 

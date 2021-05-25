@@ -1,8 +1,5 @@
 = Commands describing the endpoint
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 This chapter will list all messages to tell the agrirouter, what the endpoint is capable of, who it is and what it wants to receive.

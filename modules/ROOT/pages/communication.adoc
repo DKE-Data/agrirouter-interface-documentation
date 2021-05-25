@@ -1,8 +1,5 @@
 = Basics of communication
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == General communication convention
 
@@ -170,7 +167,7 @@ Both protocols have several advantages and disadvantages. To select the right pr
 |Steps for Call and Result |3 |min. 4; polling
 |=============================================
 
-== Advice on protocol choice
+== Advise on protocol choice
 
 Every app provider is free to select his preferred format from the list above.
 

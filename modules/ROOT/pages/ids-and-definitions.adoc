@@ -1,8 +1,5 @@
 = IDs IDs IDs and which is which
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == Overview
 
@@ -255,7 +252,7 @@ The TeamsetContextId is used to describe a unique combination of different machi
  urn:hash::algorithm:value
 ----
 
-The agrirouter team advices to use a hashing algorithm of either md5 or sha256.
+The agrirouter team advises to use a hashing algorithm of either md5 or sha256.
 
 Examples (the key is the hash of "Hello World”):
 

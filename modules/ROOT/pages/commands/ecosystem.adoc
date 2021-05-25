@@ -1,8 +1,5 @@
 = Read the eco system
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 
@@ -118,13 +115,13 @@ The direction describes if messages shall be sendable or receivable:
 
 [NOTE]
 ====
-**Implementation advices**
+**Implementation advises**
 
-If your application can send messages without user interaction, it is adviced to update the endpoint list in a cyclic manor, e.g. every 5 minutes.
+If your application can send messages without user interaction, it is advised to update the endpoint list in a cyclic manor, e.g. every 5 minutes.
 
-If your application only sends messages if a user is present, it is adviced to update the endpoint list depending on the user interaction, e.g. manually with an "update" button or integrated in another user interaction like opening the destination selection dialog.
+If your application only sends messages if a user is present, it is advised to update the endpoint list depending on the user interaction, e.g. manually with an "update" button or integrated in another user interaction like opening the destination selection dialog.
 
-__These are advices, not requirements__
+__These are advises, not requirements__
 ====
 
 === Errors

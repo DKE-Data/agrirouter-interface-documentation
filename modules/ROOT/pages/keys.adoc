@@ -1,8 +1,5 @@
 = Certificates and keys
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == Definitions
 

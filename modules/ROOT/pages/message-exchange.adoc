@@ -1,8 +1,5 @@
 = Concept of Message exchange
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 

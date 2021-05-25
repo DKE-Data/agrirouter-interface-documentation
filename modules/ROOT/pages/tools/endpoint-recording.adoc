@@ -1,7 +1,4 @@
 = Endpoint Traces
-:toc:
-:toc-title:
-:toclevels: 4
 :imagesdir: 
 
 == Endpoint Recording

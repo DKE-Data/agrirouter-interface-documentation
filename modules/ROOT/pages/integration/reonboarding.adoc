@@ -1,8 +1,5 @@
 = Re-onboarding
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 === What is re-onboarding?

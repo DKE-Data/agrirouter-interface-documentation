@@ -1,7 +1,4 @@
 = ARTS
-:toc:
-:toc-title:
-:toclevels: 4
 :imagesdir: 
 
 == What is ARTS?

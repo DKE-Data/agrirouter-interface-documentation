@@ -1,8 +1,5 @@
 = Handling new versions and updates
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == General
 Changing the software version of your app might require a change in agrirouter if you decide to add new technical message types.

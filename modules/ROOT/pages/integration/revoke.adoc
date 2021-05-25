@@ -1,8 +1,5 @@
 = Revoking
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 == What is revoking?
 If the contract with a customer ends, app providers should revoke their connection with the customers account. This can be done using a process quite similar to the authorization process.

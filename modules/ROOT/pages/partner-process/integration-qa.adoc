@@ -1,8 +1,5 @@
 = 3. Interface Integration in Quality Assurance
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == Before we begin
 

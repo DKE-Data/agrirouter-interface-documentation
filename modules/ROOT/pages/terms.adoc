@@ -1,8 +1,5 @@
 = agrirouter Terms and short descriptions
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 [abstract]

@@ -1,8 +1,5 @@
 = Documents
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 == doc:pdf - A PDF Document
 

@@ -1,8 +1,5 @@
 = GPS
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 

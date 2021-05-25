@@ -1,5 +1,4 @@
 = URLs
-:toc:
 
 == Introduction
 On this page you will find a list of URLs relevant for your work with the agrirouter.

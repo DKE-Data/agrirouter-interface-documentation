@@ -1,8 +1,5 @@
 = Images
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 == img:bmp - Bitmap Image
 

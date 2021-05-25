@@ -1,8 +1,5 @@
 = Registration and Login
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == Overview
 

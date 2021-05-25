@@ -1,8 +1,5 @@
 = Router Devices
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == General function
 Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one MQTT broker.

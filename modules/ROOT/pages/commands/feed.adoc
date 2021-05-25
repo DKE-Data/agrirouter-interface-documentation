@@ -1,8 +1,5 @@
 = Commands to control the feed
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 These commands are used to control the delivery of messages from the feed to the app instance through the outbox. See also xref:../endpoint.adoc[architecture of an Endpoint]
 

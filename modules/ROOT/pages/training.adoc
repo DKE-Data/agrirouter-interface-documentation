@@ -1,7 +1,6 @@
 = Training
 :imagesdir: _images/
-:toc:
-:toc-title:
+
 
 == Workshops and Trainings
 

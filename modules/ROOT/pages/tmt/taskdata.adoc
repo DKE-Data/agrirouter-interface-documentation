@@ -1,8 +1,5 @@
 = iso:11783:-10:taskdata:zip - TaskData
 :imagesdir: 
-:toc:
-:toc-title:
-:toclevels: 4
 
 == Definition
 

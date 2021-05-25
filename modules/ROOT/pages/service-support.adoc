@@ -1,8 +1,5 @@
 = Service and Support
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == agrirouter Status
 In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://my-agrirouter.com/support/system-status[Status Page].

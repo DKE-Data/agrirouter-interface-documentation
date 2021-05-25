@@ -70,5 +70,5 @@
 ** xref:glossary.adoc[Glossary]
 ** xref:ids-and-definitions.adoc[IDs and Definitions]
 ** xref:keys.adoc[agrirouter Keys]
-** xref:limitiations.adoc[Limitations]
+** xref:limitations.adoc[Limitations]
 ** xref:urls.adoc[URLs]

@@ -1,8 +1,5 @@
 = my-agrirouter.com Marketplace
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == What is the agrirouter Marketplace?
 

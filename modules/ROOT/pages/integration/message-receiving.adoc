@@ -1,8 +1,5 @@
 = Receiving Results
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 
 == General

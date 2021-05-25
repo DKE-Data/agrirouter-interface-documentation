@@ -1,8 +1,5 @@
 = Accounts
 :imagesdir: _images/
-:toc:
-:toc-title:
-:toclevels: 4
 
 == General Password policies
 For security reasons, a password assigned to an account only stays valid for a period of 6 month.
