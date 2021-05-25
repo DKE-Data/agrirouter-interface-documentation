@@ -7,10 +7,10 @@ Within this document, there are several public or private keys mentioned that ar
 
 [cols=",,",options="header",]
 |=====================================================================================================================================================================================
-|Name |Describtion |Usage
+|Name |Description |Usage
 |agrirouter public key |A certificate to proof the identity of the agrirouter. Only the public key is available to developers |Verify the signature in the authentication process
 |Application Key Pair |The key pair that can be provided to or created by the agrirouter when creating a new software. |Create the signature for the onboarding Process
-|Endpoint Certificate |The certificate of an endpoint, used for the encrypted communication with the agrirouter |Standard communication in REST or MQTT; "Everything after onboarding”
+|Endpoint Certificate |The certificate of an endpoint, used for the encrypted communication with the agrirouter |Standard communication in REST or MQTT; "Everything after onboarding"
 |=====================================================================================================================================================================================
 
 == agrirouter public keys

@@ -360,7 +360,7 @@ See <<Message Query and Filtering>> for parameters and Filtering.
 |=====================================
 |ResultCode |ACK_WITH_MESSAGE
 |Protobuf Schema |message
-|typeURL |"agrirouter.commons.Messages”
+|typeURL |"agrirouter.commons.Messages"
 |=====================================
 
 In case of success, you receive VAL_000209 and a list of MessageIDs that could be confirmed.
@@ -410,7 +410,7 @@ MessageConfirm is simply an array of message IDs.
 |=====================================
 |ResultCode |ACK_WITH_MESSAGE
 |Protobuf Schema |message
-|typeURL |"agrirouter.commons.Messages”
+|typeURL |"agrirouter.commons.Messages"
 |=====================================
 
 In case of success, you receive VAL_000209 and a list of MessageIDs that could be confirmed.

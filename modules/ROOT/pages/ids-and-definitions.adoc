@@ -228,7 +228,7 @@ see above
 
 === Description
 
-The sensorAlternateID is the adress of an app instance at the agrirouter that marks the source of a message and can be used to directly adress messages to this specific app instance or Virtual CU.
+The sensorAlternateID is the address of an app instance at the agrirouter that marks the source of a message and can be used to directly address messages to this specific app instance or Virtual CU.
 
 === Where to find
 
@@ -254,7 +254,7 @@ The TeamsetContextId is used to describe a unique combination of different machi
 
 The agrirouter team advises to use a hashing algorithm of either md5 or sha256.
 
-Examples (the key is the hash of "Hello World”):
+Examples (the key is the hash of "Hello World"):
 
 MD5:
 

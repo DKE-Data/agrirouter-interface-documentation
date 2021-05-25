@@ -67,7 +67,7 @@ At the time of this writing, EFDI is still in an early stage. The working group 
 
 ISO 11783, taskdata
 
-|Wikipedia: __"ISO 11783, known as Tractors and machinery for agriculture and forestry -- Serial control and communications data network (commonly referred to as "ISO Bus" or "ISOBUS") is a communication protocol for the agriculture industry based on the SAE J1939 protocol (which includes CANbus) .”__ (source: https://en.wikipedia.org/wiki/ISO_11783 )
+|Wikipedia: __"ISO 11783, known as Tractors and machinery for agriculture and forestry -- Serial control and communications data network (commonly referred to as "ISO Bus" or "ISOBUS") is a communication protocol for the agriculture industry based on the SAE J1939 protocol (which includes CANbus) ."__ (source: https://en.wikipedia.org/wiki/ISO_11783 )
 
 ISO 11783-10 describes the file-based and batch-oriented interchange format between machines and FMIS, using XML (ISOMXL) and binaries with XML header data. This is called a taskdata file set, even though it can contain many other data (fields, products, crop, worker, and many more) and need not even contain a task.
 

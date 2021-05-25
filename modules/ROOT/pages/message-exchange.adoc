@@ -20,7 +20,7 @@ This chapter only handles the message exchange on the agrirouter in a general wa
 In general, there are 3 steps:
 
 1.  An application instance sends a message to its endpoints inbox
-2.  agrirouter forwards ("routes”) this message to all relevant and permitted endpoints storage ("feed”)
+2.  agrirouter forwards ("routes") this message to all relevant and permitted endpoints storage ("feed")
 3.  Each application instance can call for available messages in its endpoints feed and pull them from the outbox
 
 The following graph shows the way of a message through the agrirouter:
@@ -111,7 +111,7 @@ Information types are an abstraction of the technical message types to simplify 
 
 One technical message type can be part of multiple Information types.
 
-Each technical message type must be assigned to an information type, which represents its meaning and purpose. The technical message types Bitmap, PNG and JPEG for example are summarized as Information Type "Image”. This means that endpoints can send Bitmaps, PNGs and JPEGs if a routing for Images exists.
+Each technical message type must be assigned to an information type, which represents its meaning and purpose. The technical message types Bitmap, PNG and JPEG for example are summarized as Information Type "Image". This means that endpoints can send Bitmaps, PNGs and JPEGs if a routing for Images exists.
 
 Technical message types are defined by groups outside the agrirouter project. If message types are missing, DKE will add a useful standardized message type. DKE however will not standardize any formats.
 
@@ -228,7 +228,7 @@ Please refer to the link:https://lb.my-agrirouter.com[Learning Box]
 
 === Endpoint Groups
 
-To simplify the creation of routings, endpoints can be grouped in the end user’s user interface. This grouping is only done on the visual layer, an endpoint group can not be adressed with a message.
+To simplify the creation of routings, endpoints can be grouped in the end user’s user interface. This grouping is only done on the visual layer, an endpoint group can not be addressed with a message.
 
 === The default group
 

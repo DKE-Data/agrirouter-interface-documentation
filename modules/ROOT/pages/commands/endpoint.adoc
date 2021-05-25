@@ -140,11 +140,11 @@ If the message was malformed, an `ACK_WITH_FAILURE` will be returned.
     }
 ----
 
-== Subscribtion Command
+== Subscription Command
 
 === Definition
 
-The subscription command is used to subscribe for a list of technical message types. Being subscribed for a technical message type means that your endpoint will receive a message of such TMT, whenever any other endpoint sends such a TMT to "publish” and a routing between the sender and your applications endpoint is given.
+The subscription command is used to subscribe for a list of technical message types. Being subscribed for a technical message type means that your endpoint will receive a message of such TMT, whenever any other endpoint sends such a TMT to "publish" and a routing between the sender and your applications endpoint is given.
 
 [NOTE]
 ====
@@ -183,7 +183,7 @@ xref:../tmt/overview.adoc[ in the list of technical message types].
 [cols="1,3,2,4",options="header",]
 |===========================================================================
 |# |Name |Type |Description
-|1 |technical_message_type |Subscribtion (Repeated) |A list of subscribtions
+|1 |technical_message_type |Subscription (Repeated) |A list of subscriptions
 |===========================================================================
 
 It is an array, each entry is of type agrirouter.request.payload.endpoint.MessageTypeSubscriptionItem
@@ -204,7 +204,7 @@ The DDIs field is only required if the subscription is used for a subscription o
 |===============================================
 |ResultCode |ACK
 |Protobuf Schema |None; Simply 0 bytes of answer
-|typeURL |"”
+|typeURL |""
 |===============================================
 
 In case of success, an Acknowledgment is received.

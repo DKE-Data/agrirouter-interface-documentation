@@ -95,7 +95,7 @@ image::ig2/image23.png[Finding the certificationVersionID,519,294]
 This step is not required for CUs
 ====
 
-As the requests need to be signed, the public key has to be stored within the agrirouter. This can be done, calling "Edit” on the Endpoint Software Management Screen. The agrirouter UI offers the possibility to create a key pair, you can however create your own one and just store the public key on agrirouter.
+As the requests need to be signed, the public key has to be stored within the agrirouter. This can be done, calling "Edit" on the Endpoint Software Management Screen. The agrirouter UI offers the possibility to create a key pair, you can however create your own one and just store the public key on agrirouter.
 
 .Generating Private and Public Key in the agrirouter UI
 image::ig2/image24.png[Generating Private and Public Key in the agrirouter UI,409,400]
@@ -126,7 +126,7 @@ All signatures used for the onboarding and revocation process shall be created b
 * hashing the request body (SHA256)
 * then using the private key to create an RSA signature of the hash
 * Create HEX representation of this hash
-* Add the hex string as "X-Agrirouter-Signature” to the header of the HTTP call
+* Add the hex string as "X-Agrirouter-Signature" to the header of the HTTP call
 
 Agrirouter will look up the public key for the app id specified and verify the signature.
 
@@ -186,7 +186,7 @@ The desired communication protocol after onboarding
 
 3: REST
 
-Example: "2”
+Example: "2"
 
 |5 |certificateType |String a|
 Type of the desired certificate;
@@ -194,7 +194,7 @@ Type of the desired certificate;
 Possible values: PEM,P12
 
 |6 |UTCTimestamp |String |A Timestamp like this: _2018-06-20T07:29:23.457Z_
-|7 |timeZone |String |A TimeZone like this: "+03:00”
+|7 |timeZone |String |A TimeZone like this: "+03:00"
 |================================================================================================================
 
 **EXAMPLE**
@@ -210,9 +210,9 @@ Possible values: PEM,P12
 
 "gatewayId": "3",
 
-"UTCTimestamp”: "2018-06-04T12:00:03.000Z”,
+"UTCTimestamp": "2018-06-04T12:00:03.000Z",
 
-"timeZone”: "+02:00”
+"timeZone": "+02:00"
 
 }
 ----
@@ -227,7 +227,7 @@ There are different result HTTP Status codes indicating the result
 
 [cols=",",options="header",]
 |=============================================================================
-|Code |Describtion
+|Code |Description
 |200 |The validation was successful
 |400 |There was an error in the request
 |401 |The request was unauthorized; the provided registration code was unknown
@@ -280,7 +280,7 @@ The address for the onboarding request is as follows:
 
 [cols="1,4",options="header",]
 |===========================================
-|Method |Adress
+|Method |Address
 |POST |api/v1.0/registration/onboard/request
 |===========================================
 
@@ -317,7 +317,7 @@ The desired communication protocol after onboarding
 
 3: REST
 
-Example: "2”
+Example: "2"
 
 |5 |certificateType |String a|
 Type of the desired certificate;
@@ -325,7 +325,7 @@ Type of the desired certificate;
 Possible values: PEM,P12
 
 |6 |UTCTimestamp |String |A Timestamp like this: _2018-06-20T07:29:23.457Z_
-|7 |timeZone |String |A TimeZone like this: "+03:00”
+|7 |timeZone |String |A TimeZone like this: "+03:00"
 |=======================================================================================================================
 
 [source,javascript]
@@ -340,9 +340,9 @@ Possible values: PEM,P12
 
 "gatewayId": "3",
 
-"UTCTimestamp”: "2018-06-04T12:00:03.000Z”,
+"UTCTimestamp": "2018-06-04T12:00:03.000Z",
 
-"timeZone”: "+02:00”
+"timeZone": "+02:00"
 
 }
 ----
@@ -360,7 +360,7 @@ The address for the onboarding request is as follows:
 
 [cols="1,4",options="header",]
 |===================================
-|Method |Adress
+|Method |Address
 |POST |api/v1.0/registration/onboard
 |===================================
 
@@ -425,7 +425,7 @@ The request has several possible response codes indicating Success or Failure:
 [cols="1,4",options="header",]
 |========================================================================================================
 |Code |Possible problem
-|201 |Success; Analyze onboarding result to get started
+|201 |Success; Analyse onboarding result to get started
 |400 |The Request was invalid
 |401 |Unauthorized; meaning that one of the given header parameters is wrong. Refer to the xref:./../error-codes.adoc[error message]
 |========================================================================================================

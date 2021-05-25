@@ -10,7 +10,7 @@
 The message `gps:info` includes a list of GPS positions. If recording GPS position in a higher rate than the sending rate is required, the GPS positions need to be stored and sent in one package.
 
 
-This format is used to report the GPS position of a CU or virtual CU independend of an attached machine. 
+This format is used to report the GPS position of a CU or virtual CU independent of an attached machine. 
 
 
 === Command
@@ -67,7 +67,7 @@ The Position status can have one of the following values:
 |15 |D_NOT_AVAILABLE |No GPS Receiver available
 |================================================================================================
 
-The Field status shall indicate if a device is on a field, on the road or offroad.
+The Field status shall indicate if a device is on a field, on the road or off-road.
 [cols="1,2,5",options="header",]
 |================================================================================================
 |# |Name |Description
@@ -89,4 +89,4 @@ The `gps:info` has **NOT** to be formatted to a Base64 encoding! It must be sent
 
 === Result
 
-The result indicates if there was a receipient for the message.
+The result indicates if there was a recipient for the message.

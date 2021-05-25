@@ -6,7 +6,7 @@
 
 === Definition
 
-This format is used to exchange PDF documents. It can forward the binary PDF-Content, metadata like the flename can be forwarded using the metadata element in the request.
+This format is used to exchange PDF documents. It can forward the binary PDF-Content, metadata like the filename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -14,7 +14,7 @@ This format is used to exchange PDF documents. It can forward the binary PDF-Con
 |==================
 |Command |img:bmp
 |Protobuf Schema |-
-|TypeURL |"”
+|TypeURL |""
 |==================
 
 === Format

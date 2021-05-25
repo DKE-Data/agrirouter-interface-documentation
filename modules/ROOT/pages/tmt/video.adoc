@@ -5,7 +5,7 @@
 
 === Definition
 
-This format is used to exchange an avi video file. It can forward the binary avi-Content, metadata like the flename can be forwarded using the metadata element in the request.
+This format is used to exchange an avi video file. It can forward the binary avi-Content, metadata like the filename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -13,7 +13,7 @@ This format is used to exchange an avi video file. It can forward the binary avi
 |==================
 |Command |vid:avi
 |Protobuf Schema |-
-|TypeURL |"”
+|TypeURL |""
 |==================
 
 === Format
@@ -28,7 +28,7 @@ The base64-encoding of the binary chunk/file data is not the same as the base64 
 
 === Definition
 
-This format is used to exchange an wmv video file. It can forward the binary wmv-Content, metadata like the flename can be forwarded using the metadata element in the request.
+This format is used to exchange an wmv video file. It can forward the binary wmv-Content, metadata like the filename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -36,7 +36,7 @@ This format is used to exchange an wmv video file. It can forward the binary wmv
 |==================
 |Command |vid:wmv
 |Protobuf Schema |-
-|TypeURL |"”
+|TypeURL |""
 |==================
 
 === Format
@@ -52,7 +52,7 @@ The base64-encoding of the binary chunk/file data is not the same as the base64 
 
 === Definition
 
-This format is used to exchange an MPEG4 video file. It can forward the binary mp4-Content, metadata like the flename can be forwarded using the metadata element in the request.
+This format is used to exchange an MPEG4 video file. It can forward the binary mp4-Content, metadata like the filename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -60,7 +60,7 @@ This format is used to exchange an MPEG4 video file. It can forward the binary m
 |==================
 |Command |vid:mp4
 |Protobuf Schema |-
-|TypeURL |"”
+|TypeURL |""
 |==================
 
 === Format

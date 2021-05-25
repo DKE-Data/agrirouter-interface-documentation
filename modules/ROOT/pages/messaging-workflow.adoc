@@ -105,7 +105,7 @@ image::ig2/image18.png[Onboarding process of a Farming Software or Telemetry pla
 
 ==== For CUs
 
-The registration code for a new CU can be created by the end user clicking "Telemetry Connection”(1) in agrirouters’ control center. He has to select the desired CU(2) and gets a 10-digit code consisting of letters and numbers(3). A CU needs an interface to input this registration code.
+The registration code for a new CU can be created by the end user clicking "Telemetry Connection"(1) in agrirouters’ control center. He has to select the desired CU(2) and gets a 10-digit code consisting of letters and numbers(3). A CU needs an interface to input this registration code.
 
 .Requesting a registration code in agrirouter UI
 image::ig1/image31.png[Requesting a registration code in agrirouter UI,453,254]

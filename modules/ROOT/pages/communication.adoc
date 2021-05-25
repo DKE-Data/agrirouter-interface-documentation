@@ -14,7 +14,7 @@ After application registration, the communication is secured using the SSL certi
 After the validation has happened, the agrirouter provides all necessary security information to establish a messaging connection. The developer is obliged to store this certificate or the tokens secured and encrypted within the application. 
 Receiving the certificate is described in xref:integration/onboarding.adoc[onboarding] .
 
-== Different layers, the "onion principle”
+== Different layers, the "onion principle"
 
 agrirouter is a platform that is mostly used to transport messages *through* it and not towards it.
 
@@ -74,7 +74,7 @@ REST is based on single, request only methods, therefore, the agrirouter cannot 
 
 ==== Communication Workflow with the Inbox
 
-Using REST, an app instance just receives an HTTP 200 "OK” Response. The App Instance sends a HTTP Post request over an SSL secured connection.
+Using REST, an app instance just receives an HTTP 200 "OK" Response. The App Instance sends a HTTP Post request over an SSL secured connection.
 
 .Request and Response in HTTP
 image::ig2/image33.png[Request and Response in HTTP,631,212]
@@ -91,11 +91,11 @@ Make sure to meet the xref:./messaging-workflow.adoc#request-sending-frequency[r
 
 === MQTT
 
-MQTT is a subscription based protocol. Therefore, the client can be informed by agrirouter that new messages are available. For further information, please refer to the following recource:
+MQTT is a subscription based protocol. Therefore, the client can be informed by agrirouter that new messages are available. For further information, please refer to the following resource:
 
 * https://mqtt.org/
 
-The agrirouter provides an MQTT Broker serverside, so, an app instance has to connect to this server with its client.
+The agrirouter provides an MQTT Broker server side, so, an app instance has to connect to this server with its client.
 
 The agrirouter provides one MQTT Server per Endpoint, so there is no danger or chance to subscribe for messages of another endpoint.
 
@@ -192,7 +192,7 @@ image::ig2/image38.png[Abstraction of a result from the outbox,628,87]
 
 = Communication of App Instance and Endpoint
 
-== Endpoint Adresses
+== Endpoint Addresses
 
 The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refer to xref:./integration/onboarding.adoc[Send onboarding Request].
 

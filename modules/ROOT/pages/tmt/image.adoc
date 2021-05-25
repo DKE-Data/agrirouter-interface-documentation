@@ -6,7 +6,7 @@
 
 === Definition
 
-This format is used to exchange a bitmap file. It can forward the binary bmp-Content, metadata like the flename can be forwarded using the metadata element in the request.
+This format is used to exchange a bitmap file. It can forward the binary bmp-Content, metadata like the filename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -14,7 +14,7 @@ This format is used to exchange a bitmap file. It can forward the binary bmp-Con
 |==================
 |Command |img:bmp
 |Protobuf Schema |-
-|TypeURL |"”
+|TypeURL |""
 |==================
 
 === Format
@@ -32,7 +32,7 @@ The base64-encoding of the binary chunk/file data is not the same as the base64 
 
 === Definition
 
-This format is used to exchange a bitmap file. It can forward the binary jpeg-Content, metadata like the flename can be forwarded using the metadata element in the request.
+This format is used to exchange a bitmap file. It can forward the binary jpeg-Content, metadata like the filename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -40,7 +40,7 @@ This format is used to exchange a bitmap file. It can forward the binary jpeg-Co
 |==================
 |Command |img:jpg
 |Protobuf Schema |-
-|TypeURL |"”
+|TypeURL |""
 |==================
 
 === Format
@@ -56,7 +56,7 @@ The base64-encoding of the binary chunk/file data is not the same as the base64 
 
 === Definition
 
-This format is used to exchange a bitmap file. It can forward the binary png-Content, metadata like the flename can be forwarded using the metadata element in the request.
+This format is used to exchange a bitmap file. It can forward the binary png-Content, metadata like the filename can be forwarded using the metadata element in the request.
 
 === Command
 
@@ -64,7 +64,7 @@ This format is used to exchange a bitmap file. It can forward the binary png-Con
 |==================
 |Command |img:png
 |Protobuf Schema |-
-|TypeURL |"”
+|TypeURL |""
 |==================
 
 === Format

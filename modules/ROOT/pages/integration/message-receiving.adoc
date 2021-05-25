@@ -19,20 +19,20 @@ Please be aware that an online platform response in general might take up to a m
 
 == MQTT
 
-The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The outbox is the topic delivered with the "commands” attribute of the onboarding request. The app instance has to subscribe for this topic. The adresse can be found in xref:./message-sending.adoc[Message Sending].
+The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The outbox is the topic delivered with the "commands" attribute of the onboarding request. The app instance has to subscribe for this topic. The address can be found in xref:./message-sending.adoc[Message Sending].
 
 For more information on command management using MQTT, see the link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/936e9db8c3314ec6a3a6b558d58f5428.html?q=command[Gateway Documentation].
 
 
 == REST
 
-The REST endpoint address of the outbox is delivered with the "command” attribute of the onboarding request.
+The REST endpoint address of the outbox is delivered with the "command" attribute of the onboarding request.
 
 An application Instance has to perform a GET request to this endpoint to receive all messages from the outbox.
 
 [cols="1,4",options="header",]
 |=======================================================
-|Method |Adress
+|Method |Address
 |GET |/iot/gateway/rest/commands/{{deviceAlternateId}}
 |=======================================================
 
@@ -57,13 +57,13 @@ The result format depends on the setting of the Accept-Header in the GET Request
 
     {
 
-        "sensorAlternateId”: "49dcf152-eb2a-4b50-ad5c-1af5b737ed80”,
+        "sensorAlternateId": "49dcf152-eb2a-4b50-ad5c-1af5b737ed80",
 
-        "capabilityAlternateId”: "49dcf152-eb2a-4b50-ad5c-1af5b737ed80”,
+        "capabilityAlternateId": "49dcf152-eb2a-4b50-ad5c-1af5b737ed80",
 
-        "command”: {
+        "command": {
 
-            "message”: "fskjlaflasdfkjlasdfkjfalkefnFSDLKDFJL33221sdldgkjglfdkjldkgjDFAFKJLKJSFDSFEESXFRRDGDGRDGDGRSDDGRddrrrg354grdgIODIO35445DGDGLKKJWE3333425H1SJK==”
+            "message": "fskjlaflasdfkjlasdfkjfalkefnFSDLKDFJL33221sdldgkjglfdkjldkgjDFAFKJLKJSFDSFEESXFRRDGDGRDGDGRSDDGRddrrrg354grdgIODIO35445DGDGLKKJWE3333425H1SJK=="
 
         }
 

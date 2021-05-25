@@ -61,7 +61,7 @@ The endpoint response includes a list of available endpoints:
 |3 |endpoint_type |String |The type of Endpoint, see below
 |4 |status |String |The current activity status of the endpoint
 |5 |message_types |MessageTypes |See below
-|6 |external_id |String |The id provided as "id” in the onboarding request
+|6 |external_id |String |The id provided as "id" in the onboarding request
 |====================================================================================
 
 The endpoint Type can be one of the following Values:

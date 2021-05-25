@@ -172,7 +172,7 @@ If a message format is missing, please send us an email to support@my-agrirouter
 
 * *Name:* What’s the name of the new format?
 
-* *Type:* What message type would the new format fit the best? E.g. PNG would fit to a message type "Images”
+* *Type:* What message type would the new format fit the best? E.g. PNG would fit to a message type "Images"
 
 * *Scope:* What is this message type used for? If possible, please provide a use case.
 

@@ -182,10 +182,10 @@ a|
 * Setting routes (as sender or/and as receiver) is possible.
 * All information types defined in the certification version of the application to be certified can be selected.
 
-|xref:./commands/endpoint.adoc#subscribtion-command[dke:subscription]
+|xref:./commands/endpoint.adoc#subscription-command[dke:subscription]
 |If the application can receive messages.
 a|
-* The application receives published messages of every technical message type mentioned in its certification version as a receipient.
+* The application receives published messages of every technical message type mentioned in its certification version as a recipient.
 
 * An application can optionally offer the possibility to deactivate subscriptions for specific message types. During certifications, all subscriptions are required.
 

@@ -2,7 +2,7 @@
 
 == Numbering convention
 
-Within the agrirouter interface, there are several IDs or counters that are of type int64. Due to difference between the protobuf implementation of C++ vs. e.g. Java, the ID "0” cannot be used.
+Within the agrirouter interface, there are several IDs or counters that are of type int64. Due to difference between the protobuf implementation of C++ vs. e.g. Java, the ID "0" cannot be used.
 
 IMPORTANT: All numberings begin with 1!
 
@@ -22,11 +22,11 @@ __urn:iso:std:iso:11783:-12:2013:ed-2:tech:pii:1234567890ABC**Brand Name:Product
 
 If there is nothing different mentioned in the relevant chapter, all timestamps in messaging, onboarding etc. shall be in UTC. The common format for timestamps is ISO; e.g. 
 
- "2018-06-14T14:53:28.123Z”.
+ "2018-06-14T14:53:28.123Z".
 
 == Base64
 
-Base64 as defined in link:https://tools.ietf.org/html/rfc4648[RFC4648] does *not* include line breaks. Make sure that your software creates Base64-Strings without linebreaks.
+Base64 as defined in link:https://tools.ietf.org/html/rfc4648[RFC4648] does *not* include line breaks. Make sure that your software creates Base64-Strings without line breaks.
 
 == Time Synchronisation
 

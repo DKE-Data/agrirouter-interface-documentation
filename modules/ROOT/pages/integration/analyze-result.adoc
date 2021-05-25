@@ -10,7 +10,7 @@ The Base64 string should be convertible to a byte stream that includes a Respons
 
 == Delimiting Envelope and Payload
 
-Envelope and payload of each message are packaged into one delimited message. Seperating those parts requires the delimiting functionality of protobuf. To know the format for the payload, the envelope has to be decoded first
+Envelope and payload of each message are packaged into one delimited message. Separating those parts requires the delimiting functionality of protobuf. To know the format for the payload, the envelope has to be decoded first
 
 == Envelope
 

@@ -17,7 +17,7 @@ The user interface offers possibilities to handle the account:
 * setup routings to allow or disallow message delivery to specific endpoints or endpoint groups
 * create endpoint records for service purpose
 * modify his user interface (e.g. color scheme)
-* view a list of news/updates for his account (e.g "account connected”, "endpoint onboarded”, etc.)
+* view a list of news/updates for his account (e.g "account connected", "endpoint onboarded", etc.)
 
 .User Interface for End Users
 image::ig1/image2.png[User Interface for End Users,456,663]
