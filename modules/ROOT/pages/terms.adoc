@@ -82,8 +82,8 @@ The whole chapter can be found xref:./applications.adoc[here]
 == EcoSystem of agrirouter
 
 
-.A schema of the hierachy of agrirouter app instances
-image::ig1/image11.png[A schema of the hierachy of agrirouter app instances,634,400]
+.A schema of the hierarchy of agrirouter app instances
+image::ig1/image11.png[A schema of the hierarchy of agrirouter app instances,634,400]
 
 
 
@@ -92,7 +92,7 @@ image::ig1/image11.png[A schema of the hierachy of agrirouter app instances,634,
 
 * Every Account can onboard multiple Application Instances.
 
-* Applications can be onboarded to multiple accounts (dotted gray lines).
+* Applications can be onboarded to multiple accounts (dotted grey lines).
 
 * Applications can be CUs, Farming Software or Telemetry Platforms.
 

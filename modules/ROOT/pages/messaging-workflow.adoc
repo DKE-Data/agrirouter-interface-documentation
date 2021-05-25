@@ -50,7 +50,7 @@ agrirouter needs some time to process commands and forward messages that are rec
 
 [cols=",",options="header",]
 |=============================================
-|Einvironment |Advised time between 2 requests
+|Environment |Advised time between 2 requests
 |Quality assurance |10 s
 |Production |5 s
 |=============================================
@@ -178,7 +178,7 @@ The device descriptions are needed by the agrirouter to
 * determine the relevant CU when sending a Message directly to a machine
 * filter for DDIs that are allowed to be sent to specific endpoints
 
-The timelog telemetry data is analyzed, so that a filtering for value categories like fuel consumption is possible.
+The timelog telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
 
 .The onion principle for a telemetry message
 image::ig1/image34.png[The onion principle for a telemetry message,630,363]

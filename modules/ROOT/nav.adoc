@@ -41,7 +41,7 @@
 *** xref:integration/build-message.adoc[Building Messages]
 *** xref:integration/message-sending.adoc[Sending Requests]
 *** xref:integration/message-receiving.adoc[Receiving Results]
-*** xref:integration/analyze-result.adoc[Analyze Results]
+*** xref:integration/analyze-result.adoc[Analyse Results]
 *** xref:integration/push-notification.adoc[Push Notifications]
 *** xref:router-devices.adoc[MQTT Router Devices]
 ** xref:commands/overview.adoc[Commands]

@@ -99,7 +99,7 @@ Messages from other endpoints are put into the outbox by xref:./integration/push
 
 ==== Analysing messages
 
-Depending on the  xref:./integration/analyze-result.adoc#ResponseType[resultType], the result can be xref:./integration/analyze-result.adoc[analyzed].
+Depending on the  xref:./integration/analyse-result.adoc#ResponseType[resultType], the result can be xref:./integration/analyse-result.adoc[analysed].
 
 === End of life for an endpoint
 
