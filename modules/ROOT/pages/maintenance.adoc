@@ -12,7 +12,7 @@ As an application provider, you can download xref:./usage-metrics.adoc[usage met
 
 == Endpoint management
 
-Learn, how to manage your applications endpoints xref:./application-endpoint-management.adoc[here].
+Learn how to manage your applications endpoints xref:./application-endpoint-management.adoc[here].
 
 == Behaviour after SoftwareUpdate
 

@@ -169,7 +169,7 @@ Both protocols have several advantages and disadvantages. To select the right pr
 |Steps for Call and Result |3 |min. 4; polling
 |=============================================
 
-== Advise on protocol choice
+=== Advise on protocol choice
 
 Every app provider is free to select his preferred format from the list above.
 
@@ -180,26 +180,26 @@ DKE however advises to use MQTT using RouterDevices for any application that han
 
 To avoid graphs with too many arrows, we simplify the upcoming requests, abstracting MQTT and REST. Whatever protocol you use, a request and response in this document will look like this:
 
-==== Abstraction of Calls to the Inbox
+=== Abstraction of Calls to the Inbox
 
 .Abstraction of a Call or Message Sending to the Inbox
 image::ig2/image37.png[Abstraction of a Call or Message Sending to the Inbox,637,99]
 
 
-==== Abstraction of Results from Outbox
+=== Abstraction of Results from Outbox
 
 .Abstraction of a result from the outbox
 image::ig2/image38.png[Abstraction of a result from the outbox,628,87]
 
 
-= Communication of App Instance and Endpoint
+== Communication of App Instance and Endpoint
 
-== Endpoint Addresses
+=== Endpoint Addresses
 
 The endpoint addresses of the inbox and outbox are delivered with the onboarding request. Please refer to xref:./integration/onboarding.adoc[Send onboarding Request].
 
 
-== Assigning a result to a request
+=== Assigning a result to a request
 
 The assignment between messages sent to the inbox and their corresponding messages in the outbox is done by comparing the application_message_id provided by the app. Therefore, this application_message_id **should be unique**.
 
@@ -211,7 +211,7 @@ The assignment between messages sent to the inbox and their corresponding messag
 If a message is not correctly encoded, so that the agrirouter cannot decode it, there will be no application_message_id in the result.
 ====
 
-== Flow for sending messages
+=== Flow for sending messages
 
 Sending messages to the agrirouter creates an ACK message in the outbox of the agrirouter
 
@@ -219,13 +219,13 @@ Sending messages to the agrirouter creates an ACK message in the outbox of the a
 image::ig2/image39.png[Send Message or Command to agrirouter,512,210]
 
 
-== Flow of commands
+=== Flow of commands
 
 .Command Flow
 image::ig2/image40.png[Command Flow,482,290]
 
 
-== Flow of requesting messages from the feed
+=== Flow of requesting messages from the feed
 
 If the command is a feed command requesting messages from the feed, the app instance has to confirm the receival of the message, so that it is deleted from the feed.
 
@@ -238,7 +238,7 @@ The first message to a new endpoint **always** has to be the xref:./commands/end
 ====
 
 
-== Flow of push notifications
+=== Flow of push notifications
 When activated, agrirouter will deliver messages directly as push notifications. 
 
 
@@ -249,6 +249,6 @@ For further information, see xref:./integration/push-notification.adoc[ the chap
 
 
 
-== Terms
+=== Terms
 
 A command-process consists of a call (1.1) to the inbox. This call consists of the request and a processing status response. agrirouter will return a result through the outbox. If a message list was delivered from the feed, the messages have to be confirmed.

@@ -51,7 +51,7 @@ The push message element includes
 |1 |messages| [FeedMessage] | An array of FeedMessages
 |=====
 
-[REMARK]
+[NOTE]
 =====
 For the first release, the push message array will always include only one entry. If multiple messages shall be delivered,
 multiple Push notifications are delivered; each including one message.

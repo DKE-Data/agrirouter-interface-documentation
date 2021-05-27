@@ -47,7 +47,7 @@ Messages and commands are sent to the inbox. The address of the inbox is returne
 [cols="1,4",options="header",]
 |========================================================
 |Method |Address
-|POST |/iot/gateway/rest/measures/{{deviceAlternateId}}
+|POST |/iot/gateway/rest/measures/{\{deviceAlternateId\}}
 |========================================================
 
 === Header

@@ -12,7 +12,7 @@ Every endpoint has to report his capabilities of sending and receiving messages 
 
 [NOTE]
 ====
-* agrirouter specific commands are not part of the Capabilities, each application just has to support all of them.
+agrirouter specific commands are not part of the Capabilities, each application just has to support all of them.
 ====
 
 The list of technical message types can include any TechnicalMessageFormat mentioned in 17 Technical Message types.

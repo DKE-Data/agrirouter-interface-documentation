@@ -54,7 +54,6 @@ The metadata field includes the following fields:
 
 Metadata are part of the MessageQueryResponse and the MessageHeaderQueryResponse; see below.
 
-=======
 The command can include one or more filter criteria. If one filter is not provided, this means that this filter is ignored.
 
 == Call for Message Header List
@@ -87,17 +86,15 @@ For parameter description see <<Message Query and Filtering>>.
 |6 |sent_timestamp |google.protobuf.Timestamp |The timestamp that was provided by the sender. It should be the time when the message orignally was sent
 |7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point
 |=====================================================================================================================================
-=======
+
 === Result
 The response includes only the message headers without the payload.
 
 
 [NOTE]
 ====
-The result is sorted ascellading by the senderID.
-
-
-Within the sender-reciever package, the messages are sorted primary by the timestamp and secondary by the sequence number.
+The result is sorted ascending by the senderID.
+Within the sender-receiver package, the messages are sorted first by the timestamp and then by the sequence number.
 ====
 
 [cols=",",]
@@ -111,7 +108,7 @@ In general, the result has the following layers
 
 => Technical information ("How many responses etc.")
 
-==> Sender-Receiver-Touple ("Who send to whome")
+==> Sender-Receiver-Tuple ("Who sent to whom")
 
 ===> Message Header ("Type, ID, Date, etc...")
 
@@ -369,14 +366,9 @@ In case of success, you receive VAL_000209 and a list of MessageIDs that could b
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see xref:../error-codes.adoc[the error list].
 
-
-
-
-= Controlling the outbox 
+== Call for message list confirmation
 
 To make sure that no message gets lost due to e.g. a loss of internet connection while delivering a message, the app instance has to confirm the receival of every message.
-
-== Call for message list confirmation
 
 === Definition
 

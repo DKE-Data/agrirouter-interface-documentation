@@ -1,11 +1,11 @@
 = An advise on development and more
 
-This chapter shall describe a possible way of handling the integration with the agrirouter. It is not the only way of doing it, of course. For a valid and well communicated agrirouter integration, you should follow a mixture of business and development decisions:
+This chapter describes a possible way of handling the integration with the agrirouter. It is not the only way of doing it, of course. For a valid and well communicated agrirouter integration, you should follow a mixture of business and development decisions:
 
 1.  *Get basic knowledge:* First, read the basic concepts of agrirouter architecture and xref:./ecosystem.adoc[ecosystem]; described in this documentation.
-2.  *Decide, what you want to implement:*
+2.  *Decide what you want to implement:*
 a.  *Read* the several non-agrirouter-relevant technical message types (e.g. TaskData, Images, Telemetry) as a general overview of possible capabilities.
-b.  *Decide, which messages are relevant* for you and which information you could consume or provide. This way, you could e.g. forward the requirement for a TaskController Integration or a Camera attachment possibility at a CU to the relevant departments and it’s more common that it will be there in time.
+b.  *Decide which messages are relevant* for you and which information you could consume or provide. This way, you could e.g. forward the requirement for a TaskController Integration or a Camera attachment possibility at a CU to the relevant departments and it’s more common that it will be there in time.
 c.  *Synchronize your plans:* Depending on your role in the company make sure, management, marketing, sales and developers have the same idea of the upcoming product
 3.  *Decide, how to implement:* Once you made these decisions, let’s not care about the messages for a while and work out a possible architecture:
 a.  *Read* about the onion principle of communication and the command flow.

@@ -33,7 +33,7 @@ An application Instance has to perform a GET request to this endpoint to receive
 [cols="1,4",options="header",]
 |=======================================================
 |Method |Address
-|GET |/iot/gateway/rest/commands/{{deviceAlternateId}}
+|GET |/iot/gateway/rest/commands/{\{deviceAlternateId\}}
 |=======================================================
 
 

@@ -10,7 +10,7 @@ image::ig2/image42.png[Workflow of creating a message]
 
 == Chunking big messages
 
-Exchanging data using a mobile connection can be very critical, as a stable internet connection is not always given. To avoid wasting data volume and time, agrirouter offers a possibility to cut messages into multiple smaller parts and send them one by another. If the internet connection breaks down inbetween, only one small package is not delivered and has to be sent again.
+Exchanging data using a mobile connection can be very critical, as a stable internet connection is not always given. To avoid wasting data volume and time, agrirouter offers a possibility to cut messages into multiple smaller parts and send them one by another. If the internet connection breaks down in between, only one small package is not delivered and has to be sent again.
 
 [NOTE]
 ====
@@ -48,7 +48,7 @@ As the payload of a message is defined as an any message, the typeURL has to be 
 
 === Getting the agrirouter protobuf files
 
-Protobuff definitions can be found here: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions
+Protobuf definitions can be found here: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions
 
 The repository delivers all protobuf files that are owned by the DKE. It could be the case that you need additional protocol buffers like the EFDI telemetry messages definitions for specific message types that cannot be delivered in this github account due to intellectual property rights. You will however find instructions, how to get those protobuf definition files.
 
@@ -57,38 +57,25 @@ The repository delivers all protobuf files that are owned by the DKE. It could b
 Basically, you can think of a protobuf as a C Struct or a JSON object. It includes data of several data types with the possibility of default values or optional parameters and lists.
 
 An example of a protobuf with several descriptions
-[source,javascript]
+[source,protobuf]
 ----
 message MyProtobuf{ //The main class of this element
+    enum Direction { // An enumeration of values
+        SEND = 0;
+        RECEIVE = 1;
+        SEND_RECEIVE = 2;
+    }
 
-enum Direction { // An enumeration of values
+    message subBuffer{
+        int64 x=1;
+        int64 y=2;
+    }
 
-SEND = 0;
-
-RECEIVE = 1;
-
-SEND_RECEIVE = 2;
-
-}
-
-message subBuffer{
-
-int64 x=1;
-
-int64 y=2;
-
-}
-
-string name=1; // Field 1 of the structure is a string called "name"
-
-int64 age=2;
-
-Direction direction=3; //A field of type direction that describes an enum
-
-repeated string hobbies=4; //A list with 0 to n elements possible
-
-repeated subBuffer positions=5;
-
+    string name=1; // Field 1 of the structure is a string called "name"
+    int64 age=2;
+    Direction direction=3; // A field of type direction that describes an enum
+    repeated string hobbies=4; // A list with 0 to n elements possible
+    repeated subBuffer positions=5;
 }
 ----
 
@@ -96,7 +83,7 @@ repeated subBuffer positions=5;
 
 Protobuf is available for multiple programming languages such as Java, C++, Java Script, Python, etc. etc.
 
-The protobuf compiler creates sourcecodes for your desired language. Please refer to https://github.com/google/protobuf for a list of implementations
+The protobuf compiler creates source files for your desired language. Please refer to https://github.com/google/protobuf for a list of implementations
 
 == Chunking Messages
 
@@ -144,9 +131,9 @@ Currently, the following parameters are possible:
 
 Adding metadata is an optional feature since release 1.2 of the agrirouter. Older systems might not interpret the information, however, they are still compatible.
 
-*Important*
+[IMPORTANT]
 ====
- In case of a chunked message that shall include metadata, every single message shall include the metadata field.
+In case of a chunked message that shall include metadata, every single message shall include the metadata field.
 ====
 
 
@@ -235,12 +222,10 @@ The message list is a JSON array of message containers and called measures in th
 The protobuf container can be found here:
 
 It looks as follows:
-[source,javascript]
+[source,protobuf]
 ----
 message Measure {
-
-repeated google.protobuf.Any values = 1;
-
+    repeated google.protobuf.Any values = 1;
 }
 ----
 
@@ -252,23 +237,26 @@ The first Any-Object is named
 
 and includes a bytes object of the following structure
 
-    syntax = "proto3";
+[source,protobuf]
+----
+syntax = "proto3";
 
-    package gateway;
+package gateway;
 
-    option java_package = "com.sap.iotservices.common.protobuf.gateway";
-    option java_outer_classname = "MeasureRequestMessageProtos";
+option java_package = "com.sap.iotservices.common.protobuf.gateway";
+option java_outer_classname = "MeasureRequestMessageProtos";
 
-    message MeasureRequestMessage {
+message MeasureRequestMessage {
 
-        bytes message = 1;
-    }
+    bytes message = 1;
+}
+----
 
 The second Any-Object is named
 
   timestamp
 
-and includes a String representing the milliseconds until 01.01.1970:00:00:00.000.
+and includes a String representing the milliseconds since 01.01.1970 00:00:00.000.
 
 
 
@@ -300,13 +288,9 @@ The JSON setup looks like this:
 [source,javascript]
 ----
 {
-
-"sensorAlternateId": "\{\{sensorAlternateId}}",
-
-"capabilityAlternateId": "\{\{capabilityAlternateId}}",
-
-"measures": [["\{\{encoded_request}}", "\{\{$timestamp}}"]]
-
+    "sensorAlternateId": "\{\{sensorAlternateId}}",
+    "capabilityAlternateId": "\{\{capabilityAlternateId}}",
+    "measures": [["\{\{encoded_request}}", "\{\{$timestamp}}"]]
 }
 ----
 
@@ -315,50 +299,35 @@ The JSON setup looks like this:
 The protobuf message can be found link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/e97b63e35f9a4bdbab72075e7bd37ccf.html[here].
 
 It looks as follows:
-[source,javascript]
+[source,protobuf]
 ----
 syntax = "proto3";
-
 import "google/protobuf/any.proto";
-
 package gateway;
-
 option java_package = "com.sap.iotservices.common.protobuf.gateway";
-
 option java_outer_classname = "MeasureProtos";
-
 message MeasureRequest {
-
-string capabilityAlternateId = 1;
-
-string sensorAlternateId = 2;
-
-string sensorTypeAlternateId = 3;
-
-int64 timestamp = 4;
-
-repeated Measure measures = 5;
-
- message Measure {
-
-repeated google.protobuf.Any values = 1;
-
-}
-
+    string capabilityAlternateId = 1;
+    string sensorAlternateId = 2;
+    string sensorTypeAlternateId = 3;
+    int64 timestamp = 4;
+    repeated Measure measures = 5;
+    message Measure {
+        repeated google.protobuf.Any values = 1;
+    }
 }
 ----
 
-[EXAMPLE]
-====
 Here is an example for a message sent to request the unfiltered endpoint list. It's of course sent as binary, but to be able to put it into this documentation, it's encoded in Base64:
-
-    CiQ3OWRmZDkxOC03MDUxLTQ3MWEtOWI3My0zZjNjMjNkZWNhMzgSJDgyYThiYzIzLTdjYzItNDMx
-    YS1iNzdlLTBiNzRmOWE1M2NiNyCXlv7hBSqDAgrGAQoibWVzc2FnZS9nb29nbGUucHJvdG9idWYu
-    Qnl0ZXNWYWx1ZRKfAQqcAVMKJDE2NDlhNWQ4LTNkZWMtNDZlYi05ZDkxLWI0MWNlOWFhMjEyMhAB
-    Gh1ka2U6bGlzdF9lbmRwb2ludHNfdW5maWx0ZXJlZEIKCJeW/uEFEMCEPUcKRQo1YWdyaXJvdXRl
-    ci5yZXF1ZXN0LnBheWxvYWQuYWNjb3VudC5MaXN0RW5kcG9pbnRzUXVlcnkSDAoIaW1nOmpwZWcQ
-    Ago4CiV0aW1lc3RhbXAvZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEg8KDTE1NDc2NjgyNDcw
-    MDA=
+====
+CiQ3OWRmZDkxOC03MDUxLTQ3MWEtOWI3My0zZjNjMjNkZWNhMzgSJDgyYThiYzIzLTdjYzItNDMx
+YS1iNzdlLTBiNzRmOWE1M2NiNyCXlv7hBSqDAgrGAQoibWVzc2FnZS9nb29nbGUucHJvdG9idWYu
+Qnl0ZXNWYWx1ZRKfAQqcAVMKJDE2NDlhNWQ4LTNkZWMtNDZlYi05ZDkxLWI0MWNlOWFhMjEyMhAB
+Gh1ka2U6bGlzdF9lbmRwb2ludHNfdW5maWx0ZXJlZEIKCJeW/uEFEMCEPUcKRQo1YWdyaXJvdXRl
+ci5yZXF1ZXN0LnBheWxvYWQuYWNjb3VudC5MaXN0RW5kcG9pbnRzUXVlcnkSDAoIaW1nOmpwZWcQ
+Ago4CiV0aW1lc3RhbXAvZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEg8KDTE1NDc2NjgyNDcw
+MDA=
+====
 
 What you will find:
 

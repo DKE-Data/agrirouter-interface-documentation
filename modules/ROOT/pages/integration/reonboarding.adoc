@@ -2,7 +2,7 @@
 :imagesdir: 
 
 
-=== What is re-onboarding?
+== What is re-onboarding?
 
 Re-onboarding allows an endpoint to get new client certificates and updates on URLs / topics for measures and commands
 
@@ -14,7 +14,7 @@ Internally, the endpoint gets the same identification (deviceAlternateId, sensor
 It is vital to have re-onboarding functionality implemented *when not using router devices*, as certificates are currently only valid for *one year*
 ====
 
-=== Why should an endpoint be re-onboarded?
+== Why should an endpoint be re-onboarded?
 
 The current solution is that the onboarding certificates are valid only one year!
 After that, the respective endpoint will still be displayed in the Control Center, but cannot be used any more.
@@ -27,7 +27,7 @@ Also, the endpoint URLs might change. Even though, this is currently not planned
 
 
 
-=== How does re-onboarding work?
+== How does re-onboarding work?
 
 The client needs to send the same onboarding request as for its first onboarding, including a new registration code provided by the end-user.
 

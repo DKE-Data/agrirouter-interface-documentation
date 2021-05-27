@@ -29,15 +29,10 @@ In general, there are 4 major topics to add your software or hardware to the agr
 .Integration process for agrirouter
 image::general/process_all.png[Integration process for agrirouter]
 
-* xref:provider-agreement.adoc[Step 1 - Provider Agreement]
-* xref:marketplace.adoc[Step 2 - Marketplace]
-
-
-
-* xref:integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
-* xref:integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
-
-
+* xref:partner-process/provider-agreement.adoc[Step 1 - Provider Agreement]
+* xref:partner-process/marketplace.adoc[Step 2 - Marketplace]
+* xref:partner-process/integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
+* xref:partner-process/integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
 
 
 == Quicklinks

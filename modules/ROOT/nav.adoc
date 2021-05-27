@@ -35,7 +35,7 @@
 ** Endpoint Lifecycle
 *** xref:integration/onboarding.adoc[Onboarding App Instances]
 *** xref:integration/authorization.adoc[Authorization]
-*** xref:integration/re-onboarding.adoc[Re-Onboarding]
+*** xref:integration/reonboarding.adoc[Re-Onboarding]
 *** xref:integration/revoking.adoc[Revoking]
 ** Messaging
 *** xref:integration/build-message.adoc[Building Messages]

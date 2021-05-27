@@ -233,7 +233,7 @@ a|
 |====
 
 === Applications sending messages
-[REMARK]
+[NOTE]
 =====
 These tests are only required if your application can send messages.
 =====
@@ -274,7 +274,7 @@ a|
 
 
 === Applications receiving messages
-[REMARK]
+[NOTE]
 =====
 These tests are only required if your application can receive data.
 =====
@@ -344,7 +344,7 @@ a|
 
 |Clean your feed
 a|Make sure, your feed will be cleaned by confirming or deleting messages after receiving them.
-[REMARK]
+[NOTE]
 ====
 For the certification, the rule of cleaning your feed applies with a shorter period of time to clean it, just by practical reasons of the certification. Please check the specific time periods with your certification company.
 ====

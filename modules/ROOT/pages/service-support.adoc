@@ -9,7 +9,7 @@ In case you experience unexpected connection issues, also check the availability
 .Current status of agrirouter productive environment
 image::general/system_status.png[Current status of agrirouter productive environment,586,335]
 
-[Important]
+[IMPORTANT]
 ====
 This status page shows the availability of the productive environment!
 ====

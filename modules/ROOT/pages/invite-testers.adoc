@@ -19,7 +19,7 @@ image::general/ui_accounts_testers_empty.png[Click "Invite"]
 .Enter EMail and click confirm
 image::general/ui_accounts_invite.png[Enter EMail and click confirm]
 
-[Note]
+[NOTE]
 ====
 The invited user will receive an email and has to click a link.
 
