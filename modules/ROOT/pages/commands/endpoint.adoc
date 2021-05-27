@@ -123,21 +123,23 @@ If the same capabilities message is sent twice and the push notification status 
 If the message was malformed, an `ACK_WITH_FAILURE` will be returned.
 
 === Example
+[source,json]
 ----
-    {
-        "capabilities":[
-            {"technicalMessageType":"iso:11783:-10:device_description:protobuf",
-            "direction":0},
-
-            {"technicalMessageType":"iso:11783:-10:time_log:protobuf",
-            "direction":2},
-        ],
-        "appCertificationId": "aef23ef23-442d-fada-dbde-44e5bcead",
-        "appCertificationVersionId": "233eefaf2-4488-44da-d5d2-55e5dcbad",
-        enable_push_notifications: ENABLED
-
-
-    }
+{
+    "capabilities":[
+        {
+            "technicalMessageType":"iso:11783:-10:device_description:protobuf",
+            "direction":0
+        },
+        {
+            "technicalMessageType":"iso:11783:-10:time_log:protobuf",
+            "direction":2
+        },
+    ],
+    "appCertificationId": "aef23ef23-442d-fada-dbde-44e5bcead",
+    "appCertificationVersionId": "233eefaf2-4488-44da-d5d2-55e5dcbad",
+    "enable_push_notifications": "ENABLED"
+}
 ----
 
 == Subscription Command
@@ -219,9 +221,6 @@ Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors,
 === Example
 
 image::ig2/image45.png[,438,174]
-
-
-
 
 == Sending a teamset using device Descriptions
 

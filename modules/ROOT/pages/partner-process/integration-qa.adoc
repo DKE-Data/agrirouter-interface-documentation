@@ -71,7 +71,7 @@ FarmingSoftware and Telemetry Platforms have to perform an xref:./integration/au
 
 ==== Onboarding
 
-To communicate with the agrirouter, an application Instance needs to be xref:./integration/onboarding.adoc[onboarded]. An application instance can be xref:./integration/re-onboarding.adoc[Re-onboarded].
+To communicate with the agrirouter, an application Instance needs to be xref:./integration/onboarding.adoc[onboarded]. An application instance can be xref:./integration/reonboarding.adoc[Re-onboarded].
 
 
 === Communicate with agrirouter endpoints

@@ -138,7 +138,7 @@ In case of a chunked message that shall include metadata, every single message s
 
 
 
-== Building the Envelope
+== Building the envelope
 
 The envelope is a protobuf structure of type agrirouter.request.RequestEnvelope.
 
@@ -169,7 +169,7 @@ The application_message_sequence_no shall not be 0, as this might lead to misbeh
 
 The structure of the payload depends on the technical message type. Its always some kind of protobuf structure, please refer to the chapters on technical message types for further information.
 
-== Connecting envelope and PayLoad
+== Connecting envelope and payload
 
 Envelope and content are packaged into one container by using the technique of "Delimited Messages". Please note that this is *not* simply copying both memory buffers into one buffer. Please refer to https://developers.google.com/protocol-buffers/docs/techniques[https://developers.google.com/protocol-buffers/docs/techniques#streaming]
 
@@ -320,13 +320,13 @@ message MeasureRequest {
 
 Here is an example for a message sent to request the unfiltered endpoint list. It's of course sent as binary, but to be able to put it into this documentation, it's encoded in Base64:
 ====
-CiQ3OWRmZDkxOC03MDUxLTQ3MWEtOWI3My0zZjNjMjNkZWNhMzgSJDgyYThiYzIzLTdjYzItNDMx
-YS1iNzdlLTBiNzRmOWE1M2NiNyCXlv7hBSqDAgrGAQoibWVzc2FnZS9nb29nbGUucHJvdG9idWYu
-Qnl0ZXNWYWx1ZRKfAQqcAVMKJDE2NDlhNWQ4LTNkZWMtNDZlYi05ZDkxLWI0MWNlOWFhMjEyMhAB
-Gh1ka2U6bGlzdF9lbmRwb2ludHNfdW5maWx0ZXJlZEIKCJeW/uEFEMCEPUcKRQo1YWdyaXJvdXRl
-ci5yZXF1ZXN0LnBheWxvYWQuYWNjb3VudC5MaXN0RW5kcG9pbnRzUXVlcnkSDAoIaW1nOmpwZWcQ
-Ago4CiV0aW1lc3RhbXAvZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEg8KDTE1NDc2NjgyNDcw
-MDA=
+ CiQ3OWRmZDkxOC03MDUxLTQ3MWEtOWI3My0zZjNjMjNkZWNhMzgSJDgyYThiYzIzLTdjYzItND
+ MxYS1iNzdlLTBiNzRmOWE1M2NiNyCXlv7hBSqDAgrGAQoibWVzc2FnZS9nb29nbGUucHJvdG9i
+ dWYuQnl0ZXNWYWx1ZRKfAQqcAVMKJDE2NDlhNWQ4LTNkZWMtNDZlYi05ZDkxLWI0MWNlOWFhMj
+ EyMhABGh1ka2U6bGlzdF9lbmRwb2ludHNfdW5maWx0ZXJlZEIKCJeW/uEFEMCEPUcKRQo1YWdy
+ aXJvdXRlci5yZXF1ZXN0LnBheWxvYWQuYWNjb3VudC5MaXN0RW5kcG9pbnRzUXVlcnkSDAoIaW
+ 1nOmpwZWcQAgo4CiV0aW1lc3RhbXAvZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEg8KDTE1
+ NDc2NjgyNDcwMDA=
 ====
 
 What you will find:

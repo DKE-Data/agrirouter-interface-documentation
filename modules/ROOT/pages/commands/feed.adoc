@@ -155,7 +155,7 @@ The Paging information is included in the page parameter:
 
 The chunk context is an Array of available chunk contexts within this messages. If there are multiple of them, this means that there are multiple chunked messages to be realigned.
 
-The chunk context is described in xref:./build-message.adoc#chunking-big-messages[chunking big messages] .
+The chunk context is described in xref:../integration/build-message.adoc#chunking-big-messages[chunking big messages] .
 
 The feed includes an array of message headers that describe sender and receiver by their IDs.
 
@@ -377,12 +377,9 @@ Once a message was downloaded from the outbox, the Client has to confirm that it
 [NOTE]
 ====
 When a message is confirmed, it will be deleted from the feed.
-
 As long as it is not confirmed, it will be delivered in a FeedRequest or FeedHeaderRequest again if there is no specific filter to avoid this. 
 Messages shall always be confirmed to avoid Emails to customers about old messages in the endpoints feed.
-
 The old behavior, where a message was delivered over and over again with a FeedMessageRequest, even though it was not specifically requested, was removed with the introduction of push notifications.
-
 ====
 
 === Command
