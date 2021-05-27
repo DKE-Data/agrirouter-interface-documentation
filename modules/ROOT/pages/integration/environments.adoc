@@ -4,7 +4,7 @@
 
 agrirouter currently supports 2 environments of the whole agrirouter connectivity platform.
 
-The required URLs can be found in xref:./message-sending.adoc[message sending] and xref:./authorization.adoc[authorization].
+The required URLs can be found in xref:integration/message-sending.adoc[message sending] and xref:integration/authorization.adoc[authorization].
 
 === Quality assurance
 
@@ -19,4 +19,4 @@ The productive environment is used by your end customers with tested and certifi
 Currently, there is only one Area: EU for Europe. Every app instance is onboarded to environments in this area. With upcoming availability of the agrirouter in more and more countries, there might be additional areas created. This could happen for performance reasons or legal requirements of different countries. If new areas become required, this document will be updated, providing all the required information.
 
 == Keys and URLs
-The keys and URLs for the environments can be found xref:./../keys.adoc[in keys.]
+The keys and URLs for the environments can be found xref:keys.adoc[in keys.]

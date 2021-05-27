@@ -39,7 +39,7 @@ The following parts of onboarding are *not* required for CU onboarding:
 
 == Workflow for Virtual CUs
 
-Onboarding virtual CUs through a telemetry platform is done using a command. This is described in xref:../commands/cloud.adoc[Cloud solution commands].
+Onboarding virtual CUs through a telemetry platform is done using a command. This is described in xref:commands/cloud.adoc[Cloud solution commands].
 
 From the end user’s perspective, it is mostly dependent on the telemetry platform if there is any selection mechanism or if it is done automatically.
 
@@ -60,11 +60,11 @@ image::ig2/image21.png[registration code for a CU,291,164]
 
 === As result of the authorization
 
-If the xref:./authorization.adoc[authorization process] is done using parameter _response_type=onboard_, the result will include a regcode. This regcode is a registration code.
+If the xref:integration/authorization.adoc[authorization process] is done using parameter _response_type=onboard_, the result will include a regcode. This regcode is a registration code.
 
 === Telemetry Platforms
 
-A telemetry platform has to be onboarded using the authorization process. Once it is onboarded, it can onboard virtual CUs by itself. Therefore, it can use a special command. This is described in xref:../commands/cloud.adoc[Cloud solution commands].
+A telemetry platform has to be onboarded using the authorization process. Once it is onboarded, it can onboard virtual CUs by itself. Therefore, it can use a special command. This is described in xref:commands/cloud.adoc[Cloud solution commands].
 
 
 == Collecting and setting up relevant information
@@ -102,13 +102,13 @@ image::ig2/image24.png[Generating Private and Public Key in the agrirouter UI,40
 
 === External Id
 
-The external Id - to be seen in the <<Body Information>> of the onboarding request - needs to be a URN, which fits to the definitions in the xref:./general-conventions.adoc[general conventions].
+The external Id - to be seen in the <<Body Information>> of the onboarding request - needs to be a URN, which fits to the definitions in the xref:integration/general-conventions.adoc[general conventions].
 
 == onboarding Endpoint URLs
 
 The endpoint URL differs, depending on your desired geolocation and the Quality Assurance or Productive Environment.
 
-The request must be a HTTP Post request to xref:./../urls.adoc#onboardingEndpointURLs[the URL found here].
+The request must be a HTTP Post request to xref:urls.adoc#onboardingEndpointURLs[the URL found here].
 
 [NOTE]
 ====
@@ -164,7 +164,7 @@ The Request shall include the following header information:
 |Authorization |String |"Bearer "+ the registration code
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
-|X-Agrirouter-Signature |[Signature] |see xref:./onboarding.adoc#signing-requests[Signing requests]
+|X-Agrirouter-Signature |[Signature] |see xref:integration/onboarding.adoc#signing-requests[Signing requests]
 |=============================================================
 
 ==== Body Information
@@ -198,22 +198,15 @@ Possible values: PEM,P12
 |================================================================================================================
 
 **EXAMPLE**
-[source,javascript]
+[source,json]
 ----
 {
-
-"id": "urn:myapp:snr00003234",
-
-"applicationId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
-
-"certificationVersionId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
-
-"gatewayId": "3",
-
-"UTCTimestamp": "2018-06-04T12:00:03.000Z",
-
-"timeZone": "+02:00"
-
+  "id": "urn:myapp:snr00003234",
+  "applicationId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
+  "certificationVersionId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
+  "gatewayId": "3",
+  "UTCTimestamp": "2018-06-04T12:00:03.000Z",
+  "timeZone": "+02:00"
 }
 ----
 
@@ -239,12 +232,10 @@ There are different result HTTP Status codes indicating the result
 
 For a successful result, the body will include a JSON object like this:
 
-[source,javascript]
+[source,json]
 ----
 {
-
-"accountId": "4823443c-fd0d-44a7-81a6-06104455945a"
-
+  "accountId": "4823443c-fd0d-44a7-81a6-06104455945a"
 }
 ----
 
@@ -253,7 +244,7 @@ It includes the accountId, so that an app provider can check if this accountId m
 ===== Failure
 
 In case of Failure, an error message is provided.
-Possible ErrorMessages can be found xref:../error-codes.adoc[here].
+Possible ErrorMessages can be found xref:error-codes.adoc[here].
 
 
 == Onboarding Request
@@ -286,7 +277,7 @@ The address for the onboarding request is as follows:
 
 ==== Header Information
 
-===== For FarmingSoftware and Telemetry Platform onBoarding
+===== For Farming Software and Telemetry Platform onboarding
 
 The Request shall include the following header information:
 
@@ -297,7 +288,7 @@ The Request shall include the following header information:
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
 |X-Agrirouter-Signature |[Signature] | The signature,
-see xref:./onboarding.adoc#signing-requests[here]
+see <<signing-requests>>
 |========================================================================================================================
 
 ==== Body Information
@@ -328,22 +319,15 @@ Possible values: PEM,P12
 |7 |timeZone |String |A TimeZone like this: "+03:00"
 |=======================================================================================================================
 
-[source,javascript]
+[source,json]
 ----
 {
-
-"id": "mydeviceid",
-
-"applicationId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
-
-"certificationVersionId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
-
-"gatewayId": "3",
-
-"UTCTimestamp": "2018-06-04T12:00:03.000Z",
-
-"timeZone": "+02:00"
-
+  "id": "mydeviceid",
+  "applicationId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
+  "certificationVersionId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
+  "gatewayId": "3",
+  "UTCTimestamp": "2018-06-04T12:00:03.000Z",
+  "timeZone": "+02:00"
 }
 ----
 
@@ -401,18 +385,13 @@ Possible values: PEM,P12
 |================================================================================================================
 
 Example:
-[source,javascript]
+[source,json]
 ----
 {
-
-"id": "mydeviceid",
-
-"applicationId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
-
-"certificationVersionId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
-
-"gatewayId": "3",
-
+  "id": "mydeviceid",
+  "applicationId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
+  "certificationVersionId": "e0eb00ff-e2ef-4429-85f5-2559aceedd6d",
+  "gatewayId": "3",
 }
 ----
 
@@ -456,41 +435,27 @@ The result is a json object including the information required for onboarding.
 |========================================================================================================
 
 Example for onboarding an REST endpoint:
-[source,javascript]
+[source,json]
 ----
 {
-
-"authentication": \{
-
-"certificate": "-----BEGIN ENCRYPTED PRIVATE KEY-----\n...\n-----END ENCRYPTED PRIVATE KEY-----\n-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE-----\n",
-
-"secret": "77R8cjOGi9yTCBt2",
-
-"type": "PEM"
-
-},
-
-"capabilityAlternateId": "7bc8ab05-a0de-40db-a259-7deefb1265e9",
-
-"connectionCriteria": {
-
-"gatewayId": "3",
-
-"measures": "https://dke-qa.eu10.cp.iot.sap/iot/gateway/rest/measures/c067272a-d3a7-4dcf-ab58-5c45ba66ad60",
-
-"commands": "https://dke-qa.eu10.cp.iot.sap/iot/gateway/rest/commands/c067272a-d3a7-4dcf-ab58-5c45ba66ad60"
-
-},
-
-"deviceAlternateId": "c067272a-d3a7-4dcf-ab58-5c45ba66ad60",
-
-"sensorAlternateId": "5564ce96-385f-448a-9502-9ea3c940a259",
-
+  "authentication": {
+    "certificate": "-----BEGIN ENCRYPTED PRIVATE KEY-----\n...\n-----END ENCRYPTED PRIVATE KEY-----\n-----BEGIN CERTIFICATE-----\n...\n-----END CERTIFICATE-----\n",
+    "secret": "77R8cjOGi9yTCBt2",
+    "type": "PEM"
+  },
+  "capabilityAlternateId": "7bc8ab05-a0de-40db-a259-7deefb1265e9",
+  "connectionCriteria": {
+    "gatewayId": "3",
+    "measures": "https://dke-qa.eu10.cp.iot.sap/iot/gateway/rest/measures/c067272a-d3a7-4dcf-ab58-5c45ba66ad60",
+    "commands": "https://dke-qa.eu10.cp.iot.sap/iot/gateway/rest/commands/c067272a-d3a7-4dcf-ab58-5c45ba66ad60"
+  },
+  "deviceAlternateId": "c067272a-d3a7-4dcf-ab58-5c45ba66ad60",
+  "sensorAlternateId": "5564ce96-385f-448a-9502-9ea3c940a259"
 }
 ----
 
 Example for onboarding an MQTT Endpoint
-[source,javascript]
+[source,json]
 ----
 {
   "deviceAlternateId": "341cb230-83a7-45a1-a023-34cc1f1d58f5",
@@ -520,26 +485,19 @@ Save all those information, you’ll need them for communication with the agriro
 ==== Failure
 
 On Failure, a JSON object including an error message is received, e.g.:
-[source,javascript]
+[source,json]
 ----
 {
-
-"error": {
-
-"code": "0110",
-
-"message": "Signing header is invalid, the request has timedout, or UTCTimestamp is not provided",
-
-"target": "",
-
-"details": []
-
-}
-
+  "error": {
+    "code": "0110",
+    "message": "Signing header is invalid, the request has timedout, or UTCTimestamp is not provided",
+    "target": "",
+    "details": []
+  }
 }
 ----
 
-Possible Error codes can be found xref:../error-codes.adoc#onboarding-errorcodes[in the error list]
+Possible Error codes can be found xref:error-codes.adoc#onboarding-errorcodes[in the error list]
 
 ==== Onboarding Result in the agrirouter UI
 

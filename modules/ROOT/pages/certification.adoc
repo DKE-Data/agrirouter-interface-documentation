@@ -26,8 +26,8 @@ To pass the certification tests there are multiple requirements have to be fulfi
 
 === Prerequisites
 
-* The xref:./provider-agreement.adoc[DKE application provider agreement] has to be signed.
-* The xref:./marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
+* The xref:./partner-process/provider-agreement.adoc[DKE application provider agreement] has to be signed.
+* The xref:./partner-process/marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
 * The following information about the company is available:
 ** Name
 ** Address (where billing and offer should be placed by the certification company)
@@ -143,7 +143,7 @@ a|
 * After an endpoint was deleted by the user, revoking has to be possible.
 
 
-|xref:./integration/re-onboarding.adoc[Re-onboarding]
+|xref:./integration/reonboarding.adoc[Re-onboarding]
 |Always
 a|
 * The application instance uses the same external Id as it has used for onboarding.

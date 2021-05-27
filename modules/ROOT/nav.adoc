@@ -36,7 +36,7 @@
 *** xref:integration/onboarding.adoc[Onboarding App Instances]
 *** xref:integration/authorization.adoc[Authorization]
 *** xref:integration/reonboarding.adoc[Re-Onboarding]
-*** xref:integration/revoking.adoc[Revoking]
+*** xref:integration/revoke.adoc[Revoking]
 ** Messaging
 *** xref:integration/build-message.adoc[Building Messages]
 *** xref:integration/message-sending.adoc[Sending Requests]

@@ -83,7 +83,7 @@ For example the application could send a redirect (HTTP Status 300) to directly 
 
 === Generating an authorization URL
 
-The base URL can be found xref:./../urls.adoc#AuthorizationURLs[here].
+The base URL can be found xref:urls.adoc#AuthorizationURLs[here].
 
 The authorization Link is a HTTP GET Request that has to be called from a browser.
 
@@ -222,6 +222,6 @@ image::ig1/image27.png[Authorization for non-cloud-applications,640,155]
 
 [IMPORTANT]
 ====
-Make sure, you save all the information returned from the authorization request, as you will e.g. need the account id for the xref:./revoke.adoc[Revoke functionality]!
+Make sure, you save all the information returned from the authorization request, as you will e.g. need the account id for the xref:integration/revoke.adoc[Revoke functionality]!
 ====
 

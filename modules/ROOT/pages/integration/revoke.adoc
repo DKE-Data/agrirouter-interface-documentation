@@ -24,7 +24,7 @@ Deleting the endpoint of a Farming Software or a Telemetry Platform is done thro
 
 [NOTE]
 ====
-Deleting virtual CUs is done using a command. See xref:./../commands/cloud.adoc[ Removing a Virtual Cu]
+Deleting virtual CUs is done using a command. See xref:commands/cloud.adoc[ Removing a Virtual Cu]
 ====
 
 === Header
@@ -36,7 +36,7 @@ The Request shall include the following header information:
 |Name |Type |Description
 |Content-Type |String |application/json
 |X-Agrirouter-ApplicationId |String |[Application Id]
-|X-Agrirouter-Signature |[Signature] |see xref:./onboarding.adoc#signing-requests[Signing requests]
+|X-Agrirouter-Signature |[Signature] |see xref:integration/onboarding.adoc#signing-requests[Signing requests]
 |=============================================================
 
 === Body
@@ -53,24 +53,16 @@ The body includes a JSON object:
 |===============================================================================
 
 Example:
-[source,javascript]
+[source,json]
 ----
 {
-
-"accountId": "4823443c-fd0d-44a7-81a6-06104455945a",
-
-"endpointIds": [
-
-"3823443c-ed0d-44a7-81a6-06104455945a",
-
-"7873443c-fd0d-44a7-81a6-06104455945a"
-
-],
-
-"UTCTimestamp": "2018-06-25T18:08:17.661890Z",
-
-"timeZone": "+00:00",
-
+    "accountId": "4823443c-fd0d-44a7-81a6-06104455945a",
+    "endpointIds": [
+        "3823443c-ed0d-44a7-81a6-06104455945a",
+        "7873443c-fd0d-44a7-81a6-06104455945a"
+    ],
+    "UTCTimestamp": "2018-06-25T18:08:17.661890Z",
+    "timeZone": "+00:00"
 }
 ----
 

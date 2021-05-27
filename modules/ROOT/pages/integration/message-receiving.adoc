@@ -19,7 +19,7 @@ Please be aware that an online platform response in general might take up to a m
 
 == MQTT
 
-The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The outbox is the topic delivered with the "commands" attribute of the onboarding request. The app instance has to subscribe for this topic. The address can be found in xref:./message-sending.adoc[Message Sending].
+The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The outbox is the topic delivered with the "commands" attribute of the onboarding request. The app instance has to subscribe for this topic. The address can be found in xref:integration/message-sending.adoc[Message Sending].
 
 For more information on command management using MQTT, see the link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/936e9db8c3314ec6a3a6b558d58f5428.html?q=command[Gateway Documentation].
 

@@ -21,42 +21,26 @@ These are the public keys used by the agrirouter. These are required for example
 |===============================================================
 |Area |Environment |Public Key
 |EU | Quality Assurance "QA" |
------BEGIN PUBLIC KEY-----
-
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy8xF9661acn+iS+QS+9Y
-
-3HvTfUVcismzbuvxHgHA7YeoOUFxyj3lkaTnXm7hzQe4wDEDgwpJSGAzxIIYSUXe
-
-8EsWLorg5O0tRexx5SP3+kj1i83DATBJCXP7k+bAF4u2FVJphC1m2BfLxelGLjzx
-
-VAS/v6+EwvYaT1AI9FFqW/a2o92IsVPOh9oM9eds3lBOAbH/8XrmVIeHofw+XbTH
-
-1/7MLD6IE2+HbEeY0F96nioXArdQWXcjUQsTch+p0p9eqh23Ak4ef5oGcZhNd4yp
-
-Y8M6ppvIMiXkgWSPJevCJjhxRJRmndY+ajYGx7CLePx7wNvxXWtkng3yh+7WiZ/Y
-
-qwIDAQAB
-
------END PUBLIC KEY-----
+ -----BEGIN PUBLIC KEY-----
+ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy8xF9661acn+iS+QS+9Y
+ 3HvTfUVcismzbuvxHgHA7YeoOUFxyj3lkaTnXm7hzQe4wDEDgwpJSGAzxIIYSUXe
+ 8EsWLorg5O0tRexx5SP3+kj1i83DATBJCXP7k+bAF4u2FVJphC1m2BfLxelGLjzx
+ VAS/v6+EwvYaT1AI9FFqW/a2o92IsVPOh9oM9eds3lBOAbH/8XrmVIeHofw+XbTH
+ 1/7MLD6IE2+HbEeY0F96nioXArdQWXcjUQsTch+p0p9eqh23Ak4ef5oGcZhNd4yp
+ Y8M6ppvIMiXkgWSPJevCJjhxRJRmndY+ajYGx7CLePx7wNvxXWtkng3yh+7WiZ/Y
+ qwIDAQAB
+ -----END PUBLIC KEY-----
 
 |EU | Production |
------BEGIN PUBLIC KEY-----
-
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwCxD31sYtzH9NTfZ6n8H
-
-+H/QgOaoTL9GAakplAsdwYSLjBpgYMZOHIgkdM9ksRP8WsITChtZtxrCnBjR8bap
-
-ekPT/pM9zPZlNEPxUlylJNwwTWjzTJP03+Yr07Q8v8fTJ5VWzAHlHtGQ/sI7yXA8
-
-pzruTNre1MzxO3lkljt2Q2e7CVXAp1b53BghgysppL9Bl7NK1R+vdWSs0B1Db/Gj
-
-alOkWUnhivTjRMX61RGDCQSVSEaX12EvJX7FooAsW3NFeZCgeZGWEa5ZMALIiBL4
-
-GNASOOHju7ewlYjkyGIRxxAoc3C0w5dg1qlLiAFWToYwgDOcUpLRjU/7bzGiGvp8
-
-RwIDAQAB
-
------END PUBLIC KEY-----
+ -----BEGIN PUBLIC KEY-----
+ MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwCxD31sYtzH9NTfZ6n8H
+ +H/QgOaoTL9GAakplAsdwYSLjBpgYMZOHIgkdM9ksRP8WsITChtZtxrCnBjR8bap
+ ekPT/pM9zPZlNEPxUlylJNwwTWjzTJP03+Yr07Q8v8fTJ5VWzAHlHtGQ/sI7yXA8
+ pzruTNre1MzxO3lkljt2Q2e7CVXAp1b53BghgysppL9Bl7NK1R+vdWSs0B1Db/Gj
+ alOkWUnhivTjRMX61RGDCQSVSEaX12EvJX7FooAsW3NFeZCgeZGWEa5ZMALIiBL4
+ GNASOOHju7ewlYjkyGIRxxAoc3C0w5dg1qlLiAFWToYwgDOcUpLRjU/7bzGiGvp8
+ RwIDAQAB
+ -----END PUBLIC KEY-----
 
 |===============================================================
 
@@ -86,44 +70,30 @@ Only the public key will be stored in the agrirouter, the private key has to be 
 == Endpoint certificate
 
 The endpoint certificate is used to encrypt the communication with the agrirouter. It is delivered with the onboarding request.
-[source,javascript]
+[source,json]
 ----
-    {
-
+{
     "deviceAlternateId": "6f1d952b-538e-4269-94b7-02bf51e83413",
-
     "capabilityAlternateId": "81ce3fd5-2f70-4270-ad15-1689ab6971bf",
-
     "sensorAlternateId": "aed40673-8e32-4f10-8cc8-3db2b58ed1bd",
-
     "connectionCriteria": {
-
-    "gatewayId": "3",
-
-    "measures": "https://dke-qa.eu1.cp.iot.sap/iot/gateway/rest/measures/6f1d952b-538e-4269-94b7-02bf51e83413",
-
-    "commands": "https://dke-qa.eu1.cp.iot.sap/iot/gateway/rest/commands/6f1d952b-538e-4269-94b7-02bf51e83413"
-
+        "gatewayId": "3",
+        "measures": "https://dke-qa.eu1.cp.iot.sap/iot/gateway/rest/measures/6f1d952b-538e-4269-94b7-02bf51e83413",
+        "commands": "https://dke-qa.eu1.cp.iot.sap/iot/gateway/rest/commands/6f1d952b-538e-4269-94b7-02bf51e83413"
     },
-
     "authentication": {
-
-    "type": "PEM",
-
-    "secret": "yY2uU1vV8aA1yY8uU1vV1cC",
-
-    "certificate": "-----BEGIN ENCRYPTED PRIVATE KEY-----\nMIIE6zAdBgoqhkiG9w0BDA\nVD8E3qSEsvWS1Z93XPji\n-----END ENCRYPTED PRIVATE KEY-----\n-----BEGIN CERTIFICATE-----\nMIIEPzCCAyegAwIBAgIOAIjM.....sV4DpbNKJlHut6OOOkzGCI+gsE=\n-----END CERTIFICATE-----\n"
-
+        "type": "PEM",
+        "secret": "yY2uU1vV8aA1yY8uU1vV1cC",
+        "certificate": "-----BEGIN ENCRYPTED PRIVATE KEY-----\nMIIE6zAdBgoqhkiG9w0BDA\nVD8E3qSEsvWS1Z93XPji\n-----END ENCRYPTED PRIVATE KEY-----\n-----BEGIN CERTIFICATE-----\nMIIEPzCCAyegAwIBAgIOAIjM.....sV4DpbNKJlHut6OOOkzGCI+gsE=\n-----END CERTIFICATE-----\n"
     }
-
-    }
+}
 ----
 
 [IMPORTANT]
 ====
-The certificate you receive during xref:./integration/onboarding.adoc[onboarding] is valid for a certain period (1 year). 
+The certificate you receive during xref:integration/onboarding.adoc[onboarding] is valid for a certain period (1 year). 
 
-After that, you have to perform the xref:./integration/re-onboarding.adoc[re-onboarding].
+After that, you have to perform the xref:integration/reonboarding.adoc[re-onboarding].
 
 **Be aware** that this can require user interaction.
 ====

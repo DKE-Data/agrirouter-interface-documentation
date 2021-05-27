@@ -15,7 +15,7 @@ Some examples of DKE partners are available at https://my-agrirouter.com/en/mark
 == General process
 image::general/process_marketplace.png[]
 
-This process can be performed in parallel to the xref:./integration-qa.adoc[integration process in QA].
+This process can be performed in parallel to the xref:partner-process/integration-qa.adoc[integration process in QA].
 
 
 == 2.1 Create Marketplace account
