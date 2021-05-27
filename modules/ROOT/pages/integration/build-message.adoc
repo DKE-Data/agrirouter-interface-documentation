@@ -285,12 +285,12 @@ Parameters List:
 === JSON setup
 
 The JSON setup looks like this:
-[source,javascript]
+[source,json]
 ----
 {
-    "sensorAlternateId": "\{\{sensorAlternateId}}",
-    "capabilityAlternateId": "\{\{capabilityAlternateId}}",
-    "measures": [["\{\{encoded_request}}", "\{\{$timestamp}}"]]
+    "sensorAlternateId": "{{sensorAlternateId}}",
+    "capabilityAlternateId": "{{capabilityAlternateId}}",
+    "measures": [["{{encoded_request}}", "{{$timestamp}}"]]
 }
 ----
 

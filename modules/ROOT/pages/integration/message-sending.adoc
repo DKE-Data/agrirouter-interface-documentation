@@ -58,7 +58,7 @@ In most communication libraries, the developer just has to provide
 
 * the certificate, which is the public key,
 * the SSLKey, which is the private key
-* the KeyPassword for the private key
+* the password for the private key
 
 Most libraries are than able to handle the communication.
 

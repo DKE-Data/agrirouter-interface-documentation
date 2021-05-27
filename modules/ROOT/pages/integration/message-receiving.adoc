@@ -51,24 +51,16 @@ The result format depends on the setting of the Accept-Header in the GET Request
 |=======================================
 
 === JSON Result
-[source,javascript]
+[source,json]
 ----
 [
-
     {
-
         "sensorAlternateId": "49dcf152-eb2a-4b50-ad5c-1af5b737ed80",
-
         "capabilityAlternateId": "49dcf152-eb2a-4b50-ad5c-1af5b737ed80",
-
         "command": {
-
             "message": "fskjlaflasdfkjlasdfkjfalkefnFSDLKDFJL33221sdldgkjglfdkjldkgjDFAFKJLKJSFDSFEESXFRRDGDGRDGDGRSDDGRddrrrg354grdgIODIO35445DGDGLKKJWE3333425H1SJK=="
-
         }
-
     }
-
 ]
 ----
 
@@ -77,75 +69,71 @@ The result format depends on the setting of the Accept-Header in the GET Request
 The result of a protobuf call is delivered as a CommandResponseList that includes a List of CommandResponses, which includes the sender ID (sensorAlternateId) and a List of Any-Elements value. This list only includes 1 CommandResponseMessage-Element (Index is 0).
 
 
-[source,javascript]
+[source,protobuf]
 ----
 syntax = "proto3";
-
 package gateway;
-
 option java_package = "com.sap.iotservices.common.protobuf.gateway";
 option java_outer_classname = "CommandResponseMessageProtos";
-
 message CommandResponseMessage {
-
     bytes message = 1;
 }
 ----
 
 
-[source,javascript]
+[source,protobuf]
 ----
 syntax = "proto3";
-
 import "google/protobuf/any.proto";
-
 package gateway;
-
 option java_package = "com.sap.iotservices.common.protobuf.gateway";
-
 option java_outer_classname = "CommandResponseProtos";
-
 message CommandResponse {
-
     string capabilityAlternateId = 1;
-
     string sensorAlternateId = 2;
-
     Command command = 3;
-
     message Command {
-
      repeated google.protobuf.Any values = 1;
-
     }
-
 }
 ----
 
-[source,javascript]
+[source,protobuf]
 ----
 syntax = "proto3";
-
 import "CommandResponse.proto";
-
 package gateway;
-
 option java_package = "com.sap.iotservices.common.protobuf.gateway";
-
 option java_outer_classname = "CommandResponseListProtos";
-
 message CommandResponseList {
-
     repeated CommandResponse commands = 1;
-
 }
 ----
 
-[NOTE]
-====
 Here is an example for an unfiltered endpoint list. It’s of course sent as binary, but to be able to put it into this documentation, it’s encoded in Base64:
 
-    XgjIARAKGiQ2N2QxY2ZjMC02ZjA5LTRhZmYtYjlhZi05NTk4MzViMjZjNmYiJDI3YmEyYmZiLTk3YTAtNGFiZC1iYTQ4LTU2MzZiYjNlYWYyMioLCJyW/uEFEMC3oVfEBwrBBwpOdHlwZXMuYWdyaXJvdXRlci5jb20vYWdyaXJvdXRlci5yZXNwb25zZS5wYXlsb2FkLmFjY291bnQuTGlzdEVuZHBvaW50c1Jlc3BvbnNlEu4GCvUBCiQwNTI1Y2M0MS0zN2M0LTQ1YjYtOWMwZC04YTEyNTAyYzhmYWESKEFncmlyb3V0ZXIgQVBJIEltcGxlbWVudGF0aW9uIEV4YW1wbGUgQ1UaC2FwcGxpY2F0aW9uIgZhY3RpdmUqDAoIaW1nOmpwZWcQAioLCgdpbWc6cG5nEAIqHgoaaXNvOjExNzgzOi0xMDp0YXNrZGF0YTp6aXAQAioRCg1zaHA6c2hhcGU6emlwEAIqCwoHdmlkOmF2aRACKgsKB3ZpZDptcDQQAioLCgd2aWQ6d212EAIyGURLRTpEYXRhOkV4YW1wbGVDVTowMDAwMDQKfwokMWMyY2Y2ZjctZmEwOS00MDRhLWE5M2ItYmNiMmIyYWUzY2U1EihBZ3Jpcm91dGVyIEFQSSBJbXBsZW1lbnRhdGlvbiBFeGFtcGxlIENVGgthcHBsaWNhdGlvbiIGYWN0aXZlMhhES0VEYXRhOkV4YW1wbGVDVTowMDAwMDIK9wEKJDgyYThiYzIzLTdjYzItNDMxYS1iNzdlLTBiNzRmOWE1M2NiNxIoQWdyaXJvdXRlciBBUEkgSW1wbGVtZW50YXRpb24gVHV0b3JpYWxDVRoLYXBwbGljYXRpb24iBmFjdGl2ZSoMCghpbWc6anBlZxACKgsKB2ltZzpwbmcQAioeChppc286MTE3ODM6LTEwOnRhc2tkYXRhOnppcBACKhEKDXNocDpzaGFwZTp6aXAQAioLCgd2aWQ6YXZpEAIqCwoHdmlkOm1wNBACKgsKB3ZpZDp3bXYQAjIbMDAwMDAxLUV4YW1wbGVDVUZvclR1dG9yaWFsClgKJDgwYjlmOWQ1LWMwODMtNGE2Zi1hMDk0LTU5NTNmMjg3ZDRkYxIZVGVzdEFjY291bnRfT2ZfQ29udHJhY3RvchoNcGFpcmVkQWNjb3VudCIGYWN0aXZlClYKJGMyZDhmMmFmLTI0ODQtNGYzNy05ZTg1LTU1MzgxOTAzMTc3YhIOTWVzc2FnZSBSZXBsYXkaFm1lc3NhZ2VSZWNvcmRpbmdSZXBsYXkiBmFjdGl2ZQpHCiQ3ZDRhZGQ1Ny1mNWM1LTQ3YjctYTQ3ZC1mYzkxYjVkZjZjM2ISCFN0YW5kYXJkGg1lbmRwb2ludEdyb3VwIgZhY3RpdmU=
+====
+ XgjIARAKGiQ2N2QxY2ZjMC02ZjA5LTRhZmYtYjlhZi05NTk4MzViMjZjNmYiJDI3YmEyYmZiLT
+ k3YTAtNGFiZC1iYTQ4LTU2MzZiYjNlYWYyMioLCJyW/uEFEMC3oVfEBwrBBwpOdHlwZXMuYWdy
+ aXJvdXRlci5jb20vYWdyaXJvdXRlci5yZXNwb25zZS5wYXlsb2FkLmFjY291bnQuTGlzdEVuZH
+ BvaW50c1Jlc3BvbnNlEu4GCvUBCiQwNTI1Y2M0MS0zN2M0LTQ1YjYtOWMwZC04YTEyNTAyYzhm
+ YWESKEFncmlyb3V0ZXIgQVBJIEltcGxlbWVudGF0aW9uIEV4YW1wbGUgQ1UaC2FwcGxpY2F0aW
+ 9uIgZhY3RpdmUqDAoIaW1nOmpwZWcQAioLCgdpbWc6cG5nEAIqHgoaaXNvOjExNzgzOi0xMDp0
+ YXNrZGF0YTp6aXAQAioRCg1zaHA6c2hhcGU6emlwEAIqCwoHdmlkOmF2aRACKgsKB3ZpZDptcD
+ QQAioLCgd2aWQ6d212EAIyGURLRTpEYXRhOkV4YW1wbGVDVTowMDAwMDQKfwokMWMyY2Y2Zjct
+ ZmEwOS00MDRhLWE5M2ItYmNiMmIyYWUzY2U1EihBZ3Jpcm91dGVyIEFQSSBJbXBsZW1lbnRhdG
+ lvbiBFeGFtcGxlIENVGgthcHBsaWNhdGlvbiIGYWN0aXZlMhhES0VEYXRhOkV4YW1wbGVDVTow
+ MDAwMDIK9wEKJDgyYThiYzIzLTdjYzItNDMxYS1iNzdlLTBiNzRmOWE1M2NiNxIoQWdyaXJvdX
+ RlciBBUEkgSW1wbGVtZW50YXRpb24gVHV0b3JpYWxDVRoLYXBwbGljYXRpb24iBmFjdGl2ZSoM
+ CghpbWc6anBlZxACKgsKB2ltZzpwbmcQAioeChppc286MTE3ODM6LTEwOnRhc2tkYXRhOnppcB
+ ACKhEKDXNocDpzaGFwZTp6aXAQAioLCgd2aWQ6YXZpEAIqCwoHdmlkOm1wNBACKgsKB3ZpZDp3
+ bXYQAjIbMDAwMDAxLUV4YW1wbGVDVUZvclR1dG9yaWFsClgKJDgwYjlmOWQ1LWMwODMtNGE2Zi
+ 1hMDk0LTU5NTNmMjg3ZDRkYxIZVGVzdEFjY291bnRfT2ZfQ29udHJhY3RvchoNcGFpcmVkQWNj
+ b3VudCIGYWN0aXZlClYKJGMyZDhmMmFmLTI0ODQtNGYzNy05ZTg1LTU1MzgxOTAzMTc3YhIOTW
+ Vzc2FnZSBSZXBsYXkaFm1lc3NhZ2VSZWNvcmRpbmdSZXBsYXkiBmFjdGl2ZQpHCiQ3ZDRhZGQ1
+ Ny1mNWM1LTQ3YjctYTQ3ZC1mYzkxYjVkZjZjM2ISCFN0YW5kYXJkGg1lbmRwb2ludEdyb3VwIg
+ ZhY3RpdmU=
+====
 
 What you will find:
 
@@ -155,16 +143,15 @@ What you will find:
 * 1 Group "Standard"
 
 ====
-
 [NOTE]
 ====
-**TroubleShooting**
+**Troubleshooting**
 
 If you experience problems with the message exchange and have parts of the message that are 3 bytes longer than they should be, this is a typical hint for having packed data in an additional Any-Container.
 
 ====
 
-=== ParameterList
+=== Parameter List
 
 The result of a request to the outbox is an *array* of messages each including the following parameters:
 
