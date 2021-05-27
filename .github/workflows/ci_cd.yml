@@ -20,7 +20,11 @@ jobs:
 
       - name: Install antora
         run: |
-          npm install -g @antora/cli @antora/site-generator-default
+          npm install -g @antora/cli @antora/site-generator-default gitlab:antora/xref-validator
+
+      - name: Validate xrefs
+        run: |
+          antora --generator @antora/xref-validator ./antora-playbook.yml
 
       - name: Run antora
         run: |
