@@ -178,6 +178,8 @@ The device descriptions are needed by the agrirouter to
 * determine the relevant CU when sending a Message directly to a machine
 * filter for DDIs that are allowed to be sent to specific endpoints
 
+include::partial$device-description-has-to-be-sent-every-time.adoc[]
+
 The timelog telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
 
 .The onion principle for a telemetry message

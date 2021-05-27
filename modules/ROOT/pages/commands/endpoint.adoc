@@ -229,9 +229,11 @@ image::ig2/image45.png[,438,174]
 
 The teamset describes a list of devices attached to the communication unit. The most common devices are agricultural machines connected to the CU as ISO11783-10 TaskControllers. For more information on ISO11783-10, please refer to https://aef-online.org
 
+include::partial$device-description-has-to-be-sent-every-time.adoc[]
+
 [NOTE]
 ====
 For the certification it is required to send the device description message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
 ====
 
-For the format, please refer to  xref:../tmt/efdi.adoc[iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description]
+For the format, please refer to xref:../tmt/efdi.adoc[iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description]

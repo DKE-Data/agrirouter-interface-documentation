@@ -65,6 +65,7 @@ Make sure that a timelog message never exceeds the limit of 1MB of data. If this
 split this message into multiple timelog messages.
 ====
 
+include::partial$device-description-has-to-be-sent-every-time.adoc[]
 
 === Command
 
