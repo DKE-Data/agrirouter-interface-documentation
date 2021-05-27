@@ -18,7 +18,7 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 
 * Some data formats like images, videos, taskdata and shape require their message content to be Base64 encoded. In this case, each chunk needs to be a valid Base64 string. This means that the Base64 encoding has to be performed on each chunk **after** splitting the binary data into chunks.
 
-* EFDI telemetry messages cannot be chunked, as they are analyzed for the routing of telemetry data on agrirouter.
+* EFDI telemetry messages cannot be chunked, as they are analysed for the routing of telemetry data on agrirouter.
 ====
 
 .Workflow of creating a chunked message

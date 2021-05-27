@@ -28,14 +28,14 @@ The event type is one of the following:
 [cols=",",options="header",]
 |========================================================================================
 |Event |Description
-|ACKNOWLEDGMENT |Acknowledgment created by agrirouter in response to message
-|CONFIRMED |Message was confirmed by specified endpoint
-|DELETED |Message was deleted by specified endpoint
-|DELIVERED |Message was delivered to specified endpoint (but not yet confirmed)
-|ERROR |Message was returned because of an error (e. g. missing team context ID)
-|OFFBOARDED |Message was deleted, because the specified endpoint was deleted / offboarded
-|SENT |Message was sent by specified endpoint
-|TIMEOUT |Message was deleted because of a timeout (4 weeks rule)
+|ACKNOWLEDGMENT |Acknowledgment created by agrirouter in response to message.
+|CONFIRMED |Message was confirmed by specified endpoint.
+|DELETED |Message was deleted by specified endpoint.
+|DELIVERED |Message was delivered to specified endpoint (but not yet confirmed).
+|ERROR |Message was returned because of an error (e. g. missing team context ID).
+|OFFBOARDED |Message was deleted, because the specified endpoint was deleted / offboarded.
+|SENT |Message was sent by specified endpoint.
+|TIMEDOUT |Message was deleted because it timed out after 4 weeks.
 |========================================================================================
 
 Sent and Error mark events of the inbox, all the other events are events of feed or outbox.
