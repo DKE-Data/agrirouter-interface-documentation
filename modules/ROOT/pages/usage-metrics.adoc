@@ -20,7 +20,7 @@ For each message transported through agrirouter, it includes the following param
 |day |Integer |
 |hour |Integer |
 |year |Integer |
-|created_on |TimeStamp |When was this message delivered to the feed?
+|created_on |Timestamp |When was this message delivered to the feed?
 |===========================================================================================================
 
 The event type is one of the following:

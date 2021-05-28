@@ -14,6 +14,6 @@ As an application provider, you can download xref:./usage-metrics.adoc[usage met
 
 Learn how to manage your applications endpoints xref:./application-endpoint-management.adoc[here].
 
-== Behaviour after SoftwareUpdate
+== Behaviour after Software Update
 
 Read here, how to handle xref:./update.adoc[new versions and updates].

@@ -67,7 +67,7 @@ image::general/lifecycle.png[]
 === Connecting your app instance
 
 ==== Authorization
-FarmingSoftware and Telemetry Platforms have to perform an xref:./integration/authorization.adoc[Authorization Process] to clarify that the account user is known.
+Farming Software and Telemetry Platforms have to perform an xref:./integration/authorization.adoc[Authorization Process] to clarify that the account user is known.
 
 ==== Onboarding
 

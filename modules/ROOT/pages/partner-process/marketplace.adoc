@@ -35,7 +35,7 @@ The app provider is responsible for keeping his entry up to date.
 In general, the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my-agrirouter/choose-maintance/[here]. Changes are reviewed before activation to avoid changes without certification.
 
 
-The following content is required from *application provider* (FarmingSoftware or Telemetry Software):
+The following content is required from *application provider* (Farming Software or Telemetry Software):
 
 .Click to open table
 [%collapsible]

@@ -142,13 +142,11 @@ What you will find:
 * 1 Message/Replay Tool
 * 1 Group "Standard"
 
-====
 [NOTE]
 ====
 **Troubleshooting**
 
 If you experience problems with the message exchange and have parts of the message that are 3 bytes longer than they should be, this is a typical hint for having packed data in an additional Any-Container.
-
 ====
 
 === Parameter List

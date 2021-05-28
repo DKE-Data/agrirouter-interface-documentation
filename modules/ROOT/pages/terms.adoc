@@ -79,7 +79,7 @@ The whole chapter can be found xref:./applications.adoc[here]
 
 '''
 
-== EcoSystem of agrirouter
+== Ecosystem of agrirouter
 
 
 .A schema of the hierarchy of agrirouter app instances

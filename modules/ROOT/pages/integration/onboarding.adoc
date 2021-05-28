@@ -150,11 +150,11 @@ The app instance has to send a HTTP Post request.
 
 ==== Header Information
 
-===== For CU onBoarding
+===== For CU onboarding
 
 For CUs, this is not required or available
 
-===== For FarmingSoftware and Telemetry Platform onBoarding
+===== For Farming Software and Telemetry Platform onboarding
 
 The Request shall include the following header information:
 

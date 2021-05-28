@@ -173,7 +173,7 @@ Both protocols have several advantages and disadvantages. To select the right pr
 
 Every app provider is free to select his preferred format from the list above.
 
-DKE however advises to use MQTT using RouterDevices for any application that handles multiple endpoints (e.g. Telemetry Platforms, but also Farming Software that is a cloud software and communicates on behalf of multiple accounts) or sends data at a frequency higher than 1 message per minute. 
+DKE however advises to use MQTT using Router Devices for any application that handles multiple endpoints (e.g. Telemetry Platforms, but also Farming Software that is a cloud software and communicates on behalf of multiple accounts) or sends data at a frequency higher than 1 message per minute. 
 
 
 == Abstraction of communication workflows

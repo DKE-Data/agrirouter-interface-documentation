@@ -35,7 +35,7 @@ This keystore is described in the Paho UI as "Truststore"
 
 
 == Setup Endpoint in MQTT
-=== Create KeyStore
+=== Create Keystore
 Onboarding an MQTT endpoint provides a certificate, an MQTT client id and two topics; see xref:../integration/onboarding.adoc[onboarding].
 
 Alternatively, the connection can be setup using a xref:../router-devices.adoc[router device].
@@ -64,7 +64,7 @@ Read the connection criteria from the onboarding result and click on connect.
 image::ig2/image6.png[Example for an onboarding result,800,139]
 
 
-.Paho UserInterface
+.Paho User Interface
 image::ig2/image7.png[Paho UserInterface,800,144]
 
 
