@@ -20,7 +20,7 @@ jobs:
 
       - name: Install antora
         run: |
-          npm install -g @antora/cli @antora/site-generator-default gitlab:antora/xref-validator
+          npm install -g @antora/cli @antora/site-generator-default gitlab:antora/xref-validator antora-site-generator-lunr
 
       - name: Validate xrefs
         run: |
@@ -28,7 +28,7 @@ jobs:
 
       - name: Run antora
         run: |
-          antora ./antora-playbook.yml
+          DOCSEARCH_ENABLED=true; DOCSEARCH_ENGINE=lunr; antora --generator antora-site-generator-lunr .\antora-playbook.yml
 
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
