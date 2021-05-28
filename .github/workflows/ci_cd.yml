@@ -28,7 +28,7 @@ jobs:
 
       - name: Run antora
         run: |
-          DOCSEARCH_ENABLED=true; DOCSEARCH_ENGINE=lunr; antora --generator antora-site-generator-lunr .\antora-playbook.yml
+          DOCSEARCH_ENABLED=true; DOCSEARCH_ENGINE=lunr; antora --generator antora-site-generator-lunr ./antora-playbook.yml
 
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
