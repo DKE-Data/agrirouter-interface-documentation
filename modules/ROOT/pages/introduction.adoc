@@ -9,7 +9,6 @@ More information on agrirouter can be found xref:general.adoc[here]
 == Basic Concepts
 
 .The agrirouter ecosystem of members
-[link=./docs/basic-concepts.adoc]
 image::ig1/image10.png[The agrirouter ecosystem of members,642,321]
 
 As a developer it's also important to understand the xref:basic-concepts.adoc[basic concepts]
