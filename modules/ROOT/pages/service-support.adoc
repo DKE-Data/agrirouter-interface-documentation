@@ -1,0 +1,186 @@
+= Service and Support
+:imagesdir: _images/
+
+== agrirouter Status
+In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://my-agrirouter.com/support/system-status[Status Page].
+
+
+
+.Current status of agrirouter productive environment
+image::general/system_status.png[Current status of agrirouter productive environment,586,335]
+
+[IMPORTANT]
+====
+This status page shows the availability of the productive environment!
+====
+
+== agrirouter System events
+
+Updates, bugfixes and general server issues can require server maintenance every now and then, which might result in connectivity issues for a short time. To avoid unexpected behaviour, those maintenances are reported in advance. A list of events can be seen at link:https://my-agrirouter.com/nc/en/support/system-events/[at the status page].
+
+.List of agrirouter system events
+image::general/system_events.png[List of agrirouter system events,634,299]
+
+[IMPORTANT]
+====
+You should click the subscription button to subscribe for system events and receive an email every time, a maintenance is scheduled.
+====
+
+.Subscribe for agrirouter system events
+image::general/system_events_subscribe.png[Subscribe for agrirouter system events,634,299]
+
+== Limitations
+
+Each agrirouter account has a limited number of endpoints, see xref:./limitations.adoc[here].
+
+== Endpoint information in the agrirouter UI
+
+In case of any issues with a test endpoint or the endpoint of a customer, agrirouter provides a few information on each endpoint.
+
+To display the information select the particular endpoint and take a look at the endpoint information and the endpoint details.
+
+=== Endpoint information
+
+The endpoint information offers the IDs that the app instance should use for communication with agrirouter:
+.Endpoint information used with agrirouter
+image::ig1/image46.png[Endpoint information used with agrirouter,586,335]
+
+=== Endpoint details
+
+The endpoint details show an extended list of information about the app instance and the status of communication:
+
+.Endpoint information used with agrirouter
+image::general/endpoint_details_extended.png[Endpoint information used with agrirouter]
+
+
+==== General endpoint details
+
+[cols=",",]
+|===============================================================================
+|Field |Description
+|Description |Description as maintained by user.
+|Status |Status of endpoint (activated /deactivated).
+|Type |Type of software.
+|Machine class |EFDI machine class, displayed for machines only.
+|Onboarding Date & Time (UTC) |Date and time when the endpoint was onboarded.
+|External ID |External ID of the endpoint as provided during onboarding.
+|Software Provider |Name of the software provider.
+|Endpoint Software |Name of the software.
+|Version number |Current version of the software.
+|===============================================================================
+
+
+==== Outgoing messages information
+
+Information on messages that were sent *from* the app instance over the agrirouter.
+
+[cols=",",]
+|===============================================================================
+|Field |Description
+|Last Processed message |Date & Time when the last message was sent by this endpoint and processed within the agrirouter.
+|Meta-Information |Meta information of the last sent message.
+|Information type of last sent message |Information type as provided in the message header.
+|Size of last sent message |Size of the message payload in MB.
+|===============================================================================
+
+==== Feed
+
+Information on messages in the feed
+
+[cols=",",]
+|===============================================================================
+|Field |Description
+|Number of messages |Number of messages in feed of the endpoint that have not been confirmed yet.
+|===============================================================================
+
+
+==== Incoming messages information
+
+Information on messages that were *received by* the app instance from its endpoint respectively the feed.
+
+[cols=",",]
+|===============================================================================
+|Field |Description
+|Last received message: Date & Time |Date and time when the last message was received by the endpoint (i.e. status ‘confirmed’ in usage metrics).
+|Meta Information of last received message |Meta information (e.g. file name) of the last message received (confirmed) by this endpoint.
+|Information type of last received message |Information type as provided in message header of the last message received (confirmed).
+|Size of last received message |Size of message payload in MB of the last message received (confirmed).
+|===============================================================================
+
+=== Remote Maintenance for customers
+
+The agrirouter start page provides a tile "Remote Maintenance" for every user that redirects him to the Remote Desktop Software "TeamViewer". ( See https://www.teamviewer.com/en/ ). Your service and support can use this software to take a look at a customers desktop and help the customer to work with the agrirouter user interface or any other software on his desktop.
+
+.Remote maintenance tile
+image::general/remote_maintenance.png[Remote maintenance tile,686,335]
+
+
+
+== Getting in contact with the agrirouter support team as a developer
+
+The agrirouter support team provides support for developers for their integration with the agrirouter. To ask a question, simply send an email to support@my-agrirouter.com. Please understand that the agrirouter support team only provides agrirouter specific answers, no answers specialized for your coding language, environment or used frameworks. You might however be lucky to get such a specific answer if agrirouter support team has one, so feel free to mention this information as well.
+
+=== Required information
+
+Helping with your request is easier if you provide all information necessary to check the problem. Please check, which of the following topics fits your problem; it could even fit multiple problems
+
+==== For endpoint related incidents
+
+Please submit the following information with your request:
+
+* Account Id
+* Endpoint Id
+* Endpoint Software Id
+* Endpoint Software Version Id
+
+All of the above can be found in the endpoint details by clicking the ‘Info’ button next to the delete button.
+
+.Relevant information for agrirouter support
+image::ig1/image46.png[Relevant information for agrirouter support,586,335]
+
+
+
+
+==== For commands related incidents
+
+Please provide the commands sent from and received by the endpoint if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see xref:./tools/endpoint-recording.adoc[here].
+
+==== For account related incidents
+
+Please provide the account Id. See screenshot for the endpoint relevant information above.
+
+==== For UI related incidents
+
+Please provide the following information to report issues with the graphical user interface of the agrirouter
+
+* which browser and version you are using to reproduce the issue,
+* the localization settings (browser language, number and date formatting etc.)
+* if issue occurs on a mobile device, on which device this happens (e. g. iPhone 7, iPad Mini, Galaxy S7 etc.)
+* a screenshot of the issue
+
+
+
+== Feature Requests
+
+=== General
+
+Having a good idea to improve agrirouter? Don’t hesitate to send us an email to support@my-agrirouter.com . Any valid feature request will be discussed, and you’ll receive feedback.
+
+=== Message formats
+
+If a message format is missing, please send us an email to support@my-agrirouter.com. DKE will check if there is a common need for this. Please provide the following information with any request:
+
+* *Name:* What’s the name of the new format?
+
+* *Type:* What message type would the new format fit the best? E.g. PNG would fit to a message type "Images"
+
+* *Scope:* What is this message type used for? If possible, please provide a use case.
+
+* *Documentation:* Is the format already documented? Please provide information on the required standard.
+
+* *Ability of participation:* If DKE recognizes that the format is not yet standardized or that there are multiple possible formats, it’s very likely that DKE will request you and other requesters to agree on a common format. Please state that/if you are wanting to participate in such a group.
+
+* *Timeline:* Please provide a timepoint, for which you would need the new format
+
+
+agrirouter support team will get back to you on your request, please be informed that this could take a while. For test purposes, you can however start your development with a proprietary format.

@@ -1,0 +1,85 @@
+= Basic Concepts of agrirouter
+:imagesdir: ../assets/images
+
+== Ecosystem
+
+The agrirouter ecosystem and the members of it are described in the chapter xref:./ecosystem.adoc[ecosystem].
+
+.The agrirouter ecosystem of members
+image::ig1/image10.png[The agrirouter ecosystem of members,642,321]
+
+== Applications and App Instances
+
+In each agrirouter account, there are different types of communication partners, which are called app instances:
+.The different types of app instances: CU, Application, Virtual CU, Machine, Account
+image::ig1/image11.png[The different types of app instances: CU, Application, Virtual CU, Machine, Account]
+
+
+The list of xref:./ecosystem.adoc#applications[Application Types] helps to find out, which type of application you should create.
+
+== Endpoints
+Each app instance communicates with its corresponding endpoint in the agrirouter.
+
+For communication, it's important to understand the xref:./endpoint.adoc[elements of an endpoint].
+
+.The elements of an endpoint: Communicate with Inbox and Outbox, Handle Feed and Subscriptions and send Messages through the routings to other endpoints
+image::ig2/image26.png[The elements of an endpoint: Communicate with Inbox and Outbox, Handle Feed and Subscriptions and send Messages through the routings to other endpoints]
+
+
+== Communication
+ 
+To communicate with agrirouter, it's important to understand the xref:./communication.adoc[basics of communication]
+
+=== Messaging Workflow
+
+The communication workflow describes, which messages have to be send to agrirouter to exchange information with the agrirouter endpoint. 
+
+.General messaging workflow
+image::ig1/image22.png[General messaging workflow,609,726]
+
+
+
+This workflow can be found in the chapter xref:.//messaging-workflow.adoc[messaging workflows].
+
+=== Message Exchange
+
+The message exchange describes the exchange of messages between application instances over the agrirouter.
+
+.Way of a message through agrirouter
+image::ig1/image13.png[Way of a message through agrirouter,634,314]
+
+
+The basic concepts of message exchange are described in the xref:./message-exchange.adoc[concepts of message exchange].
+This chapter handles, for example, the concepts of addressing members of the ecosystem.
+
+
+
+== Life cycle 
+In general, the life cycle of an endpoint consists of 3 steps:
+
+* xref:./integration/onboarding.adoc[Onboarding]
+* Communication (see above)
+* xref:./integration/revoke.adoc[Offboarding/Revoking]
+
+.The 3 steps of communication: Onboarding, Communication, Revoking
+image::general/general_process.png[The 3 steps of communication: Onboarding, Communication, Revoking]
+
+
+
+
+== Concept of a telemetry platform
+
+When developing a telemetry platform, the xref:./telemetry-platform-concepts.adoc[concepts of a telemetry platform] should be understood.
+
+.Endpoints of a Telemetry Platform
+image::ig2/telemetryconcept.png[Endpoints of a Telemetry Platform,619,366]
+
+== Terms and short descriptions
+
+A short description naming all the agrirouter specific terms and their connection to each other can be found xref:./terms.adoc[here].
+
+A list of abbreviations can be found xref:./abbreviations.adoc[here].
+
+A glossary can be found xref:./glossary.adoc[here].
+
+There are several ids required for communication, a list of descriptions can be found xref:./ids-and-definitions.adoc[here].

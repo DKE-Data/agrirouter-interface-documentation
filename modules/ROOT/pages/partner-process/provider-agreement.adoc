@@ -1,0 +1,11 @@
+= Provider agreement
+
+== General process
+image::general/process_firstcontact.png[]
+For legal reasons, it is required that every app provider signs the app provider agreement. 
+You can get this document by contacting Dr. Ing Jens Möller, see link:https://my-agrirouter.com/en/company/contact/[the contacts page].
+
+[NOTE]
+====
+These contacts are only relevant for the business side, for development or end user support, please refer to the xref:service-support.adoc[Service&Support]
+====

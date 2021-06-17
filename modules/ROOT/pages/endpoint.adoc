@@ -1,0 +1,69 @@
+= Architecture of an endpoint
+:imagesdir: _images/
+
+== General Overview
+
+The endpoint can be seen as the interface between agrirouter and an App Instance. It receives messages from the app instance and can deliver messages to this app instance.
+
+On the other side, it is part of the agrirouter and forwards messages to routing and addressing, receives addressed messages and can handle the subscriptions.
+
+.Architecture of an endpoint
+image::ig2/image26.png[Architecture of an endpoint,623,268]
+
+
+[NOTE]
+====
+The terms "subscription" and "subscribing" are well known by MQTT addicted developers. In this document however, subscriptions describe a technique of the agrirouter endpoint. It works like an MQTT subscription, it’s however important to notice that MQTT is mostly not the context of these words in the document except for the relevant chapter for xref:./communication.adoc#mqtt[MQTT communication].
+====
+
+== Inbox
+
+The inbox is used to receive messages or commands from an app instance.
+
+The address of this inbox is delivered with the Response of the onboarding request as "measures".
+
+.Inbox within an agrirouter endpoint
+image::ig2/image27.png[Inbox within an agrirouter endpoint,637,274]
+
+
+
+
+[NOTE]
+====
+In terms of agrirouter onboarding result, the inbox is called measures due to the used standardized gateway. In this integration guide, we call it inbox as this is, what it really is in terms of agrirouter
+====
+
+== Outbox
+
+The outbox is used to deliver messages to an app instance.
+
+The address of this outbox is delivered with the Response of the onboarding request as "commands".
+
+.Outbox within an agrirouter endpoint
+image::ig2/image28.png[Outbox within an agrirouter endpoint,632,271]
+
+
+
+
+[NOTE]
+====
+In terms of agrirouter onboarding result, the outbox is called commands due to the used standardized gateway. In this integration guide, we call it outbox as this is, what it really is in terms of agrirouter
+====
+
+== Feed
+
+The feed receives all messages from the agrirouter due to addressing of messages and subscriptions of the endpoint, given there is a routing for that. Messages in the feed are stored for a maximum of 4 weeks before they are deleted. The user will be informed when there are messages that were not delivered for 3 weeks or more. An app instance can either request the messages to be forwarded to its outbox or request to delete the messages. If it requests the forwarding to the outbox, the messages are only deleted from the feed when the app instance confirms having received those messages.
+
+.The feed within an agrirouter endpoint
+image::ig2/image29.png[The feed within an agrirouter endpoint,627,269]
+
+
+
+
+== Subscription List
+
+The subscription list includes a list of all Message Types and DDIs, the endpoint is subscribed for. Whenever a message is published on the agrirouter account, this will lead to putting a copy of this message into the feed, given, there is a route for that.
+
+.Subscription List within an agrirouter endpoint
+image::ig2/image30.png[Subscription List within an agrirouter endpoint,585,251]
+

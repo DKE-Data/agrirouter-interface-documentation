@@ -1,0 +1,336 @@
+= Building Messages and Commands
+:imagesdir: ../../assets/images
+
+== General
+
+Creating a message includes several steps. This can be seen in the graph below:
+
+.Workflow of creating a message
+image::ig2/image42.png[Workflow of creating a message]
+
+== Chunking big messages
+
+Exchanging data using a mobile connection can be very critical, as a stable internet connection is not always given. To avoid wasting data volume and time, agrirouter offers a possibility to cut messages into multiple smaller parts and send them one by another. If the internet connection breaks down in between, only one small package is not delivered and has to be sent again.
+
+[NOTE]
+====
+* agrirouter messages can have a maximum size of 1 MB each. If a message is too large, agrirouter will respond with a HTTP code 413 "Request too large". Please note that the relevant size value is the size of the protobuf format, which will increase with conversion to Base64.
+
+* Some data formats like images, videos, taskdata and shape require their message content to be Base64 encoded. In this case, each chunk needs to be a valid Base64 string. This means that the Base64 encoding has to be performed on each chunk **after** splitting the binary data into chunks.
+
+* EFDI telemetry messages cannot be chunked, as they are analysed for the routing of telemetry data on agrirouter.
+====
+
+.Workflow of creating a chunked message
+image::ig2/image43.png[Workflow of creating a chunked message]
+
+[NOTE]
+====
+Sending multiple messages in one request is only possible if the overall size of all messages payloads is below the chunking maximum size value.
+====
+
+The overall body of the message to the inbox shall not include more payload than allowed without chunking. So, when a message is too big for one request and needs to be chunked, these chunks have to be sent in multiple messages, they can not be added as multiple chunks to one message.
+
+== Encode content to its Technical Message Type
+
+Encoding a message in its required technical message type depends on the message type. The message types for agrirouter commands are described further in the specific chapters that can be found xref:./../tmt/overview.adoc[here].
+
+== Encode content in Protobuf
+
+agrirouter messages and commands use protobuf 3 to encode content. Please refer to https://developers.google.com/protocol-buffers/ for a full documentation of the format and a lot of development resources.
+
+The agrirouter uses the node.js lib: https://github.com/dcodeIO/protobuf.js
+
+[NOTE]
+====
+As the payload of a message is defined as an any message, the typeURL has to be set to the corresponding message type. Otherwise, agrirouter will not be able to forward or process the message.
+====
+
+=== Getting the agrirouter protobuf files
+
+Protobuf definitions can be found here: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions
+
+The repository delivers all protobuf files that are owned by the DKE. It could be the case that you need additional protocol buffers like the EFDI telemetry messages definitions for specific message types that cannot be delivered in this github account due to intellectual property rights. You will however find instructions, how to get those protobuf definition files.
+
+=== Reading Protobuf definitions
+
+Basically, you can think of a protobuf as a C Struct or a JSON object. It includes data of several data types with the possibility of default values or optional parameters and lists.
+
+An example of a protobuf with several descriptions
+[source,protobuf]
+----
+message MyProtobuf{ //The main class of this element
+    enum Direction { // An enumeration of values
+        SEND = 0;
+        RECEIVE = 1;
+        SEND_RECEIVE = 2;
+    }
+
+    message subBuffer{
+        int64 x=1;
+        int64 y=2;
+    }
+
+    string name=1; // Field 1 of the structure is a string called "name"
+    int64 age=2;
+    Direction direction=3; // A field of type direction that describes an enum
+    repeated string hobbies=4; // A list with 0 to n elements possible
+    repeated subBuffer positions=5;
+}
+----
+
+=== Including Protobuf in your project
+
+Protobuf is available for multiple programming languages such as Java, C++, Java Script, Python, etc. etc.
+
+The protobuf compiler creates source files for your desired language. Please refer to https://github.com/google/protobuf for a list of implementations
+
+== Chunking Messages
+
+[NOTE]
+====
+* The segmentation of message does not apply to the telemetry related data as it is described in EFDI telemetry messages.
+
+* A maximum number of chunks (max. size for binaries) will be defined in the project
+
+ * The max chunk size is capped at 1MB. This size might be decreased during the project for performance reasons.
+====
+
+=== Chunking parameters
+
+The protobuf ChunkComponent can be found in commons/chunk.proto.
+
+[cols=",,",options="header",]
+|==========================================================================================================================================================
+|Name |Type |Description
+|context_id |String |A unique ID for this chunk. The number shall be equal for each part of the chunk and help the receiving endpoint to Identify the chunk
+|current |int64 |The current index of this chunk within the whole chunk starting with 1
+|total |int64 |The total number of chunks, this message consists of
+|total_size |int64 |The total size of the whole chunk in bytes.
+|==========================================================================================================================================================
+
+=== Preparing and creating chunked messages
+
+If it is recognized that a message needs to be split into multiple chunks, starting from here, the single message is sent to agrirouter by splitting the message body and creating multiple requests to the agrirouter, each including a new chunk element.
+
+[NOTE]
+====
+agrirouter does neither check nor inform about Chunks that have not yet been delivered to agrirouter. It will forward the single parts and the receiving endpoint(s) will have to take care of realigning the parts.
+====
+
+== Creating Metadata
+
+agrirouter messages can include metadata. This way, additional information about a file can be transmitted. 
+
+Currently, the following parameters are possible:
+[cols=",,",options="header",]
+|=====================================================================================================================================
+|Parameter |Type |Description
+|file_name |String |The name of the file that is sent. Used especially for TaskSets
+|=====================================================================================================================================
+
+Adding metadata is an optional feature since release 1.2 of the agrirouter. Older systems might not interpret the information, however, they are still compatible.
+
+[IMPORTANT]
+====
+In case of a chunked message that shall include metadata, every single message shall include the metadata field.
+====
+
+
+
+== Building the envelope
+
+The envelope is a protobuf structure of type agrirouter.request.RequestEnvelope.
+
+The parameters as overview:
+
+[cols=",,",options="header",]
+|=====================================================================================================================================
+|Parameter |Type |Description
+|application_message_id |String |A unique ID for this message. UUID required
+|application_message_seq_no |int64 |An indicator, in which order the client sent the message. The smallest sequence number must be >0.
+|technical_message_type |string |The TMT; see xref:../tmt/overview.adoc[Technical Message Types]
+|team_set_context_id |string |The relevant teamset for this message; just in case, it changes
+|mode |mode |DIRECT, PUBLISH or PUBLISH_WITH_DIRECT.
+|recipients |string(repeated) |A list of endpoint IDs to forward the message to.
+|chunk_info |ChunkComponent |The chunking information for split messages.
+|timestamp |google.protobuf.Timestamp |The timestamp, when the message was created.
+|metadata | agrirouter.commons.Metadata | Metadata about the sent message.
+|=====================================================================================================================================
+
+For the timestamp format definition, please refer to: link:https://github.com/google/protobuf/blob/master/src/google/protobuf/timestamp.proto[TimeStamps].
+
+[NOTE]
+====
+The application_message_sequence_no shall not be 0, as this might lead to misbehavior in any C++ Implementation of the agrirouter interface. To be consistent with every endpoint, it shall also not be done in other languages, even though they do not have a problem with that on their side of the agrirouter.
+====
+
+== Building the payload
+
+The structure of the payload depends on the technical message type. Its always some kind of protobuf structure, please refer to the chapters on technical message types for further information.
+
+== Connecting envelope and payload
+
+Envelope and content are packaged into one container by using the technique of "Delimited Messages". Please note that this is *not* simply copying both memory buffers into one buffer. Please refer to https://developers.google.com/protocol-buffers/docs/techniques[https://developers.google.com/protocol-buffers/docs/techniques#streaming]
+
+[NOTE]
+====
+Note that this concept is not supported in all protobuf libraries (in Java and node.js it is, in C++ it is not in every version)
+====
+
+If building streaming is required for the language and libraries that you use, please note that Delimited messages are attached to each other like this: Length1,Content1,Length2,Content2,…. The variable size of Length is the length of a varint; see https://developers.google.com/protocol-buffers/docs/encoding#varints.
+
+A solution for C++ can be found here: link:https://stackoverflow.com/questions/2340730/are-there-c-equivalents-for-the-protocol-buffers-delimited-i-o-functions-in-ja/
+
+== Message container
+
+The message needs to be packaged into a message container that includes the message itself and a timestamp. Going forward from this step, the encoding can either be in protobuf or JSON. For MQTT, it has to be JSON, for REST, it can be both.
+
+=== Encode in Base64
+
+This step is only required if your app instance communicates with its endpoint using MQTT or JSON based REST.
+
+Encode the serialized binary protobuf stream into a base64 string. All further steps will be done in JSON from now on.
+
+=== Go on in Protobuf
+
+agrirouter REST endpoints are also capable of exchanging protobuf.
+
+When using protobuf, the whole message including the upcoming steps will be encoded in protobuf. The container is an element of type any in the message; see further steps.
+
+== Adding the Timestamp
+
+The Timestamp and the message now have to be packaged into one JSON or Protobuf object with the timestamp of the message sending time. This timestamp shall use UTC.
+
+[NOTE]
+====
+The timestamp is the time of recording the message, not the timestamp of sending it.
+====
+
+== Add Message to List of Messages
+
+The object can now be added to the list of messages that shall be sent to the endpoint at once. It’s important to know that all these messages have the same recipient list.
+
+=== JSON
+
+The message list is a JSON array of message containers and called measures in the following:
+
+    {message,timestamp}
+
+=== Protobuf
+
+The protobuf container can be found here:
+
+It looks as follows:
+[source,protobuf]
+----
+message Measure {
+    repeated google.protobuf.Any values = 1;
+}
+----
+
+Each measure includes 2 Any-Objects. 
+
+The first Any-Object is named
+   
+   message
+
+and includes a bytes object of the following structure
+
+[source,protobuf]
+----
+syntax = "proto3";
+
+package gateway;
+
+option java_package = "com.sap.iotservices.common.protobuf.gateway";
+option java_outer_classname = "MeasureRequestMessageProtos";
+
+message MeasureRequestMessage {
+
+    bytes message = 1;
+}
+----
+
+The second Any-Object is named
+
+  timestamp
+
+and includes a String representing the milliseconds since 01.01.1970 00:00:00.000.
+
+
+
+
+[NOTE]
+====
+Please note that this definition is part of the message definition below (when it comes to definition of the whole message).
+====
+
+== Build message
+
+To have a fully compatible message, we now need to take the list if messages and add a header describing the sending endpoint.
+
+Parameters List:
+
+[cols="1,3,2,4",options="header",]
+|=================================================================================
+|# |Name |Type |Description
+|1 |sensorAlternateId |String |The source of this message, e.g. the CU or a device
+|2 |capabilitesAlternateId |String |An internal value
+|3 |measures |Array |An Array of messages and Timepoints
+|3.1 |message |Base64/Protobuf |A base64 encoded message
+|3.2 |timestamp |Timestamp |The timestamp of recording
+|=================================================================================
+
+=== JSON setup
+
+The JSON setup looks like this:
+[source,json]
+----
+{
+    "sensorAlternateId": "{{sensorAlternateId}}",
+    "capabilityAlternateId": "{{capabilityAlternateId}}",
+    "measures": [["{{encoded_request}}", "{{$timestamp}}"]]
+}
+----
+
+=== Protobuf setup
+
+The protobuf message can be found link:https://help.sap.com/viewer/643f531cbf50462c8cc45139ba2dd051/Cloud/en-US/e97b63e35f9a4bdbab72075e7bd37ccf.html[here].
+
+It looks as follows:
+[source,protobuf]
+----
+syntax = "proto3";
+import "google/protobuf/any.proto";
+package gateway;
+option java_package = "com.sap.iotservices.common.protobuf.gateway";
+option java_outer_classname = "MeasureProtos";
+message MeasureRequest {
+    string capabilityAlternateId = 1;
+    string sensorAlternateId = 2;
+    string sensorTypeAlternateId = 3;
+    int64 timestamp = 4;
+    repeated Measure measures = 5;
+    message Measure {
+        repeated google.protobuf.Any values = 1;
+    }
+}
+----
+
+Here is an example for a message sent to request the unfiltered endpoint list. It's of course sent as binary, but to be able to put it into this documentation, it's encoded in Base64:
+====
+ CiQ3OWRmZDkxOC03MDUxLTQ3MWEtOWI3My0zZjNjMjNkZWNhMzgSJDgyYThiYzIzLTdjYzItND
+ MxYS1iNzdlLTBiNzRmOWE1M2NiNyCXlv7hBSqDAgrGAQoibWVzc2FnZS9nb29nbGUucHJvdG9i
+ dWYuQnl0ZXNWYWx1ZRKfAQqcAVMKJDE2NDlhNWQ4LTNkZWMtNDZlYi05ZDkxLWI0MWNlOWFhMj
+ EyMhABGh1ka2U6bGlzdF9lbmRwb2ludHNfdW5maWx0ZXJlZEIKCJeW/uEFEMCEPUcKRQo1YWdy
+ aXJvdXRlci5yZXF1ZXN0LnBheWxvYWQuYWNjb3VudC5MaXN0RW5kcG9pbnRzUXVlcnkSDAoIaW
+ 1nOmpwZWcQAgo4CiV0aW1lc3RhbXAvZ29vZ2xlLnByb3RvYnVmLlN0cmluZ1ZhbHVlEg8KDTE1
+ NDc2NjgyNDcwMDA=
+====
+
+What you will find:
+
+* sensorAlternateID: 0525cc41-37c4-45b6-9c0d-8a12502c8faa
+* capabilityAlternateId: 79dfd918-7051-471a-9b73-3f3c23deca38
+* technicalMessageType: dke:list_endpoints_unfiltered

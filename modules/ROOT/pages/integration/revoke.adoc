@@ -1,0 +1,79 @@
+= Revoking
+:imagesdir: 
+
+== What is revoking?
+If the contract with a customer ends, app providers should revoke their connection with the customers account. This can be done using a process quite similar to the authorization process.
+
+== Process of Revoking
+
+.Revoke Process
+image::ig2/image25.png[Revoke Process,526,306]
+
+
+== Creating Revoke Command
+
+=== General
+
+Deleting the endpoint of a Farming Software or a Telemetry Platform is done through a DELETE-Request to the following endpoint:
+
+[cols="2,4",options="header",]
+|====================================
+|Method |Address
+|DELETE |/registration/onboard/revoke
+|====================================
+
+[NOTE]
+====
+Deleting virtual CUs is done using a command. See xref:commands/cloud.adoc[ Removing a Virtual Cu]
+====
+
+=== Header
+
+The Request shall include the following header information:
+
+[cols=",,",options="header",]
+|=============================================================
+|Name |Type |Description
+|Content-Type |String |application/json
+|X-Agrirouter-ApplicationId |String |[Application Id]
+|X-Agrirouter-Signature |[Signature] |see xref:integration/onboarding.adoc#signing-requests[Signing requests]
+|=============================================================
+
+=== Body
+
+The body includes a JSON object:
+
+[cols="1,3,2,4",options="header",]
+|===============================================================================
+|# |Name |Type |Description
+|1 |accountId |String |The ID of the users account
+|2 |endpointIds |Array of String |An Array of endpointIds that shall be deleted.
+|3 |UTCTimestamp |String |A timestamp like this: _2018-06-20T07:29:23.457Z_
+|4 |timeZone |String |A time zone like this: _"+03:00"_
+|===============================================================================
+
+Example:
+[source,json]
+----
+{
+    "accountId": "4823443c-fd0d-44a7-81a6-06104455945a",
+    "endpointIds": [
+        "3823443c-ed0d-44a7-81a6-06104455945a",
+        "7873443c-fd0d-44a7-81a6-06104455945a"
+    ],
+    "UTCTimestamp": "2018-06-25T18:08:17.661890Z",
+    "timeZone": "+00:00"
+}
+----
+
+=== Response
+
+The response is an empty message using a HTTP Return code to indicate the result:
+
+[cols=",",options="header",]
+|=================================
+|Code |Description
+|204 |Revoke was successful
+|400 |A validation failure occurred
+|401 |The Request was unauthorized
+|=================================

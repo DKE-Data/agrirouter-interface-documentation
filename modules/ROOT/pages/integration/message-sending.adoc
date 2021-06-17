@@ -1,0 +1,106 @@
+= Sending a Request
+:imagesdir: _images/
+
+The message or command is sent to the agrirouter using a protocol dependent request to its agrirouter inbox.
+
+== General Prerequisites
+
+=== Routings available
+
+To send a message to another endpoint, there is an existing routing required. This also applies to published messages
+
+[NOTE]
+====
+New routings might take a few seconds to minutes to be activated.
+====
+
+
+=== Publishing only with available subscriptions
+
+If you publish a message, it will only reach an endpoint if there is at least one subscribed endpoint.
+
+== Using MQTT
+
+The endpoint address of the MQTT broker is delivered as host+port in the onboarding request. The inbox is the topic delivered with the "measures" attribute of the onboarding request.
+
+To send a message, publish it. (Here, publish means the MQTT-Term, see https://mqtt.org) 
+
+In general, the hosts should be as follows:
+
+[cols=",,",options="header",]
+|======================================================
+|Area |Environment |URL
+|EU |Quality Assurance |https://dke-qa.eu10.cp.iot.sap/
+|EU |Productive |https://dke.eu1.cp.iot.sap/
+|======================================================
+
+== Using REST
+
+Using REST, the message is sent as a single HTTP call using HTTPs and the endpoint certificates delivered with the onboarding Request.
+
+=== Address
+
+To send messages to the agrirouter, the app has to perform a POST request sending a message included in a Request.
+
+Messages and commands are sent to the inbox. The address of the inbox is returned with the onboarding request ("measures") and should look like this:
+
+[cols="1,4",options="header",]
+|========================================================
+|Method |Address
+|POST |/iot/gateway/rest/measures/{\{deviceAlternateId\}}
+|========================================================
+
+=== Header
+
+As the communication works via https, the SSL Certificate information delivered with the onboarding Result is needed.
+
+In most communication libraries, the developer just has to provide
+
+* the certificate, which is the public key,
+* the SSLKey, which is the private key
+* the password for the private key
+
+Most libraries are than able to handle the communication.
+
+For further information see the curl documentation on the parameters used for a communication. For curl_easy_setopt(:
+
+* CURLOPT_SSLKEY
+* CURLOPT_KEYPASSWD
+* CURLOPT_SSLCERT
+
+The header of the HTTP Request for the REST implementation also requires
+
+Content-Type: "application/json"
+
+or
+
+Content-Type: "application/x-protobuf"
+
+[NOTE]
+====
+Regardless which Content-Type you use, make sure that your implementation includes "application/json" in the "accept"-Parameter of the HTTP Call. 
+
+The Inbox of agrirouter is not able to return protobuf and will return a status of 4xx if it can't find json in the accepted responses.
+====
+
+
+=== Body
+
+The body consists of the message package that was created in the previous paragraphs.
+
+== Receiving a Response
+
+HTTP Messages always get confirmed by the agrirouter. For the HTTP REST Gateway, the agrirouter will simply send a HTTP Status between 200 and 299. For MQTT, there will not be any response.
+
+== Header
+
+The Header has a HTTP Status between 200 and 299.
+
+== Body
+
+The Body of the response is empty.
+
+[NOTE]
+====
+The result code of this simply informs you if the endpoint was reachable and if the inbox was able to forward the message
+====

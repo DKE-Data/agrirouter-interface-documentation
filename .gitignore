@@ -3,3 +3,6 @@
 
 # Files
 *.iml
+
+build/
+node_modules/

@@ -1,82 +1,19 @@
-:imagesdir: assets/images
-++++
-<p align="center">
- <img src="./assets/images/agrirouter.svg" width="20%" height="20%" align="left"><br><br>
-</p>
-++++
+= agrirouter-interface-documentation
+:imagesdir: modules/ROOT/assets/images
 
-== What is the agrirouter?
-More information on agrirouter can be found link:./docs/general.adoc[here]
+[abstract]
+== Abstract
+image::agrirouter.svg[agrirouter]
 
-== Basic Concepts
+The agrirouter is a universal data exchange platform for farmers and agricultural contractors that makes it possible to connect machinery and agricultural software, regardless of vendor or manufacturer. Agrirouter does not save data; it transfers data.
+As a universal data exchange platform, agrirouter fills a gap on the way to Farming 4.0. Its underlying concept unites cross-vendor and discrimination-free data transfer. You retain full control over your data. Even data exchange with service providers (e.g. agricultural contractors) and other partners is uncomplicated: Data are very rapidly transferred via the online connection, and if you wish, is intelligently connected to other datasets.
 
-++++
-<p align="center">
- <a href="./docs/basic-concepts.adoc"><img src="./assets/images/ig1\image10.png" width="642px" height="321px"></a><br>
- <i>The agrirouter ecosystem of members</i>
-</p>
-++++
+== agrirouter Documentation
 
-As a developer it's also important to understand the link:./docs/basic-concepts.adoc[basic concepts]
+This project houses the source files for our documentation website https://docs.my-agrirouter.com.
 
-== Purpose of this documentation
+These files get automatically built and deployed on any change in the develop branch.
 
-The purpose of this documentation is to create deep knowledge about the third party integration into the agrirouter solution. It shall include all information necessary to develop an integration with the agrirouter interface in an application.
+=== old links
 
-
-== Call for Participation
-
-This documentation is an open source project. We invite everybody to open issues, fork the documentation or create pull requests to fix or extend this documentation.
-
-== Adding your solution to agrirouter
-In general, there are 4 major topics to add your software or hardware to the agrirouter ecosystem.
-++++
-<p align="center">
- <img src="./assets/images/general/process_all.png"><br>
- <i>Integration process for agrirouter</i>
-</p>
-++++
-
-* link:./docs/provider-agreement.adoc[Step 1 - Provider Agreement]
-* link:./docs/marketplace.adoc[Step 2 - Marketplace]
-
-
-
-* link:./docs/integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
-* link:./docs/integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
-
-
-
-
-== Quicklinks
-For advanced developers, here is a list of quick links for the most common topics
-
-=== Concepts & Definitions:
-
-* link:./docs/basic-concepts.adoc[Basic concepts of agrirouter]
-* link:./docs/glossary.adoc[Glossary]
-* link:./docs/terms.adoc[Terms or "agrirouter in a nutshell"]
-* link:./docs/ids-and-definitions.adoc[Ids and their  correspondance to each other]
-
-=== Lists
-
-* link:./docs/tmt/overview.adoc[List of Technical Message Types]
-* link:./docs/commands/overview.adoc[List of Commands for the agrirouter interface]
-* link:./docs/keys.adoc[The agrirouter keys]
-* link:./docs/error-codes.adoc[Error Codes]
-* link:./docs/integration/environments.adoc[Environments]
-* link:./docs/urls.adoc[Relevant URLs]
-
-=== Tools & Support
-* link:./docs/service-support.adoc[Service & Support]
-* link:./docs/training.adoc[Training]
-* link:./docs/maintenance.adoc[Maintenance of applications]
-
-
-
-== Link Section
-This page is found in every file and links to the major topics
-[width="100%"]
-|====
-|link:./README.adoc[Index]|link:./docs/general.adoc[OverView]|link:./docs/abbreviations.adoc[abbreviations]|link:./docs/terms.adoc[agrirouter in a nutshell]
-|====
+During the documentation structure change in May 2021, all old links became invalid. Please visit https://docs.my-agrirouter.com and navigate to the page you were looking for.

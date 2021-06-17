@@ -1,0 +1,48 @@
+= General conventions
+
+== Numbering convention
+
+Within the agrirouter interface, there are several IDs or counters that are of type int64. Due to difference between the protobuf implementation of C++ vs. e.g. Java, the ID "0" cannot be used.
+
+IMPORTANT: All numberings begin with 1!
+
+== String Identifiers convention
+
+For *globally unique* instance ID we suggest using Uniform Resource Name (URN) according to RFC5141. Basically, this enabled an identification to be of any kind that is defined by the official IANA registered URN namespaces (https://www.iana.org/assignments/urn-namespaces/urn-namespaces.xhtml).
+
+For example this could be a UUID if the CU is an App on a consumer device with a generated identity::
+
+__urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6__
+
+Also this could identify an OEMs device with a Product Identification Information:: 
+ 
+__urn:iso:std:iso:11783:-12:2013:ed-2:tech:pii:1234567890ABC**Brand Name:Product Name**__.
+
+== TimeStamp conventions
+
+If there is nothing different mentioned in the relevant chapter, all timestamps in messaging, onboarding etc. shall be in UTC. The common format for timestamps is ISO; e.g. 
+
+ "2018-06-14T14:53:28.123Z".
+
+== Base64
+
+Base64 as defined in link:https://tools.ietf.org/html/rfc4648[RFC4648] does *not* include line breaks. Make sure that your software creates Base64-Strings without line breaks.
+
+== Time Synchronisation
+
+As agrirouter exchanges data between different applications in different environments, it is very important to have a common current time. Therefore, you should match the result timestamp of an agrirouter command with your local time and compensate too big differences (>1 minute), when setting the timestamp of your agrirouter commands.
+
+The best practice here is to request the endpoint list on a regular basis and take the timestamp of the result.
+
+If your application has access to the GPS time, this should be enough to keep the same time as the agrirouter.
+
+[NOTE] 
+==== 
+* The agrirouter support team also suggests using this compensation time in your TaskController- and DataLogger- Data.
+Even though, this is not relevant for a proper communication with the agrirouter, it will avoid timing problems in the analysis of data with applications that receive your data.
+
+
+* If multiple machines with multiple CUs work on a field, you’ll never be able to match their EFDI data if you have different times
+====
+
+

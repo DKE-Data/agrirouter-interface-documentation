@@ -1,0 +1,23 @@
+= ARTS
+:imagesdir: 
+
+== What is ARTS?
+
+The agrirouter protobuf toolset ("ARTS") is a Java Project to check or create several parameters for the agrirouter communication. It can for example decode received Base64 Strings to their Protobuf representation.
+
+The tool includes a command line as well as a user interface.
+
+The project can be found here: https://github.com/saschadoemer/agrirouter-protobuf-toolset
+
+.ARTS User Interface
+image::ig2/image9.png[ARTS User Interface,426,442]
+
+
+
+== About the project
+
+* The ARTS-Project is an open source project, feel free to participate and extend its functionality.
+
+
+* This tool is not an official part of the agrirouter eco system and DKE-Data is not liable for it.
+

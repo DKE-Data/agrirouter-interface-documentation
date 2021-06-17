@@ -1,0 +1,38 @@
+= Inviting testers
+:imagesdir: _images/
+
+== General Information
+
+When an application is not yet certified, but it shall be tested by other users than the developer, testers can be invited through the agrirouter UI.
+
+== Steps to invite testers
+
+.Select Accounts
+image::general/ui_accounts_link.png[Select Accounts]
+
+.Select "Testers"
+image::general/ui_accounts_headerline.png[Select "Testers"]
+
+.Click "Invite"
+image::general/ui_accounts_testers_empty.png[Click "Invite"]
+
+.Enter EMail and click confirm
+image::general/ui_accounts_invite.png[Enter EMail and click confirm]
+
+[NOTE]
+====
+The invited user will receive an email and has to click a link.
+
+.The user will receive this message when clicking the link
+image::general/ui_accounts_accept.png[The user will receive this message when clicking the link]
+====
+
+Once the user confirmed the Request, he will be in the list of Testers
+
+.User in List of Testers
+image::general/ui_account_approved.png[User in List of Testers]
+
+The user is now able to onboard apps defined in your developer account.
+
+
+You can delete a tester any time.

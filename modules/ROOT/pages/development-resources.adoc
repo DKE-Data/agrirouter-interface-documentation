@@ -1,0 +1,47 @@
+= Development resources
+:imagesdir: _images/
+
+
+
+
+== Major development technologies
+
+To perform an agrirouter integration, you will need knowledge to the following technologies:
+
+* *Required:*
+** *REST*; at least for onboarding, perhaps for communication (see https://wikipedia.org/en/REST )
+** *Protobuf*: for message packaging (see https://developers.google.com/protocol-buffers/ )
+** Certificates, signatures and encrypted communication, e.g. using HTTPs
+* *Optional*
+** *secured MQTT* for the communication (see https://mqtt.org)
+** *ISO11783* and *EFDI* for telemetry data
+(see https://aef-online.org)
+
+
+
+
+== Development Tools
+
+* For REST Tests, you can use the link:https://github.com/DKE-Data/agrirouter-postman-tools[Postman Collection]
+
+* For MQTT Tests, you can use xref:./tools/paho.adoc[Paho]
+
+* Especially for Protobuf Development, you can use the xref:./tools/arts.adoc[agrirouter Protobuf Toolset]
+
+* To create and play traces, use the xref:./tools/endpoint-recording.adoc[Endpoint Recording]
+
+== Further Resources
+
+Following resources can help developers to integrate their applications to the agrirouter.
+
+[cols=",,",options="header",]
+|====================================================================================================================================================
+|Name |URL |Description
+|agrirouter main page |https://my-agrirouter.com |The official website of the agrirouter
+|GitHub |https://github.com/dke-data/ |Official GitHub with libraries and resources
+|DDI Dictionary |https://www.isobus.net/isobus/ |The official list of standardized Sensor values
+|AEF |https://aef-online.org  |The official website of the Agricultural Electronics Foundation. This group defines EFDI and the standards of ISOXML.
+|====================================================================================================================================================
+
+
+

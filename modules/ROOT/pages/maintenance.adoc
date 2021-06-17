@@ -1,0 +1,19 @@
+= Maintenance
+
+== Introduction
+Once your software is public, you will have to maintain your software to create new releases, handle the customer endpoints and keep the overview about your agrirouter costs.
+
+agrirouter provides several tools for maintenance, see below
+
+== Usage metrics
+
+As an application provider, you can download xref:./usage-metrics.adoc[usage metrics] to check, which account consumed and sent how much data.
+
+
+== Endpoint management
+
+Learn how to manage your applications endpoints xref:./application-endpoint-management.adoc[here].
+
+== Behaviour after Software Update
+
+Read here, how to handle xref:./update.adoc[new versions and updates].

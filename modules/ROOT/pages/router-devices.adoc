@@ -1,0 +1,66 @@
+= Router Devices
+:imagesdir: _images/
+
+== General function
+Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one MQTT broker.
+
+When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced the **router devices** which allow routing multiple connections for virtual endpoints.
+
+
+.Using Router devices vs. not using router devices
+image::general/router-devices2.png[Using Router devices vs. not using router devices]
+
+.Using router devices vs. communication using communication units
+image::general/router-devices1.png[Using router devices vs. communication using communication units]
+
+== Setup of router devices
+Router devices can be set up and managed in the agrirouter developer UI
+.Router device management in the agrirouter developer UI
+image::general/router-devices-screen1.png[Router device management in the agrirouter developer UI]
+
+When clicking on "New Router device", a new device will be generated.
+.Router device management in the agrirouter developers UI
+image::general/router-devices-screen2.png[Router device management in the agrirouter developers UI]
+
+To check the connection properties, click on "Connection Details".
+.Router device details
+image::general/router-devices-screen3.png[Router device details]
+
+The certificate for the router device can be downloaded as PEM or P12.
+.Download certificate of router device
+image::general/router-devices-screen4.png[Download certificate of router device]
+
+The file includes a JSON structure containing all necessary information for the router device
+[source,json]
+----
+{
+    "authentication": {
+        "type": "PEM",
+        "secret": "s7jRq5jEvru914M3INJ6B0SluVYKHRmradqo",
+        "certificate": "-----BEGIN ENCRYPTED PRIVATE KEY-----\n...\n-----END CERTIFICATE-----\n"
+    },
+    "deviceAlternateId": "d410a40c-920a-4af5-b4f8-80e45d2904f8",
+    "connectionCriteria": {
+        "clientId": "27b5ca3e-eb96-4b38-b586-61f9c6a724c4",
+        "gatewayId": "2",
+        "host": "dke-qa.eu10.cp.iot.sap",
+        "port": 8883
+    }
+}
+----
+
+`ConnectionCriteria` and `Authentication` of a single endpoint can be replaced by the data given from the router device, so that every software component of a specific manufacturer can communicate using one router device, as long as all the application instance is connected to the same server. There cannot exist multiple connections using the same router device.
+
+[WARNING]
+====
+For a proper connection, you need to use the `deviceAlternateId` as `clientId`, *not* the `connectionCriteria.clientId`!
+====
+
+[WARNING]
+====
+Every time the certificate is downloaded, it is updated in the agrirouter backend. Make sure you store the certificate in a secure place after you downloaded it and only click the download button again if you want to update your certificate (see below).
+====
+
+=== Certificate update
+
+As well as the certificates received after onboarding an endpoint, the certificates of the router device have a limited validity period of 1 year as well. To ensure the communication is not blocked after 1 year, the certificate needs to be updated before the validity period ends. To update a certificate, the developer has to open the details of the certificate view and click on the download button.

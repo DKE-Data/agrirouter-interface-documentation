@@ -1,0 +1,21 @@
+== Abbreviations
+
+As agrirouter uses multiple, sometimes quite long special terms, these terms are shortened in some of the graphics. Following a list of abbreviations and the corresponding full term
+
+[cols="1,3",options="header",]
+|===============================================
+|Abbreviation |Full Term
+|[] |Abbreviation for a list
+|… |additional steps; not shown here
+|App |Application
+|ar |agrirouter
+|CAP |Capabilities
+|CU |Communication Unit
+|DDI |Data Dictionary Identifier; see ISOBUS DDI
+|DVC |Device Description/ Device
+|EP |Endpoint
+|IT |Information Type
+|MSG |Message
+|TMT |Technical Message Type
+|VCU |Virtual CU; Virtual Communication Unit
+|===============================================

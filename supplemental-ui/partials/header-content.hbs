@@ -1,0 +1,38 @@
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <!--<div class="navbar-item logo"></div>-->
+      <a class="navbar-item" href="{{{or site.url (or siteRootUrl siteRootPath)}}}"><img
+          src="{{uiRootPath}}/img/agrirouter-logo.svg" id="logo" />{{site.title}}</a>
+      {{#if env.DOCSEARCH_ENABLED}}
+      <div class="navbar-item">
+        <input id="search-input" type="text" placeholder="Search docs">
+      </div>
+      {{/if}}
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <!--a class="navbar-item" href="#">Home</a-->
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Resources</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://github.com/dke-data">Github</a>
+            <a class="navbar-item" href="https://my-agrirouter.com">Website</a>
+            <a class="navbar-item" href="https://goto.my-agrirouter.com">agrirouter Production</a>
+            <a class="navbar-item" href="https://qa.my-agrirouter.com">agrirouter QA</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://github.com/dke-data">Github</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

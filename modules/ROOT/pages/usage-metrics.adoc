@@ -1,0 +1,66 @@
+= Usage Metrics
+
+
+agrirouter collects and measures all information (event types) regarding data exchange in real time.
+
+For each message transported through agrirouter, it includes the following parameters:
+
+[cols=",,",options="header",]
+|===========================================================================================================
+|column |type |Comment
+|id |UUID |The ID of the message
+|dh_message_id |UUID |The agrirouter internal ID of this message
+|account_id |UUID |The agrirouter account id, in which this message was sent
+|endpoint_id |UUID |The endpoint ID of the endpoint, for which the event happened
+|tech_msg_type_id |String |The technical message type of this message
+|event_type |Enum |The current status of the message; see below
+|volume |Integer |The total volume of the encoded message
+|buffer_duration |Integater |How long did the message persist in the feed, until it was delivered or deleted
+|month |Integer |
+|day |Integer |
+|hour |Integer |
+|year |Integer |
+|created_on |Timestamp |When was this message delivered to the feed?
+|===========================================================================================================
+
+The event type is one of the following:
+
+[cols=",",options="header",]
+|========================================================================================
+|Event |Description
+|ACKNOWLEDGMENT |Acknowledgment created by agrirouter in response to message.
+|CONFIRMED |Message was confirmed by specified endpoint.
+|DELETED |Message was deleted by specified endpoint.
+|DELIVERED |Message was delivered to specified endpoint (but not yet confirmed).
+|ERROR |Message was returned because of an error (e. g. missing team context ID).
+|OFFBOARDED |Message was deleted, because the specified endpoint was deleted / offboarded.
+|SENT |Message was sent by specified endpoint.
+|TIMEDOUT |Message was deleted because it timed out after 4 weeks.
+|========================================================================================
+
+Sent and Error mark events of the inbox, all the other events are events of feed or outbox.
+
+The aggregated result will have the following structure:
+
+[cols="1,1,2",options="header",]
+|=========================================================================================================================
+|column |type |Comment
+|app_provider_id |uuid |derived from the endpoint ID
+|app_id |uuid |derived from endpoint ID; this is the field over which the aggregate will be calculated
+|account_id |uuid |taken directly from raw data
+|endpoint_id |uuid |taken directly from raw data
+|event_type |character varying(15) |taken directly from raw data; second field over which the aggregate will be calculated
+|total_messages |integer |number of messages in aggregate
+|total_volume |integer |total data volume in aggregate
+|average_duration |integer |average buffer time of aggregate
+|month |integer |
+|day |integer |third key field over which the aggregate will be calculated
+|hour |integer |
+|year |integer |
+|created_on |timestamp with time zone |
+|=========================================================================================================================
+
+In any agrirouter developer account (account management -> export metrics), these usage statistics can be exported for your applications.
+
+**Update**
+As the payment concept changed to a flat rate model per sending directions based on end user account. These statistics are relevant for the billing and they give you a good overview of how much communication per end user account really exists.

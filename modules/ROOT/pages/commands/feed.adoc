@@ -1,0 +1,409 @@
+= Commands to control the feed
+:imagesdir: 
+
+These commands are used to control the delivery of messages from the feed to the app instance through the outbox. See also xref:../endpoint.adoc[architecture of an Endpoint]
+
+== Paging
+
+Due to the huge number of messages that could be delivered with a single call for messages, it would be a bad idea, to deliver all those message headers in one big package. Therefore, a paging mechanism was introduced to split the whole list of messages or message headers. into several pages, each including a maximum number of messages or a maximum overall size of the Result.
+
+All pages will be the result of one single GET Request if all messages are delivered to the outbox, when the endpoint requests them. If not all messages have been delivered from feed to the outbox at this point in time, the endpoint has to poll for the messages (make sure to meet the xref:../messaging-workflow.adoc#request-sending-frequency[request frequency requirements]). Using MQTT, all pages are delivered one after another.
+
+
+[NOTE]
+====
+If an app instance misses one package, it should first request the messages of the headers, it already received to shorten the list of headers delivered when requesting again. This only works for self containing message, it is critical if the missed package includes parts of a chunked message.
+====
+
+== Message Query and Filtering
+
+Reading the messages, the message headers from the feed or deleting messages from the feed can be done using a message filter including the following parameters:
+
+[cols="1,3,2,4",options="header",]
+|================================================================================
+|# |Name |Type |Description
+|1 |message_ids |String(repeated) |A list of agrirouter message IDs
+|2 |senders |String(repeated) |A list of message senders
+|3 |validity_period |Validity Period |A time span that the messages were sent in
+|================================================================================
+
+The validity Period has following parameters.
+
+[cols="1,3,2,4",options="header",]
+|==============================================
+|# |Name |Type |Description
+|1 |sentFrom |google.protobuf.Timestamp |Begin of the time span
+|2 |sentTo |google.protobuf.Timestamp |End of the time span
+|==============================================
+
+A message with id, source and timestamp fits the filter if
+
+* (id is part of messageIDs or messageIDs is empty) AND
+* (source is part of senders or senders is empty) AND
+* (timestamp is within validity_period or validity_period is empty)
+
+== Metadata
+With release 1.2, messages can be extended by metadata to provide further information about the message itself.
+
+The metadata field includes the following fields:
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |file_name |string |The corresponding name of the file that is sent; relevant e.g. if multiple TaskDataSets are sent.
+|=====================================================================================================================================
+
+Metadata are part of the MessageQueryResponse and the MessageHeaderQueryResponse; see below.
+
+The command can include one or more filter criteria. If one filter is not provided, this means that this filter is ignored.
+
+== Call for Message Header List
+
+=== Definition
+
+To receive the Message ids of all available messages or a specific filtered list of available message IDs, an App Instance can call for the message headers available in the feed to be delivered to the Outbox
+
+=== Command
+
+The command includes filters for Message IDs, senders and a validity period.
+
+[cols=",",]
+|==============================================================
+|Command |dke:feed_header_query
+|Protobuf Schema |agrirouter.feed.request.MessageQuery
+|TypeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
+|==============================================================
+
+For parameter description see <<Message Query and Filtering>>.
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |message_id |string |The message ID to request, delete or confirm the message
+|2 |technical_message_type |string |The technical message type of the message
+|3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
+|4 |chunk_contextID |string |The chunk context corresponding to the chunk list
+|5 |payload_size |int64 |The size of the payload
+|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp that was provided by the sender. It should be the time when the message orignally was sent
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point
+|=====================================================================================================================================
+
+=== Result
+The response includes only the message headers without the payload.
+
+
+[NOTE]
+====
+The result is sorted ascending by the senderID.
+Within the sender-receiver package, the messages are sorted first by the timestamp and then by the sequence number.
+====
+
+[cols=",",]
+|======================================================================
+|ResultCode |ACK_FOR_FEED_HEADER_LIST
+|Protobuf Schema |agrirouter.feed.response.HeaderQueryResponse
+|typeURL |types.agrirouter.com/agrirouter.feed.response.HeaderQueryResponse
+|======================================================================
+
+In general, the result has the following layers
+
+=> Technical information ("How many responses etc.")
+
+==> Sender-Receiver-Tuple ("Who sent to whom")
+
+===> Message Header ("Type, ID, Date, etc...")
+
+The topmost protobuf is a list of technical information on the result itself.
+
+[cols="1,3,2,4",options="header",]
+|==========================================================================
+|# |Name |Type |Description
+|1 |queryMetrics |QueryMetrics |A summarize of the response
+|2 |page |Page |The current page of the message
+|3 |chunk_contexts |ChunkComponent (repeated) |A list of all chunk contexts
+|4 |feed |Feed (repeated) |A list of messages from and for a specific endpoint
+|5 |String| Pending Message Ids (repeated)| A list of all pending messages
+=======
+|4 |feed |Feed (repeated) |A message from the feed
+|5 |String| Pending Message Ids (repeated)| A list of all pending messages (deprecated)
+|==========================================================================
+
+[NOTE]
+=====
+With release of the active push functionality, the pending 
+messages list is deprecated and will no longer be filled. 
+
+Messages can now be confirmed as bundles over a longer period of time.
+=====
+
+The Query metrics informs about several result parameters:
+
+[cols="1,3,2,4",options="header",]
+|===========================================================================================
+|# |Name |Type |Description
+|1 |total_messages_in_query |int32 |The total number of all messages headers in the response
+|2 |max_count_restriction |int32 |The maximum count of messages per page
+|===========================================================================================
+
+The Paging information is included in the page parameter:
+
+[cols="1,3,2,4",options="header",]
+|===============================================
+|# |Name |Type |Description
+|1 |number |int32 |The index of the current page
+|2 |total |int32 |The total number of pages
+|===============================================
+
+The chunk context is an Array of available chunk contexts within this messages. If there are multiple of them, this means that there are multiple chunked messages to be realigned.
+
+The chunk context is described in xref:../integration/build-message.adoc#chunking-big-messages[chunking big messages] .
+
+The feed includes an array of message headers that describe sender and receiver by their IDs.
+
+[cols="1,3,2,4",options="header",]
+|=========================================================
+|# |Name |Type |Description
+|1 |sender |string |Endpoint ID of the sender
+|2 |receiver |string |Endpoint ID of the receiver
+|3 |header |Header (repeated) |An array of message headers
+|=========================================================
+
+It includes the list of headers which again includes the following information:
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |message_id |string |The message ID to request, delete or confirm the message
+|2 |technical_message_type |string |The technical message type of the message
+|3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
+|4 |chunk_contextID |string |The chunk context corresponding to the chunk list
+|5 |payload_size |int64 |The size of the payload
+|6 |sent_timestamp |timestamp |The timestamp that was provided by the sender. It should be the time when the message orignally was sent
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point
+|=====================================================================================================================================
+
+
+
+[NOTE]
+====
+As a telemetry platform can receive messages for multiple Virtual CUs, the receiver field is used to determine the correct virtual CU.
+====
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |message_id |string |The message ID of the message
+|2 |technical_message_type |string |The technical message type of the message
+|3 |team_set_context_id |string |The teamset ID assigned with the message.
+|4 |chunk_contextID |string |The chunk context corresponding to the chunk list
+|5 |payload_size |int64 |The size of the payload
+|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp that was provided by the sender.
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point
+|8 |current_chunk |int64 |The chunk counter of the current chunk
+|9 |created_at |google.protobuf.Timestamp |The time at which the message was inserted into the endpoints feed within the agrirouter
+|10 |metadata |agrirouter.commons.Metadata |Additional metadata information helping to differentiate between messages of the same type. 
+|=====================================================================================================================================
+
+
+
+=== Errors
+
+If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
+
+
+== Call for messages
+
+=== Definition
+
+Every app Instance can request a single or a list of messages to be forwarded from the feed to the outbox by its message ids
+
+=== Command
+
+[cols=",",]
+|==============================================================
+|Command |dke:feed_message_query
+|Protobuf Schema |agrirouter.feed.request.MessageQuery
+|typeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
+|==============================================================
+
+For parameter description see <<Message Query and Filtering>>.
+
+=== Result
+
+The result includes all information like the HeaderQueryResponse plus the actual payload of the message.
+
+[cols=",",]
+|===============================================================================
+|ResultCode |ACK_FOR_FEED_MESSAGE
+|Protobuf Schema |types.agrirouter.com/agrirouter.feed.response.MessageQueryResponse
+|===============================================================================
+
+In general, the result has the following layers
+
+=> Technical information ("How many responses etc.")
+
+==> Message Header + Payload ("Type, ID, Data, etc...")
+
+The topmost protobuf is a list of technical information on the result itself.
+
+[cols="1,3,2,4",options="header",]
+|============================================================
+|# |Name |Type |Description
+|1 |queryMetrics |QueryMetrics |A summarize of the response
+|2 |page |Page |The current page of the message
+|3 |messages |FeedMessage (repeated) |A message from the feed
+|============================================================
+
+The Query metrics informs about several result parameters:
+
+[cols="1,3,2,4",options="header",]
+|===========================================================================================
+|# |Name |Type |Description
+|1 |total_messages_in_query |int32 |The total number of all messages headers in the response
+|2 |max_count_restriction |int32 |The maximum number of messages per page
+|===========================================================================================
+
+The Paging information is included in the page parameter:
+
+[cols="1,3,2,4",options="header",]
+|===============================================
+|# |Name |Type |Description
+|1 |number |int32 |The index of the current page
+|2 |total |int32 |The total number of pages
+|===============================================
+
+The messages include an array of messages
+
+[cols="1,3,2,4",options="header",]
+|=================================================================
+|# |Name |Type |Description
+|1 |header |Header |The header of the message
+|2 |content |any |The payload in the corresponding protobuf format
+|=================================================================
+
+The header includes the whole envelope of a message
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================================================
+|# |Name |Type |Description
+|1 |receiver_id |string |The receiver; might be a secondary endpoint like a virtual CU behind a telemetry platform.
+|2 |technical_message_type |string |The technical message type of the message.
+|3 |team_set_context_id |string |The teamset ID to assign the message to the correct context.
+|4 |chunk_context |agrirouter.commons.ChunkComponent |The chunk component.
+|5 |payload_size |int64 |The size of the payload.
+|6 |sent_timestamp |google.protobuf.Timestamp |The timestamp that was provided by the sender. It should be the time when the message was originally sent.
+|7 |sequence_number |int64 |The sequence number to determine the correct order for messages that were recorded at the same time point.
+|8 |sender_id |string |The endpoint ID of the sender.
+|9 |created_at |google.protobuf.Timestamp |The timestamp, when this message was added to the receiving endpoints feed.
+|10 |message_id |String |Internal agrirouter message ID representing this message and its payload.
+|11 |metadata |agrirouter.commons.Metadata |Additional metadata information helping to differentiate between messages of the same type. 
+|=====================================================================================================================================
+
+[NOTE]
+====
+The result is sorted ascending by the senderID.
+====
+
+Within the sender-reciever package, the messages are sorted primary by the timestamp and secondary by the sequence number.
+
+=== Errors
+
+If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.
+
+
+
+=== Chunked messages
+
+Messages sent to the agrirouter can be split into multiple chunks if the message format is not EFDI.
+
+.Chunked messages
+image::ig2/image46.png[Chunked messages,534,292]
+
+
+Only those message that were not created by the agrirouter and that are not of type EFDI or GPS:INFO can be chunked.
+
+==== Recognizing chunked messages in the feed
+
+To recognize chunked messages, request the message header query and see if you find different chunk contexts.
+
+==== Pulling chunked messages from the feed
+
+Chunked messages can be pulled like any other message type. make sure to request all chunks at once, so that you can make sure that the message can be rebuild successfully before confirming chunks, which would delete them from the feed.
+
+==== Merging all chunks
+
+Chunked messages are each Base64 encoded, so they need to be Base64 decoded each for itself before the resulting binary data can be merged. 
+
+
+== Call for message deletion
+
+=== Definition
+
+An app instance can delete message from its feed if it does not want to consume them. Therefore, it sends a list of message IDs or a validity period or a list of senders to the inbox.
+
+=== Command
+
+[cols=",",]
+|==============================================================
+|Command |dke:feed_delete
+|Protobuf Schema |agrirouter.feed.request.MessageQuery
+|typeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
+|==============================================================
+
+See <<Message Query and Filtering>> for parameters and Filtering.
+
+=== Result
+
+[cols=",",]
+|=====================================
+|ResultCode |ACK_WITH_MESSAGE
+|Protobuf Schema |message
+|typeURL |"agrirouter.commons.Messages"
+|=====================================
+
+In case of success, you receive VAL_000209 and a list of MessageIDs that could be confirmed.
+
+=== Errors
+
+If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see xref:../error-codes.adoc[the error list].
+
+== Call for message list confirmation
+
+To make sure that no message gets lost due to e.g. a loss of internet connection while delivering a message, the app instance has to confirm the receival of every message.
+
+=== Definition
+
+Once a message was downloaded from the outbox, the Client has to confirm that it properly received this message/those messages.
+
+[NOTE]
+====
+When a message is confirmed, it will be deleted from the feed.
+As long as it is not confirmed, it will be delivered in a FeedRequest or FeedHeaderRequest again if there is no specific filter to avoid this. 
+Messages shall always be confirmed to avoid Emails to customers about old messages in the endpoints feed.
+The old behavior, where a message was delivered over and over again with a FeedMessageRequest, even though it was not specifically requested, was removed with the introduction of push notifications.
+====
+
+=== Command
+
+[cols=",",]
+|================================================================
+|Command |dke:feed_confirm
+|Protobuf Schema |agrirouter.feed.request.MessageConfirm
+|typeURL |types.agrirouter.com/agrirouter.feed.request.MessageConfirm
+|================================================================
+
+MessageConfirm is simply an array of message IDs.
+
+=== Result
+
+[cols=",",]
+|=====================================
+|ResultCode |ACK_WITH_MESSAGE
+|Protobuf Schema |message
+|typeURL |"agrirouter.commons.Messages"
+|=====================================
+
+In case of success, you receive VAL_000209 and a list of MessageIDs that could be confirmed.
+
+=== Errors
+
+If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see the error list.

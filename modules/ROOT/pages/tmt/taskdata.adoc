@@ -1,0 +1,24 @@
+= iso:11783:-10:taskdata:zip - TaskData
+:imagesdir: 
+
+== Definition
+
+This format is used to exchange a TaskData.zip Files. It can forward the binary Zip-File-Content, metadata like the filename can be forwarded using the metadata element in the request.
+
+== Command
+
+[cols=",",]
+|===================================
+|Command |iso:11783:-10:taskdata:zip
+|Protobuf Schema |-
+|TypeURL |""
+|===================================
+
+== Format
+
+The zip file data has to be transferred in a Base64 representation of its binary data. If the (base64 encoded) file size exceeds the maximum size of a message, it has to be chunked. Each chunk needs to be a valid base64 string, which requires base64 encoding **after** splitting the binary data into chunks.
+
+[NOTE]
+====
+The base64-encoding of the binary chunk/file data is not the same as the base64 encoding of the message. It is an additional step!
+====

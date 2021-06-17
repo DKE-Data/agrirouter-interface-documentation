@@ -1,0 +1,39 @@
+:imagesdir: _images/
+
+= General information
+
+== What is the agrirouter?
+
+The agrirouter is a cloud solution that allows farmers and contractors to transfer data between farming machinery from several manufacturers and several farming applications from different application providers. It is also possible to exchange data between different farming applications. With central maintenance of data routing between endpoints, there is no need to configure network connections between all data sources and targets on each machine/ or in each application.
+
+.agrirouter Connectivity-Platform
+image::ig1/image1.jpeg[agrirouter Connectivity-Platform,642,361]
+
+
+== Advantages for end users
+
+Users can configure data transfer permissions centrally on the agrirouter Connectivity-Platform, to control what data can be exchanged between which endpoints. Every end user has his own account, where he can organize the data exchange between all of his endpoints. Data can be published on the agrirouter Connectivity-Platform and routed to interested and allowed endpoints. Other users accounts can be connected as endpoints to a users agrirouter account.
+
+The agrirouter Connectivity-Platform provides a common cross-vendor data exchange mechanism and protocol to exchange several common message formats, which can be implemented by different machine manufacturers and application providers. Examples for the common message formats are ISOXML, images and videos.
+A full list of Message Types can be found xref:./tmt/overview.adoc[here].
+
+The transmission and evaluation of live telemetry data is getting more and more important. 
+With the agrirouter Connectivity-Platform, machines can send telemetry data to the agrirouter, where data is automatically distributed to several applications, based on permissions and configuration. 
+For live telemetry data, the agrirouter routes the content of the messages according to the user-defined and context based permissions.
+
+This way it can be achieved that one application gets only application rate data, for example, while another one gets only machine-related data such as fuel consumption.
+
+Technically, the agrirouter Connectivity-Platform is a cloud system, which provides the messaging service and a web site with self-services for the different user types.
+
+When the recipient of a message is offline, the message is buffered on the agrirouter until the recipient is online again. However, the message is not buffered forever. After a maximum buffer time, the buffered messages are removed from the buffer even if they are not yet delivered.
+
+The agrirouter Connectivity-Platform stores additional data needed for rights management and command processing. This includes the list of endpoints attached to agrirouter account, and the technical device description of the connected agricultural machines. This information is needed for message routing. In addition, the agrirouter stores usage statistics data needed for billing.
+
+== Advantage for App-, CU- and Telemetry providers
+
+As provider of an application that could be connected to the agrirouter, you save a lot of time implementing and maintaining several interfaces to different endpoints of different brands.
+
+The more providers are using the agrirouter solution, the better it is. With more and more different data providers entering the agrirouter, it becomes much easier to implement new data formats.
+
+The compatibility with agrirouter and the usage of the market place gives your product an additional marketing aspect.
+

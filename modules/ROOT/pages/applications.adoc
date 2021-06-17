@@ -1,0 +1,145 @@
+= Applications
+:imagesdir: _images/
+
+
+== Types of applications
+
+Applications are software products that have implemented an interface to the agrirouter. There are 3 Types of possible applications:
+
+* xref:ecosystem.adoc#_communication_units[Communication Units]
+* xref:ecosystem.adoc#_farming_software[Farming Software]
+* xref:ecosystem.adoc#_telemetry_platform_and_virtual_cus[Telemetry Platforms and virtual CUs]
+
+
+== Selecting the application type
+
+It’s not always obvious, to which category a new application belongs. To simplify the decision, DKE advises the following decision tree:
+
+.Decision Tree: What type of application do I create?
+image::general/decisiontree_apptype.png[Decision Tree: What type of application do I create?,619,366]
+
+For more information on the different types of applications, take a look at the xref:./ecosystem.adoc[ecosystem].
+
+== Register Application
+
+Applications must be certified before they can be provided to the public.
+
+After creating an agrirouter developer account in quality assurance environment, it is possible to register a communication unit, application or telemetry platform.
+
+.agrirouter endpoint software management
+image::ig1/image5.png[agrirouter endpoint software management,642,364]
+
+
+
+The following information should be available to create a communication unit, application or telemetry platform:
+
+[cols=",,",options="header",]
+|===============================================================================================================================================================================================
+|# |Description |Remarks
+|1 |Name |Short name of application
+|2 |Brand |Your company or product brand
+|3 |Type |farming software, communication unit (CU) or telemetry platform
+|4 |Support URL |Your company or product support URL for end user
+|5 |Description |Descriptive text, including main features, supported message in human readable format, required DDIs
+|6 |Provider or product logo a|
+The logo will be visible to end users and should clearly identify your company or product.
+
+The logo must comply with the following rules:
+
+• Allowed formats: .png, .svg or .gif
+
+• Maximum size: 512KB
+
+• Must have a transparent background
+
+|7 |Certification version a|
+Purpose of this field is to differentiate multiple versions of the application; for each new version with new capabilities, a new certification version must be created.
+
+Version Number of the certification: (Integer (!) version Id) this is a version that requires a DKE certification (typically because the capabilities have changed compared to previous version)
+
+|8 |Technical message types: |Technical message types the endpoint can send and receive.
+|===============================================================================================================================================================================================
+[NOTE]
+====
+* The applicationCertificationVersion is not the software Version, but just an internal identifier for the DKE certification.
+
+* An Application can also be the software part of a CU. see xref:./glossary.adoc[Glossary].
+====
+
+
+All required steps are available in Endpoint Software Management in the section agrirouter for developers (1) in the launch pad:
+
+* List of existing applications (2)
+* Registration of new application (3)
+* Details on application (4)
+* Application versions (5)
+* Creation of new application version (6)
+
+.agrirouter application registration
+image::ig1/image7.png[agrirouter application registration,467,513]
+
+
+
+After a new version has been created, the supported capabilities for this version can be defined. With the button "New", the technical message types supported by this application version can be selected. Finally, the direction (send/receive) of the capabilities must be specified before the version can be submitted.
+
+After submitting, DKE will receive a notification and set the status to _Approved for Testing_ or _Approved_, so that instances of this endpoint can be onboarded. Please also send an email to support@my-agrirouter.com, once you created a new software version that shall be approved for testing.
+
+.agrirouter warning
+image::ig1/image8.png[agrirouter warning,391,126]
+
+Once the request has been submitted by the application developer (the status of the certification request changes to __submitted__),
+
+* it can no longer be changed by the application developer
+* the agrirouter shall create a unique certification version ID
+* both IDs shall be displayed in the detail view of the certification request
+
+== Application certification
+
+Every application (communication unit, farming software or telemetry platform) has to be certified by the DKE or a trusted partner of the DKE. During this certification every application gets a unique certification identifier. This identifier ensures that the certification can only be applied to the single version of the application.
+
+The certification shall disclose name, version information and supported technical message types, in order to allow the agrirouter to check whether the application supports a certain technical message type and to properly display the name of the application as an endpoint in an end-user’s account after registration of an instance of the endpoint.
+
+
+All information on certification can be found xref:./certification.adoc[here].
+
+The certification also ensures that there will be a unique ID for the application which the application can send to the agrirouter in order to allow the agrirouter to look up its capabilities.
+
+The certification allows the agrirouter to check the state of the application with a given ID. The agrirouter needs that to make sure that only certified apps communicate with the productive platform.
+
+.Workflow for application certification; status flow
+image::ig1/image9.png[Workflow for application certification; status flow,469,172]
+
+This certification needs to be done initially once for each application before instances of the application may be registered within end-user accounts.
+
+After the initial certification, each time changes to the capabilities are made in subsequent releases, a new certification is required for the new version of the application.
+
+The app provider has to create a new version in the agrirouter user interface. This new version has the initial status _New_.
+
+Once he selected all the desired capabilities for the new version, he can submit this version and the status changes to _submitted._
+
+DKE initially decides if this version can be certified and sets the status to _Approved for testing_.
+
+An application developer and his listed test customers can now onboard instances of the new application version.
+
+After testing, the app provider can certify his app to set it to _approved_. Now everyone can onboard instances of the app.
+
+If the app provider decides that an app version is outdated, he can set the status for this app to _Blocked_ and instances of this app will no longer be able to send messages to or receive messages from the agrirouter. If the test fails, the app cannot be approved for testing or an app is finally blocked, the status will be set to _Rejected_.
+
+[IMPORTANT]
+====
+ * For communication it is indispensable that this certification id is transmitted with the onboarding request and the capabilities message. The developer is obliged to store this certification id as well as the application id securely in every delivered application or application instance. The storage has to be encrypted.
+
+ * The agrirouter will not provide functionality to validate that applications correctly handle the exchanged data content. Certification partners only certify the capabilities of an application for implementing the agrirouter communication protocol, meeting some requirements. DKE and the agrirouter support team is not allowed to take a look inside the message body.
+====
+
+== Approval of the application certification
+
+For all certification requests in status _submitted_, agrirouter administrators are able to change the status:
+
+* either to rejected, making further processing impossible, or
+* it can be set to _Approved for Testing_ if the certification request was successful.
+
+In status _Approved for Testing_, application developers can xref:./invite-testers.adoc[register farmers’ accounts as test accounts]. If a certification version is in status _Approved for Testing_, instances with this certification version can be registered in these test accounts and an external test can be started. The developers account automatically is an end user account that is a test account. This means that a developer can onboard an endpoint in his account.
+
+Using other accounts is not possible, because the certification version is not yet approved by DKE for public use. When the certification request is in status _Approved for Testing_, the agrirouter administrator can either finally set the status of the request to _Approved_ in case of successful testing or _rejected_ if testing was not successful.
+

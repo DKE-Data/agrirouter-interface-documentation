@@ -1,0 +1,63 @@
+= What is the agrirouter?
+
+:imagesdir: assets/images
+
+image::agrirouter.svg[agrirouter,240]
+
+More information on agrirouter can be found xref:general.adoc[here]
+
+== Basic Concepts
+
+.The agrirouter ecosystem of members
+image::ig1/image10.png[The agrirouter ecosystem of members,642,321]
+
+As a developer it's also important to understand the xref:basic-concepts.adoc[basic concepts]
+
+== Purpose of this documentation
+
+The purpose of this documentation is to create deep knowledge about the third party integration into the agrirouter solution. It shall include all information necessary to develop an integration with the agrirouter interface in an application.
+
+
+== Call for Participation
+
+This documentation is an open source project. We invite everybody to open issues, fork the documentation or create pull requests to fix or extend this documentation.
+
+== Adding your solution to agrirouter
+In general, there are 4 major topics to add your software or hardware to the agrirouter ecosystem.
+
+.Integration process for agrirouter
+image::general/process_all.png[Integration process for agrirouter]
+
+* xref:partner-process/provider-agreement.adoc[Step 1 - Provider Agreement]
+* xref:partner-process/marketplace.adoc[Step 2 - Marketplace]
+* xref:partner-process/integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
+* xref:partner-process/integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
+
+
+== Quicklinks
+For advanced developers, here is a list of quick links for the most common topics
+
+=== Concepts & Definitions:
+
+* xref:basic-concepts.adoc[Basic concepts of agrirouter]
+* xref:glossary.adoc[Glossary]
+* xref:terms.adoc[Terms or "agrirouter in a nutshell"]
+* xref:ids-and-definitions.adoc[Ids and their  correspondance to each other]
+
+=== Lists
+
+* xref:tmt/overview.adoc[List of Technical Message Types]
+* xref:commands/overview.adoc[List of Commands for the agrirouter interface]
+* xref:keys.adoc[The agrirouter keys]
+* xref:error-codes.adoc[Error Codes]
+* xref:integration/environments.adoc[Environments]
+* xref:urls.adoc[Relevant URLs]
+
+=== Tools & Support
+* xref:service-support.adoc[Service & Support]
+* xref:training.adoc[Training]
+* xref:maintenance.adoc[Maintenance of applications]
+
+
+
+

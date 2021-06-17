@@ -1,0 +1,11 @@
+= Training
+:imagesdir: _images/
+
+
+== Workshops and Trainings
+
+The service department of an app provider or DKE Partner can receive training for handling agrirouter issues. Please link:https://my-agrirouter.com/unternehmen/kontakt/[contact us] for further information.
+
+== Materials for end customers
+
+To learn about agrirouter, end customers can take a look at the link:https://ad.my-agrirouter.com[agrirouter Academy] that provides in-depth information to understand agrirouter and its handling.

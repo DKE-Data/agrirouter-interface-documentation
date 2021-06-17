@@ -1,0 +1,238 @@
+= Commands describing the endpoint
+:imagesdir: 
+
+
+This chapter will list all messages to tell the agrirouter, what the endpoint is capable of, who it is and what it wants to receive.
+
+== Capabilities Command
+
+=== Definition
+
+Every endpoint has to report his capabilities of sending and receiving messages after onboarding and when the capabilities change ( e.g. an application functionality is extended by a new module). This is required from agrirouter to know if specific messages can be routed to an endpoint and to show the correct choosable Information Types in the User Interface for routing.
+
+[NOTE]
+====
+agrirouter specific commands are not part of the Capabilities, each application just has to support all of them.
+====
+
+The list of technical message types can include any TechnicalMessageFormat mentioned in 17 Technical Message types.
+
+=== Command
+
+[cols=",",]
+|=====================================================================================
+|Command |dke:capabilities
+|Protobuf Schema |agrirouter.request.payload.endpoint.CapabilitySpecification
+|TypeURL |types.agrirouter.com/agrirouter.request.payload.endpoint.CapabilitySpecification
+|=====================================================================================
+
+Parameters are the following elements:
+
+[cols="1,2,2,4",options="header",]
+|=================================================================================
+|# |Name |Type |Description
+|1 |capabilities |Array of capabilities |The list of capabilities of this endpoint
+|2 |app_certification_id |String |The application ID assigned by agrirouter
+|3 |app_certification_version_id |String |The ID of the apps certification version
+|4 |enable_push_notifications |PushNotification | The activation state of push notifications
+|=================================================================================
+
+==== Capabilities
+
+The technical message type can be a technical message type of DKE or a proprietary message type.
+
+
+
+[cols="1,2,2,4",options="header",]
+|================================================================================
+|# |Name |Type |Description
+|1 |technical_message_type |String |The name of the capability
+|2 |direction |Direction |The message direction that is part of the capabilities
+|================================================================================
+
+Direction can be one of those values:
+
+[cols="1,4",options="header",]
+|=================
+|Value |Direction
+|0 |Send
+|1 |Receive
+|2 |Send & Receive
+|=================
+
+Those are the values of an enumeration, see protobuf files.
+See link:https://github.com/search?q=repo%3ADKE-Data%2Fagrirouter-api-protobuf-definitions+filename%3Acapabilities.proto&type=Code&ref=advsearch&l=&l=[Capabilities.proto]
+
+==== app_certification_id
+
+This is the application ID received when creating the application.
+
+==== app_certification_version_id
+
+This is the certification version ID received when creating the application version.
+
+==== enable_push_notifications
+
+This setting activates or deactivates xref:../integration/push-notification.adoc[push notifications].
+
+Possible values
+[cols=",",]
+|=================================================================================
+|Number| Constant Name
+|0 | DISABLED
+|1 | ENABLED
+|2 | ENABLED_HIGH_FREQUENCY
+|=================================================================================
+
+[IMPORTANT]
+====
+Sending the capabilities command will **delete** any subscription that was made from your application instance. 
+
+It doesn't matter if the capabilities changed, subscriptions are always deleted.
+
+Make sure, you send the subscriptions again after sending the capabilities.
+====
+
+[NOTE]
+====
+In the current release, `Enabled` and `Enabled_HighSpeed` will result in the same behaviour directly delivering a message as a push notification.
+
+In the future, especially when the load of agrirouter grows, enabled message push will lead to a pushing of messages bundled over a specific time frame. When this is implemented and activated, only `Enabled_HighSpeed` will still deliver the messages directly.
+
+It should however only be used if it is absolutely necessary and might have to be renewed after a while to lower the work load of agrirouter as much as possible.
+
+If message pushing is used in your software, please make sure you use enabled message push as long as you don't require a close-to-realtime delivery.
+
+====
+
+=== Result
+
+[cols=",",]
+|=================================================================================
+|ResultCode |ACK
+|Protobuf Schema |agrirouter.response.payload.endpoint.CapabilityResponse
+|typeURL |types.agrirouter.com/agrirouter.response.payload.endpoint.CapabilityResponse
+|=================================================================================
+
+The result is a simple `ACK` or an `ACK_WITH_MESSAGES`.
+
+If the same capabilities message is sent twice and the push notification status is not changed, an `ACK_WITH_MESSAGES` will be returned with a message indicating that the capabilities did not change.
+
+=== Errors & Warnings
+
+If the message was malformed, an `ACK_WITH_FAILURE` will be returned.
+
+=== Example
+[source,json]
+----
+{
+    "capabilities":[
+        {
+            "technicalMessageType":"iso:11783:-10:device_description:protobuf",
+            "direction":0
+        },
+        {
+            "technicalMessageType":"iso:11783:-10:time_log:protobuf",
+            "direction":2
+        },
+    ],
+    "appCertificationId": "aef23ef23-442d-fada-dbde-44e5bcead",
+    "appCertificationVersionId": "233eefaf2-4488-44da-d5d2-55e5dcbad",
+    "enable_push_notifications": "ENABLED"
+}
+----
+
+== Subscription Command
+
+=== Definition
+
+The subscription command is used to subscribe for a list of technical message types. Being subscribed for a technical message type means that your endpoint will receive a message of such TMT, whenever any other endpoint sends such a TMT to "publish" and a routing between the sender and your applications endpoint is given.
+
+[NOTE]
+====
+* Subscriptions can be defined for a specific message type, not for a specific sender.
+* Each new subscription list sent by an endpoint deletes old subscriptions
+
+* Always send all required subscriptions in one Command.
+
+* Sending a new capabilities message will delete all subscriptions
+
+* Always send all capabilities in one capabilities message
+
+* An app instance has to remember its subscription list on it own, there is no way to request this list.
+====
+
+[TIP]
+====
+To avoid mismatches between publishing applications and applications only receiving addressed messages, it is advised to subscribe for any technical message type and DDI, your application shall handle if there are no specific reasons not to do so.
+====
+
+
+The list of technical message types can include any TechnicalMessageFormat mentioned
+xref:../tmt/overview.adoc[ in the list of technical message types].
+
+=== Command
+
+[cols=",",]
+|==========================================================================
+|Command |dke:subscription
+|Protobuf Schema |agrirouter.request.payload.endpoint.Subscription
+|TypeURL |types.agrirouter.com/agrirouter.request.payload.endpoint.Subscription
+|==========================================================================
+
+==== Parameters
+
+[cols="1,3,2,4",options="header",]
+|===========================================================================
+|# |Name |Type |Description
+|1 |technical_message_type |Subscription (Repeated) |A list of subscriptions
+|===========================================================================
+
+It is an array, each entry is of type agrirouter.request.payload.endpoint.MessageTypeSubscriptionItem
+
+[cols="1,3,2,4",options="header",]
+|=====================================================================================================
+|# |Name |Type |Description
+|1 |technical_message_type |String |The technical message type
+|2 |ddis |uint32(repeated) |A list of ddis, only relevant for the EFDI telemetry message type
+|3 |position |bool |Shall the GPS position be delivered? Only relevant for EFDI telemetry message type
+|=====================================================================================================
+
+The DDIs field is only required if the subscription is used for a subscription of Telemetry values. Same applies to Position.
+
+=== Result
+
+[cols=",",]
+|===============================================
+|ResultCode |ACK
+|Protobuf Schema |None; Simply 0 bytes of answer
+|typeURL |""
+|===============================================
+
+In case of success, an Acknowledgment is received.
+
+In case of failure, an Acknowledgment with Message or an Acknowledgment with Failure is received. In both cases, the protobuf format will be agrirouter.commons.messages.
+
+=== Errors
+
+Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors, see the xref:../error-codes.adoc[error list].
+
+
+=== Example
+
+image::ig2/image45.png[,438,174]
+
+== Sending a teamset using device Descriptions
+
+=== Definition
+
+The teamset describes a list of devices attached to the communication unit. The most common devices are agricultural machines connected to the CU as ISO11783-10 TaskControllers. For more information on ISO11783-10, please refer to https://aef-online.org
+
+include::partial$device-description-has-to-be-sent-every-time.adoc[]
+
+[NOTE]
+====
+For the certification it is required to send the device description message multiple times. Therefore, it must either be sent on manual request (request must be performable by the test processing person) or on reconnection/restart of the application.
+====
+
+For the format, please refer to xref:../tmt/efdi.adoc[iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description]

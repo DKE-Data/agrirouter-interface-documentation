@@ -1,0 +1,4 @@
+[IMPORTANT]
+====
+Please note that the device description has to be sent every time before the machine starts sending live telemetry data to ensure that all other endpoints are able to update their formerly received device descriptions and new endpoints get the latest updates as well.
+====

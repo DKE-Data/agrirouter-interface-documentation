@@ -1,0 +1,74 @@
+= MQTT Tests with Paho
+:imagesdir: 
+
+== What is Paho?
+
+Paho is an Eclipse tool to connect to an MQTT broker. Further information on the tool can be found link:https://www.eclipse.org/paho/[at the project page]
+
+
+A description on how to install paho can be found link:https://help.sap.com/viewer/e9e5e6a2fa144c31b5b5d5c144047dec/Cloud/en-US/13db11a65036448ea5194b2a8e922c62.html[here]
+
+== Preconditions
+=== OpenSSL
+To format the certificates, link:https://www.openssl.org/[openssl] is required.
+
+=== Install TrustStore
+
+To communicate with the agrirouter via MQTT two certificates are required. The first certificate is a general certificate to communicate with the server, the second certificate is the one that is client specific.
+
+First, the general certificate need to be added to your systems trust store. Download those certificates following this xref:../keys.adoc[keys page].
+
+To add the certificates to your local trust store:
+
+* First copy the .pem-File(s) to the location of JAVA_HOME\lib\security (your local JRE-installation).
+* Start a console and navigate to JAVA_HOME\lib\security (cmd.exe on windows; **Important**: Admin rights might be required.)
+* Run the following command, where "changeit" should be the keyword of your keystore (default  if you did not change it)
+
+[source,bash]
+----
+keytool -import -alias ca -file eu-qa-ca-cert.pem -keystore cacerts -storepass changeit
+----
+
+This keystore is described in the Paho UI as "Truststore"
+
+==Communication with a specific client
+
+
+== Setup Endpoint in MQTT
+=== Create Keystore
+Onboarding an MQTT endpoint provides a certificate, an MQTT client id and two topics; see xref:../integration/onboarding.adoc[onboarding].
+
+Alternatively, the connection can be setup using a xref:../router-devices.adoc[router device].
+
+The certificate received from onboarding process needs to be formatted to work with PAHO (PAHO only, not needed for most of the other clients):
+
+* Copy the whole certificate field, replace the "\n" with line breaks (\r+\n) and save it to a *.pem file
+* Call the following command from within the folder you stored the *.pem file:
+[source,bash]
+----
+openssl pkcs12 -export -in myCert.pem -inkey myCert.pem -out myCert.jks
+----
+
+
+=== Setup Paho SSL Connection
+
+Open the connection options and enable SSL. Then add the certificate files for truststore (general MQTT Certificates) and keystore (your onboarding results certificate)
+
+.
+image::ig2/image5.png[,800,321]
+
+
+== Setup the connection criteria of Paho:
+Read the connection criteria from the onboarding result and click on connect.
+.Example for an onboarding result
+image::ig2/image6.png[Example for an onboarding result,800,139]
+
+
+.Paho User Interface
+image::ig2/image7.png[Paho UserInterface,800,144]
+
+
+== Basic functions
+
+.Basic Functions in Paho UI
+image::ig2/image8.png[Basic Functions in Paho UI,678,356]
