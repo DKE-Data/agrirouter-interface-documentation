@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "asciidoctor-kroki": "^0.12.0",
+    "unxhr": "^1.2.0"
+  }
+}

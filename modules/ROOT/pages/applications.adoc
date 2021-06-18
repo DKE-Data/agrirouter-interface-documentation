@@ -16,7 +16,32 @@ Applications are software products that have implemented an interface to the agr
 It’s not always obvious, to which category a new application belongs. To simplify the decision, DKE advises the following decision tree:
 
 .Decision Tree: What type of application do I create?
-image::general/decisiontree_apptype.png[Decision Tree: What type of application do I create?,619,366]
+[plantuml,decisiontree_apptype,svg]
+----
+
+start
+:Create Application;
+if (Does the app consume raw\ndata like GPS or machine data?) then (NO)
+    if (Is the app connected\nindirectly, using a\ncloud server?) then (YES)
+        :Telemetry Platform;
+        kill
+    else (NO)
+        :Communication Unit (CU);
+        kill
+    endif
+else (YES)
+    if (Are there telemetry units\nconnected that shall\ncommunicate with the agrirouter?) then (NO)
+        :Farming Software;
+        kill
+    else (YES)
+        :Telemetry Platform;
+        kill
+    endif
+endif
+    
+----
+
+
 
 For more information on the different types of applications, take a look at the xref:./ecosystem.adoc[ecosystem].
 
@@ -107,7 +132,21 @@ The certification also ensures that there will be a unique ID for the applicatio
 The certification allows the agrirouter to check the state of the application with a given ID. The agrirouter needs that to make sure that only certified apps communicate with the productive platform.
 
 .Workflow for application certification; status flow
-image::ig1/image9.png[Workflow for application certification; status flow,469,172]
+[plantuml,decisiontree_application_certification,svg]
+----
+skinparam padding 0
+
+[*] -> New
+New -> Submitted
+Submitted -> Rejected
+state "Approved for testing" as testing
+Submitted -> testing
+testing -> Approved
+Approved -> Blocked
+Blocked -> Approved
+Blocked -> Rejected
+Rejected -> [*]
+----
 
 This certification needs to be done initially once for each application before instances of the application may be registered within end-user accounts.
 
