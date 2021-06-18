@@ -1,0 +1,26 @@
+skinparam activity {
+    StartColor #71b790
+    BorderColor #71b790
+    DiamondBorderColor #71b790
+    BackgroundColor White
+    DiamondBackgroundColor White
+    FontName Roboto,sans-serif
+}
+
+skinparam state {
+    StartColor #71b790
+    EndColor #71b790
+    BorderColor #71b790
+    BackgroundColor White
+    FontName Roboto,sans-serif
+}
+
+skinparam arrow {
+    Color #aaaaaa
+    FontName Roboto,sans-serif
+    MessageAlignment center
+}
+
+skinparam Ranksep 20
+skinparam Padding 10
+skinparam defaultTextAlignment center
