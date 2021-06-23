@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="299.24374mm"
+   height="143.39101mm"
+   viewBox="0 0 299.24374 143.39101"
+   version="1.1"
+   id="svg1924"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="message_path.svg">
+  <defs
+     id="defs1918">
+    <clipPath
+       id="clip0">
+      <rect
+         id="rect2469"
+         height="559"
+         width="1131"
+         y="100"
+         x="48" />
+    </clipPath>
+    <clipPath
+       id="clip1">
+      <rect
+         id="rect2472"
+         height="465"
+         width="465"
+         y="194"
+         x="360" />
+    </clipPath>
+    <clipPath
+       id="clip2">
+      <rect
+         id="rect2475"
+         height="465"
+         width="465"
+         y="194"
+         x="360" />
+    </clipPath>
+    <clipPath
+       id="clip3">
+      <rect
+         id="rect2478"
+         height="465"
+         width="465"
+         y="194"
+         x="360" />
+    </clipPath>
+    <clipPath
+       id="clip0-2">
+      <rect
+         id="rect2713"
+         height="559"
+         width="1131"
+         y="100"
+         x="48" />
+    </clipPath>
+    <clipPath
+       id="clip1-8">
+      <rect
+         id="rect2716"
+         height="465"
+         width="465"
+         y="194"
+         x="360" />
+    </clipPath>
+    <clipPath
+       id="clip2-6">
+      <rect
+         id="rect2719"
+         height="465"
+         width="465"
+         y="194"
+         x="360" />
+    </clipPath>
+    <clipPath
+       id="clip3-4">
+      <rect
+         id="rect2722"
+         height="465"
+         width="465"
+         y="194"
+         x="360" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="872.42856"
+     inkscape:cy="119.09311"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="114"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1921">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(138.22589,-36.952389)">
+    <g
+       id="g2865"
+       transform="matrix(0.26458333,0,0,0.26458333,-150.92589,7.1619596)"
+       clip-path="url(#clip0-2)">
+      <g
+         id="g2737"
+         clip-path="url(#clip1-8)">
+        <g
+           id="g2735"
+           clip-path="url(#clip2-6)">
+          <g
+             id="g2733"
+             clip-path="url(#clip3-4)">
+            <path
+               id="path2727"
+               d="m 791.786,418.804 14.177,14.177 14.176,-14.177 C 816.089,299.314 720.091,202.911 600.601,198.861 l 13.772,13.771 -14.177,14.177 c 103.693,4.456 187.134,87.897 191.59,191.995 z"
+               inkscape:connector-curvature="0"
+               style="fill:#71b790;fill-opacity:0.4" />
+            <path
+               id="path2729"
+               d="m 379.037,404.627 14.177,14.177 c 4.051,-103.693 87.492,-187.134 191.59,-191.59 l 14.177,-14.177 -14.177,-14.176 c -119.085,4.05 -215.488,100.453 -219.538,219.943 z"
+               inkscape:connector-curvature="0"
+               style="fill:#71b790;fill-opacity:0.4" />
+            <path
+               id="path2731"
+               d="m 805.963,448.373 -14.177,-14.177 c -1.62,46.581 -19.848,89.517 -48.202,122.731 L 682.827,449.588 h 13.366 c 33.215,0 60.353,-27.139 60.353,-60.353 0,-33.214 -27.138,-60.353 -60.353,-60.353 h -79.795 c -7.696,0 -14.177,6.481 -14.177,14.177 V 474.701 L 522.426,335.768 c -2.43,-4.455 -7.291,-6.886 -12.152,-6.886 -4.86,0 -9.721,2.836 -12.151,6.886 l -92.352,159.996 c -7.291,-19.037 -11.342,-39.695 -12.152,-61.163 l -14.176,-14.177 -14.177,14.177 c 4.05,119.49 100.048,215.893 219.538,219.943 l -13.772,-13.771 14.177,-14.177 c -70.074,-2.43 -131.237,-41.721 -164.856,-98.833 l 89.921,-155.54 93.973,162.021 c 3.24,5.671 9.721,8.101 15.797,6.481 6.075,-1.621 10.531,-7.291 10.531,-13.772 V 356.831 h 65.213 c 17.823,0 31.999,14.582 31.999,31.999 0,17.417 -14.581,31.999 -31.999,31.999 h -37.67 c -4.86,0 -9.721,2.836 -12.151,6.886 -2.43,4.456 -2.43,9.721 0,14.177 l 76.555,134.882 c -33.215,28.759 -75.745,46.581 -122.326,48.202 l -14.177,14.176 14.177,14.177 c 119.49,-4.05 215.893,-100.048 219.943,-219.538 z"
+               inkscape:connector-curvature="0"
+               style="fill:#71b790;fill-opacity:0.4" />
+          </g>
+        </g>
+      </g>
+      <rect
+         id="rect2739"
+         stroke-miterlimit="8"
+         height="269"
+         width="195"
+         y="288.5"
+         x="299.5"
+         style="fill:none;stroke:#71b790;stroke-width:2.66667008;stroke-miterlimit:8" />
+      <text
+         id="text2743"
+         transform="translate(333.916,313)"
+         font-size="23"
+         font-weight="700"
+         style="font-weight:700;font-size:23px;font-family:Calibri, Calibri_MSFontService, sans-serif">Endpoint<tspan
+   id="tspan2741"
+   y="0"
+   x="90.120003"
+   font-size="23"
+   style="font-size:23px">EP1</tspan>
+</text>
+      <rect
+         id="rect2745"
+         stroke-miterlimit="8"
+         height="38"
+         width="166"
+         y="363.5"
+         x="313.5"
+         style="fill:#71b790;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text2751"
+         transform="translate(323.732,388)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">TMT1 <tspan
+   id="tspan2747"
+   y="0"
+   x="48"
+   font-size="19"
+   style="font-size:19px">to</tspan>
+<tspan
+   id="tspan2749"
+   y="0"
+   x="68.153297"
+   font-size="19"
+   style="font-size:19px">[EP2, EP3]</tspan>
+</text>
+      <rect
+         id="rect2753"
+         stroke-miterlimit="8"
+         height="44"
+         width="137"
+         y="467.5"
+         x="739.5"
+         style="fill:#71b790;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text2759"
+         transform="translate(748.998,495)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">TMT1 <tspan
+   id="tspan2755"
+   y="0"
+   x="48"
+   font-size="19"
+   style="font-size:19px">from</tspan>
+<tspan
+   id="tspan2757"
+   y="0"
+   x="88.699997"
+   font-size="19"
+   style="font-size:19px">EP1</tspan>
+</text>
+      <rect
+         id="rect2761"
+         stroke-miterlimit="8"
+         height="33"
+         width="121"
+         y="426.5"
+         x="552.5"
+         style="fill:#71b790;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text2767"
+         transform="translate(564.312,448)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">TMT1 <tspan
+   id="tspan2763"
+   y="0"
+   x="48"
+   font-size="19"
+   style="font-size:19px">to</tspan>
+<tspan
+   id="tspan2765"
+   y="0"
+   x="68.153297"
+   font-size="19"
+   style="font-size:19px">EP2</tspan>
+</text>
+      <path
+         id="path2769"
+         d="m 479.768,379.847 7.06,0.712 7.018,2.072 6.517,3.192 5.853,4.124 4.958,4.891 3.863,5.558 2.514,5.979 0.721,3.245 0.201,3.015 0.188,2.813 -0.055,-0.389 0.625,2.875 -0.152,-0.478 2.313,5.438 -0.265,-0.479 3.563,5.125 -0.317,-0.376 4.687,4.625 -0.337,-0.281 5.5,3.875 -0.582,-0.311 6.466,2.475 -1.906,4.981 -6.777,-2.594 -5.953,-4.193 -5.02,-4.954 -3.86,-5.553 -2.518,-5.922 -0.721,-3.313 -0.2,-3.009 -0.188,-2.813 0.058,0.402 -0.625,-2.813 0.145,0.455 -2.313,-5.5 0.269,0.489 -3.563,-5.125 0.317,0.376 -4.625,-4.563 0.337,0.282 -5.5,-3.875 0.363,0.215 -6.125,-3 0.418,0.163 -6.563,-1.938 0.488,0.096 -6.813,-0.688 z m 58.645,51.79 13.712,11.488 -17.418,4.077 z"
+         inkscape:connector-curvature="0"
+         style="fill:#a6a6a6" />
+      <path
+         id="path2771"
+         d="m 673.717,439.842 6.35,0.519 6.279,1.603 5.916,2.459 5.295,3.15 4.547,3.869 3.531,4.362 2.317,4.703 0.686,2.669 0.206,2.409 0.188,2.187 -0.079,-0.454 0.562,2.125 -0.178,-0.482 2.062,4.25 -0.339,-0.53 3.187,3.875 -0.331,-0.337 4.187,3.562 -0.364,-0.26 4.937,2.937 -0.58,-0.257 4.493,1.382 -1.567,5.097 -4.798,-1.475 -5.406,-3.216 -4.539,-3.862 -3.54,-4.303 -2.313,-4.767 -0.688,-2.598 -0.207,-2.419 -0.188,-2.187 0.074,0.436 -0.562,-2.187 0.19,0.514 -2.062,-4.188 0.319,0.5 -3.187,-3.938 0.345,0.354 -4.188,-3.563 0.365,0.261 -4.938,-2.938 0.34,0.171 -5.563,-2.313 0.364,0.122 -5.875,-1.5 0.443,0.074 -6.125,-0.5 z m 51.246,37.899 13.85,11.322 -17.368,4.287 z"
+         inkscape:connector-curvature="0"
+         style="fill:#a6a6a6" />
+      <rect
+         id="rect2773"
+         stroke-miterlimit="8"
+         height="100"
+         width="182"
+         y="326.5"
+         x="306.5"
+         style="fill:none;stroke:#71b790;stroke-width:2.66667008;stroke-miterlimit:8;stroke-dasharray:8, 2.66667" />
+      <text
+         id="text2775"
+         transform="translate(375.802,348)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#71b790">Inbox</text>
+      <path
+         id="path2777"
+         d="m 375.622,349.855 h 21 21 v 1 h -21 -21 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd" />
+      <rect
+         id="rect2779"
+         stroke-miterlimit="8"
+         height="100"
+         width="182"
+         y="444.5"
+         x="306.5"
+         style="fill:none;stroke:#000000;stroke-width:2.66667008;stroke-miterlimit:8;stroke-dasharray:8, 2.66667" />
+      <text
+         id="text2781"
+         transform="translate(342.187,466)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif">Feed&amp; Outbox</text>
+      <path
+         id="path2783"
+         d="m 341.787,467.793 h 36.667 36.666 36.667 v 1 H 415.12 378.454 341.787 Z"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+      <rect
+         id="rect2785"
+         stroke-miterlimit="8"
+         height="270"
+         width="169"
+         y="271.5"
+         x="720.5"
+         style="fill:none;stroke:#71b790;stroke-width:2.66667008;stroke-miterlimit:8" />
+      <text
+         id="text2789"
+         transform="translate(742.383,297)"
+         font-size="23"
+         font-weight="700"
+         style="font-weight:700;font-size:23px;font-family:Calibri, Calibri_MSFontService, sans-serif">Endpoint<tspan
+   id="tspan2787"
+   y="0"
+   x="90.120003"
+   font-size="23"
+   style="font-size:23px">EP2</tspan>
+</text>
+      <rect
+         id="rect2791"
+         stroke-miterlimit="8"
+         height="100"
+         width="150"
+         y="309.5"
+         x="733.5"
+         style="fill:none;stroke:#71b790;stroke-width:2.66667008;stroke-miterlimit:8;stroke-dasharray:8, 2.66667" />
+      <text
+         id="text2793"
+         transform="translate(787.178,331)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#71b790">Inbox</text>
+      <path
+         id="path2795"
+         d="m 787.498,333.195 h 21 21 v 1 h -21 -21 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd" />
+      <rect
+         id="rect2797"
+         stroke-miterlimit="8"
+         height="100"
+         width="151"
+         y="427.5"
+         x="733.5"
+         style="fill:none;stroke:#000000;stroke-width:2.66667008;stroke-miterlimit:8;stroke-dasharray:8, 2.66667" />
+      <text
+         id="text2799"
+         transform="translate(753.562,449)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif">Feed&amp; Outbox</text>
+      <path
+         id="path2801"
+         d="m 753.662,451.133 h 27.25 27.25 27.25 27.25 v 1 h -27.25 -27.25 -27.25 -27.25 z"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+      <rect
+         id="rect2803"
+         stroke-miterlimit="8"
+         height="479"
+         width="95"
+         y="169.5"
+         x="48.500099"
+         style="fill:#7f7f7f;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text2805"
+         transform="translate(64.0195,199)"
+         font-size="27"
+         font-weight="400"
+         style="font-weight:400;font-size:27px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">App 1</text>
+      <rect
+         id="rect2807"
+         stroke-miterlimit="8"
+         height="479"
+         width="120"
+         y="169.5"
+         x="1058.5"
+         style="fill:#7f7f7f;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text2809"
+         transform="translate(1086.47,199)"
+         font-size="27"
+         font-weight="400"
+         style="font-weight:400;font-size:27px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">App 2</text>
+      <rect
+         id="rect2811"
+         stroke-miterlimit="8"
+         height="256"
+         width="68"
+         y="288.5"
+         x="57.500099"
+         style="fill:#d9d9d9;stroke:#71b790;stroke-width:2.66667008;stroke-miterlimit:8;stroke-dasharray:8, 2.66667" />
+      <text
+         id="text2813"
+         transform="rotate(-90,293.40595,194.59405)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">App Instance 7</text>
+      <rect
+         id="rect2815"
+         stroke-miterlimit="8"
+         height="257"
+         width="90"
+         y="290.5"
+         x="1074.5"
+         style="fill:#d9d9d9;stroke:#71b790;stroke-width:2.66667008;stroke-miterlimit:8;stroke-dasharray:8, 2.66667" />
+      <text
+         id="text2817"
+         transform="rotate(-90,811.75,-314.75)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">App Instance 12</text>
+      <path
+         id="path2819"
+         stroke-miterlimit="8"
+         d="m 119.5,370 h 167 v -13.5 l 27,27 -27,27 V 397 h -167 z"
+         inkscape:connector-curvature="0"
+         style="fill:#f2f2f2;fill-rule:evenodd;stroke:#000000;stroke-width:2.66667008;stroke-miterlimit:8" />
+      <text
+         id="text2825"
+         transform="translate(140.405,389)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif">Push <tspan
+   id="tspan2821"
+   y="0"
+   x="40.833302"
+   font-size="19"
+   style="font-size:19px">to</tspan>
+<tspan
+   id="tspan2823"
+   y="0"
+   x="60.986698"
+   font-size="19"
+   style="font-size:19px">agrirouter</tspan>
+</text>
+      <path
+         id="path2827"
+         stroke-miterlimit="8"
+         d="M 889.5,468.75 H 1048 V 455.5 l 26.5,26.5 -26.5,26.5 V 495.25 H 889.5 Z"
+         inkscape:connector-curvature="0"
+         style="fill:#f2f2f2;fill-rule:evenodd;stroke:#000000;stroke-width:2.66667008;stroke-miterlimit:8" />
+      <text
+         id="text2851"
+         transform="translate(899.848,487)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif">Pull <tspan
+   id="tspan2829"
+   y="0"
+   x="32.333302"
+   font-size="19"
+   style="font-size:19px">from</tspan>
+<tspan
+   id="tspan2831"
+   y="0"
+   x="73.033302"
+   font-size="19"
+   style="font-size:19px">agrirouter</tspan>
+<tspan
+   id="tspan2833"
+   y="-358"
+   x="-747.43201"
+   font-size="24"
+   style="font-size:24px">1: Send</tspan>
+<tspan
+   id="tspan2835"
+   y="-358"
+   x="-669.43201"
+   font-size="24"
+   style="font-size:24px">to</tspan>
+<tspan
+   id="tspan2837"
+   y="-358"
+   x="-643.49799"
+   font-size="24"
+   style="font-size:24px">agrirouter</tspan>
+<tspan
+   id="tspan2839"
+   y="-358"
+   x="-454.715"
+   font-size="24"
+   style="font-size:24px">2: Route</tspan>
+<tspan
+   id="tspan2841"
+   y="-358"
+   x="-367.46799"
+   font-size="24"
+   style="font-size:24px">through</tspan>
+<tspan
+   id="tspan2843"
+   y="-358"
+   x="-284.021"
+   font-size="24"
+   style="font-size:24px">agrirouter</tspan>
+<tspan
+   id="tspan2845"
+   y="-358"
+   x="-15.2771"
+   font-size="24"
+   style="font-size:24px">3: Call</tspan>
+<tspan
+   id="tspan2847"
+   y="-358"
+   x="49.7229"
+   font-size="24"
+   style="font-size:24px">from</tspan>
+<tspan
+   id="tspan2849"
+   y="-358"
+   x="102.336"
+   font-size="24"
+   style="font-size:24px">agrirouter</tspan>
+</text>
+      <path
+         id="path2853"
+         stroke-miterlimit="8"
+         d="m 575,317 c 0,-14.912 13.431,-27 30,-27 16.569,0 30,12.088 30,27 0,14.912 -13.431,27 -30,27 -16.569,0 -30,-12.088 -30,-27 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-miterlimit:8" />
+      <text
+         id="text2855"
+         transform="translate(598.831,325)"
+         font-size="24"
+         font-weight="700"
+         style="font-weight:700;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">2</text>
+      <path
+         id="path2857"
+         stroke-miterlimit="8"
+         d="m 936,418.5 c 0,-14.636 13.431,-26.5 30,-26.5 16.569,0 30,11.864 30,26.5 0,14.636 -13.431,26.5 -30,26.5 -16.569,0 -30,-11.864 -30,-26.5 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-miterlimit:8" />
+      <text
+         id="text2859"
+         transform="translate(959.742,426)"
+         font-size="24"
+         font-weight="700"
+         style="font-weight:700;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">3</text>
+      <path
+         id="path2861"
+         stroke-miterlimit="8"
+         d="m 206,315.5 c 0,-15.74 13.655,-28.5 30.5,-28.5 16.845,0 30.5,12.76 30.5,28.5 0,15.74 -13.655,28.5 -30.5,28.5 -16.845,0 -30.5,-12.76 -30.5,-28.5 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-miterlimit:8" />
+      <text
+         id="text2863"
+         transform="translate(230.238,323)"
+         font-size="24"
+         font-weight="700"
+         style="font-weight:700;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">1</text>
+    </g>
+  </g>
+</svg>

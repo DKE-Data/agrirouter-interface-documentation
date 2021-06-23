@@ -26,7 +26,7 @@ In general, there are 3 steps:
 The following graph shows the way of a message through the agrirouter:
 
 .Way of a message through agrirouter
-image::ig1/image13.png[Way of a message through agrirouter,634,314]
+image::general/message_path.svg[Path of a message through agrirouter,634,314]
 
 
 
@@ -57,7 +57,7 @@ After onboarding, every endpoint can send commands to the agrirouter inbox. agri
 
 The feed is the time limited storage for messages in each endpoint.
 
-All messages in agrirouter Connectivity-Platform have a retention time of maximum 4 weeks in total before they are deleted. The end-user will be informed about a possible data loss after 3 weeks, so that he has time to react.
+All messages in agrirouter connectivity platform have a retention time of maximum 4 weeks in total before they are deleted. The end-user will be informed about a possible data loss after 3 weeks, so that he has time to react.
 After an application instance received and confirmed the receipt, the message will be deleted from the agrirouter feed storage.
 
 Every registered endpoint can request the list of messages available in his feed and request specific messages. agrirouter forwards those requested messages to the outbox, delivery to the endpoint depends on the protocol.

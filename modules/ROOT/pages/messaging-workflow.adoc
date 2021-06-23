@@ -7,7 +7,10 @@
 A communication with agrirouter requires several, partly parallel actions to take. The following Figure shows one possible workflow.
 
 .General messaging workflow
-image::ig1/image22.png[General messaging workflow,609,726]
+[plantuml,decisiontree_messaging_workflow,svg]
+----
+include::example$messaging_workflow.puml[]
+----
 
 [NOTE]
 ====
