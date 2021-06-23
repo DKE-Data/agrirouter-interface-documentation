@@ -6,7 +6,7 @@
 The agrirouter ecosystem and the members of it are described in the chapter xref:./ecosystem.adoc[ecosystem].
 
 .The agrirouter ecosystem of members
-image::ig1/image10.png[The agrirouter ecosystem of members,642,321]
+image::general/ecosystem.svg[The agrirouter ecosystem of members,642,321]
 
 == Applications and App Instances
 
