@@ -6,7 +6,7 @@
 The agrirouter is a central data exchange platform, but to understand its full power, it’s important to understand that the data provided from the agrirouter comes from the applications attached to the agrirouter. The following figure lists different Applications that can be attached to one end-user account.
 
 .The agrirouter ecosystem of members
-image::ig1/image10.png[The agrirouter ecosystem of members,642,321]
+image::general/ecosystem.svg[The agrirouter ecosystem of members,642,321]
 
 == Applications
 
