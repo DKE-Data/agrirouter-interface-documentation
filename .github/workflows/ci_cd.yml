@@ -19,7 +19,7 @@ jobs:
           node-version: "14"
 
       - name: Install dependencies
-        run: yarn add
+        run: yarn install
 
       - name: Validate xrefs
         run: |
