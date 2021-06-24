@@ -11,7 +11,7 @@ The agrirouter provides a mechanism to receive and forward messages according to
 
 [IMPORTANT]
 ====
-This chapter only handles the message exchange on the agrirouter in a general way. This chapter does not handle network layers or TCP-IP protocols. The communication of an application with its endpoint at the agrirouter is described in 10 Application Interaction with agrirouter
+This chapter only handles the message exchange on the agrirouter in a general way. This chapter does not handle network layers or TCP/IP protocols. The communication of an application with its endpoint at the agrirouter is described in 10 Application Interaction with agrirouter
 ====
 
 
