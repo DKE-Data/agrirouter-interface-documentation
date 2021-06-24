@@ -1,4 +1,4 @@
-= IDs IDs IDs and which is which
+= IDs, IDs, IDs and which is which
 :imagesdir: _images/
 
 == Overview

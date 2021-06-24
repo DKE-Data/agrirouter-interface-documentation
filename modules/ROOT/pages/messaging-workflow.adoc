@@ -60,7 +60,7 @@ agrirouter needs some time to process commands and forward messages that are rec
 
 [NOTE]
 ====
-* EFDI Log Telemetry messages can be collected over several seconds and than be sent in one request to the agrirouter.
+* EFDI Log Telemetry messages can be collected over several seconds and then be sent in one request to the agrirouter.
 
 * It is possible to send multiple messages with one request.
 ====
