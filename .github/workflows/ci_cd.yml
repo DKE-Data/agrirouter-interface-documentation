@@ -16,20 +16,16 @@ jobs:
         with:
           node-version: "14"
 
-      - name: Install antora
-        run: |
-          npm install -g @antora/cli @antora/site-generator-default gitlab:antora/xref-validator antora-site-generator-lunr
-
       - name: Install dependencies
-        run: npm install
+        run: yarn add
 
       - name: Validate xrefs
         run: |
-          antora --generator @antora/xref-validator ./antora-playbook.yml
+          yarn validate-xrefs
 
       - name: Run antora
         run: |
-          DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora --generator antora-site-generator-lunr ./antora-playbook.yml
+          yarn build
 
       - name: Install SSH key
         uses: shimataro/ssh-key-action@v2
