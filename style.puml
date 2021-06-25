@@ -21,6 +21,16 @@ skinparam arrow {
     MessageAlignment center
 }
 
+skinparam sequence {
+    BoxBackgroundColor White
+    BoxBorderColor #71b790
+    LifeLineBorderColor #71b790
+    DividerBackgroundColor White
+    DividerBorderColor #71b790
+    ParticipantBackgroundColor White
+    ParticipantBorderColor #71b790
+}
+
 skinparam Ranksep 20
 skinparam Padding 10
 skinparam defaultTextAlignment center
