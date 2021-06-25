@@ -27,10 +27,14 @@ skinparam sequence {
     LifeLineBorderColor #71b790
     DividerBackgroundColor White
     DividerBorderColor #71b790
+    DividerFontStyle normal
     ParticipantBackgroundColor White
     ParticipantBorderColor #71b790
+    MessageAlign direction
 }
 
 skinparam Ranksep 20
 skinparam Padding 10
 skinparam defaultTextAlignment center
+
+hide footbox
