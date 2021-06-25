@@ -79,6 +79,16 @@ REST is based on single, request only methods, therefore, the agrirouter cannot 
 Using REST, an app instance just receives an HTTP 200 "OK" Response. The App Instance sends a HTTP Post request over an SSL secured connection.
 
 .Request and Response in HTTP
+[plantuml,http_inbox,svg]
+----
+participant "App Instance using REST" as app
+participant "Inbox" as inbox
+
+app -> inbox : Request Messages
+inbox -> app : Response: Could be processed?
+----
+
+
 image::ig2/image33.png[Request and Response in HTTP,631,212]
 
 
@@ -87,6 +97,17 @@ image::ig2/image33.png[Request and Response in HTTP,631,212]
 Using REST, the communication with the Outbox requires polling:
 
 .REST Communication with the outbox
+[plantuml,http_outbox,svg]
+----
+participant "App Instance using REST" as app
+participant "Outbox" as outbox
+
+app -> outbox : Poll for messages
+outbox -> app : Response with empty message
+app -> outbox : Poll for messages
+outbox -> app : Return messages
+----
+
 image::ig2/image34.png[REST Communication with the outbox,613,145]
 
 Make sure to meet the xref:./messaging-workflow.adoc#request-sending-frequency[request frequency requirements].
