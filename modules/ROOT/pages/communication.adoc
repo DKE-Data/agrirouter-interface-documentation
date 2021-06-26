@@ -81,16 +81,17 @@ Using REST, an app instance just receives an HTTP 200 "OK" Response. The App Ins
 .Request and Response in HTTP
 [plantuml,http_inbox,svg]
 ----
-participant "App Instance using REST" as app
+autonumber "<b>(0)</b>"
+
+participant "App Instance\nusing REST" as app
 participant "Inbox" as inbox
 
 app -> inbox : Request Messages
+autonumber stop
+inbox -> inbox: Command Processing
+autonumber resume
 inbox -> app : Response: Could be processed?
 ----
-
-
-image::ig2/image33.png[Request and Response in HTTP,631,212]
-
 
 ==== Communication with the Outbox
 
@@ -99,16 +100,18 @@ Using REST, the communication with the Outbox requires polling:
 .REST Communication with the outbox
 [plantuml,http_outbox,svg]
 ----
-participant "App Instance using REST" as app
+autonumber "<b>(0)</b>"
+
+participant "App Instance\nusing REST" as app
 participant "Outbox" as outbox
 
-app -> outbox : Poll for messages
-outbox -> app : Response with empty message
+loop while outbox empty
+    app -> outbox : Poll for messages
+    outbox -> app : Response with empty message
+end
 app -> outbox : Poll for messages
 outbox -> app : Return messages
 ----
-
-image::ig2/image34.png[REST Communication with the outbox,613,145]
 
 Make sure to meet the xref:./messaging-workflow.adoc#request-sending-frequency[request frequency requirements].
 
@@ -135,6 +138,23 @@ Additionally, TLS needs to be activated and the TLS certificate can either be th
 Using MQTT, the app instance will publish the request and after a while, the agrirouter will publish the response. Polling is not required.
 
 .Request and Response using MQTT
+[plantuml,http_inbox,svg]
+----
+autonumber "<b>(0)</b>"
+
+participant "App Instance\nusing MQTT" as app
+participant "MQTT\ncommand topic" as command
+participant "MQTT\nmeasure topic" as measure
+participant "agrirouter" as ar
+
+app -> measure : Request Messages
+autonumber stop
+measure -> ar: Request Messages
+ar -> command: Publish Messages
+autonumber resume
+command -> app : Messages
+----
+
 image::ig2/image35.png[Request and Response using MQTT,618,153]
 
 
