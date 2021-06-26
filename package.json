@@ -1,0 +1,21 @@
+{
+  "name": "agrirouter-interface-documentation",
+  "scripts": {
+    "validate-xrefs": "antora --generator @antora/xref-validator ./antora-playbook.yml",
+    "build": "DOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr $(npm bin)/antora --generator antora-site-generator-lunr ./antora-playbook.yml",
+    "build-nosearch": "$(npm bin)/antora --generator antora-site-generator-lunr ./antora-playbook.yml",
+    "generate-images": "node scripts/generate_images.js"
+  },
+  "dependencies": {
+    "@antora/cli": "^2.3.4",
+    "@antora/site-generator-default": "^2.3.4",
+    "@antora/xref-validator": "https://gitlab.com/antora/xref-validator.git",
+    "antora-site-generator-lunr": "^0.6.1",
+    "asciidoctor-kroki": "^0.12.0",
+    "capture-website": "^2.0.2",
+    "cheerio": "^1.0.0-rc.10",
+    "puppeteer": "^10.0.0",
+    "sleep-promise": "^9.1.0",
+    "unxhr": "^1.2.0"
+  }
+}

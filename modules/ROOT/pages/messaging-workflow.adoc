@@ -7,7 +7,10 @@
 A communication with agrirouter requires several, partly parallel actions to take. The following Figure shows one possible workflow.
 
 .General messaging workflow
-image::ig1/image22.png[General messaging workflow,609,726]
+[plantuml,decisiontree_messaging_workflow,svg]
+----
+include::example$messaging_workflow.puml[]
+----
 
 [NOTE]
 ====
@@ -57,7 +60,7 @@ agrirouter needs some time to process commands and forward messages that are rec
 
 [NOTE]
 ====
-* EFDI Log Telemetry messages can be collected over several seconds and than be sent in one request to the agrirouter.
+* EFDI Log Telemetry messages can be collected over several seconds and then be sent in one request to the agrirouter.
 
 * It is possible to send multiple messages with one request.
 ====

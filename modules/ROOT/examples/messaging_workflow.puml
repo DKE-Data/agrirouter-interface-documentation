@@ -1,0 +1,29 @@
+start
+repeat
+if (Already connected?) then (No)
+  :Wait for connection;
+  if (Already onboarded?) then (Yes)
+  else (No)
+    :Execute onboarding process;
+  endif
+else (Yes)
+endif
+if (Teamset new or changed?) then (Yes)
+  :Send capabilities &\nteamset;
+else (No)
+endif
+
+if (Send or Receive?) then (Send)
+  :Send\nmeasurements;
+else (Receive)
+  if (Messages\nknown?) then (No)
+    :Call for\nHeader List;
+    :Poll for list\nin outbox;
+    :Call for deletion of\nunneeded messages;
+  else (Yes)
+  endif
+  :Call for\nmessages;
+  :Poll for messages\nin outbox;
+  :Confirm\nreceiving;
+endif
+repeat while ()

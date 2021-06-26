@@ -31,7 +31,7 @@ Therefore:
 With exception of EFDI telemetry messages (DeviceDescription and live data), agrirouter doesn’t analyse the messages inside the agrirouter request. It just checks the technical message type and the addressing to determine the recipients based on the routings and subscriptions.
 
 .The onion principle for a non-telemetry message
-image::ig2/image31.png[The onion principle for a non-telemetry message,543,313]
+image::general/message_structure_non-telemetry.svg[The onion principle for a non-telemetry message,543,313]
 
 
 An exception are the EFDI telemetry messages.
@@ -47,7 +47,7 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 The live telemetry data is analysed so that filtering for value categories like fuel consumption is possible.
 
 .The onion principle for a telemetry message
-image::ig2/image32.png[The onion principle for a telemetry message,644,371]
+image::general/message_structure_non-telemetry.svg[The onion principle for a telemetry message,644,371]
 
 
 
@@ -57,7 +57,7 @@ Even if a client uses native protobuf for communication instead of JSON, a comma
 ====
 == The protocol layer
 
-The protocol layer describes the basic communication layer. All agrirouter communication is based on a TCP-IP communication.
+The protocol layer describes the basic communication layer. All agrirouter communication is based on a TCP/IP communication.
  When onboarding an endpoint, the developer can choose between REST and MQTT.
 
 === REST
@@ -65,7 +65,7 @@ The protocol layer describes the basic communication layer. All agrirouter commu
 REST is a well-known principle for online APIs. For more information on REST, please see following resources:
 
 * link:https://en.wikipedia.org/wiki/Representational_state_transfer[]
-* link:+https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340+[]
+* link:https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340[]
 
 REST uses HTTP requests that results in an HTTP Response.
 
@@ -79,15 +79,39 @@ REST is based on single, request only methods, therefore, the agrirouter cannot 
 Using REST, an app instance just receives an HTTP 200 "OK" Response. The App Instance sends a HTTP Post request over an SSL secured connection.
 
 .Request and Response in HTTP
-image::ig2/image33.png[Request and Response in HTTP,631,212]
+[plantuml,http_inbox,svg]
+----
+autonumber "<b>(0)</b>"
 
+participant "App Instance\nusing REST" as app
+participant "Inbox" as inbox
+
+app -> inbox : Request Messages
+autonumber stop
+inbox -> inbox: Command Processing
+autonumber resume
+inbox -> app : Response: Could be processed?
+----
 
 ==== Communication with the Outbox
 
 Using REST, the communication with the Outbox requires polling:
 
 .REST Communication with the outbox
-image::ig2/image34.png[REST Communication with the outbox,613,145]
+[plantuml,http_outbox,svg]
+----
+autonumber "<b>(0)</b>"
+
+participant "App Instance\nusing REST" as app
+participant "Outbox" as outbox
+
+loop while outbox empty
+    app -> outbox : Poll for messages
+    outbox -> app : Response with empty message
+end
+app -> outbox : Poll for messages
+outbox -> app : Return messages
+----
 
 Make sure to meet the xref:./messaging-workflow.adoc#request-sending-frequency[request frequency requirements].
 
@@ -99,7 +123,7 @@ MQTT is a subscription based protocol. Therefore, the client can be informed by 
 
 The agrirouter provides an MQTT Broker server side, so, an app instance has to connect to this server with its client.
 
-The agrirouter provides one MQTT Server per Endpoint, so there is no danger or chance to subscribe for messages of another endpoint.
+When not using xref:router-devices.adoc[Router Devices], the agrirouter provides one MQTT Broker per Endpoint, so there is no danger or chance to subscribe for messages of another endpoint.
 
 ==== General setup
 
@@ -114,6 +138,23 @@ Additionally, TLS needs to be activated and the TLS certificate can either be th
 Using MQTT, the app instance will publish the request and after a while, the agrirouter will publish the response. Polling is not required.
 
 .Request and Response using MQTT
+[plantuml,http_inbox,svg]
+----
+autonumber "<b>(0)</b>"
+
+participant "App Instance\nusing MQTT" as app
+participant "MQTT\ncommand topic" as command
+participant "MQTT\nmeasure topic" as measure
+participant "agrirouter" as ar
+
+app -> measure : Request Messages
+autonumber stop
+measure -> ar: Request Messages
+ar -> command: Publish Messages
+autonumber resume
+command -> app : Messages
+----
+
 image::ig2/image35.png[Request and Response using MQTT,618,153]
 
 
@@ -148,7 +189,7 @@ image::general/router-devices1.png[Using router devices vs. not using router dev
 .Using router devices vs. communication using communication units
 image::general/router-devices2.png[Using router devices vs. communication using communication units]
 
-====== Setup of router devices
+===== Setup of router devices
 Router devices can be set up and managed within the agrirouter developer UI
 .Router device management in the agrirouter developer UI
 image::general/router-devices-screen1.png[Router device management in the agrirouter developer UI]
@@ -169,12 +210,11 @@ Both protocols have several advantages and disadvantages. To select the right pr
 |Steps for Call and Result |3 |min. 4; polling
 |=============================================
 
-=== Advise on protocol choice
+=== Advice on protocol choice
 
-Every app provider is free to select his preferred format from the list above.
+Every app provider is free to select their preferred protocol.
 
 DKE however advises to use MQTT using Router Devices for any application that handles multiple endpoints (e.g. Telemetry Platforms, but also Farming Software that is a cloud software and communicates on behalf of multiple accounts) or sends data at a frequency higher than 1 message per minute. 
-
 
 == Abstraction of communication workflows
 

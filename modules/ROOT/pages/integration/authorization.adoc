@@ -62,15 +62,43 @@ image::ig2/image12.png[fuf.me is an alias for localhost,466,181]
 The authentication process works as follows:
 
 .Authorization Workflow
-image::ig2/image13.png[Authorization Workflow,619,376]
+[plantuml,authorization_workflow,svg]
+----
 
+|Application Backend|
+start
+:Create and send\nauthorization link;
+|Browser|
+:User clicks on link;
+:Call agrirouter link;
+|agrirouter Backend|
+:Provides a website\nfor authorization;
+|Browser|
+:Display website;
+if (User clicks\n"Accept") then (Yes)
+    |agrirouter Backend|
+    :Provides URL encoding result;
+else (No)
+    |agrirouter Backend|
+    -[#red]->
+    #tomato:Provides URL encoding error;
+    -[#red]->
+endif
+|Browser|
+:Calls redirect URL\nand forwards\ninformation;
+|Application Backend|
+:Handles result;
 
-To better understand, what happens here, try the following:
+end
+
+----
+
+To better understand what happens here, try the following:
 
 1.  Call https://httpbin.org/get in your browser. You’ll get a JSON view of the get request
 2.  Call https://httpbin.org/get?Param1=Value1&Param2=Value2 in your browser. You’ll get a view of the get request
 
-* https://httpbin.org simply echoes the request that is send to the page. That’s important to understand
+* https://httpbin.org simply echoes the request that is sent to the page. That’s important to understand
 
 [NOTE]
 ====
@@ -142,7 +170,7 @@ agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization
 
 The browser reacts in requesting this redirect URL which performs a GET request at the endpoint of the address.
 
-The following parameters will be delivered in the GET-Queue:
+The following parameters will be delivered in the GET-Query:
 
 [cols="1,2,2,4",options="header",]
 |============================================================================================================
@@ -173,9 +201,9 @@ Before analyzing the result, which is encoded in the *token*, it should be made 
 
 Steps:
 
- * concatenate _*state*_ and _*token*_ from the query
+ * concatenate `state` and `token` from the query
  * create the SHA256 hash of the concatenated string
- * verify the authenticity of the _*signature*_ with the **agrirouter public key** and generated hash
+ * verify the authenticity of the `signature` with the **agrirouter public key** and generated hash
 
 [CAUTION]
 ====
@@ -204,13 +232,14 @@ The result token is a base64 encoded JSON object including the following paramet
 IMPORTANT: The account ID is used for invoicing. Therefore it should be saved with the onboarding reponse together, so the check of the invoice is possible. If the account ID is missing comparing the items on the invoice is not possible, since the invoicing is based on the account ID.
 
 **EXAMPLE**
-
-    {
-    "account": "31c83d5d-c307-42f9-80b1-6fc9324823b8", +
+[source,json]
+----
+{
+    "account": "31c83d5d-c307-42f9-80b1-6fc9324823b8",
     "regcode": "f75bfbd41b",
     "expires": "2018-02-27T10:49:04.901Z"
-    }
-
+}
+----
 
 == Authorization for CUs and non-cloud-software
 

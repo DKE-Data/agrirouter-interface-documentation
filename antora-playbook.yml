@@ -15,3 +15,7 @@ asciidoc:
   attributes:
     idprefix: ""
     idseparator: "-"
+    kroki-fetch-diagram: true
+    kroki-plantuml-include: style.puml
+  extensions:
+    - asciidoctor-kroki
