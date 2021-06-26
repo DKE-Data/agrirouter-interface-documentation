@@ -1,8 +1,6 @@
 name: CI/CD
 
-on:
-  push:
-    branches:
+on: push
 
 jobs:
   build:
@@ -36,6 +34,10 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
 
+      - name: determine target path
+        run: |
+          [[ "$GITHUB_REF" = "refs/heads/main" ]] && (echo "target_path=" >> $GITHUB_ENV) || (echo "target_path=_branches/${GITHUB_REF#refs/heads/}/" >> $GITHUB_ENV); grep target_path $GITHUB_ENV
+
       # very unelegant, but hoster does not support SSH key authentication :-/
       - name: Rsync to Webspace
-        run: sshpass -p ${{secrets.SSH_PASSWORD}} rsync -av --delete build/site/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:/var/www/web25462234/html/docs.my-agrirouter.com
+        run: sshpass -p ${{secrets.SSH_PASSWORD}} rsync -av --exclude _branches --delete build/site/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:/var/www/web25462234/html/docs.my-agrirouter.com/${{ env.target_path }}
