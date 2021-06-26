@@ -133,12 +133,12 @@ This is required to setup an MQTT Connection over SSL.
 
 Additionally, TLS needs to be activated and the TLS certificate can either be the certificate received during xref:./integration/onboarding.adoc[onboarding] or from the xref:./router-devices.adoc[Router Devices].
 
-==== Communication with the Inbox
+==== Communication with the Inbox and Outbox
 
 Using MQTT, the app instance will publish the request and after a while, the agrirouter will publish the response. Polling is not required.
 
 .Request and Response using MQTT
-[plantuml,http_inbox,svg]
+[plantuml,mqtt_inout,svg]
 ----
 autonumber "<b>(0)</b>"
 
@@ -154,15 +154,6 @@ ar -> command: Publish Messages
 autonumber resume
 command -> app : Messages
 ----
-
-image::ig2/image35.png[Request and Response using MQTT,618,153]
-
-
-==== Communication with the Outbox
-
-.Receiving Result from the outbox in MQTT
-image::ig2/image36.png[Receiving Result from the outbox in MQTT,633,151]
-
 
 If there are messages available in the outbox, agrirouter will simply publish them to the MQTT App Instance.
 
