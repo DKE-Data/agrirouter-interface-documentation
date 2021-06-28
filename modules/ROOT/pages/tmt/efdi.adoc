@@ -29,7 +29,7 @@ For information on filtering and assigning machines by their name, see xref:../e
 |==================================================
 |Command |iso:11783:-10:device_description:protobuf
 |Protobuf Schema |EFDI; available at AEF Repository
-|TypeURL |"types.agrirouter.com\efdi.ISO11783_TaskData"
+|TypeURL |types.agrirouter.com\efdi.ISO11783_TaskData
 |==================================================
 
 The teamset message is part of EFDI and therefore currently not available here. It will be available by AEF.
@@ -73,7 +73,7 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 |==================================================
 |Command |iso:11783:-10:time_log:protobuf
 |Protobuf Schema |EFDI; available at AEF Repository
-|TypeURL |"types.agrirouter.com\efdi.TimeLog"
+|TypeURL |types.agrirouter.com\efdi.TimeLog
 |==================================================
 
 == Content of Telemetry messages
