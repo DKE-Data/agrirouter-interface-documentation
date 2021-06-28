@@ -234,7 +234,8 @@ The result includes all information like the HeaderQueryResponse plus the actual
 [cols=",",]
 |===============================================================================
 |ResultCode |ACK_FOR_FEED_MESSAGE
-|Protobuf Schema |types.agrirouter.com/agrirouter.feed.response.MessageQueryResponse
+|Protobuf Schema |agrirouter.feed.response.MessageQueryResponse
+|typeURL |types.agrirouter.com/agrirouter.feed.response.MessageQueryResponse
 |===============================================================================
 
 In general, the result has the following layers

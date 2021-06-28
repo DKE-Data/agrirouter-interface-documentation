@@ -14,7 +14,7 @@ This format is used to exchange PDF documents. It can forward the binary PDF-Con
 |==================
 |Command |img:bmp
 |Protobuf Schema |-
-|TypeURL |""
+|TypeURL |-
 |==================
 
 === Format
