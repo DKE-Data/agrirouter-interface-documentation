@@ -19,7 +19,7 @@ This format is used to report the GPS position of a CU or virtual CU independent
 |==================================================
 |Command |gps:info
 |Protobuf Schema |agrirouter.technicalmessagetype.GPSList
-|TypeURL |"types.agrirouter.com/agrirouter.technicalmessagetype.GPSList"
+|TypeURL |types.agrirouter.com/agrirouter.technicalmessagetype.GPSList
 |==================================================
 
 The corresponding protobuf message can be found here: https://github.com/DKE-Data/agrirouter-tmt-protobuf-definitions
