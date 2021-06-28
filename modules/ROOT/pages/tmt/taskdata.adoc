@@ -11,7 +11,7 @@ This format is used to exchange a TaskData.zip Files. It can forward the binary 
 |===================================
 |Command |iso:11783:-10:taskdata:zip
 |Protobuf Schema |-
-|TypeURL |""
+|TypeURL |-
 |===================================
 
 == Format
