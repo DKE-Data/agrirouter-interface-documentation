@@ -23,7 +23,7 @@ At this point, the same endpoint needs to be re-onboarded so that it can be used
 
 Additionally, if an app instance loses parts of its onboarding information, it can be re-onboarded using the onboarding process.
 
-Also, the endpoint URLs might change. Even though, this is currently not planned, it could be a result of scaling.
+Also, the endpoint URLs might change. Even though this is currently not planned, it could be a result of scaling.
 
 
 
@@ -42,7 +42,7 @@ Capabilities may be sent, but do not have to (these are stored within the agriro
 For the CU re-onboarding only a new TAN is needed. 
 Simply send the same onboarding request again and use the new TAN.
 
-For the farming software and telemetry platform we suggest to calculate the valid time and renew the agrirouter automatically bevor the certificates will be invalid.
+For the farming software and telemetry platform we suggest to calculate the valid time and renew the agrirouter automatically before the certificates will be invalid.
 
 
 

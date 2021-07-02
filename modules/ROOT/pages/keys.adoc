@@ -8,7 +8,7 @@ Within this document, there are several public or private keys mentioned that ar
 [cols=",,",options="header",]
 |=====================================================================================================================================================================================
 |Name |Description |Usage
-|agrirouter public key |A certificate to proof the identity of the agrirouter. Only the public key is available to developers |Verify the signature in the authentication process
+|agrirouter public key |A certificate to prove the identity of the agrirouter. Only the public key is available to developers |Verify the signature in the authentication process
 |Application Key Pair |The key pair that can be provided to or created by the agrirouter when creating a new software. |Create the signature for the onboarding Process
 |Endpoint Certificate |The certificate of an endpoint, used for the encrypted communication with the agrirouter |Standard communication in REST or MQTT; "Everything after onboarding"
 |=====================================================================================================================================================================================
@@ -43,18 +43,6 @@ These are the public keys used by the agrirouter. These are required for example
  -----END PUBLIC KEY-----
 
 |===============================================================
-
-== MQTT communication
-To establish a connection to the agrirouter MQTT broker, there is a certificate required.
-Those can be found here:
-
-[cols=",,",options="header",]
-|===============================================================
-|Area |Environment |Public Key
-|EU | Quality Assurance "QA" | link:../assets/certificates/eu-qa-ca-cert.pem[Download here]
-|EU | Productive | link:../assets/certificates/eu-prod-ca-cert.pem[Download here]|
-|===============================================================
-
 
 == Application keys
 
