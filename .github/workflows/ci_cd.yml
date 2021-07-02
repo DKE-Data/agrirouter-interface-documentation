@@ -47,7 +47,7 @@ jobs:
             TARGET_PATH=_branches/pr/${{ github.event.number }}
           fi
           echo "target_path=/var/www/web25462234/html/docs.my-agrirouter.com/$TARGET_PATH" >> $GITHUB_ENV;
-          echo "target_url=https://docs.my.agrirouter.com/$TARGET_PATH" >> $GITHUB_ENV;
+          echo "target_url=https://docs.my-agrirouter.com/$TARGET_PATH" >> $GITHUB_ENV;
           grep target_path $GITHUB_ENV; 
           grep target_url $GITHUB_ENV;
 
