@@ -1,4 +1,4 @@
-= An advise on development and more
+= An advice on development and more
 
 This chapter describes a possible way of handling the integration with the agrirouter. It is not the only way of doing it, of course. For a valid and well communicated agrirouter integration, you should follow a mixture of business and development decisions:
 

@@ -13,7 +13,7 @@ To perform an agrirouter integration, you will need knowledge to the following t
 ** *Protobuf*: for message packaging (see https://developers.google.com/protocol-buffers/ )
 ** Certificates, signatures and encrypted communication, e.g. using HTTPs
 * *Optional*
-** *secured MQTT* for the communication (see https://mqtt.org)
+** *MQTT over TLS* for the communication (see https://mqtt.org)
 ** *ISO11783* and *EFDI* for telemetry data
 (see https://aef-online.org)
 

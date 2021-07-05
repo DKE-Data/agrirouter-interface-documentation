@@ -14,25 +14,9 @@ To format the certificates, link:https://www.openssl.org/[openssl] is required.
 
 === Install TrustStore
 
-To communicate with the agrirouter via MQTT two certificates are required. The first certificate is a general certificate to communicate with the server, the second certificate is the one that is client specific.
+To communicate with the agrirouter via MQTT two certificates are involved. The first certificate is the server certificate, the second certificate is the one that is client specific.
 
-First, the general certificate need to be added to your systems trust store. Download those certificates following this xref:../keys.adoc[keys page].
-
-To add the certificates to your local trust store:
-
-* First copy the .pem-File(s) to the location of JAVA_HOME\lib\security (your local JRE-installation).
-* Start a console and navigate to JAVA_HOME\lib\security (cmd.exe on windows; **Important**: Admin rights might be required.)
-* Run the following command, where "changeit" should be the keyword of your keystore (default  if you did not change it)
-
-[source,bash]
-----
-keytool -import -alias ca -file eu-qa-ca-cert.pem -keystore cacerts -storepass changeit
-----
-
-This keystore is described in the Paho UI as "Truststore"
-
-==Communication with a specific client
-
+The server certificate is signed by a common public intermediate CA whose root CA is already present in most system and software trust stores.
 
 == Setup Endpoint in MQTT
 === Create Keystore
@@ -52,14 +36,14 @@ openssl pkcs12 -export -in myCert.pem -inkey myCert.pem -out myCert.jks
 
 === Setup Paho SSL Connection
 
-Open the connection options and enable SSL. Then add the certificate files for truststore (general MQTT Certificates) and keystore (your onboarding results certificate)
+Open the connection options and enable SSL. Then add the keystore (your onboarding results certificate).
 
-.
 image::ig2/image5.png[,800,321]
 
 
 == Setup the connection criteria of Paho:
 Read the connection criteria from the onboarding result and click on connect.
+
 .Example for an onboarding result
 image::ig2/image6.png[Example for an onboarding result,800,139]
 

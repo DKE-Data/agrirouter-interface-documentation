@@ -27,6 +27,7 @@ To check the connection properties, click on "Connection Details".
 image::general/router-devices-screen3.png[Router device details]
 
 The certificate for the router device can be downloaded as PEM or P12.
+
 .Download certificate of router device
 image::general/router-devices-screen4.png[Download certificate of router device]
 

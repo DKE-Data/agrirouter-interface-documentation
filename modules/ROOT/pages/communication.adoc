@@ -127,11 +127,12 @@ When not using xref:router-devices.adoc[Router Devices], the agrirouter provides
 
 ==== General setup
 
-An MQTT connection requires 2 types of certificates. On the one hand, there is a MQTT Server Certificate, for which you can find the keys xref:./keys.adoc#MQTT-communication[here].
+The agrirouter MQTT broker is only reachable via MQTT over TLS using client certificates, providing an encrypted communication channel.
+Thus, while establishing an MQTT connection to the agrirouter, two different certificates play a role.
 
-This is required to setup an MQTT Connection over SSL.
+On the one hand, the MQTT broker presents a server certificate during the initial handshake. This certificate is signed by a common public intermediate CA whose root CA should be present in all relevant default CA stores. This certificate should be checked for validity while establishing the connection. Most MQTT libraries provide this functionality out-of-the-box and enabled by default.
 
-Additionally, TLS needs to be activated and the TLS certificate can either be the certificate received during xref:./integration/onboarding.adoc[onboarding] or from the xref:./router-devices.adoc[Router Devices].
+Additionally, TLS needs to be activated and the TLS client certificate can either be the certificate received during xref:./integration/onboarding.adoc[onboarding] of the endpoint or from the xref:./router-devices.adoc[Router Device].
 
 ==== Communication with the Inbox and Outbox
 
