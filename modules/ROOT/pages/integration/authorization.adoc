@@ -215,11 +215,6 @@ You **have to** use the key from xref:../keys.adoc[Certificates and keys]!
 [NOTE]
 ====
 * Many implementations of the verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
-====
-
-[NOTE]
-====
-* Many implementations of the verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
 * Don't forget to url decode `state` and `token` before concatenation. 
 * The `signature` is base64 encoded binary, you need to decode it before using.
 ====
