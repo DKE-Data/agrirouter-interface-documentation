@@ -20,6 +20,17 @@ The message iso:11783:-10:device_description:protobuf is used to understand, whi
 
 This format is used to report devices that are attached to the agrirouter through a CU. These devices including the CU are known as a teamset, having their own teamsetID.
 
+[IMPORTANT]
+====
+The CUs defining the teamset ID have to make sure that they define it  *one-to-one* and, optionally, in a *deterministic* way in regards to the contents of the device_description.
+
+This means that
+
+* every change, even a minor one, in the device_description *has* to lead to a change of the teamset ID (because it will potentially influence the way the respective timelogs have to be decoded) and
+* the same device_description *should* result in the same teamset ID
+
+====
+
 For information on filtering and assigning machines by their name, see xref:../ecosystem.adoc[ecosystem].
 
 
