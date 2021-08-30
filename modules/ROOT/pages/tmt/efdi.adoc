@@ -29,6 +29,16 @@ This means that
 * every change, even a minor one, in the device_description *has* to lead to a change of the teamset ID (because it will potentially influence the way the respective timelogs have to be decoded) and
 * the same device_description *should* result in the same teamset ID
 
+The teamset ID has to change, for example, when
+
+* it is determined by different CUs, even when the same machines are connected
+* another machine is being connected
+* the device description/DDOP of any machine changes for any reason (software update, configuration change...)
+* the order in which a TaskController added machines changes; the following two cases have to produce different teamset IDs:
+** Machine A gets assigned DET-1, Machine B gets assigend DET-2
+** Machine B gets assigend DET-1, Machine A gets assigend DET-1
+
+
 ====
 
 For information on filtering and assigning machines by their name, see xref:../ecosystem.adoc[ecosystem].
