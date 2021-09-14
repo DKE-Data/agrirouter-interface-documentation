@@ -83,10 +83,6 @@ The Field status shall indicate if a device is on a field, on the road or off-ro
 FS_UNKNOWN should be the default value if there is no other status known for sure.
 ====
 
-=== Format
-
-The `gps:info` has **NOT** to be formatted to a Base64 encoding! It must be sent binary with a technical message type `gps:info` set.
-
 === Result
 
 The result indicates if there was a recipient for the message.
