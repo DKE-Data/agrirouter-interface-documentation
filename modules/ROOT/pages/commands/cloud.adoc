@@ -92,14 +92,14 @@ This command removes a virtual CU from the endpoint list of the users account.
 ====
 Removing the endpoint leads to a dump of all data in the in- or outbox, subscription list and feed of this endpoint.
 
-*Your customers data will be lost!*
+*Your customer's data will be lost!*
 
 Do not remove an endpoint, just because it is currently offline!
 ====
 
 [NOTE]
 ====
-This command is send by the telemetry platform itself, NOT by the Virtual CU that shall be offboarded. Therefore, the sensorAlternateId has to be the Id of the telemetry platform.
+This command is sent by the telemetry platform itself, NOT by the Virtual CU that shall be offboarded. Therefore, the sensorAlternateId has to be the Id of the telemetry platform.
 ====
 
 
