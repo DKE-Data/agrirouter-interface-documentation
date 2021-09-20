@@ -27,7 +27,7 @@ image::general/message-push.png[Receiving messages with push notifications]
 Messages in the outbox persist for a short time (for CUs, you can assume 2 hours, for MQTT its up to 3 days). If an app instance was not connected to agrirouter for a while, the messages will be deleted from the outbox, however, they persist in the message feed.
 
 
-Every app instance should therefore check its feed in a periodic manor.
+Every app instance should therefore check its feed in a periodic manner.
 For HTTP REST clients, this should be at least every 4 hours, for MQTT clients, this should be done at least every 3 days.
 ====
 
