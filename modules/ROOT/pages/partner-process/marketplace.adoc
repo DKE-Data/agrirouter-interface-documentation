@@ -5,13 +5,22 @@
 
 At https://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the agricultural software and telemetry connections provider to present their own solution, including a short and long description of the main functions, in which countries this solution is offered and in which language, which data formats can be exchanged via agrirouter as well as contact data to the provider itself. In this way, an interested farmer or contractor gets an initial overview of the solutions that can exchange data in combination with the agrirouter.
 
-The agricultural software and telemetry connections provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
+The agricultural software and telemetry connections provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace.
 
-.my-agrirouter.com Marketplace
+[IMPORTANT]
+====
+agrirouter Marketplace is for the purpose of information for interested farmers or contractors only. DKE Data neither advises nor recommends the use of any of the listed solutions.
+====
+
+Examples of DKE partners are available for agricultural software at https://my-agrirouter.com/en/marketplace/apps/.
+
+. Marketplace examples for agricultural software
 image::ig1/marketplace_agricultural_software.png[my-agrirouter.com Marketplace,633,307]
 
-Some examples of DKE partners are available for agricultural software at https://my-agrirouter.com/en/marketplace/apps/ .
-And some additinal examples of DKE partners are available for telemetry connections at https://my-agrirouter.com/en/marketplace/telemetryconnection/ .
+Examples of DKE partners are available for telemetry connections at https://my-agrirouter.com/en/marketplace/telemetryconnection/.
+
+. Marketplace examples for telemetry connections
+image::ig1/marketplace_telemetry_connections.png[my-agrirouter.com Marketplace,633,307]
 
 == General process
 image::general/process_marketplace_v2.png[]
