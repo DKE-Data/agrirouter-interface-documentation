@@ -24,7 +24,7 @@ Examples of DKE partners are available for telemetry connections at https://my-a
 image::ig1/marketplace_telemetry_connections.png[telemetry connections,633,307]
 
 == General process
-.Create Marketplace content
+.Create agrirouter Marketplace content process
 image::general/process_marketplace_v2.png[]
 
 This process can be performed in parallel to the xref:partner-process/integration-qa.adoc[integration process in QA].
