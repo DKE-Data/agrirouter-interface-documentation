@@ -33,6 +33,9 @@ This process can be performed in parallel to the xref:partner-process/integratio
 
 To setup the entry in the marketplace, the agricultural software and telemetry connections provider can create an account at https://my-agrirouter.com/en/interner-bereich/my-agrirouter/registration/.
 
+.Marketplace partner login view
+image::ig1/marketplace_login.png[partner login view,633,307]
+
 == 2.2 Create Solution in the Marketplace
 
 
