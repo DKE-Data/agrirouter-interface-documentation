@@ -3,24 +3,25 @@
 
 == What is the agrirouter Marketplace?
 
-At https://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the application or hardware provider to present their own apps, functions, modules or hardware solutions.
+At https://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the agricultural software and telemetry connections provider to present their own solution, including a short and long description of the main functions, in which countries this solution is offered and in which language, which data formats can be exchanged via agrirouter as well as contact data to the provider itself. In this way, an interested farmer or contractor gets an initial overview of the solutions that can exchange data in combination with the agrirouter.
 
-Parallel to the certification, application or hardware provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
+The agricultural software and telemetry connections provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
 
 .my-agrirouter.com Marketplace
 image::ig1/image47.png[my-agrirouter.com Marketplace,633,307]
 
-Some examples of DKE partners are available at https://my-agrirouter.com/en/marketplace/apps/ .
+Some examples of DKE partners are available for agricultural software at https://my-agrirouter.com/en/marketplace/apps/ .
+And some additinal examples of DKE partners are available for telemetry connections at https://my-agrirouter.com/en/marketplace/telemetryconnection/ .
 
 == General process
-image::general/process_marketplace.png[]
+image::general/process_marketplace_v2.png[]
 
 This process can be performed in parallel to the xref:partner-process/integration-qa.adoc[integration process in QA].
 
 
 == 2.1 Create Marketplace account
 
-To setup the entry in the marketplace, app providers can create an account at https://my-agrirouter.com/en/interner-bereich/my-agrirouter/registration/.
+To setup the entry in the marketplace, the agricultural software and telemetry connections provider can create an account at https://my-agrirouter.com/en/interner-bereich/my-agrirouter/registration/.
 
 == 2.2 Create Solution in the Marketplace
 
@@ -29,13 +30,13 @@ To setup the entry in the marketplace, app providers can create an account at ht
 ====
 After initial setup and after every change, the entry has to be approved by the agrirouter support team.
 
-The app provider is responsible for keeping his entry up to date.
+The agricultural software and telemetry connections provider is responsible for keeping his entry up to date.
 ====
 
-In general, the application or hardware provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my-agrirouter/choose-maintance/[here]. Changes are reviewed before activation to avoid changes without certification.
+In general, the agricultural software and telemetry connections provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my-agrirouter/choose-maintance/[here]. Changes are reviewed before activation to avoid changes without certification.
 
 
-The following content is required from *application provider* (Farming Software or Telemetry Software):
+The following content is required from *agricultural software provider* :
 
 .Click to open table
 [%collapsible]
@@ -49,8 +50,8 @@ The following content is required from *application provider* (Farming Software 
 |4 |Reference to App (in case of a module) |1 |-
 |5 |Download link to App Provider |1 |-
 |6 |Keywords |10 |-
-|7 |Short description in 3 basic languages DE, EN, FR |< 150 characters |-
-|8 |Long description in 3 basic languages DE, EN, FR |< 500 characters |-
+|7 |Short description in 4 basic languages DE, EN, FR, RU |< 150 characters |-
+|8 |Long description in 4 basic languages DE, EN, FR, RU |< 500 characters |-
 |8 |App Provider name | |
 |10 |App Provider homepage | |
 |11 |Company Information |1 |Address, Location, Support Information
@@ -84,28 +85,32 @@ Select box:
 Select box:
 
 1.  Task-Data (TaskData)
-2.  Telemetry Data (EFDI)
+2.  Time Log (EFDI)
 3.  Image
-4.  Video
-5.  Manufacture specific data formats
+4.  Movie
+5.  Shape
+6.  Documents
+7.  GPS position
 
 |16 |Message format (send) |1 < n a|
 Select box:
 
 1.  Task-Data (TaskData)
-2.  Telemetry Data (EFDI)
+2.  Time Log (EFDI)
 3.  Image
-4.  Video
-5.  Manufacture specific data formats
+4.  Movie
+5.  Shape
+6.  Documents
+7.  GPS position
 
 |17 |Country selection |1 < n |
-|18 |Languages |1 < n |EN, DE, FR
+|18 |Languages |1 < n |EN, DE, FR, RU
 |19 |App Screenshots |3 < n < 6 |Max. 1400 width pixel Resolution in .jpg or .png
 |20 |App Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
 |=======================================================================================
 ====
 
-The following content is required from *hardware provider* (Communication Units (CUs) or Telemetry Platforms):
+The following content is required from *telemetry connections provider* (Terminals, Communication Units (CUs) or Telemetry Platforms):
 
 .Click to open table
 [%collapsible]
@@ -118,41 +123,22 @@ The following content is required from *hardware provider* (Communication Units 
 |3 |agrirouter certified |1 |-
 |4 |Link to Hardware Provider |1 |-
 |5 |Keywords |10 |-
-|6 |Short description in 3 basic languages DE, EN, FR |< 150 characters |-
-|7 |Long description in 3 basic languages DE, EN, FR |< 500 characters |-
+|6 |Short description in 4 basic languages DE, EN, FR, RU |< 150 characters |-
+|7 |Long description in 4 basic languages DE, EN, FR, RU |< 500 characters |-
 |8 |Hardware Provider name | |
 |8 |Hardware Provider homepage | |
 |10 |Company Information |1 |Address, Location, Support Information
 |11 |Privacy Policy / Terms of use Link |1 |
-|12 |Compatible with manufacturer |1 < n a|
-Select box:
-
-1.  https://www.agcocorp.com/[AGCO]
-2.  https://www.amazone.net/default2009.asp?for_lang=1[AMAZONE]
-3.  https://www.exel-industries.com/[EXEL Industries]
-4.  https://www.grimme.com/[GRIMME]
-5.  https://www.horsch.com/[HORSCH]
-6.  https://landmaschinen.krone.de/[KRONE]
-7.  https://www.kuhn.com/[KUHN]
-8.  https://lemken.com/[LEMKEN]
-9.  https://www.poettinger.at/en_in[PÖTTINGER]
-10. https://rauch.de/[RAUCH]
-11. https://www.sdfgroup.com/[SDF]
-12. CLAAS
-13. John Deere
-14. Kubota
-15. https://www.cnhindustrial.com[CNH Industrial]
-
-|13 |Construction year |1 < n a|
+|12 |Construction year |1 < n a|
 Select box:
 from 2000 to 2020 (one-year steps)
 
-|14 |Model Type |1 a|
+|13 |Model Type |1 a|
 
 Manufacturer model type (depending of 12 and 13 selection criteria) …
 
 
-|15 |Supported interfaces |1 < n a|
+|14 |Supported interfaces |1 < n a|
 Select box:
 
 1.  ISOBUS-INCAB
@@ -160,7 +146,7 @@ Select box:
 3.  CAN-BUS
 4.  None
 
-|16 |Power supply |1 < n a|
+|15 |Power supply |1 < n a|
 Select box:
 
 1.  12V
@@ -168,12 +154,12 @@ Select box:
 3.  Battery
 4.  220V
 
-|17 |GPS position |1 |Yes / No / External
-|18 |Mobile communication |1 |Yes / No / External
-|19 |SIM card from hardware provider |1 |Yes / No
-|20 |WIFI communication |1 |Yes / No
-|21 |Hotspot functionality |1 |Yes / No
-|22 |Input possibility for entering the agrirouter registration code | a|
+|16 |GPS position |1 |Yes / No / External
+|17 |Mobile communication |1 |Yes / No / External
+|18 |SIM card from hardware provider |1 |Yes / No
+|19 |WIFI communication |1 |Yes / No
+|20 |Hotspot functionality |1 |Yes / No
+|21 |Input possibility for entering the agrirouter registration code | a|
 Select box:
 
 1.  ISOBUS-Terminal
@@ -182,29 +168,33 @@ Select box:
 4.  Website
 5.  Other
 
-|23 |Possibility to select different End user profiles |1 a|
+|22 |Possibility to select different End user profiles |1 a|
 Yes / No
 
 (Telemetry box can be used with several agrirouter accounts / only one end user profile can be active at a time)
 
-|24 |Can transmit Machine information |1 |Yes / No
-|25 |Message format (receive) |1 < n a|
+|23 |Can transmit Machine information |1 |Yes / No
+|24 |Message format (receive) |1 < n a|
 Select box:
 
-1.  Task Data (TaskData)
-2.  Telemetry Data (EFDI)
+1.  Task-Data (TaskData)
+2.  Time Log (EFDI)
 3.  Image
-4.  Video
-5.  Manufacture specific data formats
+4.  Movie
+5.  Shape
+6.  Documents
+7.  GPS position
 
-|26 |Message format (send) |1 < n a|
+|25 |Message format (send) |1 < n a|
 Select box:
 
-1.  Task Data (TaskData)
-2.  Telemetry Data (EFDI)
+1.  Task-Data (TaskData)
+2.  Time Log (EFDI)
 3.  Image
-4.  Video
-5.  Manufacture specific data formats
+4.  Movie
+5.  Shape
+6.  Documents
+7.  GPS position
 
 |26 |Country selection |1 < n |
 |27 |Languages |1 < n |EN, DE, FR
@@ -215,9 +205,14 @@ Select box:
 
 == 2.3 Select "coming soon" label
 
-If your app is not directly certified, select the "coming soon" label to mark that it is not yet available for end customers.
+If your solution is not directly certified, select the "coming soon" label to mark that it is not yet available for end customers.
 
 After certification is finalized, the app provider may remove the "coming soon". 
+
+[IMPORTANT]
+====
+After the label "coming soon" has been added, the solution should finally complete agrirouter certification within 3 months. 
+====
 
 == 2.4 Approve from support team
 
