@@ -12,15 +12,18 @@ The agricultural software and telemetry connections provider can create a partne
 agrirouter Marketplace is for information for interested farmers or contractors only. DKE Data neither advises nor recommends the use of any of the listed solutions.
 ====
 
+.my-agrirouter.com Marketplace
+image::ig1/image47.png[my-agrirouter.com Marketplace,633,307]
+
 Examples of DKE partners are available for agricultural software at https://my-agrirouter.com/en/marketplace/apps/.
 
 . Marketplace examples for agricultural software
-image::ig1/marketplace_agricultural_software.png[my-agrirouter.com Marketplace,633,307]
+image::ig1/marketplace_agricultural_software.png[agricultural software,633,307]
 
 Examples of DKE partners are available for telemetry connections at https://my-agrirouter.com/en/marketplace/telemetryconnection/.
 
 . Marketplace examples for telemetry connections
-image::ig1/marketplace_telemetry_connections.png[my-agrirouter.com Marketplace,633,307]
+image::ig1/marketplace_telemetry_connections.png[telemetry connections,633,307]
 
 == General process
 image::general/process_marketplace_v2.png[]
