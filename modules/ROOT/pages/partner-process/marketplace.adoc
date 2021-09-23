@@ -8,7 +8,7 @@ At https://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the a
 The agricultural software and telemetry connections provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace (https://my-agrirouter.com/en/marketplace/apps/).
 
 .my-agrirouter.com Marketplace
-image::ig1/image47.png[my-agrirouter.com Marketplace,633,307]
+image::ig1/marketplace_agricultural_software.png[my-agrirouter.com Marketplace,633,307]
 
 Some examples of DKE partners are available for agricultural software at https://my-agrirouter.com/en/marketplace/apps/ .
 And some additinal examples of DKE partners are available for telemetry connections at https://my-agrirouter.com/en/marketplace/telemetryconnection/ .
@@ -38,7 +38,6 @@ In general, the agricultural software and telemetry connections provider is resp
 
 The following content is required from *agricultural software provider* :
 
-.Click to open table
 [%collapsible]
 ====
 [cols="1,4,1,4",options="header",]
@@ -112,7 +111,6 @@ Select box:
 
 The following content is required from *telemetry connections provider* (Terminals, Communication Units (CUs) or Telemetry Platforms):
 
-.Click to open table
 [%collapsible]
 ====
 [cols="1,4,1,4",options="header",]
@@ -197,7 +195,7 @@ Select box:
 7.  GPS position
 
 |26 |Country selection |1 < n |
-|27 |Languages |1 < n |EN, DE, FR
+|27 |Languages |1 < n |EN, DE, FR, RU
 |28 |Product Photos / Screenshots |1 < n < 6 |Max. 1400 width pixel Resolution in .jpg or .png
 |29 |Hardware-Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
 |===============================================================================================================
