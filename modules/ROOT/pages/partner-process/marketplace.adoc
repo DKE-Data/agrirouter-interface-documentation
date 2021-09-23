@@ -212,6 +212,6 @@ After certification is finalized, the app provider may remove the "coming soon".
 After the label "coming soon" has been added, the solution should finally complete agrirouter certification within 3 months. 
 ====
 
-== 2.4 Approve from support team
+== 2.4 Approval from support team
 
 Whenever you change your marketplace entry, the agrirouter support team will review your changes before they become visible in the public marketplace entry. This is done to avoid changes in the capabilities of your software without recertification. This check only applies to the capabilities and the communication interface with agrirouter, not the overall functions of your software/hardware.
