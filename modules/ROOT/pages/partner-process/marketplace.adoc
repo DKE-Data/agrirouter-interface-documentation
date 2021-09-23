@@ -36,8 +36,13 @@ To setup the entry in the marketplace, the agricultural software and telemetry c
 .Marketplace partner login view
 image::ig1/marketplace_login.png[partner login view,633,307]
 
-== 2.2 Create Solution in the Marketplace
+After a partner has created a Marketplace account, an email is automatically sent to agrirouter support team.The agrirouter support team will check the partner registration, after successful verification of partner registration, agrirouter marketplace account will be activated.  After the login, 2 main sections like 1. *account management* and 2. *marketplace management* will be displayed.
 
+In the *account management* section, account changes such as password, email address, company address etc. can be made.
+
+In the *marketplace management* section, agricultural software (apps) and telemetry connections (telemetry boxes) solutions can be created in different languages.
+
+== 2.2 Create Solution in the Marketplace
 
 [IMPORTANT]
 ====
