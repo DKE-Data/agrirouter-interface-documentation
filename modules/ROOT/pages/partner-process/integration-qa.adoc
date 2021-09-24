@@ -23,7 +23,7 @@ There are several development resources which can be found in xref:./development
 * link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial[A video tutorial on the integration process]
 
 == General process of integration in QA
-image::general/process_integration_qa.png[]
+image::general/process_integration_qa_v2.png[]
 
 
 
