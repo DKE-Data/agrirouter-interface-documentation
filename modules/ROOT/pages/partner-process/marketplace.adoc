@@ -121,8 +121,8 @@ Select box:
 6.  Documents
 7.  GPS position
 
-|17 |Country selection |1 < n |
-|18 |Languages |1 < n |EN, DE, FR, RU
+|17 |Country selection |1 < n |In which countries is this solution offered
+|18 |Languages |1 < n |In which languages is this solution available
 |19 |App Screenshots |3 < n < 6 |Max. 1400 width pixel Resolution in .jpg or .png
 |20 |App Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
 |=======================================================================================
@@ -213,8 +213,8 @@ Select box:
 6.  Documents
 7.  GPS position
 
-|26 |Country selection |1 < n |
-|27 |Languages |1 < n |EN, DE, FR, RU
+|26 |Country selection |1 < n |In which countries is this solution offered
+|27 |Languages |1 < n |In which languages is this solution available
 |28 |Product Photos / Screenshots |1 < n < 6 |Max. 1400 width pixel Resolution in .jpg or .png
 |29 |Hardware-Provider Logo |1 |Min. 500x500, max. 1000x1000 pixel Resolution in .jpg or .png
 |===============================================================================================================
