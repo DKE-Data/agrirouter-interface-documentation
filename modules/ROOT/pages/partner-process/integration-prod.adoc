@@ -28,7 +28,7 @@ Please recognize that the certification will be done in the quality assurance en
 ====
 
 
-== 4.4 Approve from support team
+== 4.4 Approval from support team
 When the certification is successfully approved, the app will be set to status _Approved_ .
 
 [NOTE]
@@ -62,7 +62,7 @@ Each agrirouter account has a limited number of endpoints, see xref:./limitation
 
 
 
-== 4.6 Approve for your end customer
+== 4.6 Approval for your end customer
 When you decide that your application is successfully up and running and tested with the production environment, you can take all the steps relevant to publish your software to your customers like
 
 * deploying it on the server
