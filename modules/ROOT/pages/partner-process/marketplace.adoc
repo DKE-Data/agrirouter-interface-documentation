@@ -12,13 +12,13 @@ The agricultural software and telemetry connections provider can create a partne
 agrirouter Marketplace is for information for interested farmers or contractors only. DKE Data neither advises nor recommends the use of any of the listed solutions.
 ====
 
-Examples of DKE partners are available for agricultural software at https://my-agrirouter.com/en/marketplace/apps/.
+Examples of DKE partners for agricultural software are available at https://my-agrirouter.com/en/marketplace/apps/.
 
 .Marketplace examples for agricultural software
 image::ig1/marketplace_agricultural_software.png[agricultural software,633,307]
 
 
-Examples of DKE partners are available for telemetry connections at https://my-agrirouter.com/en/marketplace/telemetryconnection/.
+Examples of DKE partners for telemetry connections are available at https://my-agrirouter.com/en/marketplace/telemetryconnection/.
 
 .Marketplace examples for telemetry connections
 image::ig1/marketplace_telemetry_connections.png[telemetry connections,633,307]
@@ -52,9 +52,14 @@ After initial setup and after every change, the entry has to be approved by the 
 The agricultural software and telemetry connections provider is responsible for keeping his entry up to date.
 ====
 
-In general, the agricultural software and telemetry connections provider is responsible for correctness and for keeping their solution information on the marketplace up to date. The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my-agrirouter/choose-maintance/[here]. Changes are reviewed before activation to avoid changes without certification.
+In general, the Marketplace is a central information platform for app and hardware solutions provided by DKE-Data GmbH & Co. KG, which is offered by third-party providers for data exchange with the agrirouter and has been certified by a third-party company. The contents and functionalities of the respective solution as well as their description in the Marketplace are the responsibility of the respective provider. 
+
+The login to the marketplace can be found link:https://my-agrirouter.com/en/interner-bereich/my-agrirouter/choose-maintance/[here]. Changes are reviewed before activation to avoid changes without certification.
 
 == 2.2.1 Create agricultural software solution
+
+.add new agricultural software solution
+image::ig1/marketplace_add_new_app.png[add_new_app,633,307]
 
 The following content is required from *agricultural software provider* :
 
@@ -130,6 +135,9 @@ Select box:
 ====
 
 == 2.2.2 Create telemetry connection solution
+
+.add new telemetry connection solution
+image::ig1/marketplace_add_new_telem_box.png[add_new_box,633,307]
 
 The following content is required from *telemetry connections provider* (Terminals, Communication Units (CUs) or Telemetry Platforms):
 
