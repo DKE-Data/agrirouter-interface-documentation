@@ -2,32 +2,24 @@
 :imagesdir: _images/
 
 == agrirouter Status
-In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://my-agrirouter.com/support/system-status[Status Page].
+In case you experience unexpected connection issues, also check the availability of agrirouter at the link:https://agrirouter.statuspage.io/[agrirouter system Status Page].
 
-
-
-.Current status of agrirouter productive environment
-image::general/system_status.png[Current status of agrirouter productive environment,586,335]
 
 [IMPORTANT]
 ====
-This status page shows the availability of the productive environment!
+This status page shows the uptime over the past 90 days only of the productive environment!
 ====
 
 == agrirouter System events
 
-Updates, bugfixes and general server issues can require server maintenance every now and then, which might result in connectivity issues for a short time. To avoid unexpected behaviour, those maintenances are reported in advance. A list of events can be seen at link:https://my-agrirouter.com/nc/en/support/system-events/[at the status page].
+Updates, bugfixes and general server issues can require server maintenance every now and then, which might result in connectivity issues for a short time. To avoid unexpected behaviour, those maintenances are reported in advance. A list of events can be seen at link:https://agrirouter.statuspage.io/[agrirouter system Status Page].
 
-.List of agrirouter system events
-image::general/system_events.png[List of agrirouter system events,634,299]
 
 [IMPORTANT]
 ====
 You should click the subscription button to subscribe for system events and receive an email every time, a maintenance is scheduled.
 ====
 
-.Subscribe for agrirouter system events
-image::general/system_events_subscribe.png[Subscribe for agrirouter system events,634,299]
 
 == Limitations
 
