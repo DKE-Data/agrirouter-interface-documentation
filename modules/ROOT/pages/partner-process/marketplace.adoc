@@ -58,6 +58,9 @@ The login to the marketplace can be found link:https://my-agrirouter.com/en/inte
 
 == 2.2.1 Create agricultural software solution
 
+To create a new agricultural software solution, simply click the "add new app" button. 
+After that a web form will open which must be filled in completely according to the tables below.
+
 .add new agricultural software solution
 image::ig1/marketplace_add_new_app.png[add_new_app,633,307]
 
@@ -135,6 +138,9 @@ Select box:
 ====
 
 == 2.2.2 Create telemetry connection solution
+
+To create a new telemetry connection solution, simply click the "add new telemetric box" button. 
+After that a web form will open which must be filled in completely according to the tables below.
 
 .add new telemetry connection solution
 image::ig1/marketplace_add_new_telem_box.png[add_new_box,633,307]
