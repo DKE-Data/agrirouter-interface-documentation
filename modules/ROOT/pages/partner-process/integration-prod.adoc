@@ -5,7 +5,7 @@
 
 Once the development in the Quality Assurance Environment is finished, you can start to prepare your application for the production environment
 
-image::general/process_integration_prod.png[]
+image::general/process_integration_prod_v2.png[]
 
 == 4.1 Create developer account
 
