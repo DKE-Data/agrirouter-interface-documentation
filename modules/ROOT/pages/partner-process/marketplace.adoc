@@ -237,6 +237,27 @@ Select box:
 |===============================================================================================================
 ====
 
+== 2.2.3 Add additional languages
+
+It is very easy to add another language in the agrirouter marketplace.  For this purpose it is only necessary to click on the existing flag with the plus sign of the given language. All entries from the first basic entry are taken over, so that only language-relevant contents have to be adapted.
+
+If the language has not yet been created, the flag with the plus sign is displayed. If a language entry exists, the flag is displayed without the plus sign.
+
+.Add new languages
+image::ig1/marketplace_add_new_app_lang.png[partner login view,633,307]
+
+The same procedure applies to both the agricultural software and telemetry connections.
+
+
+== 2.2.4 Update, review or modify content
+
+After a marketplace content has been created, it is also possible to check the created content directly to see how it will be displayed to the end users. To do this, it is only necessary to click on the eye symbol. 
+
+If a further modification, adjustment or change of the content is required, then the corresponding entry can be edited by clicking on the pencil symbol or the language flag.
+
+.Update, review or modify content
+image::ig1/marketplace_add_new_telem_box_lang.png[partner login view,633,307]
+
 == 2.3 Select "coming soon" label
 
 If your solution is not directly certified, select the "coming soon" label to mark that it is not yet available for end customers.
