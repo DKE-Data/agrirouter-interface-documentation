@@ -34,10 +34,10 @@ This process can be performed in parallel to the xref:partner-process/integratio
 
 To setup the entry in the marketplace, the agricultural software and telemetry connections provider can create an account at https://my-agrirouter.com/en/interner-bereich/my-agrirouter/registration/.
 
+After a partner has created a Marketplace account, an email is automatically sent to agrirouter support team.The agrirouter support team will check the partner registration, after successful verification of partner registration, agrirouter marketplace account will be activated.  After the login, 2 main sections like 1. *account management* and 2. *marketplace management* will be displayed.
+
 .Marketplace partner login view
 image::ig1/marketplace_login.png[partner login view,633,307]
-
-After a partner has created a Marketplace account, an email is automatically sent to agrirouter support team.The agrirouter support team will check the partner registration, after successful verification of partner registration, agrirouter marketplace account will be activated.  After the login, 2 main sections like 1. *account management* and 2. *marketplace management* will be displayed.
 
 In the *account management* section, account changes such as password, email address, company address etc. can be made. Or the entire account can be deleted.
 
