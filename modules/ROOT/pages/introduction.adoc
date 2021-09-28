@@ -58,6 +58,3 @@ For advanced developers, here is a list of quick links for the most common topic
 * xref:training.adoc[Training]
 * xref:maintenance.adoc[Maintenance of applications]
 
-
-
-
