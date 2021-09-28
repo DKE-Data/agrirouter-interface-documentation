@@ -36,7 +36,7 @@ To setup the entry in the marketplace, the agricultural software and telemetry c
 
 After a partner has created a Marketplace account, an email is automatically sent to agrirouter support team.The agrirouter support team will check the partner registration, after successful verification of partner registration, agrirouter marketplace account will be activated.  
 
-After the login, 2 main sections like 1. *account management* and 2. *marketplace management* will be displayed.
+After the login, the two main sections *account management* and *marketplace management* will be displayed.
 
 .Marketplace partner login view
 image::ig1/marketplace_login.png[partner login view,633,307]
@@ -241,7 +241,7 @@ Select box:
 
 == 2.2.3 Add additional languages
 
-It is very easy to add another language in the agrirouter marketplace.  For this purpose it is only necessary to click on the existing flag with the plus sign of the given language. All entries from the first basic entry are taken over, so that only language-relevant contents have to be adapted.
+It is very easy to add another language in the agrirouter marketplace.  For this purpose it is only necessary to click on the respective flag with the plus sign of the given language. All entries from the first basic entry are taken over, so that only language-relevant contents has to be adapted.
 
 If the language has not yet been created, the flag with the plus sign is displayed. If a language entry exists, the flag is displayed without the plus sign.
 
@@ -253,9 +253,9 @@ The same procedure applies to both the agricultural software and telemetry conne
 
 == 2.2.4 Update, review or modify content
 
-After a marketplace content has been created, it is also possible to check the created content directly to see how it will be displayed to the end users. To do this, it is only necessary to click on the eye symbol. 
+After a marketplace entry has been created, it is also possible to check the created content directly to see how it will be displayed to the end users. To do this, it is only necessary to click on the eye icon. 
 
-If a further modification, adjustment or change of the content is required, then the corresponding entry can be edited by clicking on the pencil symbol or the language flag.
+If a further modification, adjustment or change of the content is required, then the corresponding entry can be edited by clicking on the pencil icon or the language flag.
 
 .Update, review or modify content
 image::ig1/marketplace_add_new_telem_box_lang.png[partner login view,633,307]
@@ -280,13 +280,13 @@ After the label "coming soon" has been added, the solution should finally comple
 
 Whenever you change your marketplace entry, the agrirouter support team will review your changes before they become visible in the public marketplace entry. 
 
-The following content will be reviewed especially in detail:
+The following content will be reviewed in detail:
 
-1. entered and complete contents
+1. completeness of contents
 2. links to other websites, whether they work
 3. uploaded images
-4. complete company contact details
-5. complete support information
+4. completeness of company contact details
+5. completeness of support information
 6. supported data formats and corresponding capabilities
 
 In order for agrirouter support team to perform this review, it is very important to activate the "Submit for the final review" checkbox before the final save.
@@ -296,6 +296,6 @@ image::ig1/marketplace_subbmit_for_review.png[partner login view,633,307]
 
 [IMPORTANT]
 ====
-Only if this checkbox is activated the support team gets an automatically message for the final review. 
+Only if this checkbox is activated the support team gets notified about the final review!
 ====
 
