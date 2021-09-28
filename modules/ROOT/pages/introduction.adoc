@@ -26,7 +26,7 @@ This documentation is an open source project. We invite everybody to open issues
 In general, there are 4 major topics to add your software or hardware to the agrirouter ecosystem.
 
 .Integration process for agrirouter
-image::general/process_all.png[Integration process for agrirouter]
+image::general/process_all_v2.png[Integration process for agrirouter]
 
 * xref:partner-process/provider-agreement.adoc[Step 1 - Provider Agreement]
 * xref:partner-process/marketplace.adoc[Step 2 - Marketplace]
