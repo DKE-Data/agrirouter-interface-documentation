@@ -7,6 +7,13 @@ Every application needs to be certified to communicate with the agrirouter. The 
 
 A certification is needed any time the application changes its capabilities or their sending directions, changes the commands or uses a different protocol to communicate with the agrirouter.
 
+Also, if core functionality of the agrirouter integration is being reimplemented for whatever reason, a re-certification is mandatory.
+
+[IMPORTANT]
+=====
+Failure to communicate functional changes and re-certify them can lead to temporary deactivation of the application in case of malfunction!
+=====
+
 [NOTE]
 =====
 For a new certification version capabilities can never be removed. Neither can a sending direction of a capability be removed. It is only allowed to add capabilities or sending directions for a new version to ensure downwards compatibility. The capabilities command however can of course only include a subset which is smaller than in the version before.
