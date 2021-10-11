@@ -7,7 +7,7 @@ Every application needs to be certified to communicate with the agrirouter. The 
 
 A certification is needed any time the application changes its capabilities or their sending directions, changes the commands or uses a different protocol to communicate with the agrirouter.
 
-Also, if core functionality of the agrirouter integration is being reimplemented for whatever reason, a re-certification is mandatory.
+Also, if core functionality of the agrirouter integration is being reimplemented in the certified product for whatever reason, a re-certification is mandatory.
 
 [IMPORTANT]
 =====
