@@ -78,13 +78,8 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 [cols=",",]
 |==================================================
 |Command |iso:11783:-10:time_log:protobuf
-<<<<<<< HEAD
-|Protobuf Schema |EFDI; available at AEF Repository
-|TypeURL |types.agrirouter.com/efdi.TimeLog
-=======
 |Protobuf Schema |agrirouter.technicalmessagetype.Timelog
-|TypeURL |types.agrirouter.com\efdi.TimeLog
->>>>>>> 97bfa99 (remove references to non-available EFDI protos)
+|TypeURL |types.agrirouter.com/efdi.TimeLog
 |==================================================
 
 == Content of Telemetry messages
