@@ -1,22 +1,11 @@
 = EFDI
 :imagesdir: 
 
-
-
-[IMPORTANT]
-====
-The format for telemetry data; EFDI is defined by a subgroup of the AEF. The documentation of this format is currently intellectual property of the AEF. For further information on those message types, please refer to https://aef-online.org .
-
-DKE is currently not allowed to provide the documentation for EFDI.
-
-====
-
 == iso:11783:-10:device_description:protobuf - Teamset/EFDI Device Description
 
 === Definition
 
 The message iso:11783:-10:device_description:protobuf is used to understand, which machine is attached to which CU or Virtual CU and which machine provides which DDI. EFDI Device Descriptions are protobuf encoded, the data structure however is mainly equal to the form of an ISO11783-10 TaskData.
-
 
 This format is used to report devices that are attached to the agrirouter through a CU. These devices including the CU are known as a teamset, having their own teamsetID.
 
@@ -49,17 +38,14 @@ For information on filtering and assigning machines by their name, see xref:../e
 [cols=",",]
 |==================================================
 |Command |iso:11783:-10:device_description:protobuf
-|Protobuf Schema |EFDI; available at AEF Repository
+|Protobuf Schema |agrirouter.technicalmessagetype.ISO11783_TaskData
 |TypeURL |types.agrirouter.com/efdi.ISO11783_TaskData
 |==================================================
 
-The teamset message is part of EFDI and therefore currently not available here. It will be available by AEF.
-
-The AEF protobuf files can be found here: https://github.com/aefev/fmisei-spec/tree/master/proto-v3-grpc .
-
-*Remark*
-
-Access to the AEF repository *for AEF members* can be requested at the AEF Office, see https://aef-online.org
+[NOTE]
+====
+For the case of Device Description, *only* the property device needs to be filled!
+====
 
 === Result
 
@@ -73,8 +59,7 @@ If a CU sends a teamset, applications are able to address messages directly to t
 
 == iso:11783:-10:time_log:protobuf - EFDI TimeLog
 
-The EFDI timelog is comparable to IOSOXML Binary Log data. The format with all its parameters can be received from the AEF repository.
-
+The EFDI timelog is comparable to IOSOXML Binary Log data. 
 
 The Message iso:11783:-10:time_log:protobuf includes a list of live telemetry data. For those live telemetry data, agrirouter is able to select only those DDIs to be forwarded to an endpoint that were selected by the end user when creating routings.
 
@@ -93,8 +78,13 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 [cols=",",]
 |==================================================
 |Command |iso:11783:-10:time_log:protobuf
+<<<<<<< HEAD
 |Protobuf Schema |EFDI; available at AEF Repository
 |TypeURL |types.agrirouter.com/efdi.TimeLog
+=======
+|Protobuf Schema |agrirouter.technicalmessagetype.Timelog
+|TypeURL |types.agrirouter.com\efdi.TimeLog
+>>>>>>> 97bfa99 (remove references to non-available EFDI protos)
 |==================================================
 
 == Content of Telemetry messages
