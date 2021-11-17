@@ -48,9 +48,12 @@ As the payload of a message is defined as an any message, the typeURL has to be 
 
 === Getting the agrirouter protobuf files
 
-Protobuf definitions can be found here: https://github.com/DKE-Data/agrirouter-api-protobuf-definitions
+We provide the protobuf files and some language specific compilations of these definitions on our Github account.
 
-The repository delivers all protobuf files that are owned by the DKE. It could be the case that you need additional protocol buffers like the EFDI telemetry messages definitions for specific message types that cannot be delivered in this github account due to intellectual property rights. You will however find instructions, how to get those protobuf definition files.
+For the definitions relevant to API level communication, look at the project https://github.com/DKE-Data/agrirouter-api-protobuf-definitions[agrirouter-api-protobuf-definitions].
+
+For technical message types that are protobuf encoded, look at the project https://github.com/DKE-Data/agrirouter-tmt-protobuf-definitions[agrirouter-tmt-protobuf-definitions].
+
 
 === Reading Protobuf definitions
 
