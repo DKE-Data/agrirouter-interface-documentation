@@ -109,7 +109,7 @@ The protobuf ChunkComponent can be found in commons/chunk.proto.
 |context_id |String |A unique ID for this chunk. The number shall be equal for each part of the chunk and help the receiving endpoint to Identify the chunk
 |current |int64 |The current index of this chunk within the whole chunk starting with 1
 |total |int64 |The total number of chunks, this message consists of
-|total_size |int64 |The total size of the whole chunk in bytes.
+|total_size |int64 |The total size of the whole message (before any base64 encoding) in bytes.
 |==========================================================================================================================================================
 
 === Preparing and creating chunked messages
