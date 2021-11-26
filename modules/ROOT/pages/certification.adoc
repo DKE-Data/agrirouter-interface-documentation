@@ -152,6 +152,8 @@ a|
 
 |xref:./integration/reonboarding.adoc[Re-onboarding]
 |Always
+
+(if no RouterDevice is used)
 a|
 * The application instance uses the same external Id as it has used for onboarding.
 * New credentials can be provided to communicate with agrirouter.
@@ -159,6 +161,17 @@ a|
 * An application instance can also be re-onboarded with the same id if it was deleted in the agrirouter UI or revoked before.
 * In case of the following errors, an error message is required:
 ** Wrong account: During re-onboarding, the user is logged in with a different agrirouter account than before. This should result in a new endpoint onboarding in a different account.
+
+
+|xref:./router-devices.adoc[Updating RouterDevice]
+| Farming Software
+
+Telemetry Platforms
+
+(If RouterDevice is used)
+a|
+* The app provider needs to demonstrate that he is able to replace the RouterDevice with a new one and that the communication via this new RouterDevice can be continued.
+(A restart of the application is allowed)
 
 
 |xref:./commands/cloud.adoc#onboarding-a-virtual-cu[VCU onboarding]
