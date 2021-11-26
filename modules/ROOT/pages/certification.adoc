@@ -153,7 +153,7 @@ a|
 |xref:./integration/reonboarding.adoc[Re-onboarding]
 |Always
 
-(if no RouterDevice is used)
+(if the application does not use router devices)
 a|
 * The application instance uses the same external Id as it has used for onboarding.
 * New credentials can be provided to communicate with agrirouter.
