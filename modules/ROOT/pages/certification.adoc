@@ -168,7 +168,7 @@ a|
 
 Telemetry Platforms
 
-(If RouterDevice is used)
+(If the application uses router devices)
 a|
 * The app provider needs to demonstrate that he is able to replace the RouterDevice with a new one and that the communication via this new RouterDevice can be continued.
 (A restart of the application is allowed)
