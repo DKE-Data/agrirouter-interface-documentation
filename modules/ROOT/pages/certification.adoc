@@ -170,7 +170,7 @@ Telemetry Platforms
 
 (If the application uses router devices)
 a|
-* The app provider needs to demonstrate that he is able to replace the RouterDevice with a new one and that the communication via this new RouterDevice can be continued.
+* The app provider has to demonstrate that he is able to replace the router device with a new one and that the communication via this new router device can be continued.
 (A restart of the application is allowed)
 
 
