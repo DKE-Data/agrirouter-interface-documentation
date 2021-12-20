@@ -95,9 +95,9 @@ Make sure, you send the subscriptions again after sending the capabilities.
 
 [NOTE]
 ====
-In the current release, `Enabled` and `Enabled_HighSpeed` will result in the same behaviour directly delivering a message as a push notification.
+In the current release, `ENABLED` and `Enabled_ENABLED_HIGH_FREQUENCYHighSpeed` will result in the same behaviour directly delivering a message as a push notification.
 
-In the future, especially when the load of agrirouter grows, enabled message push will lead to a pushing of messages bundled over a specific time frame. When this is implemented and activated, only `Enabled_HighSpeed` will still deliver the messages directly.
+In the future, especially when the load of agrirouter grows, enabled message push will lead to a pushing of messages bundled over a specific time frame. When this is implemented and activated, only `ENABLED_HIGH_FREQUENCY` will still deliver the messages directly.
 
 It should however only be used if it is absolutely necessary and might have to be renewed after a while to lower the work load of agrirouter as much as possible.
 
