@@ -11,7 +11,7 @@ image::ig2/image17.png[General onboarding workflow,568,599]
 
 [NOTE]
 ====
-Before any data flow can happen, the very first command sent by the endpoint has to be the xref:endpoint.html#capabilities-command[Capabilities command].
+Before any data flow can happen, the very first command sent by the endpoint has to be the xref:commands/endpoint.adoc#capabilities-command[Capabilities command].
 ====
 
 
