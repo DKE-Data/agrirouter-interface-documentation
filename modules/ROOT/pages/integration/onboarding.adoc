@@ -9,6 +9,11 @@ The onboarding workflow is needed to onboard app instances and create endpoints 
 .General onboarding workflow
 image::ig2/image17.png[General onboarding workflow,568,599]
 
+[NOTE]
+====
+Before any data flow can happen, the very first command sent by the endpoint has to be the xref:endpoint.html#capabilities-command[Capabilities command].
+====
+
 
 == Workflow for Farming Software and Telemetry Systems
 
