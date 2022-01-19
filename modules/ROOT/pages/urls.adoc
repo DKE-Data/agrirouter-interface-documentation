@@ -30,7 +30,7 @@ On this page you will find a list of URLs and hosts relevant for your work with 
 [cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
-|EU |Quality Assurance | https://my-agrirouter.com/en/registration/
+|EU |Quality Assurance | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/um/register/developer
 |EU |Production |https://goto.my-agrirouter.com/um/register/developer
 |====
 
@@ -41,7 +41,7 @@ On this page you will find a list of URLs and hosts relevant for your work with 
 [cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
-|EU |Quality Assurance | https://datahub-dev.accounts400.ondemand.com
+|EU |Quality Assurance | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/app
 |EU |Production |https://goto.my-agrirouter.com/app
 |====
 
