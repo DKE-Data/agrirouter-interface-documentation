@@ -1,12 +1,12 @@
 = URLs
 
 == Introduction
-On this page you will find a list of URLs relevant for your work with the agrirouter.
+On this page you will find a list of URLs and hosts relevant for your work with the agrirouter.
 
 == Overview site
 
 
-[cols="2,1,5",options="header",]
+[cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
 |EU |Quality Assurance | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/
@@ -16,7 +16,7 @@ On this page you will find a list of URLs relevant for your work with the agriro
 == User Registration
 
 
-[cols="2,1,5",options="header",]
+[cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
 |EU |Quality Assurance | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/um/register/user
@@ -27,7 +27,7 @@ On this page you will find a list of URLs relevant for your work with the agriro
 == Developer Registration
 
 
-[cols="2,1,5",options="header",]
+[cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
 |EU |Quality Assurance | https://my-agrirouter.com/en/registration/
@@ -38,7 +38,7 @@ On this page you will find a list of URLs relevant for your work with the agriro
 == Login
 
 
-[cols="2,1,5",options="header",]
+[cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
 |EU |Quality Assurance | https://datahub-dev.accounts400.ondemand.com
@@ -48,11 +48,24 @@ On this page you will find a list of URLs relevant for your work with the agriro
 
 == Onboarding URL
 
-[cols="2,1,5",options="header",]
+These are the base hosts for onboarding requests:
+
+[cols="1,2,5",options="header",]
 |====
-|Area |Environment |URL
-|EU |Quality Assurance |https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com/
+|Area |Environment |Host
+|EU |Quality Assurance |https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com
 |EU |Production |https://onboard.my-agrirouter.com
+|====
+
+Use the following paths:
+
+[cols="2,2",options="header",]
+|====
+|Step                   |Path
+|Verify                 |/api/v1.0/registration/onboard/verify
+|Secured Onboarding     |/api/v1.0/registration/onboard
+|Unsecured Onboarding   |/api/v1.0/registration/onboard/request
+|Revocation             |/api/v1.0/registration/onboard/revoke
 |====
 
 Sending an onboarding request is described xref:./integration/onboarding.adoc[here].
@@ -61,11 +74,11 @@ Sending an onboarding request is described xref:./integration/onboarding.adoc[he
 == Authorization URL
 
 
-[cols="1,2,4",options="header",]
+[cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
-|EU |Quality Assurance |https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/
-|EU |Productive |https://goto.my-agrirouter.com/
+|EU |Quality Assurance |https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/application/{applicationId}/authorize
+|EU |Production |https://goto.my-agrirouter.com//application/\{applicationId}/authorize
 |====
 
 The description on creating a full authorization URL can be found xref:./integration/authorization.adoc#generating-an-authorization-url[here]
