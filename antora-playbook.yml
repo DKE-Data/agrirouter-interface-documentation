@@ -11,6 +11,11 @@ ui:
     url: https://files.my-agrirouter.com/ui-bundle-release.zip
     snapshot: true
   #supplemental_files: ./supplemental-ui
+antora:
+  extensions:
+    - require: "@antora/lunr-extension"
+      snippet_length: 250
+
 asciidoc:
   attributes:
     idprefix: ""
