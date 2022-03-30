@@ -8,8 +8,6 @@
     "@antora/cli": "3.0.1",
     "@antora/lunr-extension": "^1.0.0-alpha.6",
     "@antora/site-generator-default": "3.0.1",
-    "@antora/xref-validator": "https://gitlab.com/antora/xref-validator.git",
-    "antora-site-generator-lunr": "^0.6.1",
     "asciidoctor-kroki": "^0.12.0",
     "capture-website": "^2.0.2",
     "cheerio": "^1.0.0-rc.10",
