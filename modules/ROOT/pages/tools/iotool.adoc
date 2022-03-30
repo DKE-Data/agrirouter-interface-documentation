@@ -1,0 +1,61 @@
+= IO-Tool
+
+The InOut-Tool or IO-Tool is a developer tool aimed at helping partners test their own implementations by providing an endpoint to communicate with.
+
+It can be accessed at https://io.my-agrirouter.com. To receive an account, please contact xref:../service-support.adoc[our support team].
+
+The IO-Tool has the following features:
+
+ * upload and store files in the IO-Tool
+ * analyze and visualize the contents of ISOXML and EFDI timelogs
+ * connect to agrirouter accounts on either the production or QA environment
+ * send data via the agrirouter to your own application to test receive capabilities
+ * receive data via the agrirouter from your own application to test send capabilities
+ * simulate a telemetry device by emitting data from an uploaded ISOXML or EFDI timelog
+
+== Logging in
+
+When first navigating to https://io.my-agrirouter.com you will be asked for your credentials.
+
+Please note that this is a _different_ set of credentials than your agrirouter developer account.
+
+== Connecting to agrirouter
+
+After you logged in for the first time you will be presented with the settings screen. It is a good idea to change the password on first login.
+
+You can now choose to onboard to 
+* either the production or the QA environment, depending on where you are currently testing your application and
+* using MQTT or HTTP; using MQTT is recommended, unless you want to specifically learn about the behaviour of HTTP connected endpoints
+
+After clicking the appropriate button, you will be redirected to agrirouter and presented with a consent screen, or, if you are not yet logged in, with a login form.
+
+After confirming the connection you will be redirected back to the IO-Tool and the connection will be established.
+
+== Data Storage
+
+You can upload all the files to conduct tests against your own software or any other endpoints you may have onboarded to your agrirouter account.
+
+For ISOXML and Timelogs the IO-Tool provides some additional features.
+
+=== Validation
+
+The IO-Tool can provide 
+
+== Settings
+
+There are several settings available for tuning your test scenario. In most cases, the default settings are ok. But for some specific tests you might want to adjust them.
+
+=== Capabilities
+
+You can choose which capabilities the IO-Tool sends to the agrirouter. After changing the setting and confirmation you will be able to confirm that the capabilties changed when logging into the agrirouter UI and viewing the capabilties of the IO-Tool endpoint.
+
+When changing the Push Notification setting, you will notice that incoming files will not be received automatically, but that you have to hit the respective button in the Data Storage area.
+
+=== Subscription
+
+You can select which message types the IO-Tool subscribes to.
+
+The concept of agrirouter subscriptions is explained in xref:message-exchange.adoc#subscriptions[Concept of message exchange].
+
+You can for example use this to test whether your application handles errors correctly where there is no subscriber to a certain message type.
+

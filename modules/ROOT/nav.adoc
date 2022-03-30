@@ -60,7 +60,7 @@
 ** xref:tmt/video.adoc[Videos]
 
 * Tools
-** xref:tools/arts.adoc[ARTS]
+** xref:tools/iotool.adoc[IO-Tool]
 ** xref:tools/endpoint-recording.adoc[Endpoint Recording]
 ** xref:tools/paho.adoc[PAHO]
 
