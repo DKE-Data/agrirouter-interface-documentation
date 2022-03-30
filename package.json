@@ -1,7 +1,6 @@
 {
   "name": "agrirouter-interface-documentation",
   "scripts": {
-    "validate-xrefs": "antora --generator @antora/xref-validator ./antora-playbook.yml",
     "build": "$(npm bin)/antora ./antora-playbook.yml",
     "generate-images": "node scripts/generate_images.js"
   },

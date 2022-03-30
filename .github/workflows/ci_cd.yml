@@ -23,10 +23,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Validate xrefs
-        run: |
-          yarn validate-xrefs
-
       - name: Run antora
         run: |
           yarn build
