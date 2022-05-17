@@ -6,9 +6,9 @@
 
 Applications are software products that have implemented an interface to the agrirouter. There are 3 Types of possible applications:
 
-* xref:ecosystem.adoc#_communication_units[Communication Units]
-* xref:ecosystem.adoc#_farming_software[Farming Software]
-* xref:ecosystem.adoc#_telemetry_platform_and_virtual_cus[Telemetry Platforms and virtual CUs]
+* xref:ecosystem.adoc#communication_units[Communication Units]
+* xref:ecosystem.adoc#farming_software[Farming Software]
+* xref:ecosystem.adoc#telemetry_platform_and_virtual_cus[Telemetry Platforms and virtual CUs]
 
 
 == Selecting the application type

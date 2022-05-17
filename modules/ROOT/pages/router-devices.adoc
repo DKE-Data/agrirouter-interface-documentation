@@ -54,11 +54,6 @@ The file includes a JSON structure containing all necessary information for the 
 
 [WARNING]
 ====
-For a proper connection, you need to use the `deviceAlternateId` as `clientId`, *not* the `connectionCriteria.clientId`!
-====
-
-[WARNING]
-====
 Every time the certificate is downloaded, it is updated in the agrirouter backend. Make sure you store the certificate in a secure place after you downloaded it and only click the download button again if you want to update your certificate (see below).
 ====
 
