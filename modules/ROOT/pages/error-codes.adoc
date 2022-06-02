@@ -115,4 +115,5 @@ With the messages we will have place holders for values which would be injected 
 |0113 |You've made too many requests in a short period of time, please try again in X seconds. |
 |0114 |Endpoint has recently been revoked. Please wait X minutes before trying to onboard again. |
 |0115 |Application quota limit has been exceeded. |
+|0401 |Bearer not found. | The registration code that is retrieved from either the agrirouter UI or from the authorization process is invalid. |
 |========================================================================================================================================================
