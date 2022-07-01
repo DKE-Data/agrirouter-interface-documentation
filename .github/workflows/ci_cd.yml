@@ -18,14 +18,10 @@ jobs:
         id: node
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: "16"
 
       - name: Install dependencies
         run: yarn install
-
-      - name: Validate xrefs
-        run: |
-          yarn validate-xrefs
 
       - name: Run antora
         run: |

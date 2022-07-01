@@ -246,27 +246,13 @@ The id is an endpointID and can be found like the endpoint Id.
 
 === Description
 
-The TeamsetContextId is used to describe a unique combination of different machines and CUs attached to a CU or Virtual CU. It must be defined by the CU creating a URN:
+The TeamsetContextId is used to describe a unique combination of different machines and CUs attached to a CU or Virtual CU.
 
-----
- urn:hash::algorithm:value
-----
+The scope of the TeamsetContextId is the account of the user.
 
-The agrirouter team advises to use a hashing algorithm of either md5 or sha256.
+Usually, the TeamsetContextId is a UUID, but it could also be a hash value derived form the Device Description.
 
-Examples (the key is the hash of "Hello World"):
-
-MD5:
-
-----
- urn:hash::md5:b10a8db164e0754105b7a99be72e3fe5
-----
-
-Sha256:
-
-----
- urn: hash::sha256:a591a6d40bf420404a011733cfb7b190d62c65bf0bcda32b57b277d9ad9f146e
-----
+For further requirements, please see the notes in the xref:tmt/efdi.adoc[description for EFDI messages].
 
 === Where to find
 

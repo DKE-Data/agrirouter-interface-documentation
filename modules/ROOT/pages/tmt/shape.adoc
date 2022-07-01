@@ -5,6 +5,10 @@
 
 This format is used to exchange application maps as a zip file, metadata like the filename can be forwarded using the metadata element in the request.
 
+Shape files in agrirouter refer to the de-facto standard for geo-referenced information, created by ESRI. The full specification document can currently be found https://www.esri.com/content/dam/esrisites/sitecore-archive/Files/Pdfs/library/whitepapers/pdfs/shapefile.pdf[on the ESRI website].
+
+There are numerous libraries for different languages to handle reading and writing of this file format.
+
 == Command
 
 [cols=",",]

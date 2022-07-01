@@ -77,7 +77,7 @@ Sending an onboarding request is described xref:./integration/onboarding.adoc[he
 [cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
-|EU |Quality Assurance |https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/application/{applicationId}/authorize
+|EU |Quality Assurance |https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/application/\{applicationId}/authorize
 |EU |Production |https://goto.my-agrirouter.com//application/\{applicationId}/authorize
 |====
 
