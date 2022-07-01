@@ -4,9 +4,6 @@
 == General function
 Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one MQTT broker.
 
-When using MQTT for a telemetry platform or a farming software with multiple accounts, multiple MQTT connections to different brokers would be required. To avoid this, agrirouter introduced the **router devices** which allow routing multiple connections for virtual endpoints.
-
-
 .Using Router devices vs. not using router devices
 image::general/router-devices2.png[Using Router devices vs. not using router devices]
 
@@ -60,3 +57,37 @@ Every time the certificate is downloaded, it is updated in the agrirouter backen
 === Certificate update
 
 As well as the certificates received after onboarding an endpoint, the certificates of the router device have a limited validity period of 1 year as well. To ensure the communication is not blocked after 1 year, the certificate needs to be updated before the validity period ends. To update a certificate, the developer has to open the details of the certificate view and click on the download button.
+
+== High Availability/Load Balancing considerations
+
+Router Devices also introduce the possibility to have two or more instances of your software communicate with agrirouter.
+
+You *need* to create one router device for every instance of your software. Do not try to connect to the same router device from multiple instances, because all other instances will be disconnected when you open a new connection.
+
+When you have two or more router devices active the following rules apply:
+
+Every Router Device...
+
+* can publish commands to the `measure` topic of every endpoint
+* can subscribe to the `command` topic of every endpoint
+* subscribed to the `command` topic of an endpoint will receive a separate copy of the respective MQTT messages
+
+Due to the design of the interface, you *can not* have a specific Router Device receive only a subset of Technical Message Types.
+
+The following configurations could be implemented (not a complete list!):
+
+=== Active/Active
+
+All Router Devics are actively taking part in agrirouter communication at all times.
+
+This means that you have to make sure that sending commands and processing messages is distributed to specific nodes in order to not process duplicate messages.
+
+You *can* partition the subset of endpoints you want to handle per instance by ensuring that a specific router device only publishes and subscribes to the topics of endpoints you want it to handle. From the technical process perspective, this is the same as having an Active/Passive configuration.
+
+=== Active/Passive
+
+Only one Router Device is active at any given time, at least per endpoint.
+
+You *can* have multiple router devices active, but only one of them responsible for every single endpoint. This partitioning is strictly done on the client/application side.
+
+In that case, the failover implementation of your HA architecture needs to ensure that another instance takes over the communication when the active node fails.
