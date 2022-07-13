@@ -86,9 +86,11 @@ The endpoint certificate is used to encrypt the communication with the agriroute
 
 [IMPORTANT]
 ====
-The certificate you receive during xref:integration/onboarding.adoc[onboarding] is valid for a certain period (1 year). 
+The certificate you receive during xref:integration/onboarding.adoc[onboarding] is valid for a certain period. This period has been 1 year in the past, but will soon (July/August 2022) be increased to 10 years.
 
 After that, you have to perform the xref:integration/reonboarding.adoc[re-onboarding].
 
-**Be aware** that this can require user interaction.
+**Be aware** that this will require user interaction.
+
+If your are using MQTT Router Devices, you only have to renew the Router Devices' certificates centrally because the endpoints' certificates are not used in that case.
 ====
