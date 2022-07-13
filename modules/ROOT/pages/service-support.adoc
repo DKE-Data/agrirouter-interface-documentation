@@ -108,10 +108,10 @@ The agrirouter start page provides a tile "Remote Maintenance" for every user th
 image::general/remote_maintenance.png[Remote maintenance tile,686,335]
 
 
-
+[#contact]
 == Getting in contact with the agrirouter support team as a developer
 
-The agrirouter support team provides support for developers for their integration with the agrirouter. To ask a question, simply send an email to support@my-agrirouter.com. Please understand that the agrirouter support team only provides agrirouter specific answers, no answers specialized for your coding language, environment or used frameworks. You might however be lucky to get such a specific answer if agrirouter support team has one, so feel free to mention this information as well.
+The agrirouter support team provides support for developers for their integration with the agrirouter. To ask a question, simply open a ticket at https://go.my-agrirouter.com/support or send an email to support@my-agrirouter.com. Please understand that the agrirouter support team only provides agrirouter specific answers, no answers specialized for your coding language, environment or used frameworks. You might however be lucky to get such a specific answer if agrirouter support team has one, so feel free to mention this information as well.
 
 === Required information
 
@@ -130,8 +130,6 @@ All of the above can be found in the endpoint details by clicking the ‘Info’
 
 .Relevant information for agrirouter support
 image::ig1/image46.png[Relevant information for agrirouter support,586,335]
-
-
 
 
 ==== For commands related incidents

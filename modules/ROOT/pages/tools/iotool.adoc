@@ -2,15 +2,15 @@
 
 The InOut-Tool or IO-Tool is a developer tool aimed at helping partners test their own implementations by providing an endpoint to communicate with.
 
-It can be accessed at https://io.my-agrirouter.com. To receive an account, please contact xref:../service-support.adoc[our support team].
+It can be accessed at https://io.my-agrirouter.com. To receive an account, please contact xref:../service-support#contact[our support team].
 
 The IO-Tool has the following features:
 
  * upload and store files in the IO-Tool
- * analyze and visualize the contents of ISOXML and EFDI timelogs
+ * analyze and visualize the contents of EFDI timelogs (and soon: ISOXML files)
  * connect to agrirouter accounts on either the production or QA environment
- * send data via the agrirouter to your own application to test receive capabilities
- * receive data via the agrirouter from your own application to test send capabilities
+ * send data via the agrirouter to your own or other applications to test receive capabilities
+ * receive data via the agrirouter from your own or other applications to test send capabilities
  * simulate a telemetry device by emitting data from an uploaded ISOXML or EFDI timelog
 
 == Logging in
@@ -24,6 +24,7 @@ Please note that this is a _different_ set of credentials than your agrirouter d
 After you logged in for the first time you will be presented with the settings screen. It is a good idea to change the password on first login.
 
 You can now choose to onboard to 
+
 * either the production or the QA environment, depending on where you are currently testing your application and
 * using MQTT or HTTP; using MQTT is recommended, unless you want to specifically learn about the behaviour of HTTP connected endpoints
 
@@ -39,7 +40,8 @@ For ISOXML and Timelogs the IO-Tool provides some additional features.
 
 === Validation
 
-The IO-Tool can provide 
+The IO-Tool does provide some basic validation mechanisms for ISOXML and EFDI to check for structural problems.
+
 
 == Settings
 
