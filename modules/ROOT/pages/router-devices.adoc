@@ -12,14 +12,17 @@ image::general/router-devices1.png[Using router devices vs. communication using 
 
 == Setup of router devices
 Router devices can be set up and managed in the agrirouter developer UI
+
 .Router device management in the agrirouter developer UI
 image::general/router-devices-screen1.png[Router device management in the agrirouter developer UI]
 
 When clicking on "New Router device", a new device will be generated.
+
 .Router device management in the agrirouter developers UI
 image::general/router-devices-screen2.png[Router device management in the agrirouter developers UI]
 
 To check the connection properties, click on "Connection Details".
+
 .Router device details
 image::general/router-devices-screen3.png[Router device details]
 
