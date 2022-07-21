@@ -8,7 +8,7 @@ This chapter will list all messages to tell the agrirouter, what the endpoint is
 
 === Definition
 
-Every endpoint has to report his capabilities of sending and receiving messages after onboarding and when the capabilities change ( e.g. an application functionality is extended by a new module). This is required from agrirouter to know if specific messages can be routed to an endpoint and to show the correct choosable Information Types in the User Interface for routing.
+Every endpoint has to report its capabilities of sending and receiving messages after onboarding and when the capabilities change (e.g. an application functionality is extended by a new module). This is required by agrirouter to know if specific messages can be routed to an endpoint and to show the correct choosable Information Types in the User Interface for routing.
 
 [NOTE]
 ====
@@ -164,7 +164,13 @@ The subscription command is used to subscribe for a list of technical message ty
 
 [TIP]
 ====
-To avoid mismatches between publishing applications and applications only receiving addressed messages, it is advised to subscribe for any technical message type and DDI, your application shall handle if there are no specific reasons not to do so.
+To avoid mismatches between publishing applications and applications only receiving addressed messages, it is advised to subscribe for any technical message type and DDI your application shall handle if there are no specific reasons not to do so.
+====
+
+[WARNING]
+====
+The subscriptions command will only be successful if the respective capabilities have already been set.
+Be sure to await the acknowledgement of the capability command before sending the subscriptions command.
 ====
 
 
