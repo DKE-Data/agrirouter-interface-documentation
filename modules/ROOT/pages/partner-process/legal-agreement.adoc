@@ -10,6 +10,12 @@ All market participants in the agribusiness can now have the same level of influ
 
 DKE-Data operates as a non-profit company. This means that all financial contributions are only as high as necessary to continue operation, maintenance and future development of agrirouter and its surrounding solutions.
 
+== Who needs a legal agreement?
+
+All companies that want to *provide a product with agrirouter integration to an end-customer* must enter one of the legal agreements outlined below.
+
+Specificially, companies that only offer their products to other companies who then bring it to the market (OEM providers), do not _need_ to be an agrirouter member, but can be if they choose to do so.
+
 == Participation options
 
 There are generally five different roles in which a company can participate in the eco system:
