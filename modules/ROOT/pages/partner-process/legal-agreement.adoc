@@ -12,22 +12,26 @@ DKE-Data operates as a non-profit company. This means that all financial contrib
 
 == Participation options
 
-There are generally three different roles in which a company can participate in the eco system:
+There are generally five different roles in which a company can participate in the eco system:
 
-[cols="3,^2,^2,^2", stripes=even]
+[cols="3,^2,^2,^2,^2,^2", stripes=even]
 |===
 h| Model
-h| Association Member
-h| Business Partner
-h| Shareholder
+h| Association Member (1)
+h| Business Partner (2A)
+h| Shareholder (2B)
+h| Business Partner (3A)
+h| Shareholder (3B)
+
 
 | <<ag-turnover,turnover>> limit
 | < 60 Mio EUR/a
-| _none_
-| _none_
+4+| _none_
 
 | Product Steering Committee vote
 | only one for the whole association
+| ✅
+| ✅
 | ✅
 | ✅
 
@@ -35,23 +39,24 @@ h| Shareholder
 | ❌
 | ❌
 | ✅
+| ❌
+| ✅
 
 | Financial Contribution
-| fixed fee, based on <<ag-turnover,turnover>>
-2+| _trial period_: fixed fee, based on <<ag-turnover,turnover>> +
-_afterwards_: cost distribution, based on <<ag-turnover,turnover>>
+3+| fixed fee, based on <<ag-turnover,turnover>>
+2+| cost distribution, based on <<ag-turnover,turnover>>
 
 | Binding Period
 | 1 year
-2+| _trial period_: 2 years +
-_afterwards_: 3 years
+2+| 2 years
+2+| 3 years
 
 |===
 
 
 The options in more detail:
 
-=== member of DKE-Data e.V.
+=== member of DKE-Data e.V. (option 1)
 
 All companies with a <<ag-turnover,turnover>> less than 60 Million Euro per year can access the agrirouter by becoming a member of the association DKE-Data e.V.
 
@@ -91,7 +96,7 @@ Farmers and Contractors who are simply using the agrirouter through our members'
 They may do this voluntarily if they want to become involved directly with the future of agrirouter.
 ====
 
-=== Business Partner of DKE-Data GmbH & Co. KG
+=== Business Partner of DKE-Data GmbH & Co. KG (options 2A/3A)
 
 All companies may choose to become a Business Partner of DKE-Data GmbH & Co. KG.
 
@@ -166,7 +171,7 @@ h| Yearly Contribution [EUR]
 | 2.000
 |===
 
-=== Shareholder of DKE-Data GmbH & Co. KG
+=== Shareholder of DKE-Data GmbH & Co. KG (options 2B/3B)
 
 All companies may choose to become a Shareholder of DKE-Data GmbH & Co. KG.
 
