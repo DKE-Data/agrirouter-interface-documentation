@@ -56,7 +56,7 @@ h| Shareholder (3B)
 
 The options in more detail:
 
-=== member of DKE-Data e.V. (option 1)
+=== Member of DKE-Data e.V. (option 1)
 
 All companies with a <<ag-turnover>> less than 60 Million Euro per year can access the agrirouter by becoming a member of the association DKE-Data e.V.
 
