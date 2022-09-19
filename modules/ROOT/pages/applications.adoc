@@ -13,7 +13,7 @@ Applications are software products that have implemented an interface to the agr
 
 == Selecting the application type
 
-It’s not always obvious, to which category a new application belongs. To simplify the decision, DKE advises the following decision tree:
+It’s not always obvious to which category a new application belongs. To simplify the decision, you can use the following decision tree:
 
 .Decision Tree: What type of application do I create?
 [plantuml,decisiontree_apptype,svg]
@@ -41,20 +41,17 @@ endif
     
 ----
 
-
-
 For more information on the different types of applications, take a look at the xref:./ecosystem.adoc[ecosystem].
 
+[#register]
 == Register Application
 
 Applications must be certified before they can be provided to the public.
 
-After creating an agrirouter developer account in quality assurance environment, it is possible to register a communication unit, application or telemetry platform.
+After creating an agrirouter developer account, it is possible to register a communication unit, application or telemetry platform.
 
 .agrirouter endpoint software management
 image::ig1/image5.png[agrirouter endpoint software management,642,364]
-
-
 
 The following information should be available to create a communication unit, application or telemetry platform:
 
@@ -107,7 +104,12 @@ image::ig1/image7.png[agrirouter application registration,467,513]
 
 After a new version has been created, the supported capabilities for this version can be defined. With the button "New", the technical message types supported by this application version can be selected. Finally, the direction (send/receive) of the capabilities must be specified before the version can be submitted.
 
-After submitting, DKE will receive a notification and set the status to _Approved for Testing_ or _Approved_, so that instances of this endpoint can be onboarded. Please also send an email to support@my-agrirouter.com, once you created a new software version that shall be approved for testing.
+After submitting, DKE will receive a notification and set the status to _Approved for Testing_, so that instances of this endpoint can be onboarded. Please also send an email to support@my-agrirouter.com, once you created a new software version that shall be approved for testing.
+
+[NOTE]
+====
+Please be aware of xref:../service-support.adoc#contact[support business hours].
+====
 
 .agrirouter warning
 image::ig1/image8.png[agrirouter warning,391,126]

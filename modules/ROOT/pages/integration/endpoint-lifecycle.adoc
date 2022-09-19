@@ -1,0 +1,74 @@
+= Endpoint Lifecycle
+:imagesdir: _images/
+
+== General lifecycle of an endpoint
+image::general/lifecycle.png[]
+
+[plantuml,endpoint_lifecycle,svg]
+----
+start
+repeat
+partition Onboarding {
+    if (Is your app a communication unit?) then (Yes)
+        :Get TAN from agrirouter UI;
+    else (No)
+        :Get TAN from authorization process;
+    endif
+    :(Secured) Onboarding;
+}
+partition "Main Process" {
+    :Send capabilities;
+    :Communicate with endpoint;
+    while (Certificate still valid?) is (Yes)
+        if (Should App Instance be deleted?) then (Yes)
+            partition End-of-Life {
+                :Revoke;
+            }
+            stop
+        else (No)
+        endif
+    endwhile
+}
+repeat while (Certificate still valid?) is (no) not (yes)
+----
+
+== Connecting your app instance
+
+=== Authorization
+Farming Software and Telemetry Platforms have to perform an xref:../integration/authorization.adoc[Authorization Process] to clarify that the account user is known.
+
+=== Onboarding
+
+To communicate with the agrirouter, an application Instance needs to be xref:../integration/onboarding.adoc[onboarded]. An application instance can be xref:../integration/reonboarding.adoc[Re-onboarded].
+
+
+== Communicate with agrirouter endpoints
+
+=== Building messages
+
+To send a message, it has to be built first. Read xref:../integration/build-message.adoc[here] about building messages and commands.
+
+List of possible message content:
+
+* xref:../commands/overview.adoc[Commands to interact with the agrirouter]
+* xref:../tmt/overview.adoc[Technical message types to exchange data between endpoints of the agrirouter]
+
+=== Sending messages and commands
+
+Every application instance can xref:../integration/message-sending.adoc[send messages] and commands the same way.
+
+While xref:../tmt/overview.adoc[messages] are meant to be forwarded to other endpoints, xref:../commands/overview.adoc[commands] are used to xref:../commands/ecosystem.adoc[explore the ecosystem], xref:../commands/endpoint.adoc[configure your endpoint] and xref:../commands/feed.adoc[request messages from the feed].
+
+=== Receiving messages and command answers
+
+Command results and messages from other endpoints will be xref:../integration/message-receiving.adoc[received through the outbox] by the receiving application instance.
+
+Messages from other endpoints are put into the outbox by xref:../integration/push-notification.adoc[push notifications] as well as by xref:../commands/feed.adoc[requesting the feed content].
+
+=== Analysing messages
+
+Depending on the  xref:../integration/analyse-result.adoc#ResponseType[resultType], the result can be xref:../integration/analyse-result.adoc[analysed].
+
+== End of life for an endpoint
+
+When an endpoint shall be deleted, it can be xref:../integration/revoke.adoc[Revoked].

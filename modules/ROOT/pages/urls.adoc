@@ -23,6 +23,11 @@ On this page you will find a list of URLs and hosts relevant for your work with 
 |EU |Production |https://goto.my-agrirouter.com/um/register/user
 |====
 
+[NOTE]
+====
+The Quality Assurance environment is only used in special cases, so please only register
+accounts there when explicitly asked for it!
+====
 
 == Developer Registration
 
@@ -34,6 +39,11 @@ On this page you will find a list of URLs and hosts relevant for your work with 
 |EU |Production |https://goto.my-agrirouter.com/um/register/developer
 |====
 
+[NOTE]
+====
+The Quality Assurance environment is only used in special cases, so please only register
+accounts there when explicitly asked for it!
+====
 
 == Login
 

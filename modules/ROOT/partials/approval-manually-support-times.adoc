@@ -1,0 +1,4 @@
+[NOTE]
+====
+The approval process is done manually which means there might be a slight delay if your are not submitting the request during xref:../service-support.adoc#contact[business hours of our support team].
+====
