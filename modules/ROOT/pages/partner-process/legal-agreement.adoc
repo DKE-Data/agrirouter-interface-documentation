@@ -100,7 +100,7 @@ They may do this voluntarily if they want to become involved directly with the f
 
 All companies may choose to become a Business Partner of DKE-Data GmbH & Co. KG.
 
-After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover,turnover>> has to be paid, the fee is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted.
+After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover,turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
 
 Business Partners have a vote in the Product Steering Committee that decides on the agrirouter roadmap.
 
@@ -175,7 +175,7 @@ h| Yearly Contribution [EUR]
 
 All companies may choose to become a Shareholder of DKE-Data GmbH & Co. KG.
 
-After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover,turnover>> has to be paid, the fee is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted.
+After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover,turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
 
 Shareholders, like Business Partners, have a vote in the Product Steering Committee that decides on the agrirouter roadmap.
 Additionally, Shareholders have a seat and vote in the Shareholder Meeting, where all topics that are required by law to be discussed and decided in the shareholder meeting are placed.
@@ -247,7 +247,7 @@ h| Correction Factor
 
 == General process
 
-If you are interested to discuss the options or want to receive a copy of the contract, please contact Dr.-Ing. Jens Möller, see link:https://my-agrirouter.com/en/company/contact/[the contacts page].
+If you are interested to discuss the options or want to receive a copy of the contract, please contact Dr.-Ing. Jens Möller, see link:https://agrirouter.com/en/company/contact/[the contacts page].
 
 [NOTE]
 ====
