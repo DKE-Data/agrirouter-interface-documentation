@@ -16,6 +16,8 @@ All companies that want to *provide a product with agrirouter integration to an 
 
 Specificially, companies that only offer their products to other companies who then bring it to the market (OEM providers), do not _need_ to be an agrirouter member, but can be if they choose to do so.
 
+Also, farmers and contractors, as the users of the agrirouter itself, do _not_ need to become a member, but can if they choose to do so. For this group, special membership rates for the <<association,association>> are being offered.
+
 == Participation options
 
 There are generally five different roles in which a company can participate in the eco system:
@@ -62,6 +64,7 @@ h| Shareholder (3B)
 
 The options in more detail:
 
+[#association]
 === Member of DKE-Data e.V. (option 1)
 
 All companies with a <<ag-turnover>> less than 60 Million Euro per year can access the agrirouter by becoming a member of the association DKE-Data e.V.
