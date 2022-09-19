@@ -1,0 +1,250 @@
+:fn-turnover: pass:c,q[footnote:turnover[The term _turnover_ always refers to the <<weighted-ag-turnover>>]]
+
+= Legal agreement
+
+== Business model of DKE-Data
+
+As of mid-2022 the business model of DKE-Data, as the operating company of agrirouter, has changed.
+
+All market participants in the agribusiness can now have the same level of influence over the future of agrirouter, which was previously limited to  manufacturers of agricultural machinery.
+
+DKE-Data operates as a non-profit company. This means that all financial contributions are only as high as necessary to continue operation, maintenance and future development of agrirouter and its surrounding solutions.
+
+== Participation options
+
+There are generally three different roles in which a company can participate in the eco system:
+
+[cols="3,^2,^2,^2", stripes=even]
+|===
+h| Model
+h| Association Member
+h| Business Partner
+h| Shareholder
+
+| <<ag-turnover,turnover>> limit
+| < 60 Mio EUR/a
+| _none_
+| _none_
+
+| Product Steering Committee vote
+| only one for the whole association
+| ✅
+| ✅
+
+| Shareholder Meeting vote
+| ❌
+| ❌
+| ✅
+
+| Financial Contribution
+| fixed fee, based on <<ag-turnover,turnover>>
+2+| _trial period_: fixed fee, based on <<ag-turnover,turnover>> +
+_afterwards_: cost distribution, based on <<ag-turnover,turnover>>
+
+| Binding Period
+| 1 year
+2+| _trial period_: 2 years +
+_afterwards_: 3 years
+
+|===
+
+
+The options in more detail:
+
+=== member of DKE-Data e.V.
+
+All companies with a <<ag-turnover,turnover>> less than 60 Million Euro per year can access the agrirouter by becoming a member of the association DKE-Data e.V.
+
+These members pay a fixed yearly fee that is based on their annual <<ag-turnover,turnover>>.
+
+Becoming a member of the association provides access to production use of the agrirouter, as well as to the participation of regular meetings of the association, where information about current proceedings is distributed and feedback and requests from members is collected and discussed.
+
+The association as a whole is then represented in the Product Steering Committee that decides on the agrirouter roadmap.
+
+The cost contribution for being a member of DKE-Data e.V. is:
+
+
+[cols="^3,^2", stripes=even]
+|===
+h| <<weighted-ag-turnover>> [Mio. EUR]
+h| Yearly Contribution [EUR]
+ 
+| >35 - 60
+| 3.000
+
+| >10 - 35
+| 2.000
+
+| <10
+| 1.000
+
+| Contractor
+| 500
+
+| Farmer
+| 250
+|===
+
+[NOTE]
+====
+Farmers and Contractors who are simply using the agrirouter through our members' solutions do *not need* to become a member.
+They may do this voluntarily if they want to become involved directly with the future of agrirouter.
+====
+
+=== Business Partner of DKE-Data GmbH & Co. KG
+
+All companies may choose to become a Business Partner of DKE-Data GmbH & Co. KG.
+
+After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover,turnover>> has to be paid, the fee is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted.
+
+Business Partners have a vote in the Product Steering Committee that decides on the agrirouter roadmap.
+
+Cost contribution *during the trial period*:
+[cols="^3,^2,^3,^2", stripes=even]
+|===
+h| <<weighted-ag-turnover>> +
+[Mio. EUR]
+h| Yearly Contribution +
+[EUR]
+h| <<weighted-ag-turnover>> +
+[Mio. EUR]
+h| Yearly Contribution +
+[EUR]
+ 
+| > 8.500
+| 180.000
+| > 273 - 453
+| 18.000
+
+| > 5.249 - 8.500
+| 130.000
+| > 162 - 273
+| 13.500
+
+| > 3.233 - 5.249
+| 95.000
+| > 94 - 162
+| 9.000
+
+| > 1.988 - 3.233
+| 67.500
+| > 60 - 94
+| 7.500
+
+| > 1.220 - 1.988
+| 50.000
+| > 35 - 60
+| 6.000
+
+| > 745 - 1.220
+| 36.000
+| > 10 - 35
+| 4.000
+
+| > 453 - 745
+| 25.000
+| < 10
+| 2.000
+|===
+
+Cost contribution *after the trial period*:
+[cols="^3,^2", stripes=even]
+|===
+h| <<weighted-ag-turnover>> [Mio. EUR]
+h| Yearly Contribution [EUR]
+ 
+| > 60
+| _dynamic_, see description above
+
+| > 35 - 60
+| 6.000
+
+| > 10 - 35
+| 4.000
+
+| < 10
+| 2.000
+|===
+
+=== Shareholder of DKE-Data GmbH & Co. KG
+
+All companies may choose to become a Shareholder of DKE-Data GmbH & Co. KG.
+
+After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover,turnover>> has to be paid, the fee is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted.
+
+Shareholders, like Business Partners, have a vote in the Product Steering Committee that decides on the agrirouter roadmap.
+Additionally, Shareholders have a seat and vote in the Shareholder Meeting, where all topics that are required by law to be discussed and decided in the shareholder meeting are placed.
+
+Keep in mind that, while the financial contribution for Business Partners and Shareholders is the same, being a Shareholder comes with additional legal obligations!
+
+[#weighted-ag-turnover]
+== Weighted Ag Turnover
+
+To find a fair contribution model, we are basing all contributions on the "Weighted Ag Turnover".
+
+This is how it is calculated:
+
+====
+Weighted Ag Turnover = <<ag-turnover>> of the <<company-group>> * <<ros-factor>>
+====
+
+.Calculation Example
+====
+Your company belongs to a group of companies.
+
+The whole turnover is *120 Million Euros*.
+
+70 Million Euros are earned in the field of road construction +
+=> *Ag Turnover of the company group = 50 Mio*
+
+Your Ag return on sales before tax is 0.5% for the relevant years +
+=> *RoS factor = 0.25*
+
+=> *Weighted Ag Turnover =* 50,000,000 EUR * 0.25 = *12,500,000 EUR*
+====
+
+[#company-group]
+=== Company Groups/Holdings
+
+If your company belongs to a larger group of companys, the *total turnover* of the whole group has to be taken into consideration.
+
+If the owning entity holds more than 50% of *either* the shares _or_ the voting rights of another entity, these entities belong to the same group.
+
+[#ag-turnover]
+=== Ag Turnover
+
+Only turnover in the agricultural sector is taken into consideration. Should your company have other fields of business, the turnover from these fields can be deducted from the official turnover.
+
+[#ros-factor]
+=== Ag Return on Sales factor
+
+Based on your company's return on sales, the Weighted Ag Turnover is calculated:
+
+[cols="^3,^2", stripes=even]
+|===
+h| Ag Net RoS (before tax) [%]
+h| Correction Factor
+
+| <0 - 0.75
+| 0.25
+
+| >0.75 - 1.75
+| 0.50
+
+| >1.75 - 3.0
+| 0.75
+
+| >3.0
+| 1.00
+|===
+
+
+
+== General process
+
+If you are interested to discuss the options or want to receive a copy of the contract, please contact Dr.-Ing. Jens Möller, see link:https://my-agrirouter.com/en/company/contact/[the contacts page].
+
+[NOTE]
+====
+These contacts are only relevant for the business side, for development or end user support, please refer to the xref:service-support.adoc[Service&Support]
+====

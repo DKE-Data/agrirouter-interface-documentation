@@ -1,15 +1,15 @@
-= my-agrirouter.com Marketplace
+= agrirouter.com Marketplace
 :imagesdir: _images/
 
 == What is the agrirouter Marketplace?
 
-At https://www.my-agrirouter.com[www.my-agrirouter.com] it is possible for the agricultural software and telemetry connections provider to present their own solution, including a short and long description of the main functions, in which countries this solution is offered and in which language, which data formats can be exchanged via agrirouter as well as contact data to the provider itself. In this way, an interested farmer or contractor gets an initial overview of the solutions that can exchange data in combination with the agrirouter.
+At https://www.agrirouter.com[agrirouter.com] it is possible for the agricultural software and telemetry connections provider to present their own solution, including a short and long description of the main functions, in which countries this solution is offered and in which language, which data formats can be exchanged via agrirouter as well as contact data to the provider itself. This way, an interested farmer or contractor gets an initial overview of the solutions that can exchange data in combination with the agrirouter.
 
-The agricultural software and telemetry connections provider can create a partner account for my-agrirouter.com and can place their solution at my-agrirouter.com marketplace.
+The agricultural software and telemetry connections provider can create a partner account for agrirouter.com and can place their solution in the agrirouter.com marketplace.
 
 [IMPORTANT]
 ====
-agrirouter Marketplace is for information for interested farmers or contractors only. DKE Data neither advises nor recommends the use of any of the listed solutions.
+The agrirouter Marketplace is for information for interested farmers or contractors only. DKE Data neither advises on nor recommends the use of any of the listed solutions.
 ====
 
 Examples of DKE partners for agricultural software are available at https://my-agrirouter.com/en/marketplace/apps/.
