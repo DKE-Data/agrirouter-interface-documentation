@@ -6,6 +6,12 @@ on:
       - main
   pull_request:
 
+# only allow one run per deploy target at once
+concurrency:
+  group: ${{ github.workflow}}-${{ github.ref }}
+  # cancel previous jobs as we are only interested in the newest
+  cancel-in-progress: true
+
 jobs:
   build:
     name: Build and Deploy
