@@ -24,7 +24,7 @@ h| Business Partner (3A)
 h| Shareholder (3B)
 
 
-| <<ag-turnover,turnover>> limit
+| <<ag-turnover>> limit
 | < 60 Mio EUR/a
 4+| _none_
 
@@ -43,8 +43,8 @@ h| Shareholder (3B)
 | ✅
 
 | Financial Contribution
-3+| fixed fee, based on <<ag-turnover,turnover>>
-2+| cost distribution, based on <<ag-turnover,turnover>>
+3+| fixed fee, based on <<ag-turnover>>
+2+| cost distribution, based on <<ag-turnover>>
 
 | Binding Period
 | 1 year
@@ -58,9 +58,9 @@ The options in more detail:
 
 === member of DKE-Data e.V. (option 1)
 
-All companies with a <<ag-turnover,turnover>> less than 60 Million Euro per year can access the agrirouter by becoming a member of the association DKE-Data e.V.
+All companies with a <<ag-turnover>> less than 60 Million Euro per year can access the agrirouter by becoming a member of the association DKE-Data e.V.
 
-These members pay a fixed yearly fee that is based on their annual <<ag-turnover,turnover>>.
+These members pay a fixed yearly fee that is based on their annual <<ag-turnover>>.
 
 Becoming a member of the association provides access to production use of the agrirouter, as well as to the participation of regular meetings of the association, where information about current proceedings is distributed and feedback and requests from members is collected and discussed.
 
@@ -100,7 +100,7 @@ They may do this voluntarily if they want to become involved directly with the f
 
 All companies may choose to become a Business Partner of DKE-Data GmbH & Co. KG.
 
-After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover,turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
+After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
 
 Business Partners have a vote in the Product Steering Committee that decides on the agrirouter roadmap.
 
@@ -175,7 +175,7 @@ h| Yearly Contribution [EUR]
 
 All companies may choose to become a Shareholder of DKE-Data GmbH & Co. KG.
 
-After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover,turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
+After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
 
 Shareholders, like Business Partners, have a vote in the Product Steering Committee that decides on the agrirouter roadmap.
 Additionally, Shareholders have a seat and vote in the Shareholder Meeting, where all topics that are required by law to be discussed and decided in the shareholder meeting are placed.
