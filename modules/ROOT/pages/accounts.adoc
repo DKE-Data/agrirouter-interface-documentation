@@ -33,7 +33,7 @@ A developer account has all the features of an end-user account.
 
 [NOTE]
 ====
-There is only *one* developer account needed *per company*. Testing the app, especially in the Quality assurance environment can and should be done from ordinary end user accounts.
+There is only *one* developer account needed *per company*. Testing the app can and should be done from ordinary end user accounts.
 ====
 
 Additionally, developers can manage their own applications:
