@@ -1,0 +1,6 @@
+= Partner Process
+:imagesdir: _images/
+
+This section is dedicated to explaining the necessary steps and background of becoming an agrirouter partner and integrations with our platform.
+
+In general, to gain production access to the agrirouter, a legal agreement has to be made. There are multiple options interested companies can choose from which are explained on the following pages.

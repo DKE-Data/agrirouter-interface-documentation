@@ -32,9 +32,10 @@ There are multiple certification companies, a list can be found link:https://my-
 
 To pass the certification tests there are multiple requirements have to be fulfilled before the certification can start.
 
+[#prerequisites]
 === Prerequisites
 
-* The xref:./partner-process/provider-agreement.adoc[DKE application provider agreement] has to be signed.
+* a xref:./partner-process/legal-agreement.adoc[legal agreement] has to be signed.
 * The xref:./partner-process/marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
 * The following information about the company is available:
 ** Name
