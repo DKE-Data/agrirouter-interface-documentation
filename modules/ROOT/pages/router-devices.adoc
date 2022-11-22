@@ -59,7 +59,7 @@ Every time the certificate is downloaded, it is updated in the agrirouter backen
 
 === Certificate update
 
-As well as the certificates received after onboarding an endpoint, the certificates of the router device have a limited validity period of 1 year (upcoming change to *10 years* in July/August 2022!). To ensure the communication is not blocked after this, the certificate needs to be updated before the validity period ends. To update a certificate, the developer has to open the details of the certificate view and click on the download button.
+As well as the certificates received after onboarding an endpoint, the certificates of the router device have a limited validity period of 10 years (changed from 1 year in July 2022). To ensure the communication is not blocked after this, the certificate needs to be updated before the validity period ends. To update a certificate, the developer has to open the details of the certificate view and click on the download button.
 
 == High Availability/Load Balancing considerations
 

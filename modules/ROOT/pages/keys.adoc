@@ -86,7 +86,7 @@ The endpoint certificate is used to encrypt the communication with the agriroute
 
 [IMPORTANT]
 ====
-The certificate you receive during xref:integration/onboarding.adoc[onboarding] is valid for a certain period. This period has been 1 year in the past, but will soon (July/August 2022) be increased to 10 years.
+The certificate you receive during xref:integration/onboarding.adoc[onboarding] is valid for a certain period. This period is currently 10 years (up until July 2022, this period has been 1 year).
 
 After that, you have to perform the xref:integration/reonboarding.adoc[re-onboarding].
 
