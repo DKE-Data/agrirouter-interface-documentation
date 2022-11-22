@@ -4,6 +4,7 @@
 == General lifecycle of an endpoint
 image::general/lifecycle.png[]
 
+////
 [plantuml,endpoint_lifecycle,svg]
 ----
 start
@@ -31,7 +32,7 @@ partition "Main Process" {
 }
 repeat while (Certificate still valid?) is (no) not (yes)
 ----
-
+////
 == Connecting your app instance
 
 === Authorization
