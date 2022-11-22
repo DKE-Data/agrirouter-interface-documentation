@@ -5,20 +5,13 @@
 
 To create applications for agrirouter, a developer account is required.
 
-Over the whole process of integration, the developer will have to create 2 accounts:
-
-One account at the productive environment, where the application should be available after certification to be connected for the end user and one account in the "Quality Assurance"-Environment (QA) to test the application during the development process.
-
-The URLs to signup for accounts can be found xref:./urls.adoc[here].
+The URL to signup for accounts can be found xref:./urls.adoc[here].
 
 After creating your account, please also send an email to support@my-agrirouter.com to ask for the activation of your account.
 
-[IMPORTANT]
-====
-You should only create one developer account per app provider and environment. So, if your company has multiple developers, 1 developer should handle the developer account; the other developers can use end user accounts to test and develop the application.
-====
+include::partial$approval-manually-support-times.adoc[]
 
 [IMPORTANT]
 ====
-Please read the information about the xref:./accounts.adoc[Password Policies].
+You should only create one developer account per app provider. So, if your company has multiple developers, 1 developer should handle the developer account; the other developers can use end user accounts to test and develop the application.
 ====
