@@ -81,7 +81,7 @@ The following configurations could be implemented (not a complete list!):
 
 === Active/Active
 
-All Router Devics are actively taking part in agrirouter communication at all times.
+All Router Devices are actively taking part in agrirouter communication at all times.
 
 This means that you have to make sure that sending commands and processing messages is distributed to specific nodes in order to not process duplicate messages.
 
