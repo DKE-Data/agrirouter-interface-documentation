@@ -109,6 +109,19 @@ image::ig2/image24.png[Generating Private and Public Key in the agrirouter UI,40
 
 The external Id - to be seen in the <<Body Information>> of the onboarding request (only called `id` there) - needs to be a URN, which fits to the definitions in the xref:integration/general-conventions.adoc[general conventions].
 
+For farming software and telemetry platforms the external Id should be directly related to a user account in your platform. For privacy
+purposes, it would also be ok to hash or encrypt the user id so it is not visible to agrirouter.
+
+Examples for valid external IDs are:
+
+[example]
+----
+urn:myfarmingsoftware:user@example.net
+urn:mytelemetryplatform:userid-123
+urn:fancyfarming:3e9156eb-efc1-4742-b820-ca3bf0eecdf0
+urn:greattelemetry:kuQn0KfwEY0s0lT1fQIAWdqlaezuUHfLV/uNC0dvqKk=
+----
+
 == onboarding Endpoint URLs
 
 The endpoint URL differs, depending on your desired geolocation and the Quality Assurance or Productive Environment.
