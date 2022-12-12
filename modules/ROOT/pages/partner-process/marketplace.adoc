@@ -27,7 +27,7 @@ image::ig1/marketplace_telemetry_connections.png[telemetry connections,633,307]
 .Create agrirouter Marketplace content process
 image::general/process_marketplace_v2.png[]
 
-This process can be performed in parallel to the xref:partner-process/integration-qa.adoc[integration process in QA].
+This process can be performed in parallel to the xref:partner-process/integration.adoc[integration process].
 
 
 == 2.1 Create Marketplace account
