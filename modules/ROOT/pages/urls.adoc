@@ -62,9 +62,9 @@ Use the following paths:
 [cols="2,2",options="header",]
 |====
 |Step                   |Path
+|Unsecured Onboarding   |/api/v1.0/registration/onboard
 |Verify                 |/api/v1.0/registration/onboard/verify
-|Secured Onboarding     |/api/v1.0/registration/onboard
-|Unsecured Onboarding   |/api/v1.0/registration/onboard/request
+|Secured Onboarding     |/api/v1.0/registration/onboard/request
 |Revocation             |/api/v1.0/registration/onboard/revoke
 |====
 
