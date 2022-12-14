@@ -47,7 +47,7 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 The live telemetry data is analysed so that filtering for value categories like fuel consumption is possible.
 
 .The onion principle for a telemetry message
-image::general/message_structure_non-telemetry.svg[The onion principle for a telemetry message,644,371]
+image::general/message_structure_telemetry.svg[The onion principle for a telemetry message,644,371]
 
 
 
