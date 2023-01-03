@@ -16,6 +16,7 @@
 ** xref:partner-process/integration.adoc[Integration Process]
 ** xref:partner-process/development-process.adoc[Development Process]
 ** xref:partner-process/marketplace.adoc[Marketplace]
+** xref:partner-process/service-support.adoc[Service & Support]
 
 * xref:integration-steps.adoc[Integration]
 ** xref:integration/general-conventions.adoc[Conventions]
@@ -30,7 +31,6 @@
 *** xref:certification.adoc[Certification]
 *** xref:maintenance.adoc[Maintenance]
 *** xref:update.adoc[Updates]
-*** xref:service-support.adoc[Service & Support]
 *** xref:usage-metrics.adoc[Usage Metrics]
 ** xref:integration/endpoint-lifecycle.adoc[Endpoint Lifecycle]
 *** xref:integration/onboarding.adoc[Onboarding App Instances]

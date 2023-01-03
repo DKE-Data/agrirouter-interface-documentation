@@ -53,7 +53,7 @@ For advanced developers, here is a list of quick links for the most common topic
 * xref:urls.adoc[Relevant URLs]
 
 === Tools & Support
-* xref:service-support.adoc[Service & Support]
+* xref:partner-process/service-support.adoc[Service & Support]
 * xref:training.adoc[Training]
 * xref:maintenance.adoc[Maintenance of applications]
 

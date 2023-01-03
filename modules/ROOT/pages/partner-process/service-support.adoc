@@ -23,7 +23,7 @@ You should click the subscription button to subscribe for system events and rece
 
 == Limitations
 
-Each agrirouter account has a limited number of endpoints, see xref:./limitations.adoc[here].
+Each agrirouter account has a limited number of endpoints, see xref:../limitations.adoc[here].
 
 == Endpoint information in the agrirouter UI
 
@@ -145,7 +145,7 @@ image::ig1/image46.png[Relevant information for agrirouter support,586,335]
 
 ==== For commands related incidents
 
-Please provide the commands sent from and received by the endpoint if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see xref:./tools/endpoint-recording.adoc[here].
+Please provide the commands sent from and received by the endpoint if available. The communication protocol can be provided as log file for example. On agrirouter Side, you can record commands, see xref:../tools/endpoint-recording.adoc[here].
 
 ==== For account related incidents
 
