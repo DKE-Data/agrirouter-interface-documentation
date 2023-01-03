@@ -108,7 +108,7 @@ After submitting, DKE will receive a notification and set the status to _Approve
 
 [NOTE]
 ====
-Please be aware of xref:../service-support.adoc#contact[support business hours].
+Please be aware of xref:../partner-process/service-support.adoc#contact[support business hours].
 ====
 
 .agrirouter warning

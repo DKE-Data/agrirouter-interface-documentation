@@ -260,5 +260,5 @@ If you are interested to discuss the options or want to receive a copy of the co
 
 [NOTE]
 ====
-These contacts are only relevant for the business side, for development or end user support, please refer to the xref:service-support.adoc[Service&Support]
+These contacts are only relevant for the business side, for development or end user support, please refer to the xref:./service-support.adoc[Service&Support]
 ====
