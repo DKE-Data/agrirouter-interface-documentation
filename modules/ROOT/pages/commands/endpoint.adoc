@@ -111,7 +111,7 @@ If message pushing is used in your software, please make sure you use enabled me
 |=================================================================================
 |ResultCode |ACK
 |Protobuf Schema |agrirouter.response.payload.endpoint.CapabilityResponse
-|typeURL |types.agrirouter.com/agrirouter.response.payload.endpoint.CapabilityResponse
+|TypeURL |types.agrirouter.com/agrirouter.response.payload.endpoint.CapabilityResponse
 |=================================================================================
 
 The result is a simple `ACK` or an `ACK_WITH_MESSAGES`.
@@ -212,7 +212,7 @@ The DDIs field is only required if the subscription is used for a subscription o
 |===============================================
 |ResultCode |ACK
 |Protobuf Schema |None; Simply 0 bytes of answer
-|typeURL |""
+|TypeURL |-
 |===============================================
 
 In case of success, an Acknowledgment is received.
