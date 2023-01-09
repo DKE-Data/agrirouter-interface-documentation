@@ -361,7 +361,7 @@ See <<Message Query and Filtering>> for parameters and Filtering.
 |typeURL |"agrirouter.commons.Messages"
 |=====================================
 
-In case of success, you receive VAL_000209 and a list of MessageIDs that could be confirmed.
+In case of success, you receive VAL_000209 and a list of MessageIDs that could be deleted.
 
 === Errors
 
@@ -403,7 +403,7 @@ MessageConfirm is simply an array of message IDs.
 |typeURL |"agrirouter.commons.Messages"
 |=====================================
 
-In case of success, you receive VAL_000209 and a list of MessageIDs that could be confirmed.
+In case of success, you receive VAL_000206 and a list of MessageIDs that could be confirmed.
 
 === Errors
 
