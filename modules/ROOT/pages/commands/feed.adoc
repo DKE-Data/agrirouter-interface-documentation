@@ -101,7 +101,7 @@ Within the sender-receiver package, the messages are sorted first by the timesta
 |======================================================================
 |ResultCode |ACK_FOR_FEED_HEADER_LIST
 |Protobuf Schema |agrirouter.feed.response.HeaderQueryResponse
-|typeURL |types.agrirouter.com/agrirouter.feed.response.HeaderQueryResponse
+|TypeURL |types.agrirouter.com/agrirouter.feed.response.HeaderQueryResponse
 |======================================================================
 
 In general, the result has the following layers
@@ -222,7 +222,7 @@ Every app Instance can request a single or a list of messages to be forwarded fr
 |==============================================================
 |Command |dke:feed_message_query
 |Protobuf Schema |agrirouter.feed.request.MessageQuery
-|typeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
+|TypeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
 |==============================================================
 
 For parameter description see <<Message Query and Filtering>>.
@@ -235,7 +235,7 @@ The result includes all information like the HeaderQueryResponse plus the actual
 |===============================================================================
 |ResultCode |ACK_FOR_FEED_MESSAGE
 |Protobuf Schema |agrirouter.feed.response.MessageQueryResponse
-|typeURL |types.agrirouter.com/agrirouter.feed.response.MessageQueryResponse
+|TypeURL |types.agrirouter.com/agrirouter.feed.response.MessageQueryResponse
 |===============================================================================
 
 In general, the result has the following layers
@@ -347,7 +347,7 @@ An app instance can delete message from its feed if it does not want to consume 
 |==============================================================
 |Command |dke:feed_delete
 |Protobuf Schema |agrirouter.feed.request.MessageQuery
-|typeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
+|TypeURL |types.agrirouter.com/agrirouter.feed.request.MessageQuery
 |==============================================================
 
 See <<Message Query and Filtering>> for parameters and Filtering.
@@ -358,7 +358,7 @@ See <<Message Query and Filtering>> for parameters and Filtering.
 |=====================================
 |ResultCode |ACK_WITH_MESSAGE
 |Protobuf Schema |message
-|typeURL |"agrirouter.commons.Messages"
+|TypeURL |types.agrirouter.com/agrirouter.commons.Messages
 |=====================================
 
 In case of success, you receive VAL_000209 and a list of MessageIDs that could be deleted.
@@ -389,7 +389,7 @@ The old behavior, where a message was delivered over and over again with a FeedM
 |================================================================
 |Command |dke:feed_confirm
 |Protobuf Schema |agrirouter.feed.request.MessageConfirm
-|typeURL |types.agrirouter.com/agrirouter.feed.request.MessageConfirm
+|TypeURL |types.agrirouter.com/agrirouter.feed.request.MessageConfirm
 |================================================================
 
 MessageConfirm is simply an array of message IDs.
@@ -400,7 +400,7 @@ MessageConfirm is simply an array of message IDs.
 |=====================================
 |ResultCode |ACK_WITH_MESSAGE
 |Protobuf Schema |message
-|typeURL |"agrirouter.commons.Messages"
+|TypeURL |types.agrirouter.com/agrirouter.commons.Messages
 |=====================================
 
 In case of success, you receive VAL_000206 and a list of MessageIDs that could be confirmed.

@@ -20,7 +20,7 @@ A telemetry platform can onboard its own CUs, which will show up in the agrirout
 |=========================================================================
 |Command |dke:cloud_onboard_endpoints
 |Protobuf Schema |agrirouter.cloud.registration.OnboardingRequest
-|typeURL |types.agrirouter.com/agrirouter.cloud.registration.OnboardingRequest
+|TypeURL |types.agrirouter.com/agrirouter.cloud.registration.OnboardingRequest
 |=========================================================================
 
 The onboarding Request includes an Array of EndpointRegistrationDetails
@@ -109,7 +109,7 @@ This command is sent by the telemetry platform itself, NOT by the Virtual CU tha
 |==========================================================================
 |Command |dke:cloud_offboard_endpoints
 |Protobuf Schema |agrirouter.cloud.registration.OffboardingRequest
-|typeURL |types.agrirouter.com/agrirouter.cloud.registration.OffboardingRequest
+|TypeURL |types.agrirouter.com/agrirouter.cloud.registration.OffboardingRequest
 |==========================================================================
 
 === Result
@@ -118,7 +118,7 @@ This command is sent by the telemetry platform itself, NOT by the Virtual CU tha
 |=====================================
 |ResultCode |ACK
 |Protobuf Schema |None, simply 0 bytes
-|typeURL |„"
+|TypeURL |-
 |=====================================
 
 === Errors

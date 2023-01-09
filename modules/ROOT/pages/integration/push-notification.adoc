@@ -41,7 +41,7 @@ A push message will be received directly through the outbox without any command 
 |=====
 |ResultCode |PUSH_NOTIFICATION
 |Protobuf Schema |agrirouter.feed.push.notification.proto
-|typeURL |types.agrirouter/agrirouter.feed.push.notification
+|TypeURL |types.agrirouter/agrirouter.feed.push.notification
 |=====
 
 The push message element includes
