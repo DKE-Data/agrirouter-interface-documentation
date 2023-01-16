@@ -39,6 +39,11 @@ The Request shall include the following header information:
 |X-Agrirouter-Signature |[Signature] |see xref:integration/onboarding.adoc#signing-requests[Signing requests]
 |=============================================================
 
+[WARNING]
+====
+This request *must not* be TLS authenticated!
+====
+
 === Body
 
 The body includes a JSON object:
