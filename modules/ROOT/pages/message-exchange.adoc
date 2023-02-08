@@ -32,7 +32,7 @@ image::general/message_path.svg[Path of a message through agrirouter,634,314]
 
 Every endpoint can send messages to specific endpoints and/or publish them.
 
-Every end user can provide routings to allow this message delivery. Per default, no routings are set and therefore, the delivery is disallowed. This can be changed easily by the end user. See the link:https://lb.my-agrirouter.com[Learning box] for further details.
+Every end user can provide routings to allow this message delivery. Per default, no routings are set and therefore, the delivery is disallowed. This can be changed easily by the end user. See the link:https://qr.my-agrirouter.com/expert-guide/newrouting[User Manual] for further details.
 
 If messages are sent published, they are only delivered to those allowed endpoints that subscribed for this message type. If messages are sent directly and recipients are mentioned in the address lists, they are delivered if the endpoint supports this message type and if there is a routing allowing the delivery.
 
@@ -159,7 +159,7 @@ image::ig1/image16.png[Subscribing for a message; simplified,619,236]
 
 Messages can be sent to other users’ accounts if this users account is connected with the agrirouter account of the sending endpoint. A connected account is represented as an endpoint in the users agrirouter account.
 
-For guidance, how to connect 2 accounts, see the link:https://lb.my-agrirouter.com[Learning box].
+For guidance on how to connect 2 accounts, see the link:https://qr.my-agrirouter.com/expert-guide/account-pairing[User Manual].
 
 A message that is addressed to this endpoint will be published in the connected account. An app instance that wants to receive messages from a different account has to subscribe its endpoint to the desired technical message type. The process is visible in the following graph:
 
@@ -222,7 +222,7 @@ image::ig1/image18.png[Message addressing and routing through the agrirouter,636
 === Setup of routings
 
 Routings are created by the end user in his agrirouter account.
-Please refer to the link:https://lb.my-agrirouter.com[Learning Box]
+Please refer to the link:https://qr.my-agrirouter.com/expert-guide/routing[User Manual]
 
 
 
