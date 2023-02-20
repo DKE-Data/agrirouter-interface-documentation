@@ -81,7 +81,8 @@ The onboarding request requires several different information:
 Both IDs are the same, they can be found in the agrirouter software endpoint UI of the developers account:
 
 .Finding the applicationID
-image::ig2/image22.png[Finding the applicationID,455,258]
+
+image::ig2/image10.png[Finding the applicationID (marked [1]),519,294]
 
 
 

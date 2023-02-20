@@ -109,8 +109,9 @@ A UUID identifying an application regardless of the software version.
 The value cannot be found by the api, it has to be entered into the application by the developer.
 
 The developer can find the ID in his developer account:
-.application ID (second row below the icon)
-image::ig2/image10.png[800,419,application ID (second row below the icon)]
+
+.application ID (marked [1])
+image::ig2/image10.png[application ID (marked [1]),636,361]
 
 
 ==== As End User
@@ -118,7 +119,7 @@ image::ig2/image10.png[800,419,application ID (second row below the icon)]
 The value can be found in the agrirouter UI endpoint information
 
 .applicationID = endpoint software ID
-image::ig2/image49.png[512,419,applicationID = endpoint software ID]
+image::ig2/image49.png[applicationID = endpoint software ID,512,419]
 
 
 
@@ -153,7 +154,7 @@ The value cannot be found by the API. It has to be entered by the developer.
 The developer can find the certificationVersionID in his endpoint software overview:
 
 .certificationVersionId (see below the title)
-image::ig2/image23.png[800,419,certificationVersionId (see below the title)]
+image::ig2/image23.png[certificationVersionId (see below the title),636,361]
 
 
 ==== As End User
@@ -161,7 +162,7 @@ image::ig2/image23.png[800,419,certificationVersionId (see below the title)]
 The value can be found in the agrirouter UI endpoint Information
 
 .certificationVersionId = endpoint software version ID
-image::ig2/image49.png[512,419,certificationVersionId = endpoint software version ID]
+image::ig2/image49.png[certificationVersionId = endpoint software version ID,512,419]
 
 
 

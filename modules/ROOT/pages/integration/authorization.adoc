@@ -12,13 +12,13 @@ As the authorization process – in difference to the rest of the communication 
 ====
 
 
-The authorization process is major for farming software and telemetry platforms, for CUs it is an optional function.
+The authorization process is required for farming software and telemetry platforms, for CUs it is an optional function.
 
 For CUs, this requires additional infrastructure, therefore DKE advises to use the registration code exchange process.
 
 == Authorization of farming software
 
-As application providers have to pay for application instances communicating with agrirouter, the application provider should make sure that only such agrirouter accounts can onboard one of his applications that he can assign to one of his users.
+The application provider should make sure that only such agrirouter accounts can onboard one of his applications that he can assign to one of his users.
 
 [NOTE]
 ====
@@ -29,7 +29,7 @@ As the user has to log on to agrirouter, the authorization process requires a br
 
 To provide authorization, the developer first has to setup the application.
 
-In the developers UI, he has to:
+In the developers' UI, he has to:
 
 * Copy the application ID (1)
 * Call Edit (2)
@@ -43,12 +43,9 @@ image::ig2/image10.png[Application overview,636,361]
 .Application settings
 image::ig2/image11.png[Application settings,362,350]
 
-
-
-
 [NOTE]
 ====
-If you do not yet have an official domain, where your application is reachable online, you can use http://fuf.me. This URL is a synonym for localhost or 127.0.0.1, but it meets the requirements of the agrirouter UI for redirect URLs.
+If you do not yet have an official domain where your application is reachable online, you can use http://fuf.me. This URL is a synonym for localhost or 127.0.0.1, but it meets the requirements of the agrirouter UI for redirect URLs.
 
 Simply check Tracert/TraceRoute:
 
@@ -105,9 +102,9 @@ To better understand what happens here, try the following:
 * For testing purpose, you can just enter the url https://httpbin.org/get in your applications redirect URL (see below) to see the result of authorization.
 
 * The step "user clicks on Link" might not be needed, applications could handle that different.
+For example the application could send a redirect (HTTP Status 300) to directly redirect the user to the agrirouter Connection Website. The description "user clicks on Link" is simply the most understandable description we could come up with.
 ====
 
-For example the application could send a redirect (HTTP Status 300) to directly redirect the user to the agrirouter Connection Website. The description "user clicks on Link" is simply the most understandable description we could come up with.
 
 === Generating an authorization URL
 
@@ -118,32 +115,32 @@ The authorization Link is a HTTP GET Request that has to be called from a browse
 [cols="1,4",options="header",]
 |===============================================
 |Method |Address
-|GET |/application/\{\{applicationID}}/authorize
+|GET |/application/{\{applicationID}}/authorize
 |===============================================
 
 To provide a link for authorization, create a link like this:
 
-**__\{\{agrirouter-url}}/application/\{\{applicationID}}/authorize?\{\{response_type}}&\{\{state}}&\{\{redirect_uri}}__**
+**__{\{agrirouter-url}}/application/{\{applicationID}}/authorize?{\{response_type}}&{\{state}}&{\{redirect_uri}}__**
 
 [cols="2,3,3",options="header",]
 |=====================================================================================
 |Parameter |Example Value |Remark
-|\{\{agrirouter-url}} |see above |Differentiates between QA and Live system
-|\{\{applicationID}} |Noted from the agrirouter UI |
-|\{\{response_type}} |response_type=onboard a|
+|{\{agrirouter-url}} |see above |Differentiates between QA and Live system
+|{\{applicationID}} |Noted from the agrirouter UI |
+|{\{response_type}} |response_type=onboard a|
 Possible values:
 
 verify: only verify the user,
 
 onboard: verify user and create a Registration Code (Token)
 
-|\{\{state}} |state=w4st556dr543d4wr4s4 a|
+|{\{state}} |state=w4st556dr543d4wr4s4 a|
 A number to identify the request result on server side. The provided Number should be:
 
 * Unique
 * Not guessable
 
-|\{\{redirect_uri}} | |Could extend your entered redirect URL. The base redirect URL needs to be configured by the application developer in the UI. If this query parameter is omitted, the configured URL will be used. This parameter can override the configured URL as long as the configured URL is a substring of the one defined in the request (e.g. configured: example.com/callback | query parameter: example.com/callback/customer15). 
+|{\{redirect_uri}} | |Could extend your entered redirect URL. The base redirect URL needs to be configured by the application developer in the UI. If this query parameter is omitted, the configured URL will be used. This parameter can override the configured URL as long as the configured URL is a substring of the one defined in the request (e.g. configured: example.com/callback | query parameter: example.com/callback/customer15). 
 |=====================================================================================
 
 [CAUTION]
@@ -161,12 +158,12 @@ The response type onboard can be used to onboard farming applications without ha
 When the user clicks on the link, the agrirouter website is called. If the user is currently not logged in, he has to log in. After logging in, he is delivered a website to authorize the connection between agrirouter and the application provider:
 
 .Application authorization screen
-image::ig2/image14.png[Application authorization screen,252,202]
+image::ig2/image14.png[Application authorization screen,333,303]
 
 
 === Analyse result
 
-agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization result in a GET queue attached to the Redirect URL entered in the developers’ application settings.
+agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization result in a GET queue attached to the Redirect URL entered in the developers' application settings.
 
 The browser reacts in requesting this redirect URL which performs a GET request at the endpoint of the address.
 
@@ -182,7 +179,7 @@ The following parameters will be delivered in the GET-Query:
 |============================================================================================================
 
 .Example of an authorization result
-image::ig2/image15.png[Example of an authorization result,542,265]
+image::ig2/image15.png[Example of an authorization result]
 
 
 ==== Checking for errors
@@ -197,7 +194,7 @@ If the result includes a parameter *error*, the request was declined. Possible v
 
 ==== Checking authenticity
 
-Before analyzing the result, which is encoded in the *token*, it should be made sure that the result (provided to the browser and from there to the application providers server) is really provided by the agrirouter.
+Before analyzing the result, which is encoded in the *token*, it should be made sure that the result (provided to the browser and from there to the application provider's server) is really provided by the agrirouter.
 
 Steps:
 
@@ -214,7 +211,7 @@ You **have to** use the key from xref:../keys.adoc[Certificates and keys]!
 
 [NOTE]
 ====
-* Many implementations of the verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it’s fairly possible that you do NOT have to create a SHA256 hash before and can directly provide the concated Strings of state and token.
+* Many implementations of the verification algorithm directly include the SHA256 hashing. If you have to provide the algorithm SHA256 to your verification library call, it's fairly possible that you do NOT have to create a SHA256 hash before and can directly provide the concated strings of state and token.
 * Don't forget to url decode `state` and `token` before concatenation. 
 * The `signature` is base64 encoded binary, you need to decode it before using.
 ====
@@ -228,8 +225,8 @@ The result token is a base64 encoded JSON object including the following paramet
 |=======================================================================================================================================================
 |Name |Type |Description
 |account |String |The unique id of the user account on agrirouter that will be provided to you in the metrics exports for billing
-|regcode |String |If response-type=onboard, this regcode will deliver a Registration Code equal to clicking the RegistrationCode when clicking "+Telemetry"-Button and select a CU in the agrirouter ui
-|expires |DataTime |The date and time (in UTC), when the regcode becomes invalid
+|regcode |String |If `response-type=onboard`, this regcode will deliver a Registration Code equal to clicking the RegistrationCode when clicking the `+ Telemetry` button and select a CU in the agrirouter ui
+|expires |DataTime |The date and time (in UTC) when the regcode becomes invalid
 |=======================================================================================================================================================
 
 IMPORTANT: The account ID is used for invoicing. Therefore it should be saved with the onboarding reponse together, so the check of the invoice is possible. If the account ID is missing comparing the items on the invoice is not possible, since the invoicing is based on the account ID.
