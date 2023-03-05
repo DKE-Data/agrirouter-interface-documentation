@@ -45,13 +45,7 @@ image::ig2/image11.png[Application settings,362,350]
 
 [NOTE]
 ====
-If you do not yet have an official domain where your application is reachable online, you can use http://fuf.me. This URL is a synonym for localhost or 127.0.0.1, but it meets the requirements of the agrirouter UI for redirect URLs.
-
-Simply check Tracert/TraceRoute:
-
-.fuf.me is an alias for localhost
-image::ig2/image12.png[fuf.me is an alias for localhost,466,181]
-
+During development, if your application is not yet reachable publicly or you are developing for a desktop application, you can just use http://127.0.0.1, plus any port number (e.g. http://127.0.0.1:12080).
 ====
 
 === Authorization Process Overview
