@@ -62,9 +62,10 @@ The protocol layer describes the basic communication layer. All agrirouter commu
 
 === MQTT
 
-MQTT is a subscription based protocol. Therefore, the client can be informed by agrirouter that new messages are available. For further information, please refer to the following resource:
+MQTT is a subscription based protocol. Therefore, the client can be informed by agrirouter that new messages are available. For further information, please refer to the following resources:
 
 * https://mqtt.org/
+* https://www.hivemq.com/mqtt-essentials/
 
 The agrirouter provides an MQTT Broker server side, so, an app instance has to connect to this server with its client.
 
