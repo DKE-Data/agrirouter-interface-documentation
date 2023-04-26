@@ -88,7 +88,7 @@ Sending an onboarding request is described xref:./integration/onboarding.adoc[he
 |====
 |Area |Environment |URL
 |EU |Quality Assurance |https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/application/\{applicationId}/authorize
-|EU |Production |https://goto.my-agrirouter.com//application/\{applicationId}/authorize
+|EU |Production |https://goto.my-agrirouter.com/application/\{applicationId}/authorize
 |====
 
 The description on creating a full authorization URL can be found xref:./integration/authorization.adoc#generating-an-authorization-url[here]
