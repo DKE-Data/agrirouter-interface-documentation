@@ -2,6 +2,7 @@ site:
   title: agrirouter Docs
   url: https://docs.agrirouter.com
   start_page: agrirouter-interface-documentation::introduction.adoc
+  robots: allow
 content:
   sources:
     - url: .
