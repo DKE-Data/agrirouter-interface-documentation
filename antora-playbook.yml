@@ -1,6 +1,6 @@
 site:
   title: agrirouter Docs
-  url: https://docs.my-agrirouter.com
+  url: https://docs.agrirouter.com
   start_page: agrirouter-interface-documentation::introduction.adoc
 content:
   sources:
