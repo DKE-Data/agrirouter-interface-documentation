@@ -122,6 +122,12 @@ If the same capabilities message is sent twice and the push notification status 
 
 If the message was malformed, an `ACK_WITH_FAILURE` will be returned.
 
+=== Frequency
+
+It is technically sufficient to send this command only once if no parameters change.
+
+Nevertheless, to recover automatically from any issues, it does make sense to periodically resend this command. Recommended frequency is once per day.
+
 === Example
 [source,json]
 ----
@@ -222,6 +228,12 @@ In case of failure, an Acknowledgment with Message or an Acknowledgment with Fai
 === Errors
 
 Errors will be reported using `ACK_WITH_FAILURE`. For a list of possible errors, see the xref:../error-codes.adoc[error list].
+
+=== Frequency
+
+It is technically sufficient to send this command only once if no parameters change.
+
+Nevertheless, to recover automatically from any issues, it does make sense to periodically resend this command. Recommended frequency is once per day.
 
 
 === Example

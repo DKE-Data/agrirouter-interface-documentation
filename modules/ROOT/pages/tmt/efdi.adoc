@@ -34,7 +34,6 @@ The teamset ID has to change, for example, when
 
 For information on filtering and assigning machines by their name, see xref:../ecosystem.adoc[ecosystem].
 
-
 === Command
 
 [cols=",",]
@@ -57,6 +56,16 @@ The result indicates if the teamset could be forwarded to an addressed endpoint 
 ====
 If a CU sends a teamset, applications are able to address messages directly to the devices. These messages are then delivered to the CU.
 ====
+
+
+=== Frequency
+
+In addition to the change-based sending of Device Descriptions described above, it would be beneficial to also send device descriptions
+
+* when the communication unit is powered on
+* at a regular interval between once per hour and once per day, depending on the use case and architecture of your solution
+
+While not strictly technically necessary, these steps help in troubleshooting or automatic recovery in case any issues appear.
 
 
 == iso:11783:-10:time_log:protobuf - EFDI TimeLog
