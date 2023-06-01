@@ -11,6 +11,8 @@ The proto file definining the format can be found link:https://github.com/DKE-Da
 
 This format is used to report devices that are attached to the agrirouter through a CU. These devices including the CU are known as a teamset, having their own teamsetID.
 
+The teamset ID should preferably be a GUID.
+
 [IMPORTANT]
 ====
 The CUs defining the teamset ID have to make sure that they define it  *one-to-one* and, optionally, in a *deterministic* way in regards to the contents of the device_description.
