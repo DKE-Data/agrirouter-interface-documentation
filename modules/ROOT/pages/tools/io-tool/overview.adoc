@@ -1,6 +1,6 @@
-# IO Tool Documentation
+= IO Tool Documentation
 
-## What's this about?
+== What's this about?
 
 The IO-Tool is the most feature-complete tool to test your integration with agrirouter.
 
@@ -9,51 +9,49 @@ It is *not* an end user software and it is *not* equal to the agrirouter.
 The IO-Tool can be used as an example communication partner for your agrirouter implementation.
 
 
-# Let's get started
+== Let's get started
 
 In the following chapters you will find all details for work with the IO-Tool.
 
 
-## Registration and Onboarding
+== Registration and Onboarding
 
 In this chapter, we'll get you an IO-Tool account and onboard the IO-Tool to agrirouter. See here
 
 
-## Settings 
+== Settings 
 
 The settings of the IO-Tool change the behavior of the tool at the agrirouter. See here
 
 
-## Logging 
+== Logging 
 
 We'll describe where and how you find and read the logs of your IO-Tool instance. See here
 
 
-## Endpoint List
+== Endpoint List
 
 Who's visible for the IO-Tool in my agrirouter account and how to check that. See here
 
-
-## FileList
+== FileList
 
 Exchange files with other agrirouter Endpoints. Understand how to up- and download, send, receive and manipulate files. See here
 
-### Overview
+== Overview
+
+== Send Files 
 
 
-### Send Files 
+== Change Files 
 
 
-### Change Files 
+== Receive Files 
 
 
-### Receive Files 
+== EFDI Telemetry Viewer
 
 
-### EFDI Telemetry Viewer
-
-
-## Simulation
+== Simulation
 
 Trying to implement a telemetry view in your solution? Use the IO-Tool Simulator to play any ISOXML Files telemetry data.
 

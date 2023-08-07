@@ -1,0 +1,46 @@
+:imagesdir: 
+= File Sending
+
+When you share, you can choose to publish or send the files. Publishing means you send them out and anyone who is interested and has access can download them. On the other hand, when you send the files, you select a specific recipient.
+
+image::io-tool/sendorpublish.png[]
+
+Before sending the files you need to upload them to your _Data Storage_ (drag and drop, or click to choose). This is a pop up message you receive when uploading a valid data.
+
+image::io-tool/multifieldsupload.png[]
+
+When sending files, you can only select thoes from your _Data Storage_. 
+
+image::io-tool/sending.png[]
+
+
+If all goes well, you will receive the following pop-up message in the top right corner.
+
+image::io-tool/sentsuccess.png[]
+
+To receive the sent file, you will then need to switch to the recipient's IO-Tool account and select the _Data Storage_ section of the main menu. You can then choose between
+
+* Receive all
+* Receive from today
+* Clear feed
+
+image::io-tool/receive.png[]
+
+In this view, you can edit, delete, download, publish or send the received files.
+
+== Common Errors
+
+Not everytime all goes well when sending files. Sometimes error messages pop up, when the format is not supported.
+
+* *A general upload error* occurs, when a corrupt file is uploaded:
+
+image::io-tool/corruptstream.png[]
+
+* In another case, a file with a valid zip structure is sent, but does not contain a TaskData.xml (this is the main file of an ISOXML DataSet). It can be successfully sent but not received (when trying to receive, no error is displayed and nothing is downloaded). Also the file format is unknown when uploading.
+
+* It is possible, that the upload is successful, but you receive few warnings (for proprietary elements in this example).
+
+image::io-tool/uploadwarning.png[]
+
+* This kind of upload warning is received when uploading a data 
+

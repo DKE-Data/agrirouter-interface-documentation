@@ -1,0 +1,28 @@
+:imagesdir: 
+
+== Endpoints
+
+To be able to send data you need to have *endpoints*. The endpoints are the representation of the farmer's software components in the agrirouter account that your IO-Tool account is connected to. Such components are e.g. a terminal, which is a communication unit (CU), or a farm management system, which is a farming software.
+In order to exchange data, you must therefore have at least one second IO-Tool account connected to the same agrirouter account. To connect it, just repeat the onboarding steps.
+
+
+// Add a link
+
+Once you have connected your second IO-Tool account to the *same* agrirouter account, you will need to switch to the agrirouter to set routes.
+
+In the control center of your agrirouter account, you will see the following screen, where you can click on the plus sign to activate a new route.
+
+image::io-tool/endpoints1.png[]
+
+After clicking on the plus sign you can select the recipient from the list (in this case you would select your second IO-Tool account).
+
+image::io-tool/route.png[]
+
+You also have the choice of which message formats you would like to allow.
+
+image::io-tool/messageformats.png[]
+
+Follow the same steps for the "Receive From" tab to add a sender.
+If you now go back to your IO-Tool and reconnect MQTT in the settings, a new endpoint will be added.
+
+image::io-tool/endpoints2.png[]

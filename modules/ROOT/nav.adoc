@@ -60,6 +60,12 @@
 ** xref:tmt/video.adoc[Videos]
 
 * Tools
+** IO-Tool
+*** xref:tools/io-tool/overview.adoc[Overview]
+*** xref:tools/io-tool/onboarding.adoc[Onboarding]
+*** xref:tools/io-tool/logging.adoc[Logging]
+*** xref:tools/io-tool/endpointList.adoc[Endpoints]
+*** xref:tools/io-tool/filesending.adoc[File Sending]
 ** xref:tools/io-tool.adoc[IO-Tool]
 ** xref:tools/arts.adoc[ARTS]
 ** xref:tools/endpoint-recording.adoc[Endpoint Recording]

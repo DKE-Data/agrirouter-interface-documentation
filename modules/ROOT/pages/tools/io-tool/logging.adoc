@@ -1,0 +1,8 @@
+:imagesdir: 
+== Logging
+
+The Logging section of the Main Menu provides more detailed information about the actions performed. 
+
+image::io-tool/logging.png[]
+
+// upload a screenshot later when more actions are performed
