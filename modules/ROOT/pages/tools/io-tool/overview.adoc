@@ -1,5 +1,5 @@
 = IO Tool Documentation
-
+:imagesdir:
 == What's this about?
 
 The IO-Tool is the most feature-complete tool to test your integration with agrirouter.
@@ -8,6 +8,18 @@ It is *not* an end user software and it is *not* equal to the agrirouter.
 
 The IO-Tool can be used as an example communication partner for your agrirouter implementation.
 
+https://io.my-agrirouter.com/[The agrirouter InOut-Tool] is a tool to simulate a remote endpoint and to learn to communicate via agrirouter. 
+
+image::io-tool/settings.png[]
+
+
+Using the IO-Tool you can 
+
+* exchange data
+* send and receive telemetry data
+* set preferences for the data exchange
+* check the logs and debug
+* simulate end points and set routings
 
 == Let's get started
 

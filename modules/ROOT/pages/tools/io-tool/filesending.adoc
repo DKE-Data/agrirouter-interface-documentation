@@ -42,5 +42,12 @@ image::io-tool/corruptstream.png[]
 
 image::io-tool/uploadwarning.png[]
 
-* This kind of upload warning is received when uploading a data 
+* This kind of upload warning is received when uploading a data that has 2 valid ISOXMLs; one in the root folder, one in the subfolder.
+
+image::io-tool/uploadwarning2.png[]
+
+* Shape files are assigned to a separate category.
+
+image::io-tool/shape.png[]
+
 

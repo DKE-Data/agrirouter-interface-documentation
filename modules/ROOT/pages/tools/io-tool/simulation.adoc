@@ -1,0 +1,30 @@
+= Simulation
+:imagesdir:
+
+The simulation feature of IO-Tool allows you to simulate a machine working on the farm for your farming software. To do this, you need telemetry data from a machine and your IO-Tool account.
+
+image::io-tool/simulation.png[]
+
+* Simply go to the _Simulation_ tab and select a source file. 
+
+* You will then have the option to select the time logs. A TLG is created when a machine is switched on, starts working in the field and is terminated when the machine is paused or switched off.
+
+* The _Skip Initial_ field allows you to skip any data at the beginning of the file that you don't want simulated.
+
+* The _Intervall_ field allows you to specify how often (in seconds) data should be sent to the agrirouter.
+
+* The _Scale_ function can be used to speed up the simulation.
+
+* If the _Endless Loop_ box is ticked, the data will be run over and over again in an endless loop.
+
+* You can adjust the time of the telemetry data using the _Replace Time_ function (e.g. live data).
+
+Now you can export the data and it will be converted to the telemetry data format (EFDI). Use the _Show DDI_ button to see exactly what data is being transferred (such as fuel consumption, etc.). https://www.isobus.net/isobus/dDEntity[Here] are the keys to the numerical codes to be found.
+
+image::io-tool/showddi.png[]
+To start the simulation, click on the green play button. 
+Once the simulation has started, it can be paused or forwarded using the buttons below:
+
+image::io-tool/pauseforward.png[].
+
+The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account (this may take a few seconds).
