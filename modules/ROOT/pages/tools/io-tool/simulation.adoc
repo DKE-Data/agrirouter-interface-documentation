@@ -29,4 +29,17 @@ image::io-tool/pauseforward.png[]
 
 The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account (this may take a few seconds).
 
-//screenshot von agrirouter
+image::io-tool/machineagrirouter.png[]
+
+//have to update the screenshot blurred
+
+== Receiving the simulation
+
+After the sender clicks the play button, the receiver automatically receives the data. To check the data and logs, go to the _Data Storage_ tab in the receiver's account.
+
+image::io-tool/receivingsimulation.png[]
+//upload the image from clickup
+
+There are three action buttons in this view: delete, download and open the map.
+
+
