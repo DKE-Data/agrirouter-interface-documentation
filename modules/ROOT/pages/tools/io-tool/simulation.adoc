@@ -25,6 +25,11 @@ image::io-tool/showddi.png[]
 To start the simulation, click on the green play button. 
 Once the simulation has started, it can be paused or forwarded using the buttons below:
 
-image::io-tool/pauseforward.png[].
+image::io-tool/pauseforward.png[]
 
-The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account (this may take a few seconds).
+The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account (this may take a few seconds). As soon as the agrirouter has received this information, a new endpoint will be created for the machine.
+
+
+image::io-tool/machineagrirouter.png[]
+
+// image::io-tool/receivingsimulation.png[] still missing

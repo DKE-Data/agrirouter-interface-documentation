@@ -8,10 +8,10 @@ It is *not* an end user software and it is *not* equal to the agrirouter.
 
 The IO-Tool can be used as an example communication partner for your agrirouter implementation.
 
-https://io.my-agrirouter.com/[The agrirouter InOut-Tool] is a tool to simulate a remote endpoint and to learn to communicate via agrirouter. 
+The agrirouter InOut-Tool is a tool to simulate a remote endpoint and to learn to communicate via agrirouter. 
 
-image::io-tool/settings.png[]
 
+image::io-tool/overview.png[]
 
 Using the IO-Tool you can 
 
@@ -20,6 +20,8 @@ Using the IO-Tool you can
 * set preferences for the data exchange
 * check the logs and debug
 * simulate end points and set routings
+
+Where to find: https://io.my-agrirouter.com/
 
 == Let's get started
 
