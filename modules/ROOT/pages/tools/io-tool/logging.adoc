@@ -5,4 +5,33 @@ The Logging section of the Main Menu provides more detailed information about th
 
 image::io-tool/logging.png[]
 
-// upload a screenshot later when more actions are performed
+In this section you have advanced filters to find the loggings you want. 
+
+The first filter allows you to select All, informative loggings or errors.
+
+image::io-tool/filterloggings.png[]
+
+The Timestamp allows you to specify the data and time of the loggings displayed.
+
+image::io-tool/timestamploggings.png[]
+
+You can also search for a keyword in the message of loggings using the Search function.
+
+image::io-tool/messageloggings.png[]
+
+The Clear buttons allows you to delete all the logs.
+
+image::io-tool/clearloggings.png[]
+
+If you scroll down to the button of the page you will find the function to specify how many rows per page you want to have displayed.
+
+image::io-tool/rowsperpage.png[]
+
+
+For troubleshooting there is a trace logging function in the Settings section of the main menu, which can be enabled for 24 hours. After 24 hours, the function is automatically deactivated to avoid overloading.
+
+image::io-tool/tracelogging.png[]
+
+Traced logs are displayed with the following icon:
+
+image::io-tool/traced.png[]

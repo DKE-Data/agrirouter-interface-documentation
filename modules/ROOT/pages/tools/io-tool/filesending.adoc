@@ -1,7 +1,9 @@
 :imagesdir: 
-= File Sending
+= File Exchange
 
-When you share, you can choose to publish or send the files. Publishing means you send them out and anyone who is interested ("subscribed") will receive a copy. More information about the concept of publishing and subscribing can be found  https://docs.agrirouter.com/agrirouter-interface-documentation/latest/communication.html[here]. Yet when you send the files, you select a specific recipient. Once you have selected your preferred endpoint from the list, the Send button becomes active.
+== Sending Files
+
+You can choose to publish or to send the files to one or multiple endpoints. Publishing means you send them out and anyone who is interested ("subscribed") will receive a copy. More information about the concept of publishing and subscribing can be found in the section  https://docs.agrirouter.com/agrirouter-interface-documentation/latest/message-exchange.html#sending-messages-to-machines[Concept of Message Exchange]. Yet when you send the files, you select a specific recipient. Once you have selected your preferred endpoint from the list, the Send button becomes active.
 
 image::io-tool/sendorpublish.png[]
 
@@ -16,11 +18,16 @@ When sending files, you can only select those from your _Data Storage_.
 image::io-tool/sending.png[]
 
 
-If all goes well, you will receive the following pop-up message in the top right corner.
+If all goes well, you will receive the following pop-up message in the top right corner (this can also be checked in the logs). 
 
 image::io-tool/sentsuccess.png[]
 
-To receive the sent file, you will then need to switch to the recipient's IO-Tool account and select the _Data Storage_ section of the main menu. You can then choose between
+Alternatively, to send files from the Data Storage view you need to select them with the tick scroll to the buttom and use the buttons Send or Publish:
+
+image::io-tool/sendingfromstorage.png[]
+
+== Receiving Files
+You will receive files automatically if you have subscribed to them or if they are sent to you. You will also receive a log message when a file is received. If something has gone wrong, e.g. the MQTT connection has been lost, or you are just unsure that all the data has been received, you can receive it manually. You can then choose between
 
 * Receive all
 * Receive from today
@@ -28,15 +35,30 @@ To receive the sent file, you will then need to switch to the recipient's IO-Too
 
 image::io-tool/receive.png[]
 
+In the agrirouter under Details you can check how many files are still there for the specific endpoint:
+
+image::io-tool/numberofmessages.png[]
+
 The Receive all and Receive from today-Buttons are only needed, if PushNotifications are not active.
 
 The Clear feed button is particularly useful if you have sent a broken dataset to the IO-Tool (imagine a farming software developer sending a Zip file in a broken format so that the IO-Tool cannot load it. To avoid future errors, it's better to delete the feed). Note that this button deletes all messages from the feed in agrirouter for that specific endpoint and there's no additional popup to warn the user.
 
-In this view, you can edit (name and type), delete, download, publish or send the received files. To organise your data storage, you can rename your files. You can also view EFDI and GPS:Info data.
+In this view, you can edit (name and type), delete, download, publish or send the received files.
+
+image::io-tool/storageeditfiles.png[]
+
+Use the pen symbol to rename the file and organise your data storage. You can change the type by clicking on it and selecting another one from the list. 
+The bin symbol deletes the file, the cloud symbol downloads it.
+
+
+You can also view EFDI and GPS:Info data using the map symbol, that is displayed under the column Actions for this type of files.
+
+image::io-tool/efdiview.png[]
+
 
 == Common Errors
 
-Here's a list of common errors when sending or publishing files. Please note that all these errors and tests come from the IO-Tool and that the agrirouter itself does not check data consistency.
+Here's a list of common errors when uploading files. Please note that all these errors and tests come from the IO-Tool and that the agrirouter itself does not check data consistency.
 
 * *A general upload error* occurs, when a corrupt file is uploaded:
 
@@ -44,11 +66,11 @@ image::io-tool/corruptstream.png[]
 
 * In another case, a file with a valid zip structure is sent, but does not contain a TaskData.xml (this is the main file of an ISOXML DataSet). It can be successfully sent but not received (when trying to receive, no error is displayed and nothing is downloaded). Also the file format is unknown when uploading.
 
-* It is possible, that the upload is successful, but you receive few warnings (for proprietary elements in this example).
+* It is possible, that the upload is successful, but you receive a few warnings (for proprietary elements in this example).
 
 image::io-tool/uploadwarning.png[]
 
-* This kind of upload warning is received when uploading a data that has 2 valid ISOXMLs; one in the root folder, one in the subfolder.
+* A upload warning is received when uploading a data that has 2 valid ISOXMLs; one in the root folder, one in the subfolder.
 
 image::io-tool/uploadwarning2.png[]
 

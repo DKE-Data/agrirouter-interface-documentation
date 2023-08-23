@@ -23,6 +23,65 @@ Using the IO-Tool you can
 
 Where to find: https://io.my-agrirouter.com/
 
+== Getting Started
+The tool does not have self-service registration, please send an email to request an account (support@my-agrirouter.com).
+
+Here is an email template for you
+
+_Dear Sir/Madam,_
+
+_My name is (first name, last name) from (company) and I would like to request an IO-Tool account for the email address (your email). In case of any questions please reach out to (contact person)._
+
+_Thank you in advance._
+
+You will then be emailed your login details and can enter them in this view to log in.
+
+image::io-tool/login.png[]
+
+The main page of the IO-Tool is then displayed with the three menu sections 
+
+* Data Storage
+* Logging
+* Settings
+
+image::io-tool/settings.png[] 
+
+If you only see these three, it means that you are *not* yet connected to the agrirouter.
+
+The screen is divided into several sections. The left panel displays the main menu and the centre panel presents the main content of the page. The bottom section contains the logs of all actions, which can be expanded.
+
+
+
+
+== Getting Ready for Data Exchange
+
+To be able to use the IO-Tool for data exchange, you need to connect the IO-Tool to an agrirouter account. To do this, just follow xref:tools/io-tool/onoffboarding.adoc[the onboarding steps]
+
+After being successfully connected to the agrirouter account you will have two new sections in your main menu (Endpoints & Simulation) and more advanced settings.
+
+image::io-tool/menu.png[]
+
+
+
+== Data Storage
+
+This view allows you to select the data you intend to transfer.
+
+image::io-tool/datastorage.png[]
+
+You can either upload files from your device or select from the list of previously uploaded files. You can also send files to the IO-Tool via the agrirouter. The system will 
+automatically select the file type, which can be manually adjusted later. Files are grouped by type in expandable sections.
+
+
+
+== Logging
+
+The Logging section of the Main Menu provides more detailed information about the actions performed. 
+
+image::io-tool/logging.png[]
+
+
+
 == Let's get started
 
 In the following chapters you will find all details for work with the IO-Tool.

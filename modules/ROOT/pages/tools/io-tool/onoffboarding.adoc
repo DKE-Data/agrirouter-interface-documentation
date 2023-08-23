@@ -1,0 +1,78 @@
+:imagesdir: 
+= Onboarding & Offboarding
+
+== Onboarding
+
+When the IO-Tool is not connected to any agrirouter account only three main sections of the menu are available the Settings section of the main menu looks as the following:
+
+image::io-tool/onboarding.png[]
+
+Here there are four buttons you can choose from when connecting to the agrirouter.
+
+* Onboard MQTT Producation
+* Onboard MQTT QA
+* Onboard REST Producation
+* Onboard REST QA
+
+QA refers to the quality assurance of the agrirouter, not your application.
+
+When deciding between QA ( https://qa.my-agrirouter.com ) or Production ( https://goto.my-agrirouter.com ), consider that new applications are only created in Production. 
+Normally you would want to use MQTT because it is faster. Here you can find more information about https://docs.agrirouter.com/agrirouter-interface-documentation/latest/communication.html#mqtt[MQTT] and https://docs.agrirouter.com/agrirouter-interface-documentation/latest/communication.html#rest[REST].
+
+After selecting the protocol you will be taken to the *agrirouter login* view and need to confirm the action in this screen:
+
+
+image::io-tool/connect.png[]
+
+Please be patient as it may take a while to connect, as the system is performing authentication, onboarding, sending capabilities and subscriptions in the background. 
+
+If you were already logged in to your agrirouter account, this step will be skipped and the authorisation will be detected automatically.
+
+Once you have successfully connected, you will see three new buttons in the Settings section:
+
+* Reconnect MQTT
+* Disconnect MQTT
+* Reonbaord MQTT
+
+If, for example, you are trying to update your endpoints or send something and receive an error, you can use the _Reconnect MQTT_ button as a first step in troubleshooting.
+
+The _Disconnect MQTT_ button is used for offboarding, which is explained below.
+
+The _Reonbaord MQTT_ button helps to prevent the connection from expiring. The validity period of the connection is displayed in the same view.
+
+image::io-tool/onboardingbuttons.png[]
+
+== Capabilities and Subscriptions
+It is important that you set up your capabilities and subscriptions when you are first connected so that you can receive data. These can also be found in the Settings section after onboarding.
+
+image::io-tool/capabilitiessubscriptions.png[]
+
+Under *Capabilities* you can select the message formats your IO-Tool should be able to send and receive. For each data format you can select whether the tool should be able to send it, receive it, both or none.
+
+image::io-tool/sendandreceive.png[]
+
+In this view you can also enable or disable *Push Notifications* (Enabled and Enabled (high frequency) are identical). 
+
+image::io-tool/pushnotifications.png[]
+
+Under *Subscriptions* you can select the data formats you wish to receive when they are published. All data formats are selected by default and you can use the _Deselect All_ button to start a new selection.
+
+*Remark:* Please note that you should _Send and Save_ the Capabilities first. If you _Send and Save_ the Subscriptions first, the Capabilities selection will be cleared.
+
+This graphic explains the concept of Capabilities and Subscriptions:
+
+image::io-tool/communication.svg[]
+
+
+== Offboarding
+
+
+To disconnect from the agrirouter you will need to click on the *Disconnect MQTT* or *Disconnect Production* button in the Settings section.
+
+image::io-tool/offboarding.png[]
+
+The action needs to be confirmed in the pop up window, where you are informed that the disconnecting also deletes the endpoint in the agrirouter control center.
+
+image::io-tool/offboarding2.png[]
+
+*Remark:* Please note that after disconnecting from the agrirouter account you will need to wait for ca. 5 minutes to be able to connect again.

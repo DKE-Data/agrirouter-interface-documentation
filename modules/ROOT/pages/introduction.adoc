@@ -60,7 +60,7 @@ For advanced developers, here is a list of quick links for the most common topic
 * Tools
 ** IO-Tool
 *** xref:tools/io-tool/overview.adoc[Overview]
-*** xref:tools/io-tool/onboarding.adoc[Onboarding]
+*** xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding]
 *** xref:tools/io-tool/logging.adoc[Logging]
 *** xref:tools/io-tool/endpointList.adoc[Endpoints]
 *** xref:tools/io-tool/filesending.adoc[File Sending]
