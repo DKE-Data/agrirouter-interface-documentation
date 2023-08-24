@@ -40,7 +40,7 @@ Make sure to have all xref:../certification.adoc#prerequisites[prerequistes] ava
 
 The certification company will perform the certification - with your support - and create a certificate to prove that your solution is compatible with agrirouter.
 
-== 4.4 Approval from support team
+== Approval from support team
 When the certification is successfully approved, the app will be set to status _Approved_ .
 
 [NOTE]
@@ -49,7 +49,7 @@ If your app is a CU, it will from this point on be visible to all users wanting 
 ====
 
 
-== 4.5 Test Interface & Messaging
+== Test Interface & Messaging
 
 After certification is done, you can test your application in the production environment, which means that you can xref:../invite-testers.adoc[invite real test customers to test the connection in their everyday work] or just ask users to onboard your app (the tester status is not required when your app is _Approved_ but it helps to keep an overview of your testers).
 
@@ -74,7 +74,7 @@ Each agrirouter account has a limited number of endpoints, see xref:../limitatio
 
 
 
-== 4.6 Approval for your end customer
+== Approval for your end customer
 When you decide that your application is successfully up and running and tested with the production environment, you can take all the steps relevant to publish your software to your customers like
 
 * deploying it on the server

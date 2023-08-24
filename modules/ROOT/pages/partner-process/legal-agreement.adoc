@@ -4,19 +4,27 @@
 
 == Business model of DKE-Data
 
-As of mid-2022 the business model of DKE-Data, as the operating company of agrirouter, has changed.
-
-All market participants in the agribusiness can now have the same level of influence over the future of agrirouter, which was previously limited to  manufacturers of agricultural machinery.
-
-DKE-Data operates as a non-profit company. This means that all financial contributions are only as high as necessary to continue operation, maintenance and future development of agrirouter and its surrounding solutions.
+DKE-Data operates as a non-profit company. This means that all financial contributions are only as high as necessary to cover the cost of continued operation, maintenance and future development of agrirouter and its surrounding solutions.
 
 == Who needs a legal agreement?
 
 All companies that want to *provide a product with agrirouter integration to an end-customer* must enter one of the legal agreements outlined below.
 
-Specificially, companies that only offer their products to other companies who then bring it to the market (OEM providers), do not _need_ to be an agrirouter member, but can be if they choose to do so.
+Specifically, companies that only offer their products to other companies who then bring it to the market (OEM providers), do not _need_ to be an agrirouter member, but can be if they choose to do so.
 
 Also, farmers and contractors, as the users of the agrirouter itself, do _not_ need to become a member, but can if they choose to do so. For this group, special membership rates for the <<association,association>> are being offered.
+
+== Who can become a partner?
+
+Only companies that are "qualified agribusiness market participants" may become a member of DKE-Data GmbH & Co. KG.
+
+A qualified agribusiness market participant is
+
+ * any business from farmers and suppliers of farmers
+ * any customer of farmers such as wholesalers of agricultural products and
+ * any business part of the agricultural and food production chain, such as mills, bakeries, and food manufacturers.
+ 
+Excluded from the agricultural production chain in our definition are food retailers, even in case they directly procure from farmers.
 
 == Participation options
 
@@ -32,11 +40,11 @@ h| Business Partner (3A)
 h| Shareholder (3B)
 
 
-| <<ag-turnover>> limit
-| < 60 Mio EUR/a
+| <<weighted-ag-turnover>> limit
+| < 60 Mio EUR/year
 4+| _none_
 
-| Product Steering Committee vote
+| <<psc>> vote
 | only one for the whole association
 | ✅
 | ✅
@@ -51,8 +59,8 @@ h| Shareholder (3B)
 | ✅
 
 | Financial Contribution
-3+| fixed fee, based on <<ag-turnover>>
-2+| cost distribution, based on <<ag-turnover>>
+3+| fixed fee, based on <<weighted-ag-turnover>>
+2+| cost distribution, based on <<weighted-ag-turnover>>; fixed fee for companies < 60 Mio EUR/year
 
 | Binding Period
 | 1 year
@@ -65,18 +73,19 @@ h| Shareholder (3B)
 The options in more detail:
 
 [#association]
-=== Member of DKE-Data e.V. (option 1)
+=== Member of DKE-Data agrirouter e.V. (option 1)
 
-All companies with a <<ag-turnover>> less than 60 Million Euro per year can access the agrirouter by becoming a member of the association DKE-Data e.V.
+All companies with a <<weighted-ag-turnover>> less than 60 Million Euro per year can access the agrirouter by becoming a member of the association DKE-Data agrirouter e.V.
 
-These members pay a fixed yearly fee that is based on their annual <<ag-turnover>>.
+These members pay a fixed yearly fee that is based on their annual <<weighted-ag-turnover>>.
 
-Becoming a member of the association provides access to production use of the agrirouter, as well as to the participation of regular meetings of the association, where information about current proceedings is distributed and feedback and requests from members is collected and discussed.
+https://agrirouter.com/en/company/association/[Becoming a member] of the association provides access to production use of the agrirouter, as well as to the participation of regular meetings of the association, where information about current proceedings is distributed and feedback and requests from members is collected and discussed.
 
-The association as a whole is then represented in the Product Steering Committee that decides on the agrirouter roadmap.
+The association as a whole is then represented in the <<psc>> that decides on the agrirouter roadmap.
 
-The cost contribution for being a member of DKE-Data e.V. is:
+To become an association member, just fill out the https://agrirouter.com/en/company/association/[respective form on our website].
 
+The cost contribution for being a member of DKE-Data agrirouter e.V. is:
 
 [cols="^3,^2", stripes=even]
 |===
@@ -109,9 +118,9 @@ They may do this voluntarily if they want to become involved directly with the f
 
 All companies may choose to become a Business Partner of DKE-Data GmbH & Co. KG.
 
-After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
+After an optional introduction period of two years, where a fixed fee based on the company's annual <<weighted-ag-turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
 
-Business Partners have a vote in the Product Steering Committee that decides on the agrirouter roadmap.
+Business Partners have a vote in the <<psc>> that decides on the agrirouter roadmap.
 
 Cost contribution *during the trial period*:
 [cols="^3,^2,^3,^2", stripes=even]
@@ -184,12 +193,19 @@ h| Yearly Contribution [EUR]
 
 All companies may choose to become a Shareholder of DKE-Data GmbH & Co. KG.
 
-After an optional introduction period of two years, where a fixed fee based on the company's annual <<ag-turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
+After an optional introduction period of two years, where a fixed fee based on the company's annual <<weighted-ag-turnover>> has to be paid, the financial share is defined by distributing the total remaining running cost of DKE-Data GmbH & Co. KG across all business partners and shareholders of DKE-Data GmbH & Co. KG, after all revenues (research funding, contributions of association members etc.) have been deducted. This financial share in about the same value as the fixed fee in the initial period.
 
-Shareholders, like Business Partners, have a vote in the Product Steering Committee that decides on the agrirouter roadmap.
+Shareholders, like Business Partners, have a vote in the <<psc>> that decides on the agrirouter roadmap.
 Additionally, Shareholders have a seat and vote in the Shareholder Meeting, where all topics that are required by law to be discussed and decided in the shareholder meeting are placed.
 
 Keep in mind that, while the financial contribution for Business Partners and Shareholders is the same, being a Shareholder comes with additional legal obligations!
+
+[#one-vote]
+== One Vote Principle
+
+Every company that is a Business Partner or a Shareholder of DKE-Data GmbH & Co. KG only has **one vote**, irrespective of the financial share they cover. This ensures equal participation of all involved companies.
+
+This, however, does not apply to members of the DKE-Data agrirouter e.V. association, as they have actively chosen to only participate in the platform with only little influence over its future. Every company has the right to instead become a business partner or a shareholder!
 
 [#weighted-ag-turnover]
 == Weighted Ag Turnover
@@ -252,11 +268,24 @@ h| Correction Factor
 | 1.00
 |===
 
+[#psc]
+== Product Steering Committee
 
+The Product Steering Committee (PSC) regularly holds meetings, currently once a month.
+
+Subject of the PSC are all topics related to operation and future development of the agrirouter, such as:
+
+* presenting current topics of agrirouter operations
+* discussing existing feature requests/ideas regarding necessity and priority, feature consolidation
+* discussing design ideas for features (on a rough specification level) or organize subsequent meetings with interested parties for those discussions
+* prioritizing product backlog items
+
+Every member may send up to three representatives into the Product Steering Committee, but only with <<one-vote,one vote per company>>.
+This rule also applies to the DKE-Data agrirouter e.V. association, as it itself is a shareholder. The representatives from the DKE-Data agrirouter e.V. will be elected in the association's yearly general assembly.
 
 == General process
 
-If you are interested to discuss the options or want to receive a copy of the contract, please contact Dr.-Ing. Jens Möller, see link:https://agrirouter.com/en/company/contact/[the contacts page].
+If you are interested to discuss the options or want to receive a copy of the contract, please contact Dr. Johannes Sonnen, see link:https://agrirouter.com/en/company/contact/[the contacts page].
 
 [NOTE]
 ====

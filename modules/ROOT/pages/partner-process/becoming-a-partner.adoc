@@ -1,7 +1,7 @@
-= Partner Process
+= Becoming a partner
 :imagesdir: _images/
 
-This section is dedicated to explaining the necessary steps and background of becoming an agrirouter partner and integrate with our platform.
+This section is dedicated to explaining the necessary steps and background of becoming an agrirouter partner and integrate with the agrirouter platform.
 
 There are three streams that need to be completed to become a part of the agrirouter eco system.
 
