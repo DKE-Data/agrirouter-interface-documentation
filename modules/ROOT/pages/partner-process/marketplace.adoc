@@ -29,8 +29,9 @@ image::general/process_marketplace_v2.png[]
 
 This process can be performed in parallel to the xref:partner-process/integration.adoc[integration process].
 
-
 == Create Marketplace account
+
+include::partial$different-accounts.adoc[]
 
 To setup the entry in the marketplace, the agricultural software and telemetry connections provider can create an account at https://my-agrirouter.com/en/interner-bereich/my-agrirouter/registration/.
 
