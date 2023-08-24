@@ -1,0 +1,53 @@
+= Development Process
+:imagesdir: _images/
+
+== Material
+
+We provide some material to aid during development:
+
+=== SDKs
+
+We provide SDKs for the following languages:
+
+* link:https://github.com/DKE-Data/agrirouter-sdk-java[Java]
+* link:https://github.com/DKE-Data/agrirouter-sdk-dotnet-standard[C#/.NET]
+* link:https://github.com/DKE-Data/agrirouter-sdk-php[PHP]
+* link:https://github.com/DKE-Data/agrirouter-sdk-python[Python]
+* link:https://github.com/DKE-Data/agrirouter-sdk-cpp[C++] (3rd party contribution, not officially supported)
+
+All SDKs are open source and their source code hosted on Github.
+
+The SDKs are differing a bit in their range of features. If a certain feature is missing for your language, don't hesitate to contact us or maybe even provide a Pull Request on the respective Github project.
+
+=== agrirouter middleware
+
+There is a 3rd party maintained solution available called the *agrirouter middleware* that further eases some aspects of the agrirouter integration by wrapping the more complex aspects of the agrirouter interface into a simple-to-use REST interface.
+
+For further information, please see link:https://agrirouter-middleware.com[their project].
+
+
+=== Developer Tutorial
+
+There is a link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial[developer tutorial] available that guides you step-by-step through the development process, using Java as an example.
+
+While the tutorial has already aged a bit, the main concepts are still the same.
+
+=== IO-Tool
+
+We provide a tool that presents an endpoint to communicate with during your integration work. Further information will soon be provided here.
+
+// TODO
+//== Development overview
+//
+//First, you should always keep in mind the xref:../integration/general-conventions.adoc[General conventions].
+//
+
+== Support
+
+We are there for you during the whole development process.
+
+Whether you want to discuss your integration architecture approach, are stuck at some point during development, encounter unknown issues etc., just contact us via one of these channels:
+
+* image:icons/email.svg[,24,24] link:mailto:developer-support@my-agrirouter.com[Email/Ticket]
+* image:icons/teams.svg[,24,24] link:https://teams.microsoft.com/l/chat/0/0?users=o.rahner%40dke-data.com[Microsoft Teams]
+* image:icons/slack.svg[,24,24] link:https://join.slack.com/t/agrirouter/shared_invite/zt-1eubkvbhe-KuP4naHgIOdlciuiXcztGw[Slack]

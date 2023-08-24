@@ -1,0 +1,22 @@
+= Becoming a partner
+:imagesdir: _images/
+
+This section is dedicated to explaining the necessary steps and background of becoming an agrirouter partner and integrate with the agrirouter platform.
+
+There are three streams that need to be completed to become a part of the agrirouter eco system.
+
+== Legal
+
+In general, to gain production access to the agrirouter, a legal agreement has to be made. There are multiple options interested companies can choose from. For details, see xref:./legal-agreement.adoc[].
+
+== Marketing
+
+To promote your solution and announce integration into and compatibility with agrirouter, you should put your solution into our marketplace. It is split up between https://agrirouter.com/marketplace/agrarsoftware/[Software Solutions] and https://agrirouter.com/marketplace/telemetrieverbindungen/[Telemetry Connections]. For details, see xref:./marketplace.adoc[].
+
+== Integration Development
+
+The integration process is described in detail in xref:./integration.adoc[].
+
+Technical information about the actual development of your agrirouter integration can be found in xref:./development-process.adoc[].
+
+Please also familiarize yourself with the xref:./service-support.adoc[Support Process] to learn which roles exist and how responsibilities are distributed.

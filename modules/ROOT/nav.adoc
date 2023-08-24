@@ -11,11 +11,12 @@
 ** xref:development-resources.adoc[Development Resources]
 ** xref:training.adoc[Training]
 
-* Partner Process
-** xref:partner-process/provider-agreement.adoc[Provider Agreement]
+* xref:partner-process/becoming-a-partner.adoc[Becoming a Partner]
+** xref:partner-process/legal-agreement.adoc[Legal Agreement]
+** xref:partner-process/integration.adoc[Integration Process]
+** xref:partner-process/development-process.adoc[Development Process]
 ** xref:partner-process/marketplace.adoc[Marketplace]
-** xref:partner-process/integration-qa.adoc[Integration on QA]
-** xref:partner-process/integration-prod.adoc[Integration on Production]
+** xref:partner-process/service-support.adoc[Service & Support]
 
 * xref:integration-steps.adoc[Integration]
 ** xref:integration/general-conventions.adoc[Conventions]
@@ -30,7 +31,6 @@
 *** xref:certification.adoc[Certification]
 *** xref:maintenance.adoc[Maintenance]
 *** xref:update.adoc[Updates]
-*** xref:service-support.adoc[Service & Support]
 *** xref:usage-metrics.adoc[Usage Metrics]
 ** xref:integration/endpoint-lifecycle.adoc[Endpoint Lifecycle]
 *** xref:integration/authorization.adoc[Authorization]

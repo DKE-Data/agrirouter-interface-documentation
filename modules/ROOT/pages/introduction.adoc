@@ -28,10 +28,9 @@ In general, there are 4 major topics to add your software or hardware to the agr
 .Integration process for agrirouter
 image::general/process_all_v2.png[Integration process for agrirouter]
 
-* xref:partner-process/provider-agreement.adoc[Step 1 - Provider Agreement]
-* xref:partner-process/marketplace.adoc[Step 2 - Marketplace]
-* xref:partner-process/integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
-* xref:partner-process/integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
+* xref:partner-process/legal-agreement.adoc[Step 1 - Legal Agreement]
+* xref:partner-process/integration.adoc[Step 2 - Technical Integration]
+* xref:partner-process/marketplace.adoc[Step 3 - Marketplace]
 
 
 == Quicklinks
@@ -54,7 +53,7 @@ For advanced developers, here is a list of quick links for the most common topic
 * xref:urls.adoc[Relevant URLs]
 
 === Tools & Support
-* xref:service-support.adoc[Service & Support]
+* xref:partner-process/service-support.adoc[Service & Support]
 * xref:training.adoc[Training]
 * xref:maintenance.adoc[Maintenance of applications]
 
