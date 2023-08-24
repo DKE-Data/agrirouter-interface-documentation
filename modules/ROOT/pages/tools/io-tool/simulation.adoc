@@ -5,7 +5,7 @@ The simulation feature of IO-Tool allows you to simulate a machine working on th
 
 image::io-tool/simulation.png[]
 
-* Simply go to the _Simulation_ tab and select a source file. 
+* Simply go to the _Simulation_ tab and select a source file. (from the Data Storage) 
 
 * You will then have the option to select the time logs. A TLG is created when a machine is switched on, starts working in the field and is terminated when the machine is paused or switched off.
 
@@ -19,7 +19,9 @@ image::io-tool/simulation.png[]
 
 * You can adjust the time of the telemetry data using the _Replace Time_ function (e.g. live data).
 
-Now you can export the data and it will be converted to the telemetry data format (EFDI). Use the _Show DDI_ button to see exactly what data is being transferred (such as fuel consumption, etc.). https://www.isobus.net/isobus/dDEntity[Here] are the keys to the numerical codes to be found.
+You can export the data using the _Export_ button and it will be converted to the telemetry data format (EFDI). 
+
+Use the _Show DDI_ button to see exactly what data is being transferred (such as fuel consumption, etc.). https://www.isobus.net/isobus/dDEntity[In isobus.net] are the keys to the numerical codes to be found.
 
 image::io-tool/showddi.png[]
 To start the simulation, click on the green play button. 
@@ -27,19 +29,25 @@ Once the simulation has started, it can be paused or forwarded using the buttons
 
 image::io-tool/pauseforward.png[]
 
-The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account (this may take a few seconds).
+The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account (this may take a few seconds and during this errors with the simulation may occur). As soon as the agrirouter has received this information, a new endpoint will be created for the machine.
+
 
 image::io-tool/machineagrirouter.png[]
 
-//have to update the screenshot blurred
-
 == Receiving the simulation
 
-After the sender clicks the play button, the receiver automatically receives the data. To check the data and logs, go to the _Data Storage_ tab in the receiver's account.
+After the sender clicks the play button, the receiver automatically receives the data. To check the data and logs, go to the _Data Storage_ tab in the receiver's account. The files are categorised under EFDI Timelog.  If no data is received, you can check the subscriptions and try to receive the data manually using the Receive All or Receive from Today buttons.
+
 
 image::io-tool/receivingsimulation.png[]
-//upload the image from clickup
+
 
 There are three action buttons in this view: delete, download and open the map.
 
+image::io-tool/efdiactions.png[]
 
+Clicking on the map icon will display the machine's live GPS information.
+
+image::io-tool/gpsinfo.png[]
+
+The position on the map will move as you continue to receive data. Below the map is a table that displays information about the time, position and various variables specified in the data. As you continue to receive data, the rows of the table are added.
