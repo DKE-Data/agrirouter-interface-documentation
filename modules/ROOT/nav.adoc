@@ -11,7 +11,7 @@
 ** xref:development-resources.adoc[Development Resources]
 ** xref:training.adoc[Training]
 
-* xref:partner-process/partner-process.adoc[Partner Process]
+* xref:partner-process/becoming-a-partner.adoc[Becoming a Partner]
 ** xref:partner-process/legal-agreement.adoc[Legal Agreement]
 ** xref:partner-process/integration.adoc[Integration Process]
 ** xref:partner-process/development-process.adoc[Development Process]

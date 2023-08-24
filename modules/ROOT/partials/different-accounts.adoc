@@ -1,6 +1,7 @@
 [NOTE]
 ====
 Currently, different accounts are required for the following systems:
+
   * agrirouter application (different accounts for production and QA environments, if applicable for you)
   * agrirouter marketplace
   * IO-Tool

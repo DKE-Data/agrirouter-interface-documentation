@@ -36,10 +36,11 @@ While the tutorial has already aged a bit, the main concepts are still the same.
 
 We provide a tool that presents an endpoint to communicate with during your integration work. Further information will soon be provided here.
 
-== Development overview
-
-First, you should always keep in mind the xref:../integration/general-conventions.adoc[General conventions].
-
+// TODO
+//== Development overview
+//
+//First, you should always keep in mind the xref:../integration/general-conventions.adoc[General conventions].
+//
 
 == Support
 
