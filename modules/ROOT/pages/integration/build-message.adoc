@@ -43,7 +43,7 @@ The agrirouter uses the node.js lib: https://github.com/dcodeIO/protobuf.js
 
 [NOTE]
 ====
-As the payload of a message is defined as an any message, the typeURL has to be set to the corresponding message type. Otherwise, agrirouter will not be able to forward or process the message.
+As the payload of a message is defined as an any message, the TypeURL has to be set to the corresponding message type. Otherwise, agrirouter will not be able to forward or process the message.
 ====
 
 === Getting the agrirouter protobuf files

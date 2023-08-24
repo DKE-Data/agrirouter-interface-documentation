@@ -24,24 +24,25 @@ image::general/message-push.png[Receiving messages with push notifications]
 
 [NOTE]
 ====
-Messages in the outbox persist for a short time (for CUs, you can assume 2 hours, for MQTT its up to 3 days). If an app instance was not connected to agrirouter for a while, the messages will be deleted from the outbox, however, they persist in the message feed.
-
+Messages in the outbox persist for a short time, currently 5 minutes. If an app instance was not connected to agrirouter for a while, the messages will be deleted from the outbox, however, they persist in the message feed.
 
 Every app instance should therefore check its feed in a periodic manner.
-For HTTP REST clients, this should be at least every 4 hours, for MQTT clients, this should be done at least every 3 days.
+Depending on the use case, this should be a frequency between 1 and 24 hours.
+
+Additionally, in interactive systems, you should give your user the possibility to force a feed check.
 ====
 
 Push notifications can be activated through the xref:../commands/endpoint.adoc#capabilities[Capabilities command].
 
 
-=== Analyse Push Messages
+=== Analyze Push Messages
 A push message will be received directly through the outbox without any command sent to the inbox.
 
 [cols=",",]
 |=====
 |ResultCode |PUSH_NOTIFICATION
 |Protobuf Schema |agrirouter.feed.push.notification.proto
-|typeURL |types.agrirouter/agrirouter.feed.push.notification
+|TypeURL |types.agrirouter/agrirouter.feed.push.notification
 |=====
 
 The push message element includes
@@ -112,4 +113,4 @@ The metadata field includes the following fields:
 
 
 === Delivery Order
-While messages from the feed are delivered "in order", messages directly pushed might be unsorted; chunked file messages could for example "overtake" each other on the way from Endpoint1 to Endpoint2.
+While messages from the feed are delivered "in order", messages directly pushed might be unsorted; chunked file messages could for example "overtake" each other on the way from Endpoint 1 to Endpoint 2.

@@ -109,6 +109,7 @@ a|
 ** The error message includes the error code returned from agrirouter.
 ** The error code does not simply copy the error message from agrirouter.
 ** Error codes that might not yet be documented have to be displayed as well.
+* After onboarding, the time of certificate expiration needs to be visible to the user (might be hidden in an "advanced" view or similar)
 
 |xref:./integration/authorization.adoc[Authorization]
 |Telemetry platform
@@ -149,6 +150,7 @@ a|
 ** The error message includes the error code returned from agrirouter.
 ** The error code does not simply copy the error message from agrirouter.
 ** Error codes that might not yet be documented have to be displayed as well.
+* After onboarding, if not using router devices, the time of certificate expiration needs to be visible to the user (might be hidden in an "advanced" view or similar)
 
 |xref:./integration/revoke.adoc[Revoking]
 |Telemetry platform

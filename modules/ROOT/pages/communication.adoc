@@ -47,7 +47,7 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 The live telemetry data is analysed so that filtering for value categories like fuel consumption is possible.
 
 .The onion principle for a telemetry message
-image::general/message_structure_non-telemetry.svg[The onion principle for a telemetry message,644,371]
+image::general/message_structure_telemetry.svg[The onion principle for a telemetry message,644,371]
 
 
 
@@ -59,61 +59,6 @@ Even if a client uses native protobuf for communication instead of JSON, a comma
 
 The protocol layer describes the basic communication layer. All agrirouter communication is based on a TCP/IP communication.
  When onboarding an endpoint, the developer can choose between REST and MQTT.
-
-=== REST
-
-REST is a well-known principle for online APIs. For more information on REST, please see following resources:
-
-* link:https://en.wikipedia.org/wiki/Representational_state_transfer[]
-* link:https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340[]
-
-REST uses HTTP requests that results in an HTTP Response.
-
-[NOTE]
-====
-REST is based on single, request only methods, therefore, the agrirouter cannot contact any endpoint. This means that the endpoint for example has to poll for new messages in the outbox.
-====
-
-==== Communication Workflow with the Inbox
-
-Using REST, an app instance just receives an HTTP 200 "OK" Response. The App Instance sends a HTTP Post request over an SSL secured connection.
-
-.Request and Response in HTTP
-[plantuml,http_inbox,svg]
-----
-autonumber "<b>(0)</b>"
-
-participant "App Instance\nusing REST" as app
-participant "Inbox" as inbox
-
-app -> inbox : Request Messages
-autonumber stop
-inbox -> inbox: Command Processing
-autonumber resume
-inbox -> app : Response: Could be processed?
-----
-
-==== Communication with the Outbox
-
-Using REST, the communication with the Outbox requires polling:
-
-.REST Communication with the outbox
-[plantuml,http_outbox,svg]
-----
-autonumber "<b>(0)</b>"
-
-participant "App Instance\nusing REST" as app
-participant "Outbox" as outbox
-
-loop while outbox empty
-    app -> outbox : Poll for messages
-    outbox -> app : Response with empty message
-end
-app -> outbox : Poll for messages
-outbox -> app : Return messages
-----
-
-Make sure to meet the xref:./messaging-workflow.adoc#request-sending-frequency[request frequency requirements].
 
 === MQTT
 
@@ -188,6 +133,68 @@ image::general/router-devices-screen1.png[Router device management in the agriro
 
 The setup and usage of router devices is described in the chapter xref:./router-devices.adoc[router devices].
 
+
+=== REST
+
+[WARNING]
+====
+Use of the REST protocol should **only** be considered for single-device communication like CUs!
+====
+
+
+REST is a well-known principle for online APIs. For more information on REST, please see following resources:
+
+* link:https://en.wikipedia.org/wiki/Representational_state_transfer[]
+* link:https://code.tutsplus.com/tutorials/a-beginners-guide-to-http-and-rest--net-16340[]
+
+REST uses HTTP requests that results in an HTTP Response.
+
+[NOTE]
+====
+REST is based on single, request only methods, therefore, the agrirouter cannot contact any endpoint. This means that the endpoint for example has to poll for new messages in the outbox.
+====
+
+==== Communication Workflow with the Inbox
+
+Using REST, an app instance just receives an HTTP 200 "OK" Response. The App Instance sends a HTTP Post request over an SSL secured connection.
+
+.Request and Response in HTTP
+[plantuml,http_inbox,svg]
+----
+autonumber "<b>(0)</b>"
+
+participant "App Instance\nusing REST" as app
+participant "Inbox" as inbox
+
+app -> inbox : Request Messages
+autonumber stop
+inbox -> inbox: Command Processing
+autonumber resume
+inbox -> app : Response: Could be processed?
+----
+
+==== Communication with the Outbox
+
+Using REST, the communication with the Outbox requires polling:
+
+.REST Communication with the outbox
+[plantuml,http_outbox,svg]
+----
+autonumber "<b>(0)</b>"
+
+participant "App Instance\nusing REST" as app
+participant "Outbox" as outbox
+
+loop while outbox empty
+    app -> outbox : Poll for messages
+    outbox -> app : Response with empty message
+end
+app -> outbox : Poll for messages
+outbox -> app : Return messages
+----
+
+Make sure to meet the xref:./messaging-workflow.adoc#request-sending-frequency[request frequency requirements].
+
 === Comparison of protocols
 
 Both protocols have several advantages and disadvantages. To select the right protocol for your needs, check the following table
@@ -195,7 +202,7 @@ Both protocols have several advantages and disadvantages. To select the right pr
 [cols="4,2,2",options="header",]
 |=============================================
 |Topic |MQTT |REST
-|Can be used for onboarding | |X
+|Communication with all Endpoints via one pooled connection| X | 
 |Can send JSON |X |X
 |Can send raw protobuf | |X
 |Needs no polling |X |

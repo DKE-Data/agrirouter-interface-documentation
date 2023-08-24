@@ -22,7 +22,7 @@ Every App Instance can call for a list of endpoints that are capable of receivin
 |===============================================================================
 |Command |dke:list_endpoints_unfiltered
 |Protobuf Schema |agrirouter.request.payload.account.ListEndpointsQuery
-|typeURL |types.agrirouter.com/agrirouter.request.payload.account.ListEndpointsQuery
+|TypeURL |types.agrirouter.com/agrirouter.request.payload.account.ListEndpointsQuery
 |===============================================================================
 
 [cols="1,3,2,4",options="header",]
@@ -48,7 +48,7 @@ The direction describes if messages shall be sendable or receivable:
 |===================================================================================
 |ResultCode |ENDPOINTS_LISTING
 |Protobuf Schema |agrirouter.response.payload.account.ListEndpointsResponse
-|typeURL |types.agrirouter.com/agrirouter.response.payload.account.ListEndpointsResponse
+|TypeURL |types.agrirouter.com/agrirouter.response.payload.account.ListEndpointsResponse
 |===================================================================================
 
 The endpoint response includes a list of available endpoints:
@@ -141,7 +141,7 @@ This request is used for request a list of endpoints that support a technical me
 |===============================================================================
 |Command |dke:list_endpoints
 |Protobuf Schema |agrirouter.request.payload.account.ListEndpointsQuery
-|typeURL |types.agrirouter.com/agrirouter.request.payload.account.ListEndpointsQuery
+|TypeURL |types.agrirouter.com/agrirouter.request.payload.account.ListEndpointsQuery
 |===============================================================================
 
 For further information, see  xref:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]
@@ -152,7 +152,7 @@ For further information, see  xref:./ecosystem.adoc##call-for-endpoints-that-sup
 |===================================================================================
 |ResultCode |ENDPOINTS_LISTING
 |Protobuf Schema |agrirouter.response.payload.account.ListEndpointsResponse
-|typeURL |types.agrirouter.com/agrirouter.response.payload.account.ListEndpointsResponse
+|TypeURL |types.agrirouter.com/agrirouter.response.payload.account.ListEndpointsResponse
 |===================================================================================
 
 For further information, see xref:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]

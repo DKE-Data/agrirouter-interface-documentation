@@ -7,6 +7,8 @@
 
 The message iso:11783:-10:device_description:protobuf is used to understand, which machine is attached to which CU or Virtual CU and which machine provides which DDI. EFDI Device Descriptions are protobuf encoded, the data structure however is mainly equal to the form of an ISO11783-10 TaskData.
 
+The proto file definining the format can be found link:https://github.com/DKE-Data/agrirouter-tmt-protobuf-definitions/blob/develop/dotnet/agrirouter/protobuf/technicalmessagetype/efdi.proto[in our Github repository].
+
 This format is used to report devices that are attached to the agrirouter through a CU. These devices including the CU are known as a teamset, having their own teamsetID.
 
 [IMPORTANT]
@@ -63,6 +65,8 @@ The EFDI timelog is comparable to IOSOXML Binary Log data.
 
 The Message iso:11783:-10:time_log:protobuf includes a list of live telemetry data. For those live telemetry data, agrirouter is able to select only those DDIs to be forwarded to an endpoint that were selected by the end user when creating routings.
 
+The proto file definining the format can be found link:https://github.com/DKE-Data/agrirouter-tmt-protobuf-definitions/blob/develop/dotnet/agrirouter/protobuf/technicalmessagetype/efdi.proto[in our Github repository].
+
 EFDI Time Logs are as well comparable to ISO11783 TimeLogs.
 
 [IMPORTANT]
@@ -116,7 +120,7 @@ The current List of Categories includes the following Categories:
 |12 |*Proprietary Data* |Manufacturer specific data (not part of the standard)
 |=================================================================================================================================
 
-The assignment of specific DDIs to groups can be found link:https://lb.my-agrirouter.com/en/telemetry-parameter-configuration/[here]
+The assignment of specific DDIs to groups can be found link:https://manual.agrirouter.com/en/manual/latest/appendix/ddis.html[here]
 
 [IMPORTANT]
 ====
