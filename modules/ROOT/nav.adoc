@@ -60,7 +60,7 @@
 ** xref:tmt/video.adoc[Videos]
 
 * Tools
-** IO-Tool
+** xref:tools/io-tool/overview.adoc[IO-Tool]
 *** xref:tools/io-tool/overview.adoc[Overview]
 *** xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding]
 *** xref:tools/io-tool/logging.adoc[Logging]
