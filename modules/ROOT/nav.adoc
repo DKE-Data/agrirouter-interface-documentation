@@ -64,9 +64,11 @@
 *** xref:tools/io-tool/overview.adoc[Overview]
 *** xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding]
 *** xref:tools/io-tool/logging.adoc[Logging]
+*** xref:tools/io-tool/settings.adoc[Settings]
 *** xref:tools/io-tool/endpointList.adoc[Endpoints]
 *** xref:tools/io-tool/filesending.adoc[File Exchange]
 *** xref:tools/io-tool/simulation.adoc[Simulation]
+*** xref:tools/io-tool/troubleshooting.adoc[Troubleshooting]
 
 ** xref:tools/arts.adoc[ARTS]
 ** xref:tools/endpoint-recording.adoc[Endpoint Recording]

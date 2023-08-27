@@ -3,28 +3,41 @@
 
 == Sending Files
 
-You can choose to publish or to send the files to one or multiple endpoints. Publishing means you send them out and anyone who is interested ("subscribed") will receive a copy. More information about the concept of publishing and subscribing can be found in the section  https://docs.agrirouter.com/agrirouter-interface-documentation/latest/message-exchange.html#sending-messages-to-machines[Concept of Message Exchange]. Yet when you send the files, you select a specific recipient. Once you have selected your preferred endpoint from the list, the Send button becomes active.
+You can choose to publish or to send the files to one or multiple endpoints. Publishing means you send them out and anyone who is interested ("subscribed") will receive a copy. More information about the concept of publishing and subscribing can be found in the section  https://docs.agrirouter.com/agrirouter-interface-documentation/latest/message-exchange.html#sending-messages-to-machines[Concept of Message Exchange]. Yet when you send the files, you select a specific recipient. 
 
-image::io-tool/sendorpublish.png[]
 
-To send files via agrirouter you need to upload them to your _Data Storage_ (drag and drop, or click to choose). You will be shown a popup after successful upload.
+To send files via agrirouter you need to upload them to your _Data Storage_ (drag and drop, or click to choose).
+
+image::io-tool/uploadbutton.png[]
+
+You will be shown a popup after successful upload.
 
 image::io-tool/multifieldsupload.png[]
 
-This is a pop up message you receive when uploading a valid data.
+This is a pop up message you receive when uploading a valid data (Validation only applies to telemetry data).
 
-When sending files, you can only select those from your _Data Storage_. 
+When sending files, you can select all from your _Data Storage_. To send files from the Data Storage view you need to select them with the tick scroll to the buttom and use the buttons _Send to endpoint_ or _Publish_:
 
-image::io-tool/sending.png[]
+image::io-tool/sendingfromstorage.png[]
+
+Afterwards, you have to select one or multiple endpoints and simply click Send.
+
+image::io-tool/sendtoendpoint.png[]
 
 
 If all goes well, you will receive the following pop-up message in the top right corner (this can also be checked in the logs). 
 
 image::io-tool/sentsuccess.png[]
 
-Alternatively, to send files from the Data Storage view you need to select them with the tick scroll to the buttom and use the buttons Send or Publish:
+Alternatively, to send files from the Endpoints section, you must select an endpoint to use the Send feature, or publish without selecting an endpoint. Once you have selected your preferred endpoint from the list, the Send button becomes active.
 
-image::io-tool/sendingfromstorage.png[]
+image::io-tool/sendorpublish.png[]
+
+After clicking one of the buttons, a new window will appear with the files from your Data Storage. Here you can select one or more files and simply click Send.
+
+image::io-tool/sending.png[]
+
+See the xref:tools/io-tool/troubleshooting.adoc[Troubleshooting] section for some common error scenarios when uploading, sending or receiving files.
 
 == Receiving Files
 You will receive files automatically if you have subscribed to them or if they are sent to you. You will also receive a log message when a file is received. If something has gone wrong, e.g. the MQTT connection has been lost, or you are just unsure that all the data has been received, you can receive it manually. You can then choose between
@@ -34,10 +47,6 @@ You will receive files automatically if you have subscribed to them or if they a
 * Clear feed
 
 image::io-tool/receive.png[]
-
-In the agrirouter under Details you can check how many files are still there for the specific endpoint:
-
-image::io-tool/numberofmessages.png[]
 
 The Receive all and Receive from today-Buttons are only needed, if PushNotifications are not active.
 
@@ -54,28 +63,4 @@ The bin symbol deletes the file, the cloud symbol downloads it.
 You can also view EFDI and GPS:Info data using the map symbol, that is displayed under the column Actions for this type of files.
 
 image::io-tool/efdiview.png[]
-
-
-== Common Errors
-
-Here's a list of common errors when uploading files. Please note that all these errors and tests come from the IO-Tool and that the agrirouter itself does not check data consistency.
-
-* *A general upload error* occurs, when a corrupt file is uploaded:
-
-image::io-tool/corruptstream.png[]
-
-* In another case, a file with a valid zip structure is sent, but does not contain a TaskData.xml (this is the main file of an ISOXML DataSet). It can be successfully sent but not received (when trying to receive, no error is displayed and nothing is downloaded). Also the file format is unknown when uploading.
-
-* It is possible, that the upload is successful, but you receive a few warnings (for proprietary elements in this example).
-
-image::io-tool/uploadwarning.png[]
-
-* A upload warning is received when uploading a data that has 2 valid ISOXMLs; one in the root folder, one in the subfolder.
-
-image::io-tool/uploadwarning2.png[]
-
-* Shape files are assigned to a separate category.
-
-image::io-tool/shape.png[]
-
 

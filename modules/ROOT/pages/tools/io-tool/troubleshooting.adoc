@@ -1,0 +1,32 @@
+= Troubleshooting
+:imagesdir:
+
+This section describes some common error scenarios and a systematic approach to resolving them.
+
+
+== Common Errors
+
+Here's a list of common errors when uploading files. Please note that all these errors and tests come from the IO-Tool and that the agrirouter itself does not check data consistency.
+
+* *A general upload error* occurs, when a corrupt file is uploaded:
+
+image::io-tool/corruptstream.png[]
+
+* In another case, a file with a valid zip structure is sent, but does not contain a TaskData.xml (this is the main file of an ISOXML DataSet). It can be successfully sent but not received (when trying to receive, no error is displayed and nothing is downloaded). Also the file format is unknown when uploading.
+
+* It is possible, that the upload is successful, but you receive a few warnings (for proprietary elements in this example).
+
+image::io-tool/uploadwarning.png[]
+
+* A upload warning is received when uploading a data that has 2 valid ISOXMLs; one in the root folder, one in the subfolder.
+
+image::io-tool/uploadwarning2.png[]
+
+* Shape files are assigned to a separate category.
+
+image::io-tool/shape.png[]
+
+
+* Sometimes errors can occur when receiving data. In the agrirouter under Details you can check how many files are still to be received for the specific endpoint:
+
+image::io-tool/numberofmessages.png[]

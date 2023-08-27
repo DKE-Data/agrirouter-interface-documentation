@@ -1,5 +1,5 @@
 :imagesdir: 
-== Logging
+= Logging
 
 The Logging section of the Main Menu provides more detailed information about the actions performed. 
 
@@ -23,7 +23,7 @@ The Clear buttons allows you to delete all the logs.
 
 image::io-tool/clearloggings.png[]
 
-If you scroll down to the button of the page you will find the function to specify how many rows per page you want to have displayed.
+If you scroll down to the buttom of the page you will find the function to specify how many rows per page you want to have displayed.
 
 image::io-tool/rowsperpage.png[]
 
