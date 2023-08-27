@@ -53,21 +53,20 @@ For advanced developers, here is a list of quick links for the most common topic
 * xref:integration/environments.adoc[Environments]
 * xref:urls.adoc[Relevant URLs]
 
-=== Tools & Support
+=== Support
 * xref:service-support.adoc[Service & Support]
 * xref:training.adoc[Training]
 * xref:maintenance.adoc[Maintenance of applications]
-* Tools
-** IO-Tool
-*** xref:tools/io-tool/overview.adoc[Overview]
-*** xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding]
-*** xref:tools/io-tool/logging.adoc[Logging]
-*** xref:tools/io-tool/endpointList.adoc[Endpoints]
-*** xref:tools/io-tool/filesending.adoc[File Exchange]
-*** xref:tools/io-tool/simulation.adoc[Simulation]
-** xref:tools/arts.adoc[ARTS]
-** xref:tools/endpoint-recording.adoc[Endpoint Recording]
-** xref:tools/paho.adoc[PAHO]
+
+=== Tools
+
+There are several tools to support you in your agrirouter development
+
+
+** xref:tools/io-tool/overview.adoc[IO-Tool - Simulate communication]
+** xref:tools/arts.adoc[ARTS - Analyse messages]
+** xref:tools/endpoint-recording.adoc[Endpoint Recording - Record messages of endpoint]
+** xref:tools/paho.adoc[PAHO - MQTT Testing]
 
 
 
