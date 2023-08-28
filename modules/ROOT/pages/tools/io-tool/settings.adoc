@@ -1,1 +1,16 @@
-//password change, deletion, enable trace logging (detailed logging), linked settings to onbaording
+= Settings
+:imagesdir:
+
+The setting section of the IO-Tool allows you to edit your account details.
+
+In this view you can change the password of your IO-Tool account.
+
+image::io-tool/settings.png[]
+
+To do so just enter your current password and the new one twice. Then simply click on Change Password button.
+
+Your IO-Tool account can be deleted using the _Delete Account_ button.
+
+See more on agrirouter Linkage, trace logging, Subscriptions and Capabilities in the xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding] section of the documentation.
+
+

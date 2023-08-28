@@ -1,28 +1,78 @@
 :imagesdir: 
 
-== Endpoints
+= Endpoints
 
 To be able to send data you need to have *endpoints*. The endpoints are the representation of the farmer's software components in the agrirouter account that your IO-Tool account is connected to. Such components are e.g. a terminal, which is a communication unit (CU), or a farm management system, which is a farming software.
-In order to exchange data, you must therefore have at least one second IO-Tool account connected to the same agrirouter account. To connect it, just repeat the onboarding steps.
+In order to exchange data, you must therefore have an endpoint (e.g. your farming software or, in the case of this documentation, a second IO-Tool account) connected to the same agrirouter account. To connect it, just follow xref:tools/io-tool/onoffboarding.adoc[the onboarding steps]. 
+The Endpoint list will then be updated automatically when you switch to the Endpoint section, or you can use the Reload button to force it.
+
+image::io-tool/endpoints.png[]
 
 
-// Add a link
 
-Once you have connected your second IO-Tool account to the *same* agrirouter account, you will need to switch to the agrirouter to set routes.
+== Features
+
+There are several features in the Endpoints section, which are described below.
+
+The search function allows you to search for an endpoint in the list using a keyword from its name.
+
+image::io-tool/searchendpoints.png[]
+
+The Reload button helps to refresh the content e.g. to see a newly added endpoint (Normally the endpoint list is updated automatically when you switch to the Endpoints section, but if you were in this section initially you will need to use the Reload button.).
+
+image::io-tool/reloadendpoints.png[]
+
+In the endpoints list you have some useful information besides the name of the endpoint.
+
+image::io-tool/endpointslist.png[]
+
+Firstly, the tool specifies the type of the endpoint. 
+Using the Actions button you can receive information about the capabilities of the particular endpoint. 
+
+image::io-tool/actionsbutton.png[]
+
+This helps you to check if both capabilities and the routings set in the agrirouter are correct.
+
+image::io-tool/actions.png[]
+
+The tick in the Active column indicates whether the endpoint is reachable. A missing tick means that the endpoint has been deactivated (in the agrirouter). For more information on activating and deactivating an endpoint, refer to the https://manual.agrirouter.com/en/manual/latest/endpoint.html#disable[enduser documentation].
+
+== Setting Routings
+
+Once you have connected your IO-Tool or another endpoint account to the *same* agrirouter account, you will need to switch to the agrirouter to set routes.
+
+====
+*Remark*: You are probably a developer who is developing either a telemetry unit or farming software. If you are developing a telemetry unit, you can use the IO-Tool as a farm management system the communication works out of the box. 
+
+If you are a developer working on farm management system, please note that you can use the IO-Tool as a telemetry unit, but the agrirouter will think that the IO-Tool is farming software. Therefore there will be no routes between your software and the IO-Tool. However, there would be routes between your software and a communication unit. 
+
+This means that the following only applies to the connection between the IO-Tool and your farming software, and for the edge case that your farming software really needs to be connected to another farming software.
+====
 
 In the control center of your agrirouter account, you will see the following screen, where you can click on the plus sign to activate a new route.
 
 image::io-tool/endpoints1.png[]
 
-After clicking on the plus sign you can select the recipient from the list (in this case you would select your second IO-Tool account).
+After clicking on the plus sign you can select the recipient from the list (_for the purposes of this documentation we will simply select another IO-Tool account, in your case this could be your farming software or telemetry unit_).
 
 image::io-tool/route.png[]
+
+== Message Formats
+
 
 You also have the choice of which message formats you would like to allow.
 
 image::io-tool/messageformats.png[]
 
+_Please note that if no message formats can be selected in this view, it means that your farming software has not yet sent any capabilities._
+
 Follow the same steps for the "Receive From" tab to add a sender.
-If you now go back to your IO-Tool and reconnect MQTT in the settings, a new endpoint will be added.
+If you now go back to your IO-Tool a new endpoint will be added. Please note, that the sections ENDPOINTS WITH ROUTES TO IO-TOOL and ALL ENDPOINTS are identical.
 
 image::io-tool/endpoints2.png[]
+
+
+See the end user documentation for more information on https://docs.agrirouter.com/agrirouter-interface-documentation/latest/message-exchange.html#routings[setting up routings].
+
+
+Once all these steps have been completed, the endpoint can be used to xref:tools/io-tool/filesending.adoc[exchange data].

@@ -65,3 +65,12 @@ image::io-tool/downloadbutton.png[]
 Below the map is a table that displays information about the time, position and various variables specified in the data (e.g. fuel consumption, speed etc.). As you continue to receive data, the rows of the table are added.
 
 image::io-tool/table.png[]
+
+image::io-tool/pauseforward.png[]
+
+The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account (this may take a few seconds). As soon as the agrirouter has received this information, a new endpoint will be created for the machine.
+
+
+image::io-tool/machineagrirouter.png[]
+
+// image::io-tool/receivingsimulation.png[] still missing

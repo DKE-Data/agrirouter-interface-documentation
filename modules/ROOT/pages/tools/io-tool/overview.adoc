@@ -8,10 +8,10 @@ It is *not* an end user software and it is *not* equal to the agrirouter.
 
 The IO-Tool can be used as an example communication partner for your agrirouter implementation.
 
-https://io.my-agrirouter.com/[The agrirouter InOut-Tool] is a tool to simulate a remote endpoint and to learn to communicate via agrirouter. 
+The agrirouter InOut-Tool is a tool to simulate a remote endpoint and to learn to communicate via agrirouter. 
 
-image::io-tool/settings.png[]
 
+image::io-tool/overview.png[]
 
 Using the IO-Tool you can 
 
@@ -21,50 +21,83 @@ Using the IO-Tool you can
 * check the logs and debug
 * simulate end points and set routings
 
-== Let's get started
+Where to find: https://io.my-agrirouter.com/
 
-In the following chapters you will find all details for work with the IO-Tool.
+== Getting Started
+The tool does not have self-service registration, please send an email to request an account (support@my-agrirouter.com).
+
+Here is an email template for you
 
 
-== Registration and Onboarding
+====
+_Dear Sir/Madam,_
 
-In this chapter, we'll get you an IO-Tool account and onboard the IO-Tool to agrirouter. See here
+_My name is (first name, last name) from (company) and I would like to request an IO-Tool account for the email address (your email). In case of any questions please reach out to (contact person)._
 
+_Thank you in advance._
+====
+
+
+
+
+You will then be emailed your login details and can enter them in this view to log in.
+
+image::io-tool/login.png[]
+
+== Initial View
+
+The main page of the IO-Tool is then displayed with the three menu sections 
+
+* Data Storage
+* Logging
+* Settings
+
+image::io-tool/settings.png[] 
+
+If you only see these three, it means that you are *not* yet connected to the agrirouter.
+
+The screen is divided into several sections. The left panel displays the main menu and the centre panel presents the main content of the page. The bottom section contains the logs of all actions, which can be expanded.
+
+
+
+
+== Getting Ready for Data Exchange
+
+To be able to use the IO-Tool for data exchange, you need to connect the IO-Tool to an agrirouter account. To do this, just follow xref:tools/io-tool/onoffboarding.adoc[the onboarding steps]
+
+After being successfully connected to the agrirouter account you will have two new sections in your main menu (Endpoints & Simulation) and more advanced settings.
+
+image::io-tool/menu.png[]
+
+
+
+== Data Storage
+
+This view allows you to select the data you intend to transfer.
+
+image::io-tool/datastorage.png[]
+
+You can either upload files from your device or select from the list of previously uploaded files. You can also send files to the IO-Tool via the agrirouter. The system will 
+automatically select the file type, which can be manually adjusted later. Files are grouped by type in expandable sections. See the xref:tools/io-tool/filesending.adoc[File Exchange] section for more information.
+
+
+
+== Logging
+
+The Logging section of the Main Menu provides more detailed information about the actions performed. 
+
+image::io-tool/logging.png[]
+
+See the xref:tools/io-tool/logging.adoc[Logging] section for more information.
 
 == Settings 
 
-The settings of the IO-Tool change the behavior of the tool at the agrirouter. See here
+The settings of the IO-Tool change the behavior of the tool at the agrirouter. See the xref:tools/io-tool/settings.adoc[Settings] section for more information.
 
-
-== Logging 
-
-We'll describe where and how you find and read the logs of your IO-Tool instance. See here
-
-
-== Endpoint List
-
-Who's visible for the IO-Tool in my agrirouter account and how to check that. See here
-
-== FileList
-
-Exchange files with other agrirouter Endpoints. Understand how to up- and download, send, receive and manipulate files. See here
-
-== Overview
-
-== Send Files 
-
-
-== Change Files 
-
-
-== Receive Files 
-
-
-== EFDI Telemetry Viewer
 
 
 == Simulation
 
-Trying to implement a telemetry view in your solution? Use the IO-Tool Simulator to play any ISOXML Files telemetry data.
+Trying to implement a telemetry view in your solution? Use the IO-Tool Simulator to play any ISOXML Files telemetry data. See the xref:tools/io-tool/simulation.adoc[Simulation] section for more information.
 
 
