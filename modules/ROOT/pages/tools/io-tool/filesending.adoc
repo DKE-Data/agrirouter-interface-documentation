@@ -25,11 +25,13 @@ Afterwards, you have to select one or multiple endpoints and simply click Send.
 image::io-tool/sendtoendpoint.png[]
 
 
-If all goes well, you will receive the following pop-up message in the top right corner (this can also be checked in the logs). 
+You will receive the following pop-up message in the top right corner when your message has been successfully sent. (You can also check this in the logs).
 
 image::io-tool/sentsuccess.png[]
 
-Alternatively, to send files from the Endpoints section, you must select an endpoint to use the Send feature, or publish without selecting an endpoint. Once you have selected your preferred endpoint from the list, the Send button becomes active.
+See the xref:tools/io-tool/troubleshooting.adoc[Troubleshooting] section for some common error scenarios when uploading, sending or receiving files.
+
+Alternatively, to send files from the *Endpoints* section, you must select an endpoint to use the Send feature, or publish without selecting an endpoint. Once you have selected your preferred endpoint from the list, the Send button becomes active.
 
 image::io-tool/sendorpublish.png[]
 
@@ -37,18 +39,16 @@ After clicking one of the buttons, a new window will appear with the files from 
 
 image::io-tool/sending.png[]
 
-See the xref:tools/io-tool/troubleshooting.adoc[Troubleshooting] section for some common error scenarios when uploading, sending or receiving files.
 
 == Receiving Files
-You will receive files automatically if you have subscribed to them or if they are sent to you. You will also receive a log message when a file is received. If something has gone wrong, e.g. the MQTT connection has been lost, or you are just unsure that all the data has been received, you can receive it manually. You can then choose between
 
-* Receive all
-* Receive from today
-* Clear feed
+The IO-Tool receives all files that are directly addressed to it or for which it is subscribed (xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding]) in its agrirouter feed.
+If push notifications are active, the file is automatically delivered to the IO-Tool. Otherwise, or in case of problems with agrirouter during sending, the messages will be requested from the feed via the Receive All or Receive from today buttons.
+
+Whenever a file is received, a message is displayed in the logs.
 
 image::io-tool/receive.png[]
 
-The Receive all and Receive from today-Buttons are only needed, if PushNotifications are not active.
 
 The Clear feed button is particularly useful if you have sent a broken dataset to the IO-Tool (imagine a farming software developer sending a Zip file in a broken format so that the IO-Tool cannot load it. To avoid future errors, it's better to delete the feed). Note that this button deletes all messages from the feed in agrirouter for that specific endpoint and there's no additional popup to warn the user.
 

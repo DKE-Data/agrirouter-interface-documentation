@@ -1,7 +1,7 @@
 :imagesdir: 
 = Logging
 
-The Logging section of the Main Menu provides more detailed information about the actions performed. 
+The Logging section of the Main Menu provides more detailed information about the actions performed. There is also a logging view at the bottom of every section.
 
 image::io-tool/logging.png[]
 

@@ -54,10 +54,6 @@ Under *Capabilities* you can select the message formats your IO-Tool should be a
 
 image::io-tool/sendandreceive.png[]
 
-In this view you can also enable or disable *Push Notifications* (Enabled and Enabled (high frequency) are identical). 
-
-image::io-tool/pushnotifications.png[]
-
 Under *Subscriptions* you can select the data formats you wish to receive when they are published by another endpoint. All data formats are selected by default and you can use the _Deselect All_ button to start a new selection.
 
 *Remark:* Please note that if you send Capabilities, you should also send the Subscriptions, as this will clear the Subscriptions.
@@ -66,6 +62,13 @@ This graphic explains the concept of Capabilities and Subscriptions:
 
 image::io-tool/communication.svg[]
 
+== Push Notifications
+
+In this view you can also enable or disable *Push Notifications* (Enabled and Enabled (high frequency) are identical). 
+
+image::io-tool/pushnotifications.png[]
+
+See xref:tools/io-tool/filesending.adoc[File Exchange] for more information.
 
 == Offboarding
 
