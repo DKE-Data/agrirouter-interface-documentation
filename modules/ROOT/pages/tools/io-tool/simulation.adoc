@@ -1,29 +1,70 @@
 = Simulation
 :imagesdir:
 
-The simulation feature of IO-Tool allows you to simulate a machine working on the farm for your farming software. To do this, you need telemetry data from a machine and your IO-Tool account.
+The simulation feature of IO-Tool allows you to simulate a machine working on the farm for your farming software. To do this, you need telemetry data (e.g. a TaskData ISOXML
+) from a machine and your IO-Tool account.
 
 image::io-tool/simulation.png[]
 
-* Simply go to the _Simulation_ tab and select a source file. 
+* Simply go to the _Simulation_ tab and select a source file. (all the ISOXML and EFDI data from Data Storage) 
 
-* You will then have the option to select the time logs. A TLG is created when a machine is switched on, starts working in the field and is terminated when the machine is paused or switched off.
+* You will then have the option to select the time logs (TLG) . A TLG is created when a machine is switched on, starts working in the field and is terminated when the task is paused or the machine is switched off. If you select all, all TLGs will be played one after another.
 
-* The _Skip Initial_ field allows you to skip any data at the beginning of the file that you don't want simulated.
+
+* The _Skip Initial_ field allows you to skip any data at the beginning of the file that you don't want simulated. A common use case could be missing GPS information in the beginning of the simulation.
+
 
 * The _Intervall_ field allows you to specify how often (in seconds) data should be sent to the agrirouter.
 
 * The _Scale_ function can be used to speed up the simulation.
 
-* If the _Endless Loop_ box is ticked, the data will be run over and over again in an endless loop.
+* If the _Endless Loop_ box is ticked, the data will be simulated over and over again.
 
-* You can adjust the time of the telemetry data using the _Replace Time_ function (e.g. live data).
 
-Now you can export the data and it will be converted to the telemetry data format (EFDI). Use the _Show DDI_ button to see exactly what data is being transferred (such as fuel consumption, etc.). https://www.isobus.net/isobus/dDEntity[Here] are the keys to the numerical codes to be found.
+* You can adjust the time of the simulated data using the _Replace Time_ function (e.g. live data).
+
+You can export the data using the _Export_ button and it will be converted to the telemetry data format (EFDI). 
+
+Use the _Show DDI_ button to see exactly what data is being transferred (such as fuel consumption, etc.). https://www.isobus.net/isobus/dDEntity[In isobus.net] are the keys to the numerical codes to be found.
 
 image::io-tool/showddi.png[]
 To start the simulation, click on the green play button. 
-Once the simulation has started, it can be paused or forwarded using the buttons below:
+Once the simulation has started, it can be paused, forwarded to the next TLG or stopped using the buttons below:
+
+image::io-tool/pauseforward.png[]
+
+The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account (this may take a few seconds and during this errors with the simulation may occur, this is normal behavior and not critical). As soon as the agrirouter has received this information, a new endpoint will be created for the machine. Once the agrirouter has created the new endpoint, the data is forwarded to all relevant endpoints (is published) .
+
+image::io-tool/machineagrirouter.png[]
+
+== Receiving Telemtry Data
+
+When an endpoint publishes a telemetry and the receiver is subscribed for such data, it automatically shows up in the data storage. To check the data and logs, go to the _Data Storage_ tab in the receiver's account. The files are categorised under EFDI Timelog.  If no data is received, you can check the subscriptions and try to receive the data manually using the Receive All or Receive from Today buttons.
+
+
+image::io-tool/receivingsimulation.png[]
+
+
+There are three action buttons for each data set in this view: delete, download and open the map.
+
+image::io-tool/efdiactions.png[]
+
+Clicking on the map icon will display the machine's live GPS information.
+
+image::io-tool/gpsinfo.png[]
+
+The position on the map will move as you continue to receive data. To update the received data use the Load button in this view.
+
+image::io-tool/loadbutton.png[]
+
+Use the Download button to download the data in the format you require.
+
+image::io-tool/downloadbutton.png[]
+
+
+Below the map is a table that displays information about the time, position and various variables specified in the data (e.g. fuel consumption, speed etc.). As you continue to receive data, the rows of the table are added.
+
+image::io-tool/table.png[]
 
 image::io-tool/pauseforward.png[]
 
