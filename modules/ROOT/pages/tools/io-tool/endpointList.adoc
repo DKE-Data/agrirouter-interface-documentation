@@ -1,8 +1,9 @@
 :imagesdir: 
 
-= Endpoints
+= Endpoints View
 
-To be able to send data you need to have *endpoints*. The endpoints are the representation of the farmer's software components in the agrirouter account that your IO-Tool account is connected to. Such components are e.g. a terminal, which is a communication unit (CU), or a farm management system, which is a farming software.
+ The endpoints view displays a list of all reachable agrirouter endpoints. Endpoints are the representation of the farmer's software components in the agrirouter account that your IO-Tool account is connected to. Such components are Communication units (e.g. a terminal or a telemetry unit) or a farm software (e.g. a farm management system or fleet management system).
+ 
 In order to exchange data, you must therefore have an endpoint (e.g. your farming software or, in the case of this documentation, a second IO-Tool account) connected to the same agrirouter account. To connect it, just follow xref:tools/io-tool/onoffboarding.adoc[the onboarding steps]. 
 The Endpoint list will then be updated automatically when you switch to the Endpoint section, or you can use the Reload button to force it.
 
@@ -75,4 +76,15 @@ image::io-tool/endpoints2.png[]
 See the end user documentation for more information on https://docs.agrirouter.com/agrirouter-interface-documentation/latest/message-exchange.html#routings[setting up routings].
 
 
-Once all these steps have been completed, the endpoint can be used to xref:tools/io-tool/filesending.adoc[exchange data].
+Once all these steps have been completed, the endpoint can be used to xref:tools/io-tool/datastorage.adoc[exchange data].
+
+
+== File sending
+You can send files from this view as well as from the xhref:tools/io-tool/datastorage.adoc[*DataStorage* view]. 
+Once you have selected your preferred endpoint from the list, the Send button becomes active.
+
+image::io-tool/sendorpublish.png[]
+
+After clicking one of the buttons, a new window will appear with the files from your Data Storage. Here you can select one or more files and simply click Send.
+
+image::io-tool/sending.png[]

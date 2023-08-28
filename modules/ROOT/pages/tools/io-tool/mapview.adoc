@@ -1,0 +1,50 @@
+:imagesdir: 
+= Map View
+
+When an endpoint publishes a telemetry and the IO-Tool is subscribed for such data, it automatically shows up in the data storage as a new file. The structure of the filename is as follows: (Date)_(MachineName). To check the data and logs, go to the _Data Storage_ tab. The files are categorised under EFDI Timelog or GPS:Info.  
+
+[NOTE]
+====
+If no data is received, you can check the subscriptions or try to receive the data manually using the Receive All or Receive from Today buttons.
+====
+
+
+== How to open the MapView
+
+Next to each EFDI and GPS-Info file, there are three action buttons: delete, download and open the map.
+
+image::io-tool/efdiactions.png[]
+
+Clicking on the map icon will lead you to the mapview.
+
+
+== Overview
+
+image::io-tool/gpsinfo.png[]
+
+The map view is split between a map and a table. 
+It displays the latest X datasets of the EFDI or GPS:Info file. 
+
+image::io-tool/loadbutton.png[]
+
+The number of available datasets is displayed next to the selection of rows to be displayed.
+To update the number of points to display, change the value and click the Load button.
+
+The position on the map and the data in the table will automatically update if new data are received.
+
+
+
+You can download the telemetry data either in its raw Protobuf format ("Download EFDI") or in ISOXML format ("Download ISO XML").
+
+image::io-tool/downloadbutton.png[]
+
+
+Below the map is a table that displays information about the time, position and various variables specified in the data (e.g. fuel consumption, speed etc.). As you continue to receive data, the rows of the table are added.
+
+image::io-tool/table.png[]
+
+
+
+== Relevant links
+
+xref:tools/io-tool/datastorage.adoc[Back to DataStorage]

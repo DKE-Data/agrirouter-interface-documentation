@@ -7,6 +7,7 @@ When the IO-Tool is not connected to any agrirouter account only three main sect
 
 image::io-tool/onboarding.png[]
 
+=== Selection of Environment
 There are four options to choose from when establishing a connection with the Agrirouter.
 
 * Onboard MQTT Production
@@ -14,22 +15,28 @@ There are four options to choose from when establishing a connection with the Ag
 * Onboard REST Production
 * Onboard REST QA
 
-QA refers to the quality assurance of the agrirouter, not your application.
+Production refers to the eu10 Production Servers.
+QA refers to the quality assurance of the agrirouter. The QA is not a marker for the status of your application.
+
+In most cases, Onboard MQTT Production should be your connection of choice.
 
 When deciding between QA ( https://qa.my-agrirouter.com ) or Production ( https://goto.my-agrirouter.com ), remember that to test your application, the environment of the IO-Tool must match the environment of the application.
 
 Normally you would want to use MQTT because it is faster. Here you can find more information about https://docs.agrirouter.com/agrirouter-interface-documentation/latest/communication.html#mqtt[MQTT] and https://docs.agrirouter.com/agrirouter-interface-documentation/latest/communication.html#rest[REST].
 
-After clicking one of the buttons you will be taken to the *agrirouter login* screen where you will be asked to enter your login details. If you are already logged in to your agrirouter account, this step will be skipped and the authorisation will be detected automatically.
+=== Onboarding process
+
+After clicking one of the buttons you will be taken to the *agrirouter login* screen where you will be asked to enter your login details. If you are already logged in to your agrirouter account (maybe in another tab), this step will be skipped and the login will be detected automatically.
 
 image::io-tool/loginmaske.png[]
 
-Afterwards you will have to confirm the action in this view:
+Afterwards you will have to confirm the connection between agrirouter and your IO-Tool in this view:
 
 image::io-tool/connect.png[]
 
-Please be patient as it may take a while to connect. The system is performing authentication, onboarding, sending capabilities and subscriptions in the background. 
+After clicking connect, please be patient as it may take a while to connect. The system is performing authentication, onboarding, sending capabilities and subscriptions in the background. 
 
+== ReOnboarding and Reconnecting
 
 Once you have successfully connected, you will see three new buttons in the Settings section:
 
@@ -37,7 +44,7 @@ Once you have successfully connected, you will see three new buttons in the Sett
 * Disconnect MQTT
 * Reonboard MQTT
 
-If, for example, you are trying to update your endpoints or send something and receive an error, you can use the _Reconnect MQTT_ button as a first step in troubleshooting.
+If, for example, you are trying to update your endpoints or send something and receive an error, you can use the _Reconnect MQTT_ button as a first step in troubleshooting to reestablish the MQTT connection.
 
 The _Disconnect MQTT_ button is used for offboarding, which is explained below.
 
@@ -46,7 +53,7 @@ The _Reonboard MQTT_ button helps to prevent the connection from expiring. The v
 image::io-tool/onboardingbuttons.png[]
 
 == Capabilities and Subscriptions
-It is important that you set up your capabilities and subscriptions when you are first connected so that you can receive data. These can also be found in the Settings section after onboarding.
+It is important that you set up your capabilities and subscriptions when you are first connected so that you agrirouter knows, which data your application instance shall send and receive. These capabilities and subscriptions can be found in the Settings section after onboarding.
 
 image::io-tool/capabilitiessubscriptions.png[]
 
@@ -56,19 +63,20 @@ image::io-tool/sendandreceive.png[]
 
 Under *Subscriptions* you can select the data formats you wish to receive when they are published by another endpoint. All data formats are selected by default and you can use the _Deselect All_ button to start a new selection.
 
-*Remark:* Please note that if you send Capabilities, you should also send the Subscriptions, as this will clear the Subscriptions.
+*Remark:* Please note that if you send Capabilities, you should also send the Subscriptions, as sending capabilities will clear the Subscriptions.
 
-This graphic explains the concept of Capabilities and Subscriptions:
+This graphic explains the concept of Subscriptions and their publish-vs-address UseCase:
 
 image::io-tool/communication.svg[]
 
 == Push Notifications
 
-In this view you can also enable or disable *Push Notifications* (Enabled and Enabled (high frequency) are identical). 
+In the settings view you can also enable or disable *Push Notifications* (Enabled and Enabled (high frequency) are identical). 
+Those speed up the communication and make the request for messages mostly irrelevant.
 
 image::io-tool/pushnotifications.png[]
 
-See xref:tools/io-tool/filesending.adoc[File Exchange] for more information.
+See xref:../integration/push-notification.adoc[PushNotifications] for more information.
 
 == Offboarding
 

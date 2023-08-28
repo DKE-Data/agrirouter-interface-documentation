@@ -4,29 +4,39 @@
 This section describes some common error scenarios and a systematic approach to resolving them.
 
 
-== Common Errors
+== Common Upload Errors
 
 Here's a list of common errors when uploading files. Please note that all these errors and tests come from the IO-Tool and that the agrirouter itself does not check data consistency.
 
-* *A general upload error* occurs, when a corrupt file is uploaded:
+=== Corrupt stream
 
 image::io-tool/corruptstream.png[]
 
-* In another case, a file with a valid zip structure is sent, but does not contain a TaskData.xml (this is the main file of an ISOXML DataSet). It can be successfully sent but not received (when trying to receive, no error is displayed and nothing is downloaded). Also the file format is unknown when uploading.
+=== Unknown file type
 
-* It is possible, that the upload is successful, but you receive a few warnings (for proprietary elements in this example).
+A file with a valid zip structure is sent, but does not contain a TaskData.xml (this is the main file of an ISOXML DataSet) can be successfully sent but not received. 
+
+When trying to receive, no error is displayed and nothing is downloaded. 
+
+When uploading such file, the file format is unknown.
+
+=== Upload warnings
+
+It is possible, that the upload is successful, but you receive a few warnings (for proprietary elements in this example).
 
 image::io-tool/uploadwarning.png[]
 
-* A upload warning is received when uploading a data that has 2 valid ISOXMLs; one in the root folder, one in the subfolder.
+An upload warning is received when uploading a dataset includes 2 valid ISOXMLs; one in the root folder, one in the subfolder.
+
+[NOTE]
+====
+It is in general not wrong to have multiple taskSets in one zip file, but for compatibility reasons you should avoid this.
+====
 
 image::io-tool/uploadwarning2.png[]
 
-* Shape files are assigned to a separate category.
+== Error when receiving data
 
-image::io-tool/shape.png[]
-
-
-* Sometimes errors can occur when receiving data. In the agrirouter under Details you can check how many files are still to be received for the specific endpoint:
+Sometimes errors can occur when receiving data. In the agrirouter endpoint view tab  "Details" you can check how many messages are still to be received for the specific endpoint:
 
 image::io-tool/numberofmessages.png[]

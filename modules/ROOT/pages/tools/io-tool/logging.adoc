@@ -28,10 +28,11 @@ If you scroll down to the buttom of the page you will find the function to speci
 image::io-tool/rowsperpage.png[]
 
 
-For troubleshooting there is a trace logging function in the Settings section of the main menu, which can be enabled for 24 hours. After 24 hours, the function is automatically deactivated to avoid overloading.
+For troubleshooting there is a trace logging function in the xref:tools/io-tool/settings.adoc[Settings] section of the main menu, which can be enabled for 24 hours. After 24 hours, the function is automatically deactivated to avoid overloading.
 
 image::io-tool/tracelogging.png[]
 
 Traced logs are displayed with the following icon:
 
 image::io-tool/traced.png[]
+

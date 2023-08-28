@@ -1,6 +1,8 @@
 = Settings
 :imagesdir:
 
+== General account settings
+
 The setting section of the IO-Tool allows you to edit your account details.
 
 In this view you can change the password of your IO-Tool account.
@@ -11,6 +13,19 @@ To do so just enter your current password and the new one twice. Then simply cli
 
 Your IO-Tool account can be deleted using the _Delete Account_ button.
 
-See more on agrirouter Linkage, trace logging, Subscriptions and Capabilities in the xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding] section of the documentation.
+== Agrirouter connection settings
 
+In the settings view, you can perform the on- and offboarding and set the capabilities/subscriptions.
 
+See more on agrirouter Linkage, Subscriptions and Capabilities in the xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding] section of the documentation.
+
+== Logging Settings
+
+At the bottem of the settings content page, there is a trace check marker.
+The tracing can be enabled for troubleshooting for up to 24 hours. After 24 hours, the function is automatically deactivated to avoid overloading.
+
+image::io-tool/tracelogging.png[]
+
+Traced logs are displayed with the following icon:
+
+image::io-tool/traced.png[]
