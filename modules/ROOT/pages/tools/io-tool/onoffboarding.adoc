@@ -23,7 +23,7 @@ In most cases, *Onboard MQTT Production* should be your connection of choice.
 
 ==== QA vs. Prod
 
-When deciding between QA ( https://qa.my-agrirouter.com ) or Production ( https://goto.my-agrirouter.com ), remember that to test your application, the environment of the IO-Tool must match the environment of the application.
+When deciding between QA (https://qa.my-agrirouter.com) or Production (https://goto.my-agrirouter.com), remember that to test your application, the environment of the IO-Tool must match the environment of the application.
 
 ==== MQTT vs. REST
 

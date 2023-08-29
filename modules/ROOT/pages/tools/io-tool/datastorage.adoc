@@ -7,7 +7,7 @@ In this view, you can edit (name and type), delete, download, view, publish or s
 
 
 == Uploading Files
-To send files via agrirouter you need to upload them to your _Data Storage_  by drag and drop, or click on the upload area.
+To send files via agrirouter you need to upload them to your *_Data Storage_*  by drag and drop or by a click on the upload area.
 
 image::io-tool/uploadbutton.png[]
 
@@ -28,7 +28,7 @@ image::io-tool/storageeditfiles.png[]
 
 * Use the pen symbol to rename the file. 
 * Using the dropdown, you can change the type of file. (A use case would be to check your softwares behavior if you send data with a wrong data type).
-* The bin symbol deletes the file
+* The bin symbol deletes the file.
 * The cloud symbol downloads it.
 
 === Validation of ISOXML
@@ -53,7 +53,7 @@ More info on this can be found in the xref:tools/io-tool/mapview.adoc[MapView].
 
 When scrolling down to the bottom, you'll find the buttons to select all files and delete all selected files.
 
-The Delete all button becomes active as soon as at least one file is selected
+The _Delete all_ button becomes active as soon as at least one file is selected
 
 image::io-tool/select-all-delete.png[Select all and Delete buttons]
 
@@ -65,14 +65,14 @@ You can choose to publish or to send the files to one or multiple endpoints. Pub
 image::io-tool/communication.svg[]
 
 
-More information about the concept of publishing and subscribing can be found in the section  https://docs.agrirouter.com/agrirouter-interface-documentation/latest/message-exchange.html#sending-messages-to-machines[Concept of Message Exchange]. Yet when you send the files, you select a specific recipient. 
+More information about the concept of publishing and subscribing can be found in the section https://docs.agrirouter.com/agrirouter-interface-documentation/latest/message-exchange.html#sending-messages-to-machines[Concept of Message Exchange]. 
 
 
-When sending files, you can select any file from your _Data Storage_. To send files from the Data Storage view you need to select them with the tick, scroll to the bottom and use the buttons _Send to endpoint_ or _Publish_:
+When sending files directly, you can select any file from your _Data Storage_. To send files from the Data Storage view you need to select them with the tick, scroll to the bottom and use the buttons _Send to endpoint_ or _Publish_:
 
 image::io-tool/sendingfromstorage.png[]
 
-Afterwards, you have to select one or multiple endpoints and click Send.
+Afterwards, you have to select one or multiple endpoints and click _Send_.
 
 image::io-tool/sendtoendpoint.png[]
 
@@ -83,12 +83,12 @@ image::io-tool/sentsuccess.png[]
 
 See the xref:tools/io-tool/troubleshooting.adoc[Troubleshooting] section for some common error scenarios when uploading, sending or receiving files.
 
-Alternatively, you can send files from the xhref:tools/io-tool/endpointList.adoc[*Endpoints* section].
+Alternatively, you can send files from the xref:tools/io-tool/endpointList.adoc[*Endpoints* section].
 
 
 == Receiving Files
 
-The IO-Tool receives all files that are directly addressed to it or for which it is subscribed ( see xref:tools/io-tool/onoffboarding.adoc[Subscriptions]) in its agrirouter feed.
+The IO-Tool receives all files that are directly addressed to it or for which it is subscribed (see xref:tools/io-tool/onoffboarding.adoc[Subscriptions]) in its agrirouter feed.
 If push notifications are active, files are automatically delivered to the IO-Tool. Otherwise, or in case of problems with agrirouter during sending, the messages will be requested from the feed via the _Receive All_ or _Receive from today_ buttons.
 
 Whenever a file is received, a message is displayed in the logs.

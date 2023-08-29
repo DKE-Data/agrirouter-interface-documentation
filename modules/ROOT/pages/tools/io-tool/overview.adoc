@@ -31,7 +31,7 @@ The IO-Tool can be found at https://io.my-agrirouter.com/
 
 === Registration
 
-The tool does not provide self-service registration, please send an email to request an account to the agrirouter support(support@my-agrirouter.com).
+The tool does not provide self-service registration, please send an email to request an account to the agrirouter support (support@my-agrirouter.com).
 
 You can use the following email template
 
