@@ -27,7 +27,7 @@ image::screenshots/homescreen.png[User Interface for End Users,456,663]
 A specific help for handling of an end user account can be found link:https://ad.my-agrirouter.com[in the agrirouter Academy].
 
 
-== Developer
+== Developers
 
 A developer account has all the features of an end-user account.
 

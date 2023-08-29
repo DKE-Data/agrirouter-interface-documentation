@@ -1,0 +1,121 @@
+= IO Tool
+:imagesdir:
+== What's this about?
+
+The IO-Tool is the most feature-complete tool to test your integration with agrirouter.
+
+It is *not* part of the agrirouter, but a developer tool that can be connected to agrirouter.
+
+The IO-Tool is not an end customer application.
+It can be used as an example communication partner for your agrirouter implementation.
+
+
+
+image::io-tool/overview.png[]
+
+Using the IO-Tool you can 
+
+* send and receive files via agrirouter
+* send and receive telemetry data
+* test the different concepts of the data exchange
+* check the logs and debug
+* simulate endpoints and check routings
+
+
+
+== Getting Started
+
+=== Where to go
+
+The IO-Tool can be found at https://io.my-agrirouter.com/ 
+
+=== Registration
+
+The tool does not provide self-service registration, please send an email to request an account to the agrirouter support(support@my-agrirouter.com).
+
+You can use the following email template
+
+====
+_Dear Sir/Madam,_
+
+_My name is (first name, last name) from (company) and I would like to request an IO-Tool account for the email address (your email). In case of any questions please reach out to (contact person)._
+
+_Thank you in advance._
+====
+
+
+
+
+You will then be emailed your login details and can enter them in this view to log in.
+
+image::io-tool/login.png[]
+
+=== Initial View
+
+The main page of the IO-Tool is then displayed with three menu sections 
+
+* Data Storage
+* Logging
+* Settings
+
+image::io-tool/initialview.png[]
+
+If you only see these three menu items, it means that the IO-Tool is *not* yet connected to the agrirouter.
+
+The screen is divided into several sections. The left panel displays the main menu and the center panel presents the main content of the page. The bottom section contains the logs of all actions, which can be expanded.
+
+
+
+
+=== Connecting to agrirouter
+
+To be able to use the IO-Tool for data exchange, you need to connect ("onboard") the IO-Tool to an agrirouter account. To do this, just go to *Settings* and follow xref:tools/io-tool/onoffboarding.adoc[the onboarding steps]
+
+After being successfully connected to the agrirouter account you will have two new sections in your main menu (Endpoints & Simulation) and more advanced settings.
+
+image::io-tool/menu.png[]
+
+
+== Overview
+=== Data Storage
+
+This view allows you to organize the data you intend to exchange via agrirouter.
+
+image::io-tool/datastorage.png[ Data Storege]
+
+See the xref:tools/io-tool/datastorage.adoc[Data Storage] section for more information.
+
+
+=== Endpoints
+
+The endpoints list provides an overview of all reachable endpoints with their capabilities. It can also be used to send data to multiple endpoints
+
+image::io-tool/endpoints.png[Endpoint List]
+
+See the xref:tools/io-tool/endpointList.adoc[Endpoint List] section for more information.
+
+=== Logging
+
+The Logging section of the Main Menu provides more detailed information about the actions performed. 
+
+image::io-tool/logging.png[]
+
+See the xref:tools/io-tool/logging.adoc[Logging] section for more information.
+
+
+=== Simulation
+
+image::io-tool/simulation.png[]
+
+Trying to implement a telemetry view in your solution? Use the IO-Tool Simulator to send any ISOXML Files as telemetry data. See the xref:tools/io-tool/simulation.adoc[Simulation] section for more information.
+
+=== Settings 
+
+image::io-tool/settings.png[]
+
+The settings of the IO-Tool change the behavior of the tool at the agrirouter. See the xref:tools/io-tool/settings.adoc[Settings] section for more information.
+
+
+
+
+
