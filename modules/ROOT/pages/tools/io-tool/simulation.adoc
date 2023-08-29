@@ -1,35 +1,46 @@
 = Simulation
 :imagesdir:
 
-The simulation feature of IO-Tool allows you to simulate a machine working on the farm for your farming software. To do this, you need telemetry data (e.g. a TaskData ISOXML
-) from a machine and your IO-Tool account.
+The simulation feature of the IO-Tool allows you to simulate a machine working on the farm for your farming software. To do this, you need telemetry data (e.g. a TaskData ISOXML) from a machine and your IO-Tool account.
 
 image::io-tool/simulation.png[]
 
-* Simply go to the _Simulation_ tab and select a source file. (all the ISOXML and EFDI data from Data Storage) 
+== Setting up simulation
+Go to the *_Simulation_* tab and select a source file. All the ISOXML and EFDI data from Data Storage are available here. 
 
-* You will then have the option to select the time logs (TLG) . A TLG is created when a machine is switched on, starts working in the field and is terminated when the task is paused or the machine is switched off. If you select all, all TLGs will be played one after another.
+You can select a specific time log (TLG)or just play all  . If you select all, all TLGs will be played one after another.
+
+[NOTE]
+====
+A TLG is created when a machine is switched on, starts working in the field and is terminated when the task is paused or the machine is switched off.
+====
+
+=== Important options
+* If the *_Endless Loop_* box is ticked, the data will be simulated over and over again.
 
 
-* The _Skip Initial_ field allows you to skip any data at the beginning of the file that you don't want simulated. A common use case could be missing GPS information in the beginning of the simulation.
+* You should adjust the time of the simulated data using the *_Replace Time_* function (e.g. live data).
 
 
-* The _Intervall_ field allows you to specify how often (in seconds) data should be sent to the agrirouter.
+=== Other options
+* The *_Skip Initial_* field allows you to skip any data at the beginning of the file that you don't want simulated. A common use case could be missing GPS information in the beginning of the simulation.
 
-* The _Scale_ function can be used to speed up the simulation.
+* The *_Intervall_* field allows you to specify how often (in seconds) data should be sent to the agrirouter.
 
-* If the _Endless Loop_ box is ticked, the data will be simulated over and over again.
+* The *_Scale_* function can be used to speed up the simulation.
 
+== Analysis functionalities
 
-* You can adjust the time of the simulated data using the _Replace Time_ function (e.g. live data).
+You can export the data using the *_Export_* button and it will be converted to the telemetry data format (EFDI). 
 
-You can export the data using the _Export_ button and it will be converted to the telemetry data format (EFDI). 
-
-Use the _Show DDI_ button to see exactly what data is being transferred (such as fuel consumption, etc.). https://www.isobus.net/isobus/dDEntity[In isobus.net] are the keys to the numerical codes to be found.
+Use the *_Show DDI_* button to see exactly what data is being transferred (such as fuel consumption, etc.). https://www.isobus.net/isobus/dDEntity[In isobus.net] are the keys to the numerical codes to be found.
 
 image::io-tool/showddi.png[]
+
+== Operating the simulator
 To start the simulation, click on the green play button. 
-Once the simulation has started, it can be paused, forwarded to the next TLG or stopped using the buttons below:
+Once the simulation has started, it can be paused, stepped to the next TLG or stopped using the buttons below:
+
 
 image::io-tool/pauseforward.png[]
 
@@ -54,3 +65,8 @@ image::io-tool/receivingsimulation.png[]
 == Receiving Telemtry Data
 
 To see, how it looks like when Telemetry data is received, check the xref:tools/io-tool/mapview.adoc[MapView].
+
+
+== Links
+
+* xref:tools/io-tool/overview.adoc[Back to Overview]

@@ -9,7 +9,6 @@ It is *not* part of the agrirouter, but a developer tool that can be connected t
 The IO-Tool is not an end customer application.
 It can be used as an example communication partner for your agrirouter implementation.
 
-The agrirouter InOut-Tool is a tool to simulate a remote endpoint and to learn to communicate via agrirouter. 
 
 
 image::io-tool/overview.png[]
@@ -18,13 +17,15 @@ Using the IO-Tool you can
 
 * send and receive files via agrirouter
 * send and receive telemetry data
-* set preferences for the data exchange
+* test the different concepts of the data exchange
 * check the logs and debug
 * simulate endpoints and check routings
 
 
 
 == Getting Started
+
+=== Where to go
 
 The IO-Tool can be found at https://io.my-agrirouter.com/ 
 
@@ -61,7 +62,7 @@ image::io-tool/initialview.png[]
 
 If you only see these three menu items, it means that the IO-Tool is *not* yet connected to the agrirouter.
 
-The screen is divided into several sections. The left panel displays the main menu and the centre panel presents the main content of the page. The bottom section contains the logs of all actions, which can be expanded.
+The screen is divided into several sections. The left panel displays the main menu and the center panel presents the main content of the page. The bottom section contains the logs of all actions, which can be expanded.
 
 
 

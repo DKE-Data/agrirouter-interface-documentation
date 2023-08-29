@@ -30,8 +30,18 @@ image::io-tool/storageeditfiles.png[]
 * Using the dropdown, you can change the type of file. (A use case would be to check your softwares behavior if you send data with a wrong data type).
 * The bin symbol deletes the file
 * The cloud symbol downloads it.
-* The check mark symbol can be used to trigger validation. In case a file is received via agrirouter, validation is not automatically done
 
+=== Validation of ISOXML
+Each ISOXML File has a check mark symbol indicating validity of the File. 
+
+image::io-tool/validations.png[Validation levels]
+
+* In case a file is received via agrirouter, validation is not automatically done. It can be triggerd by click on the check mark
+* _Validated with warnings_ means that this file is - in general - an ISOXML file but it has some errors
+* _File is invalid_ means that this is no ISOXML File whatsoever.
+
+
+=== View of Telemetry and GPS
 
 You can also view EFDI and GPS:Info data using the map symbol, that is displayed under the column Actions for this type of files.
 
@@ -42,6 +52,10 @@ More info on this can be found in the xref:tools/io-tool/mapview.adoc[MapView].
 === Delete multiple files
 
 When scrolling down to the bottom, you'll find the buttons to select all files and delete all selected files.
+
+The Delete all button becomes active as soon as at least one file is selected
+
+image::io-tool/select-all-delete.png[Select all and Delete buttons]
 
 
 == Sending Files
@@ -74,13 +88,19 @@ Alternatively, you can send files from the xhref:tools/io-tool/endpointList.adoc
 
 == Receiving Files
 
-The IO-Tool receives all files that are directly addressed to it or for which it is subscribed (xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding]) in its agrirouter feed.
-If push notifications are active, the file is automatically delivered to the IO-Tool. Otherwise, or in case of problems with agrirouter during sending, the messages will be requested from the feed via the Receive All or Receive from today buttons.
+The IO-Tool receives all files that are directly addressed to it or for which it is subscribed ( see xref:tools/io-tool/onoffboarding.adoc[Subscriptions]) in its agrirouter feed.
+If push notifications are active, files are automatically delivered to the IO-Tool. Otherwise, or in case of problems with agrirouter during sending, the messages will be requested from the feed via the _Receive All_ or _Receive from today_ buttons.
 
 Whenever a file is received, a message is displayed in the logs.
 
 image::io-tool/receive.png[]
 
 
-The Clear feed button is particularly useful if you have sent a broken dataset to the IO-Tool (imagine a farming software developer sending a Zip file in a broken format so that the IO-Tool cannot load it. To avoid future errors, it's better to delete the feed). Note that this button deletes all messages from the feed in agrirouter for that specific endpoint and there's no additional popup to warn the user.
+== Clearing the Feed 
 
+The Clear feed button is used to clear the Feed within agrirouter, it has no influence on the data storage in the IO Tool.
+This is particularly useful if you have sent a broken dataset to the IO-Tool (imagine a farming software developer sending a Zip file in a broken format so that the IO-Tool cannot load it. To avoid future errors, it's better to delete the feed). Note that this button deletes all messages from the feed in agrirouter for that specific endpoint and there's no additional popup to warn the user.
+
+== Links
+
+* xref:tools/io-tool/overview.adoc[Back to Overview]

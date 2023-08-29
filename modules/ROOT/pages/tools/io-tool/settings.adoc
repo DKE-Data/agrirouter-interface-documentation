@@ -29,3 +29,9 @@ image::io-tool/tracelogging.png[]
 Traced logs are displayed with the following icon:
 
 image::io-tool/traced.png[]
+
+
+
+== Links
+
+* xref:tools/io-tool/overview.adoc[Back to Overview]

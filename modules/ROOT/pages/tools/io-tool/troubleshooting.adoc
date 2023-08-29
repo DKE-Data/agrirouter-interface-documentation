@@ -3,6 +3,24 @@
 
 This section describes some common error scenarios and a systematic approach to resolving them.
 
+== Common UI issues
+
+=== The UserInterface does not react
+
+If you can click on buttons but nothing happens, it might be that you're already logged out (mostly timeout). 
+Click "Logout" and log in again.
+
+=== Cannot send messages
+
+If a message could not be sent, it might be that the IO-Tool lost its MQTT Connection. Go to *Settings* and click *Reconnect MQTT* to reestablish it.
+
+image::io-tool/reconnect.png[Reconnection Button]
+
+=== Cannot connect to MQTT
+
+It should not happen, but if the agrirouter itself is not reachable, the IO-Tool cannot connect to it. Check the https://status.agrirouter.com - Page to see if agrirouter is online.
+
+
 
 == Common Upload Errors
 
@@ -40,3 +58,25 @@ image::io-tool/uploadwarning2.png[]
 Sometimes errors can occur when receiving data. In the agrirouter endpoint view tab  "Details" you can check how many messages are still to be received for the specific endpoint:
 
 image::io-tool/numberofmessages.png[]
+
+
+== OnboardingErrors
+
+In case the onboarding fails, the logs will indicate the reason
+
+=== agrirouter not reachable
+
+It should not happen, but if the agrirouter itself is not reachable, the IO-Tool cannot connect to it. Check the https://status.agrirouter.com - Page to see if agrirouter is online.
+
+
+=== Too fast connection after disconnect
+
+If you recently offboarded your IO-Tool, it might be that you tried to reonboard too fast. The error will indicate this and you'll just have to wait for the given amount of time:
+
+''''
+Exception of type com.dke.data.agrirouter.api.exception.OnboardingException. Message: There was an error '114' during the onboarding process, details were 'Endpoint has recently been revoked. Please wait 1 minutes 49 seconds before trying to onboard again.'
+''''
+
+== Links
+
+* xref:tools/io-tool/overview.adoc[Back to Overview]
