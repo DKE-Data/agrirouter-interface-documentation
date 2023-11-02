@@ -7,7 +7,7 @@ The number of endpoints in agrirouter is limited as to:
 |====
 |Endpoint Type| Maximum
 
-| Applications ( CUs / telemetry platforms / farming software) | 300
+| Applications (CUs / telemetry platforms / farming software) | 300
 | Machines | 300
 | Virtual CUs | 100
 | Paired Accounts (incoming or outgoing)| 100 

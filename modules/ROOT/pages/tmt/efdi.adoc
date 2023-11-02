@@ -127,7 +127,7 @@ The current List of Categories includes the following Categories:
 |8 |*Environment Data* |Data related to the Environment (weather data)
 |9 |*Soil Data* |Data related to soil conditions
 |10 |*Basic Data* |Fundamental values that are relevant for the whole system
-|11 |*Machine Data(PGNs only)* | Machine data related to PGN (Parameter Group Number); e.g. Hitch Position, PTO-Speed, etc.
+|11 |*Machine Data (PGNs only)* | Machine data related to PGN (Parameter Group Number); e.g. Hitch Position, PTO-Speed, etc.
 |12 |*Proprietary Data* |Manufacturer specific data (not part of the standard)
 |=================================================================================================================================
 

@@ -1,0 +1,72 @@
+= Simulation
+:imagesdir:
+
+The simulation feature of the IO-Tool allows you to simulate a machine working on the farm for your farming software. To do this, you need telemetry data (e.g. a TaskData ISOXML) from a machine and your IO-Tool account.
+
+image::io-tool/simulation.png[]
+
+== Setting up simulation
+Go to the *_Simulation_* tab and select a source file. All the ISOXML and EFDI data from Data Storage are available here. 
+
+You can select a specific time log (TLG)or just play all  . If you select all, all TLGs will be played one after another.
+
+[NOTE]
+====
+A TLG is created when a machine is switched on, starts working in the field and is terminated when the task is paused or the machine is switched off.
+====
+
+=== Important options
+* If the *_Endless Loop_* box is ticked, the data will be simulated over and over again.
+
+
+* You should adjust the time of the simulated data using the *_Replace Time_* function (e.g. live data).
+
+
+=== Other options
+* The *_Skip Initial_* field allows you to skip any data at the beginning of the file that you don't want simulated. A common use case could be missing GPS information in the beginning of the simulation.
+
+* The *_Intervall_* field allows you to specify how often (in seconds) data should be sent to the agrirouter.
+
+* The *_Scale_* function can be used to speed up the simulation.
+
+== Analysis functionalities
+
+You can export the data using the *_Export_* button and it will be converted to the telemetry data format (EFDI). 
+
+Use the *_Show DDI_* button to see exactly what data is being transferred (such as fuel consumption, etc.). https://www.isobus.net/isobus/dDEntity[In isobus.net] are the keys to the numerical codes to be found.
+
+image::io-tool/showddi.png[]
+
+== Operating the simulator
+To start the simulation, click on the green play button. 
+Once the simulation has started, it can be paused, stepped to the next TLG or stopped using the buttons below:
+
+
+image::io-tool/pauseforward.png[]
+
+The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account . 
+
+
+[NOTE]
+====
+When sending data for a machine for the first time, may take a few seconds to create machine and routings in agrirouter. During this time, errors with the simulation may show up in the Logging. This is normal behavior and not critical.
+====
+
+As soon as the agrirouter has received this information, a new endpoint will be created for the machine. Once the agrirouter has created the new endpoint, the data is forwarded to all relevant endpoints (is published) .
+
+image::io-tool/machineagrirouter.png[]
+
+
+
+image::io-tool/receivingsimulation.png[]
+
+
+
+== Receiving Telemtry Data
+
+To see, how it looks like when Telemetry data is received, check the xref:tools/io-tool/mapview.adoc[MapView].
+
+
+== Links
+
+* xref:tools/io-tool/overview.adoc[Back to Overview]
