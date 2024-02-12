@@ -131,7 +131,7 @@ The current List of Categories includes the following Categories:
 |12 |*Proprietary Data* |Manufacturer specific data (not part of the standard)
 |=================================================================================================================================
 
-The assignment of specific DDIs to groups can be found link:https://manual.agrirouter.com/en/manual/latest/appendix/ddis.html[here]
+The assignment of specific DDIs to groups can be found link:https://manual.agrirouter.com/en/appendix/ddis.html[here]
 
 [IMPORTANT]
 ====

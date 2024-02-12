@@ -46,7 +46,7 @@ This helps you to check if both capabilities and the routings set in the agrirou
 
 image::io-tool/actions.png[]
 
-The tick in the Active column indicates whether the endpoint is reachable. A missing tick means that the endpoint has been deactivated (in the agrirouter). For more information on activating and deactivating an endpoint, refer to the https://manual.agrirouter.com/en/manual/latest/endpoint.html#disable[enduser documentation].
+The tick in the Active column indicates whether the endpoint is reachable. A missing tick means that the endpoint has been deactivated (in the agrirouter). For more information on activating and deactivating an endpoint, refer to the https://manual.agrirouter.com/en/endpoint.html#disable[enduser documentation].
 
 == Setting Routings
 
