@@ -31,6 +31,7 @@ jobs:
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
+          name: id_ed25519
           known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
 
       - name: determine target path
@@ -42,7 +43,7 @@ jobs:
           else
             TARGET_PATH=_branches/pr/${{ github.event.number }}
           fi
-          echo "target_path=/var/www/web25462234/html/docs.my-agrirouter.com/$TARGET_PATH" >> $GITHUB_ENV;
+          echo "target_path=/var/www/vhosts/h259503.web136.alfahosting-server.de/html/docs.my-agrirouter.com/$TARGET_PATH" >> $GITHUB_ENV;
           echo "target_url=https://docs.my-agrirouter.com/$TARGET_PATH" >> $GITHUB_ENV;
           grep target_path $GITHUB_ENV; 
           grep target_url $GITHUB_ENV;
@@ -50,8 +51,8 @@ jobs:
       # very unelegant, but hoster does not support SSH key authentication :-/
       - name: Rsync to Webspace
         run: |
-          sshpass -p ${{secrets.SSH_PASSWORD}} ssh ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}} "mkdir -p ${{ env.target_path }}";
-          sshpass -p ${{secrets.SSH_PASSWORD}} rsync -av --exclude _branches --delete build/site/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:${{ env.target_path }}
+          ssh ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}} "mkdir -p ${{ env.target_path }}";
+          rsync -av --exclude _branches --delete build/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:${{ env.target_path }}
 
       - uses: mshick/add-pr-comment@v1
         with:
