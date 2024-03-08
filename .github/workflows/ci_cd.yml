@@ -52,7 +52,7 @@ jobs:
       - name: Rsync to Webspace
         run: |
           ssh ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}} "mkdir -p ${{ env.target_path }}";
-          rsync -av --exclude _branches --delete build/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:${{ env.target_path }}
+          rsync -av --exclude _branches --delete build/site/ ${{secrets.SSH_USERNAME}}@${{secrets.SSH_HOSTNAME}}:${{ env.target_path }}
 
       - uses: mshick/add-pr-comment@v1
         with:
