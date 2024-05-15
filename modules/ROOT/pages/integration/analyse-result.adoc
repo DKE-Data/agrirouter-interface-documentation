@@ -52,7 +52,7 @@ The following List shows the corresponding Protobuf schemata for each ResponseTy
 [cols="1,2,3",options="header",]
 |========
 |ResponseBodyType |Schema (.proto) |Comment
-|MESSAGES |agrirouter.feed.response. MessageQueryResponse |A list of messages as result of a request for messages
+|MESSAGES | _obsolete_ |_This type is not used_
 |ACK |There is no Schema for this, the payload will just have a size of 0 bytes |An acknowledgment of a message
 |ACK_WITH_MESSAGES |agrirouter.commons.Messages |An acknowledgment with messages; e.g. warnings.
 |ACK_WITH_FAILURE |agrirouter.commons.Messages |Represents a failure response in correlation to a message sent to the agrirouter
