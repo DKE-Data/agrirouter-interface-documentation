@@ -41,7 +41,7 @@ For information on filtering and assigning machines by their name, see xref:../e
 [cols=",",]
 |==================================================
 |Command |iso:11783:-10:device_description:protobuf
-|Protobuf Schema |agrirouter.technicalmessagetype.ISO11783_TaskData
+|Protobuf Schema |https://github.com/DKE-Data/agrirouter-tmt-protobuf-definitions/blob/develop/dotnet/agrirouter/protobuf/technicalmessagetype/efdi.proto[efdi.ISO11783_TaskData]
 |TypeURL |types.agrirouter.com/efdi.ISO11783_TaskData
 |==================================================
 
@@ -93,7 +93,7 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 [cols=",",]
 |==================================================
 |Command |iso:11783:-10:time_log:protobuf
-|Protobuf Schema |agrirouter.technicalmessagetype.Timelog
+|Protobuf Schema |https://github.com/DKE-Data/agrirouter-tmt-protobuf-definitions/blob/develop/dotnet/agrirouter/protobuf/technicalmessagetype/efdi.proto[efdi.Timelog]
 |TypeURL |types.agrirouter.com/efdi.TimeLog
 |==================================================
 
