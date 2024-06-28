@@ -82,6 +82,9 @@ _This is a *separate* instance of the IO-Tool, but using the same credentials_
 
 You can use the xref:../certification.adoc[Certification guideline] for an idea which processes to test.
 
+Be aware that certain feature *deployments to QA may destroy some data*. Most notably, this includes feed messages and onboarded endpoints. However, we guarantee persistence of user accounts, registered applications and application versions.
+We will inform all active developers on QA *with a lead time of 2 days* about such deployments.
+
 If you want to conduct *load tests*, as opposed to functional tests, please contact us at support@my-agrirouter.com before to align on expected volume and increments.
 
 == Reporting issues

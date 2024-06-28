@@ -8,7 +8,7 @@ When the IO-Tool is not connected to any agrirouter account only three main sect
 image::io-tool/onboarding.png[]
 
 === Selection of Environment
-There are four options to choose from when establishing a connection with the Agrirouter.
+There are four options to choose from when establishing a connection with the agrirouter.
 
 * Onboard MQTT Production
 * Onboard MQTT QA
