@@ -1,6 +1,6 @@
 = Testing your solution against agrirouter 2.0 QA
 
-On 1 July 2024, our public test phase will start. This test phase will enable you to ensure that your system still works against agrirouter 2.0.
+On 1 July 2024, our public test phase started. This test phase will enable you to ensure that your system still works against agrirouter 2.0.
 
 Our goal is to be completely backwards compatible and not require any changes in your code _for the production environments_. But because of, sometimes even very small, implementation details, there might be situations that require adjustments of our implementation to ensure that we can fulfill that goal.
 
