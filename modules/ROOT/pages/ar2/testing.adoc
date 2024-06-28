@@ -1,0 +1,41 @@
+= Testing your solution against agrirouter 2.0 QA
+
+On 1 July 2024, our public test phase will start. This test phase will enable you to ensure that your system still works against agrirouter 2.0.
+
+Our goal is to be completely backwards compatible and not require any changes in your code _for the production environments_. But because of, sometimes even very small, implementation details, there might be situations that require adjustments of our implementation to ensure that we can fulfill that goal.
+
+The test phase lets you discover and such issues, so we can learn about and fix them.
+
+== Preparing your systems
+
+
+=== Choosing the right stage
+
+There are generally two ways to approach testing your systems against the agrirouter 2.0 QA:
+
+* switch one of your own instances to connect against the agrirouter 2.0 QA instead of the old agrirouter Production or QA system
+* implement a bit of logic allowing your system to choose on a per-user basis what agrirouter environment to use; the parameters you need to think about are: which environment you use for onboarding _and_ which router device you use for communication with that specific endpoint
+
+Depending on your development and deployment processes, one might be easier to do than the other. We recommend using the latter approach, because it provides more flexibility, even for the future.
+
+=== Switching the environment
+
+If you are using an SDK, the easiest solution is to upgrade to the latest versions, which include a class for connecting to the agrirouter 2.0 QA instance. The minimum versions are:
+
+* .NET -> 3.8.0
+* Python -> 2.1.0a1
+* PHP -> d341490
+* Java -> 3.2.0
+
+Then you just need to replace all references to a Production or QA class to the class named  `Ar2QualityAssuranceEnvironment` (.NET/PHP), `Ar2QA` (Java) or `Ar2Qa` (Python).
+
+If you are _not_ using an SDK or you don't want to upgrade, you need to replace the following values:
+
+|===
+| URL | Prod | Old QA | ar 2.0 QA
+
+| Base URL/ Authorization URL | https://goto.my-agrirouter.com | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com | https://app.qa.agrirouter.farm
+| Registration URL | https://onboard.my-agrirouter.com | https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com | https://endpoint-service.qa.agrirouter.farm
+|===
+
+Additionally, the public key used for signing the authorize redirect needs to be replace, if you use it. You can find it on the xref:../keys.adoc[Keys page].

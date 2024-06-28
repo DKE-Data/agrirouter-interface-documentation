@@ -1,0 +1,73 @@
+= agrirouter 2.0
+:imagesdir: _images/
+
+In 2023, DKE-Data has started a project to re-implement the agrirouter from scratch. 
+At the same time, we're transferring development and operations from our previous IT provider SAP 
+to REPLY.
+
+Go-live of the new solution is currently planned for *31 August 2024*.
+
+== What do you need to do to connect your systems to agrirouter 2.0?
+
+In short: Nothing. We got you covered.
+
+The main project goal from the beginning was *complete API compatibility* to our legacy system,
+to ensure that partners *do not need to change code or upgrade dependencies* for a smooth transition.
+
+There will be some small configuration changes required, but not at a specific date.
+
+Where possible, we will monitor systems still using old configuration and if you are subject to these changes, we will let you know proactively after go-live.
+
+=== Update the host name your endpoints communicate with
+
+The host that your endpoints communicate with is currently `db0e6a47-f528-4f1b-a93e-ef8e4f5058ed.eu10.cp.iot.sap`. As you can see, this host name is in an SAP owned namespace. This host name will be delegated to DKE-Data *until 1 September 2025*, making it necessary to update your endpoints' communication before that date.
+
+Depending on your implementation, there are several options:
+
+==== Re-create router devices [only for MQTT + router devices]
+If you are using the xref:../router-devices.adoc[MQTT implementation with router devices], you can re-create your router devices to update the host name.
+
+==== Replace hostnames in Onboarding Responses [only for HTTP and MQTT _without_ router devices]
+If you are using either HTTP or MQTT _without_ router devices, you can prevent your users from having to re-onboard by changing the host name in the Onboarding Responses you have stored for your users. 
+
+The exact changes to be made will be communicated after go-live.
+
+==== Have your users re-onboard
+If you are _not_ using MQTT router devices and you _can not_ change the Onboarding Responses on behalf of your users, e.g. for decentral Communication Units, your users *will have to re-onboard once between 1 September 2024 and 1 September 2025*.
+
+For this, the users need to generate a new registration code from the agrirouter UI and enter it on their communication unit.
+
+=== Change agrirouter's public key
+If you are validating agrirouter's signature during the xref:../integration/authorization.adoc[authorize process], you will need to change the public key you perform these checks against.
+
+We will communicate a new public key some months before actually changing the private key used for the signature. The recommended way to handle this change is to check the signature against both the old and the new public key in your code. That way, you do not depend on making the change at the exact time we replace the key.
+
+== agrirouter 2.0 improvements
+
+Apart from the pure reimplementation, we are also working hard to add improvements to agrirouter.
+
+== New User Interface
+The old UI was based on SAP's SAPUI5, better known under its code name "Fiori". The limitations of this framework were preventing us from some improvements to the UI.
+
+The new UI was created from scratch to better guide the users and supporting them with the setup of their agrirouter eco-system.
+
+== Better insights for us, better support for you
+
+The old solution was a "black box" solution for DKE-Data, as the intellectual property was SAP's. The new solution belongs to DKE-Data, giving us way more flexbility in terms of analytics, troubleshooting and fixing issues.
+
+== Improved self-service for developers
+Some critical information for developers was not available in the UI in the past, such as subscription status of the endpoint and more information regarding the past messages sent to and received from an endpoint.
+
+We worked to improve this to enable developers to troubleshoot more on their own, reducing their dependency on our support.
+
+== Improved Stability
+As most of our partners are aware, we had several phases with stability issues over the past years. The new agrirouter aims to improve this by a number of measures:
+
+=== Scalability
+We learned a lot about the bottlenecks present in the current solution and chose  the new architecture and used frameworks to be very scalable in the future.
+
+=== Observability
+From the ground up, we designed the solution so that we can easily observe what is going on inside. That way, we can recognize issues _before_ they arise and pinpoint them faster than before _when_ they arise.
+
+=== Monitoring & Alerting
+Detailed monitoring and proactive alerting processes will be put in place to enable us to react to system load as soon as possible. Additionally, we can better identify the origin of messages and commands in order to contact parties who might put unnecessary load on the system and help them to mitigate any issues.
