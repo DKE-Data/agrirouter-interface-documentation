@@ -1,7 +1,7 @@
 = agrirouter 2.0
 :imagesdir: _images/
 
-image::agrirouter-2_replypowered.svg[]
+image::agrirouter-2_replypowered.svg[agrirouter 2.0 powered by Reply,600,172]
 
 In 2023, DKE-Data has started a project to re-implement the agrirouter from scratch. 
 At the same time, we're transferring development and operations from our previous IT provider SAP 
@@ -37,7 +37,7 @@ The exact changes to be made will be communicated after go-live.
 ==== Have your users re-onboard
 If you are _not_ using MQTT router devices and you _can not_ change the Onboarding Responses on behalf of your users, e.g. for decentral Communication Units, your users *will have to re-onboard once between 1 September 2024 and 1 September 2025*.
 
-For this, the users need to generate a new registration code from the agrirouter UI and enter it on their communication unit.
+For this, the users need to generate *a new registration code* from the agrirouter UI and enter it on their communication unit.
 
 === Change agrirouter's public key
 If you are validating agrirouter's signature during the xref:../integration/authorization.adoc[authorize process], you will need to change the public key you perform these checks against.
@@ -64,6 +64,9 @@ We worked to improve this to enable developers to troubleshoot more on their own
 
 === Improved Stability
 As most of our partners are aware, we had several phases with stability issues over the past years. The new agrirouter aims to improve this by a number of measures:
+
+==== IoT experts
+Our new IT provider Reply (with their brand https://www.reply.com/concept-reply/en/[Concept Reply]) is a well-known player in the IoT world with lots of experience from past projects and is able to provide fast development and deployment cycles.
 
 ==== Scalability
 We learned a lot about the bottlenecks present in the current solution and chose  the new architecture and used frameworks to be very scalable in the future.

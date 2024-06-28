@@ -13,10 +13,11 @@ The test phase lets you discover any such issues, so we can learn about and fix 
 
 There are generally two ways to approach testing your systems against the agrirouter 2.0 QA:
 
-* switch one of your own instances to connect against the agrirouter 2.0 QA instead of the old agrirouter Production or QA system
-* implement a bit of logic allowing your system to choose on a per-user basis what agrirouter environment to use; the parameters you need to think about are: which environment you use for onboarding _and_ which router device you use for communication with that specific endpoint
+[loweralpha]
+. switch one of your own instances to connect against the agrirouter 2.0 QA instead of the old agrirouter Production or QA system
+. implement a bit of logic allowing your system to choose on a per-user basis what agrirouter environment to use; the parameters you need to think about are: which environment you use for onboarding _and_ which router device you use for communication with that specific endpoint
 
-Depending on your development and deployment processes, one might be easier to do than the other. We recommend using the latter approach, because it provides more flexibility, even for the future.
+Depending on your development and deployment processes, one might be easier to do than the other. We recommend using *b*, because it provides more flexibility, even for the future.
 
 === Switching the environment
 
@@ -90,5 +91,7 @@ If you want to conduct *load tests*, as opposed to functional tests, please cont
 == Reporting issues
 
 All discussions about (potential) issues and other questions should take place in the https://github.com/DKE-Data/agrirouter/issues[agrirouter GitHub project].
+
+We are stil polishing the UI, so we don't need feedback on UI details right now.
 
 _Note:_ This repository does on purpose not contain any code. It's only meant for issue management.
