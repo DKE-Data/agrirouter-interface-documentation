@@ -39,3 +39,53 @@ If you are _not_ using an SDK or you don't want to upgrade, you need to replace 
 |===
 
 Additionally, the public key used for signing the authorize redirect needs to be replace, if you use it. You can find it on the xref:../keys.adoc[Keys page].
+
+
+== Setting up your agrirouter account
+
+=== Create an account and ask for developer privileges
+
+* Go to: https://app.qa.agrirouter.farm
+* Click on `Get started`
+* Manufacturers and office details are only useful for the farmer
+* Enter your company information
+* _Everything in agrirouter is identified by a tenant. This step is where you are creating yours_
+* Enter your credentials
+* Go to your settings to ask to become a developer
+* Continue after being approved as a developer
+
+=== Create an application
+* Go to: https://app.qa.agrirouter.farm/en/developer/applications and the follow the steps to add an application
+* Add a new version to your newly created application
+* Submit your version and ask for approval
+
+=== Onboard your application
+* Make sure your application has a public key and a redirect_url set in its settings (if appropriate)
+* Onboard the application:
+** If your application provide an easy way to onboard an endpoint this should be the preferred way
+** Onboard manually using the authorize page:
+** Go to: http://app.dev.agrirouter.farm/en/application/[YOUR_APP_ID]/authorize?response_type=onboard&redirect_uri=[YOUR_REDIRECT_URL]
+** Click on `connect`
+** Your application should appear in the office column of your farmer page
+** If you need a way to send messages to your application you could use the IO Tool
+
+=== Onboard the IO tool
+_This is a *separate* instance of the IO-Tool, but using the same credentials_
+
+* If you do not have an account yet, contact support@my-agrirouter.com
+* Go to: https://io-ar2.my-agrirouter.com
+* Go to settings and onboard the IO tool on QA
+* You will be redirected to the connect page of the agrirouter, click on connect.
+* You can go to your farmer page to see the endpoint onboarded via the IO Tool
+
+== Testing
+
+You can use the xref:../certification.adoc[Certification guideline] for an idea which processes to test.
+
+If you want to conduct *load tests*, as opposed to functional tests, please contact us at support@my-agrirouter.com before to align on expected volume and increments.
+
+== Reporting issues
+
+All discussions about (potential) issues and other questions should take place in the https://github.com/DKE-Data/agrirouter/issues[agrirouter GitHub project].
+
+_Note:_ This repository does on purpose not contain any code. It's only meant for issue management.
