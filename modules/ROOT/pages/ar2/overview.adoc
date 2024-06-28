@@ -46,28 +46,28 @@ We will communicate a new public key some months before actually changing the pr
 
 Apart from the pure reimplementation, we are also working hard to add improvements to agrirouter.
 
-== New User Interface
+=== New User Interface
 The old UI was based on SAP's SAPUI5, better known under its code name "Fiori". The limitations of this framework were preventing us from some improvements to the UI.
 
 The new UI was created from scratch to better guide the users and supporting them with the setup of their agrirouter eco-system.
 
-== Better insights for us, better support for you
+=== Better insights for us, better support for you
 
-The old solution was a "black box" solution for DKE-Data, as the intellectual property was SAP's. The new solution belongs to DKE-Data, giving us way more flexbility in terms of analytics, troubleshooting and fixing issues.
+The old solution was a "black box" solution for DKE-Data, as the intellectual property was SAP's. The new solution belongs to DKE-Data, giving us way more flexbility in terms of analytics, troubleshooting and fixing issues. This allows us to provide better and faster feedback to you for any issues you might encounter.
 
-== Improved self-service for developers
+=== Improved self-service for developers
 Some critical information for developers was not available in the UI in the past, such as subscription status of the endpoint and more information regarding the past messages sent to and received from an endpoint.
 
 We worked to improve this to enable developers to troubleshoot more on their own, reducing their dependency on our support.
 
-== Improved Stability
+=== Improved Stability
 As most of our partners are aware, we had several phases with stability issues over the past years. The new agrirouter aims to improve this by a number of measures:
 
-=== Scalability
+==== Scalability
 We learned a lot about the bottlenecks present in the current solution and chose  the new architecture and used frameworks to be very scalable in the future.
 
-=== Observability
+==== Observability
 From the ground up, we designed the solution so that we can easily observe what is going on inside. That way, we can recognize issues _before_ they arise and pinpoint them faster than before _when_ they arise.
 
-=== Monitoring & Alerting
+==== Monitoring & Alerting
 Detailed monitoring and proactive alerting processes will be put in place to enable us to react to system load as soon as possible. Additionally, we can better identify the origin of messages and commands in order to contact parties who might put unnecessary load on the system and help them to mitigate any issues.
