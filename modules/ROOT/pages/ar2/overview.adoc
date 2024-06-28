@@ -1,7 +1,7 @@
 = agrirouter 2.0
 :imagesdir: _images/
 
-image::agrirouter-2_replypowered.svg
+image::agrirouter-2_replypowered.svg[]
 
 In 2023, DKE-Data has started a project to re-implement the agrirouter from scratch. 
 At the same time, we're transferring development and operations from our previous IT provider SAP 
