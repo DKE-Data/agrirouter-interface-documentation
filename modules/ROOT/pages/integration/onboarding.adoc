@@ -147,7 +147,7 @@ All signatures used for the onboarding and revocation process shall be created b
 * Create HEX representation of this hash
 * Add the hex string as "X-Agrirouter-Signature" to the header of the HTTP call
 
-Agrirouter will look up the public key for the app id specified and verify the signature.
+agrirouter will look up the public key for the app id specified and verify the signature.
 
 == Verification Request
 

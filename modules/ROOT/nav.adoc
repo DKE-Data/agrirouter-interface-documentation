@@ -59,6 +59,11 @@
 ** xref:tmt/image.adoc[Images]
 ** xref:tmt/video.adoc[Videos]
 
+* agrirouter 2.0 Transition
+** xref:ar2/overview.adoc[About the project]
+** xref:ar2/testing.adoc[Testing]
+//** xref:ar2/changes.adoc[Changes]
+
 * Tools
 ** xref:tools/io-tool/overview.adoc[IO-Tool]
 *** xref:tools/io-tool/overview.adoc[Overview]
