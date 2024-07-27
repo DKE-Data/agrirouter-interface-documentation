@@ -107,7 +107,6 @@ With the messages we will have place holders for values which would be injected 
 |0105 |The application id provided is not valid for this request. Registration code is not generated for given application ID.|
 |0106 |Missing ${constants.Validation.SIGNATURE.APPLICATION_ID_HEADER_FIELD} or ${constants.Validation.SIGNATURE.AGRIROUTER_SIGNATURE_HEADER_FIELD} header(s)|
 |0107 |Invalid signature |
-|0108 |Application cannot be validated as application header is not the same as the application associated with the given registration code. |
 |0109 |Application header is not the same as the application associated with the given endpoints or multiple applications found for given endpoints. | Can also indicate that the endpoint does not exist anymore.
 |0110 |Signing header is invalid. The request has timed out or UTCTimestamp is not provided|
 |0111 |The application ID provided is not valid. The application ID cannot be changed when re-onboarding an endpoint. |

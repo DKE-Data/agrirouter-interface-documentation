@@ -103,19 +103,6 @@ An endpoint is an addressable communication address for an application instance 
 
 The address of an endpoint (in this case the "__deviceAlternateId__") is used by its corresponding app instance to communicate with the agrirouter and by other app instances within the same account to address this app instance (in this case the "__sensorAlternateID__").
 
-=== Connected end-user accounts
-
-It is possible to connect 2 agrirouter accounts with each other using the email address of the end-users and setting up a connection using the graphical user interface of agrirouter. Each connected agrirouter account gets its own endpoint in the partner's agrirouter account and vice versa.
-
-.List of paired accounts
-image::screenshots/accountpairing.png[List of paired accounts,642,354]
-
-
-[IMPORTANT]
-====
-It is not possible to address an endpoint inside another agrirouter account, neither is it possible to list the endpoints of this account. Rather, only published messages will be sent to the paired account.
-====
-
 === Teamset
 
 A teamset is a set of connected machines that work and move together and are connected to the same communication unit. The machines in the teamset are typically connected physically and informationally (for example via ISOBUS).
