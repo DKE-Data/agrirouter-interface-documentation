@@ -445,7 +445,7 @@ The result is a json object including the information required for onboarding.
 |3 |connectionCriteria |Object |Includes all information required for further communication
 |3.1 |gatewayId |String |Assigned gateway; 2= MQTT, 3=REST
 |3.2 |host |String |**MQTT only**: The broker address
-|3.3 |port |String |**MQTT only**: The broker port
+|3.3 |port |Integer |**MQTT only**: The broker port
 |3.4 |measures |String |Endpoint URL of the inbox or Topic, when using MQTT
 |3.5 |commands |String |Endpoint URL of the outbox or Topic, when using MQTT
 |3.6 |clientId |String |**MQTT only**: The ClientID of the endpoint
