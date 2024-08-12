@@ -5,10 +5,10 @@
 Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one MQTT broker.
 
 .Using Router devices vs. not using router devices
-image::general/router-devices2.png[Using Router devices vs. not using router devices]
+image::graphs/router-devices2.SVG[Using Router devices vs. not using router devices]
 
 .Using router devices vs. communication using communication units
-image::general/router-devices1.png[Using router devices vs. communication using communication units]
+image::graphs/router-devices1.SVG[Using router devices vs. communication using communication units]
 
 == Setup of router devices
 Router devices can be set up and managed in the agrirouter developer UI

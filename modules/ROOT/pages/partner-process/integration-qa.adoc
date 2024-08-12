@@ -62,7 +62,7 @@ First, you should always keep in mind the xref:../integration/general-convention
 There are several environments for test and production in different areas of the world. Their different parameters like URLs and certificates can be found in the xref:../integration/environments.adoc[Environments].
 
 === General lifecycle of an endpoint
-image::general/lifecycle.png[]
+image::graphs/lifecycle.SVG[]
 
 === Connecting your app instance
 
