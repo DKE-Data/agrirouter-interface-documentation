@@ -4,6 +4,46 @@
 
 This chapter will list all messages to tell the agrirouter, what the endpoint is capable of, who it is and what it wants to receive.
 
+== Ping Command
+
+=== Definition
+
+The ping command is used to check if the endpoint still exists and to know whether agrirouter correctly processes messages.
+
+This is mainly useful when using an MQTT router deivce, to recognize if an endpoint has been deleted by the user from the agrirouter UI. All other cases can be known to the application itself.
+
+=== Command
+
+[cols=",",]
+|==================================
+|Command |dke:ping
+|Protobuf Schema | -
+|TypeURL | -
+|==================================
+
+No paramters are needed.
+
+=== Result
+
+[cols=",",]
+|=================================================================================
+|ResultCode |ACK / ACK_WITH_FAILURE
+|Protobuf Schema | -
+|TypeURL | -
+|=================================================================================
+
+The result is a simple `ACK` (acompanied with `response_code == 201`) or an `ACK_WITH_FAILURE` (`response_code == 404`).
+
+==== ACK
+
+Receiving an `ACK` means that the endpoint exists.
+
+==== ACK_WITH_FAILURE
+
+Receiving an `ACK_WITH_FAILURE` means that the endpoint has recently been deleted.
+
+
+
 == Capabilities Command
 
 === Definition
@@ -20,11 +60,11 @@ The list of technical message types can include any TechnicalMessageFormat menti
 === Command
 
 [cols=",",]
-|=====================================================================================
+|=================================================================================
 |Command |dke:capabilities
 |Protobuf Schema |agrirouter.request.payload.endpoint.CapabilitySpecification
 |TypeURL |types.agrirouter.com/agrirouter.request.payload.endpoint.CapabilitySpecification
-|=====================================================================================
+|=================================================================================
 
 Parameters are the following elements:
 

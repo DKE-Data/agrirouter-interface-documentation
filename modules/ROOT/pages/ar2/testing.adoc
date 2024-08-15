@@ -65,7 +65,7 @@ Additionally, the public key used for signing the authorize redirect needs to be
 * Onboard the application:
 ** If your application provide an easy way to onboard an endpoint this should be the preferred way
 ** Onboard manually using the authorize page:
-** Go to: http://app.qa.agrirouter.farm/en/application/{YOUR_APP_ID}/authorize?response_type=onboard&redirect_uri={YOUR_REDIRECT_URL}
+** Go to: http://app.qa.agrirouter.farm/en/application/\{YOUR_APP_ID\}/authorize?response_type=onboard&redirect_uri=\{YOUR_REDIRECT_URL\}
 ** Click on `connect`
 ** Your application should appear in the office column of your farmer page
 ** If you need a way to send messages to your application you could use the IO Tool
