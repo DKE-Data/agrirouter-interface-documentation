@@ -10,29 +10,30 @@ This chapter will list all messages to tell the agrirouter, what the endpoint is
 
 The ping command is used to check if the endpoint still exists and to know whether agrirouter correctly processes messages.
 
-This is mainly useful when using an MQTT router deivce, to recognize if an endpoint has been deleted by the user from the agrirouter UI. All other cases can be known to the application itself.
+This is mainly useful when using an MQTT router device, to recognize if an endpoint has been deleted by the user from the agrirouter UI. All other cases can be known to the application itself.
 
 === Command
 
-[cols=",",]
+[cols=","]
 |==================================
 |Command |dke:ping
 |Protobuf Schema | -
 |TypeURL | -
 |==================================
 
-No paramters are needed.
+No parameters are needed.
 
 === Result
 
-[cols=",",]
+[cols="1,2,2"]
 |=================================================================================
-|ResultCode |ACK / ACK_WITH_FAILURE
-|Protobuf Schema | -
-|TypeURL | -
+|           | Case 1 | Case 2
+|ResultCode |ACK | ACK_WITH_FAILURE
+|Protobuf Schema | - | agrirouter.commons.Messages
+|TypeURL | - | types.agrirouter.com/agrirouter.commons.Messages
 |=================================================================================
 
-The result is a simple `ACK` (acompanied with `response_code == 201`) or an `ACK_WITH_FAILURE` (`response_code == 404`).
+The result is a simple `ACK` (accompanied with `response_code == 200`) or an `ACK_WITH_FAILURE` (`response_code == 404`).
 
 ==== ACK
 
@@ -40,7 +41,7 @@ Receiving an `ACK` means that the endpoint exists.
 
 ==== ACK_WITH_FAILURE
 
-Receiving an `ACK_WITH_FAILURE` means that the endpoint has recently been deleted.
+Receiving an `ACK_WITH_FAILURE` means that the endpoint has recently been deleted. You must remove this endpoint from your endpoints list.
 
 
 
