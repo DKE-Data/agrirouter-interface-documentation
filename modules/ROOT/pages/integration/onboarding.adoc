@@ -52,7 +52,7 @@ From the end user’s perspective, it is mostly dependent on the telemetry platf
 
 === Using the agrirouter UI
 
-The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit" in agrirouter's control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers. A CU needs an interface to input this registration code.
+The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit" in agrirouter's control center. He gets a 10-digit code consisting of letters and numbers. A CU needs an interface to input this registration code.
 
 .Requesting a registration code in agrirouter UI
 image::ig2/image20.png[Requesting a registration code in agrirouter UI,642,368]
@@ -111,7 +111,7 @@ image::ig2/image24.png[Generating Private and Public Key in the agrirouter UI,40
 The external Id - to be seen in the <<Body Information>> of the onboarding request (only called `id` there) - needs to be a URN, which fits to the definitions in the xref:integration/general-conventions.adoc[general conventions].
 
 For farming software and telemetry platforms the external Id should be directly related to a user account in your platform. For privacy
-purposes, it would also be ok to hash or encrypt the user id so it is not visible to agrirouter.
+purposes, it would also be ok to hash or encrypt the user id so it is not visible to agrirouter. The uniqueness of external ID is limited to the tenant and the application to prevent potential issues caused by namespace collision.
 
 Examples for valid external IDs are:
 
