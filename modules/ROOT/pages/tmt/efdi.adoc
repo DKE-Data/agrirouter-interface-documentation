@@ -41,7 +41,7 @@ For information on filtering and assigning machines by their name, see xref:../e
 [cols=",",]
 |==================================================
 |Command |iso:11783:-10:device_description:protobuf
-|Protobuf Schema |agrirouter.technicalmessagetype.ISO11783_TaskData
+|Protobuf Schema |https://github.com/DKE-Data/agrirouter-tmt-protobuf-definitions/blob/develop/dotnet/agrirouter/protobuf/technicalmessagetype/efdi.proto[efdi.ISO11783_TaskData]
 |TypeURL |types.agrirouter.com/efdi.ISO11783_TaskData
 |==================================================
 
@@ -93,7 +93,7 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 [cols=",",]
 |==================================================
 |Command |iso:11783:-10:time_log:protobuf
-|Protobuf Schema |agrirouter.technicalmessagetype.Timelog
+|Protobuf Schema |https://github.com/DKE-Data/agrirouter-tmt-protobuf-definitions/blob/develop/dotnet/agrirouter/protobuf/technicalmessagetype/efdi.proto[efdi.Timelog]
 |TypeURL |types.agrirouter.com/efdi.TimeLog
 |==================================================
 
@@ -127,11 +127,11 @@ The current List of Categories includes the following Categories:
 |8 |*Environment Data* |Data related to the Environment (weather data)
 |9 |*Soil Data* |Data related to soil conditions
 |10 |*Basic Data* |Fundamental values that are relevant for the whole system
-|11 |*Machine Data(PGNs only)* | Machine data related to PGN (Parameter Group Number); e.g. Hitch Position, PTO-Speed, etc.
+|11 |*Machine Data (PGNs only)* | Machine data related to PGN (Parameter Group Number); e.g. Hitch Position, PTO-Speed, etc.
 |12 |*Proprietary Data* |Manufacturer specific data (not part of the standard)
 |=================================================================================================================================
 
-The assignment of specific DDIs to groups can be found link:https://manual.agrirouter.com/en/manual/latest/appendix/ddis.html[here]
+The assignment of specific DDIs to groups can be found link:https://manual.agrirouter.com/en/appendix/ddis.html[here]
 
 [IMPORTANT]
 ====

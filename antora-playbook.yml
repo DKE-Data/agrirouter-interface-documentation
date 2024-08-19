@@ -23,5 +23,6 @@ asciidoc:
     idseparator: "-"
     kroki-fetch-diagram: true
     kroki-plantuml-include: style.puml
+    page-pagination: true
   extensions:
     - asciidoctor-kroki

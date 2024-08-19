@@ -206,7 +206,7 @@ It is an array, each entry is of type agrirouter.request.payload.endpoint.Messag
 |=====================================================================================================
 |# |Name |Type |Description
 |1 |technical_message_type |String |The technical message type
-|2 |ddis |uint32(repeated) |A list of ddis, only relevant for the EFDI telemetry message type
+|2 |ddis |uint32 (repeated) |A list of ddis, only relevant for the EFDI telemetry message type
 |3 |position |bool |Shall the GPS position be delivered? Only relevant for EFDI telemetry message type
 |=====================================================================================================
 

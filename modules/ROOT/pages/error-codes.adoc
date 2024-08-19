@@ -82,8 +82,8 @@ With the messages we will have place holders for values which would be injected 
 | VAL_000303   | Sending endpoint is not a cloud application                                | Message Processor                         | Error     | Not allowed to send message type %technicalMessageType%                                                                    | ACK_WITH_FAILURE
 | VAL_000304   | Unable to onboard into IoT CF for cloud application                        | Registration Service                      | Error     | Failed to process virtualized application                                                                                  | ACK_WITH_FAILURE
 | VAL_000305   | Sending an onboard request message without providing a list of endpoints   | Registration Service                      | Error     | The provided onboarding requests list cannot be empty                                                                      | ACK_WITH_FAILURE
-| VAL_000306   | Onboarding a VCU with an id that already exists                            | Registration Service                      | Error     | There is already an existing VCU with the provided id                                                                      | ACK_WITH_MESSAGES
-| VAL_000307   | exceeded onboarding quota                          | VCU Onboarding                       | Error     | VCu could not be onboarded due to too many VCUs already onboarded | ACK_WITH_MESSAGES
+| VAL_000306   | Onboarding a VCU with an id that already exists                            | Registration Service                      | Error     | There is already an existing VCU with the provided id                                                                      | CLOUD_REGISTRATIONS
+| VAL_000307   | exceeded onboarding quota                          | VCU Onboarding                       | Error     | VCu could not be onboarded due to too many VCUs already onboarded | CLOUD_REGISTRATIONS
 |===
 
 
