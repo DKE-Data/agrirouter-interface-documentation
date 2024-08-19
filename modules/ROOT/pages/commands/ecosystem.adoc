@@ -14,7 +14,11 @@ To communicate with all the other endpoints in the eco system of the specific ag
 
 === Definition
 
-Every App Instance can call for a list of endpoints that are capable of receiving or sending specific messages. This request does not filter for available routings.
+Every App Instance can call for a list of endpoints that are capable of receiving or sending specific messages.
+This command only takes into account *capabilities* of endpoints, but does not take into account any routes.
+
+A complete list of endpoints in the connected agrirouter account is returned.
+Only the `message_types` list will be filtered according to the parameters.
 
 === Command
 
@@ -28,8 +32,8 @@ Every App Instance can call for a list of endpoints that are capable of receivin
 [cols="1,3,2,4",options="header",]
 |================================================================================================
 |# |Name |Type |Description
-|1 |technical_message_type |String |The technical message type that should be part of the routing
-|2 |direction |Direction |The direction, the routing shall support
+|1 |technical_message_type |String |The technical message type *the remote endpoint* supports
+|2 |direction |Direction | The direction *the remote endpoint* supports (e.g. "Can *the remote endpoint* SEND this message type?")
 |================================================================================================
 
 The direction describes if messages shall be sendable or receivable:
@@ -87,9 +91,10 @@ The Message object describes technical message type and direction.
 [cols="1,3,2,4",options="header",]
 |================================================================================================
 |# |Name |Type |Description
-|1 |technical_message_type |String |The technical message type that should be part of the routing
-|2 |direction |Direction |The direction, the routing shall support
+|1 |technical_message_type |String |The technical message type *the remote endpoint* supports
+|2 |direction |Direction | The direction *the remote endpoint* supports (e.g. "Can *the remote endpoint* SEND this message type?")
 |================================================================================================
+
 
 The direction describes if messages shall be sendable or receivable:
 
@@ -130,6 +135,8 @@ If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific
 
 This request is used for request a list of endpoints that support a technical message type and has corresponding routings to the requesting endpoint.
 
+This command takes into account the *routes* between endpoints, which implicitly includes capabilities.
+
 === Command
 
 [cols=",",]
@@ -138,6 +145,13 @@ This request is used for request a list of endpoints that support a technical me
 |Protobuf Schema |agrirouter.request.payload.account.ListEndpointsQuery
 |TypeURL |types.agrirouter.com/agrirouter.request.payload.account.ListEndpointsQuery
 |===============================================================================
+
+[cols="1,3,2,4",options="header",]
+|================================================================================================
+|# |Name |Type |Description
+|1 |technical_message_type |String |The technical message type *the remote endpoint* supports
+|2 |direction |Direction | The direction the data can flow *from the perspective of the requesting endpoint* (e.g. "Can *I* SEND this specific data type to the other endpoint?")
+|================================================================================================
 
 For further information, see  xref:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]
 
@@ -149,6 +163,13 @@ For further information, see  xref:./ecosystem.adoc##call-for-endpoints-that-sup
 |Protobuf Schema |agrirouter.response.payload.account.ListEndpointsResponse
 |TypeURL |types.agrirouter.com/agrirouter.response.payload.account.ListEndpointsResponse
 |===================================================================================
+
+[cols="1,3,2,4",options="header",]
+|================================================================================================
+|# |Name |Type |Description
+|1 |technical_message_type |String |The technical message type *the remote endpoint* supports
+|2 |direction |Direction | The direction the data can flow *from the perspective of the requesting endpoint* (e.g. "Can *I* SEND this specific data type to the other endpoint?")
+|================================================================================================
 
 For further information, see xref:./ecosystem.adoc##call-for-endpoints-that-support-a-technical-message-type[Call for endpoints that support a technical message type]
 

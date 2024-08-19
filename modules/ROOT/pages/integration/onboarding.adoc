@@ -147,7 +147,7 @@ All signatures used for the onboarding and revocation process shall be created b
 * Create HEX representation of this hash
 * Add the hex string as "X-Agrirouter-Signature" to the header of the HTTP call
 
-Agrirouter will look up the public key for the app id specified and verify the signature.
+agrirouter will look up the public key for the app id specified and verify the signature.
 
 == Verification Request
 
@@ -396,7 +396,7 @@ The desired communication protocol after onboarding
 3: REST
 
 Example: "2"
-|5 |certificationType |String a|
+|5 |certificateType |String a|
 Type of the desired certificate;
 
 Possible values: PEM,P12
@@ -440,15 +440,15 @@ The result is a json object including the information required for onboarding.
 |1 |authentication |Object |Includes all authentication information
 |1.1 |certificate |String |The certificate required for communication; Public AND Private Key
 |1.2 |secret |String |The passkey for the certificate
-|1.3 |type |String |Type of Certificate; PEM or PK12 _(short for PKCS#12)_
+|1.3 |type |String |Type of Certificate; PEM or P12 _(short for PKCS#12)_
 |2 |capabilityAlternateId |String |A value that just has to be saved and sent in several scenarios
 |3 |connectionCriteria |Object |Includes all information required for further communication
 |3.1 |gatewayId |String |Assigned gateway; 2= MQTT, 3=REST
 |3.2 |host |String |**MQTT only**: The broker address
-|3.3 |port |String |**MQTT only**: The broker port
+|3.3 |port |Integer |**MQTT only**: The broker port
 |3.4 |measures |String |Endpoint URL of the inbox or Topic, when using MQTT
 |3.5 |commands |String |Endpoint URL of the outbox or Topic, when using MQTT
-|3.6 |client |String |**MQTT only**: The ClientID of the endpoint
+|3.6 |clientId |String |**MQTT only**: The ClientID of the endpoint
 |4 |deviceAlternateId |String |The device ID used to mark the source of a message from this device and as endpointId
 |5 |sensorAlternateId |String |The deviceID used to mark the source of the communication from this device
 |========================================================================================================

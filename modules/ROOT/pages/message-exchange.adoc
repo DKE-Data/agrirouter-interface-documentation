@@ -141,7 +141,7 @@ The steps for this – in general nd with given routings – are:
 
 ====
 
-1.  Endpoint EP3 subscribes for a technical message type(TMT)
+1.  Endpoint EP3 subscribes for a technical message type (TMT)
 2.  App Instance 1 of App 1 sends a message of this TMT to its EP1 Inbox
 3.  agrirouter forwards the message to the feed of Endpoint EP3
 4.  This message is forwarded to any endpoint that subscribed for that list

@@ -48,7 +48,7 @@ The Result is an Array of EndpointRegistrationDetails and Failure Notifications
 |===========================================================================================================
 |# |Name |Type |Description
 |1 |onBoardedEndpoints |EndpointRegistrationDetails (Repeated) |The onboarding information for the endpoints
-|2 |failures |Failures(Repeated) |A list of failed onboardings
+|2 |failures |Failures (Repeated) |A list of failed onboardings
 |===========================================================================================================
 
 For all successfully registered Endpoints, following information will be delivered:

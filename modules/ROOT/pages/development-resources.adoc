@@ -9,8 +9,8 @@
 To perform an agrirouter integration, you will need knowledge to the following technologies:
 
 * *Required:*
-** *REST*; at least for onboarding, perhaps for communication (see https://wikipedia.org/en/REST )
-** *Protobuf*: for message packaging (see https://developers.google.com/protocol-buffers/ )
+** *REST*; at least for onboarding, perhaps for communication (see https://wikipedia.org/en/REST)
+** *Protobuf*: for message packaging (see https://developers.google.com/protocol-buffers/)
 ** Certificates, signatures and encrypted communication, e.g. using HTTPs
 * *Optional*
 ** *MQTT over TLS* for the communication (see https://mqtt.org)

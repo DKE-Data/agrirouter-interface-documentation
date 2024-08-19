@@ -59,7 +59,23 @@
 ** xref:tmt/image.adoc[Images]
 ** xref:tmt/video.adoc[Videos]
 
+* agrirouter 2.0 Transition
+** xref:ar2/overview.adoc[About the project]
+** xref:ar2/testing.adoc[Testing]
+//** xref:ar2/changes.adoc[Changes]
+
 * Tools
+** xref:tools/io-tool/overview.adoc[IO-Tool]
+*** xref:tools/io-tool/overview.adoc[Overview]
+*** xref:tools/io-tool/onoffboarding.adoc[Onboarding & Offboarding]
+*** xref:tools/io-tool/datastorage.adoc[DataStorage]
+*** xref:tools/io-tool/endpointList.adoc[Endpoints]
+*** xref:tools/io-tool/simulation.adoc[Simulation]
+*** xref:tools/io-tool/logging.adoc[Logging]
+*** xref:tools/io-tool/settings.adoc[Settings]
+*** xref:tools/io-tool/troubleshooting.adoc[Troubleshooting]
+*** xref:tools/io-tool/mapview.adoc[Telemetry MapView]
+
 ** xref:tools/arts.adoc[ARTS]
 ** xref:tools/endpoint-recording.adoc[Endpoint Recording]
 ** xref:tools/paho.adoc[PAHO]

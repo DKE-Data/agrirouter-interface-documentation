@@ -1,0 +1,8 @@
+# Troubleshooting FAQs
+
+## Onboarding
+
+### The request has timed out or UTCTimestamp is not provided
+
+Make sure your system time is exactly matching official time sources. While agrirouter has some tolerance for timestamps in the past, it does _not_ have any tolerance
+for timestamps that are in the future.

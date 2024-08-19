@@ -22,8 +22,8 @@ Reading the messages, the message headers from the feed or deleting messages fro
 [cols="1,3,2,4",options="header",]
 |================================================================================
 |# |Name |Type |Description
-|1 |message_ids |String(repeated) |A list of agrirouter message IDs
-|2 |senders |String(repeated) |A list of message senders
+|1 |message_ids |String (repeated) |A list of agrirouter message IDs
+|2 |senders |String (repeated) |A list of message senders
 |3 |validity_period |Validity Period |A time span that the messages were sent in
 |================================================================================
 

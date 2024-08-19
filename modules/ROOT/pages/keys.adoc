@@ -20,6 +20,21 @@ These are the public keys used by the agrirouter. These are required for example
 [cols=",,",options="header",]
 |===============================================================
 |Area |Environment |Public Key
+|EU | agrirouter 2.0 QA
+a|
+[source]
+----
+-----BEGIN PUBLIC KEY-----
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAw4DStz1cikiCqTd70p9i
+RBBx4vdTEtZAaWtvswu/IdMNoXP30+1ExVc3oJ0wHn3DMWItMLtn0gUSjj+XzDN5
+yrmwUSS6qqyAFinLBUio88EyEQAocZo270bDk9gSndftIvvQ82Iu6p4gRg1zbPNF
+CoBdLCQx7MN2zbl+/kmuZXzeEXZwAT94O8IbbTTAz9Wy5MUrAlJwNVaZir9bY6AZ
+CvgUPNRL2Jq9yz8IeoawhLNOo6ae47Jcf88x+7t/eN8QSrGu50WD1qpZbTReH7FA
+ju9qUVOmP1P9rSYkuhrkWg16Qrw1t8hEqMiRDNYUUTkqEit+H1CNEBgr6t3RIC5t
+fQIDAQAB
+-----END PUBLIC KEY-----
+----
+
 |EU | Quality Assurance "QA" 
 a|
 [source]

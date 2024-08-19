@@ -6,9 +6,9 @@
 
 
 === Standard behaviour
-The normal behaviour of agrirouter is to put incoming messages from other endpoints to the feed of the receiving endpoint(1).
+The normal behaviour of agrirouter is to put incoming messages from other endpoints to the feed of the receiving endpoint (1).
 
-The app instance can send a request for messages to its endpoint (2), agrirouter will search for messages in the feed(3), so that they are forwarded to the outbox(4), where they can be requested from (REST) or will directly be delivered (MQTT)(5).
+The app instance can send a request for messages to its endpoint (2), agrirouter will search for messages in the feed (3), so that they are forwarded to the outbox (4), where they can be requested from (REST) or will directly be delivered (MQTT)(5).
 
 Received messages need to be confirmed (6) to delete the message from the feed (7).
 
@@ -16,7 +16,7 @@ Received messages need to be confirmed (6) to delete the message from the feed (
 image::graphs/message-request.SVG[Receiving messages through feed]
 
 === Push Notifications
-With push notifications activated, a copy of each message sent to the feed(1) is directly copied to the outbox(2) and delivered to the app instance (directly via MQTT or through polling using HTTP)(3).  Pushed messages need to be confirmed(4) as well as requested messages to be deleted from the feed (5).
+With push notifications activated, a copy of each message sent to the feed (1) is directly copied to the outbox (2) and delivered to the app instance (directly via MQTT or through polling using HTTP) (3).  Pushed messages need to be confirmed (4) as well as requested messages to be deleted from the feed (5).
 
 .Receiving messages with push notifications
 image::graphs/message-push.SVG[Receiving messages with push notifications]
