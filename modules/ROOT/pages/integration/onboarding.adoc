@@ -52,7 +52,8 @@ From the end user’s perspective, it is mostly dependent on the telemetry platf
 
 === Using the agrirouter UI
 
-The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit" in agrirouter's control center. He gets a 10-digit code consisting of letters and numbers. A CU needs an interface to input this registration code.
+The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit" in agrirouter's control center. He gets a 10-digit code consisting of letters and numbers. A CU needs an interface to input this registration code. Registration Codes are
+independent of Application ID
 
 .Requesting a registration code in agrirouter UI
 image::ig2/image20.png[Requesting a registration code in agrirouter UI,642,368]
