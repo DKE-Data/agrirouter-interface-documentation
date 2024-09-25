@@ -66,6 +66,12 @@ The following List shows the corresponding Protobuf schemata for each ResponseTy
 
 Analysing the results is described in the specific chapters of process description for the relevant commands.
 
+=== VAL_00004 vs. VAL_00005
+
+While VAL_00004 indicates that no one was able to receive your message at all, VAL_00005 only reports that one of the recipients you intended to send a message to was unable to receive your message.  
+There is no specific error message if you just publish a message and no one has subscribed to it.
+
+
 === application_message_id
 
 Indicates to which request this response is to be mapped (app message id is provided by sending application)
