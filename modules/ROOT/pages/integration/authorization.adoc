@@ -241,7 +241,7 @@ IMPORTANT: The account ID is used for invoicing. Therefore it should be saved wi
 To perform authorization for software that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
 
 .Authorization for non-cloud-applications
-image::graphs/image27.SVG[Authorization for non-cloud-applications,640,155]
+image::graphs/image27.svg[Authorization for non-cloud-applications,640,155]
 
 
 [IMPORTANT]

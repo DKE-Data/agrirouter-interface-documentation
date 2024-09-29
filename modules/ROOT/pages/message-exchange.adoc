@@ -63,7 +63,7 @@ After an application instance received and confirmed the receipt, the message wi
 Every registered endpoint can request the list of messages available in his feed and request specific messages. agrirouter forwards those requested messages to the outbox, delivery to the endpoint depends on the protocol.
 
 .In- and outbox of an agrirouter endpoint; simplified
-image::graphs/image15.SVG[In- and outbox of an agrirouter endpoint; simplified,611,285]
+image::graphs/image15.svg[In- and outbox of an agrirouter endpoint; simplified,611,285]
 
 [NOTE]
 ====
@@ -151,7 +151,7 @@ The steps for this – in general nd with given routings – are:
 ====
 
 .Subscribing for a message; simplified
-image::graphs/image16.SVG[Subscribing for a message; simplified,619,236]
+image::graphs/image16.svg[Subscribing for a message; simplified,619,236]
 
 
 == Routings
@@ -167,7 +167,7 @@ A routing consists of:
 * Receiver
 
 .Message addressing and routing through the agrirouter
-image::graphs/image18(2).SVG[Message addressing and routing through the agrirouter,636,410]
+image::graphs/image18(2).svg[Message addressing and routing through the agrirouter,636,410]
 
 
 

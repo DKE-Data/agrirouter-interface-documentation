@@ -223,13 +223,13 @@ To avoid graphs with too many arrows, we simplify the upcoming requests, abstrac
 === Abstraction of Calls to the Inbox
 
 .Abstraction of a Call or Message Sending to the Inbox
-image::graphs/image37.SVG[Abstraction of a Call or Message Sending to the Inbox,637,99]
+image::graphs/image37.svg[Abstraction of a Call or Message Sending to the Inbox,637,99]
 
 
 === Abstraction of Results from Outbox
 
 .Abstraction of a result from the outbox
-image::graphs/image38.SVG[Abstraction of a result from the outbox,628,87]
+image::graphs/image38.svg[Abstraction of a result from the outbox,628,87]
 
 
 == Communication of App Instance and Endpoint
@@ -256,13 +256,13 @@ If a message is not correctly encoded, so that the agrirouter cannot decode it, 
 Sending messages to the agrirouter creates an ACK message in the outbox of the agrirouter
 
 .Send Message or Command to agrirouter
-image:graphs/image39.SVG[Send Message or Command to agrirouter,512,210]
+image:graphs/image39.svg[Send Message or Command to agrirouter,512,210]
 
 
 === Flow of commands
 
 .Command Flow
-image::graphs/image40.SVG[Command Flow,482,290]
+image::graphs/image40.svg[Command Flow,482,290]
 
 
 === Flow of requesting messages from the feed
@@ -270,7 +270,7 @@ image::graphs/image40.SVG[Command Flow,482,290]
 If the command is a feed command requesting messages from the feed, the app instance has to confirm the receival of the message, so that it is deleted from the feed.
 
 .Command flow for reading the feed
-image::graphs/image41.SVG[Command flow for reading the feed,575,348]
+image::graphs/image41.svg[Command flow for reading the feed,575,348]
 
 [IMPORTANT]
 ====
@@ -283,7 +283,7 @@ When activated, agrirouter will deliver messages directly as push notifications.
 
 
 .Command flow for push Notifications
-image::graphs/message-push-flow.SVG[Command flow for push Notifications,575,300]
+image::graphs/message-push-flow.svg[Command flow for push Notifications,575,300]
 
 For further information, see xref:./integration/push-notification.adoc[ the chapter about push notifications].
 
