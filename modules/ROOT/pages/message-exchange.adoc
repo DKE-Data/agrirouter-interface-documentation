@@ -41,7 +41,7 @@ If messages are sent published, they are only delivered to those allowed endpoin
 Messages can be directly addressed to one or more endpoints. They can also be published to send the message to all subscribed endpoints. It is remarked in the message header if the message is directly sent, published, or if both techniques shall be used. agrirouter will take care of not delivering a message twice to the same endpoint.
 
 .Message addressing to multiple endpoints; simplified
-image::graphs/image14.SVG[Message addressing to multiple endpoints; simplified,648,323]
+image::graphs/image14.svg[Message addressing to multiple endpoints; simplified,648,323]
 
 === Sending messages to machines
 As a machine has its own endpoint in the agrirouter account, it is possible to address messages to a machine.
