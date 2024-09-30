@@ -160,7 +160,7 @@ image::ig2/image14.png[Application authorization screen,333,303]
 agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization result in a GET queue attached to the Redirect URL entered in the developers' application settings.
 
 The browser reacts in requesting this redirect URL which performs a GET request at the endpoint of the address. The first redirect URL set comes into
-play when an authorize request does not provide a redirect URL (or provides an invalid one).
+play when an authorize request does not provide a redirect URL (or provides an invalid one). Please note that this behaviour is DEPRECIATED and we will require a VALID redirect URL to be provided to an Authorise request in the future.
 
 The following parameters will be delivered in the GET-Query:
 

@@ -166,7 +166,7 @@ the protocol layer of REST or MQTT.
 </ul>
 
 ++++
-With except to the EFDI telemetry messages (DeviceDescription and timelogs), agrirouter doesn’t analyse the messages inside the agrirouter command. It just checks the message type and the addressing to determine the recipients based on the routings and subscriptions.
+With the exception of EFDI telemetry messages (DeviceDescription and timelogs), agrirouter doesn’t analyse the messages inside the agrirouter command. It just checks the message type and the addressing to determine the recipients based on the routings and subscriptions.
 
 .The onion principal for a non-telemetry message
 image::graphs/image33.svg[The onion principal for a non-telemetry message,621,358]

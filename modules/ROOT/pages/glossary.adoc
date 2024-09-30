@@ -81,8 +81,8 @@ DDIs are also used to identify the data records in telemetry messages.
 |Live Telemetry Messages 
 |A live telemetry message contains data points with data from the machines in one teamset. Each data point at least contains the time when it was logged. Additionally, each data point can have a geo-position. Each data point may contain many log entries. Each log entry contains the value of a specific parameter (DDI) of a specific component or function (device element) of one of the machines in the teamset.
 
-Recipients can subscribe for certain parameters they want to get (sender-independent). Recipients will receive those data, when they are sent to the public address.
-## todo
+The user-defined agrirouter routings define which parameters of which (V)CU may go to which recipient. In addition, recipients can subscribe for certain parameters they want to get (sender-independent). Recipients will receive those data, when they are sent to the public address.
+
 The agrirouter uses the routings and the subscriptions to determine the recipients, and the information each of them gets. To each recipient it delivers a filtered version of the messages, which contains only the allowed and subscribed parameters of the allowed machines.
 
 |Machines 
