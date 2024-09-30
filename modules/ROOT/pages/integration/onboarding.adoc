@@ -37,7 +37,7 @@ The following parts of onboarding are *not* required for CU onboarding:
 
 * Authentication
 ** Entering certificates in the agrirouter UI
-** Adding a redirect URL in the agrirouter UI
+** Adding one or more redirect URLs in the agrirouter UI
 * Verification
 * onboarding with a Signed request
 ====

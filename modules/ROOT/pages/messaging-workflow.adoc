@@ -246,5 +246,5 @@ If the app instance intends to send binary content to its endpoint, the app inst
 
 == Telemetry platform integrations
 
-To simplify and optimize the connection of telemetry platforms, there are several additional functionalities for such platforms. A telemetry platform can onboard virtual CUs itself, so that it is not necessary to enter a registration code in the terminal of a virtual CU. More information can be found in the xref:telemetry-platform-concepts.adoc[chapter about telemetry platforms].
+To simplify and optimize the connection of telemetry platforms, there are several additional functionalities for such platforms. A telemetry platform can onboard virtual CUs itself, so that it is not necessary to enter a registration code in the terminal of a virtual CU. It is also possible to reonboard a virtual CU. More information can be found in the xref:telemetry-platform-concepts.adoc[chapter about telemetry platforms].
 
