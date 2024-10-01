@@ -192,23 +192,9 @@ Please refer to the link:https://qr.my-agrirouter.com/expert-guide/routing[User 
 
 To simplify the creation of routings, endpoints can be grouped in the end user’s user interface. This grouping is only done on the visual layer, an endpoint group can not be addressed with a message.
 
-=== The default group
+=== Changes in agrirouter 2.0
 
-=== The default groups
-
-==== The CU and machine group 
-Sometimes new machines are added to the ecosystem, because a CU is connected, a (virtual) CU is connected to a new machine or a virtual CU is created by a telemetry platform. If this happens, a new endpoint for that machine is created in the end users agrirouter account. As the end user is not always logged in to setup routings, he can just setup routings for a "not deletable" default group. Every new endpoint is automatically assigned to the default group and can be removed from that group. The default group itself however cannot be deleted.
-
-==== The farming software and telemetry platform group
-If a new farming software or a telemetry platform is connected, it is automatically added to the group of farming software and telemetry platforms. Any endpoint can be removed from that group, the default group itself however cannot be deleted.
-
-==== Routings between the default groups
-The two default groups are connected through routings, so that any data can be exchanged in both ways.
-
-
-== Routing of telemetry data
-
-For most information types, agrirouter does not read but only route the messages from the inbox of the sending endpoint to the feed(s) of the target endpoint(s). For telemetric data, this is different. The agrirouter does still *not* read the values, but it can setup routings based on the purpose of the values context.
+In agrorouter 2.0 telemetry filtering is not used anymore.
 
 A more specific definition of EFDI messages can be found xref:./tmt/efdi.adoc[here].
 

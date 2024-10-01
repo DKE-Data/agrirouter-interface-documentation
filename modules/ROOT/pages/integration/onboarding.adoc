@@ -83,7 +83,7 @@ Both IDs are the same, they can be found in the agrirouter software endpoint UI 
 
 .Finding the applicationID
 
-image::ig2/image10.png[Finding the applicationID (marked [1]),519,294]
+image::ig2/image10(1).png[Finding the applicationID (marked [1]),519,294]
 
 
 
