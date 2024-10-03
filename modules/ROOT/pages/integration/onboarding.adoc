@@ -7,7 +7,7 @@
 The onboarding workflow is needed to onboard app instances and create endpoints in the agrirouter. The result of the onboarding process has to be stored.
 
 .General onboarding workflow
-image::ig2/image17.png[General onboarding workflow,568,599]
+image::graphs/image17.svg[General onboarding workflow,568,599]
 
 [NOTE]
 ====
@@ -20,13 +20,13 @@ Before any data flow can happen, the very first command sent by the endpoint has
 Telemetry systems and Farming Software need to assign their own userID to the accountID of the user at the agrirouter. Therefore, a verification should be performed before onboarding.
 
 .onboarding Workflow for a farming software or telemetry platform
-image::ig2/image18.png[onboarding Workflow for a farming software or telemetry platform,627,551]
+image::graphs/image18(3).svg[onboarding Workflow for a farming software or telemetry platform,627,551]
 
 
 == Workflow for CUs
 
 .agrirouter onboarding process for a CU
-image::ig2/image19.png[agrirouter onboarding process for a CU,627,311]
+image::graphs/image19.svg[agrirouter onboarding process for a CU,627,311]
 
 
 [NOTE]
@@ -37,7 +37,7 @@ The following parts of onboarding are *not* required for CU onboarding:
 
 * Authentication
 ** Entering certificates in the agrirouter UI
-** Adding a redirect URL in the agrirouter UI
+** Adding one or more redirect URLs in the agrirouter UI
 * Verification
 * onboarding with a Signed request
 ====
@@ -52,7 +52,8 @@ From the end user’s perspective, it is mostly dependent on the telemetry platf
 
 === Using the agrirouter UI
 
-The registration code for a new CU can be created by the end user clicking "Onboard Telemetry Unit" in agrirouter's control center. He has to select the desired CU  and gets a 10-digit code consisting of letters and numbers. A CU needs an interface to input this registration code.
+The registration code for a new CU can be created by the end user clicking "+ Connection" in agrirouter's control center. He gets a 10-digit code consisting of letters and numbers. A CU needs an interface to input this registration code. Registration Codes are
+independent of Application ID
 
 .Requesting a registration code in agrirouter UI
 image::ig2/image20.png[Requesting a registration code in agrirouter UI,642,368]
@@ -82,7 +83,7 @@ Both IDs are the same, they can be found in the agrirouter software endpoint UI 
 
 .Finding the applicationID
 
-image::ig2/image10.png[Finding the applicationID (marked [1]),519,294]
+image::ig2/image10(1).png[Finding the applicationID (marked [1]),519,294]
 
 
 
@@ -111,7 +112,7 @@ image::ig2/image24.png[Generating Private and Public Key in the agrirouter UI,40
 The external Id - to be seen in the <<Body Information>> of the onboarding request (only called `id` there) - needs to be a URN, which fits to the definitions in the xref:integration/general-conventions.adoc[general conventions].
 
 For farming software and telemetry platforms the external Id should be directly related to a user account in your platform. For privacy
-purposes, it would also be ok to hash or encrypt the user id so it is not visible to agrirouter.
+purposes, it would also be ok to hash or encrypt the user id so it is not visible to agrirouter. The uniqueness of external ID is limited to the tenant and the application to prevent potential issues caused by namespace collision.
 
 Examples for valid external IDs are:
 

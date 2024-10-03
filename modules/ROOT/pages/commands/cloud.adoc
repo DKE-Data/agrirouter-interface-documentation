@@ -80,7 +80,13 @@ If any of the onboarding Requests failed, failures includes a list of failed req
 |2 |message |Message |The error message
 |============================================================================
 
+== Reonboarding / Renaming a Virtual CU
 
+Reonboarding a Vitual CU is supported and can be used to rename the endpoint. You will not receive an error when trying to onboard a VCU that has already been onboarded and you can use a different name for it.
+
+image::screenshots/vcu_before_renaming.png[Virtual CU Before Reonboarding]
+
+image::screenshots/vcu_after_reonboarding.png[Virtual CU After Reonboarding]
 
 == Removing a Virtual Cu
 

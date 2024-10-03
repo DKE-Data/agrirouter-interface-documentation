@@ -13,13 +13,13 @@ The app instance can send a request for messages to its endpoint (2), agrirouter
 Received messages need to be confirmed (6) to delete the message from the feed (7).
 
 .Receiving messages through feed
-image::general/message-request.png[Receiving messages through feed]
+image::graphs/message-request.svg[Receiving messages through feed]
 
 === Push Notifications
 With push notifications activated, a copy of each message sent to the feed (1) is directly copied to the outbox (2) and delivered to the app instance (directly via MQTT or through polling using HTTP) (3).  Pushed messages need to be confirmed (4) as well as requested messages to be deleted from the feed (5).
 
 .Receiving messages with push notifications
-image::general/message-push.png[Receiving messages with push notifications]
+image::graphs/message-push.svg[Receiving messages with push notifications]
 
 
 [NOTE]
