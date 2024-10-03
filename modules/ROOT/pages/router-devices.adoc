@@ -16,12 +16,12 @@ Router devices can be set up and managed in the agrirouter developer UI
 .Router device management in the agrirouter developer UI
 image::general/router-devices-screen1.png[Router device management in the agrirouter developer UI]
 
-When clicking on "New Router device", a new device will be generated.
+When clicking on "+ Router device" and adding a name, a new device will be generated.
 
 .Router device management in the agrirouter developers UI
 image::general/router-devices-screen2.png[Router device management in the agrirouter developers UI]
 
-To check the connection properties, click on "Connection Details".
+To check the connection properties, click on the name of the router device.
 
 .Router device details
 image::general/router-devices-screen3.png[Router device details]
