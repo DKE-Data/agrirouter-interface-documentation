@@ -24,7 +24,7 @@ CUs should have a stable internet connection to provide live data. Otherwise, a 
 
 Like any other endpoint, CUs are able to request information from the agrirouter, e.g. to inform a driver about other (V)CUs positions (fleet management). The more important job of CUs, however, is to provide data to agrirouter.
 
-A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetryconnection/.
+A list of compatible CUs can be found here: https://agrirouter.com/en/solutions.
 
 Please note that there might be additional CUs in development.
 
@@ -50,7 +50,7 @@ Farming software can be a cloud application or software released on a single dev
 
 A list of farming software applications can be found here:
 
-https://my-agrirouter.com/en/marketplace/apps/
+https://agrirouter.com/en/solutions
 
 Please note that there might be additional software in the development of the compatibility.
 
@@ -67,7 +67,7 @@ Virtual CUs can be onboarded by the telemetry platform without user interaction.
 
 In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
 
-A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetryconnection/.
+A list of compatible CUs can be found here:https://agrirouter.com/en/solutions.
 
 Please note that there might be additional telemetry systems in the development of the compatibility.
 

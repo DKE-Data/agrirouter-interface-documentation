@@ -35,7 +35,7 @@ To pass the certification tests there are multiple requirements have to be fulfi
 === Prerequisites
 
 * The xref:./partner-process/provider-agreement.adoc[DKE application provider agreement] has to be signed.
-* The xref:./partner-process/marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
+* The xref:./partner-process/solutionfinder.adoc[solution finder entry] has to be created.
 * The following information about the company is available:
 ** Name
 ** Address (where billing and offer should be placed by the certification company)

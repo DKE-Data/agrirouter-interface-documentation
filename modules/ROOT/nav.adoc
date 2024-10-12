@@ -13,7 +13,7 @@
 
 * Partner Process
 ** xref:partner-process/provider-agreement.adoc[Provider Agreement]
-** xref:partner-process/marketplace.adoc[Marketplace]
+** xref:partner-process/solutionfinder.adoc[Solution-Finder]
 ** xref:partner-process/integration-qa.adoc[Integration on QA]
 ** xref:partner-process/integration-prod.adoc[Integration on Production]
 
