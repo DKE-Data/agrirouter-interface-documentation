@@ -103,7 +103,7 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 
 Telematic sensor values are assigned to DDIs, a standardized list of possible sensor and task information. A full list can be found here: https://isobus.net.
 
-The TimeLogs message includes a list of DDI numbers and their corresponding current values. The agrirouter can filter timelog messages for DDIs that are part of a routing. The DDI list provides a number area for proprietary DDIs that can have a specific definition for each manufacturer.
+The TimeLogs message includes a list of DDI numbers and their corresponding current values. The agrirouter can filter timelog messages for DDIs that are part of a routing. The categories have an informative character. The DDI list provides a number area for proprietary DDIs that can have a specific definition for each manufacturer.
 
 === Categories
 
