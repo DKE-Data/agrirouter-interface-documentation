@@ -55,7 +55,7 @@ image::io-tool/uploadwarning2.png[]
 
 == Error when receiving data
 
-Sometimes errors can occur when receiving data. In the agrirouter endpoint view tab  "Details" you can check how many messages are still to be received for the specific endpoint:
+Sometimes errors can occur when receiving data. In the agrirouter endpoint view when clicking on "Details" sign you can check how many messages are still to be received for the specific endpoint:
 
 image::io-tool/numberofmessages.png[]
 

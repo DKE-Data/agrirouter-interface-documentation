@@ -10,7 +10,6 @@ On this page you will find a list of URLs and hosts relevant for your work with 
 |====
 |Area |Environment |URL
 |EU |agrirouter 2.0 QA | https://app.qa.agrirouter.farm/
-|EU |Quality Assurance | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/
 |EU |Production |https://goto.my-agrirouter.com/
 |====
 
@@ -21,7 +20,6 @@ On this page you will find a list of URLs and hosts relevant for your work with 
 |====
 |Area |Environment |URL
 |EU |agrirouter 2.0 QA | https://app.qa.agrirouter.farm/
-|EU |Quality Assurance | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/um/register/user
 |EU |Production |https://goto.my-agrirouter.com/um/register/user
 |====
 
@@ -38,7 +36,6 @@ accounts there when explicitly asked for it!
 |====
 |Area |Environment |URL
 |EU |agrirouter 2.0 QA | _Note:_ there is no special sign up for developers; please create a regular user account and apply for developer permissions in your user settings!
-|EU |Quality Assurance | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/um/register/developer
 |EU |Production |https://goto.my-agrirouter.com/um/register/developer
 |====
 
@@ -55,7 +52,6 @@ accounts there when explicitly asked for it!
 |====
 |Area |Environment |URL
 |EU |agrirouter 2.0 QA | https://app.qa.agrirouter.farm/
-|EU |Quality Assurance | https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/app
 |EU |Production |https://goto.my-agrirouter.com/app
 |====
 
@@ -68,7 +64,6 @@ These are the base hosts for onboarding requests:
 |====
 |Area |Environment |Host
 |EU |agrirouter 2.0 QA | https://endpoint-service.qa.agrirouter.farm
-|EU |Quality Assurance |https://agrirouter-registration-service-hubqa-eu10.cfapps.eu10.hana.ondemand.com
 |EU |Production |https://onboard.my-agrirouter.com
 |====
 
@@ -93,7 +88,6 @@ Sending an onboarding request is described xref:./integration/onboarding.adoc[he
 |====
 |Area |Environment |URL
 |EU |agrirouter 2.0 QA |https://app.qa.agrirouter.farm/application/\{applicationId}/authorize 
-|EU |Quality Assurance |https://agrirouter-qa.cfapps.eu10.hana.ondemand.com/application/\{applicationId}/authorize
 |EU |Production |https://goto.my-agrirouter.com/application/\{applicationId}/authorize
 |====
 

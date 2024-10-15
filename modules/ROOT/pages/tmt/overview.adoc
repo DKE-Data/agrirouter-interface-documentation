@@ -10,7 +10,7 @@ These technical message types are summarized into information types for the end 
 
 In addition to the technical message types listed here, further technical message types can be added in agrirouter. However, only message formats that have a high significance and acceptance in the industry and are therefore helpful for the exchange of agricultural data are added.
 
-The available technical message types can be found in the agrirouter UI when creating a new application:
+The available technical message types can be found in the agrirouter UI when creating a new application and setting the capabilities:
 
 .Selecting technical message types in the agrirouter UI
 image::ig2/image47.png[Selecting technical message types in the agrirouter UI,642,380]
