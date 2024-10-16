@@ -4,8 +4,10 @@
 
 == Workshops and Trainings
 
-The service department of an app provider or DKE Partner can receive training for handling agrirouter issues. Please link:https://my-agrirouter.com/unternehmen/kontakt/[contact us] for further information.
+The service department of an app provider or DKE Partner can receive training for handling agrirouter issues. Please mailto:info@dke-data.com[contact us] for further information.
 
 == Materials for end customers
 
 To learn about agrirouter, end customers can take a look at the link:https://ad.my-agrirouter.com[agrirouter Academy] that provides in-depth information to understand agrirouter and its handling.
+  
+ To check solution guides that describe how to use the various applications in the context of agrirouter please check the link:https://manual.agrirouter.com[agrirouter User Manual]

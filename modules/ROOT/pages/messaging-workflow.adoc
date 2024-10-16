@@ -181,12 +181,11 @@ The device descriptions are needed by the agrirouter to
 * determine the relevant CU when sending a Message directly to a machine
 * filter for DDIs that are allowed to be sent to specific endpoints
 
+Only difference: Agrirouter saves the Teamsets and their DeviceDescriptions and provides it to any endpoint any time it is connected to agrirouter and routings exist.
+
 include::partial$device-description-has-to-be-sent-every-time.adoc[]
 
-The timelog telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
 
-.The onion principle for a telemetry message
-image::ig1/image34.png[The onion principle for a telemetry message,630,363]
 
 
 
