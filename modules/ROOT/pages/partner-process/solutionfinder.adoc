@@ -1,0 +1,39 @@
+= agrirouter.com Solution-Finder
+:imagesdir: _images/
+
+== What is the agrirouter Solution-Finder?
+
+At https://agrirouter.com/en/solutions it is possible for the agricultural software and telemetry connections provider to present their own solution, including a short and long description of the main functions, in which countries this solution is offered and in which language, which data formats can be exchanged via agrirouter as well as contact data to the provider itself. In this way, an interested farmer or contractor gets an initial overview of the solutions that can exchange data in combination with the agrirouter.
+
+The agrirouter Solution Finder provides a complete overview of all products that are compatible with agrirouter. This allows to quickly find compatible devices/telemetry units and software solutions for agrirouter ecosystem, get a first impression and contact providers for purchase or licensing via the links. Clearly visible links make it easier for users to access the manufacturer's website, the Solutions Guide, support or AgraCheck directly.
+
+
+All entries in the Solution-Finder are summarized in a list and can be filtered flexibly using filter options (category and functions) - according to the user's needs. 
+
+image::ig1/filter.png[solution finder filter,633,307]
+
+
+[IMPORTANT]
+====
+agrirouter Solution-Finder is for information for interested farmers or contractors only. DKE Data neither advises nor recommends the use of any of the listed solutions.
+====
+
+
+Examples of DKE partners for agricultural software are available at https://agrirouter.com/en/solutions using the filter.
+
+.Solution-Finder examples for agricultural software
+image::ig1/solutionfinder_agricultural_software.png[agricultural software,633,307]
+
+
+Examples of DKE partners for telemetry connections are available at https://agrirouter.com/en/solutions using the filter.
+
+.Solution-Finder examples for telemetry connections
+image::ig1/solutionfinder_telemetry_connections.png[telemetry connections,633,307]
+
+== General process
+.Create agrirouter Solution-Finder content process
+
+One can request a new Solution-Finder entries or update an existing entry by sending us a xref:https://go.agrirouter.com/solution-finder-form[completed form]. We will create the entry  in the various languages for which information has been submitted. We also need a company logo or a suitable image for your solution (PNG or JPG, 512 x 512 px).The completed form should be sent to info@dke-data.com. 
+After you have sent us the form, we will publish the content in the Solution Finder as soon as possible. We will send you a link to the entry in the Solution Finder once it has been published. If you have any change requests, please contact us so that we can incorporate the changes. 
+
+

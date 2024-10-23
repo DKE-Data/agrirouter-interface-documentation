@@ -5,7 +5,7 @@
 Telemetry Platforms are cloud systems that bundle the communication of multiple communication units and are also used to translate the proprietary communication between the communication units and the cloud platform to the agrirouter communication protocol described in this documentation. 
 
 .Telemetry Platforms are cloud systems that communicate for multiple CUs
-image::ig2/telemetryplatform.png[Telemetry Platforms are cloud systems that communicate for multiple CUs,619,366]
+image::graphs/telemetryplatform.svg[Telemetry Platforms are cloud systems that communicate for multiple CUs,619,366]
 
 
 === Endpoint of a telemetry platform
@@ -17,7 +17,7 @@ However, it is important to understand that the telemetry platform itself as wel
 The telemetry platform handles the on- and offboarding of virtual CUs, therefore, the sensorAlternateId in every on- and offboarding message for virtual CUs has to be the sensorAlternateId of the telemetry platform itself.
 
 .Telemetry Platforms only share an in- and outbox with their virtual CUs
-image::ig2/telemetryconcept.png[Telemetry Platforms only share an in- and outbox with their virtual CUs,619,366]
+image::graphs/telemetryconcept.svg[Telemetry Platforms only share an in- and outbox with their virtual CUs,619,366]
 
 === Commands
 

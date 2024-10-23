@@ -3,38 +3,52 @@
 
 == General Information
 
+
 When an application is not yet certified, but it shall be tested by other users than the developer, testers can be invited through the agrirouter UI.
 
 == Steps to invite testers
 
-.Select Accounts
-image::general/ui_accounts_link.png[Select Accounts]
+To invite testers, log in to your developer account and go to your settings.  
+.Select Settings
+image::general/ui-settings.png[Settings]
+
+There you will see the 'Testers' section where you can invite testers and be invited as a tester. 
 
 .Select "Testers"
-image::general/ui_accounts_headerline.png[Select "Testers"]
+image::general/testers.png[Select "Testers"]
 
-.Click "Invite"
-image::general/ui_accounts_testers_empty.png[Click "Invite"]
+The first section, Testers, shows the developer accounts that have been invited to test in your company. The second section, Tenants, shows the companies you are invited to test for.   
+To invite a tester, click the '+ Add a tester' button and enter their email address.   
 
-.Enter the email address of an existing agrirouter account and click confirm
-image::general/ui_accounts_invite.png[Enter email and click confirm]
+.Click "+ Add a tester"
+image::general/invite-tester.png[Click "+ Add a tester]
+
+Once you have entered the tester's email address, click 'Save'. 
+
+.Enter the email address
+image::general/invite-tester-email.png[Enter the email address]
+
+The invitation will then be pending, and the invitee will receive an email asking them to accept the invitation. 
+
+.Pending Invitation
+image::general/pending-invitation.png[Pending Invitation]
 
 [NOTE]
 ====
 The email address has to belong to an already existing agrirouter account! Otherwise, no email will be sent.
-
-The invited user will receive an email and has to click a link to accept the invitation.
-
-.The user will receive this message when clicking the link
-image::general/ui_accounts_accept.png[The user will receive this message when clicking the link]
 ====
 
-Once the user confirmed the request, he will be in the list of Testers
+The invited user will receive an email and has to click a link to accept the invitation.
+The user will receive this message when clicking the button ‘Accept Invitation’. 
 
-.User in List of Testers
-image::general/ui_account_approved.png[User in List of Testers]
+.Accepting Invitation
+image::general/ui_accounts_accept.png[Accepting Invitation]
 
-The user is now able to onboard apps defined in your developer account that are in status "approved for testing".
+Once the user has confirmed the request, the tester's status is accepted. 
 
+.Status Accepted 
+image::general/tester-accepted.png[Status Accepted]
 
-You can delete a tester at any time.
+The user is now able to onboard apps defined in your developer account that are in status "approved for testing". 
+
+You can delete a tester at any time by clicking on the recycle bin icon. The tester will receive an email informing them that their tester agreement has been discontinued. 

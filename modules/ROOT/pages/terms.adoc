@@ -151,31 +151,6 @@ The whole chapter can be found xref:./ecosystem.adoc[here].
 
 * Routings are created by the end user.
 
-* Each routing consists of a sender, a receiver and a list of information types and categories.
-
-* Information types are lists of technical message types, used to simplify the routings creation.
-
-* Categories are lists of DDIs, used to simplify the routings creation for telemetry data.
-
-* Categories are used to filter telemetry messages, only forwarding allowed Categories DDIs values.
-
-**Grouping:**
-
-* For simplification, endpoints can be grouped into endpoint groups.
-
-* Endpoint groups are only relevant for routings creation in the user interface of an end user.
-
-**Inter-account communication:**
-
-* The connected account of another user will be a single endpoint in the end users agrirouter account.
-
-* Endpoints within another connected users account are not directly addressable by an endpoint of the end users account.
-
-* Messages addressed to a connected account will be published within this connected account
-
-* Subscriptions from a connected account can be used as subscriptions for the endpoint representing this account.
-
-* For connected accounts, messages are only delivered if routings are created in both users’ accounts.
 
 ====
 

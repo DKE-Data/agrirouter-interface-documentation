@@ -83,7 +83,7 @@ The whole chapter can be found xref:./integration/authorization.adoc[here].
 ==== For simple CU onboarding
 
 .Process of simple CU onboarding
-image::ig1/image28.png[Process of simple CU onboarding,598,197]
+image::graphs/image28.svg[Process of simple CU onboarding,598,197]
 
 
 
@@ -91,7 +91,7 @@ image::ig1/image28.png[Process of simple CU onboarding,598,197]
 ==== For authenticated CU onboarding
 
 .General workflow for onboarding with user interaction and authorization
-image::ig1/image29.png[General workflow for onboarding with user interaction and authorization,503,316]
+image::graphs/image29.svg[General workflow for onboarding with user interaction and authorization,503,316]
 
 
 
@@ -99,7 +99,7 @@ image::ig1/image29.png[General workflow for onboarding with user interaction and
 ==== For Farming Software or Telemetry Platform onboarding
 
 .Onboarding process of a Farming Software or Telemetry platform
-image::ig2/image18.png[Onboarding process of a Farming Software or Telemetry platform,538,477]
+image::graphs/image18.svg[Onboarding process of a Farming Software or Telemetry platform,538,477]
 
 
 
@@ -166,10 +166,10 @@ the protocol layer of REST or MQTT.
 </ul>
 
 ++++
-With except to the EFDI telemetry messages (DeviceDescription and timelogs), agrirouter doesn’t analyse the messages inside the agrirouter command. It just checks the message type and the addressing to determine the recipients based on the routings and subscriptions.
+With the exception of EFDI telemetry messages (DeviceDescription and timelogs), agrirouter doesn’t analyse the messages inside the agrirouter command. It just checks the message type and the addressing to determine the recipients based on the routings and subscriptions.
 
 .The onion principal for a non-telemetry message
-image::ig1/image33.png[The onion principal for a non-telemetry message,621,358]
+image::graphs/image33.svg[The onion principal for a non-telemetry message,621,358]
 
 
 
@@ -181,12 +181,11 @@ The device descriptions are needed by the agrirouter to
 * determine the relevant CU when sending a Message directly to a machine
 * filter for DDIs that are allowed to be sent to specific endpoints
 
+Only difference: Agrirouter saves the Teamsets and their DeviceDescriptions and provides it to any endpoint any time it is connected to agrirouter and routings exist.
+
 include::partial$device-description-has-to-be-sent-every-time.adoc[]
 
-The timelog telemetry data is analysed, so that a filtering for value categories like fuel consumption is possible.
 
-.The onion principle for a telemetry message
-image::ig1/image34.png[The onion principle for a telemetry message,630,363]
 
 
 
@@ -196,7 +195,7 @@ image::ig1/image34.png[The onion principle for a telemetry message,630,363]
 An endpoint can send messages to other endpoints via the agrirouter. Therefore, it has to create commands to call at the agrirouter. To send a message to agrirouter, the application has to encode the involved file format,
 
 .Required Data to create a message
-image::ig1/image35.png[Required Data to create a message,622,347]
+image::graphs/image35.svg[Required Data to create a message,622,347]
 
 
 
@@ -212,7 +211,7 @@ agrirouter commands like the request for messages are Protobuf-Encoded.
 agrirouter stores messages of an endpoint in its feed. This feed is part of the message module. Requesting a message from the agrirouter equals sending a command to the inbox, requesting agrirouter to forward the message to the outbox. The endpoint can than receive this forwarded message through the selected protocol. For HTTP REST, the endpoint has to poll at the address of the outbox. If the endpoint uses the MQTT protocol, it will receive the message from the agrirouter.
 
 .Handling of messages and commands inside agrirouter endpoint; Simplified
-image::ig1/image36.png[Handling of messages and commands inside agrirouter endpoint; Simplified,623,268]
+image::graphs/image36.svg[Handling of messages and commands inside agrirouter endpoint; Simplified,623,268]
 
 
 
@@ -229,7 +228,7 @@ More relevant message formats can be found in the resources List of this documen
 === Resumable transfer for binary content
 
 .Transfer for Binary Content
-image::ig1/image37.png[Transfer for Binary Content,642,351]
+image::graphs/image37.svg[Transfer for Binary Content,642,351]
 
 
 
@@ -246,5 +245,5 @@ If the app instance intends to send binary content to its endpoint, the app inst
 
 == Telemetry platform integrations
 
-To simplify and optimize the connection of telemetry platforms, there are several additional functionalities for such platforms. A telemetry platform can onboard virtual CUs itself, so that it is not necessary to enter a registration code in the terminal of a virtual CU. More information can be found in the xref:telemetry-platform-concepts.adoc[chapter about telemetry platforms].
+To simplify and optimize the connection of telemetry platforms, there are several additional functionalities for such platforms. A telemetry platform can onboard virtual CUs itself, so that it is not necessary to enter a registration code in the terminal of a virtual CU. It is also possible to reonboard a virtual CU. More information can be found in the xref:telemetry-platform-concepts.adoc[chapter about telemetry platforms].
 

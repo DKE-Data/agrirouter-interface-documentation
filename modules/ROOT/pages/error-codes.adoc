@@ -48,8 +48,8 @@ With the messages we will have place holders for values which would be injected 
 | VAL_000001   | Missing Endpoint Capabilities                                              | Endpoint Message Type Verification Plugin | Error     | Capabilities for Endpoint %endpointId% are not known.                                                                      | ACK_WITH_FAILURE
 | VAL_000002   | Endpoint is not able to send technical message type                        | Endpoint Message Type Verification Plugin | Error     | Endpoint cannot sent Technical Message type %technicalMessageType%.                                                        | ACK_WITH_FAILURE
 | VAL_000003   | Missing Information Type assignment                                        | Information Derivation Plugin             | Error     | Technical Message type %technicalMessageType% is not assigned to an information type.                                      | ACK_WITH_FAILURE
-| VAL_000004   | No recipients for this sender and info type                                | SRT Routing Rule Plugin                   | Error     | No recipients have been identified for %technicalMessageType%.                                                             | ACK_WITH_FAILURE
-| VAL_000005   | Recipient is not allowed from this sender                                  | SRT Routing Rule Plugin                   | Warning   | Recipient %endpointId% is not able to receive message type %technicalMessageType%.                                         | ACK_WITH_MESSAGES
+| VAL_000004   | No recipients for this sender and info type                                | SRT Routing Rule Plugin                   | Error     | None of the listed  recipients is able to receive message type %technicalMessageType%. This is most likely due to capabilities or routings.                                                             | ACK_WITH_FAILURE
+| VAL_000005   | Recipient is not allowed from this sender                                  | SRT Routing Rule Plugin                   | Warning   | At least one of the listed Recipient %endpointId% is not able to receive message type %technicalMessageType%.This is most likely due to capabilities or routings.                                         | ACK_WITH_MESSAGES                                        | ACK_WITH_MESSAGES
 | VAL_000006   | Subscription contains invalid message type(s)                              | Subscription Plugin                       | Error     | Subscription to %technicalMessageType% is not valid reported capabilities.                                                 | ACK_WITH_FAILURE
 | VAL_000007   | Capabilities contains invalid message type(s)                              | Endpoint Capability Plugin                | Warning   | Capability for %technicalMessageType% was ignored as it is not known to the certification.                                 | ACK_WITH_MESSAGES
 | VAL_000008   | Certification validations do not pass                                      | Certification Check Plugin                | Error     | Certification is not valid or the endpoint is blocked.                                                                     | ACK_WITH_FAILURE
@@ -107,13 +107,10 @@ With the messages we will have place holders for values which would be injected 
 |0105 |The application id provided is not valid for this request. Registration code is not generated for given application ID.|
 |0106 |Missing ${constants.Validation.SIGNATURE.APPLICATION_ID_HEADER_FIELD} or ${constants.Validation.SIGNATURE.AGRIROUTER_SIGNATURE_HEADER_FIELD} header(s)|
 |0107 |Invalid signature |
-|0108 |Application cannot be validated as application header is not the same as the application associated with the given registration code. |
 |0109 |Application header is not the same as the application associated with the given endpoints or multiple applications found for given endpoints. | Can also indicate that the endpoint does not exist anymore.
 |0110 |Signing header is invalid. The request has timed out or UTCTimestamp is not provided|
-|0111 |The application ID provided is not valid. The application ID cannot be changed when re-onboarding an endpoint. |
 |0112 |You've made too many requests in a short period of time. |
 |0113 |You've made too many requests in a short period of time, please try again in X seconds. |
-|0114 |Endpoint has recently been revoked. Please wait X minutes before trying to onboard again. |
 |0115 |Application quota limit has been exceeded. |
 |0401 |Bearer not found. | The registration code that is retrieved from either the agrirouter UI or from the authorization process is invalid. |
 |========================================================================================================================================================

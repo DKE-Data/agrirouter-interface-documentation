@@ -35,5 +35,5 @@ As provider of an application that could be connected to the agrirouter, you sav
 
 The more providers are using the agrirouter solution, the better it is. With more and more different data providers entering the agrirouter, it becomes much easier to implement new data formats.
 
-The compatibility with agrirouter and the usage of the market place gives your product an additional marketing aspect.
+The compatibility with agrirouter and the usage of the Solution-Finder gives your product an additional marketing aspect.
 

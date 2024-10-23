@@ -18,11 +18,10 @@ The user interface offers possibilities to handle the account:
 * create groups of endpoints
 * connect an account with other agrirouter accounts to exchange data
 * setup routings to allow or disallow message delivery to specific endpoints or endpoint groups
-* create endpoint records for service purpose
 * view a list of news/updates for his account (e.g "account connected", "endpoint onboarded", etc.)
 
 .User Interface for End Users
-image::screenshots/homescreen.png[User Interface for End Users,456,663]
+image::screenshots/homescreen.png[User Interface for End Users]
 
 A specific help for handling of an end user account can be found link:https://ad.my-agrirouter.com[in the agrirouter Academy].
 
@@ -43,8 +42,7 @@ Additionally, developers can manage their own applications:
 * Add new software versions for certification
 * Manage the required capabilities of the application
 * Block specific endpoints, e.g. to avoid abuse of applications
-* Replay Endpoint Records
 * Export metrics of agrirouter usage for billing and statistical purposes
 
 .User Interface for Developers
-image::screenshots/homescreen_dev.png[User Interface for Developers,473,615]
+image::screenshots/homescreen_dev.png[User Interface for Developers]

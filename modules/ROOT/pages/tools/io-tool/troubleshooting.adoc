@@ -55,7 +55,7 @@ image::io-tool/uploadwarning2.png[]
 
 == Error when receiving data
 
-Sometimes errors can occur when receiving data. In the agrirouter endpoint view tab  "Details" you can check how many messages are still to be received for the specific endpoint:
+Sometimes errors can occur when receiving data. In the agrirouter endpoint view when clicking on "Details" sign you can check how many messages are still to be received for the specific endpoint:
 
 image::io-tool/numberofmessages.png[]
 
@@ -68,14 +68,6 @@ In case the onboarding fails, the logs will indicate the reason
 
 It should not happen, but if the agrirouter itself is not reachable, the IO-Tool cannot connect to it. Check the https://status.agrirouter.com - Page to see if agrirouter is online.
 
-
-=== Too fast connection after disconnect
-
-If you recently offboarded your IO-Tool, it might be that you tried to reonboard too fast. The error will indicate this and you'll just have to wait for the given amount of time:
-
-''''
-Exception of type com.dke.data.agrirouter.api.exception.OnboardingException. Message: There was an error '114' during the onboarding process, details were 'Endpoint has recently been revoked. Please wait 1 minutes 49 seconds before trying to onboard again.'
-''''
 
 == Links
 

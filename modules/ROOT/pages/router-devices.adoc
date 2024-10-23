@@ -5,10 +5,10 @@
 Without router devices, an application would need to create multiple MQTT connections, which might cost quite a lot of resources. Therefore, router devices were implemented to allow routing multiple connections using one MQTT broker.
 
 .Using Router devices vs. not using router devices
-image::general/router-devices2.png[Using Router devices vs. not using router devices]
+image::graphs/router_devices2.svg[Using Router devices vs. not using router devices]
 
 .Using router devices vs. communication using communication units
-image::general/router-devices1.png[Using router devices vs. communication using communication units]
+image::graphs/router_devices1.svg[Using router devices vs. communication using communication units]
 
 == Setup of router devices
 Router devices can be set up and managed in the agrirouter developer UI
@@ -16,20 +16,25 @@ Router devices can be set up and managed in the agrirouter developer UI
 .Router device management in the agrirouter developer UI
 image::general/router-devices-screen1.png[Router device management in the agrirouter developer UI]
 
-When clicking on "New Router device", a new device will be generated.
+When clicking on "+ Router device" and adding a name, a new device will be generated.
 
 .Router device management in the agrirouter developers UI
 image::general/router-devices-screen2.png[Router device management in the agrirouter developers UI]
 
-To check the connection properties, click on "Connection Details".
+To check the connection properties, click on the name of the router device.
 
 .Router device details
 image::general/router-devices-screen3.png[Router device details]
 
 The certificate for the router device can be downloaded as PEM or P12.
 
+.Generate certificate of router device
+image::general/router-devices-screen4.png[Generate certificate of router device]
+
+The certificate for the router device can also be downloaded in this view. 
+
 .Download certificate of router device
-image::general/router-devices-screen4.png[Download certificate of router device]
+image::general/router-devices-screen5.png[Download certificate of router device]
 
 The file includes a JSON structure containing all necessary information for the router device
 [source,json]

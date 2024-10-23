@@ -36,15 +36,19 @@ image::general/message_structure_non-telemetry.svg[The onion principle for a non
 
 An exception are the EFDI telemetry messages.
 
-The device descriptions are needed by the agrirouter to
+The device descriptions are needed by the receivers to
 
-* determine the relevant CU when sending a message directly to a machine
-* filter for DDIs that are allowed to be sent to specific endpoints
-* be sent to endpoints that subscribe to telemetry data after the device description was already sent
+* understand telemetry messages sent afterwards
+* understand which machines are active in the field
+
+[NOTE]
+====
+In contrast to all other messages, the DeviceDescriptions of a Teamset are stored in agrirouter and delivered whenever an endpoint subscribes for them or a subscribed endpoint reconnects to agrirouter.
+====
 
 include::partial$device-description-has-to-be-sent-every-time.adoc[]
 
-The live telemetry data is analysed so that filtering for value categories like fuel consumption is possible.
+The live telemetry data is not analysed and transfered just like files.
 
 .The onion principle for a telemetry message
 image::general/message_structure_telemetry.svg[The onion principle for a telemetry message,644,371]
@@ -122,10 +126,10 @@ Without router devices, an application would need to create multiple MQTT connec
 
 
 .Using router devices vs. not using router devices
-image::general/router-devices1.png[Using router devices vs. not using router devices]
+image::graphs/router_devices.svg[Using router devices vs. not using router devices]
 
 .Using router devices vs. communication using communication units
-image::general/router-devices2.png[Using router devices vs. communication using communication units]
+image::graphs/router_devices2.svg[Using router devices vs. communication using communication units]
 
 ===== Setup of router devices
 Router devices can be set up and managed within the agrirouter developer UI
@@ -223,13 +227,13 @@ To avoid graphs with too many arrows, we simplify the upcoming requests, abstrac
 === Abstraction of Calls to the Inbox
 
 .Abstraction of a Call or Message Sending to the Inbox
-image::ig2/image37.png[Abstraction of a Call or Message Sending to the Inbox,637,99]
+image::graphs/image37.svg[Abstraction of a Call or Message Sending to the Inbox,637,99]
 
 
 === Abstraction of Results from Outbox
 
 .Abstraction of a result from the outbox
-image::ig2/image38.png[Abstraction of a result from the outbox,628,87]
+image::graphs/image38.svg[Abstraction of a result from the outbox,628,87]
 
 
 == Communication of App Instance and Endpoint
@@ -256,13 +260,13 @@ If a message is not correctly encoded, so that the agrirouter cannot decode it, 
 Sending messages to the agrirouter creates an ACK message in the outbox of the agrirouter
 
 .Send Message or Command to agrirouter
-image::ig2/image39.png[Send Message or Command to agrirouter,512,210]
+image:graphs/image39.svg[Send Message or Command to agrirouter,512,210]
 
 
 === Flow of commands
 
 .Command Flow
-image::ig2/image40.png[Command Flow,482,290]
+image::graphs/image40.svg[Command Flow,482,290]
 
 
 === Flow of requesting messages from the feed
@@ -270,7 +274,7 @@ image::ig2/image40.png[Command Flow,482,290]
 If the command is a feed command requesting messages from the feed, the app instance has to confirm the receival of the message, so that it is deleted from the feed.
 
 .Command flow for reading the feed
-image::ig2/image41.png[Command flow for reading the feed,575,348]
+image::graphs/image41.svg[Command flow for reading the feed,575,348]
 
 [IMPORTANT]
 ====
@@ -283,7 +287,7 @@ When activated, agrirouter will deliver messages directly as push notifications.
 
 
 .Command flow for push Notifications
-image::general/message-push-flow.png[Command flow for push Notifications,575,300]
+image::graphs/message-push-flow.svg[Command flow for push Notifications,575,300]
 
 For further information, see xref:./integration/push-notification.adoc[ the chapter about push notifications].
 

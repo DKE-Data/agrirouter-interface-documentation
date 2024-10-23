@@ -18,7 +18,6 @@ There are several development resources which can be found in xref:../developmen
 * link:https://github.com/DKE-Data/agrirouter-postman-tools[Postman collection for onboarding and Revoking]
 * xref:../tools/paho.adoc[Paho for MQTT Connection]
 * xref:../tools/arts.adoc[The agrirouter protobuf toolset]
-* xref:../tools/endpoint-recording.adoc[The endpoint recording]
 * link:https://github.com/DKE-Data[The github Account with documentation and APIs]
 * link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial[A video tutorial on the integration process]
 
@@ -62,7 +61,7 @@ First, you should always keep in mind the xref:../integration/general-convention
 There are several environments for test and production in different areas of the world. Their different parameters like URLs and certificates can be found in the xref:../integration/environments.adoc[Environments].
 
 === General lifecycle of an endpoint
-image::general/lifecycle.png[]
+image::graphs/lifecycle.svg[]
 
 === Connecting your app instance
 

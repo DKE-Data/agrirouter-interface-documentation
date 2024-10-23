@@ -22,9 +22,9 @@ CUs are usually but not necessarily connected to machines via ISOBUS and collect
 
 CUs should have a stable internet connection to provide live data. Otherwise, a CU should buffer generated messages to send them, once the internet connection returns.
 
-Like any other endpoint, CUs are able to request information from the agrirouter, e.g. to inform a driver about other machine positions (fleet management). The more important job of CUs, however, is to provide data to agrirouter.
+Like any other endpoint, CUs are able to request information from the agrirouter, e.g. to inform a driver about other (V)CUs positions (fleet management). The more important job of CUs, however, is to provide data to agrirouter.
 
-A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetryconnection/.
+A list of compatible CUs can be found here: https://agrirouter.com/en/solutions.
 
 Please note that there might be additional CUs in development.
 
@@ -50,7 +50,7 @@ Farming software can be a cloud application or software released on a single dev
 
 A list of farming software applications can be found here:
 
-https://my-agrirouter.com/en/marketplace/apps/
+https://agrirouter.com/en/solutions
 
 Please note that there might be additional software in the development of the compatibility.
 
@@ -67,27 +67,9 @@ Virtual CUs can be onboarded by the telemetry platform without user interaction.
 
 In the agrirouter UI, the telemetry platform and each virtual CU are displayed as endpoints.
 
-A list of compatible CUs can be found here: https://my-agrirouter.com/en/marketplace/telemetryconnection/.
+A list of compatible CUs can be found here:https://agrirouter.com/en/solutions.
 
 Please note that there might be additional telemetry systems in the development of the compatibility.
-
-
-
-== Machines
-
-You might wonder, why machines are not listed as applications. The answer is easy: Machines cannot be directly connected to the agrirouter. Machines are always connected through an application like a CU or a virtual CU.
-
-(Virtual) CUs that are connected to the ISOBUS can provide the device description of connected machines and send live telemetry data. If a CU provides the device description of connected machines, these machines can be addressed by agrirouter messages. A farmer could, for example, send an initial taskset to his seeder and the taskset is delivered to whichever CU reports to agrirouter that it is connected to this seeder.
-
-[NOTE]
-=====
-
-Machines are filtered through their ISO11783 ClientNAME.(a.k.a. WorkingSet Master Name). The full definition of this can be found in the corresponding standards (ISO11783 link:https://www.iso.org/standard/61581.html[Part 10 for TaskController Knowledge] and ISO11783 link:https://www.iso.org/standard/74366.html[Part 5 for the definition of the ClientNAME]).
-
-**Important**:
-In older versions of the standard, the ClientNAME was only required to be unique across the bus, which leads some manufacturers to use the same ClientNAME for different machines (e.g. multiple tractors) that would never be connected to the same CAN Bus. Further filtering to find a unique ID can be done by adding the DeviceSerialNumber to extend the ClientNAME.
-=====
-
 
 
 == Overview of the architecture
@@ -103,23 +85,10 @@ An endpoint is an addressable communication address for an application instance 
 
 The address of an endpoint (in this case the "__deviceAlternateId__") is used by its corresponding app instance to communicate with the agrirouter and by other app instances within the same account to address this app instance (in this case the "__sensorAlternateID__").
 
-=== Connected end-user accounts
-
-It is possible to connect 2 agrirouter accounts with each other using the email address of the end-users and setting up a connection using the graphical user interface of agrirouter. Each connected agrirouter account gets its own endpoint in the partner's agrirouter account and vice versa.
-
-.List of paired accounts
-image::screenshots/accountpairing.png[List of paired accounts,642,354]
-
-
-[IMPORTANT]
-====
-It is not possible to address an endpoint inside another agrirouter account, neither is it possible to list the endpoints of this account. Rather, only published messages will be sent to the paired account.
-====
-
 === Teamset
 
-A teamset is a set of connected machines that work and move together and are connected to the same communication unit. The machines in the teamset are typically connected physically and informationally (for example via ISOBUS).
+A teamset is a set of connected machines that work and move together and are connected to the same (virtual) communication unit. The machines in the teamset are typically connected physically and informationally (for example via ISOBUS).
 
-A (virtual) CU is responsible for the agrirouter communication of one teamset. It sends descriptions of the machines in the teamset whenever the teamset changes or when the descriptions of at least one of the machines change (for example because of a reconfiguration or the CU connects to another machine). This way the agrirouter knows about the machines themselves, and about which machine is connected to which communication unit.
+A (virtual) CU is responsible for the agrirouter communication of one teamset. It sends descriptions of the machines in the teamset whenever the teamset changes or when the descriptions of at least one of the machines change (for example because of a reconfiguration or the CU connects to another machine). This way the agrirouter participants know about the machines themselves, and about which machine is connected to which communication unit.
 
-Each CU only sends one teamset, every teamset can only be part of one CU. If multiple CUs are on the same network (e.g. a terminal in the tractor + a telemetry box on the baler), there will be multiple teamsets in agrirouter including the same machines and sending the same data. Apps are then responsible for filtering duplicated data. If there are no machines connected, the teamset of a CU will just be empty.
+Each CU only sends one teamset, every teamset can only be part of one CU. If multiple CUs are on the same network (e.g. a terminal in the tractor + a telemetry box on the baler), there will be multiple teamsets including the same machines and sending the same data. Apps are then responsible for filtering duplicated data. If there are no machines connected, the teamset of a CU will just be empty.

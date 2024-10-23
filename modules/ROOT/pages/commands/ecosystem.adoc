@@ -74,11 +74,6 @@ The endpoint Type can be one of the following Values:
 |==========================================================================================================
 |Code |Description |Comment
 |application |Software Application |Software Application
-|foreignMachine |External Machine |Machine shared by a paired agrirouter account
-|machine |Machine |Agricultural machine
-|messageRecordingReplay |Recording Player |Can replay recorded messages
-|pairedAccount |Paired Account |Represents a paired agrirouter account with which you can exchange messages
-|endpointGroup |Group |A group of other assets (applications, machines) with common rules
 |virtualCU |Telemetry Platform |Connection via Telemetry Platform
 |==========================================================================================================
 

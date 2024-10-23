@@ -7,7 +7,7 @@ If the contract with a customer ends, app providers should revoke their connecti
 == Process of Revoking
 
 .Revoke Process
-image::ig2/image25.png[Revoke Process,526,306]
+image::graphs/image25.svg[Revoke Process,526,306]
 
 
 == Creating Revoke Command

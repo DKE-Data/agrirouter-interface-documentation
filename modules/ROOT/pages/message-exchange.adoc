@@ -41,7 +41,7 @@ If messages are sent published, they are only delivered to those allowed endpoin
 Messages can be directly addressed to one or more endpoints. They can also be published to send the message to all subscribed endpoints. It is remarked in the message header if the message is directly sent, published, or if both techniques shall be used. agrirouter will take care of not delivering a message twice to the same endpoint.
 
 .Message addressing to multiple endpoints; simplified
-image::ig1/image14.png[Message addressing to multiple endpoints; simplified,648,323]
+image::graphs/image14.svg[Message addressing to multiple endpoints; simplified,648,323]
 
 === Sending messages to machines
 As a machine has its own endpoint in the agrirouter account, it is possible to address messages to a machine.
@@ -63,7 +63,7 @@ After an application instance received and confirmed the receipt, the message wi
 Every registered endpoint can request the list of messages available in his feed and request specific messages. agrirouter forwards those requested messages to the outbox, delivery to the endpoint depends on the protocol.
 
 .In- and outbox of an agrirouter endpoint; simplified
-image::ig1/image15.png[In- and outbox of an agrirouter endpoint; simplified,611,285]
+image::graphs/image15.svg[In- and outbox of an agrirouter endpoint; simplified,611,285]
 
 [NOTE]
 ====
@@ -151,46 +151,8 @@ The steps for this – in general nd with given routings – are:
 ====
 
 .Subscribing for a message; simplified
-image::ig1/image16.png[Subscribing for a message; simplified,619,236]
+image::graphs/image16.svg[Subscribing for a message; simplified,619,236]
 
-
-
-== Exchange with other user accounts
-
-Messages can be sent to other users’ accounts if this users account is connected with the agrirouter account of the sending endpoint. A connected account is represented as an endpoint in the users agrirouter account.
-
-For guidance on how to connect 2 accounts, see the link:https://qr.my-agrirouter.com/expert-guide/account-pairing[User Manual].
-
-A message that is addressed to this endpoint will be published in the connected account. An app instance that wants to receive messages from a different account has to subscribe its endpoint to the desired technical message type. The process is visible in the following graph:
-
-.Sending messages into another account
-image::ig1/image17.png[Sending messages into another account,630,311]
-
-
-
-
-**Short description:**
-
-====
-
-1. App Instance 1 sends a message of TMT1 to the Endpoint EP9. As there is a routing, agrirouter will forward that message.
-
-
-2. agrirouter recognizes that EP9 in real is the connection to Contractor Johns account. Therefore, it now handles the message like an incoming message, published in EP7 of Contractor Johns account. agrirouter looks for endpoints that are:
-
-* Part of Contractor Johns account
-* have an existing Routing with TMT1 and EP7
-* Are subscribed for the TMT.
-
-3. The message will be forwarded to any endpoint matching these criteria.
-
-====
-
-[NOTE]
-====
-By default, connected accounts do not forward subscriptions. This means: If App Instance 1 in Account A publishes a message of TMT2 and App Instance 4 in Account B is subscribed for that, the message will **not** be delivered, even though the accounts are connected. However, there is a setting in the account connection to forward those subscriptions, see
-
-====
 
 == Routings
 
@@ -205,7 +167,7 @@ A routing consists of:
 * Receiver
 
 .Message addressing and routing through the agrirouter
-image::ig1/image18.png[Message addressing and routing through the agrirouter,636,410]
+image::graphs/image18(2).svg[Message addressing and routing through the agrirouter,636,410]
 
 
 
@@ -230,23 +192,9 @@ Please refer to the link:https://qr.my-agrirouter.com/expert-guide/routing[User 
 
 To simplify the creation of routings, endpoints can be grouped in the end user’s user interface. This grouping is only done on the visual layer, an endpoint group can not be addressed with a message.
 
-=== The default group
+=== Changes in agrirouter 2.0
 
-=== The default groups
-
-==== The CU and machine group 
-Sometimes new machines are added to the ecosystem, because a CU is connected, a (virtual) CU is connected to a new machine or a virtual CU is created by a telemetry platform. If this happens, a new endpoint for that machine is created in the end users agrirouter account. As the end user is not always logged in to setup routings, he can just setup routings for a "not deletable" default group. Every new endpoint is automatically assigned to the default group and can be removed from that group. The default group itself however cannot be deleted.
-
-==== The farming software and telemetry platform group
-If a new farming software or a telemetry platform is connected, it is automatically added to the group of farming software and telemetry platforms. Any endpoint can be removed from that group, the default group itself however cannot be deleted.
-
-==== Routings between the default groups
-The two default groups are connected through routings, so that any data can be exchanged in both ways.
-
-
-== Routing of telemetry data
-
-For most information types, agrirouter does not read but only route the messages from the inbox of the sending endpoint to the feed(s) of the target endpoint(s). For telemetric data, this is different. The agrirouter does still *not* read the values, but it can setup routings based on the purpose of the values context.
+In agrorouter 2.0 telemetry filtering is not used anymore.
 
 A more specific definition of EFDI messages can be found xref:./tmt/efdi.adoc[here].
 

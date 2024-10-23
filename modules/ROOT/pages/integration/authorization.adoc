@@ -33,7 +33,7 @@ In the developers' UI, he has to:
 
 * Copy the application ID (1)
 * Call Edit (2)
-* Provide a redirect URL, to which agrirouter shall deliver the authorization result using HTTP 301 Browser redirect.(3)
+* Provide one or more redirect URLs, to which agrirouter shall deliver the authorization result using HTTP 301 Browser redirect.(3)
 * Provide a public key for his encryption or create a key pair on the agrirouter frontend
 
 .Application overview
@@ -134,7 +134,7 @@ A number to identify the request result on server side. The provided Number shou
 * Unique
 * Not guessable
 
-|{\{redirect_uri}} | |Could extend your entered redirect URL. The base redirect URL needs to be configured by the application developer in the UI. If this query parameter is omitted, the configured URL will be used. This parameter can override the configured URL as long as the configured URL is a substring of the one defined in the request (e.g. configured: example.com/callback | query parameter: example.com/callback/customer15). 
+|{\{redirect_uri}} | |Could extend your entered redirect URL. The base redirect URL needs to be configured by the application developer in the UI. If this query parameter is omitted, the configured URL will be used. This parameter can override the configured URL as long as the configured URL is a substring of the one defined in the request (e.g. configured: example.com/callback  | query parameter: example.com/callback/customer15) Multiple redirect URLs can be set. The first redirect URL set comes into play when an authorize request does not provide a redirect URL (or an invalid one). 
 |=====================================================================================
 
 [CAUTION]
@@ -159,7 +159,8 @@ image::ig2/image14.png[Application authorization screen,333,303]
 
 agrirouter sends an HTTP 301 redirect to the browser, encoding the authorization result in a GET queue attached to the Redirect URL entered in the developers' application settings.
 
-The browser reacts in requesting this redirect URL which performs a GET request at the endpoint of the address.
+The browser reacts in requesting this redirect URL which performs a GET request at the endpoint of the address. The first redirect URL set comes into
+play when an authorize request does not provide a redirect URL (or provides an invalid one). Please note that this behaviour is DEPRECIATED and we will require a VALID redirect URL to be provided to an Authorise request in the future.
 
 The following parameters will be delivered in the GET-Query:
 
@@ -240,7 +241,7 @@ IMPORTANT: The account ID is used for invoicing. Therefore it should be saved wi
 To perform authorization for software that is not provided as a cloud solution, a small cloud onboarding service could be created to handle the onboarding communication:
 
 .Authorization for non-cloud-applications
-image::ig1/image27.png[Authorization for non-cloud-applications,640,155]
+image::graphs/image27.svg[Authorization for non-cloud-applications,640,155]
 
 
 [IMPORTANT]
