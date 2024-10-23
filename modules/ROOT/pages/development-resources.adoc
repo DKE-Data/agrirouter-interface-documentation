@@ -28,7 +28,7 @@ To perform an agrirouter integration, you will need knowledge to the following t
 
 * Especially for Protobuf Development, you can use the xref:./tools/arts.adoc[agrirouter Protobuf Toolset]
 
-* To create and play traces, use the xref:./tools/endpoint-recording.adoc[Endpoint Recording]
+* The IO Tool can be used as a communication partner: xref:./tools/io-tool/overview.adoc[IO Tool]
 
 == Further Resources
 
