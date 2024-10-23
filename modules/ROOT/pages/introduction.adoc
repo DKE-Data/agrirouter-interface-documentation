@@ -65,7 +65,6 @@ There are several tools to support you in your agrirouter development
 
 ** xref:tools/io-tool/overview.adoc[IO-Tool - Simulate communication]
 ** xref:tools/arts.adoc[ARTS - Analyse messages]
-** xref:tools/endpoint-recording.adoc[Endpoint Recording - Record messages of endpoint]
 ** xref:tools/paho.adoc[PAHO - MQTT Testing]
 
 

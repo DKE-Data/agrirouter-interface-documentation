@@ -77,7 +77,6 @@
 *** xref:tools/io-tool/mapview.adoc[Telemetry MapView]
 
 ** xref:tools/arts.adoc[ARTS]
-** xref:tools/endpoint-recording.adoc[Endpoint Recording]
 ** xref:tools/paho.adoc[PAHO]
 
 * Appendix
