@@ -218,7 +218,11 @@ The gatewayId is an enumeration to determine the used protocol for all communica
 Switching GatewayID MQTT <-> HTTP works, but it may only be used for
 migration from one gateway to the other.
 
-IMPORTANT: Data loss might occur, contact the agrirouter support (mailto::support@agrirouter.com) for further information.
+[IMPORTANT]
+====
+Data loss might occur, contact  mailto:support@agrirouter.com[the agrirouter support] for further information.
+====
+
 === Where to find
 
 ==== As API
