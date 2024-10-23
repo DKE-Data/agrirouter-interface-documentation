@@ -28,8 +28,13 @@ image::general/router-devices-screen3.png[Router device details]
 
 The certificate for the router device can be downloaded as PEM or P12.
 
+.Generate certificate of router device
+image::general/router-devices-screen4.png[Generate certificate of router device]
+
+The certificate for the router device can also be downloaded in this view. 
+
 .Download certificate of router device
-image::general/router-devices-screen4.png[Download certificate of router device]
+image::general/router-devices-screen5.png[Download certificate of router device]
 
 The file includes a JSON structure containing all necessary information for the router device
 [source,json]

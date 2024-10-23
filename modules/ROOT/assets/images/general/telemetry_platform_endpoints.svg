@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="172.1611mm"
+   height="93.927078mm"
+   viewBox="0 0 172.1611 93.927077"
+   version="1.1"
+   id="svg2957"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="telemetry_platform_endpoints.svg">
+  <defs
+     id="defs2951">
+    <clipPath
+       id="clip0">
+      <rect
+         id="rect3502"
+         height="716"
+         width="1310"
+         y="-5"
+         x="-5" />
+    </clipPath>
+    <clipPath
+       id="clip1">
+      <rect
+         id="rect3505"
+         height="537"
+         width="538"
+         y="11"
+         x="767" />
+    </clipPath>
+    <clipPath
+       id="clip2">
+      <rect
+         id="rect3508"
+         height="538"
+         width="538"
+         y="11"
+         x="767" />
+    </clipPath>
+    <clipPath
+       id="clip3">
+      <rect
+         id="rect3511"
+         height="539"
+         width="538"
+         y="10"
+         x="767" />
+    </clipPath>
+    <clipPath
+       id="clip0-2">
+      <rect
+         id="rect3917"
+         height="716"
+         width="1310"
+         y="-5"
+         x="-5" />
+    </clipPath>
+    <clipPath
+       id="clip1-6">
+      <rect
+         id="rect3920"
+         height="537"
+         width="538"
+         y="11"
+         x="767" />
+    </clipPath>
+    <clipPath
+       id="clip2-9">
+      <rect
+         id="rect3923"
+         height="538"
+         width="538"
+         y="11"
+         x="767" />
+    </clipPath>
+    <clipPath
+       id="clip3-7">
+      <rect
+         id="rect3926"
+         height="539"
+         width="538"
+         y="10"
+         x="767" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="200.93145"
+     inkscape:cy="112.57109"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="114"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2954">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(27.676191,58.203118)">
+    <g
+       id="g4187"
+       transform="matrix(0.13229166,0,0,0.13229166,-27.411608,-58.33541)"
+       clip-path="url(#clip0-2)">
+      <rect
+         id="rect3931"
+         stroke-miterlimit="8"
+         height="660"
+         width="616"
+         y="49"
+         x="395"
+         style="fill:none;stroke:#71b790;stroke-width:4;stroke-miterlimit:8;stroke-dasharray:4, 4" />
+      <path
+         id="path3933"
+         stroke-miterlimit="8"
+         d="m 262.5,452.334 c 0,-27.522 22.312,-49.834 49.834,-49.834 H 488.25 v 0 H 585 599.666 c 27.522,0 49.834,22.312 49.834,49.834 v 124.583 l 98.647,47.351 -98.647,27.399 v -10e-4 c 0,27.522 -22.312,49.834 -49.834,49.834 H 585 488.25 v 0 H 312.334 c -27.522,0 -49.834,-22.312 -49.834,-49.834 v 10e-4 -74.75 0 z"
+         inkscape:connector-curvature="0"
+         style="fill:#e7e6e6;fill-rule:evenodd;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <g
+         id="g3945"
+         clip-path="url(#clip1-6)">
+        <g
+           id="g3943"
+           clip-path="url(#clip2-9)">
+          <g
+             id="g3941"
+             clip-path="url(#clip3-7)">
+            <path
+               id="path3935"
+               transform="matrix(1.00176,0,0,1,767,10.9731)"
+               d="m 498.693,259.638 16.373,16.374 16.374,-16.374 C 526.762,121.632 415.889,10.292 277.883,5.6138 l 15.906,15.9058 -16.374,16.3736 C 397.176,43.0391 493.547,139.409 498.693,259.638 Z"
+               inkscape:connector-curvature="0"
+               style="fill:#71b790;fill-opacity:0.3" />
+            <path
+               id="path3937"
+               transform="matrix(1.00176,0,0,1,767,10.9731)"
+               d="M 21.9874,243.265 38.361,259.638 C 43.0391,139.877 139.409,43.507 259.638,38.361 L 276.012,21.9874 259.638,5.6138 C 122.1,10.292 10.7598,121.632 6.08162,259.638 Z"
+               inkscape:connector-curvature="0"
+               style="fill:#71b790;fill-opacity:0.3" />
+            <path
+               id="path3939"
+               transform="matrix(1.00176,0,0,1,767,10.9731)"
+               d="m 515.066,293.789 -16.373,-16.374 c -1.872,53.799 -22.923,103.388 -55.67,141.749 L 372.85,295.192 h 15.438 c 38.361,0 69.705,-31.343 69.705,-69.704 0,-38.361 -31.344,-69.705 -69.705,-69.705 h -92.16 c -8.888,0 -16.374,7.485 -16.374,16.374 v 152.04 L 187.595,163.736 c -2.807,-5.146 -8.421,-7.953 -14.035,-7.953 -5.614,0 -11.228,3.275 -14.034,7.953 L 52.8633,348.524 C 44.4426,326.536 39.7644,302.677 38.8288,277.883 L 22.4552,261.51 6.08162,277.883 C 10.7598,415.889 121.632,527.23 259.638,531.908 l -15.905,-15.906 16.373,-16.374 C 179.174,496.821 108.534,451.443 69.7047,385.481 L 173.56,205.839 282.094,392.966 c 3.742,6.55 11.227,9.356 18.244,7.485 7.018,-1.871 12.164,-8.42 12.164,-15.906 V 188.062 h 75.318 c 20.584,0 36.958,16.842 36.958,36.958 0,20.116 -16.842,36.957 -36.958,36.957 h -43.507 c -5.614,0 -11.227,3.275 -14.034,7.953 -2.807,5.146 -2.807,11.228 0,16.374 l 88.417,155.783 c -38.361,33.215 -87.482,53.799 -141.281,55.67 l -16.373,16.374 16.373,16.373 C 415.421,525.826 526.762,414.954 531.44,276.948 Z"
+               inkscape:connector-curvature="0"
+               style="fill:#71b790;fill-opacity:0.3" />
+          </g>
+        </g>
+      </g>
+      <path
+         id="path3947"
+         stroke-miterlimit="8"
+         d="m 292.5,458.5 h 176.051 c 48.877,0 88.5,39.623 88.5,88.5 v 0 H 574.5 L 543.891,576.5 513.282,547 h 17.449 v 0 c 0,-34.341 -27.839,-62.18 -62.18,-62.18 H 292.5 Z"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <rect
+         id="rect3949"
+         height="424"
+         width="152"
+         y="19"
+         x="0"
+         style="fill:#cde4d9" />
+      <text
+         id="text3953"
+         transform="rotate(-90,236.3,181.7)"
+         font-size="48"
+         font-weight="400"
+         style="font-weight:400;font-size:48px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#71b790">Telemetry<tspan
+   id="tspan3951"
+   y="-1.25526e-14"
+   x="205"
+   font-size="48"
+   style="font-size:48px">platform</tspan>
+</text>
+      <rect
+         id="rect3955"
+         stroke-miterlimit="8"
+         height="556"
+         width="244"
+         y="3"
+         x="0"
+         style="fill:none;stroke:#71b790;stroke-width:4;stroke-miterlimit:8;stroke-dasharray:4, 4" />
+      <text
+         id="text3959"
+         transform="translate(59.5584,29)"
+         font-size="24"
+         font-weight="700"
+         style="font-weight:700;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">Applicaton<tspan
+   id="tspan3957"
+   y="0"
+   x="112.573"
+   font-size="24"
+   style="font-size:24px">1</tspan>
+</text>
+      <path
+         id="path3961"
+         d="m 59.6784,32.4486 h 41.6666 41.667 41.666 v 2 H 143.012 101.345 59.6784 Z"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+      <rect
+         id="rect3963"
+         stroke-miterlimit="8"
+         height="285"
+         width="171"
+         y="89.500099"
+         x="62.500099"
+         style="fill:#a6a6a6;stroke:#8f993e;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text3965"
+         transform="translate(74.1278,115)"
+         font-size="24"
+         font-weight="700"
+         style="font-weight:700;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">App Instance 1</text>
+      <rect
+         id="rect3967"
+         stroke-miterlimit="8"
+         height="41"
+         width="104"
+         y="415.5"
+         x="502.5"
+         style="fill:#71b790;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text3969"
+         transform="translate(516.194,442)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">Routing</text>
+      <rect
+         id="rect3971"
+         stroke-miterlimit="8"
+         height="105"
+         width="94"
+         y="576.5"
+         x="499.5"
+         style="fill:#71b790;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text3973"
+         transform="translate(522.004,602)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">Feed</text>
+      <path
+         id="path3975"
+         d="m 512.5,646.333 c 0,-3.221 15.222,-5.833 34,-5.833 18.778,0 34,2.612 34,5.833 v 23.334 c 0,3.221 -15.222,5.833 -34,5.833 -18.778,0 -34,-2.612 -34,-5.833 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd" />
+      <path
+         id="path3977"
+         stroke-miterlimit="8"
+         d="m 580.5,646.333 c 0,3.222 -15.222,5.834 -34,5.834 -18.778,0 -34,-2.612 -34,-5.834"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <path
+         id="path3979"
+         stroke-miterlimit="8"
+         d="m 512.5,646.333 c 0,-3.221 15.222,-5.833 34,-5.833 18.778,0 34,2.612 34,5.833 v 23.334 c 0,3.221 -15.222,5.833 -34,5.833 -18.778,0 -34,-2.612 -34,-5.833 z"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text3981"
+         transform="translate(527.922,665)"
+         font-size="13"
+         font-weight="400"
+         style="font-weight:400;font-size:13px;font-family:Calibri, Calibri_MSFontService, sans-serif">MSG n</text>
+      <path
+         id="path3983"
+         d="m 511.5,623.333 c 0,-3.221 15.446,-5.833 34.5,-5.833 19.054,0 34.5,2.612 34.5,5.833 v 23.334 c 0,3.221 -15.446,5.833 -34.5,5.833 -19.054,0 -34.5,-2.612 -34.5,-5.833 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd" />
+      <path
+         id="path3985"
+         stroke-miterlimit="8"
+         d="m 580.5,623.333 c 0,3.222 -15.446,5.834 -34.5,5.834 -19.054,0 -34.5,-2.612 -34.5,-5.834"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <path
+         id="path3987"
+         stroke-miterlimit="8"
+         d="m 511.5,623.333 c 0,-3.221 15.446,-5.833 34.5,-5.833 19.054,0 34.5,2.612 34.5,5.833 v 23.334 c 0,3.221 -15.446,5.833 -34.5,5.833 -19.054,0 -34.5,-2.612 -34.5,-5.833 z"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text3989"
+         transform="translate(529.329,641)"
+         font-size="13"
+         font-weight="400"
+         style="font-weight:400;font-size:13px;font-family:Calibri, Calibri_MSFontService, sans-serif">MSG1</text>
+      <rect
+         id="rect3991"
+         stroke-miterlimit="8"
+         height="130"
+         width="98"
+         y="71.500099"
+         x="407.5"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text3993"
+         transform="translate(428.858,144)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#71b790">Inbox</text>
+      <rect
+         id="rect3995"
+         stroke-miterlimit="8"
+         height="141"
+         width="97"
+         y="249.5"
+         x="408.5"
+         style="fill:#ffffff;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text3999"
+         transform="translate(420.601,327)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#71b790">Outbox<tspan
+   id="tspan3997"
+   y="-302"
+   x="176.67799"
+   font-size="24"
+   style="font-size:24px;fill:#000000">Endpoint App Instance 1</tspan>
+</text>
+      <path
+         id="path4001"
+         d="m 597.278,28.192 h 59.5 59.5 59.5 59.5 v 2 h -59.5 -59.5 -59.5 -59.5 z"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd" />
+      <path
+         id="path4003"
+         stroke-miterlimit="8"
+         d="m 292.5,428 h 176 v -9.5 l 19,19 -19,19 V 447 h -176 z"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4013"
+         transform="translate(347.435,443)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif">Messages<tspan
+   id="tspan4005"
+   y="37"
+   x="-46.135601"
+   font-size="19"
+   style="font-size:19px">Command:</tspan>
+<tspan
+   id="tspan4007"
+   y="37"
+   x="41.1978"
+   font-size="19"
+   style="font-size:19px">call</tspan>
+<tspan
+   id="tspan4009"
+   y="37"
+   x="70.711098"
+   font-size="19"
+   style="font-size:19px">for</tspan>
+<tspan
+   id="tspan4011"
+   y="37"
+   x="96.484497"
+   font-size="19"
+   style="font-size:19px">MSGs</tspan>
+</text>
+      <path
+         id="path4015"
+         stroke-miterlimit="8"
+         d="m 294.5,494.5 h 135.944 c 24.439,0 44.25,19.811 44.25,44.25 v 0 H 487.5 l -27.674,14.75 -27.675,-14.75 h 12.806 v 0 c 0,-8.015 -6.497,-14.513 -14.513,-14.513 H 294.5 Z"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4017"
+         transform="translate(303.585,515)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif">Other Command</text>
+      <path
+         id="path4019"
+         stroke-miterlimit="8"
+         d="m 447,565.5 c 0,-6.904 5.82,-12.5 13,-12.5 7.18,0 13,5.596 13,12.5 0,6.904 -5.82,12.5 -13,12.5 -7.18,0 -13,-5.596 -13,-12.5 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-miterlimit:8" />
+      <path
+         id="path4021"
+         stroke-miterlimit="8"
+         d="m 473.5,578.5 v 0 c 0,26.297 -21.318,47.615 -47.615,47.615 H 296 V 636.5 L 281.5,613.528 296,590.556 v 10.385 h 129.885 c 12.394,0 22.441,-10.047 22.441,-22.441 v 0 z"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <path
+         id="path4023"
+         stroke-miterlimit="8"
+         d="M 489.5,675.5 H 297.139 v 12 l -15.639,-24 15.639,-24 v 12 H 489.5 Z"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4027"
+         transform="translate(321.604,619)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">Result<tspan
+   id="tspan4025"
+   y="52"
+   x="9.6770601"
+   font-size="24"
+   style="font-size:24px">Messages</tspan>
+</text>
+      <path
+         id="path4029"
+         transform="matrix(1,0,0,-1,238.5,90.5544)"
+         stroke-miterlimit="8"
+         d="M 0,0 151.55,30.0544"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#a6a6a6;stroke-width:5.33333015;stroke-miterlimit:8;stroke-dasharray:21.3333, 16" />
+      <path
+         id="path4031"
+         stroke-miterlimit="8"
+         d="m 237.5,374.5 171.312,10.859"
+         inkscape:connector-curvature="0"
+         style="fill:none;fill-rule:evenodd;stroke:#a6a6a6;stroke-width:5.33333015;stroke-miterlimit:8;stroke-dasharray:21.3333, 16" />
+      <path
+         id="path4033"
+         transform="matrix(1,0,0,-1,220.5,173.75)"
+         d="M 0.520924,-2.61529 174.46,32.0305 173.418,37.2611 -0.520924,2.61529 Z M 172.886,26.279 l 14.129,10.9714 -17.254,4.7203 z"
+         inkscape:connector-curvature="0"
+         style="fill:#7f7f7f" />
+      <path
+         id="path4035"
+         d="m 408.116,323.295 -174.345,-3.836 0.118,-5.332 174.345,3.836 z m -171.796,1.555 -15.82,-8.35 16.172,-7.646 z"
+         inkscape:connector-curvature="0"
+         style="fill:#7f7f7f" />
+      <path
+         id="path4037"
+         d="m 234.282,105.663 133.133,-29.7262 11.97,53.6112 -133.133,29.726 z"
+         inkscape:connector-curvature="0"
+         style="fill:#ffffff;fill-opacity:0.45098003;fill-rule:evenodd" />
+      <text
+         id="text4045"
+         transform="rotate(-12.586653,690.92171,-1063.7024)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif">Send <tspan
+   id="tspan4039"
+   y="0.077911399"
+   x="41.6493"
+   font-size="19"
+   style="font-size:19px">message</tspan>
+<tspan
+   id="tspan4041"
+   y="-0.557419"
+   x="107.638"
+   font-size="19"
+   style="font-size:19px">/</tspan>
+<tspan
+   id="tspan4043"
+   y="22.563499"
+   x="0.097468898"
+   font-size="19"
+   style="font-size:19px">command</tspan>
+</text>
+      <rect
+         id="rect4047"
+         height="32"
+         width="130"
+         y="271"
+         x="262"
+         style="fill:#ffffff;fill-opacity:0.43137303" />
+      <text
+         id="text4051"
+         transform="translate(272.047,293)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif">Receive<tspan
+   id="tspan4049"
+   y="0"
+   x="62.493301"
+   font-size="19"
+   style="font-size:19px">Result</tspan>
+</text>
+      <path
+         id="path4053"
+         stroke-miterlimit="8"
+         d="m 1130.5,281 h -93 v 15.5 l -31,-31 31,-31 V 250 h 93 z"
+         inkscape:connector-curvature="0"
+         style="fill:#bfbfbf;fill-rule:evenodd;stroke:#8f993e;stroke-width:1.33333004;stroke-miterlimit:8;stroke-dasharray:4, 1.33333" />
+      <path
+         id="path4055"
+         stroke-miterlimit="8"
+         d="m 1017.5,52.0001 h 85 v -15.5 l 31,31 -31,30.9999 V 83 h -85 z"
+         inkscape:connector-curvature="0"
+         style="fill:#bfbfbf;fill-rule:evenodd;stroke:#8f993e;stroke-width:1.33333004;stroke-miterlimit:8;stroke-dasharray:4, 1.33333" />
+      <rect
+         id="rect4057"
+         stroke-miterlimit="8"
+         height="513"
+         width="115"
+         y="27.500099"
+         x="1139.5"
+         style="fill:#7f7f7f;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4061"
+         transform="translate(1158.65,276)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Routing <tspan
+   id="tspan4059"
+   y="29"
+   x="8.3200703"
+   font-size="24"
+   style="font-size:24px">tables</tspan>
+</text>
+      <rect
+         id="rect4063"
+         stroke-miterlimit="8"
+         height="41"
+         width="147"
+         y="153.5"
+         x="73.500099"
+         style="fill:#e7e6e6;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4065"
+         transform="translate(87.9772,181)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">Virtual CU 1</text>
+      <rect
+         id="rect4067"
+         stroke-miterlimit="8"
+         height="41"
+         width="147"
+         y="295.5"
+         x="73.500099"
+         style="fill:#e7e6e6;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4069"
+         transform="translate(87.9772,323)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">Virtual CU 2</text>
+      <rect
+         id="rect4071"
+         stroke-miterlimit="8"
+         height="134"
+         width="262"
+         y="67.500099"
+         x="725.5"
+         style="fill:#71b790;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4075"
+         transform="translate(782.86,94)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">Cloud <tspan
+   id="tspan4073"
+   y="0"
+   x="61.833302"
+   font-size="24"
+   style="font-size:24px">Platform</tspan>
+</text>
+      <rect
+         id="rect4077"
+         stroke-miterlimit="8"
+         height="134"
+         width="261"
+         y="222.5"
+         x="724.5"
+         style="fill:#71b790;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4079"
+         transform="translate(796.218,249)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">Virtual CU 1</text>
+      <rect
+         id="rect4081"
+         stroke-miterlimit="8"
+         height="135"
+         width="261"
+         y="378.5"
+         x="724.5"
+         style="fill:#71b790;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4083"
+         transform="translate(796.218,405)"
+         font-size="24"
+         font-weight="400"
+         style="font-weight:400;font-size:24px;font-family:Calibri, Calibri_MSFontService, sans-serif">Virtual CU 2</text>
+      <path
+         id="path4085"
+         d="m 746.003,622.845 0.445,-1.188 1.473,-1.178 1.4,-0.613 1.59,-0.578 4.03,-0.991 5.264,-0.963 6.523,-0.886 7.554,-0.882 8.612,-0.817 9.537,-0.753 10.343,-0.689 11.094,-0.627 11.706,-0.501 12.207,-0.501 12.591,-0.376 12.965,-0.25 26.325,-0.25 -0.075,0.002 13.187,-0.5 -0.177,0.012 13.125,-1.375 -0.179,0.025 12.938,-2.25 -0.187,0.04 12.562,-3.125 -0.14,0.039 12.187,-3.75 -0.174,0.06 11.688,-4.5 -0.168,0.071 11,-5.125 -0.151,0.076 10.313,-5.625 -0.168,0.1 9.5,-6.125 -0.178,0.125 8.565,-6.563 -0.19,0.16 7.56,-7 -0.19,0.196 6.37,-7.25 -0.19,0.248 5.13,-7.438 -0.2,0.329 3.82,-7.688 -0.13,0.306 1.37,-3.938 -0.06,0.213 1,-3.875 -0.05,0.248 0.62,-3.937 -0.03,0.291 0.19,-3.937 v 0.211 l -0.25,-7.875 0.01,0.17 -0.75,-7.812 0.02,0.152 -1.19,-7.688 0.03,0.179 -1.68,-7.5 0.03,0.129 -2,-7.187 0.05,0.162 -2.44,-7 0.05,0.134 -2.69,-6.563 0.08,0.162 -3,-6.125 0.09,0.181 -3.31,-5.625 0.1,0.15 -3.5,-5.125 0.14,0.187 -3.69,-4.5 0.19,0.21 -3.87,-3.812 0.59,0.44 -4.116,-2.244 2.553,-4.683 4.443,2.423 4.24,4.175 3.86,4.7 3.61,5.295 3.41,5.79 3.09,6.297 2.74,6.711 2.49,7.148 2.04,7.334 1.73,7.654 1.21,7.853 0.77,7.974 0.25,8.066 -0.2,4.189 -0.67,4.208 -1.06,4.105 -1.46,4.2 -3.97,8.007 -5.33,7.725 -6.57,7.471 -7.75,7.177 -8.746,6.704 -9.674,6.237 -10.472,5.712 -11.16,5.199 -11.858,4.566 -12.345,3.799 -12.726,3.165 -13.121,2.282 -13.303,1.394 -13.314,0.505 -26.351,0.25 h 0.027 l -12.938,0.25 0.028,-10e-4 -12.562,0.375 0.029,-10e-4 -12.182,0.5 -11.688,0.5 0.037,-0.002 -11.063,0.625 0.027,-0.002 -10.313,0.688 0.033,-0.003 -9.5,0.75 0.042,-0.003 -8.563,0.812 0.058,-0.006 -7.5,0.875 0.05,-0.006 -6.438,0.875 0.121,-0.019 -5.125,0.937 0.157,-0.034 -3.813,0.938 0.275,-0.084 -1.375,0.5 0.157,-0.063 -1,0.438 0.597,-0.361 -0.625,0.5 0.831,-1.146 -0.187,0.5 z M 997.831,458.83 985.938,445.468 1003.76,443.97 Z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4087"
+         d="m 746.418,622.371 0.549,-0.687 1.346,-0.807 1.507,-0.419 1.643,-0.411 2.084,-0.336 2.379,-0.321 5.748,-0.632 7.109,-0.629 8.414,-0.628 9.536,-0.564 10.521,-0.501 11.453,-0.501 12.207,-0.438 12.954,-0.376 13.515,-0.313 13.951,-0.25 14.328,-0.188 29.133,-0.187 -0.074,10e-4 7.313,-0.25 -0.159,0.01 7.313,-0.687 -0.156,0.019 7.313,-1.125 -0.183,0.035 7.188,-1.625 -0.127,0.032 7.187,-2 -0.148,0.046 7.125,-2.438 -0.112,0.041 7,-2.75 -0.138,0.059 6.937,-3.187 -0.173,0.087 13.5,-7.437 -0.212,0.13 12.875,-8.75 -0.175,0.129 12.25,-9.875 -0.18,0.16 11.441,-11.063 -0.15,0.156 10.5,-11.938 -0.14,0.173 9.5,-12.812 -0.13,0.19 8.31,-13.5 -0.11,0.205 7.06,-14.125 -0.1,0.226 5.69,-14.625 -0.06,0.175 2.31,-7.437 -0.04,0.124 1.94,-7.5 -0.03,0.153 1.5,-7.625 -0.03,0.125 1.13,-7.625 -0.02,0.172 0.62,-7.625 v 0.131 l 0.25,-7.688 v 0.163 l -0.44,-15.312 0.01,0.141 -1.25,-15.25 0.01,0.136 -2,-14.937 0.02,0.139 -2.75,-14.625 0.03,0.138 -3.43,-14.125 0.03,0.126 -4,-13.5 0.05,0.138 -4.57,-12.813 0.06,0.142 -5.06,-12 0.07,0.156 -5.5,-11 0.09,0.165 -5.88,-9.938 0.13,0.19 -6.19,-8.688 0.16,0.208 -6.5,-7.437 0.16,0.166 -3.31,-3.187 0.14,0.127 -3.37,-2.812 0.19,0.145 -3.44,-2.375 0.48,0.263 -4.638,-1.955 2.072,-4.914 4.886,2.062 3.77,2.599 3.54,2.951 3.46,3.333 6.67,7.624 6.33,8.888 5.98,10.116 5.58,11.161 5.12,12.149 4.61,12.952 4.04,13.632 3.47,14.258 2.78,14.763 2.02,15.075 1.26,15.389 0.44,15.465 -0.25,7.835 -0.64,7.776 -1.15,7.774 -1.53,7.764 -1.97,7.638 -2.36,7.588 -5.76,14.827 -7.17,14.341 -8.44,13.698 -9.63,12.994 -10.65,12.102 -11.6,11.221 -12.429,10.019 -13.068,8.881 -13.694,7.544 -7.094,3.26 -7.125,2.799 -7.255,2.482 -7.326,2.039 -7.342,1.659 -7.482,1.152 -7.469,0.702 -7.429,0.254 -29.162,0.188 0.018,-10e-4 -14.313,0.188 h 0.013 l -13.938,0.25 0.014,-10e-4 -13.5,0.313 0.016,-10e-4 -12.938,0.375 h 0.019 l -12.188,0.437 h 0.021 l -11.437,0.5 0.01,-10e-4 -10.5,0.5 0.031,-0.002 -9.5,0.563 0.041,-0.003 -8.375,0.625 0.036,-0.003 -7.062,0.625 0.056,-0.005 -5.688,0.625 0.066,-0.008 -2.312,0.312 0.067,-0.01 -1.937,0.313 0.222,-0.046 -1.5,0.375 0.067,-0.018 -1.125,0.313 0.658,-0.283 -0.625,0.375 0.71,-0.621 -0.25,0.313 z m 252.64,-320.737 -13.12,-12.16 17.602,-3.201 z"
+         inkscape:connector-curvature="0"
+         style="fill:#a6a6a6" />
+      <path
+         id="path4089"
+         d="m 746.281,622.451 0.615,-0.922 1.436,-0.783 1.518,-0.559 1.788,-0.429 2.171,-0.395 2.5,-0.385 2.885,-0.384 3.233,-0.317 7.524,-0.753 8.863,-0.691 10.091,-0.627 11.146,-0.626 12.086,-0.564 12.957,-0.5 13.703,-0.438 14.27,-0.376 14.763,-0.25 15.14,-0.25 30.826,-0.188 -0.112,0.003 7.75,-0.375 -0.213,0.019 7.75,-1 -0.23,0.04 7.687,-1.688 -0.202,0.053 7.625,-2.312 -0.202,0.07 7.625,-3 -0.152,0.065 7.5,-3.5 -0.165,0.085 7.437,-4.125 -0.145,0.087 7.312,-4.688 -0.113,0.076 7.25,-5.187 -0.12,0.092 7.062,-5.688 -0.111,0.095 6.875,-6.187 -0.093,0.087 6.749,-6.687 -0.08,0.079 6.57,-7.063 -0.08,0.089 6.37,-7.5 -0.07,0.087 6.19,-7.937 -0.06,0.081 5.94,-8.25 -0.1,0.141 11.06,-17.625 -0.09,0.159 10.06,-18.812 -0.08,0.177 8.81,-19.875 -0.07,0.174 7.5,-20.75 -0.05,0.145 3.19,-10.688 -0.03,0.091 2.82,-10.813 -0.03,0.092 2.44,-10.938 -0.02,0.106 2,-11.063 -0.01,0.089 1.62,-11.125 -0.01,0.104 1.19,-11.187 -0.01,0.119 0.68,-11.25 v 0.103 l 0.25,-11.312 v 0.118 l -0.5,-22.5 v 0.126 l -1.56,-22.375 0.01,0.116 -2.5,-22 0.02,0.106 -3.32,-21.438 0.03,0.121 -4.19,-20.75 0.02,0.107 -4.87,-19.875 0.03,0.119 -5.56,-18.875 0.04,0.132 -6.19,-17.562 0.04,0.107 -3.31,-8.25 0.02,0.05 -3.37,-7.937 0.04,0.1 -3.56,-7.5 0.04,0.074 -3.63,-7.063 0.05,0.087 -3.75,-6.688 0.06,0.112 -3.87,-6.188 0.05,0.086 -3.87,-5.687 0.09,0.127 -4,-5.188 0.1,0.118 -4.07,-4.687 0.15,0.153 -4.19,-4.125 0.15,0.134 -4.13,-3.5 0.19,0.145 -4.25,-3 0.57,0.304 -4.316,-1.689 1.946,-4.965 4.61,1.806 4.61,3.255 4.29,3.641 4.34,4.268 4.18,4.825 4.09,5.31 3.95,5.795 3.94,6.286 3.8,6.786 3.67,7.143 3.6,7.587 3.41,8.013 3.34,8.328 6.23,17.683 5.6,19 4.91,19.989 4.21,20.864 3.33,21.55 2.51,22.111 1.57,22.496 0.5,22.623 -0.25,11.423 -0.69,11.361 -1.2,11.299 -1.64,11.222 -2.02,11.16 -2.46,11.036 -2.84,10.903 -3.22,10.806 -7.56,20.91 -8.89,20.051 -10.15,18.98 -11.16,17.775 -6.01,8.36 -6.26,8.023 -6.45,7.588 -6.64,7.146 -6.831,6.771 -6.977,6.279 -7.178,5.781 -7.367,5.271 -7.442,4.77 -7.593,4.212 -7.659,3.574 -7.801,3.069 -7.828,2.374 -7.904,1.735 -7.972,1.029 -7.913,0.383 -30.869,0.188 0.028,-10e-4 -15.124,0.25 -14.75,0.25 h 0.025 l -14.25,0.375 0.015,-10e-4 -13.687,0.438 0.018,-10e-4 -12.938,0.5 0.021,-10e-4 -12.062,0.563 0.025,-0.001 -11.125,0.625 0.016,-10e-4 -10.063,0.625 0.043,-0.003 -8.813,0.687 0.058,-0.005 -7.505,0.751 -3.188,0.312 0.093,-0.011 -2.813,0.375 0.053,-0.007 -2.437,0.375 0.071,-0.012 -2.062,0.375 0.145,-0.031 -1.563,0.375 0.3,-0.091 -1.188,0.438 0.356,-0.161 -0.688,0.375 0.942,-0.862 -0.25,0.375 z m 254.199,-475.846 -13.167,-12.112 17.587,-3.264 z"
+         inkscape:connector-curvature="0"
+         style="fill:#a6a6a6" />
+      <path
+         id="path4091"
+         d="m 746.418,622.371 0.549,-0.687 1.346,-0.807 1.507,-0.419 1.643,-0.411 2.084,-0.336 2.379,-0.321 5.748,-0.632 7.109,-0.629 8.414,-0.628 9.536,-0.564 10.521,-0.501 11.453,-0.501 12.207,-0.438 12.954,-0.376 13.515,-0.313 13.951,-0.25 14.328,-0.188 29.133,-0.187 -0.074,10e-4 7.313,-0.25 -0.159,0.01 7.313,-0.687 -0.156,0.019 7.313,-1.125 -0.183,0.035 7.188,-1.625 -0.127,0.032 7.187,-2 -0.148,0.046 7.125,-2.438 -0.112,0.041 7,-2.75 -0.138,0.059 6.937,-3.187 -0.173,0.087 13.5,-7.437 -0.212,0.13 12.875,-8.75 -0.175,0.129 12.25,-9.875 -0.18,0.16 11.441,-11.063 -0.15,0.156 10.5,-11.938 -0.14,0.173 9.5,-12.812 -0.13,0.19 8.31,-13.5 -0.11,0.205 7.06,-14.125 -0.1,0.226 5.69,-14.625 -0.06,0.175 2.31,-7.437 -0.04,0.124 1.94,-7.5 -0.03,0.153 1.5,-7.625 -0.03,0.125 1.13,-7.625 -0.02,0.172 0.62,-7.625 v 0.131 l 0.25,-7.688 v 0.163 l -0.44,-15.312 0.01,0.141 -1.25,-15.25 0.01,0.136 -2,-14.937 0.02,0.139 -2.75,-14.625 0.03,0.138 -3.43,-14.125 0.03,0.126 -4,-13.5 0.05,0.138 -4.57,-12.813 0.06,0.142 -5.06,-12 0.07,0.156 -5.5,-11 0.09,0.165 -5.88,-9.938 0.13,0.19 -6.19,-8.688 0.16,0.208 -6.5,-7.437 0.16,0.166 -3.31,-3.187 0.14,0.127 -3.37,-2.812 0.19,0.145 -3.44,-2.375 0.48,0.263 -4.638,-1.955 2.072,-4.914 4.886,2.062 3.77,2.599 3.54,2.951 3.46,3.333 6.67,7.624 6.33,8.888 5.98,10.116 5.58,11.161 5.12,12.149 4.61,12.952 4.04,13.632 3.47,14.258 2.78,14.763 2.02,15.075 1.26,15.389 0.44,15.465 -0.25,7.835 -0.64,7.776 -1.15,7.774 -1.53,7.764 -1.97,7.638 -2.36,7.588 -5.76,14.827 -7.17,14.341 -8.44,13.698 -9.63,12.994 -10.65,12.102 -11.6,11.221 -12.429,10.019 -13.068,8.881 -13.694,7.544 -7.094,3.26 -7.125,2.799 -7.255,2.482 -7.326,2.039 -7.342,1.659 -7.482,1.152 -7.469,0.702 -7.429,0.254 -29.162,0.188 0.018,-10e-4 -14.313,0.188 h 0.013 l -13.938,0.25 0.014,-10e-4 -13.5,0.313 0.016,-10e-4 -12.938,0.375 h 0.019 l -12.188,0.437 h 0.021 l -11.437,0.5 0.01,-10e-4 -10.5,0.5 0.031,-0.002 -9.5,0.563 0.041,-0.003 -8.375,0.625 0.036,-0.003 -7.062,0.625 0.056,-0.005 -5.688,0.625 0.066,-0.008 -2.312,0.312 0.067,-0.01 -1.937,0.313 0.222,-0.046 -1.5,0.375 0.067,-0.018 -1.125,0.313 0.658,-0.283 -0.625,0.375 0.71,-0.621 -0.25,0.313 z m 252.64,-320.737 -13.12,-12.16 17.602,-3.201 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4093"
+         d="m 746.281,622.451 0.615,-0.922 1.436,-0.783 1.518,-0.559 1.788,-0.429 2.171,-0.395 2.5,-0.385 2.885,-0.384 3.233,-0.317 7.524,-0.753 8.863,-0.691 10.091,-0.627 11.146,-0.626 12.086,-0.564 12.957,-0.5 13.703,-0.438 14.27,-0.376 14.763,-0.25 15.14,-0.25 30.826,-0.188 -0.112,0.003 7.75,-0.375 -0.213,0.019 7.75,-1 -0.23,0.04 7.687,-1.688 -0.202,0.053 7.625,-2.312 -0.202,0.07 7.625,-3 -0.152,0.065 7.5,-3.5 -0.165,0.085 7.437,-4.125 -0.145,0.087 7.312,-4.688 -0.113,0.076 7.25,-5.187 -0.12,0.092 7.062,-5.688 -0.111,0.095 6.875,-6.187 -0.093,0.087 6.749,-6.687 -0.08,0.079 6.57,-7.063 -0.08,0.089 6.37,-7.5 -0.07,0.087 6.19,-7.937 -0.06,0.081 5.94,-8.25 -0.1,0.141 11.06,-17.625 -0.09,0.159 10.06,-18.812 -0.08,0.177 8.81,-19.875 -0.07,0.174 7.5,-20.75 -0.05,0.145 3.19,-10.688 -0.03,0.091 2.82,-10.813 -0.03,0.092 2.44,-10.938 -0.02,0.106 2,-11.063 -0.01,0.089 1.62,-11.125 -0.01,0.104 1.19,-11.187 -0.01,0.119 0.68,-11.25 v 0.103 l 0.25,-11.312 v 0.118 l -0.5,-22.5 v 0.126 l -1.56,-22.375 0.01,0.116 -2.5,-22 0.02,0.106 -3.32,-21.438 0.03,0.121 -4.19,-20.75 0.02,0.107 -4.87,-19.875 0.03,0.119 -5.56,-18.875 0.04,0.132 -6.19,-17.562 0.04,0.107 -3.31,-8.25 0.02,0.05 -3.37,-7.937 0.04,0.1 -3.56,-7.5 0.04,0.074 -3.63,-7.063 0.05,0.087 -3.75,-6.688 0.06,0.112 -3.87,-6.188 0.05,0.086 -3.87,-5.687 0.09,0.127 -4,-5.188 0.1,0.118 -4.07,-4.687 0.15,0.153 -4.19,-4.125 0.15,0.134 -4.13,-3.5 0.19,0.145 -4.25,-3 0.57,0.304 -4.316,-1.689 1.946,-4.965 4.61,1.806 4.61,3.255 4.29,3.641 4.34,4.268 4.18,4.825 4.09,5.31 3.95,5.795 3.94,6.286 3.8,6.786 3.67,7.143 3.6,7.587 3.41,8.013 3.34,8.328 6.23,17.683 5.6,19 4.91,19.989 4.21,20.864 3.33,21.55 2.51,22.111 1.57,22.496 0.5,22.623 -0.25,11.423 -0.69,11.361 -1.2,11.299 -1.64,11.222 -2.02,11.16 -2.46,11.036 -2.84,10.903 -3.22,10.806 -7.56,20.91 -8.89,20.051 -10.15,18.98 -11.16,17.775 -6.01,8.36 -6.26,8.023 -6.45,7.588 -6.64,7.146 -6.831,6.771 -6.977,6.279 -7.178,5.781 -7.367,5.271 -7.442,4.77 -7.593,4.212 -7.659,3.574 -7.801,3.069 -7.828,2.374 -7.904,1.735 -7.972,1.029 -7.913,0.383 -30.869,0.188 0.028,-10e-4 -15.124,0.25 -14.75,0.25 h 0.025 l -14.25,0.375 0.015,-10e-4 -13.687,0.438 0.018,-10e-4 -12.938,0.5 0.021,-10e-4 -12.062,0.563 0.025,-0.001 -11.125,0.625 0.016,-10e-4 -10.063,0.625 0.043,-0.003 -8.813,0.687 0.058,-0.005 -7.505,0.751 -3.188,0.312 0.093,-0.011 -2.813,0.375 0.053,-0.007 -2.437,0.375 0.071,-0.012 -2.062,0.375 0.145,-0.031 -1.563,0.375 0.3,-0.091 -1.188,0.438 0.356,-0.161 -0.688,0.375 0.942,-0.862 -0.25,0.375 z m 254.199,-475.846 -13.167,-12.112 17.587,-3.264 z"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path4095"
+         d="m 506.783,96.1621 67.607,37.0879 -2.566,4.676 -67.607,-37.088 z m 67.834,31.1289 10.18,14.709 -17.876,-0.681 z"
+         inkscape:connector-curvature="0"
+         style="fill:#a6a6a6" />
+      <path
+         id="path4097"
+         transform="matrix(1,0,0,-1,610.5,141.627)"
+         d="M 0.600445,-2.59819 113.646,23.5267 112.445,28.7231 -0.600445,2.59819 Z M 112.248,17.7299 l 13.788,11.3972 -17.39,4.1919 z"
+         inkscape:connector-curvature="0"
+         style="fill:#a6a6a6" />
+      <path
+         id="path4099"
+         d="m 612.394,139.623 115.287,116.297 -3.787,3.755 -115.288,-116.298 z m 117.197,110.649 5.583,16.995 -16.945,-5.731 z"
+         inkscape:connector-curvature="0"
+         style="fill:#a6a6a6" />
+      <path
+         id="path4101"
+         stroke-miterlimit="8"
+         d="m 584,141.5 c 0,-6.904 5.82,-12.5 13,-12.5 7.18,0 13,5.596 13,12.5 0,6.904 -5.82,12.5 -13,12.5 -7.18,0 -13,-5.596 -13,-12.5 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-miterlimit:8" />
+      <path
+         id="path4103"
+         stroke-miterlimit="8"
+         d="m 582,326.5 c 0,-6.904 5.82,-12.5 13,-12.5 7.18,0 13,5.596 13,12.5 0,6.904 -5.82,12.5 -13,12.5 -7.18,0 -13,-5.596 -13,-12.5 z"
+         inkscape:connector-curvature="0"
+         style="fill:#71b790;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-miterlimit:8" />
+      <path
+         id="path4105"
+         d="m 581.737,329.81 -63.185,-5.498 0.462,-5.313 63.185,5.498 z m -60.991,0.047 -15.246,-9.357 16.633,-6.583 z"
+         inkscape:connector-curvature="0"
+         style="fill:#cde4d9" />
+      <path
+         id="path4107"
+         transform="matrix(-1,0,0,1,735.207,180.5)"
+         d="M 1.92988,-1.84029 123.435,125.581 119.576,129.261 -1.92988,1.84029 Z M 125.455,119.97 l 5.252,17.101 -16.831,-6.059 z"
+         inkscape:connector-curvature="0"
+         style="fill:#cde4d9" />
+      <path
+         id="path4109"
+         d="m 733.794,337.981 -112.18,-7.886 0.374,-5.32 112.18,7.886 z M 623.9,335.602 608.5,326.5 l 16.522,-6.858 z"
+         inkscape:connector-curvature="0"
+         style="fill:#cde4d9" />
+      <path
+         id="path4111"
+         d="m 731.792,493.277 -120.837,-145.809 4.106,-3.404 120.837,145.81 z M 608.55,352.924 604.5,335.5 l 16.369,7.215 z"
+         inkscape:connector-curvature="0"
+         style="fill:#cde4d9" />
+      <path
+         id="path4113"
+         d="m 612.939,140.422 119.283,269.828 -4.878,2.156 -119.283,-269.828 z m 123.083,265.232 -0.848,17.869 -13.786,-11.4 z"
+         inkscape:connector-curvature="0"
+         style="fill:#a6a6a6" />
+      <rect
+         id="rect4115"
+         stroke-miterlimit="8"
+         height="23"
+         width="242"
+         y="413.5"
+         x="733.5"
+         style="fill:#7f7f7f;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4117"
+         transform="translate(819.422,430)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Incoming</text>
+      <rect
+         id="rect4119"
+         stroke-miterlimit="8"
+         height="19"
+         width="98"
+         y="436.5"
+         x="733.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4121"
+         transform="translate(766.455,451)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Feed</text>
+      <rect
+         id="rect4123"
+         stroke-miterlimit="8"
+         height="19"
+         width="145"
+         y="436.5"
+         x="831.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4125"
+         transform="translate(862.972,451)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">EndpointList</text>
+      <rect
+         id="rect4127"
+         stroke-miterlimit="8"
+         height="18"
+         width="114"
+         y="455.5"
+         x="733.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4129"
+         transform="translate(752.82,469)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Capabilities</text>
+      <rect
+         id="rect4131"
+         stroke-miterlimit="8"
+         height="19"
+         width="128"
+         y="455.5"
+         x="847.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4133"
+         transform="translate(867.867,469)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Subscriptions</text>
+      <rect
+         id="rect4135"
+         stroke-miterlimit="8"
+         height="23"
+         width="242"
+         y="473.5"
+         x="733.5"
+         style="fill:#7f7f7f;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4137"
+         transform="translate(819.325,490)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Outgoing</text>
+      <rect
+         id="rect4139"
+         stroke-miterlimit="8"
+         height="23"
+         width="242"
+         y="258.5"
+         x="733.5"
+         style="fill:#7f7f7f;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4141"
+         transform="translate(819.275,275)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Incoming</text>
+      <rect
+         id="rect4143"
+         stroke-miterlimit="8"
+         height="19"
+         width="98"
+         y="281.5"
+         x="733.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4145"
+         transform="translate(766.308,296)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Feed</text>
+      <rect
+         id="rect4147"
+         stroke-miterlimit="8"
+         height="19"
+         width="144"
+         y="281.5"
+         x="831.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4149"
+         transform="translate(862.824,296)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">EndpointList</text>
+      <rect
+         id="rect4151"
+         stroke-miterlimit="8"
+         height="19"
+         width="114"
+         y="299.5"
+         x="733.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4153"
+         transform="translate(752.673,314)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Capabilities</text>
+      <rect
+         id="rect4155"
+         stroke-miterlimit="8"
+         height="18"
+         width="128"
+         y="300.5"
+         x="847.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4157"
+         transform="translate(867.719,314)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Subscriptions</text>
+      <rect
+         id="rect4159"
+         stroke-miterlimit="8"
+         height="23"
+         width="242"
+         y="318.5"
+         x="733.5"
+         style="fill:#7f7f7f;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4161"
+         transform="translate(819.178,335)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Outgoing</text>
+      <rect
+         id="rect4163"
+         stroke-miterlimit="8"
+         height="22"
+         width="242"
+         y="104.5"
+         x="734.5"
+         style="fill:#7f7f7f;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4165"
+         transform="translate(819.663,121)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Incoming</text>
+      <rect
+         id="rect4167"
+         stroke-miterlimit="8"
+         height="19"
+         width="97"
+         y="126.5"
+         x="734.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4169"
+         transform="translate(766.696,141)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Feed</text>
+      <rect
+         id="rect4171"
+         stroke-miterlimit="8"
+         height="19"
+         width="145"
+         y="126.5"
+         x="831.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4173"
+         transform="translate(863.213,141)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">EndpointList</text>
+      <rect
+         id="rect4175"
+         stroke-miterlimit="8"
+         height="19"
+         width="113"
+         y="145.5"
+         x="734.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4177"
+         transform="translate(753.061,160)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Capabilities</text>
+      <rect
+         id="rect4179"
+         stroke-miterlimit="8"
+         height="19"
+         width="129"
+         y="145.5"
+         x="847.5"
+         style="fill:#c55a11;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4181"
+         transform="translate(868.108,160)"
+         font-size="16"
+         font-weight="400"
+         style="font-weight:400;font-size:16px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Subscriptions</text>
+      <rect
+         id="rect4183"
+         stroke-miterlimit="8"
+         height="22"
+         width="242"
+         y="164.5"
+         x="733.5"
+         style="fill:#7f7f7f;stroke:#2f528f;stroke-width:1.33333004;stroke-miterlimit:8" />
+      <text
+         id="text4185"
+         transform="translate(819.178,181)"
+         font-size="19"
+         font-weight="400"
+         style="font-weight:400;font-size:19px;font-family:Calibri, Calibri_MSFontService, sans-serif;fill:#ffffff">Outgoing</text>
+    </g>
+  </g>
+</svg>
