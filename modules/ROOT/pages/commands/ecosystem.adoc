@@ -109,8 +109,6 @@ The direction describes if messages shall be sendable or receivable:
 [NOTE]
 ====
 * The endpoint requesting the endpoint list is also part of this answer.
-
-* The concept of groups is only used to give a little more comfort to the end user when setting rules. It is currently not possible to address a message to the group.
 ====
 
 [NOTE]

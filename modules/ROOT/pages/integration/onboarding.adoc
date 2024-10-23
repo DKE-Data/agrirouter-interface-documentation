@@ -20,7 +20,7 @@ Before any data flow can happen, the very first command sent by the endpoint has
 Telemetry systems and Farming Software need to assign their own userID to the accountID of the user at the agrirouter. Therefore, a verification should be performed before onboarding.
 
 .onboarding Workflow for a farming software or telemetry platform
-image::graphs/image18(3).svg[onboarding Workflow for a farming software or telemetry platform,627,551]
+image::graphs/image18_3.svg[onboarding Workflow for a farming software or telemetry platform,627,551]
 
 
 == Workflow for CUs

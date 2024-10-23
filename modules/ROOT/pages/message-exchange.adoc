@@ -167,7 +167,7 @@ A routing consists of:
 * Receiver
 
 .Message addressing and routing through the agrirouter
-image::graphs/image18(2).svg[Message addressing and routing through the agrirouter,636,410]
+image::graphs/image18_2.svg[Message addressing and routing through the agrirouter,636,410]
 
 
 
@@ -187,17 +187,8 @@ Routings are created by the end user in his agrirouter account.
 Please refer to the link:https://qr.my-agrirouter.com/expert-guide/routing[User Manual]
 
 
-
-=== Endpoint Groups
-
-To simplify the creation of routings, endpoints can be grouped in the end user’s user interface. This grouping is only done on the visual layer, an endpoint group can not be addressed with a message.
-
 === Changes in agrirouter 2.0
 
-In agrorouter 2.0 telemetry filtering is not used anymore.
+In agrirouter 2.0 telemetry filtering is not used anymore.
 
 A more specific definition of EFDI messages can be found xref:./tmt/efdi.adoc[here].
-
-
-.Message delivery due to routings, subscription and public address
-image::ig1/image20.png[Message delivery due to routings, subscription and public address,631,344]
