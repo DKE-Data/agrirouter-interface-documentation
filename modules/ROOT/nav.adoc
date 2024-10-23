@@ -31,7 +31,6 @@
 *** xref:maintenance.adoc[Maintenance]
 *** xref:update.adoc[Updates]
 *** xref:service-support.adoc[Service & Support]
-*** xref:usage-metrics.adoc[Usage Metrics]
 ** xref:integration/endpoint-lifecycle.adoc[Endpoint Lifecycle]
 *** xref:integration/authorization.adoc[Authorization]
 *** xref:integration/onboarding.adoc[Onboarding App Instances]
