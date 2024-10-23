@@ -8,7 +8,7 @@ Without router devices, an application would need to create multiple MQTT connec
 image::graphs/router_devices2.svg[Using Router devices vs. not using router devices]
 
 .Using router devices vs. communication using communication units
-image::graphs/router_devices1.svg[Using router devices vs. communication using communication units]
+image::graphs/router_devices.svg[Using router devices vs. communication using communication units]
 
 == Setup of router devices
 Router devices can be set up and managed in the agrirouter developer UI
