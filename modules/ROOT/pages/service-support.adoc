@@ -100,14 +100,6 @@ Information on messages that were *received by* the app instance from its endpoi
 |Size of last received message |Size of message payload in MB of the last message received (confirmed).
 |===============================================================================
 
-=== Remote Maintenance for customers
-
-The agrirouter start page provides a tile "Remote Maintenance" for every user that redirects him to the Remote Desktop Software "TeamViewer". (See https://www.teamviewer.com/en/). Your service and support can use this software to take a look at a customers desktop and help the customer to work with the agrirouter user interface or any other software on his desktop.
-
-.Remote maintenance tile
-image::general/remote_maintenance.png[Remote maintenance tile,686,335]
-
-
 [#contact]
 == Getting in contact with the agrirouter support team as a developer
 
