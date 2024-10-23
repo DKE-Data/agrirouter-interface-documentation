@@ -152,7 +152,7 @@ The response type onboard can be used to onboard farming applications without ha
 When the user clicks on the link, the agrirouter website is called. If the user is currently not logged in, he has to log in. After logging in, he is delivered a website to authorize the connection between agrirouter and the application provider:
 
 .Application authorization screen
-image::ig2/image14.png[Application authorization screen,333,303]
+image::ig2/authorize_connection.png[Application authorization screen,333,303]
 
 
 === Analyse result
