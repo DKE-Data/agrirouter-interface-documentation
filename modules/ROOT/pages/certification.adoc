@@ -399,7 +399,7 @@ a|
 ** agrirouter validation messages
 
 * The application provider can show an error message received from agrirouter to the certification company. This can be an administration functionality (e.g. log or UI).
-* Error messages shown to an end user should include the error code and a self-defined message of the application provider (not just the SAP error message).
+* Error messages shown to an end user should include the error code and a self-defined message of the application provider (not just the agrirouter error message).
 
 | Buffering
 | If the Internet connection gets lost or agrirouter is not available for another reason, the application instance should buffer data that needs to be sent when the connection is re-established.
