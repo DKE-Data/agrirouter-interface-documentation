@@ -41,7 +41,6 @@ Additionally, developers can manage their own applications:
 * Add new software versions for certification
 * Manage the required capabilities of the application
 * Block specific endpoints, e.g. to avoid abuse of applications
-* Export metrics of agrirouter usage for billing and statistical purposes
 
 .User Interface for Developers
 image::screenshots/homescreen_dev.png[User Interface for Developers]
