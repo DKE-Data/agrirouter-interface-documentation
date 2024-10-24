@@ -92,7 +92,7 @@ Under *Subscriptions* you can select the data formats you wish to receive when t
 
 [NOTE]
 ====
- Please note that if you send Capabilities, you should also send the Subscriptions, as sending capabilities will clear the Subscriptions.
+Please note that if you send Capabilities, you should also send the Subscriptions, as sending capabilities will clear the Subscriptions.
 ====
 
 This graphic explains the concept of Subscriptions and their publish-vs-address UseCase:

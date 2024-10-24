@@ -103,37 +103,5 @@ include::partial$device-description-has-to-be-sent-every-time.adoc[]
 
 Telematic sensor values are assigned to DDIs, a standardized list of possible sensor and task information. A full list can be found here: https://isobus.net.
 
-The TimeLogs message includes a list of DDI numbers and their corresponding current values. The agrirouter can filter timelog messages for DDIs that are part of a routing. The DDI list provides a number area for proprietary DDIs that can have a specific definition for each manufacturer.
+The TimeLogs message includes a list of DDI numbers and their corresponding current values. The agrirouter can filter timelog messages for DDIs that are part of a routing. The categories have an informative character. The DDI list provides a number area for proprietary DDIs that can have a specific definition for each manufacturer.
 
-=== Categories
-
-As the list of standardized DDIs is quite long (more than 530 by May 2018), agrirouter provides DDI categories, to simplify the routings setup for end users. Each category stands for multiple DDIs. One DDI can only be in one category.
-
-An end user sets up routings using Categories.
-
-The current List of Categories includes the following Categories:
-
-[cols="1,3,5",options="header",]
-|=================================================================================================================================
-|No. |Name |Description
-|0 |*GPS Geo Position* |GPS Geo-Position (North and East Coordinates) where the telemetry data was measured or logged.
-|1 |*Guidance and Geo Data* |Data related to geographical and guidance information
-|2 |*Application Data* |Data related what is applied to the field (e.g. fertilizer, seeds, plant protection, dry matter, …)
-|3 |*Crop and Yield Data* |Properties of harvested material
-|4 |*General Work Data* |Task and Lifetime Counter or average values (Counters that are not relevant for Application and or yield)
-|5 |*Fuel and Exhaust Fluid Consumption Data* |Data related what a machine consumpt of fuel and Exhaust Fluid (Energy overall)
-|6 |*Process Data* |Data related to the main working process of the machine
-|7 |*Machine Data* |Data related to the machine characteristics (not process relevant)
-|8 |*Environment Data* |Data related to the Environment (weather data)
-|9 |*Soil Data* |Data related to soil conditions
-|10 |*Basic Data* |Fundamental values that are relevant for the whole system
-|11 |*Machine Data (PGNs only)* | Machine data related to PGN (Parameter Group Number); e.g. Hitch Position, PTO-Speed, etc.
-|12 |*Proprietary Data* |Manufacturer specific data (not part of the standard)
-|=================================================================================================================================
-
-The assignment of specific DDIs to groups can be found link:https://manual.agrirouter.com/en/appendix/ddis.html[here]
-
-[IMPORTANT]
-====
-The categories list is only relevant for the UI of agrirouter, it is not used in the interface communication!
-====

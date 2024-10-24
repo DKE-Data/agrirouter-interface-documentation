@@ -16,11 +16,11 @@ d.  *Decide*, how to build your architecture to make your system compatible for 
 5.  *Start Development:*
 a.  *Build* your application and read about the several messages in detail to implement them
 6.  *Do pre-release work*
-a.  *Pre-create market place entry:* Even though your app is not yet tested, prepare the marked place form for the release of your product. Should ideally be done by a sales or management person.
-b.  *Check the marketplace entry:* Should be done by a developer: Read the marked place entry and make sure, you support all the described functionality as described in the marked place entry and in the integration guide or linked documents.
+a.  *Pre-create Solution-Finder entry:* Even though your app is not yet tested, prepare the Solution-Finder form for the release of your product. Should ideally be done by a sales or management person.
+b.  *Check the Solution-Finder entry:* Should be done by a developer: Read the Solution-Finder entry and make sure, you support all the described functionality as described in the Solution-Finder entry and in the integration guide or linked documents.
 7.  *Test your app:* agrirouter provides the possibility to select test users for a not yet certified app. Select some customers or your internal staff to check if your app runs smooth with agrirouter and with common other endpoints. For a farming software, a corresponding Communication Unit could be such an endpoint
 8.  *Certify your app:* Select your desired certification company and let your app be certified for public release.
 9. *Deploy productive app:* Setup your application in the productive environment and adjust all settings relevant to contact the productive environment.
 10. *Test productive:* Using a test account make sure that your application works on the productive environment as supposed
-11.  *Release to public:* Remove the "coming soon" badge from your market place entry and let people know that your app is up and running.
+11.  *Release to public:* Remove the "coming soon" badge from your Solution-Finder entry and let people know that your app is up and running.
 

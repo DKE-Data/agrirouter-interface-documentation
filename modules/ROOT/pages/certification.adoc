@@ -35,7 +35,7 @@ To pass the certification tests there are multiple requirements have to be fulfi
 === Prerequisites
 
 * The xref:./partner-process/provider-agreement.adoc[DKE application provider agreement] has to be signed.
-* The xref:./partner-process/marketplace.adoc[marketplace entry] has to be created with a "Coming soon" label.
+
 * The following information about the company is available:
 ** Name
 ** Address (where billing and offer should be placed by the certification company)
@@ -47,6 +47,8 @@ To pass the certification tests there are multiple requirements have to be fulfi
 * A xref:./registration.adoc[production environment developer account of the application provider]
 * The application Id and certification version Id of xref:./applications.adoc[an application in the production environment].
 * Version, name and description of the application to certify.
+
+* Once your certification is approved by the certifier, please send us the SolutionFinder Form xref:./partner-process/solutionfinder.adoc[the Solution-Finder form] so that we can create the entry in the Solution-Finder.
 
 === Additional requirements during the process
 
@@ -397,7 +399,7 @@ a|
 ** agrirouter validation messages
 
 * The application provider can show an error message received from agrirouter to the certification company. This can be an administration functionality (e.g. log or UI).
-* Error messages shown to an end user should include the error code and a self-defined message of the application provider (not just the SAP error message).
+* Error messages shown to an end user should include the error code and a self-defined message of the application provider (not just the agrirouter error message).
 
 | Buffering
 | If the Internet connection gets lost or agrirouter is not available for another reason, the application instance should buffer data that needs to be sent when the connection is re-established.

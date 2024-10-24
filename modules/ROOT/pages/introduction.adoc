@@ -29,7 +29,7 @@ In general, there are 4 major topics to add your software or hardware to the agr
 image::general/process_all_v2.png[Integration process for agrirouter]
 
 * xref:partner-process/provider-agreement.adoc[Step 1 - Provider Agreement]
-* xref:partner-process/marketplace.adoc[Step 2 - Marketplace]
+* xref:partner-process/solutionfinder.adoc[Step 2 - Solution-Finder]
 * xref:partner-process/integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
 * xref:partner-process/integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
 
@@ -65,7 +65,6 @@ There are several tools to support you in your agrirouter development
 
 ** xref:tools/io-tool/overview.adoc[IO-Tool - Simulate communication]
 ** xref:tools/arts.adoc[ARTS - Analyse messages]
-** xref:tools/endpoint-recording.adoc[Endpoint Recording - Record messages of endpoint]
 ** xref:tools/paho.adoc[PAHO - MQTT Testing]
 
 

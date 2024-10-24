@@ -66,18 +66,20 @@ If you are a developer working on a farming software, you will most likely use t
 
 The agrirouter will still think that the IO-Tool is farming software. Therefore there will be no routes between your software and the IO-Tool. 
 
-In the control center of your agrirouter account, you will see the following screen, where you can click on the plus sign to activate a new route.
+In the control center of your agrirouter account, you will see the following screen, where you can click on the 'route'-sign, then on the plus sign and then select the required endpoint to activate a new route.
 
 image::io-tool/endpoints1.png[]
 
-After clicking on the plus sign you can select the recipient from the list (_for the purposes of this documentation we will simply select another IO-Tool account, in your case this could be your farming software or telemetry unit_).
+After selecting the desired endpoint you have the choice of which message formats you would like to allow.
+
+image::io-tool/messageformats.png[]
+
+This is how the set route looks like after the connection was set.
 
 image::io-tool/route.png[]
 
 
-You also have the choice of which message formats you would like to allow.
 
-image::io-tool/messageformats.png[]
 
 
 [NOTE]

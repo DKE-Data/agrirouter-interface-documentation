@@ -47,9 +47,6 @@ The information that are transferred is based on ISOBUS concepts. It uses, for e
 
 The agrirouter uses EFDI messages as the payload format for some message types, for example for live telemetry data and device descriptions.
 
-At the time of this writing, EFDI is still in an early stage. The working group is just finalizing the internal definition of the first message types (live telemetry data, device descriptions).
-
-
 
 |Endpoint 
 |In the agrirouter context, an endpoint is an addressable entity in an agrirouter account, which is the communication entry point for a single app instance or machine.
@@ -80,15 +77,11 @@ DDIs are used, for example, in device descriptions to describe properties, the s
 
 DDIs are also used to identify the data records in telemetry messages.
 
-agrirouter users can filter telemetry data for DDI Categories that abstract all DDIs into 10 categories. A list of DDIs and their Category assignment can be found here:
-
-A filtering for specific DDIs could not be provided, as this would have been too complex for the end user.
-
 
 |Live Telemetry Messages 
 |A live telemetry message contains data points with data from the machines in one teamset. Each data point at least contains the time when it was logged. Additionally, each data point can have a geo-position. Each data point may contain many log entries. Each log entry contains the value of a specific parameter (DDI) of a specific component or function (device element) of one of the machines in the teamset.
 
-The user-defined agrirouter routings define which parameters of which machine may go to which recipient. In addition, recipients can subscribe for certain parameters they want to get (sender-independent). Recipients will receive those data, when they are sent to the public address.
+The user-defined agrirouter routings define which parameters of which (V)CU may go to which recipient. In addition, recipients can subscribe for certain parameters they want to get (sender-independent). Recipients will receive those data, when they are sent to the public address.
 
 The agrirouter uses the routings and the subscriptions to determine the recipients, and the information each of them gets. To each recipient it delivers a filtered version of the messages, which contains only the allowed and subscribed parameters of the allowed machines.
 
@@ -100,13 +93,6 @@ Machines are tractors, implements such as sprayers, or self-propelled machines l
 Machines are the sources of the data records in live telemetry messages which applications send via agrirouter.
 
 From an abstract view, machines are just sensor networks providing sensor data.
-
-|Machine Endpoint 
-|A machine endpoint represents one real-world machine in the context of an agrirouter account. The same real-world machine can have endpoints in several agrirouter accounts, but not more than one in the same account.
-
-A message can be addressed to a machine as the recipient. This tells the agrirouter to deliver the message to that CU, to which the machine is connected. If the addressed machine is currently not connected, the agrirouter puts the message in the machine’s feed and delivers it as soon as some CU reports that the machine is now connected. Since machines can be attached to different CUs at different times (connected to different tractor, for example), it is not known in advance which CU that will be.
-
-The message itself will be received and processed by the CU, but addressing it to the machine makes sure that it goes to the right one.
 
 |Message 
 |A message is an information or perhaps a request that is sent from an endpoint to any other endpoint. A message is a possible payload of a command

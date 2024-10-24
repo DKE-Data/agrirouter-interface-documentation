@@ -7,7 +7,7 @@ These commands are used to control the delivery of messages from the feed to the
 
 Due to the huge number of messages that could be delivered with a single call for messages, it would be a bad idea, to deliver all those message headers in one big package. Therefore, a paging mechanism was introduced to split the whole list of messages or message headers. into several pages, each including a maximum number of messages or a maximum overall size of the Result.
 
-All pages will be the result of one single GET Request if all messages are delivered to the outbox, when the endpoint requests them. If not all messages have been delivered from feed to the outbox at this point in time, the endpoint has to poll for the messages (make sure to meet the xref:../messaging-workflow.adoc#request-sending-frequency[request frequency requirements]). Using MQTT, all pages are delivered one after another.
+If not all messages have been delivered from feed to the outbox at this point in time, the endpoint has to poll for the messages (make sure to meet the xref:../messaging-workflow.adoc#request-sending-frequency[request frequency requirements]). All pages will be the result of one single GET Request if all messages are delivered to the outbox, when the endpoint requests them. All pages are returned when feed is queried.
 
 
 [NOTE]

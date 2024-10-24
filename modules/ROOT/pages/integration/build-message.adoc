@@ -6,7 +6,7 @@
 Creating a message includes several steps. This can be seen in the graph below:
 
 .Workflow of creating a message
-image::ig2/image42.png[Workflow of creating a message]
+image::graphs/image42.svg[Workflow of creating a message]
 
 == Chunking big messages
 
@@ -22,7 +22,7 @@ Exchanging data using a mobile connection can be very critical, as a stable inte
 ====
 
 .Workflow of creating a chunked message
-image::ig2/image43.png[Workflow of creating a chunked message]
+image::graphs/image43.svg[Workflow of creating a chunked message]
 
 [NOTE]
 ====

@@ -2,7 +2,7 @@
 :imagesdir: _images/
 
 == General lifecycle of an endpoint
-image::general/lifecycle.png[]
+image::graphs/lifecycle.svg[]
 
 ////
 [plantuml,endpoint_lifecycle,svg]

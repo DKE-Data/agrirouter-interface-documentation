@@ -44,18 +44,13 @@ Once the simulation has started, it can be paused, stepped to the next TLG or st
 
 image::io-tool/pauseforward.png[]
 
-The first message sent to the agrirouter is the description of the machine. As soon as this message is sent, a new endpoint is created in the agrirouter account . 
+The first message sent to the agrirouter is the description of the machine. 
 
 
 [NOTE]
 ====
 When sending data for a machine for the first time, may take a few seconds to create machine and routings in agrirouter. During this time, errors with the simulation may show up in the Logging. This is normal behavior and not critical.
 ====
-
-As soon as the agrirouter has received this information, a new endpoint will be created for the machine. Once the agrirouter has created the new endpoint, the data is forwarded to all relevant endpoints (is published) .
-
-image::io-tool/machineagrirouter.png[]
-
 
 
 image::io-tool/receivingsimulation.png[]

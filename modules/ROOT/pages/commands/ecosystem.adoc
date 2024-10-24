@@ -74,11 +74,6 @@ The endpoint Type can be one of the following Values:
 |==========================================================================================================
 |Code |Description |Comment
 |application |Software Application |Software Application
-|foreignMachine |External Machine |Machine shared by a paired agrirouter account
-|machine |Machine |Agricultural machine
-|messageRecordingReplay |Recording Player |Can replay recorded messages
-|pairedAccount |Paired Account |Represents a paired agrirouter account with which you can exchange messages
-|endpointGroup |Group |A group of other assets (applications, machines) with common rules
 |virtualCU |Telemetry Platform |Connection via Telemetry Platform
 |==========================================================================================================
 
@@ -114,8 +109,6 @@ The direction describes if messages shall be sendable or receivable:
 [NOTE]
 ====
 * The endpoint requesting the endpoint list is also part of this answer.
-
-* The concept of groups is only used to give a little more comfort to the end user when setting rules. It is currently not possible to address a message to the group.
 ====
 
 [NOTE]
