@@ -9,6 +9,7 @@ When an application is not yet certified, but it shall be tested by other users 
 == Steps to invite testers
 
 To invite testers, log in to your developer account and go to your settings.  
+
 .Select Settings
 image::general/ui-settings.png[Settings]
 
