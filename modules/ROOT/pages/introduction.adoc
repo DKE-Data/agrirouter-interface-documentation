@@ -13,6 +13,14 @@ image::general/ecosystem.svg[The agrirouter ecosystem of members,642,321]
 
 As a developer it's also important to understand the xref:basic-concepts.adoc[basic concepts]
 
+
+**NOTE**
+====
+In September 2024, agrirouter received a major rebuild. Check out the xref:ar2/summary.adoc[summary of changes] for improvements and changes that might impact your solution or provide new opportunities. 
+
+The rebuild of agrirouter ("agrirouter 2.0") was done with a strong focus on simplification and backwards compatibility.
+====
+
 == Purpose of this documentation
 
 The purpose of this documentation is to create deep knowledge about the third party integration into the agrirouter solution. It shall include all information necessary to develop an integration with the agrirouter interface in an application.
