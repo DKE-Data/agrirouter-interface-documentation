@@ -5,15 +5,9 @@ These commands are used to control the delivery of messages from the feed to the
 
 == Paging
 
-Due to the huge number of messages that could be delivered with a single call for messages, it would be a bad idea, to deliver all those message headers in one big package. Therefore, a paging mechanism was introduced to split the whole list of messages or message headers. into several pages, each including a maximum number of messages or a maximum overall size of the Result.
+Due to the huge number of messages that could be delivered with a single call for messages, it would be a bad idea to deliver all those message headers in one big package. Therefore, a paging mechanism was introduced to split the whole list of messages or message headers into several pages, each including a maximum number of messages or a maximum overall size of the result. The maximum number of messages per page is 25, the total size of a messages in a page is 1 MB.
 
-If not all messages have been delivered from feed to the outbox at this point in time, the endpoint has to poll for the messages (make sure to meet the xref:../messaging-workflow.adoc#request-sending-frequency[request frequency requirements]). All pages will be the result of one single GET Request if all messages are delivered to the outbox, when the endpoint requests them. All pages are returned when feed is queried.
-
-
-[NOTE]
-====
-If an app instance misses one package, it should first request the messages of the headers, it already received to shorten the list of headers delivered when requesting again. This only works for self containing message, it is critical if the missed package includes parts of a chunked message.
-====
+If not all messages have been delivered from feed to the outbox with the first call, the endpoint has to poll for messages again after either <<feed-confirm,confirming>> the ones that were on the first page _or_ adjusting the filter criteria.
 
 == Message Query and Filtering
 
@@ -367,6 +361,7 @@ In case of success, you receive VAL_000209 and a list of MessageIDs that could b
 
 If the message was incorrect, an ACK_WITH_FAILURE will be reported. For specific error messages, see xref:../error-codes.adoc[the error list].
 
+[#feed-confirm]
 == Call for message list confirmation
 
 To make sure that no message gets lost due to e.g. a loss of internet connection while delivering a message, the app instance has to confirm the receival of every message.
