@@ -33,7 +33,7 @@ image::ig1/solutionfinder_telemetry_connections.png[telemetry connections,633,30
 == General process
 .Create agrirouter Solution-Finder content process
 
-One can request a new Solution-Finder entries or update an existing entry by sending us a xref:https://go.agrirouter.com/solution-finder-form[completed form]. We will create the entry  in the various languages for which information has been submitted. We also need a company logo or a suitable image for your solution (PNG or JPG, 512 x 512 px).The completed form should be sent to info@dke-data.com. 
+One can request a new Solution-Finder entries or update an existing entry by sending us a https://go.agrirouter.com/solution-finder-form[completed form]. We will create the entry  in the various languages for which information has been submitted. We also need a company logo or a suitable image for your solution (PNG or JPG, 512 x 512 px).The completed form should be sent to info@dke-data.com. 
 After you have sent us the form, we will publish the content in the Solution Finder as soon as possible. We will send you a link to the entry in the Solution Finder once it has been published. If you have any change requests, please contact us so that we can incorporate the changes. 
 
 
