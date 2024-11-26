@@ -85,7 +85,7 @@ With the messages we will have place holders for values which would be injected 
 | VAL_000306   | Onboarding a VCU with an id that already exists                            | Registration Service                      | Error     | There is already an existing VCU with the provided id                                                                      | CLOUD_REGISTRATIONS
 | VAL_000307   | exceeded onboarding quota                          | VCU Onboarding                       | Error     | VCU could not be onboarded due to too many VCUs already onboarded | CLOUD_REGISTRATIONS
 | VAL_000308   | VCU does not belong to the telemetry platform      | VCU Offboarding                      | Error     | VCU could not be offboarded because the requested endpoint doesn't belong to the telemetry platform endpoint that requested the operation |  CLOUD_REGISTRATIONS
-| VAL_000309   | Cannot offboard virtualized application            | VCU Onboarding                       | Error     | VCU could not be offboarded because it doesn't exist or because of any other error | CLOUD_REGISTRATIONS
+| VAL_000309   | Cannot offboard virtualized application            | VCU Offboarding                       | Error     | VCU could not be offboarded because it doesn't exist or because of any other error | CLOUD_REGISTRATIONS
 |===
 
 
