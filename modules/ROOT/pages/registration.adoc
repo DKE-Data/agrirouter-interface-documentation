@@ -3,7 +3,7 @@
 
 == Overview
 
-To create applications for agrirouter, a developer account is required.
+To create applications for agrirouter, a developer account is required. Please use a *generic* (non-personal, role based) email address from your company, e.g. agrirouter@company.com .
 
 The URL to signup for accounts can be found xref:./urls.adoc[here].
 

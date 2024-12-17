@@ -41,7 +41,7 @@ The following Trusted agrirouter Certification Partners are available for certif
 ** Certification process and contact details can be found in the https://static.dke-data.com/agrirouter_developer_documentation/lmis-ag-zertifizierung-agrirouter-dke-data.pdf[overview sheet].
 
 
-Other interested IT or hardware-related companies can contact DKE-Data for   as a "Trusted Agrirouter Certification Partner".
+Other interested IT or hardware-related companies can contact DKE-Data for as a "Trusted Agrirouter Certification Partner".
 
 == Certification Requirements
 
