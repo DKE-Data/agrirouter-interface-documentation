@@ -1,7 +1,7 @@
 {
   "name": "agrirouter-interface-documentation",
   "scripts": {
-    "build": "$(npm bin)/antora ./antora-playbook.yml",
+    "build": "node_modules/.bin/antora ./antora-playbook.yml",
     "generate-images": "node scripts/generate_images.js"
   },
   "dependencies": {

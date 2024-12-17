@@ -26,7 +26,22 @@ The certification will not check if an application is able to work with the data
 
 == Certification companies
 
-There are multiple certification companies, a list can be found link:https://my-agrirouter.com/support/certification/[here].
+Every application needs to be certified to be onboardable to the agrirouter. 
+The certification ensures that the communication protocol of the agrirouter has been successfully implemented and the application is able to communicate with the agrirouter. 
+A certification is required whenever the app changes its capabilities.
+
+The following Trusted agrirouter Certification Partners are available for certification with the following scope of services:
+
+=== Certification of Telemetry Unit 
+* *https://www.isobus-test.com/[ISOBUS Test Center (ITC)]*
+** Certification process and contact details can be found in the https://static.dke-data.com/agrirouter_developer_documentation/agrirouter-process_ITC_page.v1-4.pdf[overview sheet].
+
+=== Certification of Farming-Software (App) and Telemetry Platform 
+* *https://www.lmis.de/[LMIS AG]*
+** Certification process and contact details can be found in the https://static.dke-data.com/agrirouter_developer_documentation/lmis-ag-zertifizierung-agrirouter-dke-data.pdf[overview sheet].
+
+
+Other interested IT or hardware-related companies can contact DKE-Data for   as a "Trusted Agrirouter Certification Partner".
 
 == Certification Requirements
 
