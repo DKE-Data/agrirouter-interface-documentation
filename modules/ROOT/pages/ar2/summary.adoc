@@ -1,0 +1,55 @@
+= Summary of technical changes in agrirouter 2.0
+
+The migration from agrirouter 1.0 to agrirouter 2.0 was not just a rebuild of the old system. A lot of functionalities were rethought to simplify the user experience. 
+The following topics were adjusted:
+
+* **A completely new UserInterface**: 
+** The user interface now shows the routings more interactively. 
+** The differentiation between onFarm-Software and onField-Devices is clearly visible
+* **Account pairing was removed**. The feature was not used and only lead to confusion.
+* **Machine endpoints removed** : EFDI telemetry messages are not used for creating machine endpoints within agrirouter anymore. The device description message is still required to inform all other endpoints. 
+
+* **Reonboarding VCUs is now supported**: This also enables Telemetry Platforms to rename their VCUs. Conflicts between manual user renaming and TPs renaming the VCUs are resolved with “last update wins”.
+
+* **External IDs' uniqueness was rescoped** to tenant(account)+application. Potential previous issues caused by namespace collision are prevented.
+
+* **Switching GatewayID MQTT<->HTTP is now allowed**: Data loss could happen during switch from MQTT to HTTP and vice-versa. It may only be used for migration from one gateway to the other, please contact us before trying it.
+
+
+* **Multiple redirect URLs can now be set**: The first redirect URL set comes into play when an authorize request does not provide a redirect URL (or an invalid one)  an authorize request’s redirect_uri should always be set.
+ 
+* **ErrorCodes more clearly defined**: 
+
+** Codes VAL_000004 and VAL_000005 received a clear definition:
+
+*** All routings fail => VAL_000004
+
+*** some but not all routings fail => VAL_000005 
+
+*** publish only => no error even if no partner found
+
+** Onboarding VCU onto something other than a telemetry platform, error VAL_000303 "Not allowed to send message type %technicalMessageType%" is used. 
+
+
+* **Revoking answer simplified**: Response doesn’t contain key/name fields, but an http status code and empty body. 
+
+* **Less to no waiting time before Reonboarding a revoked endpoint**: It doesn’t throw an OnboardingError, but is accepted since revoked endpoints are directly deleted. 
+
+* **Fast updates of routes**: While in the old agrirouter you had to wait 2,5-5 minutes, in the new agrirouter the routes are available instantly.
+
+* **Route handling has changed**: 
+** The concept of Groups was removed.
+** There are no more default groups instead.
+** Instead, “managed routes” will be created/deleted on endpoint creation. These managed routes can be disabled. 
+** The concept of InformationTypes as a bundle of Technical MessageTypes was removed. 
+** DDI filtering was removed and replaced by a simple routing of Telemetry messages in general.
+
+* **MarketPlace was replaced with xref:modules\ROOT\pages\partner-process\solutionfinder.adoc[SolutionFinder]**.
+
+* **DKE:Ping was added**: The function can be used to check if an endpoint is still connected and existing in agrirouter. It is useful in case an endpoint was deleted in the agrirouter UI.
+
+* **Export of metrics was removed.** Since the business model changed a while ago, these metrics are not required anymore.
+
+* **Router Devices can now have names**. No more hustle with finding the correct routerDevice.
+
+* **TAN/Registration Code is now valid for any CU**. No choice of Communication Unit is required anymore to generate an onboarding Code.
