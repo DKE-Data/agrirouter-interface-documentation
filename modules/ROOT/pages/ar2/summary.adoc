@@ -44,9 +44,9 @@ The following topics were adjusted:
 ** The concept of InformationTypes as a bundle of Technical MessageTypes was removed. 
 ** DDI filtering was removed and replaced by a simple routing of Telemetry messages in general.
 
-* **MarketPlace was replaced with xref:modules\ROOT\pages\partner-process\solutionfinder.adoc[SolutionFinder]**.
+* **MarketPlace was replaced with xref:partner-process/solutionfinder.adoc[SolutionFinder]**.
 
-* **DKE:Ping was added**: The function can be used to check if an endpoint is still connected and existing in agrirouter. It is useful in case an endpoint was deleted in the agrirouter UI.
+* **dke:ping was added**: The function can be used to check if an endpoint is still connected and existing in agrirouter. It is useful in case an endpoint was deleted in the agrirouter UI.
 
 * **Export of metrics was removed.** Since the business model changed a while ago, these metrics are not required anymore.
 
