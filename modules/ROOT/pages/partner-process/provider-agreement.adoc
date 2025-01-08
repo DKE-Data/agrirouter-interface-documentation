@@ -3,7 +3,7 @@
 == General process
 image::general/process_firstcontact_v2.png[]
 For legal reasons, it is required that every app provider signs the app provider agreement. 
-You can get this document by contacting Christoph Apke, see link:https://my-agrirouter.com/en/company/contact/[the contacts page].
+You can get this document by contacting Christoph Apke, see link:https://dke-data.com/#team[the contacts page].
 
 [NOTE]
 ====
