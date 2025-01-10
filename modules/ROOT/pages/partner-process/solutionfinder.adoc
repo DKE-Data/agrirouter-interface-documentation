@@ -3,7 +3,7 @@
 
 == What is the agrirouter Solution-Finder?
 
-At https://agrirouter.com/en/solutions it is possible for the agricultural software and telemetry connections provider to present their own solution, including a short and long description of the main functions, in which countries this solution is offered and in which language, which data formats can be exchanged via agrirouter as well as contact data to the provider itself. In this way, an interested farmer or contractor gets an initial overview of the solutions that can exchange data in combination with the agrirouter.
+At https://agrirouter.com/solutions it is possible for the agricultural software and telemetry connections provider to present their own solution, including a short and long description of the main functions, in which countries this solution is offered and in which language, which data formats can be exchanged via agrirouter as well as contact data to the provider itself. In this way, an interested farmer or contractor gets an initial overview of the solutions that can exchange data in combination with the agrirouter.
 
 The agrirouter Solution Finder provides a complete overview of all products that are compatible with agrirouter. This allows to quickly find compatible devices/telemetry units and software solutions for agrirouter ecosystem, get a first impression and contact providers for purchase or licensing via the links. Clearly visible links make it easier for users to access the manufacturer's website, the Solutions Guide, support or AgraCheck directly.
 
