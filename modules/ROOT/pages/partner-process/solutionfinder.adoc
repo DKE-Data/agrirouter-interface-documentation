@@ -19,7 +19,7 @@ agrirouter Solution-Finder is for information for interested farmers or contract
 ====
 
 
-Examples of DKE partners for agricultural software are available at https://agrirouter.com/en/solutions using the filter.
+Examples of DKE partners for agricultural software are available at https://agrirouter.com/solutions using the filter.
 
 .Solution-Finder examples for agricultural software
 image::ig1/solutionfinder_agricultural_software.png[agricultural software,633,307]
