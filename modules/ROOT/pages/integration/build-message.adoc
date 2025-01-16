@@ -96,7 +96,7 @@ The protobuf compiler creates source files for your desired language. Please ref
 
 * A maximum number of chunks (max. size for binaries) will be defined in the project
 
- * The max chunk size is capped at 1MB. This size might be decreased during the project for performance reasons.
+ * The max chunk size is capped at 1MB.
 ====
 
 === Chunking parameters
