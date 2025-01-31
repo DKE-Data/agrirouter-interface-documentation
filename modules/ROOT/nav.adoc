@@ -86,3 +86,4 @@
 ** xref:keys.adoc[agrirouter Keys]
 ** xref:limitations.adoc[Limitations]
 ** xref:urls.adoc[URLs]
+** xref:feedmixer-solution-guide.adoc[Feed Mixer Solution-Guide]
