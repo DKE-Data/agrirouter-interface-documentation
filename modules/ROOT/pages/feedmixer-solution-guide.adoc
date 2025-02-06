@@ -74,7 +74,7 @@ Overview of feed mixer objects
 |link:#group[``Group``]
 |Description of an animal group
 
-|link:#ingredient[``Ingredient``]]
+|link:#ingredient[``Ingredient``]
 |description of an ingredient
 
 |link:#nutrients[``Nutrients``]
@@ -83,25 +83,25 @@ Overview of feed mixer objects
 |link:#recipe[``Recipe``]
 |Current description of a recipe ``(Recipe)``
 
-|link:#afterloadinglastingredient[``AfterLoadingLastIngredient``]]
+|link:#afterloadinglastingredient[``AfterLoadingLastIngredient``]
 |Configuration of the mixing behavior after adding the last ingredient
 
 |link:#masterdata[``Masterdata``]
 |The master data can be synchronized via this object.
 
-|link:#masterdataresponse[``MasterdataResponse``]]
+|link:#masterdataresponse[``MasterdataResponse``]
 |Processing status of the transferred master data
 
-|link:#plannedloadlistwithdependencies[``PlannedLoadListWithDependencies``]]
+|link:#plannedloadlistwithdependencies[``PlannedLoadListWithDependencies``]
 |Configuration of a planned load list.
 
-|link:#plannedloadlistwithdependenciesresonse[``PlannedLoadListWithDependenciesResponse``]]
+|link:#plannedloadlistwithdependenciesresonse[``PlannedLoadListWithDependenciesResponse``]
 |Processing status of the transferring load list
 
 |link:#plannedloadlist[``PlannedLoadList``]
 |Configuration of a planned load list with all the necessary references.
 
-|link:#plannedloadlistgroup[``PlannedLoadListGroup``]]
+|link:#plannedloadlistgroup[``PlannedLoadListGroup``]
 |Configuration of a group for a planned load list.
 
 |link:#plannedloadlistresponse[``PlannedLoadListResponse``]
@@ -110,31 +110,31 @@ Overview of feed mixer objects
 |link:#completeloadlistwithdependencies[``CompleteLoadListWithDependencies``].
 |Description of the actual state of a load list.
 
-|link:#completeloadlistwithdependenciesresponse[``CompleteLoadListWithDependenciesResponse``]]
+|link:#completeloadlistwithdependenciesresponse[``CompleteLoadListWithDependenciesResponse``]
 |Processing status of the transferred actual status for a load list.
 
 |link:#completeloadlist[``CompleteLoadList``]]
 |Description of the actual state of a load list.
 
-|link:#completeloadlistingredient[``CompleteLoadListIngredient``]]
+|link:#completeloadlistingredient[``CompleteLoadListIngredient``]
 |Completed filling process of an ingredient
 
-|link:#completeloadlistgroup[``CompleteLoadListGroup``]]
+|link:#completeloadlistgroup[``CompleteLoadListGroup``]
 |Documentation of a group feed for a planned load list.
 
-|link:#completeloadlistwithdependenciesresponse[``CompleteLoadListWithDependenciesResponse``]]
+|link:#completeloadlistwithdependenciesresponse[``CompleteLoadListWithDependenciesResponse``]
 |Processing status of the transferred actual status for a load list.
 
 |link:#refusalwithdependencies[``RefusalWithDependencies``]
 |Documentation of a food refusal including necessary master data
 
-|link:#refusalwithdependenciesresponse[``RefusalWithDependenciesResponse``]]
+|link:#refusalwithdependenciesresponse[``RefusalWithDependenciesResponse``]
 |Processing status of the transmitted feed refusal.
 
 |link:#refusal[``Refusal``]
 |refusal of food
 
-|link:#refusalresponse[``RefusalResponse``]]
+|link:#refusalresponse[``RefusalResponse``]
 |Processing status of the transmitted feed refusal.
 |===
 
@@ -181,9 +181,9 @@ message Area {
 	}
 
 	UUID area_external_id = 1; /// Uniquely references for the area in the sofware system used
-	string area_name = 2;     /// Name of the area
-	AreaType area_type = 3;   /// Type of the area (LoadingPoint, Barn, other)
-	UUID customer_id_ref = 4; /// Internal reference
+	string area_name = 2;      /// Name of the area
+	AreaType area_type = 3;    /// Type of the area (LoadingPoint, Barn, other)
+	UUID customer_id_ref = 4;  /// Internal reference
 	repeated google.protobuf.Any extension = 2048;
 }
 -----------------
@@ -248,7 +248,7 @@ message Device {
 	UUID device_external_id = 1;     /// Uniquely references for the device in the sofware system used
 	string device_serial_number = 2; /// Serial number of the device assigned by the manufacturer
 	string device_name = 3;          /// Name of the device
-	uint64 device_capacity = 4;      /// Total KG capcaity of the mixer (treshold of overload). Unit: kg
+	uint64 device_capacity = 4;      /// Total KG capcaity of the mixer (treshold of overload). Unit: *kg*
 	repeated UUID area_id_ref = 5;   /// White-List means, list of areas that can be accessed
 	repeated google.protobuf.Any extension = 2048;
 }
@@ -258,7 +258,7 @@ message Device {
 ==== Animal group
 Description of an animal group ``(Group)`` the animal group type is described via the ``GroupType ``.
 
-The number of animals in this animal group is specified in the unit *unit* via the parameter: ``(group_head_count )``. +
+The number of animals in this animal group is specified via the parameter: ``(group_head_count )`` in the unit *piece*. +
 The relative percentage for adjusting the feed quantity (default value 100%) is determined via the factor ``(group_feeding_factor)`` in the unit *%*. +
 The length of the feeding rack (in *m*) of this animal group is described by the parameter ``group_feeding_rack_length``. +
 The reference to the area of the animal group ``(Area)`` is made via the ``area_id_ref``.
@@ -277,9 +277,9 @@ message Group {
 	UUID group_external_id = 1;           /// Uniquely references for the group in the sofware system used
 	string group_name = 2;                /// Name of the group
 	GroupType group_type = 3;             /// Type of the group (milking, dry, bulls, other)
-	uint32 group_head_count = 4;          /// Total number of annimals for this group. Unit: piece
-	uint32 group_feeding_factor = 5;      /// Relative percentage used to adjust feed amount for a group. (default 100%). Unit %
-	uint32 group_feeding_rack_length = 6; /// Length of feeding rack of the specific group. Unit m
+	uint32 group_head_count = 4;          /// Total number of annimals for this group. : piece
+	uint32 group_feeding_factor = 5;      /// Relative percentage used to adjust feed amount for a group. (default 100%).  %
+	uint32 group_feeding_rack_length = 6; /// Length of feeding rack of the specific group.  m
 	UUID area_id_ref = 7;                 /// Internal reference
 	repeated google.protobuf.Any extension = 2048;
 }
@@ -290,11 +290,11 @@ message Group {
 Description of an ingredient ``(Ingredient)`` and its application.
 
 The start mode type is described via the ``StartMode ``. +
-The quantity per animal is specified via the parameter ``ingredient_quantity`` in the unit *kg/head*. +
+The quantity per animal is specified via the parameter ``ingredient_quantity`` in the  *kg/head*. +
 The loading sequence in which this ingredient is to be filled is described by the value ``ingredient_order``. +
 The mixing process for this ingredient can be configured using the following values:
 
-* ``ingredient_mix_time`` in the unit *seconds*
+* ``ingredient_mix_time`` in the  *seconds*
 * ``ingredient_mix_speed`` in the unit *RPM/min*
 * ``ingredient_mix_rotations`` in the unit *RPM*
 
