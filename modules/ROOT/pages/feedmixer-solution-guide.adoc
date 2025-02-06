@@ -27,7 +27,7 @@ Supported languages include the following:
 
 [#compile-feedmixer-protobuf]
 == Compile the Feedmixer Protocol Buffers schema
-The feedmixer data structures are defined in ``.proto-`` files, you can generate the classes needed to read and write the protobuf messages. To do this, use the protocol buffers compiler (protoc) on the configuration file. +
+The Feedmixer data structures are defined in ``.proto-`` files, you can generate the classes needed to read and write the protobuf messages. To do this, use the protocol buffers compiler (protoc) on the configuration file. +
 If the compiler is not yet installed, simply download the latest version from the official https://github.com/protocolbuffers/protobuf/releases/[GitHub repository, window="_blank"]. Unpack the ZIP file at the desired location and then start the compiler by double-clicking (located in the ``"bin"`` folder).
 
 [NOTE]
@@ -54,9 +54,9 @@ Google offers a more detailed Protobuf Java tutorial, which also explains messag
 ====
 
 [#feedmixer_objects]
-== Description of the feedmixer objects
+== Description of the Feedmixer objects
 
-Overview of feed mixer objects
+Overview of Feedmixer objects
 [cols="1,1"]
 |===
 |link:#area[``area``]
@@ -69,7 +69,7 @@ Overview of feed mixer objects
 |Description of the customer
 
 |link:#device[``Device``]
-|Description of a feed mixer wagon
+|Description of a Feedmixer wagon
 
 |link:#group[``Group``]
 |Description of an animal group
@@ -107,13 +107,13 @@ Overview of feed mixer objects
 |link:#plannedloadlistresponse[``PlannedLoadListResponse``]
 |Processing status of the transmitted load list
 
-|link:#completeloadlistwithdependencies[``CompleteLoadListWithDependencies``].
+|link:#completeloadlistwithdependencies[``CompleteLoadListWithDependencies``]
 |Description of the actual state of a load list.
 
 |link:#completeloadlistwithdependenciesresponse[``CompleteLoadListWithDependenciesResponse``]
 |Processing status of the transferred actual status for a load list.
 
-|link:#completeloadlist[``CompleteLoadList``]]
+|link:#completeloadlist[``CompleteLoadList``]
 |Description of the actual state of a load list.
 
 |link:#completeloadlistingredient[``CompleteLoadListIngredient``]
@@ -138,7 +138,7 @@ Overview of feed mixer objects
 |Processing status of the transmitted feed refusal.
 |===
 
-Most objects contain a ``UUID`` which uniquely refers to an ID in the software system used. In most cases, the object is also described by a ``(string)`` name.
+Most objects contain an ``UUID`` which uniquely refers to an ID in the software system used. In most cases, the object is also described by a ``(string)`` name.
 
 [source]
 -----------------
@@ -234,11 +234,11 @@ message Customer {
 -----------------
 
 [#device]
-==== Feed mixer wagon
-Description of a feed mixer wagon ``(Device)``.
+==== Feedmixer wagon
+Description of a Feedmixer wagon ``(Device)``.
 
 In addition to the name ``(device_name)`` of the serial number ``(device_serial_number)``, the load capacity ``(device_capacity)`` is described in the unit *kg*. +
-The possible loading and unloading points for this feed mixer wagon are specified via a *white list* ``(repeated UID area_id_ref)``.
+The possible loading and unloading points for this Feedmixer wagon are specified via a *white list* ``(repeated UID area_id_ref)``.
 
 [source]
 -----------------
@@ -256,8 +256,9 @@ message Device {
 
 [#group]
 ==== Animal group
-Description of an animal group ``(Group)`` the animal group type is described via the ``GroupType ``.
+Description of an animal ``(Group)``.
 
+The animal group-type is described via the ``GroupType ``.
 The number of animals in this animal group is specified via the parameter: ``(group_head_count )`` in the unit *piece*. +
 The relative percentage for adjusting the feed quantity (default value 100%) is determined via the factor ``(group_feeding_factor)`` in the unit *%*. +
 The length of the feeding rack (in *m*) of this animal group is described by the parameter ``group_feeding_rack_length``. +
@@ -391,7 +392,7 @@ message AfterLoadingLastIngredient {
 
 [#masterdata]
 === Master data, synchronization
-The master data/master data can be synchronized via this object. +
+The master data can be synchronized via this object. +
 This procedure is described via the scenario flow ``(Sync MasterData)``.
 
 [source]
@@ -601,13 +602,13 @@ message CompleteLoadListWithDependenciesResponse {
 -----------------
 
 [#completeloadlist]
-==== Completed feed list
+==== Completed load list
 The ``CompleteLoadList`` object is used to describe the actual status of a ``PlannedLoadList``.
 
-The feed mixer used is referenced via the parameter ``device_id_ref``, the same applies to the employee via ``worker_id_ref``. +
+The Feedmixer used is referenced via the parameter ``device_id_ref``, the same applies to the employee via ``worker_id_ref``. +
 The underlying load list is referenced via ``plannedloadlist_id_ref``. +
 The start and end time is specified via ``completeloadlist_start_time`` and ``completeloadlist_end_time`` respectively. +
-The planned feeding quantity in the unit *kg* is returned via the parameter ``completeloadlist_totalTheoreticalQty`` and the quantity actually fed (*kg*) via the parameter ``completeloadlist_totalQty``.+
+The planned feeding quantity in the unit *kg* is returned via the parameter ``completeloadlist_totalTheoreticalQty`` and the quantity actually fed (*kg*) via the parameter ``completeloadlist_totalQty``.
 The actual filling and mixing process for each ingredient is described in the ``completeLoadListIngredient`` list of object type ``CompleteLoadListIngredient``. +
 The animal groups that were fed with this load are configured via the ``completeLoadListGroup`` list of the ``CompleteLoadListGroup`` object type.
 
@@ -678,7 +679,7 @@ message CompleteLoadListGroup {
 -----------------
 
 [#completeloadlistresponse]
-==== Response object for a completed feed list
+==== Response object for a completed load list
 The ``CompleteLoadListResponse`` object is used to return the processing status for a transmitted ``CompleteLoadList`` via the ``response_code``.
 
 
@@ -804,9 +805,9 @@ The most important features of the concept are
    The standardized definition of data and processes allows different systems to work together seamlessly, regardless of manufacturer or software environment. This promotes interoperability and scalability for small and large companies.
 
 - **Examples of scenario flows**
-   - Planning process:** Creation of a ration plan in the herd management system, transmission of the data to the feed mixer, feedback of the measures carried out.  
-   - Real-time monitoring:** Collection of sensor data (e.g. weather station), evaluation in real time and automated adjustment of measures.  
-   - Documentation:** Automatic recording of machine data during field work and integration into legal documentation requirements.
+   - **Planning process:** Creation of a ration plan in the herd management system, transmission of the data to the Feedmixer, feedback of the measures carried out.  
+   - **Real-time monitoring:** Collection of sensor data (e.g. weather station), evaluation in real time and automated adjustment of measures.  
+   - **Documentation:** Automatic recording of machine data during field work and integration into legal documentation requirements.
 
 - **Integration and extension**
    Scenario Flows can be adapted to specific needs and technologies while maintaining compatibility with other standards and systems.
@@ -817,11 +818,11 @@ The most important features of the concept are
 - **Flexibility:** Ability to integrate new technologies and use cases.
 - **Cost reduction:** Standardized interfaces reduce development and integration costs for manufacturers and companies.
 
-== Possible scenarios Flows in the FeedMixer context
+== Possible scenarios Flows in the Feedmixer context
 
 [cols="1,1"]
 |===
-|link:#flow-masterdata[``Scenario Flow: Sync Masterdata``]]
+|link:#flow-masterdata[``Scenario Flow: Sync Masterdata``]
 |Scenario Flow: Synchronization of master data
 
 |link:#flow-plannedloadlist[``Scenario Flow: PlannedLoadList``]
@@ -831,7 +832,7 @@ The most important features of the concept are
 |Scenario Flow: Exchange of a load list with all necessary master data
 
 |link:#flow-completeloadlist[``Scenario Flow: CompleteLoadList``]
-|Scenario Flow: Exchange of a completed feed list
+|Scenario Flow: Exchange of a completed load list
 
 |link:#flow-completeloadlistwithdependencies[``Scenario Flow: CompleteLoadListWithDependencies``]
 |Scenario Flow: Exchange of a completed feeding list with all necessary master data
@@ -843,22 +844,22 @@ The most important features of the concept are
 |Scenario Flow: Exchange of a feed refusal with all necessary master data
 |===
 
-These scenarios involve creating, managing and exchanging a list of planned loads for a feed mixer wagon between different systems.
+These scenarios involve creating, managing and exchanging a list of planned loads for a Feedmixer wagon between different systems.
 This typically involves the following steps:
 
 - **Planning of feed rations**: A herd or feed management system creates a detailed feed ration based on the nutritional needs of the animals and available feed resources.
 
-- **Creation of the loading list**: Based on the planned feed ration, a specific loading list is created for the feed mixer wagon, specifying the exact quantities and types of feed to be loaded.
+- **Creation of the loading list**: Based on the planned feed ration, a specific loading list is created for the Feedmixer wagon, specifying the exact quantities and types of feed to be loaded.
 
-- **Transmission to the feed mixer**: The loading list created is transmitted electronically to the control system of the feed mixer wagon to control the loading and mixing process.
+- **Transmission to the Feedmixer**: The loading list created is transmitted electronically to the control system of the Feedmixer wagon to control the loading and mixing process.
 
-- **Performing the mixing process**: The feed mixer carries out the mixing process according to the loading list received and ensures that the animals receive the planned feed ration.
+- **Performing the mixing process**: The Feedmixer carries out the mixing process according to the loading list received and ensures that the animals receive the planned feed ration.
 
 - **Reporting and documentation**: On completion of the mixing and feeding process, the actual quantities of feed loaded and distributed are reported back to the herd or feed management system to document the feeding data and make it available for future analysis.
 
 - **Feed refusal of an animal group**: Feed quantities for an animal group that have been refused can be reported back to the herd or feed management in order to document them and make them available for future analyses.
 
-**These scenarios ensure that the entire process of feed planning, mixing and distribution is carried out efficiently and accurately by enabling seamless communication and data integration between herd or feed management systems and feed mixers.**
+**These scenarios ensure that the entire process of feed planning, mixing and distribution is carried out efficiently and accurately by enabling seamless communication and data integration between herd or feed management systems and Feedmixers.**
 
 [NOTE]
 ====
@@ -878,71 +879,71 @@ The processing status is transmitted to the sender via the ``MasterDataResponse`
 
 [#flow-plannedloadlist]
 == Scenario Flow: Exchange of a load list
-This scenario flow describes the data exchange of a ``PlannedLoadList``, e.g. from a herd management system to a feed mixer.
+This scenario flow describes the data exchange of a ``PlannedLoadList``, e.g. from a herd management system to a Feedmixer.
 The status of the processing is transmitted to the sender via the ``PlannedLoadListResponse`` object.
 
-In the first step, the receiver (feed mixer) attempts to resolve the references of the required objects via its stored objects.
+In the first step, the receiver (Feedmixer) attempts to resolve the references of the required objects via its stored objects.
 If this is successful, ``OK`` is used as the ``ResponseCode`` for the ``PlannedLoadListResponse`` and successful processing is acknowledged.
 
 However, if one or more references could not be resolved, ``CANNOT_PROCESS_PLANNEDLOADLIST`` is used as the ``ResponseCode`` for the ``PlannedLoadListResponse``.
-This signals to the sender (herd management system) that necessary master data is missing on the feed mixer wagon and a synchronization of the master data must be triggered.
+This signals to the sender (herd management system) that necessary master data is missing on the Feedmixer wagon and a synchronization of the master data must be triggered.
 See also: link:#flow-masterdata[Scenario Flow - Synchronization of master data]
 
 [#flow-plannedloadlistwithdependencies]
 == Scenario Flow: Exchange of a load list with all necessary master data
-This scenario flow describes the data exchange of a ``PlannedLoadListWithDependencies``, e.g. from a herd management system to a feed mixer.
+This scenario flow describes the data exchange of a ``PlannedLoadListWithDependencies``, e.g. from a herd management system to a Feedmixer.
 The status of the processing is transmitted to the sender via the object ``PlannedLoadListWithDependenciesResponse``.
 
-In the first step, the receiver (feed mixer) attempts to resolve the references of the necessary objects via its stored objects.
+In the first step, the receiver (Feedmixer) attempts to resolve the references of the necessary objects via its stored objects.
 If this is successful, ``OK`` is used as the ``ResponseCode`` for the ``PlannedLoadListWithDependenciesResponse``, thus confirming successful processing.
 
 However, if one or more references could not be resolved, ``CANNOT_PROCESS_PLANNEDLOADLISTWITHDEPENDENCIES`` is used as the ``ResponseCode`` for the ``PlannedLoadListWithDependenciesResponse``.
 This signals to the sender (herd management system) that the content of the load list is not correct and must be checked/corrected and therefore resent.
 
 [#flow-completeloadlist]
-== Scenario Flow: Exchange of a completed feed list
-This scenario flow describes the data exchange of a ``CompleteLoadList`` from a feed mixer to the herd or feed agent system.
+== Scenario Flow: Exchange of a completed load list
+This scenario flow describes the data exchange of a ``CompleteLoadList`` from a Feedmixer to the herd or feed agent system.
 The status of the processing is transmitted to the sender via the ``CompleteLoadListResponse`` object.
 
 In the first step, the receiver (herd feed management) attempts to resolve the references of the transmitted objects.
 If this is successful, ``OK`` is used as the ``ResponseCode`` in the ``CompleteLoadListResponse``, thus confirming successful processing.
 
 If, however, one or more references could not be resolved, ``CANNOT_PROCESS_COMPLETELOADLIST`` is used as the ``ResponseCode`` for the ``CompleteLoadListResponse``.
-This signals to the sender (feed mixer) that necessary master data is missing and a synchronization of the master data must be triggered.
+This signals to the sender (Feedmixer) that necessary master data is missing and a synchronization of the master data must be triggered.
 See also: link:#flow-masterdata[Scenario Flow - Synchronization of master data]
 
 [#flow-completeloadlistwithdependencies]
-== Scenario Flow: Exchange of a completed feed list with all necessary master data
-This scenario flow describes the data exchange of a ``CompleteLoadListWithDependencies`` from a feed mixer to a herd or feed agent system.
+== Scenario Flow: Exchange of a completed load list with all necessary master data
+This scenario flow describes the data exchange of a ``CompleteLoadListWithDependencies`` from a Feedmixer to a herd or feed agent system.
 The status of the processing is transmitted to the sender via the ``CompleteLoadListWithDependenciesResponse`` object.
 
 In the first step, the receiver (herd feed management) attempts to resolve the references of the necessary objects via its stored objects.
 If this is successful, ``OK`` is used as the ``ResponseCode`` for the ``CompleteLoadListWithDependenciesResponse``, thus confirming successful processing.
 
 However, if one or more references could not be resolved, ``CANNOT_PROCESS_COMPLETELOADLISTWITHDEPENDENCIES`` is used as the ``ResponseCode`` for the ``CompleteLoadListWithDependenciesResponse``.
-This signals to the sender (feed mixer) that the content of the completed loading list is not correct. This must be checked and corrected so that it can be resent.
+This signals to the sender (Feedmixer) that the content of the completed loading list is not correct. This must be checked and corrected so that it can be resent.
 
 [#flow-refusal]
 == Scenario Flow: Exchange of a feed refusal
-This scenario flow describes the data exchange of the ``Refusal`` object from a feed mixer to a herd or feed management system.
+This scenario flow describes the data exchange of the ``Refusal`` object from a Feedmixer to a herd or feed management system.
 The status of the processing is transmitted to the sender via the ``RefusalResponse`` object.
 
 In the first step, the receiver (herd feed management) attempts to resolve the references of the necessary objects via its stored objects.
 If this is successful, ``OK`` is used as the ``ResponseCode`` in the ``RefusalResponse``, thus acknowledging successful processing.
 
-However, if one or more references could not be resolved, the ``ResponseCode`` is used as the ``RefusalResponse`` ``CANNOT_PROCESS_REFUSAL``.
-This signals to the sender (feed mixer) that the feed refusal content is incorrect. This must be checked and corrected so that it can be resent.
+However, if one or more references could not be resolved, ``CANNOT_PROCESS_REFUSAL`` is used as the ``ResponseCode`` for the ``RefusalResponse``.
+This signals to the sender (Feedmixer) that the feed refusal content is incorrect. This must be checked and corrected so that it can be resent.
 
 [#flow-refusalwithdependencies]
 == Scenario Flow: Exchange of a feed refusal with all necessary master data
-This scenario flow describes the data exchange of a ``RefusalWithDependencies`` from a feed mixer to a herd or feed agent system.
+This scenario flow describes the data exchange of a ``RefusalWithDependencies`` from a Feedmixer to a herd or feed agent system.
 The status of the processing is transmitted to the sender via the ``RefusalWithDependenciesResponse`` object.
 
 In the first step, the receiver (herd feed management) attempts to resolve the references of the necessary objects via its stored objects.
 If this is successful, ``OK`` is used as the ``ResponseCode`` in the ``RefusalWithDependenciesResponse``, thus confirming successful processing.
 
-If, however, one or more references could not be resolved, ``ResponseCode`` is used as ``RefusalWithDependenciesResponse`` ``CANNOT_PROCESS_REFUSALWITHDENPENDENCIES``.
-This signals to the sender (feed mixer) that the content for feed refusal is not correct. This must be checked and corrected so that it can be resent.
+If, however, one or more references could not be resolved, ``CANNOT_PROCESS_REFUSALWITHDENPENDENCIES`` is used as the ``ResponseCode`` for the ``RefusalWithDependenciesResponse``.
+This signals to the sender (Feedmixer) that the content for feed refusal is not correct. This must be checked and corrected so that it can be resent.
 
 
 
