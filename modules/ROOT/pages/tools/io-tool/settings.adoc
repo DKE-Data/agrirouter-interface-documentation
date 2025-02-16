@@ -13,7 +13,7 @@ To do so just enter your current password and the new one twice. Then simply cli
 
 Your IO-Tool account can be deleted using the _Delete Account_ button.
 
-== Agrirouter connection settings
+== agrirouter connection settings
 
 In the settings view, you can perform the on- and offboarding and set the capabilities/subscriptions.
 
