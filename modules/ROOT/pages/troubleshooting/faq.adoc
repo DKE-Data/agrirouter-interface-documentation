@@ -1,8 +1,19 @@
-# Troubleshooting FAQs
+= Troubleshooting FAQs
+:sectnums:
 
-## Onboarding
+== Onboarding
 
-### The request has timed out or UTCTimestamp is not provided
+=== The request has timed out or UTCTimestamp is not provided
 
 Make sure your system time is exactly matching official time sources. While agrirouter has some tolerance for timestamps in the past, it does _not_ have any tolerance
 for timestamps that are in the future.
+
+== Operations
+
+=== MQTT connections can be established, but are closed by the server after a few seconds
+
+Usually, this behavior can be observed when you have two different clients running with the same configuration/database, for example on your local machine and on a centrally hosted development environment.
+
+When two MQTT clients with the same client ID connect to the broker, the broker will disconnect the first client when the second client connects. This behavior is defined in the https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html#_Toc398718032[MQTT specification] and is known as "Client Take-Over" or "Session Take-Over".
+
+To fix this, make sure you are using separate xref:router-devices.adoc[Router Devices] for each client/environment you deploy.

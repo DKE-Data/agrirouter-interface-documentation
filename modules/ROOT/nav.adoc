@@ -48,6 +48,7 @@
 *** xref:commands/ecosystem.adoc[Read the ecosystem]
 *** xref:commands/endpoint.adoc[Endpoint Management]
 *** xref:commands/feed.adoc[Message Feed]
+** xref:troubleshooting/faq.adoc[FAQ]
 
 * xref:tmt/overview.adoc[Technical Message Types]
 ** xref:tmt/taskdata.adoc[Taskdata]
