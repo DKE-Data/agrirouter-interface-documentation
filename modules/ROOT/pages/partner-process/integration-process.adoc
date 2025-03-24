@@ -25,7 +25,7 @@ include::partial$approval-manually-support-times.adoc[]
 
 == Develop your integration
 
-Please see xref:../development-process.adoc[Development Process].
+Please see xref:./development-process.adoc[Development Process].
 
 == Certify your solution
 
