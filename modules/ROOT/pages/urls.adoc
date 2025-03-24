@@ -10,7 +10,7 @@ On this page you will find a list of URLs and hosts relevant for your work with 
 |====
 |Area |Environment |URL
 |EU |agrirouter 2.0 QA | https://app.qa.agrirouter.farm/
-|EU |Production |https://goto.my-agrirouter.com/
+|EU |Production | https://app.agrirouter.com/
 |====
 
 == User Registration
@@ -19,8 +19,8 @@ On this page you will find a list of URLs and hosts relevant for your work with 
 [cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
-|EU |agrirouter 2.0 QA | https://app.qa.agrirouter.farm/
-|EU |Production |https://goto.my-agrirouter.com/um/register/user
+|EU |agrirouter 2.0 QA | https://app.qa.agrirouter.farm/ _Note:_ Follow the Link for the registration process.
+|EU |Production | https://app.agrirouter.com/ _Note:_ Follow the Link for the registration process.
 |====
 
 [NOTE]
@@ -36,7 +36,7 @@ accounts there when explicitly asked for it!
 |====
 |Area |Environment |URL
 |EU |agrirouter 2.0 QA | _Note:_ there is no special sign up for developers; please create a regular user account and apply for developer permissions in your user settings!
-|EU |Production |https://goto.my-agrirouter.com/um/register/developer
+|EU |Production | _Note_: there is no special sign up for developers; please create a regular user account and apply for developer permissions in your user settings!
 |====
 
 [NOTE]
@@ -52,7 +52,7 @@ accounts there when explicitly asked for it!
 |====
 |Area |Environment |URL
 |EU |agrirouter 2.0 QA | https://app.qa.agrirouter.farm/
-|EU |Production |https://goto.my-agrirouter.com/app
+|EU |Production | https://app.agrirouter.com/app
 |====
 
 
@@ -64,7 +64,10 @@ These are the base hosts for onboarding requests:
 |====
 |Area |Environment |Host
 |EU |agrirouter 2.0 QA | https://endpoint-service.qa.agrirouter.farm
-|EU |Production |https://onboard.my-agrirouter.com
+|EU |Production | https://onboard.agrirouter.com + 
+                  [line-through]*https://onboard.my-agrirouter.com* (deprecated in 2024) +
+                  [line-through]*https://agrirouter-registration-service.cfapps.eu10.hana.ondemand.com* (deprecated in 2020) +
+                  [line-through]*https://agrirouter-registration-service.cfapps.eu1.hana.ondemand.com* (deprectead in 2019)
 |====
 
 Use the following paths:
@@ -87,8 +90,8 @@ Sending an onboarding request is described xref:./integration/onboarding.adoc[he
 [cols="1,2,5",options="header",]
 |====
 |Area |Environment |URL
-|EU |agrirouter 2.0 QA |https://app.qa.agrirouter.farm/application/\{applicationId}/authorize 
-|EU |Production |https://goto.my-agrirouter.com/application/\{applicationId}/authorize
+|EU |agrirouter 2.0 QA | https://app.qa.agrirouter.farm/application/\{applicationId}/authorize 
+|EU |Production | https://app.agrirouter.com/application/\{applicationId}/authorize
 |====
 
 The description on creating a full authorization URL can be found xref:./integration/authorization.adoc#generating-an-authorization-url[here]

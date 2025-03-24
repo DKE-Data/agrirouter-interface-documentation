@@ -12,10 +12,9 @@
 ** xref:training.adoc[Training]
 
 * Partner Process
-** xref:partner-process/provider-agreement.adoc[Provider Agreement]
+** xref:partner-process/legal-agreement.adoc[Legal Agreement]
 ** xref:partner-process/solutionfinder.adoc[Solution-Finder]
-** xref:partner-process/integration-qa.adoc[Integration on QA]
-** xref:partner-process/integration-prod.adoc[Integration on Production]
+** xref:partner-process/integration-process.adoc[Integration Process]
 
 * xref:integration-steps.adoc[Integration]
 ** xref:integration/general-conventions.adoc[Conventions]
