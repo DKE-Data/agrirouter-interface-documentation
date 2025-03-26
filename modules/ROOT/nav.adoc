@@ -12,7 +12,6 @@
 ** xref:training.adoc[Training]
 
 * xref:partner-process/becoming-a-partner.adoc[Becoming a partner]
-** xref:partner-process/legal-agreement.adoc[Legal Agreement]
 ** xref:partner-process/integration-process.adoc[Integration Process]
 ** xref:partner-process/development-process.adoc[Development Process]
 ** xref:partner-process/solutionfinder.adoc[Solution-Finder]
