@@ -11,10 +11,12 @@
 ** xref:development-resources.adoc[Development Resources]
 ** xref:training.adoc[Training]
 
-* Partner Process
+* xref:partner-process/becoming-a-partner.adoc[Becoming a partner]
 ** xref:partner-process/legal-agreement.adoc[Legal Agreement]
-** xref:partner-process/solutionfinder.adoc[Solution-Finder]
 ** xref:partner-process/integration-process.adoc[Integration Process]
+** xref:partner-process/development-process.adoc[Development Process]
+** xref:partner-process/solutionfinder.adoc[Solution-Finder]
+** xref:service-support.adoc[Service & Support]
 
 * xref:integration-steps.adoc[Integration]
 ** xref:integration/general-conventions.adoc[Conventions]
@@ -29,7 +31,6 @@
 *** xref:certification.adoc[Certification]
 *** xref:maintenance.adoc[Maintenance]
 *** xref:update.adoc[Updates]
-*** xref:service-support.adoc[Service & Support]
 ** xref:integration/endpoint-lifecycle.adoc[Endpoint Lifecycle]
 *** xref:integration/authorization.adoc[Authorization]
 *** xref:integration/onboarding.adoc[Onboarding App Instances]

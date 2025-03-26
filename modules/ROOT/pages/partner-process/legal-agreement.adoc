@@ -1,6 +1,6 @@
 :fn-turnover: pass:c,q[footnote:turnover[The term _turnover_ always refers to the <<weighted-ag-turnover>>]]
 
-= Legal agreement
+= Business / Legal agreement
 
 == Business model of DKE-Data
 
