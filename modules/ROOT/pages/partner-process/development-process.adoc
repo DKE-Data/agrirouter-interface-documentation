@@ -25,13 +25,6 @@ There is a 3rd party maintained solution available called the *agrirouter middle
 
 For further information, please see link:https://agrirouter-middleware.com[their project].
 
-
-=== Developer Tutorial
-
-There is a link:https://github.com/DKE-Data/agrirouter-api-developer-tutorial[developer tutorial] available that guides you step-by-step through the development process, using Java as an example.
-
-While the tutorial has already aged a bit, the main concepts are still the same.
-
 === IO-Tool
 
 We provide a tool that presents an endpoint to communicate with during your integration work. Further information will soon be provided here.
