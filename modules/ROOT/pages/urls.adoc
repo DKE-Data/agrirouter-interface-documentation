@@ -52,7 +52,7 @@ accounts there when explicitly asked for it!
 |====
 |Area |Environment |URL
 |EU |agrirouter 2.0 QA | https://app.qa.agrirouter.farm/
-|EU |Production | https://app.agrirouter.com/app
+|EU |Production | https://app.agrirouter.com/
 |====
 
 

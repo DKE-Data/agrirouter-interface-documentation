@@ -41,12 +41,6 @@ The certification company will perform the certification - with your support - a
 == Approval from support team
 When the certification is successfully approved, the app will be set to status _Approved_ .
 
-[NOTE]
-====
-If your app is a CU, it will from this point on be visible to all users wanting to add a new Telemetry connection.
-====
-
-
 == Test Interface & Messaging
 
 After certification is done, you can test your application in the production environment, which means that you can xref:../invite-testers.adoc[invite real test customers to test the connection in their everyday work] or just ask users to onboard your app (the tester status is not required when your app is _Approved_ but it helps to keep an overview of your testers).
