@@ -1,0 +1,78 @@
+= Interface Integration in Production
+:imagesdir: _images/
+
+== General process of integration in Production
+
+image::partner-process/integration-steps.svg[]
+
+== Create developer account
+
+include::partial$different-accounts.adoc[]
+
+To start the development, you will need to xref:../registration.adoc[create a developer account].
+
+You can read xref:../accounts.adoc[here] more about the different types of accounts or directly find the URL for signup xref:../urls.adoc[here].
+
+include::partial$approval-manually-support-times.adoc[]
+
+== Register & submit your solution
+
+For communication with agrirouter, you need to xref:../applications.adoc[setup an application].
+
+Whenever you create a new application version, the agrirouter support team will have to approve this application. Please send an email to support@my-agrirouter.com including the application id and the certification version id to request confirmation. Find out where to find them xref:../ids-and-definitions.adoc[here].
+
+include::partial$approval-manually-support-times.adoc[]
+
+== Develop your integration
+
+Please see xref:./development-process.adoc[Development Process].
+
+== Certify your solution
+
+Every app needs to be certified to communicate with the agrirouter. Further information can be found xref:../certification.adoc[here].
+
+Once you know which kind of application you want to create, you should get in contact with one of the certification companies *early on* to clarify which specific requirements you will have to fulfil to pass the certification.
+This will help you to adapt your implementation for the certification and add all requirements for certification.
+
+Make sure to have all xref:../certification.adoc#prerequisites[prerequistes] available.
+
+The certification company will perform the certification - with your support - and create a certificate to prove that your solution is compatible with agrirouter.
+
+== Approval from support team
+When the certification is successfully approved, the app will be set to status _Approved_ .
+
+== Test Interface & Messaging
+
+After certification is done, you can test your application in the production environment, which means that you can xref:../invite-testers.adoc[invite real test customers to test the connection in their everyday work] or just ask users to onboard your app (the tester status is not required when your app is _Approved_ but it helps to keep an overview of your testers).
+
+To connect your app to the production environment, You need to update the following information in your application:
+
+* applicationId
+* certificationVersionId
+* Certificate for the authorization process (if Telemetry Platform or Farming Software)
+* The URLs for:
+** authorization
+** onboarding
+** re-onboarding
+** revoking
+
+The URLS can be found xref:../urls.adoc[here].
+
+[IMPORTANT]
+====
+Each agrirouter account has a limited number of endpoints, see xref:../limitations.adoc[here].
+====
+
+
+== Approval for your end customer
+When you decide that your application is successfully up and running and tested with the production environment, you can take all the steps relevant to publish your software to your customers like
+
+* deploying it on the server
+* advertising it
+* flashing hardware with it
+* etc.
+
+There are no additional steps required in the agrirouter UI or the agrirouter interface
+
+== How to proceed
+Once you published your software and customers start using it, you should xref:../maintenance.adoc[maintain your solution].

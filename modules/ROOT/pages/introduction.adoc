@@ -31,16 +31,9 @@ The purpose of this documentation is to create deep knowledge about the third pa
 This documentation is an open source project. We invite everybody to open issues, fork the documentation or create pull requests to fix or extend this documentation.
 
 == Adding your solution to agrirouter
-In general, there are 4 major topics to add your software or hardware to the agrirouter ecosystem.
+There are three streams that need to be completed to become a part of the agrirouter eco system.
 
-.Integration process for agrirouter
-image::general/process_all_v2.png[Integration process for agrirouter]
-
-* xref:partner-process/provider-agreement.adoc[Step 1 - Provider Agreement]
-* xref:partner-process/solutionfinder.adoc[Step 2 - Solution-Finder]
-* xref:partner-process/integration-qa.adoc[Step 3 - Interface Integration in Quality Assurance Environment]
-* xref:partner-process/integration-prod.adoc[Step 4 - Interface Integration in Production Environment]
-
+For more details see: xref:partner-process/becoming-a-partner.adoc[]
 
 == Quicklinks
 For advanced developers, here is a list of quick links for the most common topics
@@ -69,7 +62,6 @@ For advanced developers, here is a list of quick links for the most common topic
 === Tools
 
 There are several tools to support you in your agrirouter development
-
 
 ** xref:tools/io-tool/overview.adoc[IO-Tool - Simulate communication]
 ** xref:tools/arts.adoc[ARTS - Analyse messages]

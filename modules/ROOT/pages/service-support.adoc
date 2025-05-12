@@ -132,9 +132,6 @@ All of the above can be found in the endpoint details by clicking the ‘Info’
 .Relevant information for agrirouter support
 image::ig1/image46.png[Relevant information for agrirouter support,586,335]
 
-
-
-
 ==== For commands related incidents
 
 Please provide the commands sent from and received by the endpoint if available. The communication protocol can be provided as log file for example.
