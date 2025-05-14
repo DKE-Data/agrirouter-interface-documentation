@@ -27,7 +27,7 @@ For further information, please see link:https://agrirouter-middleware.com[their
 
 === IO-Tool
 
-We provide a tool that presents an endpoint to communicate with during your integration work. Further information will soon be provided here.
+We provide a tool that presents an endpoint to communicate with during your integration work. Details can be found at xref:../tools/io-tool/overview.adoc.
 
 // TODO
 //== Development overview
