@@ -72,7 +72,7 @@ While not strictly technically necessary, these steps help in troubleshooting or
 
 == iso:11783:-10:time_log:protobuf - EFDI TimeLog
 
-The EFDI timelog is comparable to IOSOXML Binary Log data. 
+The EFDI timelog is comparable to ISOXML Binary Log data. 
 
 The Message iso:11783:-10:time_log:protobuf includes a list of live telemetry data. For those live telemetry data, agrirouter is able to select only those DDIs to be forwarded to an endpoint that were selected by the end user when creating routings.
 

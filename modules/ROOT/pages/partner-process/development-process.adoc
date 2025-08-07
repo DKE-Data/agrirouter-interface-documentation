@@ -41,6 +41,6 @@ We are there for you during the whole development process.
 
 Whether you want to discuss your integration architecture approach, are stuck at some point during development, encounter unknown issues etc., just contact us via one of these channels:
 
-* image:icons/email.svg[,24,24] link:mailto:developer-support@my-agrirouter.com[Email/Ticket]
+* image:icons/email.svg[,24,24] link:mailto:support@agrirouter.com[Email/Ticket]
 * image:icons/teams.svg[,24,24] link:https://teams.microsoft.com/l/chat/0/0?users=o.rahner%40dke-data.com[Microsoft Teams]
-* image:icons/slack.svg[,24,24] link:https://join.slack.com/t/agrirouter/shared_invite/zt-1eubkvbhe-KuP4naHgIOdlciuiXcztGw[Slack]
+* image:icons/slack.svg[,24,24] link:https://join.slack.com/t/agrirouter/shared_invite/zt-3aq0up5th-KQYepMZDUPSK61VF5TW7gA[Slack]
