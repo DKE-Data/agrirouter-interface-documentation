@@ -1,6 +1,15 @@
 = agrirouter-interface-documentation
 :imagesdir: modules/ROOT/assets/images
 
+[IMPORTANT]
+====
+*Deprecation of old docs*
+
+With the launch of the new agrirouter API ("`G4`") in April 2026, this documentation has been deprecated.
+
+Please visit our new https://agrirouter.com/docs[developer docs].
+====
+
 [abstract]
 == Abstract
 image::agrirouter.svg[agrirouter]
